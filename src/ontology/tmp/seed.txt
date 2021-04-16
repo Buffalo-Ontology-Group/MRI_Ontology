@@ -1,0 +1,4 @@
+http://purl.obolibrary.org/obo/MRIO.owl
+http://purl.obolibrary.org/obo/MRIO_00000000
+https://creativecommons.org/licenses/unspecified
+term
