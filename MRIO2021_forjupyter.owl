@@ -1610,6 +1610,15 @@ variable
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MRIO_0000604 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000604">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000508"/>
+        <rdfs:label xml:lang="en">MR image transformation</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MRIO__0000341 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO__0000341">
