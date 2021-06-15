@@ -267,6 +267,9 @@
         <Class IRI="http://purl.obolibrary.org/obo/MRIO_0000603"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/MRIO_0000604"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/MRIO__0000341"/>
     </Declaration>
     <Declaration>
@@ -1218,6 +1221,10 @@
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/MRIO_0000603"/>
         <Class IRI="http://purl.obolibrary.org/obo/MRIO_0000600"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/MRIO_0000604"/>
+        <Class IRI="http://purl.obolibrary.org/obo/MRIO_0000508"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/MRIO__0000341"/>
@@ -2495,6 +2502,11 @@ variable
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/MRIO_0000603</IRI>
         <Literal xml:lang="en">T2 lesion mask</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/MRIO_0000604</IRI>
+        <Literal xml:lang="en">MR image transformation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
