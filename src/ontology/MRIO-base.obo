@@ -1,0 +1,17 @@
+format-version: 1.2
+data-version: MRIO/releases/2021-04-16/MRIO-base.owl
+ontology: MRIO/MRIO-base
+property_value: http://purl.org/dc/elements/1.1/description "None" xsd:string
+property_value: http://purl.org/dc/elements/1.1/title "MRI Acquisition and Analysis Ontology" xsd:string
+property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
+property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/unspecified
+property_value: owl:versionInfo "2021-04-16" xsd:string
+
+[Term]
+id: MRIO:00000000
+name: root node
+
+[Term]
+id: subcollection
+is_a: OBI:0002076
+
