@@ -204,6 +204,9 @@
         <Class IRI="http://purl.obolibrary.org/obo/MRIO_0000511"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/MRIO_0000512"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/MRIO_0000513"/>
     </Declaration>
     <Declaration>
@@ -253,21 +256,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/MRIO_0000529"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/MRIO_0000600"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/MRIO_0000601"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/MRIO_0000602"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/MRIO_0000603"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/MRIO_0000604"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/MRIO__0000341"/>
@@ -325,9 +313,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/MRIO__0000359"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/UBERON_0010225"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/MRIO_0000375"/>
@@ -996,19 +981,6 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/MRIO_0000509"/>
-        <ObjectIntersectionOf>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <Class IRI="http://purl.obolibrary.org/obo/UBERON_0010225"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <Class IRI="http://purl.obolibrary.org/obo/MRIO_0000500"/>
-            </ObjectSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/MRIO_0000509"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
             <Class IRI="http://purl.obolibrary.org/obo/MRIO_0000511"/>
@@ -1037,6 +1009,10 @@
         <Class IRI="http://purl.obolibrary.org/obo/MRIO_0000367"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/MRIO_0000512"/>
+        <Class IRI="http://purl.obolibrary.org/obo/MRIO_0000511"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/MRIO_0000513"/>
         <Class IRI="http://purl.obolibrary.org/obo/MRIO_0000367"/>
     </SubClassOf>
@@ -1045,50 +1021,16 @@
         <Class IRI="http://purl.obolibrary.org/obo/MRIO_0000508"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/MRIO_0000514"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
-            <Class IRI="http://purl.obolibrary.org/obo/MRIO_0000366"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/MRIO_0000515"/>
         <Class IRI="http://purl.obolibrary.org/obo/MRIO_0000508"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/MRIO_0000515"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
-            <Class IRI="http://purl.obolibrary.org/obo/MRIO_0000366"/>
-        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/MRIO_0000516"/>
         <Class IRI="http://purl.obolibrary.org/obo/MRIO_0000515"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/MRIO_0000516"/>
-        <ObjectIntersectionOf>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <Class IRI="http://purl.obolibrary.org/obo/MRIO_0000504"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <Class IRI="http://purl.obolibrary.org/obo/MRIO_0000505"/>
-            </ObjectSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/MRIO_0000517"/>
         <Class IRI="http://purl.obolibrary.org/obo/MRIO_0000508"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/MRIO_0000517"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
-            <Class IRI="http://purl.obolibrary.org/obo/MRIO_0000511"/>
-        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/MRIO_0000518"/>
@@ -1099,51 +1041,16 @@
         <Class IRI="http://purl.obolibrary.org/obo/MRIO_0000518"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/MRIO_0000519"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
-            <Class IRI="http://purl.obolibrary.org/obo/MRIO_0000603"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/MRIO_0000520"/>
         <Class IRI="http://purl.obolibrary.org/obo/MRIO_0000508"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/MRIO_0000520"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
-            <Class IRI="http://purl.obolibrary.org/obo/MRIO_0000506"/>
-        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/MRIO_0000521"/>
         <Class IRI="http://purl.obolibrary.org/obo/MRIO_0000508"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/MRIO_0000521"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
-            <Class IRI="http://purl.obolibrary.org/obo/MRIO_0000367"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/MRIO_0000521"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000299"/>
-            <Class IRI="http://purl.obolibrary.org/obo/MRIO_0000603"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/MRIO_0000522"/>
         <Class IRI="http://purl.obolibrary.org/obo/MRIO_0000521"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/MRIO_0000522"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
-            <Class IRI="http://purl.obolibrary.org/obo/MRIO_0000511"/>
-        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/MRIO_0000523"/>
@@ -1156,13 +1063,6 @@
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/MRIO_0000525"/>
         <Class IRI="http://purl.obolibrary.org/obo/MRIO_0000524"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/MRIO_0000525"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
-            <Class IRI="http://purl.obolibrary.org/obo/MRIO_0000366"/>
-        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/MRIO_0000526"/>
@@ -1177,54 +1077,8 @@
         <Class IRI="http://purl.obolibrary.org/obo/MRIO_0000509"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/MRIO_0000528"/>
-        <ObjectIntersectionOf>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <Class IRI="http://purl.obolibrary.org/obo/UBERON_0001897"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <Class IRI="http://purl.obolibrary.org/obo/MRIO_0000500"/>
-            </ObjectSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/MRIO_0000529"/>
         <Class IRI="http://purl.obolibrary.org/obo/MRIO_0000528"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/MRIO_0000529"/>
-        <ObjectIntersectionOf>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <Class IRI="http://purl.obolibrary.org/obo/UBERON_0013683"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <Class IRI="http://purl.obolibrary.org/obo/MRIO_0000500"/>
-            </ObjectSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/MRIO_0000600"/>
-        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000101"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/MRIO_0000601"/>
-        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000101"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/MRIO_0000602"/>
-        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000101"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/MRIO_0000603"/>
-        <Class IRI="http://purl.obolibrary.org/obo/MRIO_0000600"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/MRIO_0000604"/>
-        <Class IRI="http://purl.obolibrary.org/obo/MRIO_0000508"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/MRIO__0000341"/>
@@ -2265,6 +2119,16 @@ variable
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>http://purl.obolibrary.org/obo/MRIO_0000512</IRI>
+        <IRI>http://orcid.org/0000-0002-2104-0568</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/MRIO_0000512</IRI>
+        <Literal xml:lang="en">FLAIR image after T2 lesion analysis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
         <IRI>http://purl.obolibrary.org/obo/MRIO_0000513</IRI>
         <IRI>http://orcid.org/0000-0002-2104-0568</IRI>
     </AnnotationAssertion>
@@ -2482,31 +2346,6 @@ variable
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/MRIO_0000529</IRI>
         <Literal xml:lang="en">DeepGRAI analysis of the left dorsal thalamus</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://purl.obolibrary.org/obo/MRIO_0000600</IRI>
-        <Literal xml:lang="en">lesion mask</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://purl.obolibrary.org/obo/MRIO_0000601</IRI>
-        <Literal xml:lang="en">segmentation map</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://purl.obolibrary.org/obo/MRIO_0000602</IRI>
-        <Literal xml:lang="en">aligned image</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://purl.obolibrary.org/obo/MRIO_0000603</IRI>
-        <Literal xml:lang="en">T2 lesion mask</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://purl.obolibrary.org/obo/MRIO_0000604</IRI>
-        <Literal xml:lang="en">MR image transformation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
