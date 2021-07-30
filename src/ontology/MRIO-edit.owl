@@ -218,7 +218,7 @@ fluid: dark
 
 radiopedia</obo:IAO_0000115>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
-        <rdfs:label xml:lang="en">T1 image</rdfs:label>
+        <rdfs:label xml:lang="en">T1 image data set</rdfs:label>
     </owl:Class>
     
 
@@ -248,7 +248,7 @@ fluid: bright
 
 radiopedia</obo:IAO_0000115>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
-        <rdfs:label xml:lang="en">! T2-weighted image</rdfs:label>
+        <rdfs:label xml:lang="en">! T2-weighted image data set</rdfs:label>
     </owl:Class>
     
 
@@ -259,7 +259,7 @@ radiopedia</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO__0000341"/>
         <obo:IAO_0000115>A type of MRI image in which the contrast is optimized to be</obo:IAO_0000115>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
-        <rdfs:label xml:lang="en">functional MR image</rdfs:label>
+        <rdfs:label xml:lang="en">functional MR image data set</rdfs:label>
     </owl:Class>
     
 
@@ -918,7 +918,7 @@ variable
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO__0000341"/>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
-        <rdfs:label xml:lang="en">T2* GRE image</rdfs:label>
+        <rdfs:label xml:lang="en">T2* GRE image data set</rdfs:label>
     </owl:Class>
     
 
@@ -1125,7 +1125,7 @@ variable
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO__0000341"/>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
-        <rdfs:label xml:lang="en">T1 GRE image</rdfs:label>
+        <rdfs:label xml:lang="en">T1 GRE image data set</rdfs:label>
     </owl:Class>
     
 
@@ -1146,7 +1146,7 @@ variable
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO__0000341"/>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
-        <rdfs:label xml:lang="en">T2 FSE image</rdfs:label>
+        <rdfs:label xml:lang="en">T2 FSE image data set</rdfs:label>
     </owl:Class>
     
 
@@ -1187,7 +1187,7 @@ variable
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO__0000341"/>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
-        <rdfs:label xml:lang="en">! hi-res T1 image</rdfs:label>
+        <rdfs:label xml:lang="en">! hi-res T1 image data set</rdfs:label>
     </owl:Class>
     
 
@@ -1322,7 +1322,7 @@ variable
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000367"/>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
-        <rdfs:label xml:lang="en">FLAIR image</rdfs:label>
+        <rdfs:label xml:lang="en">FLAIR image data set</rdfs:label>
     </owl:Class>
     
 
@@ -1915,7 +1915,7 @@ variable
         <obo:IAO_0000115>A type of post-contrast, T1 image for which the contrast agent is galolinium</obo:IAO_0000115>
         <obo:IAO_0000115>a T1 image where gadolidium contrast agent has been used in the subject before image acquistion</obo:IAO_0000115>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
-        <rdfs:label xml:lang="en">Post-Gd T1 image</rdfs:label>
+        <rdfs:label xml:lang="en">Post-Gd T1 image data set</rdfs:label>
     </owl:Class>
     
 
@@ -1926,7 +1926,7 @@ variable
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO__0000341"/>
         <obo:IAO_0000115>A type of 2D MRI image</obo:IAO_0000115>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
-        <rdfs:label xml:lang="en">2d spin echo T1 image</rdfs:label>
+        <rdfs:label xml:lang="en">2d spin echo T1 image data set</rdfs:label>
     </owl:Class>
     
 
@@ -1937,7 +1937,7 @@ variable
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO__0000341"/>
         <obo:IAO_0000115>A timeseries of MRI images including pre- and post-contrast at different times</obo:IAO_0000115>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
-        <rdfs:label xml:lang="en">DCE perfusion</rdfs:label>
+        <rdfs:label xml:lang="en">DCE perfusion data set</rdfs:label>
     </owl:Class>
     
 
@@ -1948,7 +1948,7 @@ variable
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO__0000341"/>
         <obo:IAO_0000115>A timeseries of MRI images like DCE perfusion, but using no injected contrast (uses flow coded pulses instead)</obo:IAO_0000115>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
-        <rdfs:label xml:lang="en">ASL perfusion</rdfs:label>
+        <rdfs:label xml:lang="en">ASL perfusion data set</rdfs:label>
     </owl:Class>
     
 
@@ -1959,7 +1959,7 @@ variable
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO__0000341"/>
         <obo:IAO_0000115>A pair of MRI images pre- and post-application of an MT offset pulse</obo:IAO_0000115>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
-        <rdfs:label xml:lang="en">magnetization transfer image</rdfs:label>
+        <rdfs:label xml:lang="en">magnetization transfer image data set</rdfs:label>
     </owl:Class>
     
 
@@ -1970,7 +1970,7 @@ variable
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO__0000341"/>
         <obo:IAO_0000115>A set of multiple MRI images, including base (b=0) images and directionally coded images</obo:IAO_0000115>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
-        <rdfs:label xml:lang="en">diffusion tensor image</rdfs:label>
+        <rdfs:label xml:lang="en">diffusion tensor image data set</rdfs:label>
     </owl:Class>
     
 
@@ -1992,7 +1992,7 @@ variable
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO__0000341"/>
         <obo:IAO_0000115>A type of MRI image in which the contrast emphasizes density of protons, supressing T1 and T2 effects</obo:IAO_0000115>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
-        <rdfs:label xml:lang="en">proton density image</rdfs:label>
+        <rdfs:label xml:lang="en">proton density image data set</rdfs:label>
     </owl:Class>
     
 
@@ -2003,7 +2003,7 @@ variable
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO__0000341"/>
         <obo:IAO_0000115>A type of T2-weighted image in which the acquisition is performed using a 2D spin-echo technique</obo:IAO_0000115>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
-        <rdfs:label xml:lang="en">2D T2 SE</rdfs:label>
+        <rdfs:label xml:lang="en">2D T2 SE image data set</rdfs:label>
     </owl:Class>
     
 
@@ -2014,7 +2014,7 @@ variable
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO__0000341"/>
         <obo:IAO_0000115>A type of processed MRI image calculated as a results</obo:IAO_0000115>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
-        <rdfs:label xml:lang="en">QSM image</rdfs:label>
+        <rdfs:label xml:lang="en">QSM image data set</rdfs:label>
     </owl:Class>
     
 
@@ -2025,7 +2025,7 @@ variable
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO__0000341"/>
         <obo:IAO_0000115>A type of functional MRI in which the participant is not given a task, but just rests during acquisision</obo:IAO_0000115>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
-        <rdfs:label xml:lang="en">Resting state functional MR image</rdfs:label>
+        <rdfs:label xml:lang="en">Resting state functional MR image data set</rdfs:label>
     </owl:Class>
     
 
@@ -2036,7 +2036,7 @@ variable
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO__0000341"/>
         <obo:IAO_0000115>A type of functional MRI in which the participant is given a task or tasks, which are timed with the acquisition</obo:IAO_0000115>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
-        <rdfs:label xml:lang="en">Task-based functional MR image</rdfs:label>
+        <rdfs:label xml:lang="en">Task-based functional MR image data set</rdfs:label>
     </owl:Class>
     
 
