@@ -9,7 +9,7 @@
         <uri id="Automatically generated entry, Timestamp=1627069531561" name="duplicate:http://purl.obolibrary.org/obo/mrio.owl" uri="MRIO%202021.owl"/>
         <uri id="Automatically generated entry, Timestamp=1627069531561" name="http://purl.obolibrary.org/obo/obi.owl" uri="src/ontology/imports/obi_import.owl"/>
         <uri id="Automatically generated entry, Timestamp=1627069531561" name="http://purl.obolibrary.org/obo/uberon.owl" uri="src/ontology/mirror/uberon.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1627069531561" name="http://purl.obolibrary.org/obo/vo/external/MRIO_uberon_import.owl" uri="uberon%20gray%20matter%20import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1627069531561" name="http://purl.obolibrary.org/obo/uberon.owl" uri="uberon%20gray%20matter%20import.owl"/>
         <uri id="Automatically generated entry, Timestamp=1627069531561" name="shadowed:http://purl.obolibrary.org/obo/MRIO.owl" uri="src/ontology/MRIO.owl"/>
         <uri id="Automatically generated entry, Timestamp=1627069531561" name="shadowed:http://purl.obolibrary.org/obo/MRIO.owl" uri="src/ontology/tmp/merged-MRIO-edit.owl"/>
         <uri id="Automatically generated entry, Timestamp=1627069531561" name="shadowed:http://purl.obolibrary.org/obo/MRIO/MRIO-base.owl" uri="src/ontology/MRIO-base.owl"/>

@@ -16,7 +16,6 @@
         <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/mrio/releases/2021-04-10/mrio.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2019-08-26/bfo.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/obi/2020-12-16/obi.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/vo/external/MRIO_uberon_import.owl"/>
         <dc:creator>Lucas Serra</dc:creator>
     </owl:Ontology>
     
@@ -642,6 +641,10 @@ radiopedia</obo:IAO_0000115>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MRIO_0000385"/>
                     <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000375"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/mrio.owl/MRIO_0000628"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000376"/>
                         <owl:someValuesFrom>
                             <rdfs:Datatype>
@@ -824,17 +827,8 @@ radiopedia</obo:IAO_0000115>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MRIO_0000386"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000376"/>
-                        <owl:someValuesFrom>
-                            <rdfs:Datatype>
-                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-                                <owl:withRestrictions rdf:parseType="Collection">
-                                    <rdf:Description>
-                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3000.0</xsd:minExclusive>
-                                    </rdf:Description>
-                                </owl:withRestrictions>
-                            </rdfs:Datatype>
-                        </owl:someValuesFrom>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000375"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/mrio.owl/MRIO_0000627"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000377"/>
@@ -860,6 +854,19 @@ radiopedia</obo:IAO_0000115>
                                     </rdf:Description>
                                     <rdf:Description>
                                         <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">110.0</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000606"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1800.0</xsd:minExclusive>
                                     </rdf:Description>
                                 </owl:withRestrictions>
                             </rdfs:Datatype>
@@ -2118,6 +2125,7 @@ variable
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/mrio.owl/MRIO_0000622">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO__0000342"/>
         <obo:IAO_0000115>Measures the degree of diffusion weighting applied, thereby indicating the amplitude (G), time of applied gradients (δ) and duration between the paired gradients (Δ).</obo:IAO_0000115>
+        <obo:IAO_0000118>diffusion weighting</obo:IAO_0000118>
         <dc:source>https://radiopaedia.org/articles/b-values-1?lang=us</dc:source>
         <rdfs:label xml:lang="en">diffusion b value</rdfs:label>
     </owl:Class>
@@ -2142,19 +2150,19 @@ variable
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000375"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO__0000357"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000375"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO__0000358"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000383"/>
-        <obo:IAO_0000115></obo:IAO_0000115>
-        <dc:source></dc:source>
+        <obo:IAO_0000115>The refocusing of spin magnetisation by a pulse of resonant electromagnetic radiation.</obo:IAO_0000115>
+        <dc:source>https://doi.org/10.1063%2F1.1670306</dc:source>
         <rdfs:label xml:lang="en">spin echo sequence</rdfs:label>
     </owl:Class>
     
@@ -2168,11 +2176,11 @@ variable
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/mrio.owl/MRIO_0000620"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/mrio.owl/MRIO_0000626"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/mrio.owl/MRIO_0000626"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000375"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/mrio.owl/MRIO_0000620"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -2188,7 +2196,39 @@ variable
     <!-- http://purl.obolibrary.org/obo/mrio.owl/MRIO_0000628 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/mrio.owl/MRIO_0000628">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000375"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO__0000357"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000375"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO__0000358"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000384"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">10.0</xsd:minInclusive>
+                                    </rdf:Description>
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">80.0</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000383"/>
+        <obo:IAO_0000115>Generated by the frequency-encode gradient, except that it is used twice in succession, and in opposite directions.</obo:IAO_0000115>
+        <dc:source>https://radiopaedia.org/articles/gradient-echo-sequences-1?lang=us</dc:source>
         <rdfs:label xml:lang="en">gradient echo sequence</rdfs:label>
     </owl:Class>
     
@@ -2197,8 +2237,40 @@ variable
     <!-- http://purl.obolibrary.org/obo/mrio.owl/MRIO_0000629 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/mrio.owl/MRIO_0000629">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/mrio.owl/MRIO_0000628"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000375"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO__0000357"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000375"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO__0000358"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000383"/>
+        <obo:IAO_0000115 xml:lang="en">Multiple echoes of different phase steps are acquired by rapidly reversing the readout or frequency- encoding gradient.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">Can we add that this may optionally be about some spin echo sequence, but not necessary for an instance of this class?</obo:IAO_0000116>
+        <dc:source xml:lang="en">https://radiopaedia.org/articles/echo-planar-imaging-1?lang=us</dc:source>
         <rdfs:label xml:lang="en">echo planar sequence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/mrio.owl/MRIO_0000630 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/mrio.owl/MRIO_0000630">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO__0000342"/>
+        <obo:IAO_0000115 xml:lang="en">Angle at which a proton&apos;s axis shifts from its longitudinal place to its transverse plane by excitation from radiofrequency pulses.</obo:IAO_0000115>
+        <dc:source xml:lang="en">https://radiopaedia.org/articles/flip-angle?lang=us</dc:source>
+        <rdfs:label xml:lang="en">flip angle (FA)</rdfs:label>
     </owl:Class>
     
 
@@ -2234,6 +2306,18 @@ variable
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000394"/>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
         <rdfs:label xml:lang="en">test MRI machine 1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/mrio.owl/MRIO_0000631 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/mrio.owl/MRIO_0000631">
+        <obo:IAO_0000136 rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000401"/>
+        <obo:MRIO_0000376 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">300.0</obo:MRIO_0000376>
+        <obo:MRIO_0000377 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">15.0</obo:MRIO_0000377>
+        <obo:MRIO_0000384 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">90.0</obo:MRIO_0000384>
+        <rdfs:label xml:lang="en">test scanning sequence</rdfs:label>
     </owl:NamedIndividual>
 </rdf:RDF>
 
