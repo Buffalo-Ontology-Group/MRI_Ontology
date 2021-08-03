@@ -102,8 +102,8 @@
 <http://purl.obolibrary.org/obo/MRIO_0000386>	<http://www.w3.org/2000/01/rdf-schema#label>	"T2 weighted MRI acquisition sequence"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000522>	<http://www.w3.org/2000/01/rdf-schema#label>	"LPA analysis"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000399>	<http://www.w3.org/2000/01/rdf-schema#label>	"cerebral microbleed assessment"@en	
-<http://purl.obolibrary.org/obo/MRIO_0000410>	<http://www.w3.org/2000/01/rdf-schema#label>	"volumetry"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000394>	<http://www.w3.org/2000/01/rdf-schema#label>	"1.5T MRI machine"@en	
+<http://purl.obolibrary.org/obo/MRIO_0000410>	<http://www.w3.org/2000/01/rdf-schema#label>	"volumetry"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000514>	<http://www.w3.org/2000/01/rdf-schema#label>	"FIRST analysis"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000509>	<http://www.w3.org/2000/01/rdf-schema#label>	"DeepGRAI analysis"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000420>	<http://www.w3.org/2000/01/rdf-schema#label>	"functional mapping"@en	
