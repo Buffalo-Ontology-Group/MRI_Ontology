@@ -164,6 +164,7 @@ http://purl.obolibrary.org/obo/mrio.owl/MRIO_0000628
 http://purl.obolibrary.org/obo/mrio.owl/MRIO_0000629
 http://purl.obolibrary.org/obo/mrio.owl/MRIO_0000630
 http://purl.obolibrary.org/obo/mrio.owl/MRIO_0000631
+http://purl.obolibrary.org/obo/mrio.owl/MRIO_0000632
 http://purl.obolibrary.org/obo/mrio/releases/2021-04-10/mrio.owl
 http://purl.org/dc/elements/1.1/creator
 http://purl.org/dc/elements/1.1/source
