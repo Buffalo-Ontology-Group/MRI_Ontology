@@ -1444,22 +1444,6 @@ variable
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000518"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000067"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MRIO_0000615"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MRIO_0000616"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MRIO_0000618"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MRIO_0000619"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MRIO_0000622"/>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
                 <owl:someValuesFrom>
                     <owl:Class>
