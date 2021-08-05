@@ -1,3 +1,47 @@
 http://purl.obolibrary.org/obo/UBERON_0001897 ## dorsal plus ventral thalamus
 http://purl.obolibrary.org/obo/UBERON_0010225 ## thalamic complex
 http://purl.obolibrary.org/obo/UBERON_0013683 ## left dorsal thalamus
+http://purl.obolibrary.org/obo/UBERON_0002129 ## cerebellar cortex
+http://purl.obolibrary.org/obo/UBERON_0004703 ## dorsal thalamus
+http://purl.obolibrary.org/obo/UBERON_0001873 ## caudate nucleus
+http://purl.obolibrary.org/obo/UBERON_0001874 ## putamen
+http://purl.obolibrary.org/obo/UBERON_0006514 ## pallidum
+http://purl.obolibrary.org/obo/UBERON_0002421 ## hippocampal formation
+http://purl.obolibrary.org/obo/UBERON_0001876 ## amygdala
+http://purl.obolibrary.org/obo/UBERON_0001882 ## nucleus accumbens
+http://purl.obolibrary.org/obo/UBERON_0001898 ## hypothalamus
+http://purl.obolibrary.org/obo/UBERON_0026822 ## banks of superior temporal sulcus
+http://purl.obolibrary.org/obo/UBERON_0028715 ## caudal anterior cingulate cortex
+http://purl.obolibrary.org/obo/UBERON_0006445 ## caudal middle frontal gyrus
+http://purl.obolibrary.org/obo/UBERON_0006092 ## cuneus cortex
+http://purl.obolibrary.org/obo/UBERON_0002728 ## entorhinal cortex
+http://purl.obolibrary.org/obo/UBERON_0002766 ## fusiform gyrus
+http://purl.obolibrary.org/obo/UBERON_0006088 ## inferior parietal cortex
+http://purl.obolibrary.org/obo/UBERON_0002751 ## inferior temporal gyrus
+http://purl.obolibrary.org/obo/UBERON_0027061 ## isthmus of cingulate cortex
+http://purl.obolibrary.org/obo/UBERON_0006114 ## lateral occipital cortex
+http://purl.obolibrary.org/obo/UBERON_0022716 ## lateral orbital frontal cortex
+http://purl.obolibrary.org/obo/UBERON_0002943 ## lingual gyrus
+http://purl.obolibrary.org/obo/UBERON_0022352 ## medial orbital frontal cortex
+http://purl.obolibrary.org/obo/UBERON_0002771 ## middle temporal gyrus
+http://purl.obolibrary.org/obo/UBERON_0002973 ## parahippocampal gyrus'
+http://purl.obolibrary.org/obo/UBERON_0035933 ## paracentral lobule
+http://purl.obolibrary.org/obo/UBERON_0002980 ## opercular part of inferior frontal gyrus
+http://purl.obolibrary.org/obo/UBERON_0002624 ## orbital part of inferior frontal gyrus
+http://purl.obolibrary.org/obo/UBERON_0002629 ## triangular part of inferior frontal gyrus
+http://purl.obolibrary.org/obo/UBERON_0022534 ## pericalcarine cortex
+http://purl.obolibrary.org/obo/UBERON_0002581 ## postcentral gyrus
+http://purl.obolibrary.org/obo/UBERON_0022353 ## posterior cingulate cortex
+http://purl.obolibrary.org/obo/UBERON_0002703 ## precentral gyrus
+http://purl.obolibrary.org/obo/UBERON_0006093 ## precuneus cortex
+http://purl.obolibrary.org/obo/UBERON_0022438 ## rostral anterior cingulate cortex
+http://purl.obolibrary.org/obo/UBERON_0006446 ## rostral middle frontal gyrus
+http://purl.obolibrary.org/obo/UBERON_0002661 ## superior frontal gyrus
+http://purl.obolibrary.org/obo/UBERON_0006094 ## superior parietal cortex
+http://purl.obolibrary.org/obo/UBERON_0002769 ## superior temporal gyrus
+http://purl.obolibrary.org/obo/UBERON_0002688 ## supramarginal gyrus
+http://purl.obolibrary.org/obo/UBERON_0002795 ## frontal pole
+http://purl.obolibrary.org/obo/UBERON_0002576 ## temporal pole
+http://purl.obolibrary.org/obo/UBERON_0001393 ## auditory cortex
+http://purl.obolibrary.org/obo/UBERON_0002022 ## insula
+

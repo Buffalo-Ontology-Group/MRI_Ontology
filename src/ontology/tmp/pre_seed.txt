@@ -123,7 +123,6 @@ http://purl.obolibrary.org/obo/MRIO_0000622
 http://purl.obolibrary.org/obo/MRIO_0000623
 http://purl.obolibrary.org/obo/MRIO__0000341
 http://purl.obolibrary.org/obo/MRIO__0000342
-http://purl.obolibrary.org/obo/MRIO__0000343
 http://purl.obolibrary.org/obo/MRIO__0000344
 http://purl.obolibrary.org/obo/MRIO__0000345
 http://purl.obolibrary.org/obo/MRIO__0000346
@@ -165,6 +164,11 @@ http://purl.obolibrary.org/obo/mrio.owl/MRIO_0000629
 http://purl.obolibrary.org/obo/mrio.owl/MRIO_0000630
 http://purl.obolibrary.org/obo/mrio.owl/MRIO_0000631
 http://purl.obolibrary.org/obo/mrio.owl/MRIO_0000632
+http://purl.obolibrary.org/obo/mrio.owl/MRIO_0000635
+http://purl.obolibrary.org/obo/mrio.owl/MRIO_0000636
+http://purl.obolibrary.org/obo/mrio.owl/MRIO_0000638
+http://purl.obolibrary.org/obo/mrio.owl/MRIO_0000639
+http://purl.obolibrary.org/obo/mrio.owl/MRIO_0000640
 http://purl.obolibrary.org/obo/mrio/releases/2021-04-10/mrio.owl
 http://purl.org/dc/elements/1.1/creator
 http://purl.org/dc/elements/1.1/source
