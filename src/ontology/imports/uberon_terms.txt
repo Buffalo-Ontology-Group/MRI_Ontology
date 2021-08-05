@@ -1,6 +1,5 @@
 http://purl.obolibrary.org/obo/UBERON_0001897 ## dorsal plus ventral thalamus
 http://purl.obolibrary.org/obo/UBERON_0010225 ## thalamic complex
-http://purl.obolibrary.org/obo/UBERON_0013683 ## left dorsal thalamus
 http://purl.obolibrary.org/obo/UBERON_0002129 ## cerebellar cortex
 http://purl.obolibrary.org/obo/UBERON_0004703 ## dorsal thalamus
 http://purl.obolibrary.org/obo/UBERON_0001873 ## caudate nucleus
@@ -44,4 +43,9 @@ http://purl.obolibrary.org/obo/UBERON_0002795 ## frontal pole
 http://purl.obolibrary.org/obo/UBERON_0002576 ## temporal pole
 http://purl.obolibrary.org/obo/UBERON_0001393 ## auditory cortex
 http://purl.obolibrary.org/obo/UBERON_0002022 ## insula
-
+http://purl.obolibrary.org/obo/UBERON_0013683 ## left dorsal thalamus
+http://purl.obolibrary.org/obo/UBERON_0008884 ## left putamen
+http://purl.obolibrary.org/obo/UBERON_0013684 ## right dorsal thalamus
+http://purl.obolibrary.org/obo/UBERON_0008885 ## right putamen
+http://purl.obolibrary.org/obo/UBERON_0009898 ## left auditory cortex
+http://purl.obolibrary.org/obo/UBERON_0009897 ## right auditory cortex

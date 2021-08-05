@@ -1,6 +1,5 @@
 http://orcid.org/0000-0002-2104-0568
 http://purl.obolibrary.org/obo/BFO_0000051
-http://purl.obolibrary.org/obo/BFO_0000067
 http://purl.obolibrary.org/obo/CCL_0000360
 http://purl.obolibrary.org/obo/IAO_0000032
 http://purl.obolibrary.org/obo/IAO_0000100
@@ -150,9 +149,16 @@ http://purl.obolibrary.org/obo/OBI_0000398
 http://purl.obolibrary.org/obo/OBI_0000441
 http://purl.obolibrary.org/obo/OBI_0200000
 http://purl.obolibrary.org/obo/RO_0000087
+http://purl.obolibrary.org/obo/UBERON_0001873
+http://purl.obolibrary.org/obo/UBERON_0001882
 http://purl.obolibrary.org/obo/UBERON_0001897
+http://purl.obolibrary.org/obo/UBERON_0001898
+http://purl.obolibrary.org/obo/UBERON_0002129
+http://purl.obolibrary.org/obo/UBERON_0008884
+http://purl.obolibrary.org/obo/UBERON_0008885
 http://purl.obolibrary.org/obo/UBERON_0010225
 http://purl.obolibrary.org/obo/UBERON_0013683
+http://purl.obolibrary.org/obo/UBERON_0013684
 http://purl.obolibrary.org/obo/mrio.owl
 http://purl.obolibrary.org/obo/mrio.owl/MRIO_0000620
 http://purl.obolibrary.org/obo/mrio.owl/MRIO_0000622
