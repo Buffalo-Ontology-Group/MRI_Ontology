@@ -2088,7 +2088,9 @@ variable
 
     <!-- http://purl.obolibrary.org/obo/UBERON_0013683 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0013683"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0013683">
+        <obo:IAO_0000118>&apos;Left-Thalamus-Proper&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+    </owl:Class>
     
 
 
@@ -2360,6 +2362,38 @@ variable
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/mrio.owl/MRIO_0000627"/>
         <rdfs:label xml:lang="en">Inversion recovery sequence</rdfs:label>
     </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0001873">
+        <obo:IAO_0000118>&apos;Left-Caudate&apos; and &apos;Right-Caudate&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0001882">
+        <obo:IAO_0000118>&apos;Left-Accumbens-area&apos; and &apos;Right-Accumbens-area&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0001898">
+        <obo:IAO_0000118>&apos;Left-VentralDC&apos; and &apos;Right-VentralDC&apos; (from Desikan-Killiany Atlas)</obo:IAO_0000118>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0002129">
+        <obo:IAO_0000118>&apos;Left-Cerebellum-Cortex&apos; and &apos;Right-Cerebellum-Cortex&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0008884">
+        <obo:IAO_0000118>&apos;Left-Putamen&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0008885">
+        <obo:IAO_0000118>&apos;&apos;Right-Putamen&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0013684">
+        <obo:IAO_0000118>&apos;Right-Thalamus-Proper&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+    </rdf:Description>
 </rdf:RDF>
 
 
