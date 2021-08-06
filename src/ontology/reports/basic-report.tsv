@@ -13,6 +13,7 @@
 <http://purl.obolibrary.org/obo/MRIO_0000411>	"volumetry to determine the volume of the whole brain of an evaluant"	
 <http://purl.obolibrary.org/obo/MRIO_0000366>	"an MR image that demonstrates differences in the T1 relaxation times of tissues. \n\nTR: short\nTE: short\nfat: bright\nfluid: dark\n\nradiopedia"	
 <http://purl.obolibrary.org/obo/UBERON_0010225>		
+<http://purl.obolibrary.org/obo/mrio.owl/MRIO_0000649>		
 <http://purl.obolibrary.org/obo/MRIO_0000370>		
 <http://purl.obolibrary.org/obo/MRIO_0000419>	"a functional assessment to determine the connectivity of regions of the brain in an evaluant"	
 <http://purl.obolibrary.org/obo/mrio.owl/MRIO_0000623>	"Radiofrequency pulses and gradients that result in a set of MR image data sets with a particular appearance."	
@@ -23,6 +24,7 @@
 <http://purl.obolibrary.org/obo/MRIO_0000600>		
 <http://purl.obolibrary.org/obo/MRIO_0000612>		
 <http://purl.obolibrary.org/obo/MRIO_0000503>		
+<http://purl.obolibrary.org/obo/mrio.owl/MRIO_0000641>		
 <http://purl.obolibrary.org/obo/MRIO_0000608>		
 <http://purl.obolibrary.org/obo/MRIO_0000364>	"The total number of independent data samples in the frequency and phase directions (number of pixels in the frequency encoding - and phase encoding direction)."	
 <http://purl.obolibrary.org/obo/MRIO__0000348>	"A timeseries of MRI images like DCE perfusion, but using no injected contrast (uses flow coded pulses instead)"	
@@ -51,10 +53,12 @@
 <http://purl.obolibrary.org/obo/MRIO_0000619>		
 <http://purl.obolibrary.org/obo/MRIO_0000363>	"The not measured distance between the slices."	
 <http://purl.obolibrary.org/obo/MRIO_0000414>	"quantification to determine the flow blood through the circulatory system of an evaluant"	
+<http://purl.obolibrary.org/obo/mrio.owl/MRIO_0000650>		
 <http://purl.obolibrary.org/obo/MRIO_0000392>		
 <http://purl.obolibrary.org/obo/MRIO_0000394>	"an MRI machine whose primary magnet has 1.5T of strength"	
 <http://purl.obolibrary.org/obo/mrio.owl/MRIO_0000635>		
 <http://purl.obolibrary.org/obo/mrio.owl/MRIO_0000630>	"Angle at which a proton's axis shifts from its longitudinal place to its transverse plane by excitation from radiofrequency pulses."@en	
+<http://purl.obolibrary.org/obo/mrio.owl/MRIO_0000647>		
 <http://purl.obolibrary.org/obo/MRIO_0000361>	"a parameter that can be selected by a technologist as a percent of our overall field of view.\n\nA different field of view (the scanned region) in the frequency and phase encoding directions that means the data acquisition with fewer measurement lines."	
 <http://purl.obolibrary.org/obo/MRIO_0000388>		
 <http://purl.obolibrary.org/obo/MRIO_0000416>	"quantification to determine the spread of molecules within an evaluant"	
@@ -72,8 +76,10 @@
 <http://purl.obolibrary.org/obo/MRIO_0000520>	"T1 black holes are hypointense lesions commonly seen on T1WI in patients with multiple sclerosis, and indicates the chronic stage with white matter destruction, axonal loss and irreversible clinical outcome."	
 <http://purl.obolibrary.org/obo/MRIO_0000618>		
 <http://purl.obolibrary.org/obo/MRIO_0000413>	"an MR image objective to determine the presence of hypointense regions that normally appear as white matter on T1 image in an evaluant"	
+<http://purl.obolibrary.org/obo/mrio.owl/MRIO_0000651>		
 <http://purl.obolibrary.org/obo/MRIO_0000391>		
 <http://purl.obolibrary.org/obo/MRIO_0000383>	"the MRI machine setting datum about the radiofrequency pulse sequence"	
+<http://purl.obolibrary.org/obo/mrio.owl/MRIO_0000648>		
 <http://purl.obolibrary.org/obo/mrio.owl/MRIO_0000636>		
 <http://purl.obolibrary.org/obo/MRIO_0000610>	"A measuement datum which is a data set that is made up of an n-dimensional array of elements (or entries)."	
 <http://purl.obolibrary.org/obo/MRIO_0000387>		
@@ -85,9 +91,11 @@
 <http://purl.obolibrary.org/obo/MRIO_0000500>		
 <http://purl.obolibrary.org/obo/MRIO_0000524>		
 <http://purl.obolibrary.org/obo/mrio.owl/MRIO_0000620>		
+<http://purl.obolibrary.org/obo/mrio.owl/MRIO_0000644>		
 <http://purl.obolibrary.org/obo/MRIO_0000508>		
 <http://purl.obolibrary.org/obo/MRIO_0000390>		
 <http://purl.obolibrary.org/obo/MRIO_0000409>	"quantification to determine the number and size of lesions in an evaluant"	
+<http://purl.obolibrary.org/obo/mrio.owl/MRIO_0000645>		
 <http://purl.obolibrary.org/obo/MRIO_0000410>	"an MR image objective to determine the volume of brain regions in an evaluant"	
 <http://purl.obolibrary.org/obo/MRIO__0000345>	"A type of post-contrast, T1 image for which the contrast agent is galolinium"	
 <http://purl.obolibrary.org/obo/MRIO__0000344>	"A type of T1-weighted image in which the voxel size is no larger than x and anisotropy is no more than y"	
@@ -103,6 +111,7 @@
 <http://purl.obolibrary.org/obo/MRIO_0000420>	"a functional assessment to determine the mapping of brain activity in an evaluant"	
 <http://purl.obolibrary.org/obo/MRIO_0000519>		
 <http://purl.obolibrary.org/obo/MRIO_0000398>	"an objective specification to determine a specified type of information about an entity evaluated by MR imaging"	
+<http://purl.obolibrary.org/obo/mrio.owl/MRIO_0000646>		
 <http://purl.obolibrary.org/obo/MRIO_0000620>		
 <http://purl.obolibrary.org/obo/MRIO_0000368>	"A type of MRI image in which the contrast is optimized to be"	
 <http://purl.obolibrary.org/obo/MRIO_0000385>		
@@ -112,6 +121,7 @@
 <http://purl.obolibrary.org/obo/MRIO_0000506>		
 <http://purl.obolibrary.org/obo/MRIO_0000515>	"FreeSurfer is a suite of tools for the analysis of neuroimaging data that provides an array of algorithms to quantify the functional, connectional and structural properties of the human brain. It has evolved from a package primarily aimed at generating surface representations of the cerebral cortex into one that automatically creates models of most macroscopically visible structures in the human brain given any reasonable T1-weighted input image. It is freely available, runs on a wide variety of hardware and software platforms, and is open source."	
 <http://purl.obolibrary.org/obo/MRIO__0000351>	"A type of MRI image in which the contrast emphasizes density of protons, supressing T1 and T2 effects"	
+<http://purl.obolibrary.org/obo/mrio.owl/MRIO_0000642>		
 <http://purl.obolibrary.org/obo/mrio.owl/MRIO_0000622>	"Measures the degree of diffusion weighting applied, thereby indicating the amplitude (G), time of applied gradients (δ) and duration between the paired gradients (Δ)."	
 <http://purl.obolibrary.org/obo/MRIO__0000357>	"The repetition time (TR) is the time from the application of an excitation pulse to the application of the next pulse. It determines how much longitudinal magnetization recovers between each pulse. It is measured in milliseconds. (radiopedia)"	
 <http://purl.obolibrary.org/obo/MRIO_0000510>		
@@ -123,6 +133,7 @@
 <http://purl.obolibrary.org/obo/MRIO_0000424>		
 <http://purl.obolibrary.org/obo/MRIO_0000522>	"Local polynomial approximation based intersection confidence interval (LPA-ICI) filter is one of the effective de-noising filters. This filter requires an adjustment of the ICI parameters for efficient window size selection. From the wide range of ICI parametric values, finding out the best set of tunes values is itself an optimization problem. The present study proposed a novel technique for parameter optimization of LPA-ICI filter using genetic algorithm (GA) for brain MR images de-noising. The experimental results proved that the proposed method outperforms the LPA-ICI method for de-noising in terms of various performance metrics for different noise variance levels. Obtained results reports that the ICI parameter values depend on the noise variance and the concerned under test image"	
 <http://purl.obolibrary.org/obo/MRIO_0000602>		
+<http://purl.obolibrary.org/obo/mrio.owl/MRIO_0000643>		
 <http://purl.obolibrary.org/obo/MRIO_0000382>	"a planned process that produces MR images from MR imaging datum"	
 <http://purl.obolibrary.org/obo/MRIO__0000359>	"the number of spin echoes in given unit of time"	
 <http://purl.obolibrary.org/obo/MRIO__0000355>	"A type of functional MRI in which the participant is given a task or tasks, which are timed with the acquisition"	
