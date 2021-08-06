@@ -1,6 +1,5 @@
 ?cls	?def	?xrefs
 <http://purl.obolibrary.org/obo/MRIO_0000516>		
-<http://purl.obolibrary.org/obo/MRIO__0000343>	"A type of T2-weighted image in which the cerebrospinal fluid signal has been nulled"	
 <http://purl.obolibrary.org/obo/MRIO_0000504>		
 <http://purl.obolibrary.org/obo/MRIO_0000379>	"an assay that produces MR data about an evaluant"	
 <http://purl.obolibrary.org/obo/MRIO_0000528>		
@@ -54,6 +53,7 @@
 <http://purl.obolibrary.org/obo/MRIO_0000414>	"quantification to determine the flow blood through the circulatory system of an evaluant"	
 <http://purl.obolibrary.org/obo/MRIO_0000392>		
 <http://purl.obolibrary.org/obo/MRIO_0000394>	"an MRI machine whose primary magnet has 1.5T of strength"	
+<http://purl.obolibrary.org/obo/mrio.owl/MRIO_0000635>		
 <http://purl.obolibrary.org/obo/mrio.owl/MRIO_0000630>	"Angle at which a proton's axis shifts from its longitudinal place to its transverse plane by excitation from radiofrequency pulses."@en	
 <http://purl.obolibrary.org/obo/MRIO_0000361>	"a parameter that can be selected by a technologist as a percent of our overall field of view.\n\nA different field of view (the scanned region) in the frequency and phase encoding directions that means the data acquisition with fewer measurement lines."	
 <http://purl.obolibrary.org/obo/MRIO_0000388>		
@@ -74,6 +74,7 @@
 <http://purl.obolibrary.org/obo/MRIO_0000413>	"an MR image objective to determine the presence of hypointense regions that normally appear as white matter on T1 image in an evaluant"	
 <http://purl.obolibrary.org/obo/MRIO_0000391>		
 <http://purl.obolibrary.org/obo/MRIO_0000383>	"the MRI machine setting datum about the radiofrequency pulse sequence"	
+<http://purl.obolibrary.org/obo/mrio.owl/MRIO_0000636>		
 <http://purl.obolibrary.org/obo/MRIO_0000610>	"A measuement datum which is a data set that is made up of an n-dimensional array of elements (or entries)."	
 <http://purl.obolibrary.org/obo/MRIO_0000387>		
 <http://purl.obolibrary.org/obo/MRIO_0000399>	"an MR image objective to determine the presence of extravasated blood in the brain of an evaluant"	

@@ -9,7 +9,7 @@ http://purl.obolibrary.org/obo/UBERON_0002421 ## hippocampal formation
 http://purl.obolibrary.org/obo/UBERON_0001876 ## amygdala
 http://purl.obolibrary.org/obo/UBERON_0001882 ## nucleus accumbens
 http://purl.obolibrary.org/obo/UBERON_0001898 ## hypothalamus
-http://purl.obolibrary.org/obo/UBERON_0026822 ## banks of superior temporal sulcus
+http://purl.obolibrary.org/obo/UBERON_0028622 ## banks of superior temporal sulcus
 http://purl.obolibrary.org/obo/UBERON_0028715 ## caudal anterior cingulate cortex
 http://purl.obolibrary.org/obo/UBERON_0006445 ## caudal middle frontal gyrus
 http://purl.obolibrary.org/obo/UBERON_0006092 ## cuneus cortex

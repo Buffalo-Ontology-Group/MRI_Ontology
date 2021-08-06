@@ -1,4 +1,50 @@
 Level	Rule Name	Subject	Property	Value
+ERROR	missing_label	caudate nucleus	label	
+ERROR	missing_label	amygdala	label	
+ERROR	missing_label	nucleus accumbens	label	
+ERROR	missing_label	hypothalamus	label	
+ERROR	missing_label	insula	label	
+ERROR	missing_label	cerebellar cortex	label	
+ERROR	missing_label	hippocampal formation	label	
+ERROR	missing_label	temporal pole	label	
+ERROR	missing_label	postcentral gyrus	label	
+ERROR	missing_label	orbital part of inferior frontal gyrus	label	
+ERROR	missing_label	triangular part of inferior frontal gyrus	label	
+ERROR	missing_label	superior frontal gyrus	label	
+ERROR	missing_label	supramarginal gyrus	label	
+ERROR	missing_label	precentral gyrus	label	
+ERROR	missing_label	entorhinal cortex	label	
+ERROR	missing_label	inferior temporal gyrus	label	
+ERROR	missing_label	fusiform gyrus	label	
+ERROR	missing_label	superior temporal gyrus	label	
+ERROR	missing_label	middle temporal gyrus	label	
+ERROR	missing_label	frontal pole	label	
+ERROR	missing_label	lingual gyrus	label	
+ERROR	missing_label	parahippocampal gyrus	label	
+ERROR	missing_label	opercular part of inferior frontal gyrus	label	
+ERROR	missing_label	inferior parietal cortex	label	
+ERROR	missing_label	cuneus cortex	label	
+ERROR	missing_label	precuneus cortex	label	
+ERROR	missing_label	superior parietal cortex	label	
+ERROR	missing_label	lateral occipital cortex	label	
+ERROR	missing_label	caudal middle frontal gyrus	label	
+ERROR	missing_label	rostral middle frontal gyrus	label	
+ERROR	missing_label	pallidum	label	
+ERROR	missing_label	left putamen	label	
+ERROR	missing_label	right putamen	label	
+ERROR	missing_label	right auditory cortex	label	
+ERROR	missing_label	left auditory cortex	label	
+ERROR	missing_label	left dorsal thalamus	label	
+ERROR	missing_label	right dorsal thalamus	label	
+ERROR	missing_label	medial orbital frontal cortex	label	
+ERROR	missing_label	posterior cingulate cortex	label	
+ERROR	missing_label	rostral anterior cingulate cortex	label	
+ERROR	missing_label	pericalcarine cortex	label	
+ERROR	missing_label	lateral orbital frontal cortex	label	
+ERROR	missing_label	isthmus of cingulate cortex	label	
+ERROR	missing_label	banks of superior temporal sulcus	label	
+ERROR	missing_label	caudal anterior cingulate cortex	label	
+ERROR	missing_label	paracentral lobule	label	
 ERROR	missing_ontology_description	http://purl.obolibrary.org/obo/mrio.owl	Description	
 ERROR	multiple_definitions	Post-Gd T1 image data set	definition	A type of post-contrast, T1 image for which the contrast agent is galolinium
 ERROR	multiple_definitions	Post-Gd T1 image data set	definition	a T1 image where gadolidium contrast agent has been used in the subject before image acquistion
@@ -28,7 +74,7 @@ WARN	missing_definition	T2 FSE image data set	definition
 WARN	missing_definition	has MRI sequence parameter	definition	
 WARN	missing_definition	volume measurement datum	definition	
 WARN	missing_definition	thalamic volume measurement datum	definition	
-WARN	missing_definition	! hi-res T1 image data set	definition	
+WARN	missing_definition	high resolution T1 weigted image data set	definition	
 WARN	missing_definition	3D GRE image	definition	
 WARN	missing_definition	baseline hi-res T1 image	definition	
 WARN	missing_definition	follow-up hi-res T1 image	definition	
@@ -36,7 +82,7 @@ WARN	missing_definition	T1 SE image	definition
 WARN	missing_definition	image data set analysis	definition	
 WARN	missing_definition	MR image data set analysis	definition	
 WARN	missing_definition	connectivity analysis	definition	
-WARN	missing_definition	FLAIR image data set	definition	
+WARN	missing_definition	T2 FLAIR image data set	definition	
 WARN	missing_definition	T2 image	definition	
 WARN	missing_definition	FIRST analysis	definition	
 WARN	missing_definition	FreeSurfer longitudinal analysis	definition	
@@ -73,13 +119,61 @@ WARN	missing_definition	N4 bias field correction	definition
 WARN	missing_definition	image data set	definition	
 WARN	missing_definition	MR image data set	definition	
 WARN	missing_definition	MRI machine parameter	definition	
+WARN	missing_definition	caudate nucleus	definition	
+WARN	missing_definition	amygdala	definition	
+WARN	missing_definition	nucleus accumbens	definition	
+WARN	missing_definition	hypothalamus	definition	
+WARN	missing_definition	insula	definition	
+WARN	missing_definition	cerebellar cortex	definition	
+WARN	missing_definition	hippocampal formation	definition	
+WARN	missing_definition	temporal pole	definition	
+WARN	missing_definition	postcentral gyrus	definition	
+WARN	missing_definition	orbital part of inferior frontal gyrus	definition	
+WARN	missing_definition	triangular part of inferior frontal gyrus	definition	
+WARN	missing_definition	superior frontal gyrus	definition	
+WARN	missing_definition	supramarginal gyrus	definition	
+WARN	missing_definition	precentral gyrus	definition	
+WARN	missing_definition	entorhinal cortex	definition	
+WARN	missing_definition	inferior temporal gyrus	definition	
+WARN	missing_definition	fusiform gyrus	definition	
+WARN	missing_definition	superior temporal gyrus	definition	
+WARN	missing_definition	middle temporal gyrus	definition	
+WARN	missing_definition	frontal pole	definition	
+WARN	missing_definition	lingual gyrus	definition	
+WARN	missing_definition	parahippocampal gyrus	definition	
+WARN	missing_definition	opercular part of inferior frontal gyrus	definition	
+WARN	missing_definition	inferior parietal cortex	definition	
+WARN	missing_definition	cuneus cortex	definition	
+WARN	missing_definition	precuneus cortex	definition	
+WARN	missing_definition	superior parietal cortex	definition	
+WARN	missing_definition	lateral occipital cortex	definition	
+WARN	missing_definition	caudal middle frontal gyrus	definition	
+WARN	missing_definition	rostral middle frontal gyrus	definition	
+WARN	missing_definition	pallidum	definition	
+WARN	missing_definition	left putamen	definition	
+WARN	missing_definition	right putamen	definition	
+WARN	missing_definition	right auditory cortex	definition	
+WARN	missing_definition	left auditory cortex	definition	
+WARN	missing_definition	left dorsal thalamus	definition	
+WARN	missing_definition	right dorsal thalamus	definition	
+WARN	missing_definition	medial orbital frontal cortex	definition	
+WARN	missing_definition	posterior cingulate cortex	definition	
+WARN	missing_definition	rostral anterior cingulate cortex	definition	
+WARN	missing_definition	pericalcarine cortex	definition	
+WARN	missing_definition	lateral orbital frontal cortex	definition	
+WARN	missing_definition	isthmus of cingulate cortex	definition	
+WARN	missing_definition	banks of superior temporal sulcus	definition	
+WARN	missing_definition	caudal anterior cingulate cortex	definition	
+WARN	missing_definition	paracentral lobule	definition	
 WARN	missing_definition	inversion recovery time (TI)	definition	
+WARN	missing_definition	diffusion weighted image data set	definition	
+WARN	missing_definition	perfusion weighted image data set	definition	
 INFO	lowercase_definition	FOV	definition	the distance (in cm or mm) over which an MR image is acquired or displayed.
 INFO	lowercase_definition	phase FOV	definition	"a parameter that can be selected by a technologist as a percent of our overall field of view.
 
 A different field of view (the scanned region) in the frequency and phase encoding directions that means the data acquisition with fewer measurement lines."
-INFO	lowercase_definition	T1 image data set	definition	<an MR image that demonstrates differences in the T1 relaxation times of tissues. TR: shortTE: shortfat: brightfluid: darkradiopedia>
-INFO	lowercase_definition	! T2-weighted image data set	definition	<an MR image that highlights differences in the T2 relaxation time of tissues.repetition time (TR): longecho time (TE): longflip angle: less important than with T1 weightingfat: intermediate-brightfluid: brightradiopedia>
+INFO	lowercase_definition	T1 weighted image data set	definition	<an MR image that demonstrates differences in the T1 relaxation times of tissues. TR: shortTE: shortfat: brightfluid: darkradiopedia>
+INFO	lowercase_definition	T2 weighted image data set	definition	<an MR image that highlights differences in the T2 relaxation time of tissues.repetition time (TR): longecho time (TE): longflip angle: less important than with T1 weightingfat: intermediate-brightfluid: brightradiopedia>
 INFO	lowercase_definition	MRI machine	definition	an image creation device that creates MR images
 INFO	lowercase_definition	MRI imaging assay	definition	an assay that produces MR data about an evaluant
 INFO	lowercase_definition	MRI machine setting datum	definition	the setting datum of an MRI machine
@@ -108,3 +202,4 @@ INFO	lowercase_definition	NeuroSTREAM analysis	definition	we set out to develop 
 INFO	lowercase_definition	Post-Gd T1 image data set	definition	a T1 image where gadolidium contrast agent has been used in the subject before image acquistion
 INFO	lowercase_definition	plane	definition	the direction that the MRI image was taken
 INFO	lowercase_definition	echo train length (ETL)	definition	the number of spin echoes in given unit of time
+INFO	missing_superclass	left dorsal thalamus	rdfs:subClassOf	
