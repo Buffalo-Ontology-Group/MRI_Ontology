@@ -2062,9 +2062,290 @@ variable
     
 
 
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001873 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0001873">
+        <obo:IAO_0000118>&apos;Left-Caudate&apos; and &apos;Right-Caudate&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001876 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0001876">
+        <obo:IAO_0000118>&apos;Left-Amygdala&apos; and &apos;Right-Amygdala&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001882 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0001882">
+        <obo:IAO_0000118>&apos;Left-Accumbens-area&apos; and &apos;Right-Accumbens-area&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+    </rdf:Description>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/UBERON_0001897 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001897"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001898 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0001898">
+        <obo:IAO_0000118>&apos;Left-VentralDC&apos; and &apos;Right-VentralDC&apos; (from Desikan-Killiany Atlas)</obo:IAO_0000118>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002022 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0002022">
+        <obo:IAO_0000118>&apos;lh-insula&apos; and &apos;rh-insula&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002129 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0002129">
+        <obo:IAO_0000118>&apos;Left-Cerebellum-Cortex&apos; and &apos;Right-Cerebellum-Cortex&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002421 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0002421">
+        <obo:IAO_0000118>&apos;Left-Hippocampus&apos; and &apos;Right-Hippocampus&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002576 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0002576">
+        <obo:IAO_0000118>&apos;lh-temporalpole&apos; and &apos;rh-temporalpole&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002581 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0002581">
+        <obo:IAO_0000118>&apos;lh-postcentral&apos; and &apos;rh-postcentral&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002624 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0002624">
+        <obo:IAO_0000118>&apos;lh-parsorbitalis&apos; and &apos;rh-parsobertalis&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002629 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0002629">
+        <obo:IAO_0000118>&apos;lh-parstriangularis&apos; and &apos;rh-parstriangularis&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002661 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0002661">
+        <obo:IAO_0000118>&apos;lh-superiorfrontal&apos; and &apos;rh-superiorfrontal&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002688 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0002688">
+        <obo:IAO_0000118>&apos;lh-supramarginal&apos; and &apos;rh-supramarginal&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002703 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0002703">
+        <obo:IAO_0000118>&apos;lh-precentral&apos; and &apos;rh-precentral&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002728 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0002728">
+        <obo:IAO_0000118>&apos;lh-entorhinal&apos; and &apos;rh-entorhinal&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002751 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0002751">
+        <obo:IAO_0000118>&apos;lh-inferiortemporal&apos; and &apos;rh-inferiortemporal&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002766 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0002766">
+        <obo:IAO_0000118>&apos;lh-fusiform&apos; and &apos;rh-fusiform&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002769 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0002769">
+        <obo:IAO_0000118>&apos;lh-superiortemporal&apos; and &apos;rh-superiortemporal&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002771 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0002771">
+        <obo:IAO_0000118>&apos;lh-middletemporal&apos; and &apos;rh-middletemporal&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002795 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0002795">
+        <obo:IAO_0000118>&apos;lh-frontalpole&apos; and &apos;rh-frontalpole&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002943 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0002943">
+        <obo:IAO_0000118>&apos;lh-lingual&apos; and &apos;rh-lingual&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002973 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0002973">
+        <obo:IAO_0000118>&apos;lh-parahippocampal&apos; and &apos;rh-parahippocampal&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002980 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0002980">
+        <obo:IAO_0000118>&apos;lh-parsopercularis&apos; and &apos;rh-parsopercularis&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0006088 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0006088">
+        <obo:IAO_0000118>&apos;lh-inferiorparietal&apos; and &apos;rh-inferiorparietal&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0006092 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0006092">
+        <obo:IAO_0000118>&apos;lh-cuneus&apos; and &apos;rh-cuneus&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0006093 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0006093">
+        <obo:IAO_0000118>&apos;lh-precuneus&apos; and &apos;rh-precuneus&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0006094 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0006094">
+        <obo:IAO_0000118>&apos;lh-superiorparietal&apos; and &apos;rh-superiorparietal&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0006114 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0006114">
+        <obo:IAO_0000118>&apos;lh-lateraloccipital&apos; and &apos;rh-lateraloccipital&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0006445 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0006445">
+        <obo:IAO_0000118>&apos;lh-caudalmiddlefrontal&apos; and &apos;rh-caudalmiddlefrontal&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0006446 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0006446">
+        <obo:IAO_0000118>&apos;lh-rostralmiddlefrontal&apos; and &apos;rh-rostralmiddlefrontal&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0006514 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0006514">
+        <obo:IAO_0000118>&apos;Left-Pallidum&apos; and &apos;Right-Pallidum&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0008884 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0008884">
+        <obo:IAO_0000118>&apos;Left-Putamen&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0008885 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0008885">
+        <obo:IAO_0000118>&apos;&apos;Right-Putamen&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0009897 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0009897">
+        <obo:IAO_0000116 xml:lang="en">Corrected error saying this is in the left hemisphere of the brain.</obo:IAO_0000116>
+        <obo:IAO_0000118>&apos;rh-transversetemporal&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0009898 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0009898">
+        <obo:IAO_0000118>&apos;lh-transversetemporal&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+    </rdf:Description>
     
 
 
@@ -2086,6 +2367,78 @@ variable
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0013684">
         <obo:IAO_0000118>&apos;Right-Thalamus-Proper&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0022352 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0022352">
+        <obo:IAO_0000118>&apos;lh-medialorbitofrontal&apos; and &apos;rh-imedialorbitofrontal&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0022353 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0022353">
+        <obo:IAO_0000118>&apos;lh-posteriorcingulate&apos; and &apos;rh-posteriorcingulate&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0022438 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0022438">
+        <obo:IAO_0000118>&apos;lh-rostralanteriorcingulate&apos; and &apos;rh-rostralanteriorcingulate&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0022534 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0022534">
+        <obo:IAO_0000118>&apos;lh-pericalcarine&apos; and &apos;rh-pericalcarine&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0022716 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0022716">
+        <obo:IAO_0000118>&apos;lh-lateralorbitofrontal&apos; and &apos;rh-lateralorbitofrontal&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0027061 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0027061">
+        <obo:IAO_0000118>&apos;lh-isthmuscingulate&apos; and &apos;rh-isthmuscingulate&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0028622 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0028622">
+        <obo:IAO_0000118>bankssts</obo:IAO_0000118>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0028715 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0028715">
+        <obo:IAO_0000118>&apos;lh-caudalanteriorcingulate&apos; and &apos;rh-caudalanteriorcingulate&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0035933 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0035933">
+        <obo:IAO_0000118>&apos;lh-paracentral&apos; and &apos;rh-paracentral&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
     </rdf:Description>
     
 
@@ -2390,6 +2743,282 @@ variable
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/mrio.owl/MRIO_0000649">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/mrio.owl/MRIO_0000648"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001873"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001876"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001882"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001898"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002022"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002129"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002421"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002576"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002581"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002624"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002629"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002661"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002688"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002703"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002728"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002751"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002766"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002769"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002771"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002795"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002943"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002973"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002980"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006088"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006092"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006093"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006094"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006114"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006445"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006446"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006514"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0008884"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0008885"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0009897"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0009898"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0013683"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0013684"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0022352"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0022353"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0022438"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0022534"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0022716"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0027061"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0028622"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0028715"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0035933"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Desikan-Killiany brain atlas image data set</rdfs:label>
     </owl:Class>
     
@@ -2513,150 +3142,6 @@ variable
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/mrio.owl/MRIO_0000627"/>
         <rdfs:label xml:lang="en">Inversion recovery sequence</rdfs:label>
     </owl:NamedIndividual>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotations
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0001873">
-        <obo:IAO_0000118>&apos;Left-Caudate&apos; and &apos;Right-Caudate&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0001876">
-        <obo:IAO_0000118>&apos;Left-Amygdala&apos; and &apos;Right-Amygdala&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0001882">
-        <obo:IAO_0000118>&apos;Left-Accumbens-area&apos; and &apos;Right-Accumbens-area&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0001898">
-        <obo:IAO_0000118>&apos;Left-VentralDC&apos; and &apos;Right-VentralDC&apos; (from Desikan-Killiany Atlas)</obo:IAO_0000118>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0002022">
-        <obo:IAO_0000118>&apos;lh-insula&apos; and &apos;rh-insula&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0002129">
-        <obo:IAO_0000118>&apos;Left-Cerebellum-Cortex&apos; and &apos;Right-Cerebellum-Cortex&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0002421">
-        <obo:IAO_0000118>&apos;Left-Hippocampus&apos; and &apos;Right-Hippocampus&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0002576">
-        <obo:IAO_0000118>&apos;lh-temporalpole&apos; and &apos;rh-temporalpole&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0002581">
-        <obo:IAO_0000118>&apos;lh-postcentral&apos; and &apos;rh-postcentral&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0002624">
-        <obo:IAO_0000118>&apos;lh-parsorbitalis&apos; and &apos;rh-parsobertalis&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0002629">
-        <obo:IAO_0000118>&apos;lh-parstriangularis&apos; and &apos;rh-parstriangularis&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0002661">
-        <obo:IAO_0000118>&apos;lh-superiorfrontal&apos; and &apos;rh-superiorfrontal&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0002688">
-        <obo:IAO_0000118>&apos;lh-supramarginal&apos; and &apos;rh-supramarginal&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0002703">
-        <obo:IAO_0000118>&apos;lh-precentral&apos; and &apos;rh-precentral&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0002728">
-        <obo:IAO_0000118>&apos;lh-entorhinal&apos; and &apos;rh-entorhinal&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0002751">
-        <obo:IAO_0000118>&apos;lh-inferiortemporal&apos; and &apos;rh-inferiortemporal&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0002766">
-        <obo:IAO_0000118>&apos;lh-fusiform&apos; and &apos;rh-fusiform&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0002769">
-        <obo:IAO_0000118>&apos;lh-superiortemporal&apos; and &apos;rh-superiortemporal&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0002771">
-        <obo:IAO_0000118>&apos;lh-middletemporal&apos; and &apos;rh-middletemporal&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0002795">
-        <obo:IAO_0000118>&apos;lh-frontalpole&apos; and &apos;rh-frontalpole&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0002943">
-        <obo:IAO_0000118>&apos;lh-lingual&apos; and &apos;rh-lingual&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0002973">
-        <obo:IAO_0000118>&apos;lh-parahippocampal&apos; and &apos;rh-parahippocampal&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0002980">
-        <obo:IAO_0000118>&apos;lh-parsopercularis&apos; and &apos;rh-parsopercularis&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0006088">
-        <obo:IAO_0000118>&apos;lh-inferiorparietal&apos; and &apos;rh-inferiorparietal&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0006092">
-        <obo:IAO_0000118>&apos;lh-cuneus&apos; and &apos;rh-cuneus&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0006093">
-        <obo:IAO_0000118>&apos;lh-precuneus&apos; and &apos;rh-precuneus&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0006094">
-        <obo:IAO_0000118>&apos;lh-superiorparietal&apos; and &apos;rh-superiorparietal&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0006114">
-        <obo:IAO_0000118>&apos;lh-lateraloccipital&apos; and &apos;rh-lateraloccipital&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0006445">
-        <obo:IAO_0000118>&apos;lh-caudalmiddlefrontal&apos; and &apos;rh-caudalmiddlefrontal&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0006446">
-        <obo:IAO_0000118>&apos;lh-rostralmiddlefrontal&apos; and &apos;rh-rostralmiddlefrontal&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0006514">
-        <obo:IAO_0000118>&apos;Left-Pallidum&apos; and &apos;Right-Pallidum&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0008884">
-        <obo:IAO_0000118>&apos;Left-Putamen&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0008885">
-        <obo:IAO_0000118>&apos;&apos;Right-Putamen&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0009897">
-        <obo:IAO_0000116 xml:lang="en">Corrected error saying this is in the left hemisphere of the brain.</obo:IAO_0000116>
-        <obo:IAO_0000118>&apos;rh-transversetemporal&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0009898">
-        <obo:IAO_0000118>&apos;lh-transversetemporal&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0022352">
-        <obo:IAO_0000118>&apos;lh-medialorbitofrontal&apos; and &apos;rh-imedialorbitofrontal&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0022353">
-        <obo:IAO_0000118>&apos;lh-posteriorcingulate&apos; and &apos;rh-posteriorcingulate&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0022438">
-        <obo:IAO_0000118>&apos;lh-rostralanteriorcingulate&apos; and &apos;rh-rostralanteriorcingulate&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0022534">
-        <obo:IAO_0000118>&apos;lh-pericalcarine&apos; and &apos;rh-pericalcarine&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0022716">
-        <obo:IAO_0000118>&apos;lh-lateralorbitofrontal&apos; and &apos;rh-lateralorbitofrontal&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0027061">
-        <obo:IAO_0000118>&apos;lh-isthmuscingulate&apos; and &apos;rh-isthmuscingulate&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0028622">
-        <obo:IAO_0000118>bankssts</obo:IAO_0000118>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0028715">
-        <obo:IAO_0000118>&apos;lh-caudalanteriorcingulate&apos; and &apos;rh-caudalanteriorcingulate&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0035933">
-        <obo:IAO_0000118>&apos;lh-paracentral&apos; and &apos;rh-paracentral&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
-    </rdf:Description>
 </rdf:RDF>
 
 
