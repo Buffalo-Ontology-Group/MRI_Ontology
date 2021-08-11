@@ -40,6 +40,14 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000136 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000136">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MRIO_0000375 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/MRIO_0000375">
@@ -1670,7 +1678,7 @@ variable
     <!-- http://purl.obolibrary.org/obo/MRIO_0000607 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000607">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000610"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000611"/>
         <rdfs:label xml:lang="en">functional connectivity matrix</rdfs:label>
     </owl:Class>
     
@@ -1931,16 +1939,25 @@ variable
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000625"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/mrio.owl/MRIO_0000649"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">c-pac functional connectivity matrix</rdfs:label>
+        <rdfs:label xml:lang="en">Desikan-Killiany functional connectivity matrix</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_0000627 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000627">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000626"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000625"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">default mode network functional connectivity matrix</rdfs:label>
     </owl:Class>
     
 
