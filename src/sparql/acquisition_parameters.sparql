@@ -1,0 +1,29 @@
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX root: <http://purl.obolibrary.org/obo/mrio.owl/MRIO_0000623>
+PREFIX root2: <http://purl.obolibrary.org/obo/MRIO_0000383>
+PREFIX TR: <http://purl.obolibrary.org/obo/MRIO_0000376>
+PREFIX TE: <http://purl.obolibrary.org/obo/MRIO_0000377>
+PREFIX flip: <http://purl.obolibrary.org/obo/MRIO_0000384>
+
+SELECT DISTINCT ?subject ?subject_label ?flip ?number ?parameter ?property ?property_label ?parsetype ?datatype
+WHERE {
+    ?subject rdfs:subClassOf* root: .
+    ?subject rdfs:label ?subject_label .
+    
+    ?flip_angle rdf:type owl:Restriction;
+                    owl:onProperty flip:;
+                    owl:hasValue ?flip .
+    optional{  
+    ?has_TE rdf:type owl:Restriction;
+                     owl:onProperty TE:;
+                     owl:someValuesFrom [ 
+                                         a rdfs:Datatype; 
+                                         owl:onDatatype ?datatype;
+                                         owl:withRestrictions ?parsetype;
+                                      ].
+   }
+} 
+order by ?subject

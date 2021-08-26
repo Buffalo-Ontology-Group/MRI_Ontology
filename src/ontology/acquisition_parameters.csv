@@ -1,0 +1,145 @@
+subject,subject_label,flip,number,parameter,property,property_label,parsetype,datatype
+http://purl.obolibrary.org/obo/MRIO_0000385,T1 weighted MRI acquisition sequence,180,,,,,_:b0,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000385,T1 weighted MRI acquisition sequence,180,,,,,_:b1,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000385,T1 weighted MRI acquisition sequence,180,,,,,_:b2,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000385,T1 weighted MRI acquisition sequence,180,,,,,_:b3,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000385,T1 weighted MRI acquisition sequence,180,,,,,_:b4,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000385,T1 weighted MRI acquisition sequence,180,,,,,_:b5,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000385,T1 weighted MRI acquisition sequence,180,,,,,_:b6,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000385,T1 weighted MRI acquisition sequence,180,,,,,_:b7,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000385,T1 weighted MRI acquisition sequence,90,,,,,_:b0,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000385,T1 weighted MRI acquisition sequence,90,,,,,_:b1,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000385,T1 weighted MRI acquisition sequence,90,,,,,_:b2,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000385,T1 weighted MRI acquisition sequence,90,,,,,_:b3,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000385,T1 weighted MRI acquisition sequence,90,,,,,_:b4,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000385,T1 weighted MRI acquisition sequence,90,,,,,_:b5,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000385,T1 weighted MRI acquisition sequence,90,,,,,_:b6,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000385,T1 weighted MRI acquisition sequence,90,,,,,_:b7,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000386,T2 weighted MRI acquisition sequence,180,,,,,_:b0,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000386,T2 weighted MRI acquisition sequence,180,,,,,_:b1,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000386,T2 weighted MRI acquisition sequence,180,,,,,_:b2,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000386,T2 weighted MRI acquisition sequence,180,,,,,_:b3,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000386,T2 weighted MRI acquisition sequence,180,,,,,_:b4,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000386,T2 weighted MRI acquisition sequence,180,,,,,_:b5,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000386,T2 weighted MRI acquisition sequence,180,,,,,_:b6,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000386,T2 weighted MRI acquisition sequence,180,,,,,_:b7,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000386,T2 weighted MRI acquisition sequence,90,,,,,_:b0,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000386,T2 weighted MRI acquisition sequence,90,,,,,_:b1,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000386,T2 weighted MRI acquisition sequence,90,,,,,_:b2,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000386,T2 weighted MRI acquisition sequence,90,,,,,_:b3,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000386,T2 weighted MRI acquisition sequence,90,,,,,_:b4,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000386,T2 weighted MRI acquisition sequence,90,,,,,_:b5,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000386,T2 weighted MRI acquisition sequence,90,,,,,_:b6,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000386,T2 weighted MRI acquisition sequence,90,,,,,_:b7,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000387,Proton density sequence,180,,,,,_:b0,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000387,Proton density sequence,180,,,,,_:b1,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000387,Proton density sequence,180,,,,,_:b2,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000387,Proton density sequence,180,,,,,_:b3,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000387,Proton density sequence,180,,,,,_:b4,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000387,Proton density sequence,180,,,,,_:b5,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000387,Proton density sequence,180,,,,,_:b6,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000387,Proton density sequence,180,,,,,_:b7,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000387,Proton density sequence,90,,,,,_:b0,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000387,Proton density sequence,90,,,,,_:b1,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000387,Proton density sequence,90,,,,,_:b2,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000387,Proton density sequence,90,,,,,_:b3,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000387,Proton density sequence,90,,,,,_:b4,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000387,Proton density sequence,90,,,,,_:b5,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000387,Proton density sequence,90,,,,,_:b6,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000387,Proton density sequence,90,,,,,_:b7,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000388,T2 FSE sequence,180,,,,,_:b0,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000388,T2 FSE sequence,180,,,,,_:b1,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000388,T2 FSE sequence,180,,,,,_:b2,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000388,T2 FSE sequence,180,,,,,_:b3,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000388,T2 FSE sequence,180,,,,,_:b4,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000388,T2 FSE sequence,180,,,,,_:b5,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000388,T2 FSE sequence,180,,,,,_:b6,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000388,T2 FSE sequence,180,,,,,_:b7,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000388,T2 FSE sequence,90,,,,,_:b0,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000388,T2 FSE sequence,90,,,,,_:b1,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000388,T2 FSE sequence,90,,,,,_:b2,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000388,T2 FSE sequence,90,,,,,_:b3,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000388,T2 FSE sequence,90,,,,,_:b4,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000388,T2 FSE sequence,90,,,,,_:b5,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000388,T2 FSE sequence,90,,,,,_:b6,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000388,T2 FSE sequence,90,,,,,_:b7,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000389,T1 GRE sequence,180,,,,,_:b0,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000389,T1 GRE sequence,180,,,,,_:b1,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000389,T1 GRE sequence,180,,,,,_:b2,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000389,T1 GRE sequence,180,,,,,_:b3,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000389,T1 GRE sequence,180,,,,,_:b4,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000389,T1 GRE sequence,180,,,,,_:b5,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000389,T1 GRE sequence,180,,,,,_:b6,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000389,T1 GRE sequence,180,,,,,_:b7,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000389,T1 GRE sequence,90,,,,,_:b0,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000389,T1 GRE sequence,90,,,,,_:b1,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000389,T1 GRE sequence,90,,,,,_:b2,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000389,T1 GRE sequence,90,,,,,_:b3,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000389,T1 GRE sequence,90,,,,,_:b4,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000389,T1 GRE sequence,90,,,,,_:b5,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000389,T1 GRE sequence,90,,,,,_:b6,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000389,T1 GRE sequence,90,,,,,_:b7,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000390,T2* GRE sequence,180,,,,,_:b0,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000390,T2* GRE sequence,180,,,,,_:b1,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000390,T2* GRE sequence,180,,,,,_:b2,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000390,T2* GRE sequence,180,,,,,_:b3,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000390,T2* GRE sequence,180,,,,,_:b4,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000390,T2* GRE sequence,180,,,,,_:b5,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000390,T2* GRE sequence,180,,,,,_:b6,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000390,T2* GRE sequence,180,,,,,_:b7,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000390,T2* GRE sequence,90,,,,,_:b0,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000390,T2* GRE sequence,90,,,,,_:b1,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000390,T2* GRE sequence,90,,,,,_:b2,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000390,T2* GRE sequence,90,,,,,_:b3,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000390,T2* GRE sequence,90,,,,,_:b4,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000390,T2* GRE sequence,90,,,,,_:b5,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000390,T2* GRE sequence,90,,,,,_:b6,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000390,T2* GRE sequence,90,,,,,_:b7,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000391,STIR sequence,180,,,,,_:b0,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000391,STIR sequence,180,,,,,_:b1,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000391,STIR sequence,180,,,,,_:b2,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000391,STIR sequence,180,,,,,_:b3,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000391,STIR sequence,180,,,,,_:b4,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000391,STIR sequence,180,,,,,_:b5,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000391,STIR sequence,180,,,,,_:b6,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000391,STIR sequence,180,,,,,_:b7,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000391,STIR sequence,90,,,,,_:b0,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000391,STIR sequence,90,,,,,_:b1,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000391,STIR sequence,90,,,,,_:b2,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000391,STIR sequence,90,,,,,_:b3,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000391,STIR sequence,90,,,,,_:b4,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000391,STIR sequence,90,,,,,_:b5,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000391,STIR sequence,90,,,,,_:b6,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000391,STIR sequence,90,,,,,_:b7,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000392,T2 FLAIR sequence,180,,,,,_:b0,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000392,T2 FLAIR sequence,180,,,,,_:b1,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000392,T2 FLAIR sequence,180,,,,,_:b2,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000392,T2 FLAIR sequence,180,,,,,_:b3,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000392,T2 FLAIR sequence,180,,,,,_:b4,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000392,T2 FLAIR sequence,180,,,,,_:b5,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000392,T2 FLAIR sequence,180,,,,,_:b6,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000392,T2 FLAIR sequence,180,,,,,_:b7,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000392,T2 FLAIR sequence,90,,,,,_:b0,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000392,T2 FLAIR sequence,90,,,,,_:b1,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000392,T2 FLAIR sequence,90,,,,,_:b2,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000392,T2 FLAIR sequence,90,,,,,_:b3,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000392,T2 FLAIR sequence,90,,,,,_:b4,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000392,T2 FLAIR sequence,90,,,,,_:b5,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000392,T2 FLAIR sequence,90,,,,,_:b6,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/MRIO_0000392,T2 FLAIR sequence,90,,,,,_:b7,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/mrio.owl/MRIO_0000623,MRI acquisition sequence,180,,,,,_:b0,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/mrio.owl/MRIO_0000623,MRI acquisition sequence,180,,,,,_:b1,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/mrio.owl/MRIO_0000623,MRI acquisition sequence,180,,,,,_:b2,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/mrio.owl/MRIO_0000623,MRI acquisition sequence,180,,,,,_:b3,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/mrio.owl/MRIO_0000623,MRI acquisition sequence,180,,,,,_:b4,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/mrio.owl/MRIO_0000623,MRI acquisition sequence,180,,,,,_:b5,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/mrio.owl/MRIO_0000623,MRI acquisition sequence,180,,,,,_:b6,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/mrio.owl/MRIO_0000623,MRI acquisition sequence,180,,,,,_:b7,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/mrio.owl/MRIO_0000623,MRI acquisition sequence,90,,,,,_:b0,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/mrio.owl/MRIO_0000623,MRI acquisition sequence,90,,,,,_:b1,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/mrio.owl/MRIO_0000623,MRI acquisition sequence,90,,,,,_:b2,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/mrio.owl/MRIO_0000623,MRI acquisition sequence,90,,,,,_:b3,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/mrio.owl/MRIO_0000623,MRI acquisition sequence,90,,,,,_:b4,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/mrio.owl/MRIO_0000623,MRI acquisition sequence,90,,,,,_:b5,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/mrio.owl/MRIO_0000623,MRI acquisition sequence,90,,,,,_:b6,http://www.w3.org/2001/XMLSchema#float
+http://purl.obolibrary.org/obo/mrio.owl/MRIO_0000623,MRI acquisition sequence,90,,,,,_:b7,http://www.w3.org/2001/XMLSchema#float

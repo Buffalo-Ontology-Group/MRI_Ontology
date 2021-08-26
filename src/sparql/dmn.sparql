@@ -1,0 +1,33 @@
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX about: <http://purl.obolibrary.org/obo/IAO_0000136>
+PREFIX DK: <http://purl.obolibrary.org/obo/mrio.owl/MRIO_0000649>
+PREFIX DMN: <http://purl.obolibrary.org/obo/MRIO_0000625>
+PREFIX alt: <http://purl.obolibrary.org/obo/IAO_0000118>
+PREFIX test: <http://purl.obolibrary.org/obo/MRIO_0000626>
+select ?DK ?DK_label ?DMN ?DMN_label where
+{
+  ?DK rdfs:subClassOf 
+       [ 
+         a owl:Restriction; 
+         owl:onProperty about:;
+         owl:someValuesFrom DK:
+      ].
+      
+  optional{
+  ?DK rdfs:label ?DK_label . 
+  }
+  
+  ?DMN rdfs:subClassOf 
+       [ 
+         a owl:Restriction; 
+         owl:onProperty about:;
+         owl:someValuesFrom DMN:
+      ].
+      
+  optional{
+  ?DMN rdfs:label ?DMN_label . 
+  }
+}
+order by ?DK ?DMN
