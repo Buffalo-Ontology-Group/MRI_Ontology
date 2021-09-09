@@ -45,11 +45,13 @@ ERROR	missing_label	isthmus of cingulate cortex	label
 ERROR	missing_label	banks of superior temporal sulcus	label	
 ERROR	missing_label	caudal anterior cingulate cortex	label	
 ERROR	missing_label	paracentral lobule	label	
-ERROR	missing_ontology_description	http://purl.obolibrary.org/obo/mrio.owl	Description	
+ERROR	missing_ontology_description	http://purl.obolibrary.org/obo	Description	
 ERROR	multiple_definitions	Post-Gd T1 image data set	definition	A type of post-contrast, T1 image for which the contrast agent is galolinium
 ERROR	multiple_definitions	Post-Gd T1 image data set	definition	a T1 image where gadolidium contrast agent has been used in the subject before image acquistion
-ERROR	missing_ontology_license	http://purl.obolibrary.org/obo/mrio.owl	dc:license	
-ERROR	missing_ontology_title	http://purl.obolibrary.org/obo/mrio.owl	Title	
+ERROR	missing_ontology_license	http://purl.obolibrary.org/obo	dc:license	
+ERROR	missing_ontology_title	http://purl.obolibrary.org/obo	Title	
+WARN	missing_definition	MR image data set	definition	
+WARN	missing_definition	MRI machine parameter	definition	
 WARN	missing_definition	slice thickness	definition	
 WARN	missing_definition	sagittal	definition	
 WARN	missing_definition	coronal	definition	
@@ -102,6 +104,7 @@ WARN	missing_definition	T2 lesion mask	definition
 WARN	missing_definition	MR image transformation	definition	
 WARN	missing_definition	FLAIR lesion mask	definition	
 WARN	missing_definition	has TI	definition	
+WARN	missing_definition	functional connectivity matrix	definition	
 WARN	missing_definition	tensor measurement datum	definition	
 WARN	missing_definition	ChaCo datum	definition	
 WARN	missing_definition	connectivity matrix	definition	
@@ -117,8 +120,24 @@ WARN	missing_definition	MR image artifact correction	definition
 WARN	missing_definition	MR image bias field correction	definition	
 WARN	missing_definition	N4 bias field correction	definition	
 WARN	missing_definition	image data set	definition	
-WARN	missing_definition	MR image data set	definition	
-WARN	missing_definition	MRI machine parameter	definition	
+WARN	missing_definition	Smith resting state network atlas	definition	
+WARN	missing_definition	default mode network atlas	definition	
+WARN	missing_definition	Desikan-Killiany functional connectivity matrix	definition	
+WARN	missing_definition	default mode network functional connectivity matrix	definition	
+WARN	missing_definition	diffusion weighted image data set	definition	
+WARN	missing_definition	perfusion weighted image data set	definition	
+WARN	missing_definition	dorsal plus ventral thalamus volume measurement datum	definition	
+WARN	missing_definition	left dorsal thalamic volume measurement datum	definition	
+WARN	missing_definition	right dorsal thalamic volume measurement datum	definition	
+WARN	missing_definition	dorsal thalamic volume measurement datum	definition	
+WARN	missing_definition	DeepGRAI analysis of the dorsal thalamus	definition	
+WARN	missing_definition	DeepGRAI analysis of the right dorsal thalamus	definition	
+WARN	missing_definition	brain region atlas image dataset	definition	
+WARN	missing_definition	probabilistic brain region atlas image dataset	definition	
+WARN	missing_definition	Desikan-Killiany brain atlas image data set	definition	
+WARN	missing_definition	deterministic brain region atlas image data set	definition	
+WARN	missing_definition	c-pac	definition	
+WARN	missing_definition	inversion recovery time (TI)	definition	
 WARN	missing_definition	caudate nucleus	definition	
 WARN	missing_definition	amygdala	definition	
 WARN	missing_definition	nucleus accumbens	definition	
@@ -165,21 +184,10 @@ WARN	missing_definition	isthmus of cingulate cortex	definition
 WARN	missing_definition	banks of superior temporal sulcus	definition	
 WARN	missing_definition	caudal anterior cingulate cortex	definition	
 WARN	missing_definition	paracentral lobule	definition	
-WARN	missing_definition	inversion recovery time (TI)	definition	
-WARN	missing_definition	diffusion weighted image data set	definition	
-WARN	missing_definition	perfusion weighted image data set	definition	
-WARN	missing_definition	dorsal plus ventral thalamus volume measurement datum	definition	
-WARN	missing_definition	left dorsal thalamic volume measurement datum	definition	
-WARN	missing_definition	right dorsal thalamic volume measurement datum	definition	
-WARN	missing_definition	dorsal thalamic volume measurement datum	definition	
-WARN	missing_definition	DeepGRAI analysis of the dorsal thalamus	definition	
-WARN	missing_definition	DeepGRAI analysis of the right dorsal thalamus	definition	
-WARN	missing_definition	brain region atlas image dataset	definition	
-WARN	missing_definition	probabilistic brain region atlas image dataset	definition	
-WARN	missing_definition	Desikan-Killiany brain atlas image data set	definition	
-WARN	missing_definition	deterministic brain region atlas image data set	definition	
-WARN	missing_definition	c-pac	definition	
 INFO	lowercase_definition	FOV	definition	the distance (in cm or mm) over which an MR image is acquired or displayed.
+INFO	lowercase_definition	Post-Gd T1 image data set	definition	a T1 image where gadolidium contrast agent has been used in the subject before image acquistion
+INFO	lowercase_definition	plane	definition	the direction that the MRI image was taken
+INFO	lowercase_definition	echo train length (ETL)	definition	the number of spin echoes in given unit of time
 INFO	lowercase_definition	phase FOV	definition	"a parameter that can be selected by a technologist as a percent of our overall field of view.
 
 A different field of view (the scanned region) in the frequency and phase encoding directions that means the data acquisition with fewer measurement lines."
@@ -210,7 +218,4 @@ INFO	lowercase_definition	functional mapping	definition	a functional assessment 
 INFO	lowercase_definition	functional assessment	definition	an MR image assessment to determine brain activity by detecting changes associated with blood flow in an evaluant
 INFO	lowercase_definition	quantification	definition	an MR image objective to determine the specified quantity of a substance in an evaluant
 INFO	lowercase_definition	NeuroSTREAM analysis	definition	we set out to develop and validate an LVV quantification tool for this purpose. Our goal was not to produce a method more precise or accurate than those described above. Rather, we sought to produce a highly robust technique capable of operating on clinical-quality T2-FLAIR images and producing results similar to more established techniques run on high-resolution scans. To do this, we extended an earlier idea for whole brain analysis proposed by (Baillard et al., 2001), and adapted it to LVV measurement on T2-FLAIR images. The core of our approach is a combination of multi-atlas segmentation and level-set refinement. We also extended the cross-sectional method for direct longitudinal analysis by including an optional Jacobian integration step. We called the resulting algorithm “Neurological Software Tool for Reliable Atrophy Measurement” - NeuroSTREAM.
-INFO	lowercase_definition	Post-Gd T1 image data set	definition	a T1 image where gadolidium contrast agent has been used in the subject before image acquistion
-INFO	lowercase_definition	plane	definition	the direction that the MRI image was taken
-INFO	lowercase_definition	echo train length (ETL)	definition	the number of spin echoes in given unit of time
 INFO	missing_superclass	left dorsal thalamus	rdfs:subClassOf	
