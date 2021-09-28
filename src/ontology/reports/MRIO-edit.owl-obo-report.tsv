@@ -1,56 +1,55 @@
 Level	Rule Name	Subject	Property	Value
-ERROR	missing_label	caudate nucleus	label	
-ERROR	missing_label	amygdala	label	
-ERROR	missing_label	nucleus accumbens	label	
-ERROR	missing_label	hypothalamus	label	
-ERROR	missing_label	insula	label	
-ERROR	missing_label	cerebellar cortex	label	
-ERROR	missing_label	hippocampal formation	label	
-ERROR	missing_label	temporal pole	label	
-ERROR	missing_label	postcentral gyrus	label	
-ERROR	missing_label	orbital part of inferior frontal gyrus	label	
-ERROR	missing_label	triangular part of inferior frontal gyrus	label	
-ERROR	missing_label	superior frontal gyrus	label	
-ERROR	missing_label	supramarginal gyrus	label	
-ERROR	missing_label	precentral gyrus	label	
-ERROR	missing_label	entorhinal cortex	label	
-ERROR	missing_label	inferior temporal gyrus	label	
-ERROR	missing_label	fusiform gyrus	label	
-ERROR	missing_label	superior temporal gyrus	label	
-ERROR	missing_label	middle temporal gyrus	label	
-ERROR	missing_label	frontal pole	label	
-ERROR	missing_label	lingual gyrus	label	
-ERROR	missing_label	parahippocampal gyrus	label	
-ERROR	missing_label	opercular part of inferior frontal gyrus	label	
-ERROR	missing_label	inferior parietal cortex	label	
-ERROR	missing_label	cuneus cortex	label	
-ERROR	missing_label	precuneus cortex	label	
-ERROR	missing_label	superior parietal cortex	label	
-ERROR	missing_label	lateral occipital cortex	label	
-ERROR	missing_label	caudal middle frontal gyrus	label	
-ERROR	missing_label	rostral middle frontal gyrus	label	
-ERROR	missing_label	pallidum	label	
-ERROR	missing_label	left putamen	label	
-ERROR	missing_label	right putamen	label	
-ERROR	missing_label	right auditory cortex	label	
-ERROR	missing_label	left auditory cortex	label	
-ERROR	missing_label	left dorsal thalamus	label	
-ERROR	missing_label	right dorsal thalamus	label	
-ERROR	missing_label	medial orbital frontal cortex	label	
-ERROR	missing_label	posterior cingulate cortex	label	
-ERROR	missing_label	rostral anterior cingulate cortex	label	
-ERROR	missing_label	pericalcarine cortex	label	
-ERROR	missing_label	lateral orbital frontal cortex	label	
-ERROR	missing_label	isthmus of cingulate cortex	label	
-ERROR	missing_label	banks of superior temporal sulcus	label	
-ERROR	missing_label	caudal anterior cingulate cortex	label	
-ERROR	missing_label	paracentral lobule	label	
-ERROR	missing_ontology_description	http://purl.obolibrary.org/obo	Description	
+ERROR	missing_label	caudate nucleus	rdfs:label	
+ERROR	missing_label	amygdala	rdfs:label	
+ERROR	missing_label	nucleus accumbens	rdfs:label	
+ERROR	missing_label	hypothalamus	rdfs:label	
+ERROR	missing_label	insula	rdfs:label	
+ERROR	missing_label	cerebellar cortex	rdfs:label	
+ERROR	missing_label	hippocampal formation	rdfs:label	
+ERROR	missing_label	temporal pole	rdfs:label	
+ERROR	missing_label	postcentral gyrus	rdfs:label	
+ERROR	missing_label	orbital part of inferior frontal gyrus	rdfs:label	
+ERROR	missing_label	triangular part of inferior frontal gyrus	rdfs:label	
+ERROR	missing_label	superior frontal gyrus	rdfs:label	
+ERROR	missing_label	supramarginal gyrus	rdfs:label	
+ERROR	missing_label	precentral gyrus	rdfs:label	
+ERROR	missing_label	entorhinal cortex	rdfs:label	
+ERROR	missing_label	inferior temporal gyrus	rdfs:label	
+ERROR	missing_label	fusiform gyrus	rdfs:label	
+ERROR	missing_label	superior temporal gyrus	rdfs:label	
+ERROR	missing_label	middle temporal gyrus	rdfs:label	
+ERROR	missing_label	frontal pole	rdfs:label	
+ERROR	missing_label	lingual gyrus	rdfs:label	
+ERROR	missing_label	parahippocampal gyrus	rdfs:label	
+ERROR	missing_label	opercular part of inferior frontal gyrus	rdfs:label	
+ERROR	missing_label	inferior parietal cortex	rdfs:label	
+ERROR	missing_label	cuneus cortex	rdfs:label	
+ERROR	missing_label	precuneus cortex	rdfs:label	
+ERROR	missing_label	superior parietal cortex	rdfs:label	
+ERROR	missing_label	lateral occipital cortex	rdfs:label	
+ERROR	missing_label	caudal middle frontal gyrus	rdfs:label	
+ERROR	missing_label	rostral middle frontal gyrus	rdfs:label	
+ERROR	missing_label	pallidum	rdfs:label	
+ERROR	missing_label	left putamen	rdfs:label	
+ERROR	missing_label	right putamen	rdfs:label	
+ERROR	missing_label	right auditory cortex	rdfs:label	
+ERROR	missing_label	left auditory cortex	rdfs:label	
+ERROR	missing_label	left dorsal thalamus	rdfs:label	
+ERROR	missing_label	right dorsal thalamus	rdfs:label	
+ERROR	missing_label	medial orbital frontal cortex	rdfs:label	
+ERROR	missing_label	posterior cingulate cortex	rdfs:label	
+ERROR	missing_label	rostral anterior cingulate cortex	rdfs:label	
+ERROR	missing_label	pericalcarine cortex	rdfs:label	
+ERROR	missing_label	lateral orbital frontal cortex	rdfs:label	
+ERROR	missing_label	isthmus of cingulate cortex	rdfs:label	
+ERROR	missing_label	banks of superior temporal sulcus	rdfs:label	
+ERROR	missing_label	caudal anterior cingulate cortex	rdfs:label	
+ERROR	missing_label	paracentral lobule	rdfs:label	
+ERROR	missing_ontology_description	http://purl.obolibrary.org/obo	dc11:description	
+ERROR	multiple_definitions	Post-Gd T1 image data set	definition	A T1 image where gadolidium contrast agent has been used in the subject before image acquistion
 ERROR	multiple_definitions	Post-Gd T1 image data set	definition	A type of post-contrast, T1 image for which the contrast agent is galolinium
-ERROR	multiple_definitions	Post-Gd T1 image data set	definition	a T1 image where gadolidium contrast agent has been used in the subject before image acquistion
 ERROR	missing_ontology_license	http://purl.obolibrary.org/obo	dc:license	
-ERROR	missing_ontology_title	http://purl.obolibrary.org/obo	Title	
-WARN	missing_definition	MR image data set	definition	
+ERROR	missing_ontology_title	http://purl.obolibrary.org/obo	dc11:title	
 WARN	missing_definition	MRI machine parameter	definition	
 WARN	missing_definition	slice thickness	definition	
 WARN	missing_definition	sagittal	definition	
@@ -60,52 +59,24 @@ WARN	missing_definition	has parameter	definition
 WARN	missing_definition	has TR	definition	
 WARN	missing_definition	has TE	definition	
 WARN	missing_definition	has flip angle	definition	
-WARN	missing_definition	T1 weighted MRI acquisition sequence	definition	
-WARN	missing_definition	T2 weighted MRI acquisition sequence	definition	
 WARN	missing_definition	Proton density sequence	definition	
-WARN	missing_definition	T2 FSE sequence	definition	
-WARN	missing_definition	T1 GRE sequence	definition	
-WARN	missing_definition	T2* GRE sequence	definition	
-WARN	missing_definition	STIR sequence	definition	
-WARN	missing_definition	T2 FLAIR sequence	definition	
-WARN	missing_definition	has inversion time	definition	
-WARN	missing_definition	T2* GRE image data set	definition	
 WARN	missing_definition	MRI evaluant role	definition	
-WARN	missing_definition	T1 GRE image data set	definition	
-WARN	missing_definition	T2 FSE image data set	definition	
 WARN	missing_definition	has MRI sequence parameter	definition	
 WARN	missing_definition	volume measurement datum	definition	
 WARN	missing_definition	thalamic volume measurement datum	definition	
-WARN	missing_definition	high resolution T1 weigted image data set	definition	
-WARN	missing_definition	3D GRE image	definition	
-WARN	missing_definition	baseline hi-res T1 image	definition	
-WARN	missing_definition	follow-up hi-res T1 image	definition	
-WARN	missing_definition	T1 SE image	definition	
-WARN	missing_definition	image data set analysis	definition	
-WARN	missing_definition	MR image data set analysis	definition	
-WARN	missing_definition	functional connectome analysis	definition	
-WARN	missing_definition	T2 FLAIR image data set	definition	
 WARN	missing_definition	T2 image	definition	
-WARN	missing_definition	FIRST analysis	definition	
-WARN	missing_definition	FreeSurfer longitudinal analysis	definition	
-WARN	missing_definition	Structural disconnectome analysis	definition	
-WARN	missing_definition	NeMo analysis	definition	
-WARN	missing_definition	T2 lesion analysis	definition	
-WARN	missing_definition	volumetric analysis	definition	
-WARN	missing_definition	whole brain volumetric analysis	definition	
 WARN	missing_definition	segmented region mask	definition	
 WARN	missing_definition	text file	definition	
 WARN	missing_definition	DeepGRAI analysis of the dorsal plus ventral thalamus	definition	
 WARN	missing_definition	DeepGRAI analysis of the left dorsal thalamus	definition	
 WARN	missing_definition	lesion mask	definition	
 WARN	missing_definition	segmentation map	definition	
-WARN	missing_definition	aligned image data set	definition	
 WARN	missing_definition	T2 lesion mask	definition	
 WARN	missing_definition	MR image transformation	definition	
 WARN	missing_definition	FLAIR lesion mask	definition	
 WARN	missing_definition	has TI	definition	
 WARN	missing_definition	functional connectivity matrix	definition	
-WARN	missing_definition	tensor measurement datum	definition	
+WARN	missing_definition	tensor measurement data set	definition	
 WARN	missing_definition	ChaCo datum	definition	
 WARN	missing_definition	connectivity matrix	definition	
 WARN	missing_definition	structural connectivity matrix	definition	
@@ -119,7 +90,6 @@ WARN	missing_definition	antsApplyTransforms	definition
 WARN	missing_definition	MR image artifact correction	definition	
 WARN	missing_definition	MR image bias field correction	definition	
 WARN	missing_definition	N4 bias field correction	definition	
-WARN	missing_definition	image data set	definition	
 WARN	missing_definition	Smith resting state network atlas	definition	
 WARN	missing_definition	default mode network atlas	definition	
 WARN	missing_definition	Desikan-Killiany functional connectivity matrix	definition	
@@ -132,12 +102,22 @@ WARN	missing_definition	right dorsal thalamic volume measurement datum	definitio
 WARN	missing_definition	dorsal thalamic volume measurement datum	definition	
 WARN	missing_definition	DeepGRAI analysis of the dorsal thalamus	definition	
 WARN	missing_definition	DeepGRAI analysis of the right dorsal thalamus	definition	
-WARN	missing_definition	brain region atlas image dataset	definition	
+WARN	missing_definition	brain region atlas image data set	definition	
 WARN	missing_definition	probabilistic brain region atlas image dataset	definition	
 WARN	missing_definition	Desikan-Killiany brain atlas image data set	definition	
 WARN	missing_definition	deterministic brain region atlas image data set	definition	
-WARN	missing_definition	c-pac	definition	
 WARN	missing_definition	inversion recovery time (TI)	definition	
+WARN	missing_definition	whole brain volume measurement datum	definition	
+WARN	missing_definition	grey matter volume measurement datum	definition	
+WARN	missing_definition	white matter volume measurement daturm	definition	
+WARN	missing_definition	brain volume measurement datum	definition	
+WARN	missing_definition	CSF volume measurement datum	definition	
+WARN	missing_definition	MRI participant	definition	
+WARN	missing_definition	thalamic volume measurement z-score	definition	
+WARN	missing_definition	FreeSurfer segmentation map	definition	
+WARN	missing_definition	peripheral grey matter volume measurement datum	definition	
+WARN	missing_definition	diffusion weighted MRI acquisition sequence	definition	
+WARN	missing_definition	imaging contrast reagent	definition	
 WARN	missing_definition	caudate nucleus	definition	
 WARN	missing_definition	amygdala	definition	
 WARN	missing_definition	nucleus accumbens	definition	
@@ -184,38 +164,49 @@ WARN	missing_definition	isthmus of cingulate cortex	definition
 WARN	missing_definition	banks of superior temporal sulcus	definition	
 WARN	missing_definition	caudal anterior cingulate cortex	definition	
 WARN	missing_definition	paracentral lobule	definition	
-INFO	lowercase_definition	FOV	definition	the distance (in cm or mm) over which an MR image is acquired or displayed.
-INFO	lowercase_definition	Post-Gd T1 image data set	definition	a T1 image where gadolidium contrast agent has been used in the subject before image acquistion
-INFO	lowercase_definition	plane	definition	the direction that the MRI image was taken
-INFO	lowercase_definition	echo train length (ETL)	definition	the number of spin echoes in given unit of time
-INFO	lowercase_definition	phase FOV	definition	"a parameter that can be selected by a technologist as a percent of our overall field of view.
-
-A different field of view (the scanned region) in the frequency and phase encoding directions that means the data acquisition with fewer measurement lines."
-INFO	lowercase_definition	T1 weighted image data set	definition	<an MR image that demonstrates differences in the T1 relaxation times of tissues. TR: shortTE: shortfat: brightfluid: darkradiopedia>
-INFO	lowercase_definition	T2 weighted image data set	definition	<an MR image that highlights differences in the T2 relaxation time of tissues.repetition time (TR): longecho time (TE): longflip angle: less important than with T1 weightingfat: intermediate-brightfluid: brightradiopedia>
-INFO	lowercase_definition	MRI machine	definition	an image creation device that creates MR images
-INFO	lowercase_definition	MRI imaging assay	definition	an assay that produces MR data about an evaluant
 INFO	lowercase_definition	MRI machine setting datum	definition	the setting datum of an MRI machine
-INFO	lowercase_definition	MR imaging datum	definition	a measurement datum produced by an MRI machine prior to transformation
-INFO	lowercase_definition	MR imaging data transformation	definition	a planned process that produces MR images from MR imaging datum
-INFO	lowercase_definition	MR pulse sequence	definition	the MRI machine setting datum about the radiofrequency pulse sequence
-INFO	lowercase_definition	1.5T MRI machine	definition	an MRI machine whose primary magnet has 1.5T of strength
-INFO	lowercase_definition	3T MRI machine	definition	an MRI machine whose primary magnet has 3T of strength
-INFO	lowercase_definition	MR image objective	definition	an objective specification to determine a specified type of information about an entity evaluated by MR imaging
-INFO	lowercase_definition	cerebral microbleed assessment	definition	an MR image objective to determine the presence of extravasated blood in the brain of an evaluant
-INFO	lowercase_definition	lesion quantification	definition	quantification to determine the number and size of lesions in an evaluant
-INFO	lowercase_definition	volumetry	definition	an MR image objective to determine the volume of brain regions in an evaluant
-INFO	lowercase_definition	whole brain volumetry	definition	volumetry to determine the volume of the whole brain of an evaluant
-INFO	lowercase_definition	structural volumetry	definition	volumetry to determine the structure of brain regions in an evaluant
-INFO	lowercase_definition	black hole identification	definition	an MR image objective to determine the presence of hypointense regions that normally appear as white matter on T1 image in an evaluant
-INFO	lowercase_definition	quantitative perfusion analysis	definition	quantification to determine the flow blood through the circulatory system of an evaluant
-INFO	lowercase_definition	calculation of macromolecular ratio	definition	quantification to determine the ratio of carbon, oxygen and hydrogen atoms in macromolecules in an evaluant
-INFO	lowercase_definition	diffusion quantification	definition	quantification to determine the spread of molecules within an evaluant
-INFO	lowercase_definition	tractography	definition	an MR image objective to determine the 3D model of nerve tract data from diffusion images in an evaluant
-INFO	lowercase_definition	iron quantification	definition	quantification to determine the iron content in an evaluant
-INFO	lowercase_definition	functional connectivity	definition	a functional assessment to determine the connectivity of regions of the brain in an evaluant
-INFO	lowercase_definition	functional mapping	definition	a functional assessment to determine the mapping of brain activity in an evaluant
-INFO	lowercase_definition	functional assessment	definition	an MR image assessment to determine brain activity by detecting changes associated with blood flow in an evaluant
-INFO	lowercase_definition	quantification	definition	an MR image objective to determine the specified quantity of a substance in an evaluant
-INFO	lowercase_definition	NeuroSTREAM analysis	definition	we set out to develop and validate an LVV quantification tool for this purpose. Our goal was not to produce a method more precise or accurate than those described above. Rather, we sought to produce a highly robust technique capable of operating on clinical-quality T2-FLAIR images and producing results similar to more established techniques run on high-resolution scans. To do this, we extended an earlier idea for whole brain analysis proposed by (Baillard et al., 2001), and adapted it to LVV measurement on T2-FLAIR images. The core of our approach is a combination of multi-atlas segmentation and level-set refinement. We also extended the cross-sectional method for direct longitudinal analysis by including an optional Jacobian integration step. We called the resulting algorithm “Neurological Software Tool for Reliable Atrophy Measurement” - NeuroSTREAM.
+INFO	missing_superclass	amygdala	rdfs:subClassOf	
+INFO	missing_superclass	nucleus accumbens	rdfs:subClassOf	
+INFO	missing_superclass	hypothalamus	rdfs:subClassOf	
+INFO	missing_superclass	insula	rdfs:subClassOf	
+INFO	missing_superclass	cerebellar cortex	rdfs:subClassOf	
+INFO	missing_superclass	hippocampal formation	rdfs:subClassOf	
+INFO	missing_superclass	temporal pole	rdfs:subClassOf	
+INFO	missing_superclass	postcentral gyrus	rdfs:subClassOf	
+INFO	missing_superclass	orbital part of inferior frontal gyrus	rdfs:subClassOf	
+INFO	missing_superclass	triangular part of inferior frontal gyrus	rdfs:subClassOf	
+INFO	missing_superclass	superior frontal gyrus	rdfs:subClassOf	
+INFO	missing_superclass	supramarginal gyrus	rdfs:subClassOf	
+INFO	missing_superclass	precentral gyrus	rdfs:subClassOf	
+INFO	missing_superclass	entorhinal cortex	rdfs:subClassOf	
+INFO	missing_superclass	inferior temporal gyrus	rdfs:subClassOf	
+INFO	missing_superclass	fusiform gyrus	rdfs:subClassOf	
+INFO	missing_superclass	superior temporal gyrus	rdfs:subClassOf	
+INFO	missing_superclass	middle temporal gyrus	rdfs:subClassOf	
+INFO	missing_superclass	frontal pole	rdfs:subClassOf	
+INFO	missing_superclass	lingual gyrus	rdfs:subClassOf	
+INFO	missing_superclass	parahippocampal gyrus	rdfs:subClassOf	
+INFO	missing_superclass	opercular part of inferior frontal gyrus	rdfs:subClassOf	
+INFO	missing_superclass	inferior parietal cortex	rdfs:subClassOf	
+INFO	missing_superclass	cuneus cortex	rdfs:subClassOf	
+INFO	missing_superclass	precuneus cortex	rdfs:subClassOf	
+INFO	missing_superclass	superior parietal cortex	rdfs:subClassOf	
+INFO	missing_superclass	lateral occipital cortex	rdfs:subClassOf	
+INFO	missing_superclass	caudal middle frontal gyrus	rdfs:subClassOf	
+INFO	missing_superclass	rostral middle frontal gyrus	rdfs:subClassOf	
+INFO	missing_superclass	pallidum	rdfs:subClassOf	
+INFO	missing_superclass	left putamen	rdfs:subClassOf	
+INFO	missing_superclass	right putamen	rdfs:subClassOf	
+INFO	missing_superclass	right auditory cortex	rdfs:subClassOf	
+INFO	missing_superclass	left auditory cortex	rdfs:subClassOf	
 INFO	missing_superclass	left dorsal thalamus	rdfs:subClassOf	
+INFO	missing_superclass	right dorsal thalamus	rdfs:subClassOf	
+INFO	missing_superclass	medial orbital frontal cortex	rdfs:subClassOf	
+INFO	missing_superclass	posterior cingulate cortex	rdfs:subClassOf	
+INFO	missing_superclass	rostral anterior cingulate cortex	rdfs:subClassOf	
+INFO	missing_superclass	pericalcarine cortex	rdfs:subClassOf	
+INFO	missing_superclass	lateral orbital frontal cortex	rdfs:subClassOf	
+INFO	missing_superclass	isthmus of cingulate cortex	rdfs:subClassOf	
+INFO	missing_superclass	banks of superior temporal sulcus	rdfs:subClassOf	
+INFO	missing_superclass	caudal anterior cingulate cortex	rdfs:subClassOf	
+INFO	missing_superclass	paracentral lobule	rdfs:subClassOf	
