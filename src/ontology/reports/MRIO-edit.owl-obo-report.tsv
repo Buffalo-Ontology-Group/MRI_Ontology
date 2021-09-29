@@ -46,27 +46,19 @@ ERROR	missing_label	banks of superior temporal sulcus	rdfs:label
 ERROR	missing_label	caudal anterior cingulate cortex	rdfs:label	
 ERROR	missing_label	paracentral lobule	rdfs:label	
 ERROR	missing_ontology_description	http://purl.obolibrary.org/obo	dc11:description	
-ERROR	multiple_definitions	Post-Gd T1 image data set	definition	A T1 image where gadolidium contrast agent has been used in the subject before image acquistion
-ERROR	multiple_definitions	Post-Gd T1 image data set	definition	A type of post-contrast, T1 image for which the contrast agent is galolinium
+ERROR	duplicate_label	gradient echo sequence	rdfs:label	gradient echo sequence@en
+ERROR	duplicate_label	gradient echo sequence	rdfs:label	gradient echo sequence@en
 ERROR	missing_ontology_license	http://purl.obolibrary.org/obo	dc:license	
 ERROR	missing_ontology_title	http://purl.obolibrary.org/obo	dc11:title	
-WARN	missing_definition	MRI machine parameter	definition	
-WARN	missing_definition	slice thickness	definition	
-WARN	missing_definition	sagittal	definition	
-WARN	missing_definition	coronal	definition	
-WARN	missing_definition	transverse	definition	
 WARN	missing_definition	has parameter	definition	
 WARN	missing_definition	has TR	definition	
 WARN	missing_definition	has TE	definition	
 WARN	missing_definition	has flip angle	definition	
-WARN	missing_definition	Proton density sequence	definition	
 WARN	missing_definition	MRI evaluant role	definition	
 WARN	missing_definition	has MRI sequence parameter	definition	
 WARN	missing_definition	volume measurement datum	definition	
 WARN	missing_definition	thalamic volume measurement datum	definition	
-WARN	missing_definition	T2 image	definition	
 WARN	missing_definition	segmented region mask	definition	
-WARN	missing_definition	text file	definition	
 WARN	missing_definition	DeepGRAI analysis of the dorsal plus ventral thalamus	definition	
 WARN	missing_definition	DeepGRAI analysis of the left dorsal thalamus	definition	
 WARN	missing_definition	lesion mask	definition	
@@ -94,7 +86,6 @@ WARN	missing_definition	Smith resting state network atlas	definition
 WARN	missing_definition	default mode network atlas	definition	
 WARN	missing_definition	Desikan-Killiany functional connectivity matrix	definition	
 WARN	missing_definition	default mode network functional connectivity matrix	definition	
-WARN	missing_definition	diffusion weighted image data set	definition	
 WARN	missing_definition	perfusion weighted image data set	definition	
 WARN	missing_definition	dorsal plus ventral thalamus volume measurement datum	definition	
 WARN	missing_definition	left dorsal thalamic volume measurement datum	definition	
@@ -106,17 +97,14 @@ WARN	missing_definition	brain region atlas image data set	definition
 WARN	missing_definition	probabilistic brain region atlas image dataset	definition	
 WARN	missing_definition	Desikan-Killiany brain atlas image data set	definition	
 WARN	missing_definition	deterministic brain region atlas image data set	definition	
-WARN	missing_definition	inversion recovery time (TI)	definition	
 WARN	missing_definition	whole brain volume measurement datum	definition	
 WARN	missing_definition	grey matter volume measurement datum	definition	
 WARN	missing_definition	white matter volume measurement daturm	definition	
 WARN	missing_definition	brain volume measurement datum	definition	
 WARN	missing_definition	CSF volume measurement datum	definition	
-WARN	missing_definition	MRI participant	definition	
 WARN	missing_definition	thalamic volume measurement z-score	definition	
 WARN	missing_definition	FreeSurfer segmentation map	definition	
 WARN	missing_definition	peripheral grey matter volume measurement datum	definition	
-WARN	missing_definition	diffusion weighted MRI acquisition sequence	definition	
 WARN	missing_definition	imaging contrast reagent	definition	
 WARN	missing_definition	caudate nucleus	definition	
 WARN	missing_definition	amygdala	definition	
@@ -164,7 +152,6 @@ WARN	missing_definition	isthmus of cingulate cortex	definition
 WARN	missing_definition	banks of superior temporal sulcus	definition	
 WARN	missing_definition	caudal anterior cingulate cortex	definition	
 WARN	missing_definition	paracentral lobule	definition	
-INFO	lowercase_definition	MRI machine setting datum	definition	the setting datum of an MRI machine
 INFO	missing_superclass	amygdala	rdfs:subClassOf	
 INFO	missing_superclass	nucleus accumbens	rdfs:subClassOf	
 INFO	missing_superclass	hypothalamus	rdfs:subClassOf	
