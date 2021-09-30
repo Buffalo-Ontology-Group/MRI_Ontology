@@ -1,3 +1,7 @@
 *.bak
 *.properties
 src/ontology/MRIO-edit.properties
+"MRIO 2021.owl"
+MRIO2021_forjupyter.owl
+"uberon gray matter import.owl"
+src/MRIO.owl
