@@ -6,3 +6,4 @@ MRIO2021_forjupyter.owl
 "uberon gray matter import.owl"
 src/MRIO.owl
 src/ontology/*.csv
+src/ontology/imports/*.old

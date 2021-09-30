@@ -29,6 +29,8 @@
         <dc:creator>Alexander Bartnik</dc:creator>
         <dc:creator>Lucas Serra</dc:creator>
         <dc:creator>Mackenzie Smith</dc:creator>
+        <dc:description>An ontology for the representation of MRI acquisition and analysis.</dc:description>
+        <terms:license>https://creativecommons.org/licenses/by/4.0/</terms:license>
     </owl:Ontology>
     
 
