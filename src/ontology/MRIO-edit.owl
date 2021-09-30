@@ -1218,7 +1218,7 @@ variable
     <!-- http://purl.obolibrary.org/obo/MRIO_0000400 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000400">
-        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000067"/>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
         <rdfs:label xml:lang="en">MRI evaluant role</rdfs:label>
     </owl:Class>
