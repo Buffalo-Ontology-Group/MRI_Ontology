@@ -1,1 +1,3 @@
 *.bak
+*.properties
+src/ontology/MRIO-edit.properties

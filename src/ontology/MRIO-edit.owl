@@ -77,8 +77,20 @@
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/MRIO_0000375">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000657"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000383"/>
+        <IAO_0000115>A relation between an MR image acquisition sequence and the pulse sequence(s) that contribute to it.</IAO_0000115>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
-        <rdfs:label xml:lang="en">has parameter</rdfs:label>
+        <rdfs:label xml:lang="en">has pulse sequence</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_0000688 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/MRIO_0000688">
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000342"/>
+        <IAO_0000115>A relation between some part of the MRI acquisition sequence and the setttings of an MRI machine set by a technician.</IAO_0000115>
+        <rdfs:label xml:lang="en">has MRI acquisition parameter</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2178,28 +2190,16 @@ variable
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000375"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000688"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000357"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000375"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000688"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000358"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000384"/>
-                        <owl:someValuesFrom>
-                            <rdfs:Datatype>
-                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-                                <owl:withRestrictions rdf:parseType="Collection">
-                                    <rdf:Description>
-                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">10.0</xsd:minInclusive>
-                                    </rdf:Description>
-                                    <rdf:Description>
-                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">80.0</xsd:maxInclusive>
-                                    </rdf:Description>
-                                </owl:withRestrictions>
-                            </rdfs:Datatype>
-                        </owl:someValuesFrom>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000688"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000630"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -2223,11 +2223,11 @@ variable
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000628"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000375"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000688"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000357"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000375"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000688"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000358"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -2776,11 +2776,11 @@ variable
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000375"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000688"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000357"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000375"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000688"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000358"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -2821,7 +2821,7 @@ variable
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000659"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000375"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000688"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000653"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -3113,7 +3113,7 @@ variable
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000375"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000688"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000655"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3284,7 +3284,7 @@ ISBN 10: 1119053552</IAO_0000119>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000375"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000688"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000687"/>
             </owl:Restriction>
         </rdfs:subClassOf>
