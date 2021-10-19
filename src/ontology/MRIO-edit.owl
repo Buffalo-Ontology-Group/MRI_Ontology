@@ -24,7 +24,7 @@
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo">
         <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/mrio/releases/2021-04-10/mrio.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MRIO/releases/2021-09-23/imports/obi_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MRIO/releases/2021-10-18/imports/obi_import.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2019-08-26/bfo.owl"/>
         <dc:creator>Alexander Bartnik</dc:creator>
         <dc:creator>Lucas Serra</dc:creator>
@@ -310,10 +310,9 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000350">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000635"/>
-        <IAO_0000115>A set of multiple MRI images where each voxel has a pair of values: the rate of diffusion and the direction of the diffusion.</IAO_0000115>
-        <IAO_0000116>Rename from DTI to DWI suitable for DTI (min. 6 directions.).</IAO_0000116>
+        <IAO_0000115>Diffusion weighted image data set with at least 6 directional vectors.</IAO_0000115>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
-        <rdfs:label xml:lang="en">diffusion tensor image data set</rdfs:label>
+        <rdfs:label xml:lang="en">diffusion weighted image data set suitable for DTI</rdfs:label>
     </owl:Class>
     
 
@@ -843,44 +842,43 @@ radiopedia</IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/MRIO_0000387 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000387">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MRIO_0000657"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000376"/>
-                        <owl:someValuesFrom>
-                            <rdfs:Datatype>
-                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-                                <owl:withRestrictions rdf:parseType="Collection">
-                                    <rdf:Description>
-                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1000.0</xsd:minExclusive>
-                                    </rdf:Description>
-                                </owl:withRestrictions>
-                            </rdfs:Datatype>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000377"/>
-                        <owl:someValuesFrom>
-                            <rdfs:Datatype>
-                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-                                <owl:withRestrictions rdf:parseType="Collection">
-                                    <rdf:Description>
-                                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">30.0</xsd:maxExclusive>
-                                    </rdf:Description>
-                                </owl:withRestrictions>
-                            </rdfs:Datatype>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000384"/>
-                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">90</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000657"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000376"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1000.0</xsd:minExclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000377"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">30.0</xsd:maxExclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000384"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">90</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <IAO_0000115>An MRI acquisition sequence that diminishes T1 weighting via long TR and T2 via short TE to produce images where voxel intensity corresponds to number of hydrogen protons in tissue.</IAO_0000115>
         <IAO_0000116>Usually SE.</IAO_0000116>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
@@ -892,47 +890,47 @@ radiopedia</IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/MRIO_0000388 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000388">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000376"/>
-                        <owl:someValuesFrom>
-                            <rdfs:Datatype>
-                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-                                <owl:withRestrictions rdf:parseType="Collection">
-                                    <rdf:Description>
-                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2000.0</xsd:minExclusive>
-                                    </rdf:Description>
-                                </owl:withRestrictions>
-                            </rdfs:Datatype>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000377"/>
-                        <owl:someValuesFrom>
-                            <rdfs:Datatype>
-                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-                                <owl:withRestrictions rdf:parseType="Collection">
-                                    <rdf:Description>
-                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">60.0</xsd:minExclusive>
-                                    </rdf:Description>
-                                </owl:withRestrictions>
-                            </rdfs:Datatype>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000384"/>
-                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">90</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000386"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000375"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000359"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000376"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2000.0</xsd:minExclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000377"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">60.0</xsd:minExclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000384"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">90</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <IAO_0000115>An MRI acquisition sequence that uses multiple echoes produced by a train of 180 degree rephasing pulses with a high effective echo time to accentuate T2 weighting.</IAO_0000115>
@@ -1009,55 +1007,55 @@ radiopedia</IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/MRIO_0000390 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000390">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000376"/>
-                        <owl:someValuesFrom>
-                            <rdfs:Datatype>
-                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-                                <owl:withRestrictions rdf:parseType="Collection">
-                                    <rdf:Description>
-                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</xsd:minExclusive>
-                                    </rdf:Description>
-                                </owl:withRestrictions>
-                            </rdfs:Datatype>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000377"/>
-                        <owl:someValuesFrom>
-                            <rdfs:Datatype>
-                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-                                <owl:withRestrictions rdf:parseType="Collection">
-                                    <rdf:Description>
-                                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">30.0</xsd:maxExclusive>
-                                    </rdf:Description>
-                                </owl:withRestrictions>
-                            </rdfs:Datatype>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000384"/>
-                        <owl:someValuesFrom>
-                            <rdfs:Datatype>
-                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-                                <owl:withRestrictions rdf:parseType="Collection">
-                                    <rdf:Description>
-                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</xsd:minInclusive>
-                                    </rdf:Description>
-                                    <rdf:Description>
-                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">20.0</xsd:maxInclusive>
-                                    </rdf:Description>
-                                </owl:withRestrictions>
-                            </rdfs:Datatype>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000386"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000376"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</xsd:minExclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000377"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">30.0</xsd:maxExclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000384"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</xsd:minInclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">20.0</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <owl:disjointWith>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000375"/>
@@ -2239,10 +2237,6 @@ variable
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000628"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000688"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000357"/>
                     </owl:Restriction>
@@ -2277,7 +2271,7 @@ variable
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000635">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000341"/>
-        <IAO_0000115>A type of MR image data set collected using diffusion gradients of some factor &apos;b,&apos; which is a function of the amplitude, duration, and interval of the gradiants.</IAO_0000115>
+        <IAO_0000115>A type of MR image data set collected using at least three diffusion gradients of some factor &apos;b,&apos; which is a function of the amplitude, duration, and interval of the gradiants.</IAO_0000115>
         <rdfs:label xml:lang="en">diffusion weighted image data set</rdfs:label>
     </owl:Class>
     
@@ -2836,26 +2830,10 @@ variable
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000628"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000659"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000628"/>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000659"/>
-                            </owl:Restriction>
-                        </owl:unionOf>
-                    </owl:Class>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000688"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000653"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000688"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000653"/>
+            </owl:Restriction>
         </rdfs:subClassOf>
         <IAO_0000115>An inversion recovery (IR) pulse sequence is a spin echo or gradient echo pulse sequence preceded by a 180° RF pulse.</IAO_0000115>
         <IAO_0000116>Create specific subclass of this and echo panar sequence for both GRE and SE.</IAO_0000116>
@@ -3148,6 +3126,12 @@ variable
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000655"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000688"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000690"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <IAO_0000115>An MRI acquisition sequence that uses diffusion gradients to create contrast in the image corresponding to the Brownian motion of the tissue in the examined voxel.</IAO_0000115>
         <IAO_0000116>Add difussion gradient as parameter.</IAO_0000116>
         <rdfs:label xml:lang="en">diffusion weighted MRI acquisition sequence</rdfs:label>
@@ -3350,6 +3334,16 @@ ISBN 10: 1119053552</IAO_0000119>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000342"/>
         <IAO_0000115>Prescribed timepoints to collect in a 4D scan, results in in n number of volumes.</IAO_0000115>
         <rdfs:label xml:lang="en">number of temporal positions</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_0000690 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000690">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000342"/>
+        <IAO_0000115>Magnetic field variations applied to determine directional vectors that measure at least three dimensions of diffusion for a given voxel.</IAO_0000115>
+        <rdfs:label xml:lang="en">diffusion gradient</rdfs:label>
     </owl:Class>
     
 
@@ -3761,7 +3755,6 @@ ISBN 10: 1119053552</IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/MRIO_0000397 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/MRIO_0000397">
-        <IAO_0000136 rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000401"/>
         <MRIO_0000376 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">650.0</MRIO_0000376>
         <MRIO_0000377 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">20.0</MRIO_0000377>
         <MRIO_0000384 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">15.0</MRIO_0000384>
@@ -3784,7 +3777,6 @@ ISBN 10: 1119053552</IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/MRIO_0000631 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/MRIO_0000631">
-        <IAO_0000136 rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000401"/>
         <MRIO_0000376 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">300.0</MRIO_0000376>
         <MRIO_0000377 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">15.0</MRIO_0000377>
         <MRIO_0000384 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">90.0</MRIO_0000384>
@@ -3796,10 +3788,9 @@ ISBN 10: 1119053552</IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/MRIO_0000632 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/MRIO_0000632">
-        <IAO_0000136 rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000401"/>
         <MRIO_0000375 rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000685"/>
         <MRIO_0000376 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1000.0</MRIO_0000376>
-        <MRIO_0000377 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">15.0</MRIO_0000377>
+        <MRIO_0000377 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</MRIO_0000377>
         <MRIO_0000384 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">90.0</MRIO_0000384>
         <rdfs:label xml:lang="en">test t1 gre sequence</rdfs:label>
     </owl:NamedIndividual>

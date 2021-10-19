@@ -45,17 +45,8 @@ ERROR	missing_label	isthmus of cingulate cortex	rdfs:label
 ERROR	missing_label	banks of superior temporal sulcus	rdfs:label	
 ERROR	missing_label	caudal anterior cingulate cortex	rdfs:label	
 ERROR	missing_label	paracentral lobule	rdfs:label	
-ERROR	missing_ontology_description	http://purl.obolibrary.org/obo	dc11:description	
-ERROR	duplicate_label	gradient echo sequence	rdfs:label	gradient echo sequence@en
-ERROR	duplicate_label	gradient echo sequence	rdfs:label	gradient echo sequence@en
-ERROR	missing_ontology_license	http://purl.obolibrary.org/obo	dc:license	
 ERROR	missing_ontology_title	http://purl.obolibrary.org/obo	dc11:title	
-WARN	missing_definition	has parameter	definition	
-WARN	missing_definition	has TR	definition	
-WARN	missing_definition	has TE	definition	
-WARN	missing_definition	has flip angle	definition	
 WARN	missing_definition	MRI evaluant role	definition	
-WARN	missing_definition	has MRI sequence parameter	definition	
 WARN	missing_definition	volume measurement datum	definition	
 WARN	missing_definition	thalamic volume measurement datum	definition	
 WARN	missing_definition	segmented region mask	definition	
@@ -66,7 +57,6 @@ WARN	missing_definition	segmentation map	definition
 WARN	missing_definition	T2 lesion mask	definition	
 WARN	missing_definition	MR image transformation	definition	
 WARN	missing_definition	FLAIR lesion mask	definition	
-WARN	missing_definition	has TI	definition	
 WARN	missing_definition	functional connectivity matrix	definition	
 WARN	missing_definition	tensor measurement data set	definition	
 WARN	missing_definition	ChaCo datum	definition	
@@ -86,7 +76,6 @@ WARN	missing_definition	Smith resting state network atlas	definition
 WARN	missing_definition	default mode network atlas	definition	
 WARN	missing_definition	Desikan-Killiany functional connectivity matrix	definition	
 WARN	missing_definition	default mode network functional connectivity matrix	definition	
-WARN	missing_definition	perfusion weighted image data set	definition	
 WARN	missing_definition	dorsal plus ventral thalamus volume measurement datum	definition	
 WARN	missing_definition	left dorsal thalamic volume measurement datum	definition	
 WARN	missing_definition	right dorsal thalamic volume measurement datum	definition	

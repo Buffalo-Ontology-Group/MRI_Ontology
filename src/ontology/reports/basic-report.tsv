@@ -2,9 +2,11 @@
 <http://purl.obolibrary.org/obo/MRIO_0000625>		
 <http://purl.obolibrary.org/obo/MRIO_0000649>		
 <http://purl.obolibrary.org/obo/MRIO_0000348>	"A timeseries of MRI images like DCE perfusion, but using no injected contrast (uses flow coded pulses instead)"	
+<http://purl.obolibrary.org/obo/MRIO_0000635>	"A type of MR image data set collected using at least three diffusion gradients of some factor 'b,' which is a function of the amplitude, duration, and interval of the gradiants."	
 <http://purl.obolibrary.org/obo/MRIO_0000674>	"Measures the functional connectivity between cortical and subcortical regions defined in the Desikan-Killiany brain atlas."	
 <http://purl.obolibrary.org/obo/MRIO_0000528>		
 <http://purl.obolibrary.org/obo/MRIO_0000601>		
+<http://purl.obolibrary.org/obo/MRIO_0000636>	"A type of MR image data set meant to capture volume and flow of blood in the brain."	
 <http://purl.obolibrary.org/obo/MRIO_0000613>		
 <http://purl.obolibrary.org/obo/CCL_0000360>	"The distance (in cm or mm) over which an MR image is acquired or displayed."	
 <http://purl.obolibrary.org/obo/MRIO_0000381>	"A measurement datum produced by an MRI machine prior to transformation."	
@@ -14,7 +16,6 @@
 <http://purl.obolibrary.org/obo/MRIO_0000355>	"A type of functional MRI in which the participant is given a task or tasks, which are timed with the acquisition"	
 <http://purl.obolibrary.org/obo/MRIO_0000511>	"T2 weighted image data set collected using a FLAIR sequence."	
 <http://purl.obolibrary.org/obo/MRIO_0000659>	"The refocusing of spin magnetisation by a pulse of resonant electromagnetic radiation."	
-<http://purl.obolibrary.org/obo/MRIO_0000636>		
 <http://purl.obolibrary.org/obo/MRIO_0000648>		
 <http://purl.obolibrary.org/obo/MRIO_0000600>		
 <http://purl.obolibrary.org/obo/MRIO_0000612>		
@@ -40,7 +41,6 @@
 <http://purl.obolibrary.org/obo/MRIO_0000342>	"Parameters that a technician may specify to compose a specific MRI acquisition sequence as part of a scanning protocol."	
 <http://purl.obolibrary.org/obo/MRIO_0000424>	"T2 weighted image collected using a fast/turbo spin echo sequence."	
 <http://purl.obolibrary.org/obo/MRIO_0000516>	"The longitudinal scheme is designed to be unbiased with respect to any time point (TP). Instead of initializing it with information from a specific time point, a template volume is created and run through FreeSurfer. This template can be seen as an initial guess for the segmentation and surface reconstruction. The FreeSurfer cortical and subcortical segmentation and parcellation procedure involves solving many complex nonlinear optimization problems, such as the deformable surface reconstruction, the nonlinear atlas-image registration, and the nonlinear spherical surface registration."	
-<http://purl.obolibrary.org/obo/MRIO_0000350>	"A set of multiple MRI images where each voxel has a pair of values: the rate of diffusion and the direction of the diffusion."	
 <http://purl.obolibrary.org/obo/MRIO_0000501>		
 <http://purl.obolibrary.org/obo/MRIO_0000622>		
 <http://purl.obolibrary.org/obo/MRIO_0000508>	"Any combination of digital image analysis and statistical tools that may be used to derive processed brain images or data measurements about the brain."	
@@ -61,6 +61,8 @@
 <http://purl.obolibrary.org/obo/MRIO_0000517>	"We set out to develop and validate an LVV quantification tool for this purpose. Our goal was not to produce a method more precise or accurate than those described above. Rather, we sought to produce a highly robust technique capable of operating on clinical-quality T2-FLAIR images and producing results similar to more established techniques run on high-resolution scans. To do this, we extended an earlier idea for whole brain analysis proposed by (Baillard et al., 2001), and adapted it to LVV measurement on T2-FLAIR images. The core of our approach is a combination of multi-atlas segmentation and level-set refinement. We also extended the cross-sectional method for direct longitudinal analysis by including an optional Jacobian integration step. We called the resulting algorithm “Neurological Software Tool for Reliable Atrophy Measurement” - NeuroSTREAM."	
 <http://purl.obolibrary.org/obo/UBERON_0013684>		
 <http://purl.obolibrary.org/obo/UBERON_0022716>		
+<http://purl.obolibrary.org/obo/MRIO_0000690>	"Magnetic field variations applied to determine directional vectors that measure at least three dimensions of diffusion for a given voxel."	
+<http://purl.obolibrary.org/obo/MRIO_0000661>	"An inversion recovery (IR) pulse sequence is a spin echo or gradient echo pulse sequence preceded by a 180° RF pulse."	
 <http://purl.obolibrary.org/obo/MRIO_0000380>	"The setting datum of an MRI machine"	
 <http://purl.obolibrary.org/obo/MRIO_0000681>	"Applies  RF  excitation  pulses  at  diff erent  phases every TR, so that the residual transverse magnetization has dif-ferent  phase  values  than  the  transverse  magnetization  most recently created."	
 <http://purl.obolibrary.org/obo/MRIO_0000644>		
@@ -91,9 +93,9 @@
 <http://purl.obolibrary.org/obo/MRIO_0000678>	"An MRI acquisition sequence consisting of a magnetization preparation period followed by a rapid gradient echo sequence."	
 <http://purl.obolibrary.org/obo/UBERON_0002629>		
 <http://purl.obolibrary.org/obo/UBERON_0006088>		
-<http://purl.obolibrary.org/obo/MRIO_0000635>	"A type of MR image data set collected using diffusion gradients of some factor 'b,' which is a function of the amplitude, duration, and interval of the gradiants."	
 <http://purl.obolibrary.org/obo/MRIO_0000524>	"Neuroimaging technique used to estimate the volume of the brain."	
 <http://purl.obolibrary.org/obo/MRIO_0000682>	"An MRI acquisition sequence that using a spin echo sequence to accentuate T1 weighting."	
+<http://purl.obolibrary.org/obo/MRIO_0000350>	"Diffusion weighted image data set with at least 6 directional vectors."	
 <http://purl.obolibrary.org/obo/MRIO_0000400>		
 <http://purl.obolibrary.org/obo/MRIO_0000642>		
 <http://purl.obolibrary.org/obo/MRIO_0000503>	"T1 weighted image data set collected as one 3D volume using a gradient echo sequence."	
@@ -144,7 +146,6 @@
 <http://purl.obolibrary.org/obo/MRIO_0000385>	"An MRI acquisition sequence characterized by short TR to minimize T2 weighting."	
 <http://purl.obolibrary.org/obo/MRIO_0000358>	"The echo time (TE) refers to the time between the application of the radiofrequency excitation pulse and the peak of the signal induced in the coil. It is measured in milliseconds. The amount of T2 relaxation is controlled by the TE. (radiopedia)"	
 <http://purl.obolibrary.org/obo/MRIO_0000618>		
-<http://purl.obolibrary.org/obo/MRIO_0000661>	"An inversion recovery (IR) pulse sequence is a spin echo pulse sequence preceded by a 180° RF pulse."	
 <http://purl.obolibrary.org/obo/MRIO_0000367>	"An MR image that highlights differences in the T2 relaxation time of tissues.\n\nrepetition time (TR): long\necho time (TE): long\nflip angle: less important than with T1 weighting\nfat: intermediate-bright\nfluid: bright\n\nradiopedia"	
 <http://purl.obolibrary.org/obo/MRIO_0000521>	"Analyzes voxels in an MRI scan that appear as focal lesions in a T2 weighted scan."	
 <http://purl.obolibrary.org/obo/MRIO_0000669>	"The subject being scanned in an MRI study, and bearor of data derived from that study."	

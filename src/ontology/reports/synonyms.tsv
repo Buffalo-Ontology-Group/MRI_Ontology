@@ -88,6 +88,7 @@
 <http://purl.obolibrary.org/obo/MRIO_0000369>	<http://www.w3.org/2000/01/rdf-schema#label>	"matrix size"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000648>	<http://www.w3.org/2000/01/rdf-schema#label>	"probabilistic brain region atlas image dataset"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000605>	<http://www.w3.org/2000/01/rdf-schema#label>	"FLAIR lesion mask"@en	
+<http://purl.obolibrary.org/obo/MRIO_0000690>	<http://www.w3.org/2000/01/rdf-schema#label>	"diffusion gradient"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000600>	<http://www.w3.org/2000/01/rdf-schema#label>	"lesion mask"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000628>	<http://www.w3.org/2000/01/rdf-schema#label>	"gradient echo sequence"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000660>	<http://www.w3.org/2000/01/rdf-schema#label>	"FreeSurfer cross-sectional analysis"@en	
@@ -118,7 +119,7 @@
 <http://purl.obolibrary.org/obo/MRIO_0000675>	<http://www.w3.org/2000/01/rdf-schema#label>	"regional functional connectome analysis"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000515>	<http://www.w3.org/2000/01/rdf-schema#label>	"FreeSurfer Analysis"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000687>	<http://www.w3.org/2000/01/rdf-schema#label>	"number of temporal positions"@en	
-<http://purl.obolibrary.org/obo/MRIO_0000350>	<http://www.w3.org/2000/01/rdf-schema#label>	"diffusion tensor image data set"@en	
+<http://purl.obolibrary.org/obo/MRIO_0000350>	<http://www.w3.org/2000/01/rdf-schema#label>	"diffusion weighted image data set suitable for DTI"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000528>	<http://www.w3.org/2000/01/rdf-schema#label>	"DeepGRAI analysis of the dorsal plus ventral thalamus"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000642>	<http://www.w3.org/2000/01/rdf-schema#label>	"left dorsal thalamic volume measurement datum"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000607>	<http://www.w3.org/2000/01/rdf-schema#label>	"functional connectivity matrix"@en	
@@ -128,11 +129,11 @@
 <http://purl.obolibrary.org/obo/MRIO_0000522>	<http://www.w3.org/2000/01/rdf-schema#label>	"LPA analysis"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000356>	<http://www.w3.org/2000/01/rdf-schema#label>	"plane"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000662>	<http://www.w3.org/2000/01/rdf-schema#label>	"MR image segmentation analysis"@en	
-<http://purl.obolibrary.org/obo/MRIO_0000686>	<http://www.w3.org/2000/01/rdf-schema#label>	"functional MRI acquisition sequence"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000394>	<http://www.w3.org/2000/01/rdf-schema#label>	"1.5T MRI machine"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000514>	<http://www.w3.org/2000/01/rdf-schema#label>	"FIRST analysis"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000509>	<http://www.w3.org/2000/01/rdf-schema#label>	"DeepGRAI analysis"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000420>	<http://www.w3.org/2000/01/rdf-schema#label>	"functional mapping"@en	
+<http://purl.obolibrary.org/obo/MRIO_0000686>	<http://www.w3.org/2000/01/rdf-schema#label>	"functional MRI acquisition sequence"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000614>	<http://www.w3.org/2000/01/rdf-schema#label>	"nMapTFC matrix"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000351>	<http://www.w3.org/2000/01/rdf-schema#label>	"proton density image data set"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000361>	<http://www.w3.org/2000/01/rdf-schema#label>	"phase FOV"@en	
