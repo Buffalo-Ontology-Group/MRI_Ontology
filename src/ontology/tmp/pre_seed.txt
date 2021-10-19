@@ -184,6 +184,7 @@ http://purl.obolibrary.org/obo/MRIO_0000685
 http://purl.obolibrary.org/obo/MRIO_0000686
 http://purl.obolibrary.org/obo/MRIO_0000687
 http://purl.obolibrary.org/obo/MRIO_0000688
+http://purl.obolibrary.org/obo/MRIO_0000690
 http://purl.obolibrary.org/obo/NCBITaxon_9606
 http://purl.obolibrary.org/obo/OBI_0000067
 http://purl.obolibrary.org/obo/OBI_0000070

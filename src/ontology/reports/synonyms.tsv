@@ -79,8 +79,8 @@
 <http://purl.obolibrary.org/obo/MRIO_0000383>	<http://www.w3.org/2000/01/rdf-schema#label>	"MR pulse sequence"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000341>	<http://www.w3.org/2000/01/rdf-schema#label>	"MR image data set"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000617>	<http://www.w3.org/2000/01/rdf-schema#label>	"MR image registration"@en	
-<http://purl.obolibrary.org/obo/MRIO_0000355>	<http://www.w3.org/2000/01/rdf-schema#label>	"Task-based functional MR image data set"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000629>	<http://www.w3.org/2000/01/rdf-schema#label>	"echo planar sequence"@en	
+<http://purl.obolibrary.org/obo/MRIO_0000355>	<http://www.w3.org/2000/01/rdf-schema#label>	"Task-based functional MR image data set"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000396>	<http://www.w3.org/2000/01/rdf-schema#label>	"T2* GRE image data set"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000661>	<http://www.w3.org/2000/01/rdf-schema#label>	"inversion recovery sequence"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000366>	<http://www.w3.org/2000/01/rdf-schema#label>	"T1 weighted image data set"@en	
