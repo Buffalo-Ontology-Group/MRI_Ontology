@@ -28,6 +28,7 @@
 <http://purl.obolibrary.org/obo/UBERON_0002728>		
 <http://purl.obolibrary.org/obo/UBERON_0002129>		
 <http://purl.obolibrary.org/obo/MRIO_0000349>	"A pair of MRI images pre- and post-application of an MT offset pulse"	
+<http://purl.obolibrary.org/obo/MRIO_0000692>		
 <http://purl.obolibrary.org/obo/MRIO_0000365>	"The process of locating a MR signal by altering the phase of spins in one dimension with a pulsed magnetic field gradient along that dimension prior to the acquisition of the signal."	
 <http://purl.obolibrary.org/obo/MRIO_0000647>		
 <http://purl.obolibrary.org/obo/MRIO_0000526>		
@@ -38,6 +39,7 @@
 <http://purl.obolibrary.org/obo/UBERON_0002980>		
 <http://purl.obolibrary.org/obo/UBERON_0008884>		
 <http://purl.obolibrary.org/obo/UBERON_0006114>		
+<http://purl.obolibrary.org/obo/MRIO_0000691>		
 <http://purl.obolibrary.org/obo/MRIO_0000342>	"Parameters that a technician may specify to compose a specific MRI acquisition sequence as part of a scanning protocol."	
 <http://purl.obolibrary.org/obo/MRIO_0000424>	"T2 weighted image collected using a fast/turbo spin echo sequence."	
 <http://purl.obolibrary.org/obo/MRIO_0000516>	"The longitudinal scheme is designed to be unbiased with respect to any time point (TP). Instead of initializing it with information from a specific time point, a template volume is created and run through FreeSurfer. This template can be seen as an initial guess for the segmentation and surface reconstruction. The FreeSurfer cortical and subcortical segmentation and parcellation procedure involves solving many complex nonlinear optimization problems, such as the deformable surface reconstruction, the nonlinear atlas-image registration, and the nonlinear spherical surface registration."	
@@ -100,6 +102,7 @@
 <http://purl.obolibrary.org/obo/MRIO_0000642>		
 <http://purl.obolibrary.org/obo/MRIO_0000503>	"T1 weighted image data set collected as one 3D volume using a gradient echo sequence."	
 <http://purl.obolibrary.org/obo/MRIO_0000665>		
+<http://purl.obolibrary.org/obo/MRIO_0000693>	"T2 weighted MR image data set collected using a STIR sequence to suppress the signal coming from fat."	
 <http://purl.obolibrary.org/obo/MRIO_0000378>	"An image creation device that creates MR images"	
 <http://purl.obolibrary.org/obo/MRIO_0000609>		
 <http://purl.obolibrary.org/obo/MRIO_0000368>	"An MR image data set collected as a 4D time series representing changes in brain metabolism (i.e. BOLD), typically used as a proxy for brain activity."	

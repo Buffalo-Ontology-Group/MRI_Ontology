@@ -1,5 +1,5 @@
 http://orcid.org/0000-0002-2104-0568
-http://purl.obolibrary.org/obo
+http://purl.obolibrary.org/obo/
 http://purl.obolibrary.org/obo/BFO_0000050
 http://purl.obolibrary.org/obo/BFO_0000051
 http://purl.obolibrary.org/obo/CARO_0000000
@@ -185,7 +185,11 @@ http://purl.obolibrary.org/obo/MRIO_0000686
 http://purl.obolibrary.org/obo/MRIO_0000687
 http://purl.obolibrary.org/obo/MRIO_0000688
 http://purl.obolibrary.org/obo/MRIO_0000690
+http://purl.obolibrary.org/obo/MRIO_0000691
+http://purl.obolibrary.org/obo/MRIO_0000692
+http://purl.obolibrary.org/obo/MRIO_0000693
 http://purl.obolibrary.org/obo/NCBITaxon_9606
+http://purl.obolibrary.org/obo/OBI_0000011
 http://purl.obolibrary.org/obo/OBI_0000067
 http://purl.obolibrary.org/obo/OBI_0000070
 http://purl.obolibrary.org/obo/OBI_0000097
