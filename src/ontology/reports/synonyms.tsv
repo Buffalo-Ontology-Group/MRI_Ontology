@@ -1,6 +1,6 @@
 ?cls	?pred	?val	?synType
 <http://purl.obolibrary.org/obo/MRIO_0000381>	<http://www.w3.org/2000/01/rdf-schema#label>	"MR imaging datum"@en	
-<http://purl.obolibrary.org/obo/MRIO_0000657>	<http://www.w3.org/2000/01/rdf-schema#label>	"MRI acquisition sequence"@en	
+<http://purl.obolibrary.org/obo/MRIO_0000657>	<http://www.w3.org/2000/01/rdf-schema#label>	"MRI acquisition sequence process"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000669>	<http://www.w3.org/2000/01/rdf-schema#label>	"MRI participant"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000348>	<http://www.w3.org/2000/01/rdf-schema#label>	"ASL perfusion data set"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000358>	<http://www.w3.org/2000/01/rdf-schema#label>	"echo time"@en	
@@ -59,7 +59,7 @@
 <http://purl.obolibrary.org/obo/MRIO_0000646>	<http://www.w3.org/2000/01/rdf-schema#label>	"DeepGRAI analysis of the right dorsal thalamus"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000367>	<http://www.w3.org/2000/01/rdf-schema#label>	"T2 weighted image data set"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000501>	<http://www.w3.org/2000/01/rdf-schema#label>	"thalamic volume measurement datum"@en	
-<http://purl.obolibrary.org/obo/MRIO_0000379>	<http://www.w3.org/2000/01/rdf-schema#label>	"MRI imaging assay"@en	
+<http://purl.obolibrary.org/obo/MRIO_0000379>	<http://www.w3.org/2000/01/rdf-schema#label>	"MR imaging assay"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000673>	<http://www.w3.org/2000/01/rdf-schema#label>	"peripheral grey matter volume measurement datum"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000378>	<http://www.w3.org/2000/01/rdf-schema#label>	"MRI machine"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000529>	<http://www.w3.org/2000/01/rdf-schema#label>	"DeepGRAI analysis of the left dorsal thalamus"@en	
@@ -77,7 +77,7 @@
 <http://purl.obolibrary.org/obo/MRIO_0000389>	<http://www.w3.org/2000/01/rdf-schema#label>	"T1 GRE sequence"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000525>	<http://www.w3.org/2000/01/rdf-schema#label>	"SIENAX analysis"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000604>	<http://www.w3.org/2000/01/rdf-schema#label>	"MR image transformation"@en	
-<http://purl.obolibrary.org/obo/MRIO_0000383>	<http://www.w3.org/2000/01/rdf-schema#label>	"MR pulse sequence"@en	
+<http://purl.obolibrary.org/obo/MRIO_0000383>	<http://www.w3.org/2000/01/rdf-schema#label>	"MR pulse sequence protocol"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000341>	<http://www.w3.org/2000/01/rdf-schema#label>	"MR image data set"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000617>	<http://www.w3.org/2000/01/rdf-schema#label>	"MR image registration"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000355>	<http://www.w3.org/2000/01/rdf-schema#label>	"Task-based functional MR image data set"@en	
@@ -105,7 +105,7 @@
 <http://purl.obolibrary.org/obo/MRIO_0000676>	<http://www.w3.org/2000/01/rdf-schema#label>	"FAST Analysis"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000643>	<http://www.w3.org/2000/01/rdf-schema#label>	"right dorsal thalamic volume measurement datum"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000527>	<http://www.w3.org/2000/01/rdf-schema#label>	"text file"@en	
-<http://purl.obolibrary.org/obo/MRIO_0000601>	<http://www.w3.org/2000/01/rdf-schema#label>	"segmentation map"@en	
+<http://purl.obolibrary.org/obo/MRIO_0000601>	<http://www.w3.org/2000/01/rdf-schema#label>	"image segmentation map"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000380>	<http://www.w3.org/2000/01/rdf-schema#label>	"MRI machine setting datum"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000656>	<http://www.w3.org/2000/01/rdf-schema#label>	"Deep roboNAC analysis"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000666>	<http://www.w3.org/2000/01/rdf-schema#label>	"white matter volume measurement daturm"@en	
@@ -156,3 +156,4 @@
 <http://purl.obolibrary.org/obo/MRIO_0000677>	<http://www.w3.org/2000/01/rdf-schema#label>	"diffusion weighted MRI acquisition sequence"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000692>	<http://www.w3.org/2000/01/rdf-schema#label>	"3D T1 GRE sequence"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000644>	<http://www.w3.org/2000/01/rdf-schema#label>	"dorsal thalamic volume measurement datum"@en	
+<http://purl.obolibrary.org/obo/MRIO_0000601>	<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym>	"label map"	

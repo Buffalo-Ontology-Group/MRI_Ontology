@@ -23,7 +23,23 @@ oboInOwl:	http://www.geneontology.org/formats/oboInOwl#
 
 [MappingDeclaration] @collection [[
 mappingId	thalamicvolume
-target		<http://purl.obolibrary.org/obocrania/thalamicVolume/{id}> a :MRIO_0000669 ; :RO_0000053 <http://purl.obolibrary.org/oboMRIO_0000501> , <http://purl.obolibrary.org/oboMRIO_0000670> . 
-source		SELECT * FROM crania_thalamicVolume ;
+target		:crania/deepgrai/thalamicvolume/{id} a :MRIO_0000501 ; :IAO_0000136 :UBERON_0010225 ; :IAO_0000004 {thalamicvolume}^^xsd:double . 
+source		SELECT id,thalamicvolume FROM crania_thalamicVolume ;
+
+mappingId	wholebrainvolume
+target		:crania/sienax/wholebrainvolume/{id} a :MRIO_0000664 ; :IAO_0000136 :UBERON_0000955 ; :IAO_0000004 {wholebrainvolume_normalizedwholebrainvolume}^^xsd:double . 
+source		SELECT id,wholebrainvolume_normalizedwholebrainvolume FROM crania_sienax ;
+
+mappingId	greymattervolume
+target		:crania/sienax/greymattervolume/{id} a :MRIO_0000665 ; :IAO_0000136 :UBERON_0003528 ; :IAO_0000004 {greymattervolume_normalizedgreymattervolume}^^xsd:double . 
+source		SELECT id,greymattervolume_normalizedgreymattervolume FROM crania_sienax ;
+
+mappingId	whitemattervolume
+target		:crania/sienax/whitemattervolume/{id} a :MRIO_0000666 ; :IAO_0000136 :UBERON_0003544 ; :IAO_0000004 {whitemattervolume_normalizedwhitemattervolume}^^xsd:double . 
+source		SELECT id,whitemattervolume_normalizedwhitemattervolume FROM crania_sienax ;
+
+mappingId	csfvolume
+target		:crania/sienax/cerebrospinalfluidvolume/{id} a :MRIO_0000668 ; :IAO_0000136 :UBERON_00001359 ; :IAO_0000004 {cerebrospinalfluidvolume_normalizedcerebrospinalfluidvolume}^^xsd:double . 
+source		SELECT id,cerebrospinalfluidvolume_normalizedcerebrospinalfluidvolume FROM crania_sienax ;
 ]]
 
