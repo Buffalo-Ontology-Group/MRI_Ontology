@@ -138,7 +138,6 @@ http://purl.obolibrary.org/obo/MRIO_0000631
 http://purl.obolibrary.org/obo/MRIO_0000632
 http://purl.obolibrary.org/obo/MRIO_0000635
 http://purl.obolibrary.org/obo/MRIO_0000636
-http://purl.obolibrary.org/obo/MRIO_0000638
 http://purl.obolibrary.org/obo/MRIO_0000639
 http://purl.obolibrary.org/obo/MRIO_0000640
 http://purl.obolibrary.org/obo/MRIO_0000641
@@ -189,6 +188,16 @@ http://purl.obolibrary.org/obo/MRIO_0000690
 http://purl.obolibrary.org/obo/MRIO_0000691
 http://purl.obolibrary.org/obo/MRIO_0000692
 http://purl.obolibrary.org/obo/MRIO_0000693
+http://purl.obolibrary.org/obo/MRIO_0000695
+http://purl.obolibrary.org/obo/MRIO_0000696
+http://purl.obolibrary.org/obo/MRIO_0000697
+http://purl.obolibrary.org/obo/MRIO_0000698
+http://purl.obolibrary.org/obo/MRIO_0000699
+http://purl.obolibrary.org/obo/MRIO_0000700
+http://purl.obolibrary.org/obo/MRIO_0000701
+http://purl.obolibrary.org/obo/MRIO_0000702
+http://purl.obolibrary.org/obo/MRIO_0000703
+http://purl.obolibrary.org/obo/MRIO_0000704
 http://purl.obolibrary.org/obo/OBI_0000067
 http://purl.obolibrary.org/obo/OBI_0000070
 http://purl.obolibrary.org/obo/OBI_0000272
@@ -197,8 +206,9 @@ http://purl.obolibrary.org/obo/OBI_0000299
 http://purl.obolibrary.org/obo/OBI_0000312
 http://purl.obolibrary.org/obo/OBI_0000398
 http://purl.obolibrary.org/obo/OBI_0001879
+http://purl.obolibrary.org/obo/OBI_0001938
+http://purl.obolibrary.org/obo/OBI_0002139
 http://purl.obolibrary.org/obo/OBI_0200000
-http://purl.obolibrary.org/obo/OBI_0600040
 http://purl.obolibrary.org/obo/RO_0000053
 http://purl.obolibrary.org/obo/RO_0000059
 http://purl.obolibrary.org/obo/RO_0000087
@@ -263,6 +273,7 @@ http://purl.obolibrary.org/obo/mf
 http://purl.obolibrary.org/obo/mrio/releases/2021-04-10/mrio.owl
 http://purl.org/dc/elements/1.1/creator
 http://purl.org/dc/elements/1.1/source
+http://purl.org/dc/elements/1.1/title
 http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
 http://www.geneontology.org/formats/oboInOwl#ObsoleteClass
 http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym

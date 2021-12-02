@@ -24,12 +24,13 @@
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/">
         <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/mrio/releases/2021-04-10/mrio.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MRIO/releases/2021-12-01/imports/obi_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MRIO/releases/2021-12-02/imports/obi_import.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2019-08-26/bfo.owl"/>
         <dc:creator>Alexander Bartnik</dc:creator>
         <dc:creator>Lucas Serra</dc:creator>
         <dc:creator>Mackenzie Smith</dc:creator>
         <dc:description>An ontology for the representation of MRI acquisition and analysis.</dc:description>
+        <dc:title> MRI Ontology (MRI)</dc:title>
         <terms:license>https://creativecommons.org/licenses/by/4.0/</terms:license>
     </owl:Ontology>
     
@@ -43,6 +44,12 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
     
 
 
@@ -2848,7 +2855,7 @@ The values often belong to a group of pixels or voxels that share the same chara
             </owl:Restriction>
         </rdfs:subClassOf>
         <IAO_0000115>An inversion recovery (IR) pulse sequence is a spin echo or gradient echo pulse sequence preceded by a 180° RF pulse.</IAO_0000115>
-        <IAO_0000116>Create specific subclass of this and echo panar sequence for both GRE and SE.</IAO_0000116>
+        <IAO_0000116>TODO: Create specific subclass of this and echo panar sequence for both GRE and SE.</IAO_0000116>
         <dc:source>https://radiopaedia.org/articles/inversion-recovery-sequences?lang=us</dc:source>
         <rdfs:label xml:lang="en">inversion recovery sequence</rdfs:label>
     </owl:Class>
@@ -3318,12 +3325,6 @@ ISBN 10: 1119053552</IAO_0000119>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001879"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0600040"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002180"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33375"/>
             </owl:Restriction>
@@ -3431,6 +3432,147 @@ ISBN 10: 1119053552</IAO_0000119>
         <IAO_0000115>T2 weighted MR image data set collected using a STIR sequence to suppress the signal coming from fat.</IAO_0000115>
         <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
         <rdfs:label xml:lang="en">T2 STIR image data set</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_0000695 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000695">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000500"/>
+        <rdfs:label xml:lang="en">lesion volume measurement datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_0000696 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000696">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000695"/>
+        <rdfs:label xml:lang="en">atrophied lesion volume measurement datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_0000697 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000697">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000624"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002129"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">cerebellum resting state network atlas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_0000698 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000698">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000624"/>
+        <rdfs:label xml:lang="en">auditory resting state network atlas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_0000699 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000699">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000624"/>
+        <rdfs:label xml:lang="en">executive control resting state network atlas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_0000700 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000700">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000624"/>
+        <rdfs:label xml:lang="en">frontoparietal resting state network atlas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_0000701 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000701">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000624"/>
+        <rdfs:label xml:lang="en">sensorimotor resting state network atlas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_0000702 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000702">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000624"/>
+        <rdfs:label xml:lang="en">V1 resting state network atlas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_0000703 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000703">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000624"/>
+        <rdfs:label xml:lang="en">V2 resting state network atlas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_0000704 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000704">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000624"/>
+        <rdfs:label xml:lang="en">V3 resting state network atlas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_0000705 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000705">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:label xml:lang="en">network graph quality datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_0000706 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000706">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000705"/>
+        <rdfs:label xml:lang="en">network assortativity datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_0000707 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000707">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000705"/>
+        <rdfs:label xml:lang="en">network efficiency datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_0000708 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000708">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000705"/>
+        <rdfs:label xml:lang="en">network transitivity datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_0000709 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000709">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000626"/>
+        <rdfs:label xml:lang="en">auditory resting state network functional connectivity matrix</rdfs:label>
     </owl:Class>
     
 
@@ -3880,14 +4022,6 @@ ISBN 10: 1119053552</IAO_0000119>
         <MRIO_0000377 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</MRIO_0000377>
         <MRIO_0000384 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">90.0</MRIO_0000384>
         <rdfs:label xml:lang="en">test t1 gre sequence</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000638 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/MRIO_0000638">
-        <rdfs:label xml:lang="en">test flair</rdfs:label>
     </owl:NamedIndividual>
     
 

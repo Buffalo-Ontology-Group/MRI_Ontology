@@ -50,3 +50,4 @@ http://purl.obolibrary.org/obo/OBI_0000312
 http://purl.obolibrary.org/obo/RO_0002180
 http://purl.obolibrary.org/obo/OBI_0002141 # volume measurement assay
 http://purl.obolibrary.org/obo/OBI_0002139 # volume value specification
+http://purl.obolibrary.org/obo/OBI_0200147 # network graph quality calculation

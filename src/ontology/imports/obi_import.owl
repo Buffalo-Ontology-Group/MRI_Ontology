@@ -9,9 +9,9 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/MRIO/imports/obi_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/MRIO/releases/2021-12-01/imports/obi_import.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/MRIO/releases/2021-12-02/imports/obi_import.owl"/>
         <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2021-08-18/obi.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-12-01</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-12-02</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -253,6 +253,21 @@ We also have the outstanding issue of how to aim different definitions to differ
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
         <rdfs:label>Source</rdfs:label>
         <rdfs:label xml:lang="en-us">Source</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title">
+        <dc:description xml:lang="en-us">
+        Typically, a Title will be a name by which the resource is
+         formally known.
+    </dc:description>
+        <rdfs:comment xml:lang="en-us">A name given to the resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+        <rdfs:label>Title</rdfs:label>
+        <rdfs:label xml:lang="en-us">Title</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -4358,6 +4373,21 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0200080 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0200080">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
+        <obo:IAO_0000111 xml:lang="en">network analysis</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115 xml:lang="en">A data transformation that takes as input data that describes biological networks in terms of the node (a.k.a. vertex) and edge graph elements and their characteristics and generates as output properties of the constituent nodes and edges, the sub-graphs, and the entire network.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Richard Scheuermann</obo:IAO_0000117>
+        <obo:IAO_0000118>network topology analysis</obo:IAO_0000118>
+        <obo:IAO_0000119 xml:lang="en">PERSON: Richard Scheuermann</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">network analysis</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0200111 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0200111">
@@ -4419,6 +4449,20 @@ information_encoding
 &gt;data_encoding
 &gt;&gt;image_encoding</obo:IAO_0000232>
         <rdfs:label xml:lang="en">data visualization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0200147 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0200147">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200080"/>
+        <obo:IAO_0000111 xml:lang="en">network graph quality calculation</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115 xml:lang="en">A network analysis in which an input data set describing node objects and edge relationships between node objects is used to determine the output quality of the network as a whole.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Richard Scheuermann</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">PERSON: Richard Scheuermann</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">network graph quality calculation</rdfs:label>
     </owl:Class>
     
 
@@ -4587,41 +4631,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <obo:IAO_0000115>A data visualization which has input of a clustered data set and produces an output of a report graph which is capable of rendering data of this type.</obo:IAO_0000115>
         <obo:IAO_0000117>James Malone</obo:IAO_0000117>
         <rdfs:label>clustered data visualization</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0600040 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0600040">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000456"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000111>synthesis</obo:IAO_0000111>
-        <obo:IAO_0000112 xml:lang="en">making cDNA from nucleotides using RNA as a template</obo:IAO_0000112>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
-        <obo:IAO_0000115 xml:lang="en">the construction of a biomaterial from simpler biomaterials</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">This probably needs breaking down into more specific applications. The example given is already covered in reverse_transcription</obo:IAO_0000116>
-        <obo:IAO_0000117 xml:lang="en">PERSON:Kevin Clancy</obo:IAO_0000117>
-        <obo:IAO_0000118 xml:lang="en">synthesize</obo:IAO_0000118>
-        <obo:IAO_0000119 xml:lang="en">OBI branch derived</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">synthesis</rdfs:label>
     </owl:Class>
     
 
