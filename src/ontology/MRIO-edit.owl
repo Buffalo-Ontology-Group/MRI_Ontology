@@ -2095,7 +2095,9 @@ The values often belong to a group of pixels or voxels that share the same chara
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000624">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000648"/>
+        <IAO_0000115>A brain atlas image data set encoding voxels involved in ten major resting state functional networks, as determined by analysis and decomposition of 36 human subjects&apos; functional activity at rest.</IAO_0000115>
         <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
+        <oboInOwl:source>https://www.pnas.org/cgi/doi/10.1073/pnas.0905267106</oboInOwl:source>
         <rdfs:label xml:lang="en">Smith resting state network atlas</rdfs:label>
     </owl:Class>
     
@@ -2166,6 +2168,7 @@ The values often belong to a group of pixels or voxels that share the same chara
             </owl:Restriction>
         </rdfs:subClassOf>
         <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
+        <oboInOwl:source>https://www.pnas.org/cgi/doi/10.1073/pnas.0905267106</oboInOwl:source>
         <rdfs:label xml:lang="en">default mode network atlas</rdfs:label>
     </owl:Class>
     
@@ -2759,7 +2762,9 @@ The values often belong to a group of pixels or voxels that share the same chara
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0035933"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <IAO_0000115>A brain atlas image data set that encodes the location of 86 cortical and subcortical regions of interest, commonly used in Freesurfer segmentation and volumetric analysis.</IAO_0000115>
         <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
+        <oboInOwl:source>http://dx.doi.org/10.1016/j.neuroimage.2006.01.021</oboInOwl:source>
         <rdfs:label xml:lang="en">Desikan-Killiany brain atlas image data set</rdfs:label>
     </owl:Class>
     
@@ -3578,6 +3583,7 @@ ISBN 10: 1119053552</IAO_0000119>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002129"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:source>https://www.pnas.org/cgi/doi/10.1073/pnas.0905267106</oboInOwl:source>
         <rdfs:label xml:lang="en">cerebellum resting state network atlas</rdfs:label>
     </owl:Class>
     
@@ -3671,6 +3677,7 @@ ISBN 10: 1119053552</IAO_0000119>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0028622"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:source>https://www.pnas.org/cgi/doi/10.1073/pnas.0905267106</oboInOwl:source>
         <rdfs:label xml:lang="en">auditory resting state network atlas</rdfs:label>
     </owl:Class>
     
@@ -3794,6 +3801,7 @@ ISBN 10: 1119053552</IAO_0000119>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0028715"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:source>https://www.pnas.org/cgi/doi/10.1073/pnas.0905267106</oboInOwl:source>
         <rdfs:label xml:lang="en">executive control resting state network atlas</rdfs:label>
     </owl:Class>
     
@@ -3911,6 +3919,7 @@ ISBN 10: 1119053552</IAO_0000119>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0027061"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:source>https://www.pnas.org/cgi/doi/10.1073/pnas.0905267106</oboInOwl:source>
         <rdfs:label xml:lang="en">frontoparietal resting state network atlas</rdfs:label>
     </owl:Class>
     
@@ -3986,6 +3995,7 @@ ISBN 10: 1119053552</IAO_0000119>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0035933"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:source>https://www.pnas.org/cgi/doi/10.1073/pnas.0905267106</oboInOwl:source>
         <rdfs:label xml:lang="en">sensorimotor resting state network atlas</rdfs:label>
     </owl:Class>
     
@@ -4025,6 +4035,7 @@ ISBN 10: 1119053552</IAO_0000119>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0022534"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:source>https://www.pnas.org/cgi/doi/10.1073/pnas.0905267106</oboInOwl:source>
         <rdfs:label xml:lang="en">V1 resting state network atlas</rdfs:label>
     </owl:Class>
     
@@ -4058,6 +4069,7 @@ ISBN 10: 1119053552</IAO_0000119>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0013684"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:source>https://www.pnas.org/cgi/doi/10.1073/pnas.0905267106</oboInOwl:source>
         <rdfs:label xml:lang="en">V2 resting state network atlas</rdfs:label>
     </owl:Class>
     
@@ -4127,6 +4139,7 @@ ISBN 10: 1119053552</IAO_0000119>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0028622"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:source>https://www.pnas.org/cgi/doi/10.1073/pnas.0905267106</oboInOwl:source>
         <rdfs:label xml:lang="en">V3 resting state network atlas</rdfs:label>
     </owl:Class>
     
