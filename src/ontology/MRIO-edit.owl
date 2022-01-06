@@ -1321,6 +1321,7 @@ variable
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0002139"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <IAO_0000115>A scalar measurement datum that is derived from the measurement of some volume quality</IAO_0000115>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
         <rdfs:label xml:lang="en">volume measurement datum</rdfs:label>
     </owl:Class>
@@ -1343,6 +1344,7 @@ variable
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0010225"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <IAO_0000115>A measurement datum that is the result of volume measurement of  the thalamus within some brain.</IAO_0000115>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
         <rdfs:label xml:lang="en">thalamic volume measurement datum</rdfs:label>
     </owl:Class>
@@ -1431,6 +1433,12 @@ variable
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000341"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000500"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <IAO_0000115>Any combination of digital image analysis and statistical tools that may be used to derive processed MR images or data measurements about the MR images.</IAO_0000115>
         <IAO_0000116>Add missing sources/papers/doi</IAO_0000116>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
@@ -1512,6 +1520,7 @@ variable
         </rdfs:subClassOf>
         <IAO_0000115>A model-based subcortical segmentation tool.</IAO_0000115>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
+        <oboInOwl:source>Patenaude, B., Smith, S.M., Kennedy, D., and Jenkinson M. A Bayesian Model of Shape and Appearance for Subcortical Brain NeuroImage, 56(3):907-922, 2011.</oboInOwl:source>
         <rdfs:label xml:lang="en">FIRST analysis</rdfs:label>
     </owl:Class>
     
@@ -1825,6 +1834,7 @@ variable
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000600">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000623"/>
+        <IAO_0000115>An image data set where voxel intensity values greater than zero encode the location of some brain lesion and voxels outside the lesion have an intensity value of zero.</IAO_0000115>
         <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
         <rdfs:label xml:lang="en">lesion mask</rdfs:label>
     </owl:Class>
@@ -1860,6 +1870,7 @@ The values often belong to a group of pixels or voxels that share the same chara
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000603">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000600"/>
+        <IAO_0000115>A lesion mask where the lesions are derived from a T2 weighted image data set.</IAO_0000115>
         <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
         <rdfs:label xml:lang="en">T2 lesion mask</rdfs:label>
     </owl:Class>
@@ -1880,6 +1891,7 @@ The values often belong to a group of pixels or voxels that share the same chara
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000605">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000603"/>
+        <IAO_0000115>A lesion mask where the lesions are derived from a T2 FLAIR image data set.</IAO_0000115>
         <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
         <rdfs:label xml:lang="en">FLAIR lesion mask</rdfs:label>
     </owl:Class>
@@ -1890,6 +1902,7 @@ The values often belong to a group of pixels or voxels that share the same chara
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000607">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000611"/>
+        <IAO_0000115>A connectivity matrix where each element represents the correlation of functional brain activity over time between two regions or voxels.</IAO_0000115>
         <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
         <rdfs:label xml:lang="en">functional connectivity matrix</rdfs:label>
     </owl:Class>
@@ -1900,7 +1913,8 @@ The values often belong to a group of pixels or voxels that share the same chara
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000608">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
-        <IAO_0000116>Move to under data set.</IAO_0000116>
+        <IAO_0000115>An n-dimensional data set that describes some linear relations of the scalars, vectors, or matrices that constitute it.</IAO_0000115>
+        <IAO_0000118>multidemnsional array</IAO_0000118>
         <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
         <rdfs:label xml:lang="en">tensor data set</rdfs:label>
     </owl:Class>
@@ -1929,6 +1943,7 @@ The values often belong to a group of pixels or voxels that share the same chara
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000649"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <IAO_0000115>A tensor data set produced by the Network Modification tool (NeMo) that contains matrix data sets related to the structural connectivity and disruption of white matter tracts in the human brain caused by focal lesions.</IAO_0000115>
         <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
         <rdfs:label xml:lang="en">ChaCo data array</rdfs:label>
     </owl:Class>
@@ -1939,10 +1954,10 @@ The values often belong to a group of pixels or voxels that share the same chara
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000610">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
-        <IAO_0000115>A measuement datum which is a data set that is made up of an n-dimensional array of elements (or entries).</IAO_0000115>
+        <IAO_0000115>A data set comprised of 2-dimensional array (rows and columns) of elements or entries, each representing an object or property of an object.</IAO_0000115>
         <IAO_0000116>there&apos;s another term similar in OBI- should be resolved (IRI: http://purl.obolibrary.org/obo/OBIws_0000100)</IAO_0000116>
         <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
-        <rdfs:label xml:lang="en">matrix measurement data set</rdfs:label>
+        <rdfs:label xml:lang="en">matrix data set</rdfs:label>
     </owl:Class>
     
 
@@ -1951,6 +1966,7 @@ The values often belong to a group of pixels or voxels that share the same chara
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000611">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000610"/>
+        <IAO_0000115>A square n x n matrix where each element A of i,j represents some correlational relationship or degree of connection between i and j.</IAO_0000115>
         <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
         <rdfs:label xml:lang="en">connectivity matrix</rdfs:label>
     </owl:Class>
@@ -1961,6 +1977,7 @@ The values often belong to a group of pixels or voxels that share the same chara
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000612">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000611"/>
+        <IAO_0000115>A connectivity matrix where each element represents the degree of physical integrity of some path between two brain regions or voxels.</IAO_0000115>
         <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
         <rdfs:label xml:lang="en">structural connectivity matrix</rdfs:label>
     </owl:Class>
@@ -1977,6 +1994,7 @@ The values often belong to a group of pixels or voxels that share the same chara
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000649"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <IAO_0000115>A structural connectivity matrix where each element respresents the number of white matter streamlines still connecting two brain regions when accounting for focal lesion damage, normalized for the NeMo healthy control tractogram set.</IAO_0000115>
         <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
         <rdfs:label xml:lang="en">nConMat matrix</rdfs:label>
     </owl:Class>
@@ -1993,6 +2011,7 @@ The values often belong to a group of pixels or voxels that share the same chara
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000649"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <IAO_0000115>A structural connectivity matrix where each element represents the average number of white matter tract streamlines connecting two brain regions normalized for the NeMo healthy control tractogram set.</IAO_0000115>
         <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
         <rdfs:label xml:lang="en">nMapTFC matrix</rdfs:label>
     </owl:Class>
@@ -2167,6 +2186,7 @@ The values often belong to a group of pixels or voxels that share the same chara
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0027061"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <IAO_0000115>A brain atlas image dataset encoding voxels belonging to the default mode network functional resting state network.</IAO_0000115>
         <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
         <oboInOwl:source>https://www.pnas.org/cgi/doi/10.1073/pnas.0905267106</oboInOwl:source>
         <rdfs:label xml:lang="en">default mode network atlas</rdfs:label>
@@ -2184,6 +2204,7 @@ The values often belong to a group of pixels or voxels that share the same chara
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000649"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <IAO_0000115>A connectivity matrix where each element represents the correlation of functional brain activity with the 86 regions described in the Desikan-Killiany brain atlas.</IAO_0000115>
         <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
         <rdfs:label xml:lang="en">Desikan-Killiany functional connectivity matrix</rdfs:label>
     </owl:Class>
@@ -2193,13 +2214,14 @@ The values often belong to a group of pixels or voxels that share the same chara
     <!-- http://purl.obolibrary.org/obo/MRIO_0000627 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000627">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000626"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000607"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000625"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <IAO_0000115>A connectivity matrix where each element represents the correlation of functional brain activity within the default mode network.</IAO_0000115>
         <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
         <rdfs:label xml:lang="en">default mode network functional connectivity matrix</rdfs:label>
     </owl:Class>
@@ -2289,6 +2311,7 @@ The values often belong to a group of pixels or voxels that share the same chara
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000697"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <IAO_0000115>A connectivity matrix where each element represents the correlation of functional brain activity within the cerebellar resting state network.</IAO_0000115>
         <rdfs:label xml:lang="en">cerebellum resting state functional connectivity matrix</rdfs:label>
     </owl:Class>
     
@@ -2304,6 +2327,7 @@ The values often belong to a group of pixels or voxels that share the same chara
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000699"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <IAO_0000115>A connectivity matrix where each element represents the correlation of functional brain activity within the executive control resting state network.</IAO_0000115>
         <rdfs:label xml:lang="en">executive control resting state functional connectivity matrix</rdfs:label>
     </owl:Class>
     
@@ -2341,6 +2365,7 @@ The values often belong to a group of pixels or voxels that share the same chara
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000700"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <IAO_0000115>A connectivity matrix where each element represents the correlation of functional brain activity within the left and right hemisphere resting state networks.</IAO_0000115>
         <rdfs:label xml:lang="en">frontoparietal resting state functional connectivity matrix</rdfs:label>
     </owl:Class>
     
@@ -2356,6 +2381,7 @@ The values often belong to a group of pixels or voxels that share the same chara
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000701"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <IAO_0000115>A connectivity matrix where each element represents the correlation of functional brain activity within the sensorimotor resting state network.</IAO_0000115>
         <rdfs:label xml:lang="en">sensorimotor resting state functional connectivity matrix</rdfs:label>
     </owl:Class>
     
@@ -2786,6 +2812,7 @@ The values often belong to a group of pixels or voxels that share the same chara
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000421"/>
         <IAO_0000115>The Configurable Pipeline for the Analysis of Connectomes (C-PAC) is a configurable, open-source, Nipype-based, automated processing pipeline for resting state functional MRI (R-fMRI) data, for use by both novice and expert users.</IAO_0000115>
         <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
+        <oboInOwl:source>https://doi.org/10.3389/conf.fninf.2013.09.00042</oboInOwl:source>
         <rdfs:label xml:lang="en">c-pac</rdfs:label>
     </owl:Class>
     
@@ -2801,6 +2828,7 @@ The values often belong to a group of pixels or voxels that share the same chara
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000702"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <IAO_0000115>A connectivity matrix where each element represents the correlation of functional brain activity within the V1 resting state network.</IAO_0000115>
         <rdfs:label xml:lang="en">V1 resting state functional connectivity matrix</rdfs:label>
     </owl:Class>
     
@@ -2828,6 +2856,7 @@ The values often belong to a group of pixels or voxels that share the same chara
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000703"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <IAO_0000115>A connectivity matrix where each element represents the correlation of functional brain activity within the V2 resting state network.</IAO_0000115>
         <rdfs:label xml:lang="en">V2 resting state functional connectivity matrix</rdfs:label>
     </owl:Class>
     
@@ -2894,6 +2923,12 @@ The values often belong to a group of pixels or voxels that share the same chara
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000658">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000508"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000600"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <IAO_0000115>Produces some quantitative or qualitative data about voxels in an MRI data set that appear affected by some neurobiological process or as a result of some neurological disease such that there may be damage to the brain tissue.</IAO_0000115>
         <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
         <rdfs:label xml:lang="en">focal lesion analysis</rdfs:label>
@@ -2970,6 +3005,12 @@ The values often belong to a group of pixels or voxels that share the same chara
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000662">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000508"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000601"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <IAO_0000115>The process of dividing voxels in a 3D space into any number of categories based on some criteria (e.g. contrast, signal intensity, location).</IAO_0000115>
         <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
         <rdfs:label xml:lang="en">MR image segmentation analysis</rdfs:label>
@@ -3047,6 +3088,7 @@ The values often belong to a group of pixels or voxels that share the same chara
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000955"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <IAO_0000115>A measurement datum that is the result of volume measurement of the tissue of some brain.</IAO_0000115>
         <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
         <rdfs:label xml:lang="en">whole brain volume measurement datum</rdfs:label>
     </owl:Class>
@@ -3063,6 +3105,7 @@ The values often belong to a group of pixels or voxels that share the same chara
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003528"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <IAO_0000115>A measurement datum that is the result of volume measurement of grey matter within some brain.</IAO_0000115>
         <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
         <rdfs:label xml:lang="en">grey matter volume measurement datum</rdfs:label>
     </owl:Class>
@@ -3079,6 +3122,7 @@ The values often belong to a group of pixels or voxels that share the same chara
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003544"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <IAO_0000115>A measurement datum that is the result of volume measurement of white matter within some brain.</IAO_0000115>
         <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
         <rdfs:label xml:lang="en">white matter volume measurement daturm</rdfs:label>
     </owl:Class>
@@ -3107,6 +3151,7 @@ The values often belong to a group of pixels or voxels that share the same chara
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <IAO_0000115>A volume measurement datum that is the result of a measurement of the volume of some brain and its substructures.</IAO_0000115>
         <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
         <rdfs:label xml:lang="en">brain volume measurement datum</rdfs:label>
     </owl:Class>
@@ -3123,6 +3168,7 @@ The values often belong to a group of pixels or voxels that share the same chara
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001359"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <IAO_0000115>A measurement datum that is the result of volume measurement of  cerebrospinal fluid within some brain.</IAO_0000115>
         <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
         <rdfs:label xml:lang="en">CSF volume measurement datum</rdfs:label>
     </owl:Class>
@@ -3165,6 +3211,7 @@ The values often belong to a group of pixels or voxels that share the same chara
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000649"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <IAO_0000115>An image data set whose voxels encode the location of a region from the Desikan-Killiany atlas in an image data set.</IAO_0000115>
         <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
         <rdfs:label xml:lang="en">FreeSurfer segmentation map</rdfs:label>
     </owl:Class>
@@ -3181,6 +3228,7 @@ The values often belong to a group of pixels or voxels that share the same chara
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000704"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <IAO_0000115>A connectivity matrix where each element represents the correlation of functional brain activity within the V3 resting state network.</IAO_0000115>
         <rdfs:label xml:lang="en">V3 functional connectivity matrix</rdfs:label>
     </owl:Class>
     
@@ -3196,6 +3244,8 @@ The values often belong to a group of pixels or voxels that share the same chara
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000649"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <IAO_0000115>A measurement datum that is the result of volume measurement of peripheral/cortical grey matter within some brain.</IAO_0000115>
+        <IAO_0000118>cortical grey matter volume measurement datum</IAO_0000118>
         <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
         <rdfs:label xml:lang="en">peripheral grey matter volume measurement datum</rdfs:label>
     </owl:Class>
@@ -3448,6 +3498,7 @@ ISBN 10: 1119053552</IAO_0000119>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33375"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>A chemical reagent containing gadolinium injecting into an MRI participant to increase the visible contrast of some MR image data set.</rdfs:comment>
         <rdfs:label xml:lang="en">imaging contrast reagent</rdfs:label>
     </owl:Class>
     
@@ -3522,6 +3573,7 @@ ISBN 10: 1119053552</IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000691">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000389"/>
+        <IAO_0000115>A T1 weighted acquisition sequence that uses a gradient echo pulse sequence to acquire an MR image data set one 2D slice at a time.</IAO_0000115>
         <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
         <rdfs:label xml:lang="en">2D T1 GRE sequence</rdfs:label>
     </owl:Class>
@@ -3538,6 +3590,7 @@ ISBN 10: 1119053552</IAO_0000119>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000503"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <IAO_0000115>A T1 weighted acquisition sequence that uses a gradient echo pulse sequence to acquire an entire 3D MR image data set at once.</IAO_0000115>
         <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
         <rdfs:label xml:lang="en">3D T1 GRE sequence</rdfs:label>
     </owl:Class>
@@ -3559,6 +3612,7 @@ ISBN 10: 1119053552</IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000695">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000500"/>
+        <IAO_0000115>A measurement datum that is the result of volume measurement of all lesions within some brain.</IAO_0000115>
         <rdfs:label xml:lang="en">lesion volume measurement datum</rdfs:label>
     </owl:Class>
     
@@ -3568,6 +3622,7 @@ ISBN 10: 1119053552</IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000696">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000695"/>
+        <IAO_0000115>A measurement datum that is the result of volume measurement of atrophied lesions within some brain.</IAO_0000115>
         <rdfs:label xml:lang="en">atrophied lesion volume measurement datum</rdfs:label>
     </owl:Class>
     
@@ -3583,6 +3638,7 @@ ISBN 10: 1119053552</IAO_0000119>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002129"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <IAO_0000115>A brain atlas image dataset encoding voxels belonging to the cebebellar functional resting state network.</IAO_0000115>
         <oboInOwl:source>https://www.pnas.org/cgi/doi/10.1073/pnas.0905267106</oboInOwl:source>
         <rdfs:label xml:lang="en">cerebellum resting state network atlas</rdfs:label>
     </owl:Class>
@@ -3677,6 +3733,7 @@ ISBN 10: 1119053552</IAO_0000119>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0028622"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <IAO_0000115>A brain atlas image dataset encoding voxels belonging to the auditory functional resting state network.</IAO_0000115>
         <oboInOwl:source>https://www.pnas.org/cgi/doi/10.1073/pnas.0905267106</oboInOwl:source>
         <rdfs:label xml:lang="en">auditory resting state network atlas</rdfs:label>
     </owl:Class>
@@ -3801,6 +3858,7 @@ ISBN 10: 1119053552</IAO_0000119>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0028715"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <IAO_0000115>A brain atlas image dataset encoding voxels belonging to the executive control functional resting state network.</IAO_0000115>
         <oboInOwl:source>https://www.pnas.org/cgi/doi/10.1073/pnas.0905267106</oboInOwl:source>
         <rdfs:label xml:lang="en">executive control resting state network atlas</rdfs:label>
     </owl:Class>
@@ -3919,6 +3977,7 @@ ISBN 10: 1119053552</IAO_0000119>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0027061"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <IAO_0000115>A brain atlas image dataset encoding voxels belonging to both the left hemisphere and right hemisphere frontoparietal functional resting state networks.</IAO_0000115>
         <oboInOwl:source>https://www.pnas.org/cgi/doi/10.1073/pnas.0905267106</oboInOwl:source>
         <rdfs:label xml:lang="en">frontoparietal resting state network atlas</rdfs:label>
     </owl:Class>
@@ -3995,6 +4054,7 @@ ISBN 10: 1119053552</IAO_0000119>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0035933"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <IAO_0000115>A brain atlas image dataset encoding voxels belonging to the sensorimotor functional resting state network.</IAO_0000115>
         <oboInOwl:source>https://www.pnas.org/cgi/doi/10.1073/pnas.0905267106</oboInOwl:source>
         <rdfs:label xml:lang="en">sensorimotor resting state network atlas</rdfs:label>
     </owl:Class>
@@ -4035,6 +4095,7 @@ ISBN 10: 1119053552</IAO_0000119>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0022534"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <IAO_0000115>A brain atlas image dataset encoding voxels belonging to the V1 functional resting state network.</IAO_0000115>
         <oboInOwl:source>https://www.pnas.org/cgi/doi/10.1073/pnas.0905267106</oboInOwl:source>
         <rdfs:label xml:lang="en">V1 resting state network atlas</rdfs:label>
     </owl:Class>
@@ -4069,6 +4130,7 @@ ISBN 10: 1119053552</IAO_0000119>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0013684"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <IAO_0000115>A brain atlas image dataset encoding voxels belonging to the V2 functional resting state network.</IAO_0000115>
         <oboInOwl:source>https://www.pnas.org/cgi/doi/10.1073/pnas.0905267106</oboInOwl:source>
         <rdfs:label xml:lang="en">V2 resting state network atlas</rdfs:label>
     </owl:Class>
@@ -4139,6 +4201,7 @@ ISBN 10: 1119053552</IAO_0000119>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0028622"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <IAO_0000115>A brain atlas image dataset encoding voxels belonging to the V3 functional resting state network.</IAO_0000115>
         <oboInOwl:source>https://www.pnas.org/cgi/doi/10.1073/pnas.0905267106</oboInOwl:source>
         <rdfs:label xml:lang="en">V3 resting state network atlas</rdfs:label>
     </owl:Class>
@@ -4149,6 +4212,13 @@ ISBN 10: 1119053552</IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000705">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0200147"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <IAO_0000115>A data item that represents some quality of the network as a whole.</IAO_0000115>
         <rdfs:label xml:lang="en">network graph quality datum</rdfs:label>
     </owl:Class>
     
@@ -4158,6 +4228,8 @@ ISBN 10: 1119053552</IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000706">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000705"/>
+        <IAO_0000115>A datum representing the preference for a network&apos;s nodes to attach to other similar nodes.</IAO_0000115>
+        <oboInOwl:source>https://en.wikipedia.org/wiki/Assortativity</oboInOwl:source>
         <rdfs:label xml:lang="en">network assortativity datum</rdfs:label>
     </owl:Class>
     
@@ -4167,6 +4239,8 @@ ISBN 10: 1119053552</IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000707">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000705"/>
+        <IAO_0000115>A datu item that represents how efficiently nodes within a network exchange information, often as a function of the distance between nodes.</IAO_0000115>
+        <oboInOwl:source>https://en.wikipedia.org/wiki/Efficiency_(network_science)</oboInOwl:source>
         <rdfs:label xml:lang="en">network efficiency datum</rdfs:label>
     </owl:Class>
     
@@ -4176,6 +4250,9 @@ ISBN 10: 1119053552</IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000708">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000705"/>
+        <IAO_0000115>A data item that represents the tendency of nodes within a network to cluster together measured by the quotient of closed triplet nodes divided by the total number of triple nodes in a network.</IAO_0000115>
+        <IAO_0000118>global clustering coefficient</IAO_0000118>
+        <oboInOwl:source>https://en.wikipedia.org/wiki/Clustering_coefficient</oboInOwl:source>
         <rdfs:label xml:lang="en">network transitivity datum</rdfs:label>
     </owl:Class>
     
@@ -4184,13 +4261,14 @@ ISBN 10: 1119053552</IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/MRIO_0000709 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000709">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000626"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000607"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000698"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <IAO_0000115>A connectivity matrix where each element represents the correlation of functional brain activity within the auditory resting state network.</IAO_0000115>
         <rdfs:label xml:lang="en">auditory resting state network functional connectivity matrix</rdfs:label>
     </owl:Class>
     
