@@ -9,9 +9,9 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/MRIO/imports/obi_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/MRIO/releases/2021-12-02/imports/obi_import.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/MRIO/releases/2022-01-07/imports/obi_import.owl"/>
         <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2021-08-18/obi.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-12-02</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-01-07</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -3001,6 +3001,31 @@ for now.</obo:IAO_0000116>
         <obo:IAO_0000117>PERSON: Philippe Rocca-Serra</obo:IAO_0000117>
         <obo:IAO_0000119>GROUP: OBI PlanAndPlannedProcess Branch</obo:IAO_0000119>
         <rdfs:label xml:lang="en">manufacturing objective</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000566 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000566">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000832"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000085"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000111>NMR instrument</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>An Instrument which is used to carry out a NMR analysis of some sample.</obo:IAO_0000115>
+        <obo:IAO_0000117>PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000118>MRI scanner</obo:IAO_0000118>
+        <obo:IAO_0000118>NMR instrument</obo:IAO_0000118>
+        <obo:IAO_0000118>magnetic resonance imaging scanner</obo:IAO_0000118>
+        <obo:IAO_0000119>GROUP:&lt;http://msi-ontology.sourceforge.net&gt;</obo:IAO_0000119>
+        <obo:IAO_0000119>http://msi-ontology.sourceforge.net/ontology/NMR.owl#msi_400059</obo:IAO_0000119>
+        <obo:IAO_0000232>NMR instrument</obo:IAO_0000232>
+        <rdfs:label>NMR instrument</rdfs:label>
     </owl:Class>
     
 

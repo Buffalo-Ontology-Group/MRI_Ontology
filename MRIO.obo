@@ -1,12 +1,13 @@
 format-version: 1.2
-data-version: releases/2021-10-20
+data-version: releases/2022-01-06
 ontology: MRIO
 property_value: http://purl.org/dc/elements/1.1/creator "Alexander Bartnik" xsd:string
 property_value: http://purl.org/dc/elements/1.1/creator "Lucas Serra" xsd:string
 property_value: http://purl.org/dc/elements/1.1/creator "Mackenzie Smith" xsd:string
 property_value: http://purl.org/dc/elements/1.1/description "An ontology for the representation of MRI acquisition and analysis." xsd:string
+property_value: http://purl.org/dc/elements/1.1/title " MRI Ontology (MRI)" xsd:string
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/4.0/ xsd:string
-property_value: owl:versionInfo "2021-10-20" xsd:string
+property_value: owl:versionInfo "2022-01-06" xsd:string
 
 [Term]
 id: APOLLO_SV:00000008
@@ -256,12 +257,14 @@ name: quality
 is_a: BFO:0000020 ! specifically dependent continuant
 property_value: BFO:0000179 "quality" xsd:string
 property_value: BFO:0000180 "Quality" xsd:string
+property_value: IAO:0000111 "quality" xsd:string
 property_value: IAO:0000112 "the ambient temperature of this portion of air" xsd:string
 property_value: IAO:0000112 "the color of a tomato" xsd:string
 property_value: IAO:0000112 "the length of the circumference of your waist" xsd:string
 property_value: IAO:0000112 "the mass of this piece of gold." xsd:string
 property_value: IAO:0000112 "the shape of your nose" xsd:string
 property_value: IAO:0000112 "the shape of your nostril" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 property_value: IAO:0000600 "a quality is a specifically dependent continuant that, in contrast to roles and dispositions, does not require any further process in order to be realized. (axiom label in BFO2 Reference: [055-001])" xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/055-001"}
 property_value: IAO:0000601 "If an entity is a quality at any time that it exists, then it is a quality at every time that it exists. (axiom label in BFO2 Reference: [105-001])" xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/105-001"}
 property_value: IAO:0000602 "(forall (x) (if (exists (t) (and (existsAt x t) (Quality x))) (forall (t_1) (if (existsAt x t_1) (Quality x))))) // axiom label in BFO2 CLIF: [105-001] " xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/105-001"}
@@ -730,6 +733,22 @@ property_value: IAO:0000117 "PERSON: Melanie Courtot" xsd:string
 property_value: IAO:0000119 "GROUP: OBI" xsd:string
 
 [Term]
+id: IAO:0000015
+name: information carrier
+def: "A quality of an information bearer that imparts the information content" []
+is_a: BFO:0000019 ! quality
+intersection_of: BFO:0000019 ! quality
+intersection_of: RO:0000059 IAO:0000030 ! concretizes information content entity
+relationship: RO:0000059 IAO:0000030 ! concretizes information content entity
+property_value: IAO:0000111 "information carrier" xsd:string
+property_value: IAO:0000112 "In the case of a printed paperback novel the physicality of the ink and of the paper form part of the information bearer. The qualities of appearing black and having a certain pattern for the ink and appearing white for the paper form part of the information carrier in this case." xsd:string
+property_value: IAO:0000114 IAO:0000125
+property_value: IAO:0000116 "12/15/09: There is a concern that some ways that carry information may be processes rather than qualities, such as in a 'delayed wave carrier'." xsd:string
+property_value: IAO:0000116 "2014-03-10: We are not certain that all information carriers are qualities. There was a discussion of dropping it." xsd:string
+property_value: IAO:0000117 "PERSON: Alan Ruttenberg" xsd:string
+property_value: IAO:0000119 "Smith, Ceusters, Ruttenberg, 2000 years of philosophy" xsd:string
+
+[Term]
 id: IAO:0000027
 name: data item
 def: "An information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements." []
@@ -1017,19 +1036,6 @@ property_value: IAO:0000117 "PERSON: Alan Ruttenberg" xsd:string
 property_value: IAO:0000117 "PERSON: Melanie Courtot" xsd:string
 
 [Term]
-id: IAO:0000300
-name: textual entity
-def: "A textual entity is a part of a manifestation (FRBR sense), a generically dependent continuant whose concretizations are patterns of glyphs intended to be interpreted as words, formulas, etc." []
-is_a: IAO:0000030 ! information content entity
-property_value: IAO:0000111 "textual entity" xsd:string
-property_value: IAO:0000112 "Words, sentences, paragraphs, and the written (non-figure) parts of publications are all textual entities" xsd:string
-property_value: IAO:0000114 IAO:0000123
-property_value: IAO:0000116 "AR, (IAO call 2009-09-01): a document as a whole is not typically a textual entity, because it has pictures in it - rather there are parts of it that are textual entities. Examples: The title, paragraph 2 sentence 7, etc." xsd:string
-property_value: IAO:0000116 "MC, 2009-09-14 (following IAO call 2009-09-01): textual entities live at the FRBR (http://en.wikipedia.org/wiki/Functional_Requirements_for_Bibliographic_Records) manifestation level. Everything is significant: line break, pdf and html versions of same document are different textual entities." xsd:string
-property_value: IAO:0000117 "PERSON: Lawrence Hunter" xsd:string
-property_value: IAO:0000118 "text" xsd:string
-
-[Term]
 id: IAO:0000308
 name: figure
 def: "An information content entity consisting of a two dimensional arrangement of information content entities such that the arrangement itself is about something." []
@@ -1074,8 +1080,8 @@ id: MRIO:0000341
 name: MR image data set
 def: "A 2D, 3D, or 4D image data set produced by magnetic fields and radiowaves during an MR scanning session, typically to investigate the anatomy and physiology of the human body." []
 is_a: MRIO:0000623 ! image data set
-relationship: IAO:0000136 MRIO:0000383 ! is about MR pulse sequence
-relationship: OBI:0000312 MRIO:0000657 ! is_specified_output_of MRI acquisition sequence
+relationship: IAO:0000136 MRIO:0000669 ! is about MRI participant
+relationship: OBI:0000312 MRIO:0000379 ! is_specified_output_of MR imaging assay
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-2104-0568
 property_value: IAO:0000118 "scan" xsd:string
 
@@ -1286,12 +1292,14 @@ property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-00
 
 [Term]
 id: MRIO:0000379
-name: MRI imaging assay
+name: MR imaging assay
 def: "An assay that produces MR data about an evaluant." []
+is_a: APOLLO_SV:00000796 ! dataset creating
 is_a: OBI:0000070 ! assay
 relationship: OBI:0000293 MRIO:0000378 ! has_specified_input MRI machine
-relationship: OBI:0000299 MRIO:0000381 ! has_specified_output MR imaging datum
+relationship: OBI:0000299 MRIO:0000341 ! has_specified_output MR image data set
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-2104-0568
+property_value: IAO:0000118 "MRI acquisition sequence process" xsd:string
 
 [Term]
 id: MRIO:0000380
@@ -1307,40 +1315,30 @@ property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-00
 id: MRIO:0000381
 name: MR imaging datum
 def: "A measurement datum produced by an MRI machine prior to transformation." []
-is_a: IAO:0000109 ! measurement datum
-intersection_of: IAO:0000109 ! measurement datum
-intersection_of: OBI:0000295 MRIO:0000382 ! is_specified_input_of MR imaging data transformation
-intersection_of: OBI:0000312 MRIO:0000379 ! is_specified_output_of MRI imaging assay
-relationship: OBI:0000295 MRIO:0000382 ! is_specified_input_of MR imaging data transformation
-relationship: OBI:0000312 MRIO:0000379 ! is_specified_output_of MRI imaging assay
+is_a: ObsoleteClass ! Obsolete Class
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-2104-0568
+is_obsolete: true
 
 [Term]
 id: MRIO:0000382
 name: MR imaging data transformation
 def: "A planned process that produces MR images from MR imaging datum." []
-is_a: APOLLO_SV:00000796 ! dataset creating
-is_a: OBI:0200000 ! data transformation
-intersection_of: OBI:0200000 ! data transformation
-intersection_of: OBI:0000293 MRIO:0000381 ! has_specified_input MR imaging datum
-intersection_of: OBI:0000299 MRIO:0000341 ! has_specified_output MR image data set
-relationship: OBI:0000293 MRIO:0000381 ! has_specified_input MR imaging datum
-relationship: OBI:0000299 MRIO:0000341 ! has_specified_output MR image data set
+is_a: ObsoleteClass ! Obsolete Class
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-2104-0568
+is_obsolete: true
 
 [Term]
 id: MRIO:0000383
-name: MR pulse sequence
-def: "The MRI machine setting datum about the radiofrequency pulse sequence." []
-is_a: OBI:0000011 ! planned process
+name: MR pulse sequence protocol
+def: "The MRI machine protocol about the radiofrequency pulse sequence." []
+is_a: OBI:0000272 ! protocol
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-2104-0568
-property_value: IAO:0000116 "Should move to under planned process" xsd:string
 
 [Term]
 id: MRIO:0000385
 name: T1 weighted MRI acquisition sequence
 def: "An MRI acquisition sequence characterized by short TR to minimize T2 weighting." []
-is_a: MRIO:0000657 ! MRI acquisition sequence
+is_a: MRIO:0000379 ! MR imaging assay
 relationship: OBI:0000299 MRIO:0000366 ! has_specified_output T1 weighted image data set
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-2104-0568
 
@@ -1348,7 +1346,7 @@ property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-00
 id: MRIO:0000386
 name: T2 weighted MRI acquisition sequence
 def: "An MRI acquisition sequence characterized by long TR and TE to accentuate T2 relaxation time of tissue." []
-is_a: MRIO:0000657 ! MRI acquisition sequence
+is_a: MRIO:0000379 ! MR imaging assay
 relationship: OBI:0000299 MRIO:0000367 ! has_specified_output T2 weighted image data set
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-2104-0568
 
@@ -1356,7 +1354,7 @@ property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-00
 id: MRIO:0000387
 name: Proton density sequence
 def: "An MRI acquisition sequence that diminishes T1 weighting via long TR and T2 via short TE to produce images where voxel intensity corresponds to number of hydrogen protons in tissue." []
-is_a: MRIO:0000657 ! MRI acquisition sequence
+is_a: MRIO:0000379 ! MR imaging assay
 relationship: OBI:0000299 MRIO:0000351 ! has_specified_output proton density image data set
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-2104-0568
 property_value: IAO:0000116 "Usually SE." xsd:string
@@ -1395,7 +1393,7 @@ name: T2 STIR sequence
 def: "An MRI acquisition sequence that uses a short inversion time to attenuate the signal from fat." []
 comment: flip angle: 180 -> 90 degrees, need to represent the change
 is_a: MRIO:0000386 ! T2 weighted MRI acquisition sequence
-relationship: MRIO:0000375 MRIO:0000661 ! has pulse sequence inversion recovery sequence
+relationship: MRIO:0000375 MRIO:0000661 ! has pulse sequence GRE inversion recovery sequence
 relationship: OBI:0000299 MRIO:0000693 ! has_specified_output T2 STIR image data set
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-2104-0568
 
@@ -1405,7 +1403,7 @@ name: T2 FLAIR sequence
 def: "An MRI acquisition sequence that uses a long inversion time to attenuate the signal from water/CSF." []
 comment: from radiopedia\nunnamed elements:\n\nvariable \n1700–2200
 is_a: MRIO:0000386 ! T2 weighted MRI acquisition sequence
-relationship: MRIO:0000375 MRIO:0000661 ! has pulse sequence inversion recovery sequence
+relationship: MRIO:0000375 MRIO:0000661 ! has pulse sequence GRE inversion recovery sequence
 relationship: OBI:0000299 MRIO:0000511 ! has_specified_output T2 FLAIR image data set
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-2104-0568
 
@@ -1433,7 +1431,11 @@ property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-00
 [Term]
 id: MRIO:0000400
 name: MRI evaluant role
+def: "A role that inheres in a material entity that is realized in a MR imaging assay in which MR imaging data is generated about the bearer of the evaluant role" []
 is_a: OBI:0000067 ! evaluant role
+intersection_of: OBI:0000067 ! evaluant role
+intersection_of: BFO:0000054 MRIO:0000379 ! realized in MR imaging assay
+relationship: BFO:0000054 MRIO:0000379 ! realized in MR imaging assay
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-2104-0568
 
 [Term]
@@ -1469,12 +1471,15 @@ property_value: IAO:0000118 "T2 TSE image data set" xsd:string
 [Term]
 id: MRIO:0000500
 name: volume measurement datum
+def: "A scalar measurement datum that is derived from the measurement of some volume quality" []
 is_a: IAO:0000032 ! scalar measurement datum
+relationship: OBI:0001938 OBI:0002139 ! has value specification volume value specification
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-2104-0568
 
 [Term]
 id: MRIO:0000501
 name: thalamic volume measurement datum
+def: "A measurement datum that is the result of volume measurement of  the thalamus within some brain." []
 is_a: MRIO:0000667 ! brain volume measurement datum
 relationship: IAO:0000136 UBERON:0001897 ! is about dorsal plus ventral thalamus
 relationship: IAO:0000136 UBERON:0010225 ! is about thalamic complex
@@ -1526,22 +1531,26 @@ property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-00
 [Term]
 id: MRIO:0000508
 name: MR image data set analysis
-def: "Any combination of digital image analysis and statistical tools that may be used to derive processed brain images or data measurements about the brain." []
+def: "Any combination of digital image analysis and statistical tools that may be used to derive processed MR images or data measurements about the MR images." []
 is_a: MRIO:0000507 ! image data set analysis
 relationship: OBI:0000293 MRIO:0000341 ! has_specified_input MR image data set
+relationship: OBI:0000299 MRIO:0000500 ! has_specified_output volume measurement datum
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-2104-0568
+property_value: IAO:0000116 "Add missing sources/papers/doi" xsd:string
 
 [Term]
 id: MRIO:0000509
 name: DeepGRAI analysis
-def: "Based on preliminary experiments and established performance, we adopted a 3D U-Net semantic segmentation architecture for DeepGRAI. (Çiçek et al., 2016) The U-Net architecture is composed of two symmetric pathways – a descending contraction/encoding pathway which moves from low level voxel intensities at very high spatial resolution to abstract high-level features at coarse spatial resolution, and an ascending expansion/decoding pathway which moves from less localized high-level features to specific voxel classifications. Additionally, U-Net includes direct “skip” connections from the descending pathway into the ascending pathway, to provide the ascending pathway with low-level image feature information. In the current context, the descending pathway is essentially responsible for localizing the thalamus, and the ascending pathway is responsible for determining its precise borders." []
+def: "A volumetric MR imaging analysis that uses a neural network (U-net) to estimate thalamic volume from T2 FLAIR image datasets of the an entire human brain." []
+comment: Based on preliminary experiments and established performance, we adopted a 3D U-Net semantic segmentation architecture for DeepGRAI. (Çiçek et al., 2016) The U-Net architecture is composed of two symmetric pathways – a descending contraction/encoding pathway which moves from low level voxel intensities at very high spatial resolution to abstract high-level features at coarse spatial resolution, and an ascending expansion/decoding pathway which moves from less localized high-level features to specific voxel classifications. Additionally, U-Net includes direct “skip” connections from the descending pathway into the ascending pathway, to provide the ascending pathway with low-level image feature information. In the current context, the descending pathway is essentially responsible for localizing the thalamus, and the ascending pathway is responsible for determining its precise borders.
 is_a: APOLLO_SV:00000796 ! dataset creating
-is_a: MRIO:0000523 ! volumetric analysis
+is_a: MRIO:0000523 ! brain volumetric analysis
 relationship: OBI:0000293 MRIO:0000511 ! has_specified_input T2 FLAIR image data set
 relationship: OBI:0000299 MRIO:0000501 ! has_specified_output thalamic volume measurement datum
 relationship: OBI:0000299 MRIO:0000526 ! has_specified_output segmented region mask
-relationship: OBI:0000299 MRIO:0000527 ! has_specified_output text file
-property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-2104-0568
+property_value: IAO:0000117 "Alexander Bartnik" xsd:string
+property_value: IAO:0000117 http://orcid.org/0000-0002-2104-0568
+property_value: IAO:0000117 https://orcid.org/0000-0001-9676-7377 xsd:string
 property_value: IAO:0000119 https://doi.org/10.1016/j.nicl.2021.102652 xsd:string
 
 [Term]
@@ -1567,13 +1576,13 @@ def: "A model-based subcortical segmentation tool." []
 is_a: MRIO:0000662 ! MR image segmentation analysis
 relationship: OBI:0000293 MRIO:0000366 ! has_specified_input T1 weighted image data set
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-2104-0568
+property_value: source "Patenaude, B., Smith, S.M., Kennedy, D., and Jenkinson M. A Bayesian Model of Shape and Appearance for Subcortical Brain NeuroImage, 56(3):907-922, 2011." xsd:string
 
 [Term]
 id: MRIO:0000515
 name: FreeSurfer Analysis
 def: "FreeSurfer is a suite of tools for the analysis of neuroimaging data that provides an array of algorithms to quantify the functional, connectional and structural properties of the human brain. It has evolved from a package primarily aimed at generating surface representations of the cerebral cortex into one that automatically creates models of most macroscopically visible structures in the human brain given any reasonable T1-weighted input image. It is freely available, runs on a wide variety of hardware and software platforms, and is open source." []
-is_a: APOLLO_SV:00000796 ! dataset creating
-is_a: MRIO:0000523 ! volumetric analysis
+is_a: MRIO:0000523 ! brain volumetric analysis
 is_a: MRIO:0000662 ! MR image segmentation analysis
 relationship: OBI:0000293 MRIO:0000366 ! has_specified_input T1 weighted image data set
 relationship: OBI:0000299 MRIO:0000671 ! has_specified_output FreeSurfer segmentation map
@@ -1593,14 +1602,14 @@ property_value: source https://surfer.nmr.mgh.harvard.edu/fswiki/LongitudinalPro
 id: MRIO:0000517
 name: NeuroSTREAM analysis
 def: "We set out to develop and validate an LVV quantification tool for this purpose. Our goal was not to produce a method more precise or accurate than those described above. Rather, we sought to produce a highly robust technique capable of operating on clinical-quality T2-FLAIR images and producing results similar to more established techniques run on high-resolution scans. To do this, we extended an earlier idea for whole brain analysis proposed by (Baillard et al., 2001), and adapted it to LVV measurement on T2-FLAIR images. The core of our approach is a combination of multi-atlas segmentation and level-set refinement. We also extended the cross-sectional method for direct longitudinal analysis by including an optional Jacobian integration step. We called the resulting algorithm “Neurological Software Tool for Reliable Atrophy Measurement” - NeuroSTREAM." []
-is_a: MRIO:0000523 ! volumetric analysis
+is_a: MRIO:0000523 ! brain volumetric analysis
 relationship: OBI:0000293 MRIO:0000511 ! has_specified_input T2 FLAIR image data set
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-2104-0568
 property_value: IAO:0000119 https://doi.org/10.1016/j.nicl.2017.06.022 xsd:string
 
 [Term]
 id: MRIO:0000518
-name: Structural disconnectome analysis
+name: structural disconnectome analysis
 def: "Measurement of axonal damage and the connections between brain regions caused by some neuropathological process." []
 is_a: MRIO:0000508 ! MR image data set analysis
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-2104-0568
@@ -1610,8 +1619,8 @@ id: MRIO:0000519
 name: NeMo analysis
 def: "The NeMo Tool uses a large reference set of healthy tractograms to assess implied network changes arising from a particular pattern of WM alteration on a region- and network-wise level." []
 is_a: APOLLO_SV:00000796 ! dataset creating
-is_a: MRIO:0000518 ! Structural disconnectome analysis
-relationship: OBI:0000299 MRIO:0000609 ! has_specified_output ChaCo datum
+is_a: MRIO:0000518 ! structural disconnectome analysis
+relationship: OBI:0000299 MRIO:0000609 ! has_specified_output ChaCo data array
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-2104-0568
 property_value: source https://dx.doi.org/10.1089%2Fbrain.2013.0147 xsd:string
 
@@ -1619,7 +1628,7 @@ property_value: source https://dx.doi.org/10.1089%2Fbrain.2013.0147 xsd:string
 id: MRIO:0000520
 name: T1 black hole analysis
 def: "T1 black holes are hypointense lesions commonly seen on T1WI in patients with multiple sclerosis, and indicates the chronic stage with white matter destruction, axonal loss and irreversible clinical outcome." []
-is_a: MRIO:0000658 ! Focal Lesion Analysis
+is_a: MRIO:0000658 ! focal lesion analysis
 relationship: OBI:0000293 MRIO:0000506 ! has_specified_input T1 SE image data set
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-2104-0568
 property_value: IAO:0000119 https://radiopaedia.org/articles/t1-black-holes-1?lang=us#:~:text=T1%20black%20holes%20are%20hypointense,and%20patient%20positive%20outcome%203. xsd:string
@@ -1628,8 +1637,7 @@ property_value: IAO:0000119 https://radiopaedia.org/articles/t1-black-holes-1?la
 id: MRIO:0000521
 name: T2 lesion analysis
 def: "Analyzes voxels in an MRI scan that appear as focal lesions in a T2 weighted scan." []
-is_a: APOLLO_SV:00000796 ! dataset creating
-is_a: MRIO:0000658 ! Focal Lesion Analysis
+is_a: MRIO:0000658 ! focal lesion analysis
 relationship: OBI:0000293 MRIO:0000367 ! has_specified_input T2 weighted image data set
 relationship: OBI:0000299 MRIO:0000603 ! has_specified_output T2 lesion mask
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-2104-0568
@@ -1645,7 +1653,7 @@ property_value: IAO:0000119 https://doi.org/10.5282/edoc.20373 xsd:string
 
 [Term]
 id: MRIO:0000523
-name: volumetric analysis
+name: brain volumetric analysis
 def: "A neuroimaging technique used to estimate volume measurements (e.g. ml/mm^3) of a brain, its regions, a combination or regions, or a combination of similar cell types." []
 is_a: MRIO:0000508 ! MR image data set analysis
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-2104-0568
@@ -1654,7 +1662,7 @@ property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-00
 id: MRIO:0000524
 name: whole brain volumetric analysis
 def: "Neuroimaging technique used to estimate the volume of the brain." []
-is_a: MRIO:0000523 ! volumetric analysis
+is_a: MRIO:0000523 ! brain volumetric analysis
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-2104-0568
 
 [Term]
@@ -1664,8 +1672,8 @@ def: "Quantitative measurement of brain size, shape, and temporal change (for ex
 is_a: APOLLO_SV:00000796 ! dataset creating
 is_a: MRIO:0000524 ! whole brain volumetric analysis
 relationship: OBI:0000299 MRIO:0000526 ! has_specified_output segmented region mask
-relationship: OBI:0000299 MRIO:0000527 ! has_specified_output text file
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-2104-0568
+property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0001-9676-7377 xsd:string
 property_value: IAO:0000119 https://doi.org/10.1006/nimg.2002.1040 xsd:string
 
 [Term]
@@ -1678,8 +1686,9 @@ property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-00
 id: MRIO:0000527
 name: text file
 def: "Digital entity containing textual information or strings." []
-is_a: IAO:0000300 ! textual entity
+is_a: ObsoleteClass ! Obsolete Class
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-2104-0568
+is_obsolete: true
 
 [Term]
 id: MRIO:0000528
@@ -1698,136 +1707,177 @@ property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-00
 [Term]
 id: MRIO:0000600
 name: lesion mask
+def: "An image data set where voxel intensity values greater than zero encode the location of some brain lesion and voxels outside the lesion have an intensity value of zero." []
 is_a: MRIO:0000623 ! image data set
+property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0001-9676-7377 xsd:string
 
 [Term]
 id: MRIO:0000601
-name: segmentation map
+name: image segmentation map
+def: "An image data set of discrete integer values in which each value corresponds to some shared characteristic or computed property.\nThe values often belong to a group of pixels or voxels that share the same characteristic, such as tissue type or anatomical region." []
+synonym: "label map" RELATED []
+synonym: "parcellation map" RELATED []
 is_a: MRIO:0000623 ! image data set
+property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0001-9676-7377 xsd:string
 
 [Term]
 id: MRIO:0000602
 name: aligned image data set
 def: "A digital image that has been registered into another reference images space." []
-is_a: MRIO:0000623 ! image data set
+is_a: ObsoleteClass ! Obsolete Class
+is_obsolete: true
 
 [Term]
 id: MRIO:0000603
 name: T2 lesion mask
+def: "A lesion mask where the lesions are derived from a T2 weighted image data set." []
 is_a: MRIO:0000600 ! lesion mask
+property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0001-9676-7377 xsd:string
 
 [Term]
 id: MRIO:0000604
 name: MR image transformation
 is_a: ObsoleteClass ! Obsolete Class
+is_obsolete: true
 
 [Term]
 id: MRIO:0000605
 name: FLAIR lesion mask
+def: "A lesion mask where the lesions are derived from a T2 FLAIR image data set." []
 is_a: MRIO:0000603 ! T2 lesion mask
+property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0001-9676-7377 xsd:string
 
 [Term]
 id: MRIO:0000607
 name: functional connectivity matrix
+def: "A connectivity matrix where each element represents the correlation of functional brain activity over time between two regions or voxels." []
 is_a: MRIO:0000611 ! connectivity matrix
+property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0001-9676-7377 xsd:string
 
 [Term]
 id: MRIO:0000608
-name: tensor measurement data set
+name: tensor data set
+def: "An n-dimensional data set that describes some linear relations of the scalars, vectors, or matrices that constitute it." []
 is_a: IAO:0000100 ! data set
+property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0001-9676-7377 xsd:string
+property_value: IAO:0000118 "multidemnsional array" xsd:string
 
 [Term]
 id: MRIO:0000609
-name: ChaCo datum
-is_a: MRIO:0000608 ! tensor measurement data set
+name: ChaCo data array
+def: "A tensor data set produced by the Network Modification tool (NeMo) that contains matrix data sets related to the structural connectivity and disruption of white matter tracts in the human brain caused by focal lesions." []
+is_a: MRIO:0000608 ! tensor data set
 relationship: BFO:0000051 MRIO:0000613 ! has part nConMat matrix
 relationship: BFO:0000051 MRIO:0000614 ! has part nMapTFC matrix
 relationship: IAO:0000136 MRIO:0000649 ! is about Desikan-Killiany brain atlas image data set
+property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0001-9676-7377 xsd:string
 
 [Term]
 id: MRIO:0000610
-name: matrix measurement data set
-def: "A measuement datum which is a data set that is made up of an n-dimensional array of elements (or entries)." []
+name: matrix data set
+def: "A data set comprised of 2-dimensional array (rows and columns) of elements or entries, each representing an object or property of an object." []
 is_a: IAO:0000100 ! data set
+property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0001-9676-7377 xsd:string
 property_value: IAO:0000116 "there's another term similar in OBI- should be resolved (IRI: http://purl.obolibrary.org/obo/OBIws_0000100)" xsd:string
 
 [Term]
 id: MRIO:0000611
 name: connectivity matrix
-is_a: MRIO:0000610 ! matrix measurement data set
+def: "A square n x n matrix where each element A of i,j represents some correlational relationship or degree of connection between i and j." []
+is_a: MRIO:0000610 ! matrix data set
+property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0001-9676-7377 xsd:string
 
 [Term]
 id: MRIO:0000612
 name: structural connectivity matrix
+def: "A connectivity matrix where each element represents the degree of physical integrity of some path between two brain regions or voxels." []
 is_a: MRIO:0000611 ! connectivity matrix
+property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0001-9676-7377 xsd:string
 
 [Term]
 id: MRIO:0000613
 name: nConMat matrix
+def: "A structural connectivity matrix where each element respresents the number of white matter streamlines still connecting two brain regions when accounting for focal lesion damage, normalized for the NeMo healthy control tractogram set." []
 is_a: MRIO:0000612 ! structural connectivity matrix
 relationship: IAO:0000136 MRIO:0000649 ! is about Desikan-Killiany brain atlas image data set
+property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0001-9676-7377 xsd:string
 
 [Term]
 id: MRIO:0000614
 name: nMapTFC matrix
+def: "A structural connectivity matrix where each element represents the average number of white matter tract streamlines connecting two brain regions normalized for the NeMo healthy control tractogram set." []
 is_a: MRIO:0000612 ! structural connectivity matrix
 relationship: IAO:0000136 MRIO:0000649 ! is about Desikan-Killiany brain atlas image data set
+property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0001-9676-7377 xsd:string
 
 [Term]
 id: MRIO:0000615
 name: binarization
 is_a: MRIO:0000604 ! MR image transformation
+is_obsolete: true
 
 [Term]
 id: MRIO:0000616
 name: inversion
 is_a: MRIO:0000604 ! MR image transformation
+is_obsolete: true
 
 [Term]
 id: MRIO:0000617
 name: MR image registration
 is_a: MRIO:0000604 ! MR image transformation
+is_obsolete: true
 
 [Term]
 id: MRIO:0000618
 name: antsRegistration
 is_a: MRIO:0000617 ! MR image registration
+is_obsolete: true
 
 [Term]
 id: MRIO:0000619
 name: antsApplyTransforms
 is_a: MRIO:0000617 ! MR image registration
+is_obsolete: true
 
 [Term]
 id: MRIO:0000620
 name: MR image artifact correction
 is_a: MRIO:0000604 ! MR image transformation
+is_obsolete: true
 
 [Term]
 id: MRIO:0000621
 name: MR image bias field correction
 is_a: MRIO:0000620 ! MR image artifact correction
+is_obsolete: true
 
 [Term]
 id: MRIO:0000622
 name: N4 bias field correction
 is_a: MRIO:0000621 ! MR image bias field correction
+is_obsolete: true
 
 [Term]
 id: MRIO:0000623
 name: image data set
-def: "A set of digital data comprising some representation of an image using pixels (2D) or voxels (3D). Though typically displayed in 2D, the data may be arranged in an arbitray number of dimensions." []
+def: "A set of digital data comprising some representation of an image and its associated metadata using pixels (2D), voxels (3D), or an arbitrary number of dimensions." []
+subset: OBI
 is_a: IAO:0000100 ! data set
-relationship: IAO:0000136 IAO:0000101 ! is about image
+property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0001-9676-7377 xsd:string
 
 [Term]
 id: MRIO:0000624
 name: Smith resting state network atlas
+def: "A brain atlas image data set encoding voxels involved in ten major resting state functional networks, as determined by analysis and decomposition of 36 human subjects' functional activity at rest." []
 is_a: MRIO:0000648 ! probabilistic brain region atlas image dataset
+property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0001-9676-7377 xsd:string
+property_value: source https://www.pnas.org/cgi/doi/10.1073/pnas.0905267106 xsd:string
 
 [Term]
 id: MRIO:0000625
 name: default mode network atlas
+def: "A brain atlas image dataset encoding voxels belonging to the default mode network functional resting state network." []
 is_a: MRIO:0000624 ! Smith resting state network atlas
 relationship: IAO:0000136 UBERON:0002661 ! is about superior frontal gyrus
 relationship: IAO:0000136 UBERON:0002771 ! is about middle temporal gyrus
@@ -1839,24 +1889,31 @@ relationship: IAO:0000136 UBERON:0022352 ! is about medial orbital frontal corte
 relationship: IAO:0000136 UBERON:0022353 ! is about posterior cingulate cortex
 relationship: IAO:0000136 UBERON:0022438 ! is about rostral anterior cingulate cortex
 relationship: IAO:0000136 UBERON:0027061 ! is about isthmus of cingulate cortex
+property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0001-9676-7377 xsd:string
+property_value: source https://www.pnas.org/cgi/doi/10.1073/pnas.0905267106 xsd:string
 
 [Term]
 id: MRIO:0000626
 name: Desikan-Killiany functional connectivity matrix
+def: "A connectivity matrix where each element represents the correlation of functional brain activity with the 86 regions described in the Desikan-Killiany brain atlas." []
 is_a: MRIO:0000607 ! functional connectivity matrix
 relationship: IAO:0000136 MRIO:0000649 ! is about Desikan-Killiany brain atlas image data set
+property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0001-9676-7377 xsd:string
 
 [Term]
 id: MRIO:0000627
 name: default mode network functional connectivity matrix
-is_a: MRIO:0000626 ! Desikan-Killiany functional connectivity matrix
+def: "A connectivity matrix where each element represents the correlation of functional brain activity within the default mode network." []
+is_a: MRIO:0000607 ! functional connectivity matrix
 relationship: IAO:0000136 MRIO:0000625 ! is about default mode network atlas
+property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0001-9676-7377 xsd:string
 
 [Term]
 id: MRIO:0000628
 name: gradient echo sequence
 def: "Generated by the frequency-encode gradient, except that it is used twice in succession, and in opposite directions." []
-is_a: MRIO:0000383 ! MR pulse sequence
+synonym: "GRE" EXACT []
+is_a: MRIO:0000383 ! MR pulse sequence protocol
 relationship: MRIO:0000688 MRIO:0000357 ! has MRI acquisition parameter repitition time
 relationship: MRIO:0000688 MRIO:0000358 ! has MRI acquisition parameter echo time
 relationship: MRIO:0000688 MRIO:0000630 ! has MRI acquisition parameter flip angle
@@ -1865,10 +1922,9 @@ property_value: IAO:0000116 "This and spin echo are the major child classes of M
 
 [Term]
 id: MRIO:0000629
-name: echo planar sequence
+name: GRE echo planar sequence
 def: "Multiple echoes of different phase steps are acquired by rapidly reversing the readout or frequency- encoding gradient." []
 is_a: MRIO:0000628 ! gradient echo sequence
-is_a: MRIO:0000659 ! spin echo sequence
 property_value: http://purl.org/dc/elements/1.1/source https://radiopaedia.org/articles/echo-planar-imaging-1?lang=us xsd:string
 property_value: IAO:0000116 "Can we add that this may optionally be about some spin echo sequence, but not necessary for an instance of this class?" xsd:string
 
@@ -1881,16 +1937,46 @@ property_value: http://purl.org/dc/elements/1.1/source https://radiopaedia.org/a
 property_value: IAO:0000118 "FA" xsd:string
 
 [Term]
+id: MRIO:0000633
+name: cerebellum resting state functional connectivity matrix
+def: "A connectivity matrix where each element represents the correlation of functional brain activity within the cerebellar resting state network." []
+is_a: MRIO:0000607 ! functional connectivity matrix
+relationship: IAO:0000136 MRIO:0000697 ! is about cerebellum resting state network atlas
+
+[Term]
+id: MRIO:0000634
+name: executive control resting state functional connectivity matrix
+def: "A connectivity matrix where each element represents the correlation of functional brain activity within the executive control resting state network." []
+is_a: MRIO:0000607 ! functional connectivity matrix
+relationship: IAO:0000136 MRIO:0000699 ! is about executive control resting state network atlas
+
+[Term]
 id: MRIO:0000635
 name: diffusion weighted image data set
 def: "A type of MR image data set collected using at least three diffusion gradients of some factor 'b,' which is a function of the amplitude, duration, and interval of the gradiants." []
 is_a: MRIO:0000341 ! MR image data set
+property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0001-9676-7377 xsd:string
 
 [Term]
 id: MRIO:0000636
 name: perfusion weighted image data set
 def: "A type of MR image data set meant to capture volume and flow of blood in the brain." []
 is_a: MRIO:0000341 ! MR image data set
+property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0001-9676-7377 xsd:string
+
+[Term]
+id: MRIO:0000637
+name: frontoparietal resting state functional connectivity matrix
+def: "A connectivity matrix where each element represents the correlation of functional brain activity within the left and right hemisphere resting state networks." []
+is_a: MRIO:0000607 ! functional connectivity matrix
+relationship: IAO:0000136 MRIO:0000700 ! is about frontoparietal resting state network atlas
+
+[Term]
+id: MRIO:0000638
+name: sensorimotor resting state functional connectivity matrix
+def: "A connectivity matrix where each element represents the correlation of functional brain activity within the sensorimotor resting state network." []
+is_a: MRIO:0000607 ! functional connectivity matrix
+relationship: IAO:0000136 MRIO:0000701 ! is about sensorimotor resting state network atlas
 
 [Term]
 id: MRIO:0000641
@@ -1920,28 +2006,35 @@ id: MRIO:0000645
 name: DeepGRAI analysis of the dorsal thalamus
 is_a: MRIO:0000509 ! DeepGRAI analysis
 relationship: OBI:0000299 MRIO:0000644 ! has_specified_output dorsal thalamic volume measurement datum
+property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0001-9676-7377 xsd:string
 
 [Term]
 id: MRIO:0000646
 name: DeepGRAI analysis of the right dorsal thalamus
 is_a: MRIO:0000645 ! DeepGRAI analysis of the dorsal thalamus
 relationship: OBI:0000299 MRIO:0000643 ! has_specified_output right dorsal thalamic volume measurement datum
+property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0001-9676-7377 xsd:string
 
 [Term]
 id: MRIO:0000647
 name: brain region atlas image data set
+def: "A template image data set consisting of values endcoded to represent the spatial location of individual functional or structural regions of the brain." []
 is_a: MRIO:0000623 ! image data set
 relationship: IAO:0000136 CARO:0000000 ! is about
+property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0001-9676-7377 xsd:string
 property_value: IAO:0000116 "Note that atlas image data set is derived from possibly multiple image data sets" xsd:string
 
 [Term]
 id: MRIO:0000648
 name: probabilistic brain region atlas image dataset
+def: "A brain atlas consisting of weighted values that respresent the probability that a voxel X is part of some brain component Y, typically derived from multiple image data sets." []
 is_a: MRIO:0000647 ! brain region atlas image data set
+property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0001-9676-7377 xsd:string
 
 [Term]
 id: MRIO:0000649
 name: Desikan-Killiany brain atlas image data set
+def: "A brain atlas image data set that encodes the location of 86 cortical and subcortical regions of interest, commonly used in Freesurfer segmentation and volumetric analysis." []
 is_a: MRIO:0000647 ! brain region atlas image data set
 relationship: IAO:0000136 UBERON:0001873 ! is about caudate nucleus
 relationship: IAO:0000136 UBERON:0001876 ! is about amygdala
@@ -1989,17 +2082,29 @@ relationship: IAO:0000136 UBERON:0027061 ! is about isthmus of cingulate cortex
 relationship: IAO:0000136 UBERON:0028622 ! is about banks of superior temporal sulcus
 relationship: IAO:0000136 UBERON:0028715 ! is about caudal anterior cingulate cortex
 relationship: IAO:0000136 UBERON:0035933 ! is about paracentral lobule
+property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0001-9676-7377 xsd:string
+property_value: source http://dx.doi.org/10.1016/j.neuroimage.2006.01.021 xsd:string
 
 [Term]
 id: MRIO:0000650
 name: deterministic brain region atlas image data set
 is_a: MRIO:0000647 ! brain region atlas image data set
+property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0001-9676-7377 xsd:string
 
 [Term]
 id: MRIO:0000651
 name: c-pac
 def: "The Configurable Pipeline for the Analysis of Connectomes (C-PAC) is a configurable, open-source, Nipype-based, automated processing pipeline for resting state functional MRI (R-fMRI) data, for use by both novice and expert users." []
 is_a: MRIO:0000421 ! functional MR image data set analysis
+property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0001-9676-7377 xsd:string
+property_value: source https://doi.org/10.3389/conf.fninf.2013.09.00042 xsd:string
+
+[Term]
+id: MRIO:0000652
+name: V1 resting state functional connectivity matrix
+def: "A connectivity matrix where each element represents the correlation of functional brain activity within the V1 resting state network." []
+is_a: MRIO:0000607 ! functional connectivity matrix
+relationship: IAO:0000136 MRIO:0000702 ! is about V1 resting state network atlas
 
 [Term]
 id: MRIO:0000653
@@ -2008,6 +2113,13 @@ def: "The time elapsed between the preparatory 180° pulse and the 90° readout 
 is_a: MRIO:0000342 ! MRI machine parameter
 property_value: IAO:0000118 "TI" xsd:string
 property_value: IAO:0000119 https://radiopaedia.org/articles/inversion-recovery-sequences?lang=us xsd:string
+
+[Term]
+id: MRIO:0000654
+name: V2 resting state functional connectivity matrix
+def: "A connectivity matrix where each element represents the correlation of functional brain activity within the V2 resting state network." []
+is_a: MRIO:0000607 ! functional connectivity matrix
+relationship: IAO:0000136 MRIO:0000703 ! is about V2 resting state network atlas
 
 [Term]
 id: MRIO:0000655
@@ -2023,26 +2135,31 @@ name: Deep roboNAC analysis
 def: "Deep learning tool used to predict a lesion mask from either just a FLAIR or a combination of FLAIR, T1 weighted SE, T2 weighted, and PD scans." []
 is_a: MRIO:0000520 ! T1 black hole analysis
 is_a: MRIO:0000521 ! T2 lesion analysis
+property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0001-9676-7377 xsd:string
 
 [Term]
 id: MRIO:0000657
-name: MRI acquisition sequence
+name: MRI acquisition sequence process
 def: "Radiofrequency pulses and gradients that result in a set of MR image data sets with a particular appearance." []
-is_a: APOLLO_SV:00000796 ! dataset creating
-relationship: OBI:0000299 MRIO:0000341 ! has_specified_output MR image data set
+is_a: ObsoleteClass ! Obsolete Class
 property_value: http://purl.org/dc/elements/1.1/source https://radiopaedia.org/articles/mri-sequences-overview?lang=us xsd:string
+is_obsolete: true
 
 [Term]
 id: MRIO:0000658
-name: Focal Lesion Analysis
+name: focal lesion analysis
 def: "Produces some quantitative or qualitative data about voxels in an MRI data set that appear affected by some neurobiological process or as a result of some neurological disease such that there may be damage to the brain tissue." []
+is_a: APOLLO_SV:00000796 ! dataset creating
 is_a: MRIO:0000508 ! MR image data set analysis
+relationship: OBI:0000299 MRIO:0000600 ! has_specified_output lesion mask
+property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0001-9676-7377 xsd:string
 
 [Term]
 id: MRIO:0000659
 name: spin echo sequence
 def: "The refocusing of spin magnetisation by a pulse of resonant electromagnetic radiation." []
-is_a: MRIO:0000383 ! MR pulse sequence
+synonym: "SE" EXACT []
+is_a: MRIO:0000383 ! MR pulse sequence protocol
 relationship: MRIO:0000688 MRIO:0000357 ! has MRI acquisition parameter repitition time
 relationship: MRIO:0000688 MRIO:0000358 ! has MRI acquisition parameter echo time
 property_value: http://purl.org/dc/elements/1.1/source https://doi.org/10.1063%2F1.1670306 xsd:string
@@ -2053,22 +2170,23 @@ name: FreeSurfer cross-sectional analysis
 def: "FreeSurfer stream to derive surface labels and volumes from an invidual at only one timepoint." []
 is_a: MRIO:0000515 ! FreeSurfer Analysis
 relationship: OBI:0000293 MRIO:0000502 ! has_specified_input high resolution T1 weighted image data set
+property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0001-9676-7377 xsd:string
 
 [Term]
 id: MRIO:0000661
-name: inversion recovery sequence
+name: GRE inversion recovery sequence
 def: "An inversion recovery (IR) pulse sequence is a spin echo or gradient echo pulse sequence preceded by a 180° RF pulse." []
-is_a: MRIO:0000628 ! gradient echo sequence
-is_a: MRIO:0000659 ! spin echo sequence
-relationship: MRIO:0000688 MRIO:0000653 ! has MRI acquisition parameter inversion time
 property_value: http://purl.org/dc/elements/1.1/source https://radiopaedia.org/articles/inversion-recovery-sequences?lang=us xsd:string
-property_value: IAO:0000116 "Create specific subclass of this and echo panar sequence for both GRE and SE." xsd:string
+property_value: IAO:0000116 "TODO: Create specific subclass of this and echo panar sequence for both GRE and SE." xsd:string
 
 [Term]
 id: MRIO:0000662
 name: MR image segmentation analysis
 def: "The process of dividing voxels in a 3D space into any number of categories based on some criteria (e.g. contrast, signal intensity, location)." []
+is_a: APOLLO_SV:00000796 ! dataset creating
 is_a: MRIO:0000508 ! MR image data set analysis
+relationship: OBI:0000299 MRIO:0000601 ! has_specified_output image segmentation map
+property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0001-9676-7377 xsd:string
 
 [Term]
 id: MRIO:0000663
@@ -2077,44 +2195,56 @@ def: "Siena estimates percentage brain volume change (PBVC) betweem two input im
 is_a: APOLLO_SV:00000796 ! dataset creating
 is_a: MRIO:0000524 ! whole brain volumetric analysis
 relationship: OBI:0000299 MRIO:0000526 ! has_specified_output segmented region mask
-relationship: OBI:0000299 MRIO:0000527 ! has_specified_output text file
+property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0001-9676-7377 xsd:string
 property_value: IAO:0000119 "Smith, Stephen M.; De Stefano, Nicola; Jenkinson, Mark; Matthews, Paul M. Normalized Accurate Measurement of Longitudinal Brain Change, Journal of Computer Assisted Tomography: May 2001 - Volume 25 - Issue 3 - p 466-475" xsd:string
 
 [Term]
 id: MRIO:0000664
 name: whole brain volume measurement datum
+def: "A measurement datum that is the result of volume measurement of the tissue of some brain." []
 is_a: MRIO:0000667 ! brain volume measurement datum
+property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0001-9676-7377 xsd:string
 
 [Term]
 id: MRIO:0000665
 name: grey matter volume measurement datum
+def: "A measurement datum that is the result of volume measurement of grey matter within some brain." []
 is_a: MRIO:0000667 ! brain volume measurement datum
 relationship: IAO:0000136 UBERON:0003528 ! is about
+property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0001-9676-7377 xsd:string
 
 [Term]
 id: MRIO:0000666
 name: white matter volume measurement daturm
+def: "A measurement datum that is the result of volume measurement of white matter within some brain." []
 is_a: MRIO:0000667 ! brain volume measurement datum
 relationship: IAO:0000136 UBERON:0003544 ! is about
+property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0001-9676-7377 xsd:string
 
 [Term]
 id: MRIO:0000667
 name: brain volume measurement datum
+def: "A volume measurement datum that is the result of a measurement of the volume of some brain and its substructures." []
 is_a: MRIO:0000500 ! volume measurement datum
 relationship: IAO:0000136 MRIO:0000669 ! is about MRI participant
 relationship: IAO:0000136 UBERON:0000955 ! is about brain
+property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0001-9676-7377 xsd:string
 
 [Term]
 id: MRIO:0000668
 name: CSF volume measurement datum
+def: "A measurement datum that is the result of volume measurement of  cerebrospinal fluid within some brain." []
 is_a: MRIO:0000667 ! brain volume measurement datum
 relationship: IAO:0000136 UBERON:0001359 ! is about cerebrospinal fluid
+property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0001-9676-7377 xsd:string
 
 [Term]
 id: MRIO:0000669
 name: MRI participant
 def: "The subject being scanned in an MRI study, and bearor of data derived from that study." []
-is_a: OBI:0000097 ! participant under investigation role
+is_a: BFO:0000040 ! material entity
+relationship: RO:0000053 MRIO:0000400 ! bearer of MRI evaluant role
+property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0001-9676-7377 xsd:string
 
 [Term]
 id: MRIO:0000670
@@ -2124,14 +2254,26 @@ is_a: MRIO:0000501 ! thalamic volume measurement datum
 [Term]
 id: MRIO:0000671
 name: FreeSurfer segmentation map
-is_a: MRIO:0000601 ! segmentation map
+def: "An image data set whose voxels encode the location of a region from the Desikan-Killiany atlas in an image data set." []
+is_a: MRIO:0000601 ! image segmentation map
 relationship: IAO:0000136 MRIO:0000649 ! is about Desikan-Killiany brain atlas image data set
+property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0001-9676-7377 xsd:string
+
+[Term]
+id: MRIO:0000672
+name: V3 functional connectivity matrix
+def: "A connectivity matrix where each element represents the correlation of functional brain activity within the V3 resting state network." []
+is_a: MRIO:0000607 ! functional connectivity matrix
+relationship: IAO:0000136 MRIO:0000704 ! is about V3 resting state network atlas
 
 [Term]
 id: MRIO:0000673
 name: peripheral grey matter volume measurement datum
+def: "A measurement datum that is the result of volume measurement of peripheral/cortical grey matter within some brain." []
 is_a: MRIO:0000665 ! grey matter volume measurement datum
 relationship: IAO:0000136 MRIO:0000649 ! is about Desikan-Killiany brain atlas image data set
+property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0001-9676-7377 xsd:string
+property_value: IAO:0000118 "cortical grey matter volume measurement datum" xsd:string
 
 [Term]
 id: MRIO:0000674
@@ -2139,12 +2281,14 @@ name: Desikan-Killiany functional connectome analysis
 def: "Measures the functional connectivity between cortical and subcortical regions defined in the Desikan-Killiany brain atlas." []
 is_a: MRIO:0000675 ! regional functional connectome analysis
 relationship: OBI:0000299 MRIO:0000626 ! has_specified_output Desikan-Killiany functional connectivity matrix
+property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0001-9676-7377 xsd:string
 
 [Term]
 id: MRIO:0000675
 name: regional functional connectome analysis
 def: "Measures the functional connectivity between a set of predefined brain regions." []
 is_a: MRIO:0000510 ! functional connectome analysis
+property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0001-9676-7377 xsd:string
 
 [Term]
 id: MRIO:0000676
@@ -2152,17 +2296,19 @@ name: FAST Analysis
 def: "FAST (FMRIB's Automated Segmentation Tool) segments a 3D image of the brain into different tissue types (Grey Matter, White Matter, CSF, etc.), whilst also correcting for spatial intensity variations (also known as bias field or RF inhomogeneities)." []
 is_a: MRIO:0000662 ! MR image segmentation analysis
 relationship: OBI:0000293 MRIO:0000366 ! has_specified_input T1 weighted image data set
+property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0001-9676-7377 xsd:string
 property_value: source "Zhang, Y. and Brady, M. and Smith, S. Segmentation of brain MR images through a hidden Markov random field model and the expectation-maximization algorithm. IEEE Trans Med Imag, 20(1):45-57, 2001." xsd:string
 
 [Term]
 id: MRIO:0000677
 name: diffusion weighted MRI acquisition sequence
 def: "An MRI acquisition sequence that uses diffusion gradients to create contrast in the image corresponding to the Brownian motion of the tissue in the examined voxel." []
-is_a: MRIO:0000657 ! MRI acquisition sequence
-relationship: MRIO:0000375 MRIO:0000629 ! has pulse sequence echo planar sequence
+is_a: MRIO:0000379 ! MR imaging assay
+relationship: MRIO:0000375 MRIO:0000629 ! has pulse sequence GRE echo planar sequence
 relationship: MRIO:0000688 MRIO:0000655 ! has MRI acquisition parameter diffusion b value
 relationship: MRIO:0000688 MRIO:0000690 ! has MRI acquisition parameter diffusion gradient
 relationship: OBI:0000299 MRIO:0000635 ! has_specified_output diffusion weighted image data set
+property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0001-9676-7377 xsd:string
 property_value: IAO:0000116 "Add difussion gradient as parameter." xsd:string
 
 [Term]
@@ -2170,8 +2316,9 @@ id: MRIO:0000678
 name: T1 MPRAGE sequence
 def: "An MRI acquisition sequence consisting of a magnetization preparation period followed by a rapid gradient echo sequence." []
 is_a: MRIO:0000692 ! 3D T1 GRE sequence
-relationship: MRIO:0000375 MRIO:0000661 ! has pulse sequence inversion recovery sequence
+relationship: MRIO:0000375 MRIO:0000661 ! has pulse sequence GRE inversion recovery sequence
 relationship: OBI:0000299 MRIO:0000679 ! has_specified_output T1 MPRAGE image data set
+property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0001-9676-7377 xsd:string
 property_value: IAO:0000116 "Has a long TR." xsd:string
 property_value: IAO:0000119 https://doi.org/10.1002/mrm.1910150117 xsd:string
 
@@ -2180,12 +2327,14 @@ id: MRIO:0000679
 name: T1 MPRAGE image data set
 def: "T1 weighted image data set collected using an MPRAGE sequence." []
 is_a: MRIO:0000502 ! high resolution T1 weighted image data set
+property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0001-9676-7377 xsd:string
 
 [Term]
 id: MRIO:0000680
 name: T1 SPGR image data set
 def: "T1 weighted image data set collected using a spoiled gradient echo sequence." []
 is_a: MRIO:0000502 ! high resolution T1 weighted image data set
+property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0001-9676-7377 xsd:string
 
 [Term]
 id: MRIO:0000681
@@ -2193,6 +2342,7 @@ name: spoiled GRE sequence
 def: "Applies  RF  excitation  pulses  at  diff erent  phases every TR, so that the residual transverse magnetization has dif-ferent  phase  values  than  the  transverse  magnetization  most recently created." []
 is_a: MRIO:0000692 ! 3D T1 GRE sequence
 relationship: OBI:0000299 MRIO:0000680 ! has_specified_output T1 SPGR image data set
+property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0001-9676-7377 xsd:string
 property_value: IAO:0000116 "Could have IR." xsd:string
 property_value: IAO:0000119 "MRI at a Glance\nISBN 10: 1119053552" xsd:string
 
@@ -2203,22 +2353,24 @@ def: "An MRI acquisition sequence that using a spin echo sequence to accentuate 
 is_a: MRIO:0000385 ! T1 weighted MRI acquisition sequence
 relationship: MRIO:0000375 MRIO:0000659 ! has pulse sequence spin echo sequence
 relationship: OBI:0000299 MRIO:0000506 ! has_specified_output T1 SE image data set
+property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0001-9676-7377 xsd:string
 
 [Term]
 id: MRIO:0000683
 name: imaging contrast reagent
+comment: A chemical reagent containing gadolinium injecting into an MRI participant to increase the visible contrast of some MR image data set.
 is_a: OBI:0001879 ! reagent
-relationship: OBI:0000312 OBI:0600040 ! is_specified_output_of synthesis
 relationship: RO:0002180 CHEBI:33375 ! has component gadolinium atom
 
 [Term]
 id: MRIO:0000686
 name: functional MRI acquisition sequence
 def: "An MRI acquisition sequence that uses fast gradient echo sequences to collect a 4D data set corresponding to BOLD signal due to differences in magnetic susceptibility of oxygenated and deoxygenated hemoglobin." []
-is_a: MRIO:0000657 ! MRI acquisition sequence
+is_a: MRIO:0000379 ! MR imaging assay
 relationship: MRIO:0000375 MRIO:0000628 ! has pulse sequence gradient echo sequence
 relationship: MRIO:0000688 MRIO:0000687 ! has MRI acquisition parameter number of temporal positions
 relationship: OBI:0000299 MRIO:0000368 ! has_specified_output functional MR image data set
+property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0001-9676-7377 xsd:string
 property_value: IAO:0000116 "Usually T2* sequence with same TE value throughout." xsd:string
 
 [Term]
@@ -2236,19 +2388,235 @@ is_a: MRIO:0000342 ! MRI machine parameter
 [Term]
 id: MRIO:0000691
 name: 2D T1 GRE sequence
+def: "A T1 weighted acquisition sequence that uses a gradient echo pulse sequence to acquire an MR image data set one 2D slice at a time." []
 is_a: MRIO:0000389 ! T1 GRE sequence
+property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0001-9676-7377 xsd:string
 
 [Term]
 id: MRIO:0000692
 name: 3D T1 GRE sequence
+def: "A T1 weighted acquisition sequence that uses a gradient echo pulse sequence to acquire an entire 3D MR image data set at once." []
 is_a: MRIO:0000389 ! T1 GRE sequence
 relationship: OBI:0000299 MRIO:0000503 ! has_specified_output 3D GRE image data set
+property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0001-9676-7377 xsd:string
 
 [Term]
 id: MRIO:0000693
 name: T2 STIR image data set
 def: "T2 weighted MR image data set collected using a STIR sequence to suppress the signal coming from fat." []
 is_a: MRIO:0000367 ! T2 weighted image data set
+property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0001-9676-7377 xsd:string
+
+[Term]
+id: MRIO:0000695
+name: lesion volume measurement datum
+def: "A measurement datum that is the result of volume measurement of all lesions within some brain." []
+is_a: MRIO:0000500 ! volume measurement datum
+
+[Term]
+id: MRIO:0000696
+name: atrophied lesion volume measurement datum
+def: "A measurement datum that is the result of volume measurement of atrophied lesions within some brain." []
+is_a: MRIO:0000695 ! lesion volume measurement datum
+
+[Term]
+id: MRIO:0000697
+name: cerebellum resting state network atlas
+def: "A brain atlas image dataset encoding voxels belonging to the cebebellar functional resting state network." []
+is_a: MRIO:0000624 ! Smith resting state network atlas
+relationship: IAO:0000136 UBERON:0002129 ! is about cerebellar cortex
+property_value: source https://www.pnas.org/cgi/doi/10.1073/pnas.0905267106 xsd:string
+
+[Term]
+id: MRIO:0000698
+name: auditory resting state network atlas
+def: "A brain atlas image dataset encoding voxels belonging to the auditory functional resting state network." []
+is_a: MRIO:0000624 ! Smith resting state network atlas
+relationship: IAO:0000136 UBERON:0002022 ! is about insula
+relationship: IAO:0000136 UBERON:0002581 ! is about postcentral gyrus
+relationship: IAO:0000136 UBERON:0002629 ! is about triangular part of inferior frontal gyrus
+relationship: IAO:0000136 UBERON:0002688 ! is about supramarginal gyrus
+relationship: IAO:0000136 UBERON:0002769 ! is about superior temporal gyrus
+relationship: IAO:0000136 UBERON:0002771 ! is about middle temporal gyrus
+relationship: IAO:0000136 UBERON:0002980 ! is about opercular part of inferior frontal gyrus
+relationship: IAO:0000136 UBERON:0008884 ! is about left putamen
+relationship: IAO:0000136 UBERON:0008885 ! is about right putamen
+relationship: IAO:0000136 UBERON:0009897 ! is about right auditory cortex
+relationship: IAO:0000136 UBERON:0009898 ! is about left auditory cortex
+relationship: IAO:0000136 UBERON:0013683 ! is about left dorsal thalamus
+relationship: IAO:0000136 UBERON:0013684 ! is about right dorsal thalamus
+relationship: IAO:0000136 UBERON:0028622 ! is about banks of superior temporal sulcus
+property_value: source https://www.pnas.org/cgi/doi/10.1073/pnas.0905267106 xsd:string
+
+[Term]
+id: MRIO:0000699
+name: executive control resting state network atlas
+def: "A brain atlas image dataset encoding voxels belonging to the executive control functional resting state network." []
+is_a: MRIO:0000624 ! Smith resting state network atlas
+relationship: IAO:0000136 UBERON:0001873 ! is about caudate nucleus
+relationship: IAO:0000136 UBERON:0001882 ! is about nucleus accumbens
+relationship: IAO:0000136 UBERON:0002022 ! is about insula
+relationship: IAO:0000136 UBERON:0002661 ! is about superior frontal gyrus
+relationship: IAO:0000136 UBERON:0002769 ! is about superior temporal gyrus
+relationship: IAO:0000136 UBERON:0002980 ! is about opercular part of inferior frontal gyrus
+relationship: IAO:0000136 UBERON:0006093 ! is about precuneus cortex
+relationship: IAO:0000136 UBERON:0006094 ! is about superior parietal cortex
+relationship: IAO:0000136 UBERON:0006445 ! is about caudal middle frontal gyrus
+relationship: IAO:0000136 UBERON:0006446 ! is about rostral middle frontal gyrus
+relationship: IAO:0000136 UBERON:0008884 ! is about left putamen
+relationship: IAO:0000136 UBERON:0008885 ! is about right putamen
+relationship: IAO:0000136 UBERON:0013683 ! is about left dorsal thalamus
+relationship: IAO:0000136 UBERON:0013684 ! is about right dorsal thalamus
+relationship: IAO:0000136 UBERON:0022352 ! is about medial orbital frontal cortex
+relationship: IAO:0000136 UBERON:0022353 ! is about posterior cingulate cortex
+relationship: IAO:0000136 UBERON:0022438 ! is about rostral anterior cingulate cortex
+relationship: IAO:0000136 UBERON:0022716 ! is about lateral orbital frontal cortex
+relationship: IAO:0000136 UBERON:0028715 ! is about caudal anterior cingulate cortex
+property_value: source https://www.pnas.org/cgi/doi/10.1073/pnas.0905267106 xsd:string
+
+[Term]
+id: MRIO:0000700
+name: frontoparietal resting state network atlas
+def: "A brain atlas image dataset encoding voxels belonging to both the left hemisphere and right hemisphere frontoparietal functional resting state networks." []
+is_a: MRIO:0000624 ! Smith resting state network atlas
+relationship: IAO:0000136 UBERON:0002022 ! is about insula
+relationship: IAO:0000136 UBERON:0002581 ! is about postcentral gyrus
+relationship: IAO:0000136 UBERON:0002624 ! is about orbital part of inferior frontal gyrus
+relationship: IAO:0000136 UBERON:0002629 ! is about triangular part of inferior frontal gyrus
+relationship: IAO:0000136 UBERON:0002661 ! is about superior frontal gyrus
+relationship: IAO:0000136 UBERON:0002688 ! is about supramarginal gyrus
+relationship: IAO:0000136 UBERON:0002703 ! is about precentral gyrus
+relationship: IAO:0000136 UBERON:0002751 ! is about inferior temporal gyrus
+relationship: IAO:0000136 UBERON:0002769 ! is about superior temporal gyrus
+relationship: IAO:0000136 UBERON:0002771 ! is about middle temporal gyrus
+relationship: IAO:0000136 UBERON:0002980 ! is about opercular part of inferior frontal gyrus
+relationship: IAO:0000136 UBERON:0006088 ! is about inferior parietal cortex
+relationship: IAO:0000136 UBERON:0006093 ! is about precuneus cortex
+relationship: IAO:0000136 UBERON:0006094 ! is about superior parietal cortex
+relationship: IAO:0000136 UBERON:0006445 ! is about caudal middle frontal gyrus
+relationship: IAO:0000136 UBERON:0006446 ! is about rostral middle frontal gyrus
+relationship: IAO:0000136 UBERON:0022353 ! is about posterior cingulate cortex
+relationship: IAO:0000136 UBERON:0027061 ! is about isthmus of cingulate cortex
+property_value: source https://www.pnas.org/cgi/doi/10.1073/pnas.0905267106 xsd:string
+
+[Term]
+id: MRIO:0000701
+name: sensorimotor resting state network atlas
+def: "A brain atlas image dataset encoding voxels belonging to the sensorimotor functional resting state network." []
+is_a: MRIO:0000624 ! Smith resting state network atlas
+relationship: IAO:0000136 UBERON:0002581 ! is about postcentral gyrus
+relationship: IAO:0000136 UBERON:0002661 ! is about superior frontal gyrus
+relationship: IAO:0000136 UBERON:0002688 ! is about supramarginal gyrus
+relationship: IAO:0000136 UBERON:0002703 ! is about precentral gyrus
+relationship: IAO:0000136 UBERON:0002769 ! is about superior temporal gyrus
+relationship: IAO:0000136 UBERON:0006094 ! is about superior parietal cortex
+relationship: IAO:0000136 UBERON:0009897 ! is about right auditory cortex
+relationship: IAO:0000136 UBERON:0009898 ! is about left auditory cortex
+relationship: IAO:0000136 UBERON:0022353 ! is about posterior cingulate cortex
+relationship: IAO:0000136 UBERON:0028715 ! is about caudal anterior cingulate cortex
+relationship: IAO:0000136 UBERON:0035933 ! is about paracentral lobule
+property_value: source https://www.pnas.org/cgi/doi/10.1073/pnas.0905267106 xsd:string
+
+[Term]
+id: MRIO:0000702
+name: V1 resting state network atlas
+def: "A brain atlas image dataset encoding voxels belonging to the V1 functional resting state network." []
+is_a: MRIO:0000624 ! Smith resting state network atlas
+relationship: IAO:0000136 UBERON:0002943 ! is about lingual gyrus
+relationship: IAO:0000136 UBERON:0006092 ! is about cuneus cortex
+relationship: IAO:0000136 UBERON:0006093 ! is about precuneus cortex
+relationship: IAO:0000136 UBERON:0006094 ! is about superior parietal cortex
+relationship: IAO:0000136 UBERON:0022534 ! is about pericalcarine cortex
+property_value: source https://www.pnas.org/cgi/doi/10.1073/pnas.0905267106 xsd:string
+
+[Term]
+id: MRIO:0000703
+name: V2 resting state network atlas
+def: "A brain atlas image dataset encoding voxels belonging to the V2 functional resting state network." []
+is_a: MRIO:0000624 ! Smith resting state network atlas
+relationship: IAO:0000136 UBERON:0002943 ! is about lingual gyrus
+relationship: IAO:0000136 UBERON:0006114 ! is about lateral occipital cortex
+relationship: IAO:0000136 UBERON:0013683 ! is about left dorsal thalamus
+relationship: IAO:0000136 UBERON:0013684 ! is about right dorsal thalamus
+property_value: source https://www.pnas.org/cgi/doi/10.1073/pnas.0905267106 xsd:string
+
+[Term]
+id: MRIO:0000704
+name: V3 resting state network atlas
+def: "A brain atlas image dataset encoding voxels belonging to the V3 functional resting state network." []
+is_a: MRIO:0000624 ! Smith resting state network atlas
+relationship: IAO:0000136 UBERON:0002688 ! is about supramarginal gyrus
+relationship: IAO:0000136 UBERON:0002751 ! is about inferior temporal gyrus
+relationship: IAO:0000136 UBERON:0002766 ! is about fusiform gyrus
+relationship: IAO:0000136 UBERON:0002769 ! is about superior temporal gyrus
+relationship: IAO:0000136 UBERON:0002771 ! is about middle temporal gyrus
+relationship: IAO:0000136 UBERON:0002943 ! is about lingual gyrus
+relationship: IAO:0000136 UBERON:0006088 ! is about inferior parietal cortex
+relationship: IAO:0000136 UBERON:0006094 ! is about superior parietal cortex
+relationship: IAO:0000136 UBERON:0006114 ! is about lateral occipital cortex
+relationship: IAO:0000136 UBERON:0028622 ! is about banks of superior temporal sulcus
+property_value: source https://www.pnas.org/cgi/doi/10.1073/pnas.0905267106 xsd:string
+
+[Term]
+id: MRIO:0000705
+name: network graph quality datum
+def: "A data item that represents some quality of the network as a whole." []
+is_a: IAO:0000027 ! data item
+relationship: OBI:0000312 OBI:0200147 ! is_specified_output_of network graph quality calculation
+
+[Term]
+id: MRIO:0000706
+name: network assortativity datum
+def: "A datum representing the preference for a network's nodes to attach to other similar nodes." []
+is_a: MRIO:0000705 ! network graph quality datum
+property_value: source https://en.wikipedia.org/wiki/Assortativity xsd:string
+
+[Term]
+id: MRIO:0000707
+name: network efficiency datum
+def: "A datu item that represents how efficiently nodes within a network exchange information, often as a function of the distance between nodes." []
+is_a: MRIO:0000705 ! network graph quality datum
+property_value: source https://en.wikipedia.org/wiki/Efficiency_(network_science) xsd:string
+
+[Term]
+id: MRIO:0000708
+name: network transitivity datum
+def: "A data item that represents the tendency of nodes within a network to cluster together measured by the quotient of closed triplet nodes divided by the total number of triple nodes in a network." []
+is_a: MRIO:0000705 ! network graph quality datum
+property_value: IAO:0000118 "global clustering coefficient" xsd:string
+property_value: source https://en.wikipedia.org/wiki/Clustering_coefficient xsd:string
+
+[Term]
+id: MRIO:0000709
+name: auditory resting state network functional connectivity matrix
+def: "A connectivity matrix where each element represents the correlation of functional brain activity within the auditory resting state network." []
+is_a: MRIO:0000607 ! functional connectivity matrix
+relationship: IAO:0000136 MRIO:0000698 ! is about auditory resting state network atlas
+
+[Term]
+id: MRIO:0000710
+name: temp
+
+[Term]
+id: MRIO:0000711
+name: SE echo planar sequence
+def: "Multiple echoes of different phase steps are acquired by rapidly reversing the readout or frequency- encoding gradient." []
+is_a: MRIO:0000659 ! spin echo sequence
+property_value: http://purl.org/dc/elements/1.1/source https://radiopaedia.org/articles/echo-planar-imaging-1?lang=us xsd:string
+property_value: IAO:0000116 "Can we add that this may optionally be about some spin echo sequence, but not necessary for an instance of this class?" xsd:string
+
+[Term]
+id: MRIO:0000712
+name: SE inversion recovery sequence
+def: "An inversion recovery (IR) pulse sequence is a spin echo or gradient echo pulse sequence preceded by a 180° RF pulse." []
+property_value: http://purl.org/dc/elements/1.1/source https://radiopaedia.org/articles/inversion-recovery-sequences?lang=us xsd:string
+property_value: IAO:0000116 "TODO: Create specific subclass of this and echo panar sequence for both GRE and SE." xsd:string
+
+[Term]
+id: MRIO:0000713
+name: image visualization from image data set
+is_a: OBI:0200111 ! data visualization
+property_value: IAO:0000116 "'MRI image visualization'\nfind proper parent class" xsd:string
 
 [Term]
 id: NCBITaxon:10239
@@ -2501,20 +2869,6 @@ property_value: IAO:0000118 "material transformation" xsd:string
 property_value: IAO:0000119 "OBI branch derived" xsd:string
 
 [Term]
-id: OBI:0000097
-name: participant under investigation role
-def: "A role that is realized through the execution of a study design in which the bearer of the role participates and in which data about that bearer is collected." []
-is_a: BFO:0000023 ! role
-relationship: BFO:0000054 OBI:0000471 ! realized in study design execution
-property_value: IAO:0000111 "study subject role" xsd:string
-property_value: IAO:0000112 "Human subjects in a clinical trial, rats in a toxicogenomics study, tissue cutlures subjected to drug tests, fish observed in an ecotoxicology study. \nParasite example: people are infected with a parasite which is then extracted; the particpant under investigation could be the parasite, the people, or a population of which the people are members, depending on the nature of the study.\nLake example: a lake could realize this role in an investigation that assays pollution levels in samples of water taken from the lake." xsd:string
-property_value: IAO:0000114 IAO:0000122
-property_value: IAO:0000116 "A participant can realize both \"specimen role\" and \"participant under investigation role\" at the same time. However \"participant under investigation role\" is distinct from \"specimen role\", since a specimen could somehow be involved in an investigation without being the thing that is under investigation." xsd:string
-property_value: IAO:0000117 "GROUP:  Role Branch" xsd:string
-property_value: IAO:0000119 "OBI" xsd:string
-property_value: IAO:0000232 "Following OBI call November 2012,26th:\n \n1. it was decided there was no need for moving the children class and making them siblings of study subject role.\n2. it also settles the disambiguation about 'study subject'. This is about the individual participating in the investigation/study, Not the 'topic' (as in 'toxicity study') of the investigation/study\n\nThis note closes the issue and validates the class definition to be part of the OBI core\neditor = PRS\n" xsd:string
-
-[Term]
 id: OBI:0000112
 name: specimen role
 def: "a role borne by a material entity that is gained during a specimen collection process and that can be realized by use of the specimen in an investigation" []
@@ -2667,19 +3021,6 @@ property_value: IAO:0000117 "PERSON: Jennifer Fostel" xsd:string
 property_value: IAO:0000117 "PERSON: Melanie Courtot" xsd:string
 property_value: IAO:0000117 "PERSON: Philippe Rocca-Serra" xsd:string
 property_value: IAO:0000119 "GROUP: OBI PlanAndPlannedProcess Branch" xsd:string
-
-[Term]
-id: OBI:0000471
-name: study design execution
-def: "a planned process that carries out a study design" []
-is_a: OBI:0000011 ! planned process
-property_value: IAO:0000111 "study design execution" xsd:string
-property_value: IAO:0000112 "injecting a mouse with PBS solution, weighing it, and recording the weight according to a study design." xsd:string
-property_value: IAO:0000114 IAO:0000122
-property_value: IAO:0000116 "removed axiom has_part some (assay or 'data transformation') per discussion on protocol application mailing list to improve reasoner performance. The axiom is still desired." xsd:string
-property_value: IAO:0000119 "branch derived" xsd:string
-property_value: IAO:0000232 "6/11/9: edited at workshop. Used to be: study design execution is a process with the objective to generate data according to a concretized study design. The execution of a study design is part of an investigation, and minimally consists of an assay or data transformation." xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
 
 [Term]
 id: OBI:0000571
@@ -2989,20 +3330,6 @@ property_value: IAO:0000116 "This term is currently a descendant of 'information
 property_value: IAO:0000117 "PERSON:Bjoern Peters" xsd:string
 
 [Term]
-id: OBI:0001948
-name: sequence assembly name
-def: "A textual entity that is used to denote a sequence assembly. " []
-is_a: IAO:0000300 ! textual entity
-intersection_of: IAO:0000300 ! textual entity
-intersection_of: IAO:0000219 SO:0000353 {all_only="true"} ! denotes sequence_assembly
-property_value: http://purl.org/dc/elements/1.1/source "NIAID GSCID-BRC" xsd:string
-property_value: IAO:0000111 "sequence assembly name" xsd:string
-property_value: IAO:0000114 IAO:0000120
-property_value: IAO:0000117 "PERSON: Jie Zheng, Chris Stoeckert" xsd:string
-property_value: IAO:0000119 "NIAID GSCID-BRC metadata working group" xsd:string
-property_value: OBI:0001886 "assembly name" xsd:string
-
-[Term]
 id: OBI:0002076
 name: collection of specimens
 def: "A material entity that has two or more specimens as its parts." []
@@ -3016,6 +3343,29 @@ property_value: IAO:0000114 IAO:0000125
 property_value: IAO:0000116 "Details see tracker: https://sourceforge.net/p/obi/obi-terms/778/" xsd:string
 property_value: IAO:0000117 "Person: Chris Stoeckert, Jie Zheng" xsd:string
 property_value: IAO:0000119 "OBIB, OBI" xsd:string
+
+[Term]
+id: OBI:0002139
+name: volume value specification
+def: "A value specification that specifies the volume of some thing." []
+is_a: OBI:0001933 ! value specification
+relationship: IAO:0000039 UO:0000095 ! has measurement unit label volume unit
+relationship: OBI:0001927 PATO:0000918 ! specifies value of volume
+property_value: IAO:0000111 "volume value specification" xsd:string
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000117 "Chris Stoeckert" xsd:string
+property_value: IAO:0000119 "OBI" xsd:string
+
+[Term]
+id: OBI:0002141
+name: volume measurement assay
+def: "An assay to determine the volume of an evaluant." []
+is_a: OBI:0000070 ! assay
+property_value: IAO:0000111 "volume measurement assay" xsd:string
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000117 "Bjoern Peters" xsd:string
+property_value: IAO:0000117 "Chris Stoeckert" xsd:string
+property_value: IAO:0000119 "OBI" xsd:string
 
 [Term]
 id: OBI:0002205
@@ -3437,6 +3787,17 @@ property_value: IAO:0000119 "PERSON: James Malone" xsd:string
 property_value: IAO:0000119 "PERSON: Melanie Courtot" xsd:string
 
 [Term]
+id: OBI:0200080
+name: network analysis
+def: "A data transformation that takes as input data that describes biological networks in terms of the node (a.k.a. vertex) and edge graph elements and their characteristics and generates as output properties of the constituent nodes and edges, the sub-graphs, and the entire network." []
+is_a: OBI:0200000 ! data transformation
+property_value: IAO:0000111 "network analysis" xsd:string
+property_value: IAO:0000114 IAO:0000125
+property_value: IAO:0000117 "Richard Scheuermann" xsd:string
+property_value: IAO:0000118 "network topology analysis" xsd:string
+property_value: IAO:0000119 "PERSON: Richard Scheuermann" xsd:string
+
+[Term]
 id: OBI:0200111
 name: data visualization
 def: "An planned process that creates images, diagrams or animations from the input data." []
@@ -3457,6 +3818,16 @@ property_value: IAO:0000119 "PERSON: James Malone" xsd:string
 property_value: IAO:0000119 "PERSON: Melanie Courtot" xsd:string
 property_value: IAO:0000119 "PERSON: Tina Boussard" xsd:string
 property_value: IAO:0000232 "Possible future hierarchy might include this:\ninformation_encoding\n>data_encoding\n>>image_encoding" xsd:string
+
+[Term]
+id: OBI:0200147
+name: network graph quality calculation
+def: "A network analysis in which an input data set describing node objects and edge relationships between node objects is used to determine the output quality of the network as a whole." []
+is_a: OBI:0200080 ! network analysis
+property_value: IAO:0000111 "network graph quality calculation" xsd:string
+property_value: IAO:0000114 IAO:0000125
+property_value: IAO:0000117 "Richard Scheuermann" xsd:string
+property_value: IAO:0000119 "PERSON: Richard Scheuermann" xsd:string
 
 [Term]
 id: OBI:0200166
@@ -3554,72 +3925,48 @@ property_value: IAO:0000114 IAO:0000123
 property_value: IAO:0000117 "James Malone" xsd:string
 
 [Term]
-id: OBI:0500000
-name: study design
-def: "A plan specification comprised of protocols (which may specify how and what kinds of data will be gathered) that are executed as part of an investigation and is realized during a study design execution." []
-is_a: IAO:0000104 ! plan specification
-relationship: BFO:0000051 OBI:0000272 ! has part protocol
-property_value: IAO:0000111 "study design" xsd:string
-property_value: IAO:0000112 "a matched pairs study design describes criteria by which subjects are identified as pairs which then undergo the same protocols, and the data generated is analyzed by comparing the differences between the paired subjects, which constitute the results of the executed study design." xsd:string
-property_value: IAO:0000114 IAO:0000122
-property_value: IAO:0000116 "Editor note: there is at least an implicit restriction on the kind of data transformations that can be done based on the measured data available." xsd:string
-property_value: IAO:0000117 "PERSON: Chris Stoeckert" xsd:string
-property_value: IAO:0000118 "experimental design" xsd:string
-property_value: IAO:0000232 "rediscussed at length (MC/JF/BP). 12/9/08). The definition was clarified to differentiate it from protocol." xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
-
-[Term]
-id: OBI:0600040
-name: synthesis
-def: "the construction of a biomaterial from simpler biomaterials" []
-is_a: OBI:0000094 ! material processing
-relationship: OBI:0000293 CHEBI:23367 ! has_specified_input molecular entity
-relationship: OBI:0000299 CHEBI:23367 ! has_specified_output molecular entity
-property_value: IAO:0000111 "synthesis" xsd:string
-property_value: IAO:0000112 "making cDNA from nucleotides using RNA as a template" xsd:string
-property_value: IAO:0000114 IAO:0000125
-property_value: IAO:0000116 "This probably needs breaking down into more specific applications. The example given is already covered in reverse_transcription" xsd:string
-property_value: IAO:0000117 "PERSON:Kevin Clancy" xsd:string
-property_value: IAO:0000118 "synthesize" xsd:string
-property_value: IAO:0000119 "OBI branch derived" xsd:string
-
-[Term]
 id: ObsoleteClass
 name: Obsolete Class
 
 [Term]
-id: SO:0000001
-name: region
-def: "A sequence_feature with an extent greater than zero. A nucleotide region is composed of bases and a polypeptide region is composed of amino acids." []
-is_a: BFO:0000031 ! generically dependent continuant
-property_value: IAO:0000111 "region" xsd:string
-property_value: IAO:0000118 "primary structure of sequence macromolecule" xsd:string
-property_value: IAO:0000118 "sequence" xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/so.owl
+id: PATO:0000051
+name: morphology
+def: "A quality of a single physical entity inhering in the bearer by virtue of the bearer's size or shape or structure." []
+is_a: PATO:0001241 ! physical object quality
+property_value: IAO:0000111 "morphology" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 
 [Term]
-id: SO:0000353
-name: sequence_assembly
-def: "A sequence of nucleotides that has been algorithmically derived from an alignment of two or more different sequences." []
-is_a: SO:0001248 ! assembly
-property_value: IAO:0000111 "sequence_assembly" xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/so.owl
+id: PATO:0000117
+name: size
+def: "A morphology quality inhering in a bearer by virtue of the bearer's physical magnitude." []
+is_a: PATO:0000051 ! morphology
+property_value: IAO:0000111 "size" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 
 [Term]
-id: SO:0001248
-name: assembly
-def: "A region of the genome of known length that is composed by ordering and aligning two or more different regions." []
-is_a: SO:0001410 ! experimental_feature
-property_value: IAO:0000111 "assembly" xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/so.owl
+id: PATO:0000918
+name: volume
+def: "A 3-D extent quality inhering in a bearer by virtue of the bearer's amount of 3-dimensional space it occupies." []
+is_a: PATO:0001710 ! 3-D extent
+property_value: IAO:0000111 "volume" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 
 [Term]
-id: SO:0001410
-name: experimental_feature
-def: "A region which is the result of some arbitrary experimental procedure. The procedure may be carried out with biological material or inside a computer." []
-is_a: SO:0000001 ! region
-property_value: IAO:0000111 "experimental_feature" xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/so.owl
+id: PATO:0001241
+name: physical object quality
+def: "A quality which inheres in a continuant." []
+is_a: BFO:0000019 ! quality
+property_value: IAO:0000111 "physical object quality" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0001710
+name: 3-D extent
+def: "A size quality inhering in an bearer by virtue of the bearer's extension in three dimensions." []
+is_a: PATO:0000117 ! size
+property_value: IAO:0000111 "3-D extent" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 
 [Term]
 id: UBERON:0000463
@@ -5064,34 +5411,12 @@ property_value: IAO:0000119 "Smith, Ceusters, Ruttenberg, 2000 years of philosop
 domain: IAO:0000030 ! information content entity
 
 [Typedef]
-id: IAO:0000219
-name: denotes
-def: "A primitive, instance-level, relation obtaining between an information content entity and some portion of reality. Denotation is what happens when someone creates an information content entity E in order to specifically refer to something. The only relation between E and the thing is that E can be used to 'pick out' the thing. This relation connects those two together. Freedictionary.com sense 3: To signify directly; refer to specifically" []
-property_value: IAO:0000112 "A person's name denotes the person. A variable name in a computer program denotes some piece of memory. Lexically equivalent strings can denote different things, for instance \"Alan\" can denote different people. In each case of use, there is a case of the denotation relation obtaining, between \"Alan\" and the person that is being named." xsd:string
-property_value: IAO:0000116 "2009-11-10 Alan Ruttenberg. Old definition said the following to emphasize the generic nature of this relation. We no longer have 'specifically denotes', which would have been primitive, so make this relation primitive.\ng denotes r =def \nr is a portion of reality\nthere is some c that is a concretization of g \nevery c that is a concretization of g specifically denotes r" xsd:string
-property_value: IAO:0000117 "person:Alan Ruttenberg" xsd:string
-property_value: IAO:0000119 "Conversations with Barry Smith, Werner Ceusters, Bjoern Peters, Michel Dumontier, Melanie Courtot, James Malone, Bill Hogan" xsd:string
-domain: IAO:0000030 ! information content entity
-range: BFO:0000001 ! entity
-is_a: IAO:0000136 ! is about
-inverse_of: IAO:0000235 ! denoted by
-
-[Typedef]
-id: IAO:0000235
-name: denoted by
-def: "inverse of the relation 'denotes'" []
-property_value: IAO:0000117 "Person: Jie Zheng, Chris Stoeckert, Mike Conlon" xsd:string
-property_value: IAO:0000233 https://github.com/information-artifact-ontology/IAO/issues/206
-domain: BFO:0000001 ! entity
-range: IAO:0000030 ! information content entity
-
-[Typedef]
 id: MRIO:0000375
 name: has pulse sequence
 def: "A relation between an MR image acquisition sequence and the pulse sequence(s) that contribute to it." []
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-2104-0568
-domain: MRIO:0000657 ! MRI acquisition sequence
-range: MRIO:0000383 ! MR pulse sequence
+domain: MRIO:0000379 ! MR imaging assay
+range: MRIO:0000383 ! MR pulse sequence protocol
 
 [Typedef]
 id: MRIO:0000688
@@ -5182,6 +5507,15 @@ property_value: IAO:0000117 "OBI" xsd:string
 property_value: IAO:0000119 "OBI" xsd:string
 domain: IAO:0000005 ! objective specification
 range: OBI:0000011 ! planned process
+
+[Typedef]
+id: OBI:0001927
+name: specifies value of
+def: "A relation between a value specification and an entity which the specification is about." []
+property_value: IAO:0000111 "specifies value of" xsd:string
+property_value: IAO:0000114 IAO:0000123
+domain: OBI:0001933 ! value specification
+is_a: IAO:0000136 ! is about
 
 [Typedef]
 id: OBI:0001938
