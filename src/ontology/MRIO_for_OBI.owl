@@ -27,8 +27,12 @@
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MRIO/releases/2022-01-10/imports/obi_import.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2019-08-26/bfo.owl"/>
         <dc:creator>Alexander Bartnik</dc:creator>
+        <dc:creator>Alexander Diehl</dc:creator>
+        <dc:creator>Lauren Wishnie</dc:creator>
         <dc:creator>Lucas Serra</dc:creator>
         <dc:creator>Mackenzie Smith</dc:creator>
+        <dc:creator>Michael Dwyer</dc:creator>
+        <dc:creator>William Duncan</dc:creator>
         <dc:description>An ontology for the representation of MRI acquisition and analysis.</dc:description>
         <dc:title> MRI Ontology (MRI)</dc:title>
         <terms:license>https://creativecommons.org/licenses/by/4.0/</terms:license>
@@ -2279,20 +2283,6 @@ The values often belong to a group of pixels or voxels that share the same chara
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000628"/>
         <rdfs:label xml:lang="en">Gradient echo sequence</rdfs:label>
     </owl:NamedIndividual>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotations
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0001873">
-        <IAO_0000118>&apos;Left-Caudate&apos; and &apos;Right-Caudate&apos; (from Desikan-Killiany atlas)</IAO_0000118>
-    </rdf:Description>
     
 
 
