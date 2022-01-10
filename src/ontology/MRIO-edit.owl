@@ -11,6 +11,7 @@
      xmlns:core="http://purl.obolibrary.org/obo/core#"
      xmlns:doap="http://usefulinc.com/ns/doap#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:mrio="http://bnac.net/mrio/"
      xmlns:obda="https://w3id.org/obda/vocabulary#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:swrl="http://www.w3.org/2003/11/swrl#"
@@ -22,9 +23,9 @@
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/mrio/releases/2021-04-10/mrio.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/mrio/releases/2022-01-07/mrio.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MRIO/releases/2022-01-07/imports/obi_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MRIO/releases/2022-01-10/imports/obi_import.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2019-08-26/bfo.owl"/>
         <dc:creator>Alexander Bartnik</dc:creator>
         <dc:creator>Lucas Serra</dc:creator>
@@ -44,6 +45,30 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
     
 
 
@@ -76,6 +101,24 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000054 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000054"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000055 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000055"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000136 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000136"/>
@@ -101,6 +144,42 @@
         <IAO_0000115>A relation between some part of the MRI acquisition sequence and the setttings of an MRI machine set by a technician.</IAO_0000115>
         <rdfs:label xml:lang="en">has MRI acquisition parameter</rdfs:label>
     </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000293 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000293"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000299 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000299"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000312 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000312"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000053 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000053"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000059 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000059"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000087 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000087"/>
     
 
 
@@ -198,9 +277,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/CARO_0000000 -->
+    <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000000"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
     
 
 
@@ -213,6 +292,24 @@
         <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
         <rdfs:label xml:lang="en">field of view</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_33375 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33375"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000100 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000100"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000140 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000140"/>
     
 
 
@@ -268,51 +365,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000347 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000347">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000636"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000683"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000385"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <IAO_0000115>A timeseries of MRI images including pre- and post-contrast at different times</IAO_0000115>
-        <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
-        <rdfs:label xml:lang="en">DCE perfusion data set</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000348 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000348">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000636"/>
-        <IAO_0000115>A timeseries of MRI images like DCE perfusion, but using no injected contrast (uses flow coded pulses instead)</IAO_0000115>
-        <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
-        <rdfs:label xml:lang="en">ASL perfusion data set</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000349 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000349">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000341"/>
-        <IAO_0000115>A pair of MRI images pre- and post-application of an MT offset pulse</IAO_0000115>
-        <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
-        <rdfs:label xml:lang="en">magnetization transfer image data set</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/MRIO_0000350 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000350">
@@ -342,17 +394,6 @@
         <IAO_0000115>A type of T2-weighted image in which the acquisition is performed using a 2D spin-echo technique</IAO_0000115>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
         <rdfs:label xml:lang="en">T2 SE image data set</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000353 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000353">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000341"/>
-        <IAO_0000115>A type of processed MRI image calculated as a results</IAO_0000115>
-        <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
-        <rdfs:label xml:lang="en">QSM image data set</rdfs:label>
     </owl:Class>
     
 
@@ -811,6 +852,12 @@ radiopedia</IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000379"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000375"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000659"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000351"/>
             </owl:Restriction>
@@ -863,6 +910,12 @@ radiopedia</IAO_0000115>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000388">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000386"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000375"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000659"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000688"/>
@@ -994,6 +1047,12 @@ radiopedia</IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000386"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000375"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000628"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000396"/>
             </owl:Restriction>
@@ -1067,7 +1126,14 @@ radiopedia</IAO_0000115>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000375"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000661"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MRIO_0000661"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MRIO_0000712"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1140,7 +1206,14 @@ radiopedia</IAO_0000115>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000375"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000661"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MRIO_0000661"/>
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MRIO_0000712"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000377"/>
@@ -1263,17 +1336,6 @@ variable
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000420 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000420">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000421"/>
-        <IAO_0000115>A functional assessment to determine the mapping of brain activity in an evaluant.</IAO_0000115>
-        <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
-        <rdfs:label xml:lang="en">functional mapping</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/MRIO_0000421 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000421">
@@ -1314,86 +1376,13 @@ variable
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000500 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000500">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000032"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0001938"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0002139"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <IAO_0000115>A scalar measurement datum that is derived from the measurement of some volume quality</IAO_0000115>
-        <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
-        <rdfs:label xml:lang="en">volume measurement datum</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000501 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000501">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000667"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001897"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0010225"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <IAO_0000115>A measurement datum that is the result of volume measurement of  the thalamus within some brain.</IAO_0000115>
-        <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
-        <rdfs:label xml:lang="en">thalamic volume measurement datum</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000502 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000502">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000366"/>
-        <IAO_0000115>A type of T1-weighted image in which the voxel size is no larger than x and anisotropy is no more than y</IAO_0000115>
-        <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
-        <rdfs:label xml:lang="en">high resolution T1 weighted image data set</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/MRIO_0000503 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000503">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000502"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000423"/>
         <IAO_0000115>T1 weighted image data set collected as one 3D volume using a gradient echo sequence.</IAO_0000115>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
         <rdfs:label xml:lang="en">3D GRE image data set</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000504 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000504">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000502"/>
-        <IAO_0000115>Image data set collected at an evaluant&apos;s first visit in a study.</IAO_0000115>
-        <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
-        <rdfs:label xml:lang="en">baseline hi-res T1 image</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000505 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000505">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000502"/>
-        <IAO_0000115>Image data set collected at a later time than the evaluant&apos;s first scan.</IAO_0000115>
-        <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
-        <rdfs:label xml:lang="en">follow-up hi-res T1 image data set</rdfs:label>
     </owl:Class>
     
 
@@ -1436,12 +1425,6 @@ variable
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000341"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000500"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <IAO_0000115>Any combination of digital image analysis and statistical tools that may be used to derive processed MR images or data measurements about the MR images.</IAO_0000115>
         <IAO_0000116>Add missing sources/papers/doi</IAO_0000116>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
@@ -1450,49 +1433,10 @@ variable
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000509 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000509">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000523"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000511"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000501"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000526"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <IAO_0000115>A volumetric MR imaging analysis that uses a neural network (U-net) to estimate thalamic volume from T2 FLAIR image datasets of the an entire human brain.</IAO_0000115>
-        <IAO_0000117 rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
-        <IAO_0000117>Alexander Bartnik</IAO_0000117>
-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377</IAO_0000117>
-        <IAO_0000119>https://doi.org/10.1016/j.nicl.2021.102652</IAO_0000119>
-        <rdfs:comment>Based on preliminary experiments and established performance, we adopted a 3D U-Net semantic segmentation architecture for DeepGRAI. (Çiçek et al., 2016) The U-Net architecture is composed of two symmetric pathways – a descending contraction/encoding pathway which moves from low level voxel intensities at very high spatial resolution to abstract high-level features at coarse spatial resolution, and an ascending expansion/decoding pathway which moves from less localized high-level features to specific voxel classifications. Additionally, U-Net includes direct “skip” connections from the descending pathway into the ascending pathway, to provide the ascending pathway with low-level image feature information. In the current context, the descending pathway is essentially responsible for localizing the thalamus, and the ascending pathway is responsible for determining its precise borders.</rdfs:comment>
-        <rdfs:label xml:lang="en">DeepGRAI analysis</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/MRIO_0000510 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000510">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000421"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000607"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <IAO_0000115>An analysis examining the temporal correlation of activity throughout the brain.</IAO_0000115>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
         <rdfs:label xml:lang="en">functional connectome analysis</rdfs:label>
@@ -1511,98 +1455,6 @@ variable
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000514 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000514">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000662"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000366"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <IAO_0000115>A model-based subcortical segmentation tool.</IAO_0000115>
-        <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
-        <oboInOwl:source>Patenaude, B., Smith, S.M., Kennedy, D., and Jenkinson M. A Bayesian Model of Shape and Appearance for Subcortical Brain NeuroImage, 56(3):907-922, 2011.</oboInOwl:source>
-        <rdfs:label xml:lang="en">FIRST analysis</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000515 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000515">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000523"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000662"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000366"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000671"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000673"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <IAO_0000115>FreeSurfer is a suite of tools for the analysis of neuroimaging data that provides an array of algorithms to quantify the functional, connectional and structural properties of the human brain. It has evolved from a package primarily aimed at generating surface representations of the cerebral cortex into one that automatically creates models of most macroscopically visible structures in the human brain given any reasonable T1-weighted input image. It is freely available, runs on a wide variety of hardware and software platforms, and is open source.</IAO_0000115>
-        <IAO_0000119>https://doi.org/10.1016/j.neuroimage.2012.01.021</IAO_0000119>
-        <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
-        <rdfs:label xml:lang="en">FreeSurfer Analysis</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000516 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000516">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000515"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MRIO_0000504"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MRIO_0000505"/>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <IAO_0000115>The longitudinal scheme is designed to be unbiased with respect to any time point (TP). Instead of initializing it with information from a specific time point, a template volume is created and run through FreeSurfer. This template can be seen as an initial guess for the segmentation and surface reconstruction. The FreeSurfer cortical and subcortical segmentation and parcellation procedure involves solving many complex nonlinear optimization problems, such as the deformable surface reconstruction, the nonlinear atlas-image registration, and the nonlinear spherical surface registration.</IAO_0000115>
-        <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
-        <oboInOwl:source>https://surfer.nmr.mgh.harvard.edu/fswiki/LongitudinalProcessing</oboInOwl:source>
-        <rdfs:label xml:lang="en">FreeSurfer longitudinal analysis</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000517 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000517">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000523"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000511"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <IAO_0000115>We set out to develop and validate an LVV quantification tool for this purpose. Our goal was not to produce a method more precise or accurate than those described above. Rather, we sought to produce a highly robust technique capable of operating on clinical-quality T2-FLAIR images and producing results similar to more established techniques run on high-resolution scans. To do this, we extended an earlier idea for whole brain analysis proposed by (Baillard et al., 2001), and adapted it to LVV measurement on T2-FLAIR images. The core of our approach is a combination of multi-atlas segmentation and level-set refinement. We also extended the cross-sectional method for direct longitudinal analysis by including an optional Jacobian integration step. We called the resulting algorithm “Neurological Software Tool for Reliable Atrophy Measurement” - NeuroSTREAM.</IAO_0000115>
-        <IAO_0000119>https://doi.org/10.1016/j.nicl.2017.06.022</IAO_0000119>
-        <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
-        <rdfs:label xml:lang="en">NeuroSTREAM analysis</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/MRIO_0000518 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000518">
@@ -1610,37 +1462,6 @@ variable
         <IAO_0000115>Measurement of axonal damage and the connections between brain regions caused by some neuropathological process.</IAO_0000115>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
         <rdfs:label xml:lang="en">structural disconnectome analysis</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000519 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000519">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000518"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MRIO_0000511"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MRIO_0000605"/>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000609"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <IAO_0000115>The NeMo Tool uses a large reference set of healthy tractograms to assess implied network changes arising from a particular pattern of WM alteration on a region- and network-wise level.</IAO_0000115>
-        <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
-        <oboInOwl:source>https://dx.doi.org/10.1089%2Fbrain.2013.0147</oboInOwl:source>
-        <rdfs:label xml:lang="en">NeMo analysis</rdfs:label>
     </owl:Class>
     
 
@@ -1673,33 +1494,9 @@ variable
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000367"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000603"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <IAO_0000115>Analyzes voxels in an MRI scan that appear as focal lesions in a T2 weighted scan.</IAO_0000115>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
         <rdfs:label xml:lang="en">T2 lesion analysis</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000522 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000522">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000521"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000511"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <IAO_0000115>The LPA was trained by a logistic regression model with the data of 53 MS patients with severe lesion patterns. Binary lesion maps of these patients were used as response values. As covariates a similar lesion belief map as for the LGA was used as well as a spatial covariate that takes into account voxel specific changes in lesion probability. Such a high dimensional model cannot be estimated by standard procedures, so we used a novel approach for fitting large-scale regression models, for details see here. The parameters of this model fit are then used to segment lesions in new images by providing an estimate for the lesion probability for each voxel.</IAO_0000115>
-        <IAO_0000119>https://doi.org/10.5282/edoc.20373</IAO_0000119>
-        <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
-        <rdfs:label xml:lang="en">LPA analysis</rdfs:label>
     </owl:Class>
     
 
@@ -1715,80 +1512,6 @@ variable
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000524 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000524">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000523"/>
-        <IAO_0000115>Neuroimaging technique used to estimate the volume of the brain.</IAO_0000115>
-        <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
-        <rdfs:label xml:lang="en">whole brain volumetric analysis</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000525 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000525">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000524"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000366"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MRIO_0000366"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MRIO_0000511"/>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000526"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MRIO_0000664"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MRIO_0000665"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MRIO_0000666"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MRIO_0000668"/>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <IAO_0000115>Quantitative measurement of brain size, shape, and temporal change (for example, in order to estimate atrophy) is increasingly important in biomedical image analysis applications. New methods of structural analysis attempt to improve robustness, accuracy, and extent of automation. A fully automated method of longitudinal (temporal change) analysis, SIENA, was presented previously. In this paper, improvements to this method are described, and also an extension of SIENA to a new method for cross-sectional (single time point) analysis. The methods are fully automated, robust, and accurate: 0.15% brain volume change error (longitudinal): 0.5–1% brain volume accuracy for single-time point (cross-sectional). A particular advantage is the relative insensitivity to differences in scanning parameters. The methods provide easy manual review of their output by the automatic production of summary images which show the results of the brain extraction, registration, tissue segmentation, and final atrophy estimation.</IAO_0000115>
-        <IAO_0000119>https://doi.org/10.1006/nimg.2002.1040</IAO_0000119>
-        <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
-        <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
-        <rdfs:label xml:lang="en">SIENAX analysis</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000526 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000526">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000623"/>
-        <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
-        <rdfs:label xml:lang="en">segmented region mask</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/MRIO_0000527 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000527">
@@ -1797,38 +1520,6 @@ variable
         <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
         <rdfs:label xml:lang="en">text file</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000528 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000528">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000509"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000641"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
-        <rdfs:label xml:lang="en">DeepGRAI analysis of the dorsal plus ventral thalamus</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000529 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000529">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000645"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000642"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
-        <rdfs:label xml:lang="en">DeepGRAI analysis of the left dorsal thalamus</rdfs:label>
     </owl:Class>
     
 
@@ -1869,154 +1560,12 @@ The values often belong to a group of pixels or voxels that share the same chara
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000603 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000603">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000600"/>
-        <IAO_0000115>A lesion mask where the lesions are derived from a T2 weighted image data set.</IAO_0000115>
-        <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
-        <rdfs:label xml:lang="en">T2 lesion mask</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/MRIO_0000604 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000604">
         <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <rdfs:label xml:lang="en">MR image transformation</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000605 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000605">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000603"/>
-        <IAO_0000115>A lesion mask where the lesions are derived from a T2 FLAIR image data set.</IAO_0000115>
-        <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
-        <rdfs:label xml:lang="en">FLAIR lesion mask</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000607 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000607">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000611"/>
-        <IAO_0000115>A connectivity matrix where each element represents the correlation of functional brain activity over time between two regions or voxels.</IAO_0000115>
-        <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
-        <rdfs:label xml:lang="en">functional connectivity matrix</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000608 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000608">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
-        <IAO_0000115>An n-dimensional data set that describes some linear relations of the scalars, vectors, or matrices that constitute it.</IAO_0000115>
-        <IAO_0000118>multidemnsional array</IAO_0000118>
-        <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
-        <rdfs:label xml:lang="en">tensor data set</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000609 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000609">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000608"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000613"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000614"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000649"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <IAO_0000115>A tensor data set produced by the Network Modification tool (NeMo) that contains matrix data sets related to the structural connectivity and disruption of white matter tracts in the human brain caused by focal lesions.</IAO_0000115>
-        <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
-        <rdfs:label xml:lang="en">ChaCo data array</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000610 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000610">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
-        <IAO_0000115>A data set comprised of 2-dimensional array (rows and columns) of elements or entries, each representing an object or property of an object.</IAO_0000115>
-        <IAO_0000116>there&apos;s another term similar in OBI- should be resolved (IRI: http://purl.obolibrary.org/obo/OBIws_0000100)</IAO_0000116>
-        <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
-        <rdfs:label xml:lang="en">matrix data set</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000611 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000611">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000610"/>
-        <IAO_0000115>A square n x n matrix where each element A of i,j represents some correlational relationship or degree of connection between i and j.</IAO_0000115>
-        <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
-        <rdfs:label xml:lang="en">connectivity matrix</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000612 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000612">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000611"/>
-        <IAO_0000115>A connectivity matrix where each element represents the degree of physical integrity of some path between two brain regions or voxels.</IAO_0000115>
-        <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
-        <rdfs:label xml:lang="en">structural connectivity matrix</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000613 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000613">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000612"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000649"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <IAO_0000115>A structural connectivity matrix where each element respresents the number of white matter streamlines still connecting two brain regions when accounting for focal lesion damage, normalized for the NeMo healthy control tractogram set.</IAO_0000115>
-        <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
-        <rdfs:label xml:lang="en">nConMat matrix</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000614 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000614">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000612"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000649"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <IAO_0000115>A structural connectivity matrix where each element represents the average number of white matter tract streamlines connecting two brain regions normalized for the NeMo healthy control tractogram set.</IAO_0000115>
-        <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
-        <rdfs:label xml:lang="en">nMapTFC matrix</rdfs:label>
     </owl:Class>
     
 
@@ -2113,124 +1662,6 @@ The values often belong to a group of pixels or voxels that share the same chara
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000624 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000624">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000648"/>
-        <IAO_0000115>A brain atlas image data set encoding voxels involved in ten major resting state functional networks, as determined by analysis and decomposition of 36 human subjects&apos; functional activity at rest.</IAO_0000115>
-        <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
-        <oboInOwl:source>https://www.pnas.org/cgi/doi/10.1073/pnas.0905267106</oboInOwl:source>
-        <rdfs:label xml:lang="en">Smith resting state network atlas</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000625 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000625">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000624"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002661"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002771"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006088"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006092"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006093"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0013684"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0022352"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0022353"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0022438"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0027061"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <IAO_0000115>A brain atlas image dataset encoding voxels belonging to the default mode network functional resting state network.</IAO_0000115>
-        <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
-        <oboInOwl:source>https://www.pnas.org/cgi/doi/10.1073/pnas.0905267106</oboInOwl:source>
-        <rdfs:label xml:lang="en">default mode network atlas</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000626 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000626">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000607"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000649"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <IAO_0000115>A connectivity matrix where each element represents the correlation of functional brain activity with the 86 regions described in the Desikan-Killiany brain atlas.</IAO_0000115>
-        <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
-        <rdfs:label xml:lang="en">Desikan-Killiany functional connectivity matrix</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000627 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000627">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000607"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000625"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <IAO_0000115>A connectivity matrix where each element represents the correlation of functional brain activity within the default mode network.</IAO_0000115>
-        <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
-        <rdfs:label xml:lang="en">default mode network functional connectivity matrix</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/MRIO_0000628 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000628">
@@ -2255,6 +1686,7 @@ The values often belong to a group of pixels or voxels that share the same chara
         </rdfs:subClassOf>
         <IAO_0000115>Generated by the frequency-encode gradient, except that it is used twice in succession, and in opposite directions.</IAO_0000115>
         <IAO_0000116>This and spin echo are the major child classes of MR pulse sequence</IAO_0000116>
+        <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
         <dc:source>https://radiopaedia.org/articles/gradient-echo-sequences-1?lang=us</dc:source>
         <oboInOwl:hasExactSynonym>GRE</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">gradient echo sequence</rdfs:label>
@@ -2284,8 +1716,9 @@ The values often belong to a group of pixels or voxels that share the same chara
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <IAO_0000115 xml:lang="en">Multiple echoes of different phase steps are acquired by rapidly reversing the readout or frequency- encoding gradient.</IAO_0000115>
+        <IAO_0000115 xml:lang="en">Multiple echoes of different phase steps are acquired by rapidly reversing the readout or frequency- encoding gradient used in a gradient echo sequence.</IAO_0000115>
         <IAO_0000116 xml:lang="en">Can we add that this may optionally be about some spin echo sequence, but not necessary for an instance of this class?</IAO_0000116>
+        <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
         <dc:source xml:lang="en">https://radiopaedia.org/articles/echo-planar-imaging-1?lang=us</dc:source>
         <rdfs:label xml:lang="en">GRE echo planar sequence</rdfs:label>
     </owl:Class>
@@ -2298,40 +1731,9 @@ The values often belong to a group of pixels or voxels that share the same chara
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000342"/>
         <IAO_0000115 xml:lang="en">Angle at which a proton&apos;s axis shifts from its longitudinal place to its transverse plane by excitation from radiofrequency pulses.</IAO_0000115>
         <IAO_0000118>FA</IAO_0000118>
+        <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
         <dc:source xml:lang="en">https://radiopaedia.org/articles/flip-angle?lang=us</dc:source>
         <rdfs:label xml:lang="en">flip angle</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000633 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000633">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000607"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000697"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <IAO_0000115>A connectivity matrix where each element represents the correlation of functional brain activity within the cerebellar resting state network.</IAO_0000115>
-        <rdfs:label xml:lang="en">cerebellum resting state functional connectivity matrix</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000634 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000634">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000607"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000699"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <IAO_0000115>A connectivity matrix where each element represents the correlation of functional brain activity within the executive control resting state network.</IAO_0000115>
-        <rdfs:label xml:lang="en">executive control resting state functional connectivity matrix</rdfs:label>
     </owl:Class>
     
 
@@ -2347,496 +1749,6 @@ The values often belong to a group of pixels or voxels that share the same chara
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000636 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000636">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000341"/>
-        <IAO_0000115>A type of MR image data set meant to capture volume and flow of blood in the brain.</IAO_0000115>
-        <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
-        <rdfs:label xml:lang="en">perfusion weighted image data set</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000637 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000637">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000607"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000700"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <IAO_0000115>A connectivity matrix where each element represents the correlation of functional brain activity within the left and right hemisphere resting state networks.</IAO_0000115>
-        <rdfs:label xml:lang="en">frontoparietal resting state functional connectivity matrix</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000638 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000638">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000607"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000701"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <IAO_0000115>A connectivity matrix where each element represents the correlation of functional brain activity within the sensorimotor resting state network.</IAO_0000115>
-        <rdfs:label xml:lang="en">sensorimotor resting state functional connectivity matrix</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000641 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000641">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000501"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001897"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">dorsal plus ventral thalamus volume measurement datum</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000642 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000642">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000644"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000641"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0013683"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">left dorsal thalamic volume measurement datum</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000643 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000643">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000644"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0013684"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">right dorsal thalamic volume measurement datum</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000644 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000644">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000501"/>
-        <rdfs:label xml:lang="en">dorsal thalamic volume measurement datum</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000645 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000645">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000509"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000644"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
-        <rdfs:label xml:lang="en">DeepGRAI analysis of the dorsal thalamus</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000646 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000646">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000645"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000643"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
-        <rdfs:label xml:lang="en">DeepGRAI analysis of the right dorsal thalamus</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000647 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000647">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000623"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CARO_0000000"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <IAO_0000115>A template image data set consisting of values endcoded to represent the spatial location of individual functional or structural regions of the brain.</IAO_0000115>
-        <IAO_0000116>Note that atlas image data set is derived from possibly multiple image data sets</IAO_0000116>
-        <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
-        <rdfs:label xml:lang="en">brain region atlas image data set</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000648 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000648">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000647"/>
-        <IAO_0000115>A brain atlas consisting of weighted values that respresent the probability that a voxel X is part of some brain component Y, typically derived from multiple image data sets.</IAO_0000115>
-        <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
-        <rdfs:label xml:lang="en">probabilistic brain region atlas image dataset</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000649 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000649">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000647"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001873"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001876"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001882"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001898"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002022"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002129"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002421"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002576"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002581"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002624"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002629"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002661"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002688"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002703"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002728"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002751"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002766"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002769"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002771"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002795"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002943"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002973"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002980"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006088"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006092"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006093"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006094"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006114"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006445"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006446"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006514"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0008884"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0008885"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0009897"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0009898"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0013683"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0013684"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0022352"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0022353"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0022438"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0022534"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0022716"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0027061"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0028622"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0028715"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0035933"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <IAO_0000115>A brain atlas image data set that encodes the location of 86 cortical and subcortical regions of interest, commonly used in Freesurfer segmentation and volumetric analysis.</IAO_0000115>
-        <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
-        <oboInOwl:source>http://dx.doi.org/10.1016/j.neuroimage.2006.01.021</oboInOwl:source>
-        <rdfs:label xml:lang="en">Desikan-Killiany brain atlas image data set</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000650 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000650">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000647"/>
-        <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
-        <rdfs:label xml:lang="en">deterministic brain region atlas image data set</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000651 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000651">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000421"/>
-        <IAO_0000115>The Configurable Pipeline for the Analysis of Connectomes (C-PAC) is a configurable, open-source, Nipype-based, automated processing pipeline for resting state functional MRI (R-fMRI) data, for use by both novice and expert users.</IAO_0000115>
-        <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
-        <oboInOwl:source>https://doi.org/10.3389/conf.fninf.2013.09.00042</oboInOwl:source>
-        <rdfs:label xml:lang="en">c-pac</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000652 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000652">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000607"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000702"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <IAO_0000115>A connectivity matrix where each element represents the correlation of functional brain activity within the V1 resting state network.</IAO_0000115>
-        <rdfs:label xml:lang="en">V1 resting state functional connectivity matrix</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/MRIO_0000653 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000653">
@@ -2844,23 +1756,8 @@ The values often belong to a group of pixels or voxels that share the same chara
         <IAO_0000115>The time elapsed between the preparatory 180° pulse and the 90° readout pulse.</IAO_0000115>
         <IAO_0000118>TI</IAO_0000118>
         <IAO_0000119>https://radiopaedia.org/articles/inversion-recovery-sequences?lang=us</IAO_0000119>
+        <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
         <rdfs:label xml:lang="en">inversion time</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000654 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000654">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000607"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000703"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <IAO_0000115>A connectivity matrix where each element represents the correlation of functional brain activity within the V2 resting state network.</IAO_0000115>
-        <rdfs:label xml:lang="en">V2 resting state functional connectivity matrix</rdfs:label>
     </owl:Class>
     
 
@@ -2871,41 +1768,9 @@ The values often belong to a group of pixels or voxels that share the same chara
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000342"/>
         <IAO_0000115>Measures the degree of diffusion weighting applied, thereby indicating the amplitude (G), time of applied gradients (δ) and duration between the paired gradients (Δ).</IAO_0000115>
         <IAO_0000118>diffusion weighting</IAO_0000118>
+        <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
         <dc:source>https://radiopaedia.org/articles/b-values-1?lang=us</dc:source>
         <rdfs:label xml:lang="en">diffusion b value</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000656 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000656">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000520"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000521"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000511"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MRIO_0000351"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MRIO_0000367"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MRIO_0000506"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MRIO_0000511"/>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <IAO_0000115>Deep learning tool used to predict a lesion mask from either just a FLAIR or a combination of FLAIR, T1 weighted SE, T2 weighted, and PD scans.</IAO_0000115>
-        <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
-        <rdfs:label xml:lang="en">Deep roboNAC analysis</rdfs:label>
     </owl:Class>
     
 
@@ -2958,26 +1823,10 @@ The values often belong to a group of pixels or voxels that share the same chara
             </owl:Class>
         </rdfs:subClassOf>
         <IAO_0000115>The refocusing of spin magnetisation by a pulse of resonant electromagnetic radiation.</IAO_0000115>
+        <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
         <dc:source>https://doi.org/10.1063%2F1.1670306</dc:source>
         <oboInOwl:hasExactSynonym>SE</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">spin echo sequence</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000660 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000660">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000515"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000502"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <IAO_0000115>FreeSurfer stream to derive surface labels and volumes from an invidual at only one timepoint.</IAO_0000115>
-        <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
-        <rdfs:label xml:lang="en">FreeSurfer cross-sectional analysis</rdfs:label>
     </owl:Class>
     
 
@@ -2996,8 +1845,9 @@ The values often belong to a group of pixels or voxels that share the same chara
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <IAO_0000115>An inversion recovery (IR) pulse sequence is a spin echo or gradient echo pulse sequence preceded by a 180° RF pulse.</IAO_0000115>
+        <IAO_0000115>An inversion recovery (IR) pulse sequence is a spin echo or gradient echo pulse sequence preceded by a 180° RF pulse used in a gradient echo sequence.</IAO_0000115>
         <IAO_0000116>TODO: Create specific subclass of this and echo panar sequence for both GRE and SE.</IAO_0000116>
+        <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
         <dc:source>https://radiopaedia.org/articles/inversion-recovery-sequences?lang=us</dc:source>
         <rdfs:label xml:lang="en">GRE inversion recovery sequence</rdfs:label>
     </owl:Class>
@@ -3021,163 +1871,6 @@ The values often belong to a group of pixels or voxels that share the same chara
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000663 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000663">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000524"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MRIO_0000504"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MRIO_0000505"/>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000526"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MRIO_0000664"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MRIO_0000665"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MRIO_0000666"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MRIO_0000668"/>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <IAO_0000115>Siena estimates percentage brain volume change (PBVC) betweem two input images, taken of the same subject, at different points in time. It calls a series of FSL programs to strip the non-brain tissue from the two images, register the two brains (under the constraint that the skulls are used to hold the scaling constant during the registration) and analyse the brain change between the two time points. It is also possible to project the voxelwise atrophy measures into standard space in a way that allows for multi-subject voxelwise statistical testing.</IAO_0000115>
-        <IAO_0000119>Smith, Stephen M.; De Stefano, Nicola; Jenkinson, Mark; Matthews, Paul M. Normalized Accurate Measurement of Longitudinal Brain Change, Journal of Computer Assisted Tomography: May 2001 - Volume 25 - Issue 3 - p 466-475</IAO_0000119>
-        <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
-        <rdfs:label xml:lang="en">SIENA analysis</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000664 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000664">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000667"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MRIO_0000665"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MRIO_0000666"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MRIO_0000668"/>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000955"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <IAO_0000115>A measurement datum that is the result of volume measurement of the tissue of some brain.</IAO_0000115>
-        <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
-        <rdfs:label xml:lang="en">whole brain volume measurement datum</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000665 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000665">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000667"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003528"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <IAO_0000115>A measurement datum that is the result of volume measurement of grey matter within some brain.</IAO_0000115>
-        <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
-        <rdfs:label xml:lang="en">grey matter volume measurement datum</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000666 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000666">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000667"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003544"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <IAO_0000115>A measurement datum that is the result of volume measurement of white matter within some brain.</IAO_0000115>
-        <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
-        <rdfs:label xml:lang="en">white matter volume measurement daturm</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000667 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000667">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000500"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000669"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000955"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000004"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <IAO_0000115>A volume measurement datum that is the result of a measurement of the volume of some brain and its substructures.</IAO_0000115>
-        <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
-        <rdfs:label xml:lang="en">brain volume measurement datum</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000668 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000668">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000667"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001359"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <IAO_0000115>A measurement datum that is the result of volume measurement of  cerebrospinal fluid within some brain.</IAO_0000115>
-        <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
-        <rdfs:label xml:lang="en">CSF volume measurement datum</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/MRIO_0000669 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000669">
@@ -3195,96 +1888,6 @@ The values often belong to a group of pixels or voxels that share the same chara
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000670 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000670">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000501"/>
-        <rdfs:label xml:lang="en">thalamic volume measurement z-score</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000671 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000671">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000601"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000649"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <IAO_0000115>An image data set whose voxels encode the location of a region from the Desikan-Killiany atlas in an image data set.</IAO_0000115>
-        <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
-        <rdfs:label xml:lang="en">FreeSurfer segmentation map</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000672 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000672">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000607"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000704"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <IAO_0000115>A connectivity matrix where each element represents the correlation of functional brain activity within the V3 resting state network.</IAO_0000115>
-        <rdfs:label xml:lang="en">V3 functional connectivity matrix</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000673 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000673">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000665"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000649"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <IAO_0000115>A measurement datum that is the result of volume measurement of peripheral/cortical grey matter within some brain.</IAO_0000115>
-        <IAO_0000118>cortical grey matter volume measurement datum</IAO_0000118>
-        <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
-        <rdfs:label xml:lang="en">peripheral grey matter volume measurement datum</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000674 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000674">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000675"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MRIO_0000354"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MRIO_0000366"/>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000626"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <IAO_0000115>Measures the functional connectivity between cortical and subcortical regions defined in the Desikan-Killiany brain atlas.</IAO_0000115>
-        <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
-        <rdfs:label xml:lang="en">Desikan-Killiany functional connectome analysis</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/MRIO_0000675 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000675">
@@ -3296,24 +1899,6 @@ The values often belong to a group of pixels or voxels that share the same chara
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000676 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000676">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000662"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000366"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <IAO_0000115>FAST (FMRIB&apos;s Automated Segmentation Tool) segments a 3D image of the brain into different tissue types (Grey Matter, White Matter, CSF, etc.), whilst also correcting for spatial intensity variations (also known as bias field or RF inhomogeneities).</IAO_0000115>
-        <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
-        <oboInOwl:source>Zhang, Y. and Brady, M. and Smith, S. Segmentation of brain MR images through a hidden Markov random field model and the expectation-maximization algorithm. IEEE Trans Med Imag, 20(1):45-57, 2001.</oboInOwl:source>
-        <rdfs:label xml:lang="en">FAST Analysis</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/MRIO_0000677 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000677">
@@ -3321,7 +1906,14 @@ The values often belong to a group of pixels or voxels that share the same chara
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000375"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000629"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MRIO_0000629"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MRIO_0000711"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -3346,124 +1938,6 @@ The values often belong to a group of pixels or voxels that share the same chara
         <IAO_0000116>Add difussion gradient as parameter.</IAO_0000116>
         <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
         <rdfs:label xml:lang="en">diffusion weighted MRI acquisition sequence</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000678 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000678">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000692"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000375"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000661"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000679"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000606"/>
-                <owl:someValuesFrom>
-                    <rdfs:Datatype>
-                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-                        <owl:withRestrictions rdf:parseType="Collection">
-                            <rdf:Description>
-                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1000.0</xsd:maxInclusive>
-                            </rdf:Description>
-                        </owl:withRestrictions>
-                    </rdfs:Datatype>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <IAO_0000115>An MRI acquisition sequence consisting of a magnetization preparation period followed by a rapid gradient echo sequence.</IAO_0000115>
-        <IAO_0000116>Has a long TR.</IAO_0000116>
-        <IAO_0000119>https://doi.org/10.1002/mrm.1910150117</IAO_0000119>
-        <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
-        <rdfs:label xml:lang="en">T1 MPRAGE sequence</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000679 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000679">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000502"/>
-        <IAO_0000115>T1 weighted image data set collected using an MPRAGE sequence.</IAO_0000115>
-        <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
-        <rdfs:label xml:lang="en">T1 MPRAGE image data set</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000680 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000680">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000502"/>
-        <IAO_0000115>T1 weighted image data set collected using a spoiled gradient echo sequence.</IAO_0000115>
-        <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
-        <rdfs:label xml:lang="en">T1 SPGR image data set</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000681 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000681">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000692"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000680"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000376"/>
-                <owl:someValuesFrom>
-                    <rdfs:Datatype>
-                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-                        <owl:withRestrictions rdf:parseType="Collection">
-                            <rdf:Description>
-                                <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</xsd:minExclusive>
-                            </rdf:Description>
-                            <rdf:Description>
-                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">35.0</xsd:maxInclusive>
-                            </rdf:Description>
-                        </owl:withRestrictions>
-                    </rdfs:Datatype>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000377"/>
-                <owl:someValuesFrom>
-                    <rdfs:Datatype>
-                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-                        <owl:withRestrictions rdf:parseType="Collection">
-                            <rdf:Description>
-                                <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</xsd:minExclusive>
-                            </rdf:Description>
-                            <rdf:Description>
-                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</xsd:maxInclusive>
-                            </rdf:Description>
-                        </owl:withRestrictions>
-                    </rdfs:Datatype>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <IAO_0000115>Applies  RF  excitation  pulses  at  diff erent  phases every TR, so that the residual transverse magnetization has dif-ferent  phase  values  than  the  transverse  magnetization  most recently created.</IAO_0000115>
-        <IAO_0000116>Could have IR.</IAO_0000116>
-        <IAO_0000119>MRI at a Glance
-ISBN 10: 1119053552</IAO_0000119>
-        <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
-        <rdfs:label xml:lang="en">spoiled GRE sequence</rdfs:label>
     </owl:Class>
     
 
@@ -3501,7 +1975,8 @@ ISBN 10: 1119053552</IAO_0000119>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33375"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>A chemical reagent containing gadolinium injecting into an MRI participant to increase the visible contrast of some MR image data set.</rdfs:comment>
+        <IAO_0000115>A chemical reagent containing gadolinium injecting into an MRI participant to increase the visible contrast of some MR image data set.</IAO_0000115>
+        <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
         <rdfs:label xml:lang="en">imaging contrast reagent</rdfs:label>
     </owl:Class>
     
@@ -3557,6 +2032,7 @@ ISBN 10: 1119053552</IAO_0000119>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000687">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000342"/>
         <IAO_0000115>Prescribed timepoints to collect in a 4D scan, results in in n number of volumes.</IAO_0000115>
+        <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
         <rdfs:label xml:lang="en">number of temporal positions</rdfs:label>
     </owl:Class>
     
@@ -3567,6 +2043,7 @@ ISBN 10: 1119053552</IAO_0000119>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000690">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000342"/>
         <IAO_0000115>Magnetic field variations applied to determine directional vectors that measure at least three dimensions of diffusion for a given voxel.</IAO_0000115>
+        <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
         <rdfs:label xml:lang="en">diffusion gradient</rdfs:label>
     </owl:Class>
     
@@ -3611,680 +2088,6 @@ ISBN 10: 1119053552</IAO_0000119>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000695 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000695">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000500"/>
-        <IAO_0000115>A measurement datum that is the result of volume measurement of all lesions within some brain.</IAO_0000115>
-        <rdfs:label xml:lang="en">lesion volume measurement datum</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000696 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000696">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000695"/>
-        <IAO_0000115>A measurement datum that is the result of volume measurement of atrophied lesions within some brain.</IAO_0000115>
-        <rdfs:label xml:lang="en">atrophied lesion volume measurement datum</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000697 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000697">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000624"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002129"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <IAO_0000115>A brain atlas image dataset encoding voxels belonging to the cebebellar functional resting state network.</IAO_0000115>
-        <oboInOwl:source>https://www.pnas.org/cgi/doi/10.1073/pnas.0905267106</oboInOwl:source>
-        <rdfs:label xml:lang="en">cerebellum resting state network atlas</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000698 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000698">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000624"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002022"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002581"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002629"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002688"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002769"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002771"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002980"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0008884"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0008885"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0009897"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0009898"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0013683"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0013684"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0028622"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <IAO_0000115>A brain atlas image dataset encoding voxels belonging to the auditory functional resting state network.</IAO_0000115>
-        <oboInOwl:source>https://www.pnas.org/cgi/doi/10.1073/pnas.0905267106</oboInOwl:source>
-        <rdfs:label xml:lang="en">auditory resting state network atlas</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000699 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000699">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000624"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001873"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001882"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002022"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002661"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002769"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002980"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006093"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006094"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006445"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006446"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0008884"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0008885"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0013683"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0013684"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0022352"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0022353"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0022438"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0022716"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0028715"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <IAO_0000115>A brain atlas image dataset encoding voxels belonging to the executive control functional resting state network.</IAO_0000115>
-        <oboInOwl:source>https://www.pnas.org/cgi/doi/10.1073/pnas.0905267106</oboInOwl:source>
-        <rdfs:label xml:lang="en">executive control resting state network atlas</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000700 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000700">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000624"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002022"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002581"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002624"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002629"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002661"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002688"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002703"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002751"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002769"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002771"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002980"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006088"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006093"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006094"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006445"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006446"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0022353"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0027061"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <IAO_0000115>A brain atlas image dataset encoding voxels belonging to both the left hemisphere and right hemisphere frontoparietal functional resting state networks.</IAO_0000115>
-        <oboInOwl:source>https://www.pnas.org/cgi/doi/10.1073/pnas.0905267106</oboInOwl:source>
-        <rdfs:label xml:lang="en">frontoparietal resting state network atlas</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000701 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000701">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000624"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002581"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002661"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002688"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002703"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002769"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006094"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0009897"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0009898"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0022353"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0028715"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0035933"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <IAO_0000115>A brain atlas image dataset encoding voxels belonging to the sensorimotor functional resting state network.</IAO_0000115>
-        <oboInOwl:source>https://www.pnas.org/cgi/doi/10.1073/pnas.0905267106</oboInOwl:source>
-        <rdfs:label xml:lang="en">sensorimotor resting state network atlas</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000702 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000702">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000624"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002943"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006092"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006093"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006094"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0022534"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <IAO_0000115>A brain atlas image dataset encoding voxels belonging to the V1 functional resting state network.</IAO_0000115>
-        <oboInOwl:source>https://www.pnas.org/cgi/doi/10.1073/pnas.0905267106</oboInOwl:source>
-        <rdfs:label xml:lang="en">V1 resting state network atlas</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000703 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000703">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000624"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002943"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006114"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0013683"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0013684"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <IAO_0000115>A brain atlas image dataset encoding voxels belonging to the V2 functional resting state network.</IAO_0000115>
-        <oboInOwl:source>https://www.pnas.org/cgi/doi/10.1073/pnas.0905267106</oboInOwl:source>
-        <rdfs:label xml:lang="en">V2 resting state network atlas</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000704 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000704">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000624"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002688"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002751"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002766"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002769"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002771"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002943"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006088"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006094"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006114"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0028622"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <IAO_0000115>A brain atlas image dataset encoding voxels belonging to the V3 functional resting state network.</IAO_0000115>
-        <oboInOwl:source>https://www.pnas.org/cgi/doi/10.1073/pnas.0905267106</oboInOwl:source>
-        <rdfs:label xml:lang="en">V3 resting state network atlas</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000705 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000705">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0200147"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <IAO_0000115>A data item that represents some quality of the network as a whole.</IAO_0000115>
-        <rdfs:label xml:lang="en">network graph quality datum</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000706 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000706">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000705"/>
-        <IAO_0000115>A datum representing the preference for a network&apos;s nodes to attach to other similar nodes.</IAO_0000115>
-        <oboInOwl:source>https://en.wikipedia.org/wiki/Assortativity</oboInOwl:source>
-        <rdfs:label xml:lang="en">network assortativity datum</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000707 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000707">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000705"/>
-        <IAO_0000115>A datu item that represents how efficiently nodes within a network exchange information, often as a function of the distance between nodes.</IAO_0000115>
-        <oboInOwl:source>https://en.wikipedia.org/wiki/Efficiency_(network_science)</oboInOwl:source>
-        <rdfs:label xml:lang="en">network efficiency datum</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000708 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000708">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000705"/>
-        <IAO_0000115>A data item that represents the tendency of nodes within a network to cluster together measured by the quotient of closed triplet nodes divided by the total number of triple nodes in a network.</IAO_0000115>
-        <IAO_0000118>global clustering coefficient</IAO_0000118>
-        <oboInOwl:source>https://en.wikipedia.org/wiki/Clustering_coefficient</oboInOwl:source>
-        <rdfs:label xml:lang="en">network transitivity datum</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000709 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000709">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000607"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000698"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <IAO_0000115>A connectivity matrix where each element represents the correlation of functional brain activity within the auditory resting state network.</IAO_0000115>
-        <rdfs:label xml:lang="en">auditory resting state network functional connectivity matrix</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000710 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000710">
-        <rdfs:label xml:lang="en">temp</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/MRIO_0000711 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000711">
@@ -4307,8 +2110,9 @@ ISBN 10: 1119053552</IAO_0000119>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <IAO_0000115 xml:lang="en">Multiple echoes of different phase steps are acquired by rapidly reversing the readout or frequency- encoding gradient.</IAO_0000115>
+        <IAO_0000115 xml:lang="en">Multiple echoes of different phase steps are acquired by rapidly reversing the readout or frequency- encoding gradient used in a spin echo sequence.</IAO_0000115>
         <IAO_0000116 xml:lang="en">Can we add that this may optionally be about some spin echo sequence, but not necessary for an instance of this class?</IAO_0000116>
+        <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
         <dc:source xml:lang="en">https://radiopaedia.org/articles/echo-planar-imaging-1?lang=us</dc:source>
         <rdfs:label xml:lang="en">SE echo planar sequence</rdfs:label>
     </owl:Class>
@@ -4329,415 +2133,59 @@ ISBN 10: 1119053552</IAO_0000119>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <IAO_0000115>An inversion recovery (IR) pulse sequence is a spin echo or gradient echo pulse sequence preceded by a 180° RF pulse.</IAO_0000115>
+        <IAO_0000115>An inversion recovery (IR) pulse sequence is a spin echo or gradient echo pulse sequence preceded by a 180° RF pulse used in a spin echo sequence.</IAO_0000115>
         <IAO_0000116>TODO: Create specific subclass of this and echo panar sequence for both GRE and SE.</IAO_0000116>
+        <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
         <dc:source>https://radiopaedia.org/articles/inversion-recovery-sequences?lang=us</dc:source>
         <rdfs:label xml:lang="en">SE inversion recovery sequence</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000713 -->
+    <!-- http://purl.obolibrary.org/obo/MRIO_0000714 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000713">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200111"/>
-        <IAO_0000116>&apos;MRI image visualization&apos;
-find proper parent class</IAO_0000116>
-        <rdfs:label xml:lang="en">image visualization from image data set</rdfs:label>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000714">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000508"/>
+        <IAO_0000115>Measurement of the degree of physical axonal connections between brain regions.</IAO_0000115>
+        <dc:creator>https://orcid.org/0000-0001-9676-7377</dc:creator>
+        <rdfs:label xml:lang="en">structural connectome analysis</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/UBERON_0001873 -->
+    <!-- http://purl.obolibrary.org/obo/OBI_0000067 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0001873">
-        <IAO_0000118>&apos;Left-Caudate&apos; and &apos;Right-Caudate&apos; (from Desikan-Killiany atlas)</IAO_0000118>
-    </rdf:Description>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000067"/>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/UBERON_0001876 -->
+    <!-- http://purl.obolibrary.org/obo/OBI_0000070 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001876">
-        <IAO_0000118>&apos;Left-Amygdala&apos; and &apos;Right-Amygdala&apos; (from Desikan-Killiany atlas)</IAO_0000118>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000070"/>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/UBERON_0001882 -->
+    <!-- http://purl.obolibrary.org/obo/OBI_0000272 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001882">
-        <IAO_0000118>&apos;Left-Accumbens-area&apos; and &apos;Right-Accumbens-area&apos; (from Desikan-Killiany atlas)</IAO_0000118>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000272"/>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/UBERON_0001897 -->
+    <!-- http://purl.obolibrary.org/obo/OBI_0000566 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001897"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000566"/>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/UBERON_0001898 -->
+    <!-- http://purl.obolibrary.org/obo/OBI_0001879 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001898">
-        <IAO_0000118>&apos;Left-VentralDC&apos; and &apos;Right-VentralDC&apos; (from Desikan-Killiany Atlas)</IAO_0000118>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001879"/>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/UBERON_0002022 -->
+    <!-- http://purl.obolibrary.org/obo/OBI_0200000 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002022">
-        <IAO_0000118>&apos;lh-insula&apos; and &apos;rh-insula&apos; (from Desikan-Killiany atlas)</IAO_0000118>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UBERON_0002129 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002129">
-        <IAO_0000118>&apos;Left-Cerebellum-Cortex&apos; and &apos;Right-Cerebellum-Cortex&apos; (from Desikan-Killiany atlas)</IAO_0000118>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UBERON_0002421 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002421">
-        <IAO_0000118>&apos;Left-Hippocampus&apos; and &apos;Right-Hippocampus&apos; (from Desikan-Killiany atlas)</IAO_0000118>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UBERON_0002576 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002576">
-        <IAO_0000118>&apos;lh-temporalpole&apos; and &apos;rh-temporalpole&apos; (from Desikan-Killiany atlas)</IAO_0000118>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UBERON_0002581 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002581">
-        <IAO_0000118>&apos;lh-postcentral&apos; and &apos;rh-postcentral&apos; (from Desikan-Killiany atlas)</IAO_0000118>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UBERON_0002624 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002624">
-        <IAO_0000118>&apos;lh-parsorbitalis&apos; and &apos;rh-parsobertalis&apos; (from Desikan-Killiany atlas)</IAO_0000118>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UBERON_0002629 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002629">
-        <IAO_0000118>&apos;lh-parstriangularis&apos; and &apos;rh-parstriangularis&apos; (from Desikan-Killiany atlas)</IAO_0000118>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UBERON_0002661 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002661">
-        <IAO_0000118>&apos;lh-superiorfrontal&apos; and &apos;rh-superiorfrontal&apos; (from Desikan-Killiany atlas)</IAO_0000118>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UBERON_0002688 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002688">
-        <IAO_0000118>&apos;lh-supramarginal&apos; and &apos;rh-supramarginal&apos; (from Desikan-Killiany atlas)</IAO_0000118>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UBERON_0002703 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002703">
-        <IAO_0000118>&apos;lh-precentral&apos; and &apos;rh-precentral&apos; (from Desikan-Killiany atlas)</IAO_0000118>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UBERON_0002728 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002728">
-        <IAO_0000118>&apos;lh-entorhinal&apos; and &apos;rh-entorhinal&apos; (from Desikan-Killiany atlas)</IAO_0000118>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UBERON_0002751 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002751">
-        <IAO_0000118>&apos;lh-inferiortemporal&apos; and &apos;rh-inferiortemporal&apos; (from Desikan-Killiany atlas)</IAO_0000118>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UBERON_0002766 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002766">
-        <IAO_0000118>&apos;lh-fusiform&apos; and &apos;rh-fusiform&apos; (from Desikan-Killiany atlas)</IAO_0000118>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UBERON_0002769 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002769">
-        <IAO_0000118>&apos;lh-superiortemporal&apos; and &apos;rh-superiortemporal&apos; (from Desikan-Killiany atlas)</IAO_0000118>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UBERON_0002771 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002771">
-        <IAO_0000118>&apos;lh-middletemporal&apos; and &apos;rh-middletemporal&apos; (from Desikan-Killiany atlas)</IAO_0000118>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UBERON_0002795 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002795">
-        <IAO_0000118>&apos;lh-frontalpole&apos; and &apos;rh-frontalpole&apos; (from Desikan-Killiany atlas)</IAO_0000118>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UBERON_0002943 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002943">
-        <IAO_0000118>&apos;lh-lingual&apos; and &apos;rh-lingual&apos; (from Desikan-Killiany atlas)</IAO_0000118>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UBERON_0002973 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002973">
-        <IAO_0000118>&apos;lh-parahippocampal&apos; and &apos;rh-parahippocampal&apos; (from Desikan-Killiany atlas)</IAO_0000118>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UBERON_0002980 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002980">
-        <IAO_0000118>&apos;lh-parsopercularis&apos; and &apos;rh-parsopercularis&apos; (from Desikan-Killiany atlas)</IAO_0000118>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UBERON_0003528 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0003528"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UBERON_0003544 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0003544"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UBERON_0006088 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0006088">
-        <IAO_0000118>&apos;lh-inferiorparietal&apos; and &apos;rh-inferiorparietal&apos; (from Desikan-Killiany atlas)</IAO_0000118>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UBERON_0006092 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0006092">
-        <IAO_0000118>&apos;lh-cuneus&apos; and &apos;rh-cuneus&apos; (from Desikan-Killiany atlas)</IAO_0000118>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UBERON_0006093 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0006093">
-        <IAO_0000118>&apos;lh-precuneus&apos; and &apos;rh-precuneus&apos; (from Desikan-Killiany atlas)</IAO_0000118>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UBERON_0006094 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0006094">
-        <IAO_0000118>&apos;lh-superiorparietal&apos; and &apos;rh-superiorparietal&apos; (from Desikan-Killiany atlas)</IAO_0000118>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UBERON_0006114 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0006114">
-        <IAO_0000118>&apos;lh-lateraloccipital&apos; and &apos;rh-lateraloccipital&apos; (from Desikan-Killiany atlas)</IAO_0000118>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UBERON_0006445 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0006445">
-        <IAO_0000118>&apos;lh-caudalmiddlefrontal&apos; and &apos;rh-caudalmiddlefrontal&apos; (from Desikan-Killiany atlas)</IAO_0000118>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UBERON_0006446 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0006446">
-        <IAO_0000118>&apos;lh-rostralmiddlefrontal&apos; and &apos;rh-rostralmiddlefrontal&apos; (from Desikan-Killiany atlas)</IAO_0000118>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UBERON_0006514 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0006514">
-        <IAO_0000118>&apos;Left-Pallidum&apos; and &apos;Right-Pallidum&apos; (from Desikan-Killiany atlas)</IAO_0000118>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UBERON_0008884 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0008884">
-        <IAO_0000118>&apos;Left-Putamen&apos; (from Desikan-Killiany atlas)</IAO_0000118>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UBERON_0008885 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0008885">
-        <IAO_0000118>&apos;&apos;Right-Putamen&apos; (from Desikan-Killiany atlas)</IAO_0000118>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UBERON_0009897 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0009897">
-        <IAO_0000116 xml:lang="en">Corrected error saying this is in the left hemisphere of the brain.</IAO_0000116>
-        <IAO_0000118>&apos;rh-transversetemporal&apos; (from Desikan-Killiany atlas)</IAO_0000118>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UBERON_0009898 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0009898">
-        <IAO_0000118>&apos;lh-transversetemporal&apos; (from Desikan-Killiany atlas)</IAO_0000118>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UBERON_0010225 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0010225"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UBERON_0013683 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0013683">
-        <IAO_0000118>&apos;Left-Thalamus-Proper&apos; (from Desikan-Killiany atlas)</IAO_0000118>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UBERON_0013684 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0013684">
-        <IAO_0000118>&apos;Right-Thalamus-Proper&apos; (from Desikan-Killiany atlas)</IAO_0000118>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UBERON_0022352 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0022352">
-        <IAO_0000118>&apos;lh-medialorbitofrontal&apos; and &apos;rh-imedialorbitofrontal&apos; (from Desikan-Killiany atlas)</IAO_0000118>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UBERON_0022353 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0022353">
-        <IAO_0000118>&apos;lh-posteriorcingulate&apos; and &apos;rh-posteriorcingulate&apos; (from Desikan-Killiany atlas)</IAO_0000118>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UBERON_0022438 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0022438">
-        <IAO_0000118>&apos;lh-rostralanteriorcingulate&apos; and &apos;rh-rostralanteriorcingulate&apos; (from Desikan-Killiany atlas)</IAO_0000118>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UBERON_0022534 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0022534">
-        <IAO_0000118>&apos;lh-pericalcarine&apos; and &apos;rh-pericalcarine&apos; (from Desikan-Killiany atlas)</IAO_0000118>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UBERON_0022716 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0022716">
-        <IAO_0000118>&apos;lh-lateralorbitofrontal&apos; and &apos;rh-lateralorbitofrontal&apos; (from Desikan-Killiany atlas)</IAO_0000118>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UBERON_0027061 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0027061">
-        <IAO_0000118>&apos;lh-isthmuscingulate&apos; and &apos;rh-isthmuscingulate&apos; (from Desikan-Killiany atlas)</IAO_0000118>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UBERON_0028622 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0028622">
-        <IAO_0000118>bankssts</IAO_0000118>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UBERON_0028715 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0028715">
-        <IAO_0000118>&apos;lh-caudalanteriorcingulate&apos; and &apos;rh-caudalanteriorcingulate&apos; (from Desikan-Killiany atlas)</IAO_0000118>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UBERON_0035933 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0035933">
-        <IAO_0000118>&apos;lh-paracentral&apos; and &apos;rh-paracentral&apos; (from Desikan-Killiany atlas)</IAO_0000118>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0200000"/>
     
 
 
@@ -4814,6 +2262,20 @@ find proper parent class</IAO_0000116>
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000628"/>
         <rdfs:label xml:lang="en">Gradient echo sequence</rdfs:label>
     </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0001873">
+        <IAO_0000118>&apos;Left-Caudate&apos; and &apos;Right-Caudate&apos; (from Desikan-Killiany atlas)</IAO_0000118>
+    </rdf:Description>
     
 
 
