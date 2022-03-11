@@ -11,12 +11,12 @@
 <http://purl.obolibrary.org/obo/UBERON_0002421>		
 <http://purl.obolibrary.org/obo/MRIO_0000527>	"Digital entity containing textual information or strings."	
 <http://purl.obolibrary.org/obo/MRIO_0000370>	"The plane that divides the body into left and right sections."	
+<http://purl.obolibrary.org/obo/MRIO_0000715>	"A lesion mask where the lesions are derived from a T1 weighted image data set."	
 <http://purl.obolibrary.org/obo/MRIO_0000355>	"A type of functional MRI in which the participant is given a task or tasks, which are timed with the acquisition"	
 <http://purl.obolibrary.org/obo/MRIO_0000511>	"T2 weighted image data set collected using a FLAIR sequence."	
 <http://purl.obolibrary.org/obo/MRIO_0000659>	"The refocusing of spin magnetisation by a pulse of resonant electromagnetic radiation."	
 <http://purl.obolibrary.org/obo/MRIO_0000600>	"An image data set where voxel intensity values greater than zero encode the location of some brain lesion and voxels outside the lesion have an intensity value of zero."	
 <http://purl.obolibrary.org/obo/UBERON_0028715>		
-<http://purl.obolibrary.org/obo/MRIO_0000609>	"A tensor data set produced by the Network Modification tool (NeMo) that contains matrix data sets related to the structural connectivity and disruption of white matter tracts in the human brain caused by focal lesions."	
 <http://purl.obolibrary.org/obo/MRIO_0000687>	"Prescribed timepoints to collect in a 4D scan, results in in n number of volumes."	
 <http://purl.obolibrary.org/obo/MRIO_0000672>	"A connectivity matrix where each element represents the correlation of functional brain activity within the V3 resting state network."	
 <http://purl.obolibrary.org/obo/UBERON_0002795>		
@@ -39,15 +39,16 @@
 <http://purl.obolibrary.org/obo/UBERON_0008884>		
 <http://purl.obolibrary.org/obo/UBERON_0006114>		
 <http://purl.obolibrary.org/obo/MRIO_0000612>	"A connectivity matrix where each element represents the degree of physical integrity of some path between two brain regions or voxels."	
+<http://purl.obolibrary.org/obo/MRIO_0000341>	"An image data set that is the direct output of a raw MR image data set reconstruction or a transformation of another MR image data set."	
 <http://purl.obolibrary.org/obo/MRIO_0000342>	"Parameters that a technician may specify to compose a specific MRI acquisition sequence as part of a scanning protocol."	
 <http://purl.obolibrary.org/obo/MRIO_0000424>	"T2 weighted image collected using a fast/turbo spin echo sequence."	
 <http://purl.obolibrary.org/obo/MRIO_0000516>	"The longitudinal scheme is designed to be unbiased with respect to any time point (TP). Instead of initializing it with information from a specific time point, a template volume is created and run through FreeSurfer. This template can be seen as an initial guess for the segmentation and surface reconstruction. The FreeSurfer cortical and subcortical segmentation and parcellation procedure involves solving many complex nonlinear optimization problems, such as the deformable surface reconstruction, the nonlinear atlas-image registration, and the nonlinear spherical surface registration."	
 <http://purl.obolibrary.org/obo/MRIO_0000626>	"A connectivity matrix where each element represents the correlation of functional brain activity with the 86 regions described in the Desikan-Killiany brain atlas."	
-<http://purl.obolibrary.org/obo/MRIO_0000705>	"A data item that represents some quality of the network as a whole."	
 <http://purl.obolibrary.org/obo/MRIO_0000708>	"A data item that represents the tendency of nodes within a network to cluster together measured by the quotient of closed triplet nodes divided by the total number of triple nodes in a network."	
 <http://purl.obolibrary.org/obo/MRIO_0000622>		
 <http://purl.obolibrary.org/obo/MRIO_0000625>	"A brain atlas image dataset encoding voxels belonging to the default mode network functional resting state network."	
 <http://purl.obolibrary.org/obo/MRIO_0000646>		
+<http://purl.obolibrary.org/obo/MRIO_0000647>	"An image data set consisting of values computed from multiple image data sets encoded to represent the spatial location of individual functional or structural regions of a canonical brain."	
 <http://purl.obolibrary.org/obo/MRIO_0000611>	"A square n x n matrix where each element A of i,j represents some correlational relationship or degree of connection between i and j."	
 <http://purl.obolibrary.org/obo/UBERON_0002688>		
 <http://purl.obolibrary.org/obo/MRIO_0000520>	"T1 black holes are hypointense lesions commonly seen on T1WI in patients with multiple sclerosis, and indicates the chronic stage with white matter destruction, axonal loss and irreversible clinical outcome."	
@@ -60,6 +61,7 @@
 <http://purl.obolibrary.org/obo/MRIO_0000518>	"Measurement of axonal damage and the connections between brain regions caused by some neuropathological process."	
 <http://purl.obolibrary.org/obo/MRIO_0000624>	"A brain atlas image data set encoding voxels involved in ten major resting state functional networks, as determined by analysis and decomposition of 36 human subjects' functional activity at rest."	
 <http://purl.obolibrary.org/obo/MRIO_0000391>	"An MRI acquisition sequence that uses a short inversion time to attenuate the signal from fat."	
+<http://purl.obolibrary.org/obo/MRIO_0000720>	"An image data set whose information content originates from some MR imaging assay and is about some MRI participant."	
 <http://purl.obolibrary.org/obo/MRIO_0000621>		
 <http://purl.obolibrary.org/obo/MRIO_0000645>		
 <http://purl.obolibrary.org/obo/MRIO_0000663>	"Siena estimates percentage brain volume change (PBVC) betweem two input images, taken of the same subject, at different points in time. It calls a series of FSL programs to strip the non-brain tissue from the two images, register the two brains (under the constraint that the skulls are used to hold the scaling constant during the registration) and analyse the brain change between the two time points. It is also possible to project the voxelwise atrophy measures into standard space in a way that allows for multi-subject voxelwise statistical testing."	
@@ -77,8 +79,8 @@
 <http://purl.obolibrary.org/obo/UBERON_0013683>		
 <http://purl.obolibrary.org/obo/MRIO_0000603>	"A lesion mask where the lesions are derived from a T2 weighted image data set."	
 <http://purl.obolibrary.org/obo/MRIO_0000508>	"Any combination of digital image analysis and statistical tools that may be used to derive processed MR images or data measurements about the MR images."	
+<http://purl.obolibrary.org/obo/MRIO_0000507>	"The process of deriving a data item from an image data set using computer algorithms. The produced data item can be an image data set, data measurement, or any other data item."	
 <http://purl.obolibrary.org/obo/UBERON_0006446>		
-<http://purl.obolibrary.org/obo/MRIO_0000647>	"A template image data set consisting of values endcoded to represent the spatial location of individual functional or structural regions of the brain."	
 <http://purl.obolibrary.org/obo/MRIO_0000668>	"A measurement datum that is the result of volume measurement of  cerebrospinal fluid within some brain."	
 <http://purl.obolibrary.org/obo/MRIO_0000620>		
 <http://purl.obolibrary.org/obo/UBERON_0001876>		
@@ -90,18 +92,20 @@
 <http://purl.obolibrary.org/obo/MRIO_0000652>	"A connectivity matrix where each element represents the correlation of functional brain activity within the V1 resting state network."	
 <http://purl.obolibrary.org/obo/UBERON_0002576>		
 <http://purl.obolibrary.org/obo/UBERON_0002661>		
+<http://purl.obolibrary.org/obo/MRIO_0000717>	"An image data set that encodes measurement values produced by some instrument before undergoing a data transformation."	
 <http://purl.obolibrary.org/obo/MRIO_0000686>	"An MRI acquisition sequence that uses fast gradient echo sequences to collect a 4D data set corresponding to BOLD signal due to differences in magnetic susceptibility of oxygenated and deoxygenated hemoglobin."	
 <http://purl.obolibrary.org/obo/UBERON_0002703>		
 <http://purl.obolibrary.org/obo/UBERON_0006445>		
 <http://purl.obolibrary.org/obo/MRIO_0000679>	"T1 weighted image data set collected using an MPRAGE sequence."	
 <http://purl.obolibrary.org/obo/MRIO_0000345>	"A T1 image where gadolidium contrast agent has been used in the subject before image acquistion"	
 <http://purl.obolibrary.org/obo/MRIO_0000514>	"A model-based subcortical segmentation tool."	
-<http://purl.obolibrary.org/obo/MRIO_0000366>	"An MR image that demonstrates differences in the T1 relaxation times of tissues. \n\nTR: short\nTE: short\nfat: bright\nfluid: dark\n\nradiopedia"	
 <http://purl.obolibrary.org/obo/MRIO_0000505>	"Image data set collected at a later time than the evaluant's first scan."	
 <http://purl.obolibrary.org/obo/MRIO_0000519>	"The NeMo Tool uses a large reference set of healthy tractograms to assess implied network changes arising from a particular pattern of WM alteration on a region- and network-wise level."	
+<http://purl.obolibrary.org/obo/MRIO_0000713>	"A data visualization that produces some image from an image data set."	
 <http://purl.obolibrary.org/obo/UBERON_0002943>		
 <http://purl.obolibrary.org/obo/MRIO_0000678>	"An MRI acquisition sequence consisting of a magnetization preparation period followed by a rapid gradient echo sequence."	
 <http://purl.obolibrary.org/obo/UBERON_0002629>		
+<http://purl.obolibrary.org/obo/MRIO_0000705>	"A data item that represents some quality of a network as a whole."	
 <http://purl.obolibrary.org/obo/UBERON_0006088>		
 <http://purl.obolibrary.org/obo/MRIO_0000524>	"Neuroimaging technique used to estimate the volume of the brain."	
 <http://purl.obolibrary.org/obo/MRIO_0000696>	"A measurement datum that is the result of volume measurement of atrophied lesions within some brain."	
@@ -110,7 +114,11 @@
 <http://purl.obolibrary.org/obo/MRIO_0000642>		
 <http://purl.obolibrary.org/obo/MRIO_0000503>	"T1 weighted image data set collected as one 3D volume using a gradient echo sequence."	
 <http://purl.obolibrary.org/obo/MRIO_0000712>	"An inversion recovery (IR) pulse sequence is a spin echo or gradient echo pulse sequence preceded by a 180° RF pulse."	
+<http://purl.obolibrary.org/obo/MRIO_0000366>	"An MR image acquired using a T1 weighted MR image acquisition sequence."	
 <http://purl.obolibrary.org/obo/MRIO_0000633>	"A connectivity matrix where each element represents the correlation of functional brain activity within the cerebellar resting state network."	
+<http://purl.obolibrary.org/obo/MRIO_0000718>	"An image data set that is the direct output of an MR imaging assay and whose values encode spatial frequencies produced by the NMR/MRI instrument."	
+<http://purl.obolibrary.org/obo/MRIO_0000689>		
+<http://purl.obolibrary.org/obo/MRIO_0000719>	"A process that transforms raw MR image data from an NMR/MRI machine into a reconstructed MR image data set."	
 <http://purl.obolibrary.org/obo/MRIO_0000693>	"T2 weighted MR image data set collected using a STIR sequence to suppress the signal coming from fat."	
 <http://purl.obolibrary.org/obo/MRIO_0000378>	"An image creation device that creates MR images"	
 <http://purl.obolibrary.org/obo/MRIO_0000368>	"An MR image data set collected as a 4D time series representing changes in brain metabolism (i.e. BOLD), typically used as a proxy for brain activity."	
@@ -127,6 +135,7 @@
 <http://purl.obolibrary.org/obo/MRIO_0000353>	"A type of processed MRI image calculated as a results"	
 <http://purl.obolibrary.org/obo/UBERON_0022534>		
 <http://purl.obolibrary.org/obo/UBERON_0002581>		
+<http://purl.obolibrary.org/obo/MRIO_0000716>	"An image data set that is the output of an image data set analysis."	
 <http://purl.obolibrary.org/obo/MRIO_0000386>	"An MRI acquisition sequence characterized by long TR and TE to accentuate T2 relaxation time of tissue."	
 <http://purl.obolibrary.org/obo/MRIO_0000351>	"A type of MRI image in which the contrast emphasizes density of protons, supressing T1 and T2 effects"	
 <http://purl.obolibrary.org/obo/MRIO_0000502>	"A type of T1-weighted image in which the voxel size is no larger than x and anisotropy is no more than y"	
@@ -136,17 +145,16 @@
 <http://purl.obolibrary.org/obo/MRIO_0000364>	"The total number of independent data samples in the frequency and phase directions (number of pixels in the frequency encoding - and phase encoding direction)."	
 <http://purl.obolibrary.org/obo/MRIO_0000711>	"Multiple echoes of different phase steps are acquired by rapidly reversing the readout or frequency- encoding gradient."@en	
 <http://purl.obolibrary.org/obo/UBERON_0028622>		
+<http://purl.obolibrary.org/obo/MRIO_0000623>	"A data set that is comprised of structured measurements about some entity and its associated metadata using pixels (2D), voxels (3D), or an arbitrary number of dimensions. An image data set can be the source from which an image is produced."	
 <http://purl.obolibrary.org/obo/MRIO_0000613>	"A structural connectivity matrix where each element respresents the number of white matter streamlines still connecting two brain regions when accounting for focal lesion damage, normalized for the NeMo healthy control tractogram set."	
 <http://purl.obolibrary.org/obo/MRIO_0000658>	"Produces some quantitative or qualitative data about voxels in an MRI data set that appear affected by some neurobiological process or as a result of some neurological disease such that there may be damage to the brain tissue."	
 <http://purl.obolibrary.org/obo/MRIO_0000359>	"The number of spin echoes in given unit of time."	
 <http://purl.obolibrary.org/obo/MRIO_0000383>	"The MRI machine protocol about the radiofrequency pulse sequence."	
 <http://purl.obolibrary.org/obo/UBERON_0022438>		
 <http://purl.obolibrary.org/obo/MRIO_0000691>	"A T1 weighted acquisition sequence that uses a gradient echo pulse sequence to acquire an MR image data set one 2D slice at a time."	
-<http://purl.obolibrary.org/obo/MRIO_0000341>	"A 2D, 3D, or 4D image data set produced by magnetic fields and radiowaves during an MR scanning session, typically to investigate the anatomy and physiology of the human body."	
 <http://purl.obolibrary.org/obo/MRIO_0000655>	"Measures the degree of diffusion weighting applied, thereby indicating the amplitude (G), time of applied gradients (δ) and duration between the paired gradients (Δ)."	
 <http://purl.obolibrary.org/obo/MRIO_0000614>	"A structural connectivity matrix where each element represents the average number of white matter tract streamlines connecting two brain regions normalized for the NeMo healthy control tractogram set."	
 <http://purl.obolibrary.org/obo/MRIO_0000525>	"Quantitative measurement of brain size, shape, and temporal change (for example, in order to estimate atrophy) is increasingly important in biomedical image analysis applications. New methods of structural analysis attempt to improve robustness, accuracy, and extent of automation. A fully automated method of longitudinal (temporal change) analysis, SIENA, was presented previously. In this paper, improvements to this method are described, and also an extension of SIENA to a new method for cross-sectional (single time point) analysis. The methods are fully automated, robust, and accurate: 0.15% brain volume change error (longitudinal): 0.5–1% brain volume accuracy for single-time point (cross-sectional). A particular advantage is the relative insensitivity to differences in scanning parameters. The methods provide easy manual review of their output by the automatic production of summary images which show the results of the brain extraction, registration, tissue segmentation, and final atrophy estimation."	
-<http://purl.obolibrary.org/obo/MRIO_0000671>	"An image data set whose voxels encode the location of a region from the Desikan-Killiany atlas in an image data set."	
 <http://purl.obolibrary.org/obo/MRIO_0000354>	"A type of functional MRI in which the participant is not given a task, but just rests during acquisision"	
 <http://purl.obolibrary.org/obo/MRIO_0000619>		
 <http://purl.obolibrary.org/obo/MRIO_0000363>	"The not measured distance between the slices."	
@@ -154,26 +162,27 @@
 <http://purl.obolibrary.org/obo/MRIO_0000707>	"A datu item that represents how efficiently nodes within a network exchange information, often as a function of the distance between nodes."	
 <http://purl.obolibrary.org/obo/MRIO_0000704>	"A brain atlas image dataset encoding voxels belonging to the V3 functional resting state network."	
 <http://purl.obolibrary.org/obo/MRIO_0000665>	"A measurement datum that is the result of volume measurement of grey matter within some brain."	
+<http://purl.obolibrary.org/obo/MRIO_0000671>	"An image data set produced by FreeSurfer analysis whose voxels encode the location of regions from the Desikan-Killiany atlas in an image data set."	
 <http://purl.obolibrary.org/obo/MRIO_0000628>	"Generated by the frequency-encode gradient, except that it is used twice in succession, and in opposite directions."	
 <http://purl.obolibrary.org/obo/MRIO_0000382>	"A planned process that produces MR images from MR imaging datum."	
 <http://purl.obolibrary.org/obo/MRIO_0000629>	"Multiple echoes of different phase steps are acquired by rapidly reversing the readout or frequency- encoding gradient."@en	
 <http://purl.obolibrary.org/obo/MRIO_0000649>	"A brain atlas image data set that encodes the location of 86 cortical and subcortical regions of interest, commonly used in Freesurfer segmentation and volumetric analysis."	
 <http://purl.obolibrary.org/obo/MRIO_0000677>	"An MRI acquisition sequence that uses diffusion gradients to create contrast in the image corresponding to the Brownian motion of the tissue in the examined voxel."	
 <http://purl.obolibrary.org/obo/MRIO_0000630>	"Angle at which a proton's axis shifts from its longitudinal place to its transverse plane by excitation from radiofrequency pulses."@en	
+<http://purl.obolibrary.org/obo/MRIO_0000609>	"A tensor data set produced by the Network Modification tool (NeMo) that contains matrix data sets related to structural change in connectivity (ChaCo) and disruption of white matter tracts in the human brain caused by focal lesions."	
 <http://purl.obolibrary.org/obo/MRIO_0000352>	"A type of T2-weighted image in which the acquisition is performed using a 2D spin-echo technique"	
 <http://purl.obolibrary.org/obo/UBERON_0002624>		
-<http://purl.obolibrary.org/obo/MRIO_0000601>	"An image data set of discrete integer values in which each value corresponds to some shared characteristic or computed property.\nThe values often belong to a group of pixels or voxels that share the same characteristic, such as tissue type or anatomical region."	
 <http://purl.obolibrary.org/obo/MRIO_0000385>	"An MRI acquisition sequence characterized by short TR to minimize T2 weighting."	
 <http://purl.obolibrary.org/obo/MRIO_0000358>	"The echo time (TE) refers to the time between the application of the radiofrequency excitation pulse and the peak of the signal induced in the coil. It is measured in milliseconds. The amount of T2 relaxation is controlled by the TE. (radiopedia)"	
 <http://purl.obolibrary.org/obo/MRIO_0000703>	"A brain atlas image dataset encoding voxels belonging to the V2 functional resting state network."	
 <http://purl.obolibrary.org/obo/MRIO_0000618>		
-<http://purl.obolibrary.org/obo/MRIO_0000367>	"An MR image that highlights differences in the T2 relaxation time of tissues.\n\nrepetition time (TR): long\necho time (TE): long\nflip angle: less important than with T1 weighting\nfat: intermediate-bright\nfluid: bright\n\nradiopedia"	
 <http://purl.obolibrary.org/obo/MRIO_0000521>	"Analyzes voxels in an MRI scan that appear as focal lesions in a T2 weighted scan."	
 <http://purl.obolibrary.org/obo/MRIO_0000669>	"The subject being scanned in an MRI study, and bearor of data derived from that study."	
 <http://purl.obolibrary.org/obo/MRIO_0000650>		
 <http://purl.obolibrary.org/obo/MRIO_0000648>	"A brain atlas consisting of weighted values that respresent the probability that a voxel X is part of some brain component Y, typically derived from multiple image data sets."	
 <http://purl.obolibrary.org/obo/UBERON_0001898>		
 <http://purl.obolibrary.org/obo/MRIO_0000369>	"The number of data points collected in one, two or all three directions. Normally used for the 2D in plane sampling."	
+<http://purl.obolibrary.org/obo/MRIO_0000714>		
 <http://purl.obolibrary.org/obo/MRIO_0000617>		
 <http://purl.obolibrary.org/obo/UBERON_0009898>		
 <http://purl.obolibrary.org/obo/MRIO_0000676>	"FAST (FMRIB's Automated Segmentation Tool) segments a 3D image of the brain into different tissue types (Grey Matter, White Matter, CSF, etc.), whilst also correcting for spatial intensity variations (also known as bias field or RF inhomogeneities)."	
@@ -182,7 +191,6 @@
 <http://purl.obolibrary.org/obo/MRIO_0000709>	"A connectivity matrix where each element represents the correlation of functional brain activity within the auditory resting state network."	
 <http://purl.obolibrary.org/obo/MRIO_0000420>	"A functional assessment to determine the mapping of brain activity in an evaluant."	
 <http://purl.obolibrary.org/obo/MRIO_0000637>	"A connectivity matrix where each element represents the correlation of functional brain activity within the left and right hemisphere resting state networks."	
-<http://purl.obolibrary.org/obo/MRIO_0000713>		
 <http://purl.obolibrary.org/obo/MRIO_0000387>	"An MRI acquisition sequence that diminishes T1 weighting via long TR and T2 via short TE to produce images where voxel intensity corresponds to number of hydrogen protons in tissue."	
 <http://purl.obolibrary.org/obo/MRIO_0000604>		
 <http://purl.obolibrary.org/obo/MRIO_0000616>		
@@ -199,6 +207,7 @@
 <http://purl.obolibrary.org/obo/MRIO_0000372>	"The plane that divides the body into inferior and superior sections."	
 <http://purl.obolibrary.org/obo/MRIO_0000651>	"The Configurable Pipeline for the Analysis of Connectomes (C-PAC) is a configurable, open-source, Nipype-based, automated processing pipeline for resting state functional MRI (R-fMRI) data, for use by both novice and expert users."	
 <http://purl.obolibrary.org/obo/MRIO_0000627>	"A connectivity matrix where each element represents the correlation of functional brain activity within the default mode network."	
+<http://purl.obolibrary.org/obo/MRIO_0000601>	"An image data set of integer values in which each value corresponds to some shared characteristic or computed property.\nThe values often belong to a group of pixels or voxels that share the same characteristic, such as a tissue type or anatomical region."	
 <http://purl.obolibrary.org/obo/MRIO_0000392>	"An MRI acquisition sequence that uses a long inversion time to attenuate the signal from water/CSF."	
 <http://purl.obolibrary.org/obo/UBERON_0035933>		
 <http://purl.obolibrary.org/obo/MRIO_0000371>	"The plane that divides the body into ventral and dorsal sections."	
@@ -207,15 +216,14 @@
 <http://purl.obolibrary.org/obo/MRIO_0000695>	"A measurement datum that is the result of volume measurement of all lesions within some brain."	
 <http://purl.obolibrary.org/obo/MRIO_0000515>	"FreeSurfer is a suite of tools for the analysis of neuroimaging data that provides an array of algorithms to quantify the functional, connectional and structural properties of the human brain. It has evolved from a package primarily aimed at generating surface representations of the cerebral cortex into one that automatically creates models of most macroscopically visible structures in the human brain given any reasonable T1-weighted input image. It is freely available, runs on a wide variety of hardware and software platforms, and is open source."	
 <http://purl.obolibrary.org/obo/UBERON_0002766>		
+<http://purl.obolibrary.org/obo/MRIO_0000367>	"An MR image produced by a T2 weighted MR image acquisition sequence."	
 <http://purl.obolibrary.org/obo/CARO_0000000>		
 <http://purl.obolibrary.org/obo/MRIO_0000379>	"An assay that produces MR data about an evaluant."	
 <http://purl.obolibrary.org/obo/UBERON_0006093>		
-<http://purl.obolibrary.org/obo/MRIO_0000507>	"The use of computer algorithms to process digital image data that produces some derived data measurement."	
 <http://purl.obolibrary.org/obo/MRIO_0000698>	"A brain atlas image dataset encoding voxels belonging to the auditory functional resting state network."	
 <http://purl.obolibrary.org/obo/UBERON_0006514>		
 <http://purl.obolibrary.org/obo/MRIO_0000523>	"A neuroimaging technique used to estimate volume measurements (e.g. ml/mm^3) of a brain, its regions, a combination or regions, or a combination of similar cell types."	
 <http://purl.obolibrary.org/obo/MRIO_0000683>		
-<http://purl.obolibrary.org/obo/MRIO_0000623>	"A set of digital data comprising some representation of an image and its associated metadata using pixels (2D), voxels (3D), or an arbitrary number of dimensions."	
 <http://purl.obolibrary.org/obo/MRIO_0000529>		
 <http://purl.obolibrary.org/obo/UBERON_0009897>		
 <http://purl.obolibrary.org/obo/MRIO_0000347>	"A timeseries of MRI images including pre- and post-contrast at different times"	
@@ -227,6 +235,7 @@
 <http://purl.obolibrary.org/obo/MRIO_0000634>	"A connectivity matrix where each element represents the correlation of functional brain activity within the executive control resting state network."	
 <http://purl.obolibrary.org/obo/UBERON_0027061>		
 <http://purl.obolibrary.org/obo/MRIO_0000500>	"A scalar measurement datum that is derived from the measurement of some volume quality"	
+<http://purl.obolibrary.org/obo/MRIO_0000694>		
 <http://purl.obolibrary.org/obo/UBERON_0003528>		
 <http://purl.obolibrary.org/obo/UBERON_0001882>		
 <http://purl.obolibrary.org/obo/MRIO_0000522>	"The LPA was trained by a logistic regression model with the data of 53 MS patients with severe lesion patterns. Binary lesion maps of these patients were used as response values. As covariates a similar lesion belief map as for the LGA was used as well as a spatial covariate that takes into account voxel specific changes in lesion probability. Such a high dimensional model cannot be estimated by standard procedures, so we used a novel approach for fitting large-scale regression models, for details see here. The parameters of this model fit are then used to segment lesions in new images by providing an estimate for the lesion probability for each voxel."	

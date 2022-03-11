@@ -73,5 +73,21 @@ source		SELECT id,assortativity_V3,efficiency_V3,transitivity_V3 FROM crania_rsn
 mappingId	Pearson Frontoparietal Graph Theory Measures
 target		:crania/pearson/assortativity/{id} a :MRIO_0000706 ; :IAO_0000136 :MRIO_0000700 ; :IAO_0000004 {assortativity_frontoparietalleft}^^xsd:double , {assortativity_frontoparietalright}^^xsd:double . :crania/pearson/efficiency/{id} a :MRIO_0000707 ; :IAO_0000136 :MRIO_0000700 ; :IAO_0000004 {efficiency_frontoparietalleft}^^xsd:double , {efficiency_frontoparietalright}^^xsd:double . :crania/pearson/transitivity/{id} a :MRIO_0000708 ; :IAO_0000136 :MRIO_0000700 ; :IAO_0000004 {transitivity_frontoparietalleft}^^xsd:double , {transitivity_frontoparietalright}^^xsd:double . 
 source		SELECT id,assortativity_frontoparietalleft,efficiency_frontoparietalleft,transitivity_frontoparietalleft,assortativity_frontoparietalright,efficiency_frontoparietalright,transitivity_frontoparietalright FROM crania_rsngraphtheorymeasurespearson ;
+
+mappingId	percentbrainvolumechange
+target		:crania/siena/percentbrainvolumechange/{id} a :MRIO_0000714 ; :IAO_0000136 :UBERON_0000955 ; :IAO_0000004 {percentbrainvolumechange}^^xsd:double . 
+source		SELECT id,percentbrainvolumechange FROM crania_siena ;
+
+mappingId	atrophiedlesionvolume
+target		:crania/neurostream/atrophiedlesion/{id} a :MRIO_0000696 ; :IAO_0000136 :UBERON_0002285 ; :IAO_0000004 {atrophiedlesionvolume}^^xsd:double . 
+source		SELECT id,atrophiedlesionvolume FROM crania_atrophiedlesionvolume ;
+
+mappingId	lateralventricularvolume
+target		:crania/neurostream/lvv/{id} a :MRIO_0000689 ; :IAO_0000136 :UBERON_0002285 ; :IAO_0000004 {lateralventricularvolume}^^xsd:double . 
+source		SELECT id,lateralventricularvolume FROM crania_atrophiedlesionvolume ;
+
+mappingId	medullavolume
+target		:crania/sienax/medulla/{id} a :MRIO_0000694 ; :IAO_0000136 :UBERON_0001896 ; :IAO_0000004 {medullavolume}^^xsd:double . 
+source		SELECT id,medullavolume FROM crania_sienax ;
 ]]
 

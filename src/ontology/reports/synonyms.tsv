@@ -5,6 +5,7 @@
 <http://purl.obolibrary.org/obo/MRIO_0000348>	<http://www.w3.org/2000/01/rdf-schema#label>	"ASL perfusion data set"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000358>	<http://www.w3.org/2000/01/rdf-schema#label>	"echo time"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000516>	<http://www.w3.org/2000/01/rdf-schema#label>	"FreeSurfer longitudinal analysis"@en	
+<http://purl.obolibrary.org/obo/MRIO_0000715>	<http://www.w3.org/2000/01/rdf-schema#label>	"T1 lesion mask"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000621>	<http://www.w3.org/2000/01/rdf-schema#label>	"MR image bias field correction"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000353>	<http://www.w3.org/2000/01/rdf-schema#label>	"QSM image data set"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000710>	<http://www.w3.org/2000/01/rdf-schema#label>	"temp"@en	
@@ -20,8 +21,9 @@
 <http://purl.obolibrary.org/obo/MRIO_0000653>	<http://www.w3.org/2000/01/rdf-schema#label>	"inversion time"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000371>	<http://www.w3.org/2000/01/rdf-schema#label>	"coronal"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000665>	<http://www.w3.org/2000/01/rdf-schema#label>	"grey matter volume measurement datum"@en	
-<http://purl.obolibrary.org/obo/MRIO_0000423>	<http://www.w3.org/2000/01/rdf-schema#label>	"T1 GRE image data set"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000709>	<http://www.w3.org/2000/01/rdf-schema#label>	"auditory resting state network functional connectivity matrix"@en	
+<http://purl.obolibrary.org/obo/MRIO_0000423>	<http://www.w3.org/2000/01/rdf-schema#label>	"T1 GRE image data set"@en	
+<http://purl.obolibrary.org/obo/MRIO_0000689>	<http://www.w3.org/2000/01/rdf-schema#label>	"lateral ventricular volume measurement datum"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000620>	<http://www.w3.org/2000/01/rdf-schema#label>	"MR image artifact correction"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000615>	<http://www.w3.org/2000/01/rdf-schema#label>	"binarization"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000352>	<http://www.w3.org/2000/01/rdf-schema#label>	"T2 SE image data set"@en	
@@ -29,10 +31,10 @@
 <http://purl.obolibrary.org/obo/MRIO_0000706>	<http://www.w3.org/2000/01/rdf-schema#label>	"network assortativity datum"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000671>	<http://www.w3.org/2000/01/rdf-schema#label>	"FreeSurfer segmentation map"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000511>	<http://www.w3.org/2000/01/rdf-schema#label>	"T2 FLAIR image data set"@en	
-<http://purl.obolibrary.org/obo/MRIO_0000609>	<http://www.w3.org/2000/01/rdf-schema#label>	"ChaCo data array"@en	
+<http://purl.obolibrary.org/obo/MRIO_0000609>	<http://www.w3.org/2000/01/rdf-schema#label>	"ChaCo data set"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000683>	<http://www.w3.org/2000/01/rdf-schema#label>	"imaging contrast reagent"@en	
-<http://purl.obolibrary.org/obo/MRIO_0000641>	<http://www.w3.org/2000/01/rdf-schema#label>	"dorsal plus ventral thalamus volume measurement datum"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000388>	<http://www.w3.org/2000/01/rdf-schema#label>	"T2 FSE sequence"@en	
+<http://purl.obolibrary.org/obo/MRIO_0000641>	<http://www.w3.org/2000/01/rdf-schema#label>	"dorsal plus ventral thalamus volume measurement datum"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000636>	<http://www.w3.org/2000/01/rdf-schema#label>	"perfusion weighted image data set"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000524>	<http://www.w3.org/2000/01/rdf-schema#label>	"whole brain volumetric analysis"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000696>	<http://www.w3.org/2000/01/rdf-schema#label>	"atrophied lesion volume measurement datum"@en	
@@ -45,6 +47,7 @@
 <http://purl.obolibrary.org/obo/MRIO_0000363>	<http://www.w3.org/2000/01/rdf-schema#label>	"slice gap"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000705>	<http://www.w3.org/2000/01/rdf-schema#label>	"network graph quality datum"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000611>	<http://www.w3.org/2000/01/rdf-schema#label>	"connectivity matrix"@en	
+<http://purl.obolibrary.org/obo/MRIO_0000717>	<http://www.w3.org/2000/01/rdf-schema#label>	"raw image data set"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000390>	<http://www.w3.org/2000/01/rdf-schema#label>	"T2* GRE sequence"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000510>	<http://www.w3.org/2000/01/rdf-schema#label>	"functional connectome analysis"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000505>	<http://www.w3.org/2000/01/rdf-schema#label>	"follow-up hi-res T1 image data set"@en	
@@ -56,9 +59,11 @@
 <http://purl.obolibrary.org/obo/MRIO_0000602>	<http://www.w3.org/2000/01/rdf-schema#label>	"aligned image data set"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000520>	<http://www.w3.org/2000/01/rdf-schema#label>	"T1 black hole analysis"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000349>	<http://www.w3.org/2000/01/rdf-schema#label>	"magnetization transfer image data set"@en	
+<http://purl.obolibrary.org/obo/MRIO_0000720>	<http://www.w3.org/2000/01/rdf-schema#label>	"MR image data set"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000627>	<http://www.w3.org/2000/01/rdf-schema#label>	"default mode network functional connectivity matrix"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000654>	<http://www.w3.org/2000/01/rdf-schema#label>	"V2 resting state functional connectivity matrix"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000612>	<http://www.w3.org/2000/01/rdf-schema#label>	"structural connectivity matrix"@en	
+<http://purl.obolibrary.org/obo/MRIO_0000716>	<http://www.w3.org/2000/01/rdf-schema#label>	"computed image data set"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000622>	<http://www.w3.org/2000/01/rdf-schema#label>	"N4 bias field correction"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000391>	<http://www.w3.org/2000/01/rdf-schema#label>	"T2 STIR sequence"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000506>	<http://www.w3.org/2000/01/rdf-schema#label>	"T1 SE image data set"@en	
@@ -91,18 +96,19 @@
 <http://purl.obolibrary.org/obo/MRIO_0000697>	<http://www.w3.org/2000/01/rdf-schema#label>	"cerebellum resting state network atlas"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000604>	<http://www.w3.org/2000/01/rdf-schema#label>	"MR image transformation"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000383>	<http://www.w3.org/2000/01/rdf-schema#label>	"MR pulse sequence protocol"@en	
-<http://purl.obolibrary.org/obo/MRIO_0000341>	<http://www.w3.org/2000/01/rdf-schema#label>	"MR image data set"@en	
+<http://purl.obolibrary.org/obo/MRIO_0000341>	<http://www.w3.org/2000/01/rdf-schema#label>	"reconstructed MR image data set"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000617>	<http://www.w3.org/2000/01/rdf-schema#label>	"MR image registration"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000355>	<http://www.w3.org/2000/01/rdf-schema#label>	"Task-based functional MR image data set"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000629>	<http://www.w3.org/2000/01/rdf-schema#label>	"GRE echo planar sequence"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000396>	<http://www.w3.org/2000/01/rdf-schema#label>	"T2* GRE image data set"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000661>	<http://www.w3.org/2000/01/rdf-schema#label>	"GRE inversion recovery sequence"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000366>	<http://www.w3.org/2000/01/rdf-schema#label>	"T1 weighted image data set"@en	
+<http://purl.obolibrary.org/obo/MRIO_0000718>	<http://www.w3.org/2000/01/rdf-schema#label>	"raw MR image data set"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000508>	<http://www.w3.org/2000/01/rdf-schema#label>	"MR image data set analysis"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000369>	<http://www.w3.org/2000/01/rdf-schema#label>	"matrix size"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000648>	<http://www.w3.org/2000/01/rdf-schema#label>	"probabilistic brain region atlas image dataset"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000702>	<http://www.w3.org/2000/01/rdf-schema#label>	"V1 resting state network atlas"@en	
-<http://purl.obolibrary.org/obo/MRIO_0000605>	<http://www.w3.org/2000/01/rdf-schema#label>	"FLAIR lesion mask"@en	
+<http://purl.obolibrary.org/obo/MRIO_0000605>	<http://www.w3.org/2000/01/rdf-schema#label>	"T2 FLAIR lesion mask"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000690>	<http://www.w3.org/2000/01/rdf-schema#label>	"diffusion gradient"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000600>	<http://www.w3.org/2000/01/rdf-schema#label>	"lesion mask"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000628>	<http://www.w3.org/2000/01/rdf-schema#label>	"gradient echo sequence"@en	
@@ -117,8 +123,8 @@
 <http://purl.obolibrary.org/obo/MRIO_0000649>	<http://www.w3.org/2000/01/rdf-schema#label>	"Desikan-Killiany brain atlas image data set"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000504>	<http://www.w3.org/2000/01/rdf-schema#label>	"baseline hi-res T1 image"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000701>	<http://www.w3.org/2000/01/rdf-schema#label>	"sensorimotor resting state network atlas"@en	
-<http://purl.obolibrary.org/obo/MRIO_0000676>	<http://www.w3.org/2000/01/rdf-schema#label>	"FAST Analysis"@en	
-<http://purl.obolibrary.org/obo/MRIO_0000713>	<http://www.w3.org/2000/01/rdf-schema#label>	"image visualization from image data set"@en	
+<http://purl.obolibrary.org/obo/MRIO_0000676>	<http://www.w3.org/2000/01/rdf-schema#label>	"FAST analysis"@en	
+<http://purl.obolibrary.org/obo/MRIO_0000713>	<http://www.w3.org/2000/01/rdf-schema#label>	"image data set visualization"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000643>	<http://www.w3.org/2000/01/rdf-schema#label>	"right dorsal thalamic volume measurement datum"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000527>	<http://www.w3.org/2000/01/rdf-schema#label>	"text file"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000601>	<http://www.w3.org/2000/01/rdf-schema#label>	"image segmentation map"@en	
@@ -134,9 +140,9 @@
 <http://purl.obolibrary.org/obo/MRIO_0000651>	<http://www.w3.org/2000/01/rdf-schema#label>	"c-pac"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000424>	<http://www.w3.org/2000/01/rdf-schema#label>	"T2 FSE image data set"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000503>	<http://www.w3.org/2000/01/rdf-schema#label>	"3D GRE image data set"@en	
-<http://purl.obolibrary.org/obo/MRIO_0000675>	<http://www.w3.org/2000/01/rdf-schema#label>	"regional functional connectome analysis"@en	
-<http://purl.obolibrary.org/obo/MRIO_0000515>	<http://www.w3.org/2000/01/rdf-schema#label>	"FreeSurfer Analysis"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000712>	<http://www.w3.org/2000/01/rdf-schema#label>	"SE inversion recovery sequence"@en	
+<http://purl.obolibrary.org/obo/MRIO_0000675>	<http://www.w3.org/2000/01/rdf-schema#label>	"regional functional connectome analysis"@en	
+<http://purl.obolibrary.org/obo/MRIO_0000515>	<http://www.w3.org/2000/01/rdf-schema#label>	"FreeSurfer analysis"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000707>	<http://www.w3.org/2000/01/rdf-schema#label>	"network efficiency datum"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000687>	<http://www.w3.org/2000/01/rdf-schema#label>	"number of temporal positions"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000350>	<http://www.w3.org/2000/01/rdf-schema#label>	"diffusion weighted image data set suitable for DTI"@en	
@@ -147,6 +153,7 @@
 <http://purl.obolibrary.org/obo/MRIO_0000680>	<http://www.w3.org/2000/01/rdf-schema#label>	"T1 SPGR image data set"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000667>	<http://www.w3.org/2000/01/rdf-schema#label>	"brain volume measurement datum"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000522>	<http://www.w3.org/2000/01/rdf-schema#label>	"LPA analysis"@en	
+<http://purl.obolibrary.org/obo/MRIO_0000694>	<http://www.w3.org/2000/01/rdf-schema#label>	"medulla volume measurement datum"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000356>	<http://www.w3.org/2000/01/rdf-schema#label>	"plane"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000652>	<http://www.w3.org/2000/01/rdf-schema#label>	"V1 resting state functional connectivity matrix"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000662>	<http://www.w3.org/2000/01/rdf-schema#label>	"MR image segmentation analysis"@en	
@@ -174,15 +181,17 @@
 <http://purl.obolibrary.org/obo/MRIO_0000658>	<http://www.w3.org/2000/01/rdf-schema#label>	"focal lesion analysis"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000347>	<http://www.w3.org/2000/01/rdf-schema#label>	"DCE perfusion data set"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000421>	<http://www.w3.org/2000/01/rdf-schema#label>	"functional MR image data set analysis"@en	
+<http://purl.obolibrary.org/obo/MRIO_0000719>	<http://www.w3.org/2000/01/rdf-schema#label>	"raw MR image data set reconstruction"@en	
 <http://purl.obolibrary.org/obo/CCL_0000360>	<http://www.w3.org/2000/01/rdf-schema#label>	"field of view"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000362>	<http://www.w3.org/2000/01/rdf-schema#label>	"slice thickness"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000704>	<http://www.w3.org/2000/01/rdf-schema#label>	"V3 resting state network atlas"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000610>	<http://www.w3.org/2000/01/rdf-schema#label>	"matrix data set"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000677>	<http://www.w3.org/2000/01/rdf-schema#label>	"diffusion weighted MRI acquisition sequence"@en	
+<http://purl.obolibrary.org/obo/MRIO_0000714>	<http://www.w3.org/2000/01/rdf-schema#label>	"percent change in brain volume measurement datum"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000634>	<http://www.w3.org/2000/01/rdf-schema#label>	"executive control resting state functional connectivity matrix"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000692>	<http://www.w3.org/2000/01/rdf-schema#label>	"3D T1 GRE sequence"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000644>	<http://www.w3.org/2000/01/rdf-schema#label>	"dorsal thalamic volume measurement datum"@en	
-<http://purl.obolibrary.org/obo/MRIO_0000601>	<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym>	"parcellation map"	
 <http://purl.obolibrary.org/obo/MRIO_0000601>	<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym>	"label map"	
+<http://purl.obolibrary.org/obo/MRIO_0000601>	<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym>	"parcellation map"	
 <http://purl.obolibrary.org/obo/MRIO_0000659>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"SE"	
 <http://purl.obolibrary.org/obo/MRIO_0000628>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"GRE"	
