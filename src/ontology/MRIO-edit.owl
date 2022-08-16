@@ -27,13 +27,18 @@
         <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/mrio/releases/2021-04-10/mrio.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/mondo.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MRIO/releases/2022-07-01/imports/obi_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MRIO/releases/2022-08-16/imports/obi_import.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2019-08-26/bfo.owl"/>
-        <dc:creator>Alexander Bartnik</dc:creator>
+        <dc:contributor>Alan Ruttenberg</dc:contributor>
+        <dc:creator>Alexander D. Bartnik</dc:creator>
+        <dc:creator>Alexander D. Diehl</dc:creator>
+        <dc:creator>Lauren M. Wishnie</dc:creator>
         <dc:creator>Lucas Serra</dc:creator>
         <dc:creator>Mackenzie Smith</dc:creator>
+        <dc:creator>Michael G. Dwyer</dc:creator>
+        <dc:creator>William D. Duncan</dc:creator>
         <dc:description>An ontology for the representation of MRI acquisition and analysis.</dc:description>
-        <dc:title> MRI Ontology (MRI)</dc:title>
+        <dc:title>MRI Ontology (MRI)</dc:title>
         <terms:license>https://creativecommons.org/licenses/by/4.0/</terms:license>
     </owl:Ontology>
     
@@ -1380,7 +1385,7 @@ variable
     <!-- http://purl.obolibrary.org/obo/MRIO_0000394 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000394">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000378"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <IAO_0000115>An MRI machine whose primary magnet has 1.5T of strength.</IAO_0000115>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
         <rdfs:label xml:lang="en">1.5T MRI machine</rdfs:label>
@@ -1392,7 +1397,7 @@ variable
     <!-- http://purl.obolibrary.org/obo/MRIO_0000395 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000395">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000378"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <IAO_0000115>An MRI machine whose primary magnet has 3T of strength.</IAO_0000115>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
         <rdfs:label xml:lang="en">3T MRI machine</rdfs:label>
@@ -1636,12 +1641,6 @@ variable
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000341"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000500"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <IAO_0000115>Any combination of digital image analysis and statistical tools that may be used to derive processed MR images or data measurements about the MR images.</IAO_0000115>
@@ -1922,6 +1921,12 @@ variable
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000523">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000508"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000667"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <IAO_0000115>A neuroimaging technique used to estimate volume measurements (e.g. ml/mm^3) of a brain, its regions, a combination or regions, or a combination of similar cell types.</IAO_0000115>
         <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
         <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
@@ -2028,6 +2033,7 @@ variable
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000641"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <IAO_0000115>A DeepGRAI analysis that estimates the volume of both the dorsal and ventral thalamus within some brain.</IAO_0000115>
         <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
         <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
         <rdfs:label xml:lang="en">DeepGRAI analysis of the dorsal plus ventral thalamus</rdfs:label>
@@ -2045,6 +2051,7 @@ variable
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000642"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <IAO_0000115>A DeepGRAI analysis that estimates the volume of the left dorsal thalamus within some brain.</IAO_0000115>
         <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
         <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
         <rdfs:label xml:lang="en">DeepGRAI analysis of the left dorsal thalamus</rdfs:label>
@@ -2250,7 +2257,7 @@ The values often belong to a group of pixels or voxels that share the same chara
     <!-- http://purl.obolibrary.org/obo/MRIO_0000615 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000615">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000604"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <rdfs:label xml:lang="en">binarization</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
@@ -2260,7 +2267,7 @@ The values often belong to a group of pixels or voxels that share the same chara
     <!-- http://purl.obolibrary.org/obo/MRIO_0000616 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000616">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000604"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <rdfs:label xml:lang="en">inversion</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
@@ -2270,7 +2277,7 @@ The values often belong to a group of pixels or voxels that share the same chara
     <!-- http://purl.obolibrary.org/obo/MRIO_0000617 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000617">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000604"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <rdfs:label xml:lang="en">MR image registration</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
@@ -2280,7 +2287,7 @@ The values often belong to a group of pixels or voxels that share the same chara
     <!-- http://purl.obolibrary.org/obo/MRIO_0000618 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000618">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000617"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <rdfs:label xml:lang="en">antsRegistration</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
@@ -2290,7 +2297,7 @@ The values often belong to a group of pixels or voxels that share the same chara
     <!-- http://purl.obolibrary.org/obo/MRIO_0000619 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000619">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000617"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <rdfs:label xml:lang="en">antsApplyTransforms</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
@@ -2300,7 +2307,7 @@ The values often belong to a group of pixels or voxels that share the same chara
     <!-- http://purl.obolibrary.org/obo/MRIO_0000620 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000620">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000604"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <rdfs:label xml:lang="en">MR image artifact correction</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
@@ -2310,7 +2317,7 @@ The values often belong to a group of pixels or voxels that share the same chara
     <!-- http://purl.obolibrary.org/obo/MRIO_0000621 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000621">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000620"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <rdfs:label xml:lang="en">MR image bias field correction</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
@@ -2320,7 +2327,7 @@ The values often belong to a group of pixels or voxels that share the same chara
     <!-- http://purl.obolibrary.org/obo/MRIO_0000622 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000622">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000621"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <rdfs:label xml:lang="en">N4 bias field correction</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
@@ -2521,7 +2528,7 @@ The values often belong to a group of pixels or voxels that share the same chara
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <IAO_0000115 xml:lang="en">Multiple echoes of different phase steps are acquired by rapidly reversing the readout or frequency- encoding gradient.</IAO_0000115>
+        <IAO_0000115 xml:lang="en">Multiple echoes of different phase steps are acquired by rapidly reversing the readout or frequency- encoding gradient using a gradient echo sequence.</IAO_0000115>
         <IAO_0000116 xml:lang="en">Can we add that this may optionally be about some spin echo sequence, but not necessary for an instance of this class?</IAO_0000116>
         <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
         <dc:source xml:lang="en">https://radiopaedia.org/articles/echo-planar-imaging-1?lang=us</dc:source>
@@ -2648,6 +2655,7 @@ The values often belong to a group of pixels or voxels that share the same chara
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001897"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <IAO_0000115>A measurement datum that is the result of volume measurement of  the dorsal and ventral thalamus within some brain.</IAO_0000115>
         <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
         <rdfs:label xml:lang="en">dorsal plus ventral thalamus volume measurement datum</rdfs:label>
     </owl:Class>
@@ -2670,6 +2678,7 @@ The values often belong to a group of pixels or voxels that share the same chara
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0013683"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <IAO_0000115>A measurement datum that is the result of volume measurement of  the left dorsal thalamus within some brain.</IAO_0000115>
         <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
         <rdfs:label xml:lang="en">left dorsal thalamic volume measurement datum</rdfs:label>
     </owl:Class>
@@ -2686,6 +2695,7 @@ The values often belong to a group of pixels or voxels that share the same chara
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0013684"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <IAO_0000115>A measurement datum that is the result of volume measurement of  the right dorsal thalamus within some brain.</IAO_0000115>
         <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
         <rdfs:label xml:lang="en">right dorsal thalamic volume measurement datum</rdfs:label>
     </owl:Class>
@@ -2696,6 +2706,7 @@ The values often belong to a group of pixels or voxels that share the same chara
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000644">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000501"/>
+        <IAO_0000115>A measurement datum that is the result of volume measurement of  the dorsal thalamus within some brain.</IAO_0000115>
         <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
         <rdfs:label xml:lang="en">dorsal thalamic volume measurement datum</rdfs:label>
     </owl:Class>
@@ -2712,6 +2723,7 @@ The values often belong to a group of pixels or voxels that share the same chara
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000644"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <IAO_0000115>A DeepGRAI analysis that estimates the volume of both the left and right dorsal thalamus within some brain.</IAO_0000115>
         <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
         <rdfs:label xml:lang="en">DeepGRAI analysis of the dorsal thalamus</rdfs:label>
     </owl:Class>
@@ -2728,6 +2740,7 @@ The values often belong to a group of pixels or voxels that share the same chara
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000643"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <IAO_0000115>A DeepGRAI analysis that estimates the volume of the right dorsal thalamus within some brain.</IAO_0000115>
         <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
         <rdfs:label xml:lang="en">DeepGRAI analysis of the right dorsal thalamus</rdfs:label>
     </owl:Class>
@@ -3269,7 +3282,7 @@ The values often belong to a group of pixels or voxels that share the same chara
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <IAO_0000115>An inversion recovery (IR) pulse sequence is a spin echo or gradient echo pulse sequence preceded by a 180° RF pulse.</IAO_0000115>
+        <IAO_0000115>A gradient echo pulse sequence preceded by a 180° RF pulse.</IAO_0000115>
         <IAO_0000116>TODO: Create specific subclass of this and echo panar sequence for both GRE and SE.</IAO_0000116>
         <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
         <dc:source>https://radiopaedia.org/articles/inversion-recovery-sequences?lang=us</dc:source>
@@ -3485,9 +3498,10 @@ The values often belong to a group of pixels or voxels that share the same chara
     <!-- http://purl.obolibrary.org/obo/MRIO_0000670 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000670">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000501"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
         <rdfs:label xml:lang="en">thalamic volume measurement z-score</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -3800,12 +3814,12 @@ ISBN 10: 1119053552</IAO_0000119>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33375"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <IAO_0000115>A chemical reagent containing gadolinium injected into an MRI participant to increase the visible contrast of some MR image data set.</IAO_0000115>
         <IAO_0000117>https://orcid.org/0000-0001-9625-1899 &quot;William D. Duncan&quot;</IAO_0000117>
         <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
         <IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</IAO_0000117>
         <IAO_0000117>https://orcid.org/0000-0002-7245-3450 &quot;Lauren M. Wishnie&quot;</IAO_0000117>
         <IAO_0000117>https://orcid.org/0000-0002-9821-4132 &quot;Mackenzie T. Smith&quot;</IAO_0000117>
-        <rdfs:comment>A chemical reagent containing gadolinium injected into an MRI participant to increase the visible contrast of some MR image data set.</rdfs:comment>
         <rdfs:label xml:lang="en">imaging contrast reagent</rdfs:label>
     </owl:Class>
     
@@ -3877,6 +3891,7 @@ ISBN 10: 1119053552</IAO_0000119>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002285"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <IAO_0000115>A measurement datum that is the result of volume measurement of  the lateral ventricles within some brain.</IAO_0000115>
         <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
         <rdfs:label xml:lang="en">lateral ventricular volume measurement datum</rdfs:label>
     </owl:Class>
@@ -3943,9 +3958,11 @@ ISBN 10: 1119053552</IAO_0000119>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001896"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <IAO_0000115>A measurement datum that is the result of volume measurement of the medulla oblongata within some brain.</IAO_0000115>
         <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
         <IAO_0000118>brainstem volume measurement datum</IAO_0000118>
-        <rdfs:label xml:lang="en">medulla volume measurement datum</rdfs:label>
+        <IAO_0000118>medulla volume measurement datum</IAO_0000118>
+        <rdfs:label xml:lang="en">medulla oblongata volume measurement datum</rdfs:label>
     </owl:Class>
     
 
@@ -4668,8 +4685,7 @@ ISBN 10: 1119053552</IAO_0000119>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <IAO_0000115 xml:lang="en">Multiple echoes of different phase steps are acquired by rapidly reversing the readout or frequency- encoding gradient.</IAO_0000115>
-        <IAO_0000116 xml:lang="en">Can we add that this may optionally be about some spin echo sequence, but not necessary for an instance of this class?</IAO_0000116>
+        <IAO_0000115 xml:lang="en">Multiple echoes of different phase steps are acquired by rapidly reversing the readout or frequency- encoding gradient using a spin echo sequence.</IAO_0000115>
         <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
         <dc:source xml:lang="en">https://radiopaedia.org/articles/echo-planar-imaging-1?lang=us</dc:source>
         <rdfs:label xml:lang="en">SE echo planar sequence</rdfs:label>
@@ -4691,7 +4707,7 @@ ISBN 10: 1119053552</IAO_0000119>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <IAO_0000115>An inversion recovery (IR) pulse sequence is a spin echo or gradient echo pulse sequence preceded by a 180° RF pulse.</IAO_0000115>
+        <IAO_0000115>A spin echo pulse sequence preceded by a 180° RF pulse.</IAO_0000115>
         <IAO_0000116>TODO: Create specific subclass of this and echo panar sequence for both GRE and SE.</IAO_0000116>
         <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
         <dc:source>https://radiopaedia.org/articles/inversion-recovery-sequences?lang=us</dc:source>
@@ -4729,6 +4745,7 @@ ISBN 10: 1119053552</IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000714">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000667"/>
+        <IAO_0000115>A brain volume measurement datum about how much an evaluant&apos;s brain morphology has changed between two or more timepoints.</IAO_0000115>
         <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
         <rdfs:label xml:lang="en">percent change in brain volume measurement datum</rdfs:label>
     </owl:Class>
@@ -4881,15 +4898,17 @@ ISBN 10: 1119053552</IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000722">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000695"/>
+        <IAO_0000115>A Lesion volume measurement datum comprised of the subset of lesion voxels within a specific distance to the lateral ventricles (centrality) and with intensity at least a quantitatively-derived amount brighter than normal appearing tissue (salience).</IAO_0000115>
+        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
         <oboInOwl:source>https://doi.org/10.1111/jon.12650</oboInOwl:source>
         <rdfs:label xml:lang="en">salient central lesion volume measurement datum</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OBI_0 -->
+    <!-- http://purl.obolibrary.org/obo/MRIO_0000723 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000723">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000508"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -4897,7 +4916,110 @@ ISBN 10: 1119053552</IAO_0000119>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000635"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <IAO_0000115>An MR image data set analysis that evaluates the white matter tracts in an evaluant using water diffusivity.</IAO_0000115>
+        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
         <rdfs:label xml:lang="en">diffusion weighted image data set analysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_0000725 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000725">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000523"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000511"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000722"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <IAO_0000115>A volumetric MR imaging analysis that estimates salient central lesion volume from T2 FLAIR image datasets of an entire human brain.</IAO_0000115>
+        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
+        <rdfs:label xml:lang="en">salient central lesion volume analysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_0000726 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000726">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000523"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000720"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000694"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <IAO_0000115>A volumetric MR imaging analysis that estimates medulla oblongata volume MR image datasets of an entire human brain.</IAO_0000115>
+        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
+        <rdfs:label xml:lang="en">medulla oblongata volume analysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_0000727 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000727">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MRIO_0000726"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000511"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <IAO_0000115>A volumetric MR imaging analysis that estimates medulla oblongata volume T2 FLAIR image datasets of an entire human brain.</IAO_0000115>
+        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
+        <rdfs:label xml:lang="en">T2 FLAIR medulla oblongata volume analysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_0000728 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000728">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000508"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MRIO_0000509"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MRIO_0000517"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MRIO_0000519"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MRIO_0000725"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MRIO_0000727"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000511"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <IAO_0000115>A set of five MR image data set analyses using only T2 FLAIR image data sets that can substitute for standard research-quality MR image data set analyses in multiple sclerosis. The Five FLAIR Measures consist of lateral ventricle volume, thalamic volume, salient central lesion volume, and network efficiency.</IAO_0000115>
+        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
+        <IAO_0000119>https://doi.org/10.1016/j.nicl.2021.102705</IAO_0000119>
+        <rdfs:label xml:lang="en">five FLAIR measures analysis</rdfs:label>
     </owl:Class>
     
 
