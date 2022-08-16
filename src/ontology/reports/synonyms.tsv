@@ -51,8 +51,8 @@
 <http://purl.obolibrary.org/obo/MRIO_0000510>	<http://www.w3.org/2000/01/rdf-schema#label>	"functional connectome analysis"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000505>	<http://www.w3.org/2000/01/rdf-schema#label>	"follow-up high resolution T1 image data set"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000682>	<http://www.w3.org/2000/01/rdf-schema#label>	"T1 SE sequence"@en	
-<http://purl.obolibrary.org/obo/MRIO_0000693>	<http://www.w3.org/2000/01/rdf-schema#label>	"T2 STIR image data set"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000635>	<http://www.w3.org/2000/01/rdf-schema#label>	"diffusion weighted image data set"@en	
+<http://purl.obolibrary.org/obo/MRIO_0000693>	<http://www.w3.org/2000/01/rdf-schema#label>	"T2 STIR image data set"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000368>	<http://www.w3.org/2000/01/rdf-schema#label>	"functional MR image data set"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000647>	<http://www.w3.org/2000/01/rdf-schema#label>	"brain region atlas image data set"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000602>	<http://www.w3.org/2000/01/rdf-schema#label>	"aligned image data set"@en	
@@ -95,8 +95,8 @@
 <http://purl.obolibrary.org/obo/MRIO_0000525>	<http://www.w3.org/2000/01/rdf-schema#label>	"SIENAX analysis"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000697>	<http://www.w3.org/2000/01/rdf-schema#label>	"cerebellum resting state network atlas"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000604>	<http://www.w3.org/2000/01/rdf-schema#label>	"MR image transformation"@en	
-<http://purl.obolibrary.org/obo/MRIO_0000383>	<http://www.w3.org/2000/01/rdf-schema#label>	"MR pulse sequence protocol"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000725>	<http://www.w3.org/2000/01/rdf-schema#label>	"salient central lesion volume analysis"@en	
+<http://purl.obolibrary.org/obo/MRIO_0000383>	<http://www.w3.org/2000/01/rdf-schema#label>	"MR pulse sequence protocol"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000341>	<http://www.w3.org/2000/01/rdf-schema#label>	"reconstructed MR image data set"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000617>	<http://www.w3.org/2000/01/rdf-schema#label>	"MR image registration"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000355>	<http://www.w3.org/2000/01/rdf-schema#label>	"Task-based functional MR image data set"@en	
