@@ -225,7 +225,11 @@ http://purl.obolibrary.org/obo/MRIO_0000719
 http://purl.obolibrary.org/obo/MRIO_0000720
 http://purl.obolibrary.org/obo/MRIO_0000721
 http://purl.obolibrary.org/obo/MRIO_0000722
-http://purl.obolibrary.org/obo/OBI_0
+http://purl.obolibrary.org/obo/MRIO_0000723
+http://purl.obolibrary.org/obo/MRIO_0000725
+http://purl.obolibrary.org/obo/MRIO_0000726
+http://purl.obolibrary.org/obo/MRIO_0000727
+http://purl.obolibrary.org/obo/MRIO_0000728
 http://purl.obolibrary.org/obo/OBI_0000067
 http://purl.obolibrary.org/obo/OBI_0000070
 http://purl.obolibrary.org/obo/OBI_0000272

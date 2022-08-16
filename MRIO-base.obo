@@ -1,14 +1,19 @@
 format-version: 1.2
-data-version: MRIO/releases/2022-03-11/MRIO-base.owl
+data-version: MRIO/releases/2022-08-16/MRIO-base.owl
 ontology: MRIO/MRIO-base
-property_value: http://purl.org/dc/elements/1.1/creator "Alexander Bartnik" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Alan Ruttenberg" xsd:string
+property_value: http://purl.org/dc/elements/1.1/creator "Alexander D. Bartnik" xsd:string
+property_value: http://purl.org/dc/elements/1.1/creator "Alexander D. Diehl" xsd:string
+property_value: http://purl.org/dc/elements/1.1/creator "Lauren M. Wishnie" xsd:string
 property_value: http://purl.org/dc/elements/1.1/creator "Lucas Serra" xsd:string
 property_value: http://purl.org/dc/elements/1.1/creator "Mackenzie Smith" xsd:string
+property_value: http://purl.org/dc/elements/1.1/creator "Michael G. Dwyer" xsd:string
+property_value: http://purl.org/dc/elements/1.1/creator "William D. Duncan" xsd:string
 property_value: http://purl.org/dc/elements/1.1/description "An ontology for the representation of MRI acquisition and analysis." xsd:string
-property_value: http://purl.org/dc/elements/1.1/title " MRI Ontology (MRI)" xsd:string
+property_value: http://purl.org/dc/elements/1.1/title "MRI Ontology (MRI)" xsd:string
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/4.0/ xsd:string
-property_value: owl:versionInfo "2022-03-11" xsd:string
+property_value: owl:versionInfo "2022-08-16" xsd:string
 
 [Term]
 id: CCL:0000360
@@ -43,9 +48,9 @@ property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-00
 [Term]
 id: MRIO:0000345
 name: Post-Gd T1 image data set
-def: "A T1 image where gadolidium contrast agent has been used in the subject before image acquistion" []
+def: "A T1 weighted image data set where gadolidium contrast agent has been administered to the participant before image acquistion." []
 is_a: MRIO:0000366 ! T1 weighted image data set
-relationship: BFO:0000051 MRIO:0000683 ! imaging contrast reagent
+relationship: RO:0002351 MRIO:0000683 ! imaging contrast reagent
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9990-8331 \"Alexander D. Diehl\"" xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0002-2104-0568 \"Lucas M. Serra\"" xsd:string
@@ -91,7 +96,7 @@ property_value: IAO:0000117 "https://orcid.org/0000-0002-2104-0568 \"Lucas M. Se
 [Term]
 id: MRIO:0000351
 name: proton density image data set
-def: "A type of MRI image in which the contrast emphasizes density of protons, supressing T1 and T2 effects" []
+def: "An MR image data set in which the contrast emphasizes density of protons, supressing T1 and T2 effects" []
 is_a: MRIO:0000341 ! reconstructed MR image data set
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9990-8331 \"Alexander D. Diehl\"" xsd:string
@@ -309,7 +314,7 @@ is_obsolete: true
 [Term]
 id: MRIO:0000383
 name: MR pulse sequence protocol
-def: "The MRI machine protocol about the radiofrequency pulse sequence." []
+def: "The NMR/MRI machine protocol about the radiofrequency pulse sequence." []
 is_a: OBI:0000272
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9990-8331 \"Alexander D. Diehl\"" xsd:string
@@ -400,7 +405,7 @@ property_value: IAO:0000117 "https://orcid.org/0000-0002-2104-0568 \"Lucas M. Se
 id: MRIO:0000394
 name: 1.5T MRI machine
 def: "An MRI machine whose primary magnet has 1.5T of strength." []
-is_a: MRIO:0000378 ! MRI machine
+is_a: ObsoleteClass
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-2104-0568
 is_obsolete: true
 
@@ -408,7 +413,7 @@ is_obsolete: true
 id: MRIO:0000395
 name: 3T MRI machine
 def: "An MRI machine whose primary magnet has 3T of strength." []
-is_a: MRIO:0000378 ! MRI machine
+is_a: ObsoleteClass
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-2104-0568
 is_obsolete: true
 
@@ -448,7 +453,7 @@ id: MRIO:0000421
 name: functional MR image data set analysis
 def: "An MR image assessment to evaluate brain activity by detecting changes associated with blood flow in an evaluant." []
 is_a: MRIO:0000508 ! MR image data set analysis
-relationship: OBI:0000293 MRIO:0000354 ! Resting state functional MR image data set
+relationship: OBI:0000293 MRIO:0000368 ! functional MR image data set
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0002-2104-0568 \"Lucas M. Serra\"" xsd:string
 
@@ -493,7 +498,7 @@ property_value: IAO:0000117 "https://orcid.org/0000-0002-2104-0568 \"Lucas M. Se
 [Term]
 id: MRIO:0000502
 name: high resolution T1 weighted image data set
-def: "A type of T1-weighted image in which the voxel size is no larger than x and anisotropy is no more than y" []
+def: "A T1-weighted image data set acquired from an NMR/MRI machine with at least a 3 Tesla magnet and in which the voxel size is isotropic." []
 is_a: MRIO:0000366 ! T1 weighted image data set
 is_a: MRIO:0000423 ! T1 GRE image data set
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
@@ -511,7 +516,7 @@ property_value: IAO:0000117 "https://orcid.org/0000-0002-2104-0568 \"Lucas M. Se
 
 [Term]
 id: MRIO:0000504
-name: baseline hi-res T1 image
+name: baseline high resolution T1 image
 def: "Image data set collected at an evaluant's first visit in a study." []
 is_a: MRIO:0000502 ! high resolution T1 weighted image data set
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
@@ -520,7 +525,7 @@ property_value: IAO:0000117 "https://orcid.org/0000-0002-2104-0568 \"Lucas M. Se
 
 [Term]
 id: MRIO:0000505
-name: follow-up hi-res T1 image data set
+name: follow-up high resolution T1 image data set
 def: "Image data set collected at a later time than the evaluant's first scan." []
 is_a: MRIO:0000502 ! high resolution T1 weighted image data set
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
@@ -530,7 +535,7 @@ property_value: IAO:0000117 "https://orcid.org/0000-0002-2104-0568 \"Lucas M. Se
 [Term]
 id: MRIO:0000506
 name: T1 SE image data set
-def: "T1 weighted image data set collected using a spin echo sequence." []
+def: "T1 weighted image data set acquired using a spin echo sequence." []
 is_a: MRIO:0000366 ! T1 weighted image data set
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9990-8331 \"Alexander D. Diehl\"" xsd:string
@@ -555,7 +560,6 @@ name: MR image data set analysis
 def: "Any combination of digital image analysis and statistical tools that may be used to derive processed MR images or data measurements about the MR images." []
 is_a: MRIO:0000507 ! image data set analysis
 relationship: OBI:0000293 MRIO:0000341 ! reconstructed MR image data set
-relationship: OBI:0000299 MRIO:0000500 ! volume measurement datum
 property_value: IAO:0000116 "Add missing sources/papers/doi" xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0002-2104-0568 \"Lucas M. Serra\"" xsd:string
@@ -563,12 +567,12 @@ property_value: IAO:0000117 "https://orcid.org/0000-0002-2104-0568 \"Lucas M. Se
 [Term]
 id: MRIO:0000509
 name: DeepGRAI analysis
-def: "A volumetric MR imaging analysis that uses a neural network (U-net) to estimate thalamic volume from T2 FLAIR image datasets of the an entire human brain." []
+def: "A volumetric MR imaging analysis that uses a neural network (U-net) to estimate thalamic volume from T2 FLAIR image datasets of an entire human brain." []
 comment: Based on preliminary experiments and established performance, we adopted a 3D U-Net semantic segmentation architecture for DeepGRAI. (Çiçek et al., 2016) The U-Net architecture is composed of two symmetric pathways – a descending contraction/encoding pathway which moves from low level voxel intensities at very high spatial resolution to abstract high-level features at coarse spatial resolution, and an ascending expansion/decoding pathway which moves from less localized high-level features to specific voxel classifications. Additionally, U-Net includes direct “skip” connections from the descending pathway into the ascending pathway, to provide the ascending pathway with low-level image feature information. In the current context, the descending pathway is essentially responsible for localizing the thalamus, and the ascending pathway is responsible for determining its precise borders.
 is_a: MRIO:0000523 ! brain volumetric analysis
 relationship: OBI:0000293 MRIO:0000511 ! T2 FLAIR image data set
 relationship: OBI:0000299 MRIO:0000501 ! thalamic volume measurement datum
-relationship: OBI:0000299 MRIO:0000526 ! segmented region mask
+relationship: OBI:0000299 MRIO:0000601 ! image segmentation map
 property_value: IAO:0000117 http://orcid.org/0000-0002-2104-0568
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
 property_value: IAO:0000119 https://doi.org/10.1016/j.nicl.2021.102652 xsd:string
@@ -585,7 +589,7 @@ property_value: IAO:0000117 "https://orcid.org/0000-0002-2104-0568 \"Lucas M. Se
 [Term]
 id: MRIO:0000511
 name: T2 FLAIR image data set
-def: "T2 weighted image data set collected using a FLAIR sequence." []
+def: "A T2 weighted image data set collected using a FLAIR sequence." []
 is_a: MRIO:0000367 ! T2 weighted image data set
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9990-8331 \"Alexander D. Diehl\"" xsd:string
@@ -667,7 +671,7 @@ name: T2 lesion analysis
 def: "Analyzes voxels in an MRI scan that appear as focal lesions in a T2 weighted scan." []
 is_a: MRIO:0000658 ! focal lesion analysis
 relationship: OBI:0000293 MRIO:0000367 ! T2 weighted image data set
-relationship: OBI:0000299 MRIO:0000603 ! T2 lesion mask
+relationship: OBI:0000299 MRIO:0000605 ! T2 FLAIR lesion mask
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0002-2104-0568 \"Lucas M. Serra\"" xsd:string
 
@@ -686,6 +690,7 @@ id: MRIO:0000523
 name: brain volumetric analysis
 def: "A neuroimaging technique used to estimate volume measurements (e.g. ml/mm^3) of a brain, its regions, a combination or regions, or a combination of similar cell types." []
 is_a: MRIO:0000508 ! MR image data set analysis
+relationship: OBI:0000299 MRIO:0000667 ! brain volume measurement datum
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0002-2104-0568 \"Lucas M. Serra\"" xsd:string
 
@@ -703,7 +708,7 @@ name: SIENAX analysis
 def: "Quantitative measurement of brain size, shape, and temporal change (for example, in order to estimate atrophy) is increasingly important in biomedical image analysis applications. New methods of structural analysis attempt to improve robustness, accuracy, and extent of automation. A fully automated method of longitudinal (temporal change) analysis, SIENA, was presented previously. In this paper, improvements to this method are described, and also an extension of SIENA to a new method for cross-sectional (single time point) analysis. The methods are fully automated, robust, and accurate: 0.15% brain volume change error (longitudinal): 0.5–1% brain volume accuracy for single-time point (cross-sectional). A particular advantage is the relative insensitivity to differences in scanning parameters. The methods provide easy manual review of their output by the automatic production of summary images which show the results of the brain extraction, registration, tissue segmentation, and final atrophy estimation." []
 is_a: MRIO:0000524 ! whole brain volumetric analysis
 relationship: OBI:0000293 MRIO:0000366 ! T1 weighted image data set
-relationship: OBI:0000299 MRIO:0000526 ! segmented region mask
+relationship: OBI:0000299 MRIO:0000623 ! image data set
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0002-2104-0568 \"Lucas M. Serra\"" xsd:string
 property_value: IAO:0000119 https://doi.org/10.1006/nimg.2002.1040 xsd:string
@@ -726,6 +731,7 @@ is_obsolete: true
 [Term]
 id: MRIO:0000528
 name: DeepGRAI analysis of the dorsal plus ventral thalamus
+def: "A DeepGRAI analysis that estimates the volume of both the dorsal and ventral thalamus within some brain." []
 is_a: MRIO:0000509 ! DeepGRAI analysis
 relationship: OBI:0000299 MRIO:0000641 ! dorsal plus ventral thalamus volume measurement datum
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
@@ -734,6 +740,7 @@ property_value: IAO:0000117 "https://orcid.org/0000-0002-2104-0568 \"Lucas M. Se
 [Term]
 id: MRIO:0000529
 name: DeepGRAI analysis of the left dorsal thalamus
+def: "A DeepGRAI analysis that estimates the volume of the left dorsal thalamus within some brain." []
 is_a: MRIO:0000645 ! DeepGRAI analysis of the dorsal thalamus
 relationship: OBI:0000299 MRIO:0000642 ! left dorsal thalamic volume measurement datum
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
@@ -855,49 +862,49 @@ property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D
 [Term]
 id: MRIO:0000615
 name: binarization
-is_a: MRIO:0000604 ! MR image transformation
+is_a: ObsoleteClass
 is_obsolete: true
 
 [Term]
 id: MRIO:0000616
 name: inversion
-is_a: MRIO:0000604 ! MR image transformation
+is_a: ObsoleteClass
 is_obsolete: true
 
 [Term]
 id: MRIO:0000617
 name: MR image registration
-is_a: MRIO:0000604 ! MR image transformation
+is_a: ObsoleteClass
 is_obsolete: true
 
 [Term]
 id: MRIO:0000618
 name: antsRegistration
-is_a: MRIO:0000617 ! MR image registration
+is_a: ObsoleteClass
 is_obsolete: true
 
 [Term]
 id: MRIO:0000619
 name: antsApplyTransforms
-is_a: MRIO:0000617 ! MR image registration
+is_a: ObsoleteClass
 is_obsolete: true
 
 [Term]
 id: MRIO:0000620
 name: MR image artifact correction
-is_a: MRIO:0000604 ! MR image transformation
+is_a: ObsoleteClass
 is_obsolete: true
 
 [Term]
 id: MRIO:0000621
 name: MR image bias field correction
-is_a: MRIO:0000620 ! MR image artifact correction
+is_a: ObsoleteClass
 is_obsolete: true
 
 [Term]
 id: MRIO:0000622
 name: N4 bias field correction
-is_a: MRIO:0000621 ! MR image bias field correction
+is_a: ObsoleteClass
 is_obsolete: true
 
 [Term]
@@ -976,7 +983,7 @@ property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D
 [Term]
 id: MRIO:0000629
 name: GRE echo planar sequence
-def: "Multiple echoes of different phase steps are acquired by rapidly reversing the readout or frequency- encoding gradient." []
+def: "Multiple echoes of different phase steps are acquired by rapidly reversing the readout or frequency- encoding gradient using a gradient echo sequence." []
 property_value: http://purl.org/dc/elements/1.1/source https://radiopaedia.org/articles/echo-planar-imaging-1?lang=us xsd:string
 property_value: IAO:0000116 "Can we add that this may optionally be about some spin echo sequence, but not necessary for an instance of this class?" xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
@@ -1018,7 +1025,7 @@ property_value: IAO:0000117 "https://orcid.org/0000-0001-9990-8331 \"Alexander D
 [Term]
 id: MRIO:0000636
 name: perfusion weighted image data set
-def: "A type of MR image data set meant to capture volume and flow of blood in the brain." []
+def: "An MR image data set that captures volume and flow of blood in the brain." []
 is_a: MRIO:0000341 ! reconstructed MR image data set
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9990-8331 \"Alexander D. Diehl\"" xsd:string
@@ -1044,6 +1051,7 @@ property_value: IAO:0000117 "https://orcid.org/0000-0002-9821-4132 \"Mackenzie T
 [Term]
 id: MRIO:0000641
 name: dorsal plus ventral thalamus volume measurement datum
+def: "A measurement datum that is the result of volume measurement of  the dorsal and ventral thalamus within some brain." []
 is_a: MRIO:0000501 ! thalamic volume measurement datum
 relationship: IAO:0000136 UBERON:0001897
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
@@ -1051,6 +1059,7 @@ property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D
 [Term]
 id: MRIO:0000642
 name: left dorsal thalamic volume measurement datum
+def: "A measurement datum that is the result of volume measurement of  the left dorsal thalamus within some brain." []
 is_a: MRIO:0000644 ! dorsal thalamic volume measurement datum
 relationship: BFO:0000050 MRIO:0000641 ! dorsal plus ventral thalamus volume measurement datum
 relationship: IAO:0000136 UBERON:0013683
@@ -1059,6 +1068,7 @@ property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D
 [Term]
 id: MRIO:0000643
 name: right dorsal thalamic volume measurement datum
+def: "A measurement datum that is the result of volume measurement of  the right dorsal thalamus within some brain." []
 is_a: MRIO:0000644 ! dorsal thalamic volume measurement datum
 relationship: IAO:0000136 UBERON:0013684
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
@@ -1066,12 +1076,14 @@ property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D
 [Term]
 id: MRIO:0000644
 name: dorsal thalamic volume measurement datum
+def: "A measurement datum that is the result of volume measurement of  the dorsal thalamus within some brain." []
 is_a: MRIO:0000501 ! thalamic volume measurement datum
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
 
 [Term]
 id: MRIO:0000645
 name: DeepGRAI analysis of the dorsal thalamus
+def: "A DeepGRAI analysis that estimates the volume of both the left and right dorsal thalamus within some brain." []
 is_a: MRIO:0000509 ! DeepGRAI analysis
 relationship: OBI:0000299 MRIO:0000644 ! dorsal thalamic volume measurement datum
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
@@ -1079,6 +1091,7 @@ property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D
 [Term]
 id: MRIO:0000646
 name: DeepGRAI analysis of the right dorsal thalamus
+def: "A DeepGRAI analysis that estimates the volume of the right dorsal thalamus within some brain." []
 is_a: MRIO:0000645 ! DeepGRAI analysis of the dorsal thalamus
 relationship: OBI:0000299 MRIO:0000643 ! right dorsal thalamic volume measurement datum
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
@@ -1144,6 +1157,7 @@ relationship: IAO:0000136 UBERON:0008884
 relationship: IAO:0000136 UBERON:0008885
 relationship: IAO:0000136 UBERON:0009897
 relationship: IAO:0000136 UBERON:0009898
+relationship: IAO:0000136 UBERON:0010225
 relationship: IAO:0000136 UBERON:0013683
 relationship: IAO:0000136 UBERON:0013684
 relationship: IAO:0000136 UBERON:0022352
@@ -1163,6 +1177,7 @@ property_value: source http://dx.doi.org/10.1016/j.neuroimage.2006.01.021 xsd:st
 [Term]
 id: MRIO:0000650
 name: deterministic brain region atlas image data set
+def: "A brain atlas consisting of discrete integer values where a value X denotes a voxel is part of some brain component Y." []
 is_a: MRIO:0000647 ! brain region atlas image data set
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9990-8331 \"Alexander D. Diehl\"" xsd:string
@@ -1257,7 +1272,7 @@ property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D
 [Term]
 id: MRIO:0000661
 name: GRE inversion recovery sequence
-def: "An inversion recovery (IR) pulse sequence is a spin echo or gradient echo pulse sequence preceded by a 180° RF pulse." []
+def: "A gradient echo pulse sequence preceded by a 180° RF pulse." []
 property_value: http://purl.org/dc/elements/1.1/source https://radiopaedia.org/articles/inversion-recovery-sequences?lang=us xsd:string
 property_value: IAO:0000116 "TODO: Create specific subclass of this and echo panar sequence for both GRE and SE." xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
@@ -1275,7 +1290,7 @@ id: MRIO:0000663
 name: SIENA analysis
 def: "Siena estimates percentage brain volume change (PBVC) betweem two input images, taken of the same subject, at different points in time. It calls a series of FSL programs to strip the non-brain tissue from the two images, register the two brains (under the constraint that the skulls are used to hold the scaling constant during the registration) and analyse the brain change between the two time points. It is also possible to project the voxelwise atrophy measures into standard space in a way that allows for multi-subject voxelwise statistical testing." []
 is_a: MRIO:0000524 ! whole brain volumetric analysis
-relationship: OBI:0000299 MRIO:0000526 ! segmented region mask
+relationship: OBI:0000299 MRIO:0000601 ! image segmentation map
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
 property_value: IAO:0000119 "Smith, Stephen M.; De Stefano, Nicola; Jenkinson, Mark; Matthews, Paul M. Normalized Accurate Measurement of Longitudinal Brain Change, Journal of Computer Assisted Tomography: May 2001 - Volume 25 - Issue 3 - p 466-475" xsd:string
 
@@ -1329,8 +1344,8 @@ property_value: IAO:0000117 "https://orcid.org/0000-0002-2104-0568 \"Lucas M. Se
 id: MRIO:0000669
 name: MRI participant
 def: "The subject being scanned in an MRI study, and bearor of data derived from that study." []
-is_a: BFO:0000040
-relationship: RO:0000053 MRIO:0000400 ! MRI evaluant role
+intersection_of: BFO:0000040
+intersection_of: RO:0000053 MRIO:0000400 ! MRI evaluant role
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9625-1899 \"William D. Duncan\"" xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9990-8331 \"Alexander D. Diehl\"" xsd:string
@@ -1340,8 +1355,9 @@ property_value: IAO:0000117 "https://orcid.org/0000-0002-9821-4132 \"Mackenzie T
 [Term]
 id: MRIO:0000670
 name: thalamic volume measurement z-score
-is_a: MRIO:0000501 ! thalamic volume measurement datum
+is_a: ObsoleteClass
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
+is_obsolete: true
 
 [Term]
 id: MRIO:0000671
@@ -1375,6 +1391,7 @@ id: MRIO:0000674
 name: Desikan-Killiany functional connectome analysis
 def: "Measures the functional connectivity between cortical and subcortical regions defined in the Desikan-Killiany brain atlas." []
 is_a: MRIO:0000675 ! regional functional connectome analysis
+relationship: OBI:0000293 MRIO:0000368 ! functional MR image data set
 relationship: OBI:0000299 MRIO:0000626 ! Desikan-Killiany functional connectivity matrix
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
 
@@ -1456,9 +1473,14 @@ property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D
 [Term]
 id: MRIO:0000683
 name: imaging contrast reagent
-comment: A chemical reagent containing gadolinium injecting into an MRI participant to increase the visible contrast of some MR image data set.
+def: "A chemical reagent containing gadolinium injected into an MRI participant to increase the visible contrast of some MR image data set." []
 is_a: OBI:0001879
 relationship: RO:0002180 CHEBI:33375
+property_value: IAO:0000117 "https://orcid.org/0000-0001-9625-1899 \"William D. Duncan\"" xsd:string
+property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
+property_value: IAO:0000117 "https://orcid.org/0000-0001-9990-8331 \"Alexander D. Diehl\"" xsd:string
+property_value: IAO:0000117 "https://orcid.org/0000-0002-7245-3450 \"Lauren M. Wishnie\"" xsd:string
+property_value: IAO:0000117 "https://orcid.org/0000-0002-9821-4132 \"Mackenzie T. Smith\"" xsd:string
 
 [Term]
 id: MRIO:0000686
@@ -1481,6 +1503,7 @@ is_a: MRIO:0000342 ! MRI machine parameter
 [Term]
 id: MRIO:0000689
 name: lateral ventricular volume measurement datum
+def: "A measurement datum that is the result of volume measurement of  the lateral ventricles within some brain." []
 is_a: MRIO:0000668 ! CSF volume measurement datum
 relationship: IAO:0000136 UBERON:0002285
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
@@ -1509,18 +1532,20 @@ property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D
 [Term]
 id: MRIO:0000693
 name: T2 STIR image data set
-def: "T2 weighted MR image data set collected using a STIR sequence to suppress the signal coming from fat." []
+def: "A T2 weighted MR image data set collected using a STIR sequence to suppress the signal coming from fat." []
 is_a: MRIO:0000367 ! T2 weighted image data set
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9990-8331 \"Alexander D. Diehl\"" xsd:string
 
 [Term]
 id: MRIO:0000694
-name: medulla volume measurement datum
+name: medulla oblongata volume measurement datum
+def: "A measurement datum that is the result of volume measurement of the medulla oblongata within some brain." []
 is_a: MRIO:0000667 ! brain volume measurement datum
 relationship: IAO:0000136 UBERON:0001896
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
 property_value: IAO:0000118 "brainstem volume measurement datum" xsd:string
+property_value: IAO:0000118 "medulla volume measurement datum" xsd:string
 
 [Term]
 id: MRIO:0000695
@@ -1734,21 +1759,16 @@ property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D
 property_value: IAO:0000117 "https://orcid.org/0000-0002-9821-4132 \"Mackenzie T. Smith\"" xsd:string
 
 [Term]
-id: MRIO:0000710
-name: temp
-
-[Term]
 id: MRIO:0000711
 name: SE echo planar sequence
-def: "Multiple echoes of different phase steps are acquired by rapidly reversing the readout or frequency- encoding gradient." []
+def: "Multiple echoes of different phase steps are acquired by rapidly reversing the readout or frequency- encoding gradient using a spin echo sequence." []
 property_value: http://purl.org/dc/elements/1.1/source https://radiopaedia.org/articles/echo-planar-imaging-1?lang=us xsd:string
-property_value: IAO:0000116 "Can we add that this may optionally be about some spin echo sequence, but not necessary for an instance of this class?" xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
 
 [Term]
 id: MRIO:0000712
 name: SE inversion recovery sequence
-def: "An inversion recovery (IR) pulse sequence is a spin echo or gradient echo pulse sequence preceded by a 180° RF pulse." []
+def: "A spin echo pulse sequence preceded by a 180° RF pulse." []
 property_value: http://purl.org/dc/elements/1.1/source https://radiopaedia.org/articles/inversion-recovery-sequences?lang=us xsd:string
 property_value: IAO:0000116 "TODO: Create specific subclass of this and echo panar sequence for both GRE and SE." xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
@@ -1765,6 +1785,7 @@ property_value: IAO:0000118 "image derivation from image data set" xsd:string
 [Term]
 id: MRIO:0000714
 name: percent change in brain volume measurement datum
+def: "A brain volume measurement datum about how much an evaluant's brain morphology has changed between two or more timepoints." []
 is_a: MRIO:0000667 ! brain volume measurement datum
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
 
@@ -1780,7 +1801,8 @@ property_value: IAO:0000117 "https://orcid.org/0000-0001-9990-8331 \"Alexander D
 id: MRIO:0000716
 name: computed image data set
 def: "An image data set that is the output of an image data set analysis." []
-is_a: MRIO:0000623 ! image data set
+intersection_of: MRIO:0000623 ! image data set
+intersection_of: OBI:0000312 MRIO:0000507 ! image data set analysis
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9625-1899 \"William D. Duncan\"" xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9990-8331 \"Alexander D. Diehl\"" xsd:string
@@ -1834,6 +1856,63 @@ property_value: IAO:0000117 "https://orcid.org/0000-0002-7245-3450 \"Lauren M. W
 property_value: IAO:0000117 "https://orcid.org/0000-0002-9821-4132 \"Mackenzie T. Smith\"" xsd:string
 
 [Term]
+id: MRIO:0000721
+name: area measurement datum
+def: "A scalar measurement datum that is the result of measurement of area." []
+is_a: IAO:0000032
+
+[Term]
+id: MRIO:0000722
+name: salient central lesion volume measurement datum
+def: "A Lesion volume measurement datum comprised of the subset of lesion voxels within a specific distance to the lateral ventricles (centrality) and with intensity at least a quantitatively-derived amount brighter than normal appearing tissue (salience)." []
+is_a: MRIO:0000695 ! lesion volume measurement datum
+property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
+property_value: source https://doi.org/10.1111/jon.12650 xsd:string
+
+[Term]
+id: MRIO:0000723
+name: diffusion weighted image data set analysis
+def: "An MR image data set analysis that evaluates the white matter tracts in an evaluant using water diffusivity." []
+is_a: MRIO:0000508 ! MR image data set analysis
+relationship: OBI:0000293 MRIO:0000635 ! diffusion weighted image data set
+property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
+
+[Term]
+id: MRIO:0000725
+name: salient central lesion volume analysis
+def: "A volumetric MR imaging analysis that estimates salient central lesion volume from T2 FLAIR image datasets of an entire human brain." []
+is_a: MRIO:0000523 ! brain volumetric analysis
+relationship: OBI:0000293 MRIO:0000511 ! T2 FLAIR image data set
+relationship: OBI:0000299 MRIO:0000722 ! salient central lesion volume measurement datum
+property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
+
+[Term]
+id: MRIO:0000726
+name: medulla oblongata volume analysis
+def: "A volumetric MR imaging analysis that estimates medulla oblongata volume MR image datasets of an entire human brain." []
+is_a: MRIO:0000523 ! brain volumetric analysis
+relationship: OBI:0000293 MRIO:0000720 ! MR image data set
+relationship: OBI:0000299 MRIO:0000694 ! medulla oblongata volume measurement datum
+property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
+
+[Term]
+id: MRIO:0000727
+name: T2 FLAIR medulla oblongata volume analysis
+def: "A volumetric MR imaging analysis that estimates medulla oblongata volume T2 FLAIR image datasets of an entire human brain." []
+intersection_of: MRIO:0000726 ! medulla oblongata volume analysis
+intersection_of: OBI:0000293 MRIO:0000511 ! T2 FLAIR image data set
+property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
+
+[Term]
+id: MRIO:0000728
+name: five FLAIR measures analysis
+def: "A set of five MR image data set analyses using only T2 FLAIR image data sets that can substitute for standard research-quality MR image data set analyses in multiple sclerosis. The Five FLAIR Measures consist of lateral ventricle volume, thalamic volume, salient central lesion volume, and network efficiency." []
+is_a: MRIO:0000508 ! MR image data set analysis
+relationship: OBI:0000293 MRIO:0000511 ! T2 FLAIR image data set
+property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
+property_value: IAO:0000119 https://doi.org/10.1016/j.nicl.2021.102705 xsd:string
+
+[Term]
 id: UBERON:0001873
 property_value: IAO:0000118 "'Left-Caudate' and 'Right-Caudate' (from Desikan-Killiany atlas)" xsd:string
 
@@ -1852,6 +1931,7 @@ property_value: IAO:0000118 "'Left-VentralDC' and 'Right-VentralDC' (from Desika
 [Term]
 id: UBERON:0002022
 property_value: IAO:0000118 "'lh-insula' and 'rh-insula' (from Desikan-Killiany atlas)" xsd:string
+property_value: IAO:0000118 "wm-lh-insula" xsd:string
 
 [Term]
 id: UBERON:0002129
