@@ -54,5 +54,15 @@
 --term http://purl.obolibrary.org/obo/UBERON_0009897 \
 --term http://purl.obolibrary.org/obo/UBERON_0002285 \
 --term http://purl.obolibrary.org/obo/UBERON_0001896 \
+--term http://purl.obolibrary.org/obo/UBERON_0003544 \
+--term http://purl.obolibrary.org/obo/UBERON_0003528 \
+--term http://purl.obolibrary.org/obo/CARO_0000000 \
 --select "annotations self" \
 --output uberon_filtered.owl
+
+docker run \
+    -v $PWD/../../:/work \
+    -w /work/src/ontology \
+    --rm -ti \
+    obolibrary/odkfull \
+        bash -c "cp uberon_filtered.owl imports/uberon_import.owl"
