@@ -8,7 +8,6 @@
 <http://purl.obolibrary.org/obo/MRIO_0000715>	<http://www.w3.org/2000/01/rdf-schema#label>	"T1 lesion mask"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000621>	<http://www.w3.org/2000/01/rdf-schema#label>	"MR image bias field correction"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000353>	<http://www.w3.org/2000/01/rdf-schema#label>	"QSM image data set"@en	
-<http://purl.obolibrary.org/obo/MRIO_0000710>	<http://www.w3.org/2000/01/rdf-schema#label>	"temp"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000645>	<http://www.w3.org/2000/01/rdf-schema#label>	"DeepGRAI analysis of the dorsal thalamus"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000500>	<http://www.w3.org/2000/01/rdf-schema#label>	"volume measurement datum"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000672>	<http://www.w3.org/2000/01/rdf-schema#label>	"V3 functional connectivity matrix"@en	
@@ -27,8 +26,8 @@
 <http://purl.obolibrary.org/obo/MRIO_0000620>	<http://www.w3.org/2000/01/rdf-schema#label>	"MR image artifact correction"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000615>	<http://www.w3.org/2000/01/rdf-schema#label>	"binarization"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000352>	<http://www.w3.org/2000/01/rdf-schema#label>	"T2 SE image data set"@en	
-<http://purl.obolibrary.org/obo/MRIO_0000364>	<http://www.w3.org/2000/01/rdf-schema#label>	"acquisition matrix"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000706>	<http://www.w3.org/2000/01/rdf-schema#label>	"network assortativity datum"@en	
+<http://purl.obolibrary.org/obo/MRIO_0000364>	<http://www.w3.org/2000/01/rdf-schema#label>	"acquisition matrix"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000671>	<http://www.w3.org/2000/01/rdf-schema#label>	"FreeSurfer segmentation map"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000511>	<http://www.w3.org/2000/01/rdf-schema#label>	"T2 FLAIR image data set"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000609>	<http://www.w3.org/2000/01/rdf-schema#label>	"ChaCo data set"@en	
@@ -41,6 +40,7 @@
 <http://purl.obolibrary.org/obo/MRIO_0000603>	<http://www.w3.org/2000/01/rdf-schema#label>	"T2 lesion mask"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000664>	<http://www.w3.org/2000/01/rdf-schema#label>	"whole brain volume measurement datum"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000659>	<http://www.w3.org/2000/01/rdf-schema#label>	"spin echo sequence"@en	
+<http://purl.obolibrary.org/obo/OBI_0>	<http://www.w3.org/2000/01/rdf-schema#label>	"diffusion weighted image data set analysis"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000616>	<http://www.w3.org/2000/01/rdf-schema#label>	"inversion"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000626>	<http://www.w3.org/2000/01/rdf-schema#label>	"Desikan-Killiany functional connectivity matrix"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000395>	<http://www.w3.org/2000/01/rdf-schema#label>	"3T MRI machine"@en	
@@ -50,7 +50,7 @@
 <http://purl.obolibrary.org/obo/MRIO_0000717>	<http://www.w3.org/2000/01/rdf-schema#label>	"raw image data set"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000390>	<http://www.w3.org/2000/01/rdf-schema#label>	"T2* GRE sequence"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000510>	<http://www.w3.org/2000/01/rdf-schema#label>	"functional connectome analysis"@en	
-<http://purl.obolibrary.org/obo/MRIO_0000505>	<http://www.w3.org/2000/01/rdf-schema#label>	"follow-up hi-res T1 image data set"@en	
+<http://purl.obolibrary.org/obo/MRIO_0000505>	<http://www.w3.org/2000/01/rdf-schema#label>	"follow-up high resolution T1 image data set"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000682>	<http://www.w3.org/2000/01/rdf-schema#label>	"T1 SE sequence"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000635>	<http://www.w3.org/2000/01/rdf-schema#label>	"diffusion weighted image data set"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000693>	<http://www.w3.org/2000/01/rdf-schema#label>	"T2 STIR image data set"@en	
@@ -111,6 +111,7 @@
 <http://purl.obolibrary.org/obo/MRIO_0000605>	<http://www.w3.org/2000/01/rdf-schema#label>	"T2 FLAIR lesion mask"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000690>	<http://www.w3.org/2000/01/rdf-schema#label>	"diffusion gradient"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000600>	<http://www.w3.org/2000/01/rdf-schema#label>	"lesion mask"@en	
+<http://purl.obolibrary.org/obo/MRIO_0000721>	<http://www.w3.org/2000/01/rdf-schema#label>	"area measurement datum"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000628>	<http://www.w3.org/2000/01/rdf-schema#label>	"gradient echo sequence"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000660>	<http://www.w3.org/2000/01/rdf-schema#label>	"FreeSurfer cross-sectional analysis"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000655>	<http://www.w3.org/2000/01/rdf-schema#label>	"diffusion b value"@en	
@@ -121,7 +122,7 @@
 <http://purl.obolibrary.org/obo/MRIO_0000679>	<http://www.w3.org/2000/01/rdf-schema#label>	"T1 MPRAGE image data set"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000519>	<http://www.w3.org/2000/01/rdf-schema#label>	"NeMo analysis"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000649>	<http://www.w3.org/2000/01/rdf-schema#label>	"Desikan-Killiany brain atlas image data set"@en	
-<http://purl.obolibrary.org/obo/MRIO_0000504>	<http://www.w3.org/2000/01/rdf-schema#label>	"baseline hi-res T1 image"@en	
+<http://purl.obolibrary.org/obo/MRIO_0000504>	<http://www.w3.org/2000/01/rdf-schema#label>	"baseline high resolution T1 image"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000701>	<http://www.w3.org/2000/01/rdf-schema#label>	"sensorimotor resting state network atlas"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000676>	<http://www.w3.org/2000/01/rdf-schema#label>	"FAST analysis"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000713>	<http://www.w3.org/2000/01/rdf-schema#label>	"image data set visualization"@en	
@@ -140,9 +141,9 @@
 <http://purl.obolibrary.org/obo/MRIO_0000651>	<http://www.w3.org/2000/01/rdf-schema#label>	"c-pac"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000424>	<http://www.w3.org/2000/01/rdf-schema#label>	"T2 FSE image data set"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000503>	<http://www.w3.org/2000/01/rdf-schema#label>	"3D GRE image data set"@en	
-<http://purl.obolibrary.org/obo/MRIO_0000712>	<http://www.w3.org/2000/01/rdf-schema#label>	"SE inversion recovery sequence"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000675>	<http://www.w3.org/2000/01/rdf-schema#label>	"regional functional connectome analysis"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000515>	<http://www.w3.org/2000/01/rdf-schema#label>	"FreeSurfer analysis"@en	
+<http://purl.obolibrary.org/obo/MRIO_0000712>	<http://www.w3.org/2000/01/rdf-schema#label>	"SE inversion recovery sequence"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000707>	<http://www.w3.org/2000/01/rdf-schema#label>	"network efficiency datum"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000687>	<http://www.w3.org/2000/01/rdf-schema#label>	"number of temporal positions"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000350>	<http://www.w3.org/2000/01/rdf-schema#label>	"diffusion weighted image data set suitable for DTI"@en	

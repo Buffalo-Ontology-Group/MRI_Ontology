@@ -1,0 +1,6 @@
+http://purl.obolibrary.org/obo/MONDO_0005301 # MS
+http://purl.obolibrary.org/obo/MONDO_0005314 # RRMS
+http://purl.obolibrary.org/obo/MONDO_0000451 # PPMS
+http://purl.obolibrary.org/obo/MONDO_0000450 # SPMS
+http://purl.obolibrary.org/obo/MONDO_0004975 # AD
+http://purl.obolibrary.org/obo/MONDO_0005180 # PD

@@ -72,13 +72,12 @@ WARN	missing_definition	right dorsal thalamic volume measurement datum	textual d
 WARN	missing_definition	dorsal thalamic volume measurement datum	textual definition	
 WARN	missing_definition	DeepGRAI analysis of the dorsal thalamus	textual definition	
 WARN	missing_definition	DeepGRAI analysis of the right dorsal thalamus	textual definition	
-WARN	missing_definition	deterministic brain region atlas image data set	textual definition	
 WARN	missing_definition	thalamic volume measurement z-score	textual definition	
 WARN	missing_definition	imaging contrast reagent	textual definition	
 WARN	missing_definition	lateral ventricular volume measurement datum	textual definition	
 WARN	missing_definition	medulla volume measurement datum	textual definition	
-WARN	missing_definition	temp	textual definition	
 WARN	missing_definition	percent change in brain volume measurement datum	textual definition	
+WARN	missing_definition	diffusion weighted image data set analysis	textual definition	
 WARN	missing_definition	caudate nucleus	textual definition	
 WARN	missing_definition	amygdala	textual definition	
 WARN	missing_definition	nucleus accumbens	textual definition	
@@ -145,9 +144,10 @@ WARN	missing_obsolete_label	MR image bias field correction	rdfs:label	MR image b
 WARN	missing_obsolete_label	N4 bias field correction	rdfs:label	N4 bias field correction@en
 WARN	missing_obsolete_label	MRI acquisition sequence process	rdfs:label	MRI acquisition sequence process@en
 INFO	missing_superclass	reconstructed MR image data set	rdfs:subClassOf	
+INFO	missing_superclass	MRI participant	rdfs:subClassOf	
 INFO	missing_superclass	FreeSurfer segmentation map	rdfs:subClassOf	
-INFO	missing_superclass	temp	rdfs:subClassOf	
 INFO	missing_superclass	image data set visualization	rdfs:subClassOf	
+INFO	missing_superclass	computed image data set	rdfs:subClassOf	
 INFO	missing_superclass	raw MR image data set	rdfs:subClassOf	
 INFO	missing_superclass	raw MR image data set reconstruction	rdfs:subClassOf	
 INFO	missing_superclass	MR image data set	rdfs:subClassOf	

@@ -1,5 +1,9 @@
 ?prefix	?numberOfClasses
+"OBI"	10
+"IAO"	5
 "CARO"	1
 "CCL"	1
 "MRIO"	191
-"UBERON"	49
+"UBERON"	51
+"CHEBI"	1
+""	1

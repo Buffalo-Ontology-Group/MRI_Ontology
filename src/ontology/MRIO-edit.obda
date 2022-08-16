@@ -39,39 +39,39 @@ target		:crania/sienax/whitemattervolume/{id} a :MRIO_0000666 ; :IAO_0000136 :UB
 source		SELECT id,whitemattervolume_normalizedwhitemattervolume FROM crania_sienax ;
 
 mappingId	csfvolume
-target		:crania/sienax/cerebrospinalfluidvolume/{id} a :MRIO_0000668 ; :IAO_0000136 :UBERON_00001359 ; :IAO_0000004 {cerebrospinalfluidvolume_normalizedcerebrospinalfluidvolume}^^xsd:double . 
+target		:crania/sienax/cerebrospinalfluidvolume/{id} a :MRIO_0000668 ; :IAO_0000136 :UBERON_0001359 ; :IAO_0000004 {cerebrospinalfluidvolume_normalizedcerebrospinalfluidvolume}^^xsd:double . 
 source		SELECT id,cerebrospinalfluidvolume_normalizedcerebrospinalfluidvolume FROM crania_sienax ;
 
 mappingId	Pearson DMN Graph Theory Measures
-target		:crania/pearson/assortativity/{id} a :MRIO_0000706 ; :IAO_0000136 :MRIO_0000625 ; :IAO_0000004 {assortativity_dmn}^^xsd:double . :crania/pearson/efficiency/{id} a :MRIO_0000707 ; :IAO_0000136 :MRIO_0000625 ; :IAO_0000004 {efficiency_dmn}^^xsd:double . :crania/pearson/transitivity/{id} a :MRIO_0000708 ; :IAO_0000136 :MRIO_0000625 ; :IAO_0000004 {transitivity_dmn}^^xsd:double . 
+target		:crania/pearson/assortativity_dmn/{id} a :MRIO_0000706 ; :IAO_0000136 :MRIO_0000625 ; :IAO_0000004 {assortativity_dmn}^^xsd:double . :crania/pearson/efficiency_dmn/{id} a :MRIO_0000707 ; :IAO_0000136 :MRIO_0000625 ; :IAO_0000004 {efficiency_dmn}^^xsd:double . :crania/pearson/transitivity_dmn/{id} a :MRIO_0000708 ; :IAO_0000136 :MRIO_0000625 ; :IAO_0000004 {transitivity_dmn}^^xsd:double . 
 source		SELECT id,assortativity_dmn,efficiency_dmn,transitivity_dmn FROM crania_rsngraphtheorymeasurespearson ;
 
 mappingId	Pearson Auditory Graph Theory Measures
-target		:crania/pearson/assortativity/{id} a :MRIO_0000706 ; :IAO_0000136 :MRIO_0000698 ; :IAO_0000004 {assortativity_auditory}^^xsd:double . :crania/pearson/efficiency/{id} a :MRIO_0000707 ; :IAO_0000136 :MRIO_0000698 ; :IAO_0000004 {efficiency_auditory}^^xsd:double . :crania/pearson/transitivity/{id} a :MRIO_0000708 ; :IAO_0000136 :MRIO_0000698 ; :IAO_0000004 {transitivity_auditory}^^xsd:double . 
+target		:crania/pearson/assortativity_auditory/{id} a :MRIO_0000706 ; :IAO_0000136 :MRIO_0000698 ; :IAO_0000004 {assortativity_auditory}^^xsd:double . :crania/pearson/efficiency_auditory/{id} a :MRIO_0000707 ; :IAO_0000136 :MRIO_0000698 ; :IAO_0000004 {efficiency_auditory}^^xsd:double . :crania/pearson/transitivity_auditory/{id} a :MRIO_0000708 ; :IAO_0000136 :MRIO_0000698 ; :IAO_0000004 {transitivity_auditory}^^xsd:double . 
 source		SELECT id,assortativity_auditory,efficiency_auditory,transitivity_auditory FROM crania_rsngraphtheorymeasurespearson ;
 
 mappingId	Pearson Executive Control Graph Theory Measures
-target		:crania/pearson/assortativity/{id} a :MRIO_0000706 ; :IAO_0000136 :MRIO_0000699 ; :IAO_0000004 {assortativity_executiveControl}^^xsd:double . :crania/pearson/efficiency/{id} a :MRIO_0000707 ; :IAO_0000136 :MRIO_0000699 ; :IAO_0000004 {efficiency_executiveControl}^^xsd:double . :crania/pearson/transitivity/{id} a :MRIO_0000708 ; :IAO_0000136 :MRIO_0000699 ; :IAO_0000004 {transitivity_executiveControl}^^xsd:double . 
+target		:crania/pearson/assortativity_executiveControl/{id} a :MRIO_0000706 ; :IAO_0000136 :MRIO_0000699 ; :IAO_0000004 {assortativity_executiveControl}^^xsd:double . :crania/pearson/efficiency_executiveControl/{id} a :MRIO_0000707 ; :IAO_0000136 :MRIO_0000699 ; :IAO_0000004 {efficiency_executiveControl}^^xsd:double . :crania/pearson/transitivity_executiveControl/{id} a :MRIO_0000708 ; :IAO_0000136 :MRIO_0000699 ; :IAO_0000004 {transitivity_executiveControl}^^xsd:double . 
 source		SELECT id,assortativity_executiveControl,efficiency_executiveControl,transitivity_executiveControl FROM crania_rsngraphtheorymeasurespearson ;
 
 mappingId	Pearson Sensorimotor Graph Theory Measures
-target		:crania/pearson/assortativity/{id} a :MRIO_0000706 ; :IAO_0000136 :MRIO_0000701 ; :IAO_0000004 {assortativity_sensorimotor}^^xsd:double . :crania/pearson/efficiency/{id} a :MRIO_0000707 ; :IAO_0000136 :MRIO_0000710 ; :IAO_0000004 {efficiency_sensorimotor}^^xsd:double . :crania/pearson/transitivity/{id} a :MRIO_0000708 ; :IAO_0000136 :MRIO_0000701 ; :IAO_0000004 {transitivity_sensorimotor}^^xsd:double . 
+target		:crania/pearson/assortativity_sensorimotor/{id} a :MRIO_0000706 ; :IAO_0000136 :MRIO_0000701 ; :IAO_0000004 {assortativity_sensorimotor}^^xsd:double . :crania/pearson/efficiency_sensorimotor/{id} a :MRIO_0000707 ; :IAO_0000136 :MRIO_0000710 ; :IAO_0000004 {efficiency_sensorimotor}^^xsd:double . :crania/pearson/transitivity_sensorimotor/{id} a :MRIO_0000708 ; :IAO_0000136 :MRIO_0000701 ; :IAO_0000004 {transitivity_sensorimotor}^^xsd:double . 
 source		SELECT id,assortativity_sensorimotor,efficiency_sensorimotor,transitivity_sensorimotor FROM crania_rsngraphtheorymeasurespearson ;
 
 mappingId	Pearson V1 Graph Theory Measures
-target		:crania/pearson/assortativity/{id} a :MRIO_0000706 ; :IAO_0000136 :MRIO_0000702 ; :IAO_0000004 {assortativity_V1}^^xsd:double . :crania/pearson/efficiency/{id} a :MRIO_0000707 ; :IAO_0000136 :MRIO_0000702 ; :IAO_0000004 {efficiency_V1}^^xsd:double . :crania/pearson/transitivity/{id} a :MRIO_0000708 ; :IAO_0000136 :MRIO_0000702 ; :IAO_0000004 {transitivity_V1}^^xsd:double . 
+target		:crania/pearson/assortativity_V1/{id} a :MRIO_0000706 ; :IAO_0000136 :MRIO_0000702 ; :IAO_0000004 {assortativity_V1}^^xsd:double . :crania/pearson/efficiency_V1/{id} a :MRIO_0000707 ; :IAO_0000136 :MRIO_0000702 ; :IAO_0000004 {efficiency_V1}^^xsd:double . :crania/pearson/transitivity_V1/{id} a :MRIO_0000708 ; :IAO_0000136 :MRIO_0000702 ; :IAO_0000004 {transitivity_V1}^^xsd:double . 
 source		SELECT id,assortativity_V1,efficiency_V1,transitivity_V1 FROM crania_rsngraphtheorymeasurespearson ;
 
 mappingId	Pearson V2 Graph Theory Measures
-target		:crania/pearson/assortativity/{id} a :MRIO_0000706 ; :IAO_0000136 :MRIO_0000703 ; :IAO_0000004 {assortativity_V2}^^xsd:double . :crania/pearson/efficiency/{id} a :MRIO_0000707 ; :IAO_0000136 :MRIO_0000703 ; :IAO_0000004 {efficiency_V2}^^xsd:double . :crania/pearson/transitivity/{id} a :MRIO_0000708 ; :IAO_0000136 :MRIO_0000703 ; :IAO_0000004 {transitivity_V2}^^xsd:double . 
+target		:crania/pearson/assortativity_V2/{id} a :MRIO_0000706 ; :IAO_0000136 :MRIO_0000703 ; :IAO_0000004 {assortativity_V2}^^xsd:double . :crania/pearson/efficiency_V2/{id} a :MRIO_0000707 ; :IAO_0000136 :MRIO_0000703 ; :IAO_0000004 {efficiency_V2}^^xsd:double . :crania/pearson/transitivity_V2/{id} a :MRIO_0000708 ; :IAO_0000136 :MRIO_0000703 ; :IAO_0000004 {transitivity_V2}^^xsd:double . 
 source		SELECT id,assortativity_V2,efficiency_V2,transitivity_V2 FROM crania_rsngraphtheorymeasurespearson ;
 
 mappingId	Pearson V3 Graph Theory Measures
-target		:crania/pearson/assortativity/{id} a :MRIO_0000706 ; :IAO_0000136 :MRIO_0000704 ; :IAO_0000004 {assortativity_V3}^^xsd:double . :crania/pearson/efficiency/{id} a :MRIO_0000707 ; :IAO_0000136 :MRIO_0000704 ; :IAO_0000004 {efficiency_V3}^^xsd:double . :crania/pearson/transitivity/{id} a :MRIO_0000708 ; :IAO_0000136 :MRIO_0000704 ; :IAO_0000004 {transitivity_V3}^^xsd:double . 
+target		:crania/pearson/assortativity_V3/{id} a :MRIO_0000706 ; :IAO_0000136 :MRIO_0000704 ; :IAO_0000004 {assortativity_V3}^^xsd:double . :crania/pearson/efficiency_V3/{id} a :MRIO_0000707 ; :IAO_0000136 :MRIO_0000704 ; :IAO_0000004 {efficiency_V3}^^xsd:double . :crania/pearson/transitivity_V3/{id} a :MRIO_0000708 ; :IAO_0000136 :MRIO_0000704 ; :IAO_0000004 {transitivity_V3}^^xsd:double . 
 source		SELECT id,assortativity_V3,efficiency_V3,transitivity_V3 FROM crania_rsngraphtheorymeasurespearson ;
 
 mappingId	Pearson Frontoparietal Graph Theory Measures
-target		:crania/pearson/assortativity/{id} a :MRIO_0000706 ; :IAO_0000136 :MRIO_0000700 ; :IAO_0000004 {assortativity_frontoparietalleft}^^xsd:double , {assortativity_frontoparietalright}^^xsd:double . :crania/pearson/efficiency/{id} a :MRIO_0000707 ; :IAO_0000136 :MRIO_0000700 ; :IAO_0000004 {efficiency_frontoparietalleft}^^xsd:double , {efficiency_frontoparietalright}^^xsd:double . :crania/pearson/transitivity/{id} a :MRIO_0000708 ; :IAO_0000136 :MRIO_0000700 ; :IAO_0000004 {transitivity_frontoparietalleft}^^xsd:double , {transitivity_frontoparietalright}^^xsd:double . 
+target		:crania/pearson/assortativity_frontoparietal/{id} a :MRIO_0000706 ; :IAO_0000136 :MRIO_0000700 ; :IAO_0000004 {assortativity_frontoparietalleft}^^xsd:double , {assortativity_frontoparietalright}^^xsd:double . :crania/pearson/efficiency_frontoparietal/{id} a :MRIO_0000707 ; :IAO_0000136 :MRIO_0000700 ; :IAO_0000004 {efficiency_frontoparietalleft}^^xsd:double , {efficiency_frontoparietalright}^^xsd:double . :crania/pearson/transitivity_frontoparietal/{id} a :MRIO_0000708 ; :IAO_0000136 :MRIO_0000700 ; :IAO_0000004 {transitivity_frontoparietalleft}^^xsd:double , {transitivity_frontoparietalright}^^xsd:double . 
 source		SELECT id,assortativity_frontoparietalleft,efficiency_frontoparietalleft,transitivity_frontoparietalleft,assortativity_frontoparietalright,efficiency_frontoparietalright,transitivity_frontoparietalright FROM crania_rsngraphtheorymeasurespearson ;
 
 mappingId	percentbrainvolumechange
@@ -82,12 +82,52 @@ mappingId	atrophiedlesionvolume
 target		:crania/neurostream/atrophiedlesion/{id} a :MRIO_0000696 ; :IAO_0000136 :UBERON_0002285 ; :IAO_0000004 {atrophiedlesionvolume}^^xsd:double . 
 source		SELECT id,atrophiedlesionvolume FROM crania_atrophiedlesionvolume ;
 
-mappingId	lateralventricularvolume
-target		:crania/neurostream/lvv/{id} a :MRIO_0000689 ; :IAO_0000136 :UBERON_0002285 ; :IAO_0000004 {lateralventricularvolume}^^xsd:double . 
-source		SELECT id,lateralventricularvolume FROM crania_atrophiedlesionvolume ;
+mappingId	fsdata icv
+target		:crania/freesurfer/icv/{id} a :MRIO_0000664 ; :IAO_0000136 :UBERON_0000955 ; :IAO_0000004 {measures_volumetric_icv}^^xsd:double . 
+source		SELECT id,measures_volumetric_icv FROM fs_fsdata ;
 
-mappingId	medullavolume
-target		:crania/sienax/medulla/{id} a :MRIO_0000694 ; :IAO_0000136 :UBERON_0001896 ; :IAO_0000004 {medullavolume}^^xsd:double . 
-source		SELECT id,medullavolume FROM crania_sienax ;
+mappingId	fsdata subcortgrayvol
+target		:crania/freesurfer/subcorticalgreymattervolume/{id} a :MRIO_0000665 ; :IAO_0000136 :UBERON_0003528 ; :IAO_0000004 {measures_volumetric_subcortgrayvol}^^xsd:double . 
+source		SELECT id,measures_volumetric_subcortgrayvol FROM fs_fsdata ;
+
+mappingId	fsdata totalgrayvol
+target		:crania/freesurfer/greymattervolume/{id} a :MRIO_0000665 ; :IAO_0000136 :UBERON_0003528 ; :IAO_0000004 {measures_volumetric_totalgrayvol}^^xsd:double . 
+source		SELECT id,measures_volumetric_totalgrayvol FROM fs_fsdata ;
+
+mappingId	fsdata lhcorticalwhitemattervol
+target		:crania/freesurfer/lhwhitemattervolume/{id} a :MRIO_0000666 ; :IAO_0000136 :UBERON_0003544 ; :IAO_0000004 {measures_volumetric_lhcorticalwhitemattervol}^^xsd:double . 
+source		SELECT id,measures_volumetric_lhcorticalwhitemattervol FROM fs_fsdata ;
+
+mappingId	fsdata rhcorticalwhitemattervol
+target		:crania/freesurfer/rhgreymattervolume/{id} a :MRIO_0000666 ; :IAO_0000136 :UBERON_0003544 ; :IAO_0000004 {measures_volumetric_rhcorticalwhitemattervol}^^xsd:double . 
+source		SELECT id,measures_volumetric_rhcorticalwhitemattervol FROM fs_fsdata ;
+
+mappingId	fsdata corticalwhitemattervol
+target		:crania/freesurfer/whitemattervolume/{id} a :MRIO_0000666 ; :IAO_0000136 :UBERON_0003544 ; :IAO_0000004 {measures_volumetric_corticalwhitemattervol}^^xsd:double . 
+source		SELECT id,measures_volumetric_corticalwhitemattervol FROM fs_fsdata ;
+
+mappingId	subcortial_volumes
+target		:crania/freesurfer/{name}_volume/{fsdata_vol_region_fs_fsdata_id} a :MRIO_0000500 ; :IAO_0000136 :MRIO_0000649 ; :IAO_0000004 {volume}^^xsd:double . 
+source		SELECT fsdata_vol_region_fs_fsdata_id,name,volume,hemisphere from fs_fsdata_vol_region ;
+
+mappingId	FreeSurfer Surface Metrics
+target		:crania/freesurfer/{name}_surfacearea/{measures_surface_hemisphere_fs__id} a :MRIO_0000721 ; :IAO_0000136 :MRIO_0000649 ; :IAO_0000004 {surfarea}^^xsd:double . :crania/freesurfer/{name}_grayvolume/{measures_surface_hemisphere_fs__id} a :MRIO_0000500 ; :IAO_0000136 :MRIO_0000649 ; :IAO_0000004 {grayvol}^^xsd:double . :crania/freesurfer/{name}_corticalthickness/{measures_surface_hemisphere_fs__id} a :OBI_0002197 ; :IAO_0000136 :MRIO_0000649 ; :IAO_0000004 {thickavg}^^xsd:double . 
+source		SELECT fs_fsdata_surf_region.name, fs_fsdata_surf_region.surfarea, grayvol, thickavg, fs_fsdata_surf_region.fsdata_surf_region_fs_fsdata_he_fs_fsdata_hemisphere_id, measures_surface_hemisphere_fs__id, fs_fsdata_hemisphere.fs_fsdata_hemisphere_id FROM fs_fsdata_surf_region JOIN fs_fsdata_hemisphere ON fsdata_surf_region_fs_fsdata_he_fs_fsdata_hemisphere_id = fs_fsdata_hemisphere_id
+
+mappingId	Lateral Ventricle Volume
+target		:crania/neurostream/lvv/{id} a :MRIO_0000689 ; :IAO_0000136 :UBERON_0002285 ; :IAO_0000004 {lateralventricularvolume}^^xsd:double . 
+source		SELECT id,lateralventricularvolume FROM crania_lateralventricularvolume
+
+mappingId	mov
+target		:crania/5FLAIRmeasures/medullaoblongatavolume/{id} a :MRIO_0000694 ; :IAO_0000136 :UBERON_0001896 ; :IAO_0000004 {medullaoblongatavolume}^^xsd:double . 
+source		SELECT id,medullaoblongatavolume FROM crania_medullaoblongatavolume ;
+
+mappingId	sclv
+target		:crania/5FLAIRmeasures/salientcentrallesionvolume/{id} a :MRIO_0000722 ; :IAO_0000004 {salientcentrallesionvolume}^^xsd:double . 
+source		SELECT id,salientcentrallesionvolume FROM crania_salientcentrallesionvolume ;
+
+mappingId	DiseaseGroup
+target		:crania/cdd/diseasegroup/{id} a :OGMS_0000031 ; :OBI_0002135 {diseasegroup} . 
+source		SELECT id,diseasegroup from cdd_diseasegroup ;
 ]]
 

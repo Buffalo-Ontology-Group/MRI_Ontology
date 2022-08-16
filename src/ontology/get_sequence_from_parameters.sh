@@ -32,6 +32,6 @@ echo "Querying for acquisition type of individual..."
     --query ../sparql/individuals.sparql individuals.csv
 
 ## Remove temporary files
-echo "Cleaning up..."
-rm MRIO-reasoned.owl MRIO-individuals.owl
+#echo "Cleaning up..."
+#rm MRIO-reasoned.owl MRIO-individuals.owl
 

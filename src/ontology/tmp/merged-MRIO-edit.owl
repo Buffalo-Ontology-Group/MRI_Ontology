@@ -1,34 +1,20 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/"
      xml:base="http://purl.obolibrary.org/obo/"
-     xmlns:cl="http://purl.obolibrary.org/obo/cl#"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:core="http://purl.obolibrary.org/obo/core#"
-     xmlns:doap="http://usefulinc.com/ns/doap#"
-     xmlns:foaf="http://xmlns.com/foaf/0.1/"
-     xmlns:obda="https://w3id.org/obda/vocabulary#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:swrl="http://www.w3.org/2003/11/swrl#"
-     xmlns:core1="http://purl.obolibrary.org/obo/uberon/core#"
-     xmlns:mondo="http://purl.obolibrary.org/obo/mondo#"
      xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
      xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:ubprop="http://purl.obolibrary.org/obo/ubprop#"
-     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/">
         <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/mrio/releases/2021-04-10/mrio.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/mondo.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MRIO/releases/2022-07-01/imports/obi_import.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2019-08-26/bfo.owl"/>
         <dc:creator>Alexander Bartnik</dc:creator>
         <dc:creator>Lucas Serra</dc:creator>
         <dc:creator>Mackenzie Smith</dc:creator>
@@ -47,6 +33,36 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000117 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
     
 
 
@@ -77,6 +93,24 @@
     <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
 
     <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#inSubset -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
     
 
 
@@ -294,6 +328,12 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
     
 
 
@@ -1672,10 +1712,10 @@ variable
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000601"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000526"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <IAO_0000115>A volumetric MR imaging analysis that uses a neural network (U-net) to estimate thalamic volume from T2 FLAIR image datasets of an entire human brain.</IAO_0000115>
+        <IAO_0000115>A volumetric MR imaging analysis that uses a neural network (U-net) to estimate thalamic volume from T2 FLAIR image datasets of the an entire human brain.</IAO_0000115>
         <IAO_0000117 rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
         <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
         <IAO_0000119>https://doi.org/10.1016/j.nicl.2021.102652</IAO_0000119>
@@ -1888,7 +1928,7 @@ variable
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000605"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000603"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <IAO_0000115>Analyzes voxels in an MRI scan that appear as focal lesions in a T2 weighted scan.</IAO_0000115>
@@ -1968,7 +2008,7 @@ variable
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000623"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000526"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -3315,7 +3355,7 @@ The values often belong to a group of pixels or voxels that share the same chara
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000601"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000526"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -4970,9 +5010,9 @@ ISBN 10: 1119053552</IAO_0000119>
 
     <!-- http://purl.obolibrary.org/obo/UBERON_0001873 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0001873">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001873">
         <IAO_0000118>&apos;Left-Caudate&apos; and &apos;Right-Caudate&apos; (from Desikan-Killiany atlas)</IAO_0000118>
-    </rdf:Description>
+    </owl:Class>
     
 
 
@@ -4989,6 +5029,12 @@ ISBN 10: 1119053552</IAO_0000119>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001882">
         <IAO_0000118>&apos;Left-Accumbens-area&apos; and &apos;Right-Accumbens-area&apos; (from Desikan-Killiany atlas)</IAO_0000118>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001896 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001896"/>
     
 
 
@@ -5020,6 +5066,12 @@ ISBN 10: 1119053552</IAO_0000119>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002129">
         <IAO_0000118>&apos;Left-Cerebellum-Cortex&apos; and &apos;Right-Cerebellum-Cortex&apos; (from Desikan-Killiany atlas)</IAO_0000118>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002285 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002285"/>
     
 
 
@@ -5512,5 +5564,5 @@ ISBN 10: 1119053552</IAO_0000119>
 
 
 
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
 

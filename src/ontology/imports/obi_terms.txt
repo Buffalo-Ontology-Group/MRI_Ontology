@@ -52,3 +52,5 @@ http://purl.obolibrary.org/obo/OBI_0002141 # volume measurement assay
 http://purl.obolibrary.org/obo/OBI_0002139 # volume value specification
 http://purl.obolibrary.org/obo/OBI_0200147 # network graph quality calculation
 http://purl.obolibrary.org/obo/OBI_0000566 # NMR instrument
+http://purl.obolibrary.org/obo/OBI_0002197 # Tissue section thickness
+http://purl.obolibrary.org/obo/OBI_0001293 # disease state

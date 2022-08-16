@@ -213,7 +213,6 @@ http://purl.obolibrary.org/obo/MRIO_0000706
 http://purl.obolibrary.org/obo/MRIO_0000707
 http://purl.obolibrary.org/obo/MRIO_0000708
 http://purl.obolibrary.org/obo/MRIO_0000709
-http://purl.obolibrary.org/obo/MRIO_0000710
 http://purl.obolibrary.org/obo/MRIO_0000711
 http://purl.obolibrary.org/obo/MRIO_0000712
 http://purl.obolibrary.org/obo/MRIO_0000713
@@ -224,6 +223,9 @@ http://purl.obolibrary.org/obo/MRIO_0000717
 http://purl.obolibrary.org/obo/MRIO_0000718
 http://purl.obolibrary.org/obo/MRIO_0000719
 http://purl.obolibrary.org/obo/MRIO_0000720
+http://purl.obolibrary.org/obo/MRIO_0000721
+http://purl.obolibrary.org/obo/MRIO_0000722
+http://purl.obolibrary.org/obo/OBI_0
 http://purl.obolibrary.org/obo/OBI_0000067
 http://purl.obolibrary.org/obo/OBI_0000070
 http://purl.obolibrary.org/obo/OBI_0000272
@@ -243,6 +245,7 @@ http://purl.obolibrary.org/obo/RO_0000087
 http://purl.obolibrary.org/obo/RO_0002025
 http://purl.obolibrary.org/obo/RO_0002180
 http://purl.obolibrary.org/obo/RO_0002233
+http://purl.obolibrary.org/obo/RO_0002351
 http://purl.obolibrary.org/obo/UBERON_0000955
 http://purl.obolibrary.org/obo/UBERON_0001359
 http://purl.obolibrary.org/obo/UBERON_0001873
@@ -302,6 +305,7 @@ http://purl.obolibrary.org/obo/in
 http://purl.obolibrary.org/obo/mf
 http://purl.obolibrary.org/obo/mrio/releases/2021-04-10/mrio.owl
 http://purl.org/dc/elements/1.1/creator
+http://purl.org/dc/elements/1.1/description
 http://purl.org/dc/elements/1.1/source
 http://purl.org/dc/elements/1.1/title
 http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled

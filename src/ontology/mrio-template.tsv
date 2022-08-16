@@ -1,0 +1,272 @@
+LABEL	SubClass Of
+1.5T MRI machine	MRI machine
+2D T1 GRE sequence	T1 GRE sequence
+3D GRE image data set	high resolution T1 weighted image data set
+3D T1 GRE sequence	T1 GRE sequence|has_specified_output some '3D GRE image data set'
+3T MRI machine	MRI machine
+ASL perfusion data set	perfusion weighted image data set
+CSF volume measurement datum	'is about' some 'cerebrospinal fluid'|brain volume measurement datum
+ChaCo data set	'has part' some 'nConMat matrix'|'has part' some 'nMapTFC matrix'|'is about' some 'Desikan-Killiany brain atlas image data set'|tensor data set
+DCE perfusion data set	'has part' some 'imaging contrast reagent'|is_specified_output_of some 'T1 weighted MRI acquisition sequence'|perfusion weighted image data set
+Deep roboNAC analysis	T1 black hole analysis|T2 lesion analysis|has_specified_input some 'T2 FLAIR image data set'|has_specified_input some ('proton density image data set' and 'T2 weighted image data set' and 'T1 SE image data set' and 'T2 FLAIR image data set')
+DeepGRAI analysis	brain volumetric analysis|has_specified_input some 'T2 FLAIR image data set'|has_specified_output some 'segmented region mask'|has_specified_output some 'thalamic volume measurement datum'
+DeepGRAI analysis of the dorsal plus ventral thalamus	DeepGRAI analysis|has_specified_output some 'dorsal plus ventral thalamus volume measurement datum'
+DeepGRAI analysis of the dorsal thalamus	DeepGRAI analysis|has_specified_output some 'dorsal thalamic volume measurement datum'
+DeepGRAI analysis of the left dorsal thalamus	DeepGRAI analysis of the dorsal thalamus|has_specified_output some 'left dorsal thalamic volume measurement datum'
+DeepGRAI analysis of the right dorsal thalamus	DeepGRAI analysis of the dorsal thalamus|has_specified_output some 'right dorsal thalamic volume measurement datum'
+Desikan-Killiany brain atlas image data set	'is about' some 'banks of superior temporal sulcus'|'is about' some 'caudal anterior cingulate cortex'|'is about' some 'caudal middle frontal gyrus'|'is about' some 'caudate nucleus'|'is about' some 'cerebellar cortex'|'is about' some 'cuneus cortex'|'is about' some 'entorhinal cortex'|'is about' some 'frontal pole'|'is about' some 'fusiform gyrus'|'is about' some 'hippocampal formation'|'is about' some 'inferior parietal cortex'|'is about' some 'inferior temporal gyrus'|'is about' some 'isthmus of cingulate cortex'|'is about' some 'lateral occipital cortex'|'is about' some 'lateral orbital frontal cortex'|'is about' some 'left auditory cortex'|'is about' some 'left dorsal thalamus'|'is about' some 'left putamen'|'is about' some 'lingual gyrus'|'is about' some 'medial orbital frontal cortex'|'is about' some 'middle temporal gyrus'|'is about' some 'nucleus accumbens'|'is about' some 'opercular part of inferior frontal gyrus'|'is about' some 'orbital part of inferior frontal gyrus'|'is about' some 'paracentral lobule'|'is about' some 'parahippocampal gyrus'|'is about' some 'pericalcarine cortex'|'is about' some 'postcentral gyrus'|'is about' some 'posterior cingulate cortex'|'is about' some 'precentral gyrus'|'is about' some 'precuneus cortex'|'is about' some 'right auditory cortex'|'is about' some 'right dorsal thalamus'|'is about' some 'right putamen'|'is about' some 'rostral anterior cingulate cortex'|'is about' some 'rostral middle frontal gyrus'|'is about' some 'superior frontal gyrus'|'is about' some 'superior parietal cortex'|'is about' some 'superior temporal gyrus'|'is about' some 'supramarginal gyrus'|'is about' some 'temporal pole'|'is about' some 'thalamic complex'|'is about' some 'triangular part of inferior frontal gyrus'|'is about' some amygdala|'is about' some hypothalamus|'is about' some insula|'is about' some pallidum|brain region atlas image data set
+Desikan-Killiany functional connectivity matrix	'is about' some 'Desikan-Killiany brain atlas image data set'|functional connectivity matrix
+Desikan-Killiany functional connectome analysis	has_specified_input some 'functional MR image data set'|has_specified_output some 'Desikan-Killiany functional connectivity matrix'|regional functional connectome analysis
+FAST analysis	MR image segmentation analysis|has_specified_input some 'T1 weighted image data set'
+FIRST analysis	MR image segmentation analysis|has_specified_input some 'T1 weighted image data set'
+FreeSurfer analysis	MR image segmentation analysis|brain volumetric analysis|has_specified_input some 'T1 weighted image data set'|has_specified_output some 'FreeSurfer segmentation map'|has_specified_output some 'peripheral grey matter volume measurement datum'
+FreeSurfer cross-sectional analysis	FreeSurfer analysis|has_specified_input some 'high resolution T1 weighted image data set'
+FreeSurfer longitudinal analysis	FreeSurfer analysis|has_specified_input some ('baseline high resolution T1 image' and 'follow-up high resolution T1 image data set')
+FreeSurfer segmentation map	
+GRE echo planar sequence	'gradient echo sequence' and (('has MRI acquisition parameter' some 'repitition time') and ('has MRI acquisition parameter' some 'echo time'))
+GRE inversion recovery sequence	'gradient echo sequence' and ('has MRI acquisition parameter' some 'inversion time')
+Gradient echo sequence	
+Inversion recovery sequence	
+LPA analysis	T2 lesion analysis|has_specified_input some 'T2 FLAIR image data set'
+MR image artifact correction	MR image transformation
+MR image bias field correction	MR image artifact correction
+MR image data set	
+MR image data set analysis	has_specified_input some 'reconstructed MR image data set'|has_specified_output some 'volume measurement datum'|image data set analysis
+MR image registration	MR image transformation
+MR image segmentation analysis	MR image data set analysis|has_specified_output some 'image segmentation map'
+MR image transformation	Obsolete Class
+MR imaging assay	assay|has_specified_input some 'NMR instrument'|has_specified_input some ('has role' some 'MRI evaluant role')|has_specified_output some 'MR image data set'|realizes some (concretizes some 'MR pulse sequence protocol')
+MR imaging data transformation	Obsolete Class
+MR imaging datum	Obsolete Class
+MR pulse sequence protocol	protocol
+MRI acquisition sequence process	Obsolete Class
+MRI evaluant role	evaluant role
+MRI machine	Obsolete Class
+MRI machine parameter	MRI machine setting datum
+MRI machine setting datum	setting datum
+MRI participant	
+N4 bias field correction	MR image bias field correction
+NMR instrument	
+NeMo analysis	has_specified_input some ('T2 FLAIR image data set' and 'T2 FLAIR lesion mask')|has_specified_output some 'ChaCo data set'|structural disconnectome analysis
+NeuroSTREAM analysis	brain volumetric analysis|has_specified_input some 'T2 FLAIR image data set'
+Obsolete Class	
+Post-Gd T1 image data set	'has member' some 'imaging contrast reagent'|T1 weighted image data set
+Proton density sequence	'has TE value' some xsd:float[< 30.0f]|'has TR value' some xsd:float[> 1000.0f]|'has flip angle value' value 90|MR imaging assay|has_specified_output some 'proton density image data set'
+QSM image data set	reconstructed MR image data set
+Resting state functional MR image data set	functional MR image data set
+SE echo planar sequence	'spin echo sequence' and (('has MRI acquisition parameter' some 'repitition time') and ('has MRI acquisition parameter' some 'echo time'))
+SE inversion recovery sequence	'spin echo sequence' and ('has MRI acquisition parameter' some 'inversion time')
+SIENA analysis	has_specified_input some ('baseline high resolution T1 image' and 'follow-up high resolution T1 image data set')|has_specified_output some 'segmented region mask'|has_specified_output some ('whole brain volume measurement datum' and 'grey matter volume measurement datum' and 'white matter volume measurement daturm' and 'CSF volume measurement datum')|whole brain volumetric analysis
+SIENAX analysis	has_specified_input some 'T1 weighted image data set'|has_specified_input some ('T1 weighted image data set' and 'T2 FLAIR image data set')|has_specified_output some 'segmented region mask'|has_specified_output some ('whole brain volume measurement datum' and 'grey matter volume measurement datum' and 'white matter volume measurement daturm' and 'CSF volume measurement datum')|whole brain volumetric analysis
+Smith resting state network atlas	probabilistic brain region atlas image dataset
+T1 GRE image data set	T1 weighted image data set
+T1 GRE sequence	T1 weighted MRI acquisition sequence|has_specified_output some 'T1 GRE image data set'
+T1 MPRAGE image data set	high resolution T1 weighted image data set
+T1 MPRAGE sequence	'has TI value' some xsd:float[<= 1000.0f]|'has pulse sequence' some 'GRE inversion recovery sequence'|3D T1 GRE sequence|has_specified_output some 'T1 MPRAGE image data set'
+T1 SE image data set	T1 weighted image data set
+T1 SE sequence	'has pulse sequence' some 'spin echo sequence'|T1 weighted MRI acquisition sequence|has_specified_output some 'T1 SE image data set'
+T1 SPGR image data set	high resolution T1 weighted image data set
+T1 black hole analysis	focal lesion analysis|has_specified_input some 'T1 SE image data set'
+T1 lesion mask	lesion mask
+T1 weighted MRI acquisition sequence	MR imaging assay|has_specified_output some 'T1 weighted image data set'
+T1 weighted image data set	reconstructed MR image data set
+T2 FLAIR image data set	T2 weighted image data set
+T2 FLAIR lesion mask	lesion mask
+T2 FLAIR sequence	T2 weighted MRI acquisition sequence|has_specified_output some 'T2 FLAIR image data set'
+T2 FSE image data set	T2 weighted image data set
+T2 FSE sequence	'has MRI acquisition parameter' some 'echo train length'|'has TE value' some xsd:float[> 60.0f]|'has TR value' some xsd:float[> 2000.0f]|'has flip angle value' value 90|T2 weighted MRI acquisition sequence|has_specified_output some 'T2 FSE image data set'
+T2 SE image data set	T2 weighted image data set
+T2 STIR image data set	T2 weighted image data set
+T2 STIR sequence	'has TE value' some xsd:float[>= 70.0f]|'has TI value' some xsd:float[>= 100.0f , <= 180.0f]|'has TR value' some xsd:float[>= 2500.0f]|'has pulse sequence' some 'GRE inversion recovery sequence'|T2 weighted MRI acquisition sequence|has_specified_output some 'T2 STIR image data set'
+T2 lesion analysis	focal lesion analysis|has_specified_input some 'T2 weighted image data set'|has_specified_output some 'T2 lesion mask'
+T2 lesion mask	Obsolete Class
+T2 weighted MRI acquisition sequence	MR imaging assay|has_specified_output some 'T2 weighted image data set'
+T2 weighted image data set	reconstructed MR image data set
+T2* GRE image data set	T2 weighted image data set
+T2* GRE sequence	'has TE value' some xsd:float[< 30.0f]|'has TR value' some xsd:float[> 0.0f]|'has flip angle value' some xsd:float[>= 5.0f , <= 20.0f]|T2 weighted MRI acquisition sequence|has_specified_output some 'T2* GRE image data set'
+Task-based functional MR image data set	functional MR image data set
+V1 resting state functional connectivity matrix	'is about' some 'V1 resting state network atlas'|functional connectivity matrix
+V1 resting state network atlas	'is about' some 'cuneus cortex'|'is about' some 'lingual gyrus'|'is about' some 'pericalcarine cortex'|'is about' some 'precuneus cortex'|'is about' some 'superior parietal cortex'|Smith resting state network atlas
+V2 resting state functional connectivity matrix	'is about' some 'V2 resting state network atlas'|functional connectivity matrix
+V2 resting state network atlas	'is about' some 'lateral occipital cortex'|'is about' some 'left dorsal thalamus'|'is about' some 'lingual gyrus'|'is about' some 'right dorsal thalamus'|Smith resting state network atlas
+V3 functional connectivity matrix	'is about' some 'V3 resting state network atlas'|structural connectivity matrix
+V3 resting state network atlas	'is about' some 'banks of superior temporal sulcus'|'is about' some 'fusiform gyrus'|'is about' some 'inferior parietal cortex'|'is about' some 'inferior temporal gyrus'|'is about' some 'lateral occipital cortex'|'is about' some 'lingual gyrus'|'is about' some 'middle temporal gyrus'|'is about' some 'superior parietal cortex'|'is about' some 'superior temporal gyrus'|'is about' some 'supramarginal gyrus'|Smith resting state network atlas
+acquisition matrix	MRI machine parameter
+aligned image data set	Obsolete Class
+amygdala	
+antsApplyTransforms	MR image registration
+antsRegistration	MR image registration
+area measurement datum	scalar measurement datum
+assay	
+atrophied lesion volume measurement datum	'is about' some 'telencephalic ventricle'|lesion volume measurement datum
+auditory resting state network atlas	'is about' some 'banks of superior temporal sulcus'|'is about' some 'left auditory cortex'|'is about' some 'left dorsal thalamus'|'is about' some 'left putamen'|'is about' some 'middle temporal gyrus'|'is about' some 'opercular part of inferior frontal gyrus'|'is about' some 'postcentral gyrus'|'is about' some 'right auditory cortex'|'is about' some 'right dorsal thalamus'|'is about' some 'right putamen'|'is about' some 'superior temporal gyrus'|'is about' some 'supramarginal gyrus'|'is about' some 'triangular part of inferior frontal gyrus'|'is about' some insula|Smith resting state network atlas
+auditory resting state network functional connectivity matrix	'is about' some 'auditory resting state network atlas'|functional connectivity matrix
+banks of superior temporal sulcus	
+baseline high resolution T1 image	high resolution T1 weighted image data set
+binarization	MR image transformation
+brain	
+brain region atlas image data set	'is about' some brain|computed image data set
+brain volume measurement datum	'has measurement value' some xsd:double|'is about' some 'MRI participant'|'is about' some brain|volume measurement datum
+brain volumetric analysis	MR image data set analysis
+c-pac	functional MR image data set analysis
+caudal anterior cingulate cortex	
+caudal middle frontal gyrus	
+caudate nucleus	
+cerebellar cortex	
+cerebellum resting state functional connectivity matrix	'is about' some 'cerebellum resting state network atlas'|functional connectivity matrix
+cerebellum resting state network atlas	'is about' some 'cerebellar cortex'|Smith resting state network atlas
+cerebrospinal fluid	
+computed image data set	
+connectivity matrix	matrix data set
+coronal	plane
+cuneus cortex	
+data item	
+data set	
+data transformation	
+data visualization	
+default mode network atlas	'is about' some 'cuneus cortex'|'is about' some 'inferior parietal cortex'|'is about' some 'isthmus of cingulate cortex'|'is about' some 'medial orbital frontal cortex'|'is about' some 'middle temporal gyrus'|'is about' some 'posterior cingulate cortex'|'is about' some 'precuneus cortex'|'is about' some 'right dorsal thalamus'|'is about' some 'rostral anterior cingulate cortex'|'is about' some 'superior frontal gyrus'|Smith resting state network atlas
+default mode network functional connectivity matrix	'is about' some 'default mode network atlas'|functional connectivity matrix
+deterministic brain region atlas image data set	brain region atlas image data set
+diffusion b value	MRI machine parameter
+diffusion gradient	MRI machine parameter
+diffusion weighted MRI acquisition sequence	'has MRI acquisition parameter' some 'diffusion b value'|'has MRI acquisition parameter' some 'diffusion gradient'|'has pulse sequence' some 'GRE echo planar sequence'|MR imaging assay|has_specified_output some 'diffusion weighted image data set'
+diffusion weighted image data set	reconstructed MR image data set
+diffusion weighted image data set analysis	MR image data set analysis|has_specified_input some 'diffusion weighted image data set'
+diffusion weighted image data set suitable for DTI	diffusion weighted image data set
+dorsal plus ventral thalamus	
+dorsal plus ventral thalamus volume measurement datum	'is about' some 'dorsal plus ventral thalamus'|thalamic volume measurement datum
+dorsal thalamic volume measurement datum	thalamic volume measurement datum
+echo time	MRI machine parameter
+echo train length	MRI machine parameter
+entorhinal cortex	
+evaluant role	
+executive control resting state functional connectivity matrix	'is about' some 'executive control resting state network atlas'|functional connectivity matrix
+executive control resting state network atlas	'is about' some 'caudal anterior cingulate cortex'|'is about' some 'caudal middle frontal gyrus'|'is about' some 'caudate nucleus'|'is about' some 'lateral orbital frontal cortex'|'is about' some 'left dorsal thalamus'|'is about' some 'left putamen'|'is about' some 'medial orbital frontal cortex'|'is about' some 'nucleus accumbens'|'is about' some 'opercular part of inferior frontal gyrus'|'is about' some 'posterior cingulate cortex'|'is about' some 'precuneus cortex'|'is about' some 'right dorsal thalamus'|'is about' some 'right putamen'|'is about' some 'rostral anterior cingulate cortex'|'is about' some 'rostral middle frontal gyrus'|'is about' some 'superior frontal gyrus'|'is about' some 'superior parietal cortex'|'is about' some 'superior temporal gyrus'|'is about' some insula|Smith resting state network atlas
+field of view	MRI machine parameter
+flip angle	MRI machine parameter
+focal lesion analysis	MR image data set analysis|has_specified_output some 'lesion mask'
+follow-up high resolution T1 image data set	high resolution T1 weighted image data set
+frontal pole	
+frontoparietal resting state functional connectivity matrix	'is about' some 'frontoparietal resting state network atlas'|functional connectivity matrix
+frontoparietal resting state network atlas	'is about' some 'caudal middle frontal gyrus'|'is about' some 'inferior parietal cortex'|'is about' some 'inferior temporal gyrus'|'is about' some 'isthmus of cingulate cortex'|'is about' some 'middle temporal gyrus'|'is about' some 'opercular part of inferior frontal gyrus'|'is about' some 'orbital part of inferior frontal gyrus'|'is about' some 'postcentral gyrus'|'is about' some 'posterior cingulate cortex'|'is about' some 'precentral gyrus'|'is about' some 'precuneus cortex'|'is about' some 'rostral middle frontal gyrus'|'is about' some 'superior frontal gyrus'|'is about' some 'superior parietal cortex'|'is about' some 'superior temporal gyrus'|'is about' some 'supramarginal gyrus'|'is about' some 'triangular part of inferior frontal gyrus'|'is about' some insula|Smith resting state network atlas
+functional MR image data set	reconstructed MR image data set
+functional MR image data set analysis	MR image data set analysis|has_specified_input some 'functional MR image data set'
+functional MRI acquisition sequence	'has MRI acquisition parameter' some 'number of temporal positions'|'has TE value' some xsd:float[>= 30.0f]|'has pulse sequence' some 'gradient echo sequence'|MR imaging assay|has_specified_output some 'functional MR image data set'
+functional connectivity matrix	connectivity matrix
+functional connectome analysis	functional MR image data set analysis|has_specified_output some 'functional connectivity matrix'
+functional mapping	functional MR image data set analysis
+fusiform gyrus	
+gadolinium atom	
+gradient echo sequence	('has MRI acquisition parameter' some 'repitition time') and ('has MRI acquisition parameter' some 'echo time') and ('has MRI acquisition parameter' some 'flip angle')|MR pulse sequence protocol
+grey matter volume measurement datum	'is about' some UBERON:0003528|brain volume measurement datum
+high resolution T1 weighted image data set	T1 GRE image data set|T1 weighted image data set
+hippocampal formation	
+hypothalamus	
+image	
+image data set	data set
+image data set analysis	data transformation|has_specified_input some 'image data set'
+image data set visualization	
+image segmentation map	computed image data set
+imaging contrast reagent	'has component' some 'gadolinium atom'|reagent
+inferior parietal cortex	
+inferior temporal gyrus	
+insula	
+inversion	MR image transformation
+inversion time	MRI machine parameter
+isthmus of cingulate cortex	
+lateral occipital cortex	
+lateral orbital frontal cortex	
+lateral ventricular volume measurement datum	'is about' some 'telencephalic ventricle'|CSF volume measurement datum
+left auditory cortex	
+left dorsal thalamic volume measurement datum	'is about' some 'left dorsal thalamus'|'part of' some 'dorsal plus ventral thalamus volume measurement datum'|dorsal thalamic volume measurement datum
+left dorsal thalamus	
+left putamen	
+lesion mask	image segmentation map
+lesion volume measurement datum	volume measurement datum
+lingual gyrus	
+magnetization transfer image data set	reconstructed MR image data set
+material entity	
+matrix data set	tensor data set
+matrix size	MRI machine parameter
+medial orbital frontal cortex	
+medulla oblongata	
+medulla volume measurement datum	'is about' some 'medulla oblongata'|brain volume measurement datum
+middle temporal gyrus	
+nConMat matrix	'is about' some 'Desikan-Killiany brain atlas image data set'|structural connectivity matrix
+nMapTFC matrix	'is about' some 'Desikan-Killiany brain atlas image data set'|structural connectivity matrix
+network assortativity datum	network graph quality datum
+network efficiency datum	network graph quality datum
+network graph quality calculation	
+network graph quality datum	data item|is_specified_output_of some 'network graph quality calculation'
+network transitivity datum	network graph quality datum
+nucleus accumbens	
+number of temporal positions	MRI machine parameter
+opercular part of inferior frontal gyrus	
+orbital part of inferior frontal gyrus	
+pallidum	
+paracentral lobule	
+parahippocampal gyrus	
+percent change in brain volume measurement datum	brain volume measurement datum
+perfusion weighted image data set	reconstructed MR image data set
+pericalcarine cortex	
+peripheral grey matter volume measurement datum	'is about' some 'Desikan-Killiany brain atlas image data set'|grey matter volume measurement datum
+phase FOV	MRI machine parameter
+phase encoding	MRI machine parameter
+plane	MRI machine parameter
+postcentral gyrus	
+posterior cingulate cortex	
+precentral gyrus	
+precuneus cortex	
+probabilistic brain region atlas image dataset	brain region atlas image data set
+protocol	
+proton density image data set	reconstructed MR image data set
+raw MR image data set	
+raw MR image data set reconstruction	
+raw image data set	image data set
+reagent	
+reconstructed MR image data set	
+regional functional connectome analysis	functional connectome analysis
+repitition time	MRI machine parameter
+right auditory cortex	
+right dorsal thalamic volume measurement datum	'is about' some 'right dorsal thalamus'|dorsal thalamic volume measurement datum
+right dorsal thalamus	
+right putamen	
+rostral anterior cingulate cortex	
+rostral middle frontal gyrus	
+sagittal	plane
+scalar measurement datum	
+segmented region mask	Obsolete Class
+sensorimotor resting state functional connectivity matrix	'is about' some 'sensorimotor resting state network atlas'|functional connectivity matrix
+sensorimotor resting state network atlas	'is about' some 'caudal anterior cingulate cortex'|'is about' some 'left auditory cortex'|'is about' some 'paracentral lobule'|'is about' some 'postcentral gyrus'|'is about' some 'posterior cingulate cortex'|'is about' some 'precentral gyrus'|'is about' some 'right auditory cortex'|'is about' some 'superior frontal gyrus'|'is about' some 'superior parietal cortex'|'is about' some 'superior temporal gyrus'|'is about' some 'supramarginal gyrus'|Smith resting state network atlas
+setting datum	
+slice gap	MRI machine parameter
+slice thickness	MRI machine parameter
+spin echo sequence	('has MRI acquisition parameter' some 'repitition time') and ('has MRI acquisition parameter' some 'echo time')|MR pulse sequence protocol
+spoiled GRE sequence	'has TE value' some xsd:float[> 0.0f , <= 5.0f]|'has TR value' some xsd:float[> 0.0f , <= 35.0f]|3D T1 GRE sequence|has_specified_output some 'T1 SPGR image data set'
+structural connectivity matrix	connectivity matrix
+structural disconnectome analysis	MR image data set analysis
+superior frontal gyrus	
+superior parietal cortex	
+superior temporal gyrus	
+supramarginal gyrus	
+telencephalic ventricle	
+temporal pole	
+tensor data set	data set
+test flair sequence	
+test scanning sequence	
+test sequence 1	
+test t1 gre sequence	
+text file	Obsolete Class
+thalamic complex	
+thalamic volume measurement datum	'is about' some 'dorsal plus ventral thalamus'|'is about' some 'thalamic complex'|brain volume measurement datum
+thalamic volume measurement z-score	thalamic volume measurement datum
+transverse	plane
+triangular part of inferior frontal gyrus	
+volume measurement datum	'has value specification' some 'volume value specification'|scalar measurement datum
+volume value specification	
+white matter volume measurement daturm	'is about' some UBERON:0003544|brain volume measurement datum
+whole brain volume measurement datum	'has part' some ('grey matter volume measurement datum' and 'white matter volume measurement daturm' and 'CSF volume measurement datum')|'is about' some brain|brain volume measurement datum
+whole brain volumetric analysis	brain volumetric analysis
+	
+	
+	

@@ -6,3 +6,4 @@ import_group:
   products:
     - id: obi
     - id: uberon
+    - id: mondo

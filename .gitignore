@@ -7,3 +7,8 @@ MRIO2021_forjupyter.owl
 src/MRIO.owl
 src/ontology/*.csv
 src/ontology/imports/*.old
+src/ontology/MRIO-reasoned.owl
+src/ontology/MRIO-individuals.owl
+.archive/
+src/ontology/mirror/mondo.owl
+src/ontology/mirror/

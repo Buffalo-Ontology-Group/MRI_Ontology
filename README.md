@@ -1,12 +1,45 @@
 # MRI Ontology (MRIO)
 An ontology for the representation of MRI acquisition and analysis.
 
-MRIO builds on the Ontology for Biomedical Investigations (OBI) to flush out the process of acquiring MR images, analyzing these images, and interpretting the results of these analyses.
-A select set of terms from Uberon are imported to relate MRI analyses to the specific brain regions.
-To cut down on complexity, OBI and Uberon were filtered to use only the terms and axioms we needed. These terms can be found in:
+MRIO builds on the Ontology for Biomedical Investigations (OBI) to flesh out 
+the process of acquiring MR images, analyzing these images, and interpretting 
+the results of these analyses.
+A select set of terms from Uberon are imported to relate MRI analyses to the 
+specific brain regions.
+To cut down on complexity, OBI and Uberon were filtered to use only the terms 
+and axioms we needed. These terms can be found in:
  - `src/ontology/imports/obi_terms.txt`
  - `src/ontology/imports/uberon_terms.txt`
 
-The goal of this ontology is to help improve communication between neuroimagers and researchers with little-to-no experience, standardize communication between neuroimagers, and serve as a backbone for full automation of the neuroimaging research process.
-Because so much of neuroimaging research is conducted via programming, this ontology has the potential to integrate with software and greatly simplify the neuroimaging research process.
+The goal of this ontology is to help improve communication between 
+neuroimaging scientists and researchers with little-to-no experience, 
+standardize communication between neuroimagers, 
+and serve as a backbone for full automation of the neuroimaging research process.
+Because so much of neuroimaging research is conducted via programming, 
+this ontology has the potential to integrate with established neuroimaging software 
+and greatly simplify the neuroimaging research process.
+
+----------------------------------
+
+## Automated MRI acquisition type classification
+
+This repo also contains scripts that may be used to automatically infer the 
+acquisition type of an MRI using only a few acquisition parameters.
+These parameters may be found in DICOM file headers or BIDS sidecars
+if dcm2niix was used. To run the scripts, you must be in the 
+./src/ontology directory and docker must be installed.
+
+**Usage**
+
+The following script inserts an individual with `URI=$new_individual_uri` into
+a temporary OWL file, then runs the HermiT reasoner to infer the acquisition type.
+The individual and its inferred acquisition type are then written to `./individuals.csv`.
+
+To insert and reason over the new individual:
+
+`./get_sequence_from_parameters.sh $new_individual_uri $flip_angle $echo_time $repetition_time $inversion_time`
+
+To see the inferred results:
+
+`grep "$new_individual_uri" individuals.csv`
 
