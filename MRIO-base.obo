@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: MRIO/releases/2022-08-16/MRIO-base.owl
+data-version: MRIO/releases/2022-11-22/MRIO-base.owl
 ontology: MRIO/MRIO-base
 property_value: http://purl.org/dc/elements/1.1/contributor "Alan Ruttenberg" xsd:string
 property_value: http://purl.org/dc/elements/1.1/creator "Alexander D. Bartnik" xsd:string
@@ -13,7 +13,7 @@ property_value: http://purl.org/dc/elements/1.1/description "An ontology for the
 property_value: http://purl.org/dc/elements/1.1/title "MRI Ontology (MRI)" xsd:string
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/4.0/ xsd:string
-property_value: owl:versionInfo "2022-08-16" xsd:string
+property_value: owl:versionInfo "2022-11-22" xsd:string
 
 [Term]
 id: CCL:0000360
@@ -517,7 +517,7 @@ property_value: IAO:0000117 "https://orcid.org/0000-0002-2104-0568 \"Lucas M. Se
 [Term]
 id: MRIO:0000504
 name: baseline high resolution T1 image
-def: "Image data set collected at an evaluant's first visit in a study." []
+def: "Image data set collected at an evaluant\"s first visit in a study." []
 is_a: MRIO:0000502 ! high resolution T1 weighted image data set
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9990-8331 \"Alexander D. Diehl\"" xsd:string
@@ -526,7 +526,7 @@ property_value: IAO:0000117 "https://orcid.org/0000-0002-2104-0568 \"Lucas M. Se
 [Term]
 id: MRIO:0000505
 name: follow-up high resolution T1 image data set
-def: "Image data set collected at a later time than the evaluant's first scan." []
+def: "Image data set collected at a later time than the evaluant\"s first scan." []
 is_a: MRIO:0000502 ! high resolution T1 weighted image data set
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9990-8331 \"Alexander D. Diehl\"" xsd:string
@@ -826,7 +826,7 @@ id: MRIO:0000610
 name: matrix data set
 def: "A data set comprised of 2-dimensional array (rows and columns) of elements or entries, each representing an object or property of an object." []
 is_a: MRIO:0000608 ! tensor data set
-property_value: IAO:0000116 "there's another term similar in OBI- should be resolved (IRI: http://purl.obolibrary.org/obo/OBIws_0000100)" xsd:string
+property_value: IAO:0000116 "there\"s another term similar in OBI- should be resolved (IRI: http://purl.obolibrary.org/obo/OBIws_0000100)" xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
 
 [Term]
@@ -923,7 +923,7 @@ property_value: IAO:0000117 "https://orcid.org/0000-0002-9821-4132 \"Mackenzie T
 [Term]
 id: MRIO:0000624
 name: Smith resting state network atlas
-def: "A brain atlas image data set encoding voxels involved in ten major resting state functional networks, as determined by analysis and decomposition of 36 human subjects' functional activity at rest." []
+def: "A brain atlas image data set encoding voxels involved in ten major resting state functional networks, as determined by analysis and decomposition of 36 human subjects\" functional activity at rest." []
 is_a: MRIO:0000648 ! probabilistic brain region atlas image dataset
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9990-8331 \"Alexander D. Diehl\"" xsd:string
@@ -991,7 +991,7 @@ property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D
 [Term]
 id: MRIO:0000630
 name: flip angle
-def: "Angle at which a proton's axis shifts from its longitudinal place to its transverse plane by excitation from radiofrequency pulses." []
+def: "Angle at which a proton\"s axis shifts from its longitudinal place to its transverse plane by excitation from radiofrequency pulses." []
 is_a: MRIO:0000342 ! MRI machine parameter
 property_value: http://purl.org/dc/elements/1.1/source https://radiopaedia.org/articles/flip-angle?lang=us xsd:string
 property_value: IAO:0000118 "FA" xsd:string
@@ -1017,7 +1017,7 @@ property_value: IAO:0000117 "https://orcid.org/0000-0002-9821-4132 \"Mackenzie T
 [Term]
 id: MRIO:0000635
 name: diffusion weighted image data set
-def: "A type of MR image data set collected using at least three diffusion gradients of some factor 'b,' which is a function of the amplitude, duration, and interval of the gradiants." []
+def: "A type of MR image data set collected using at least three diffusion gradients of some factor \"b,\" which is a function of the amplitude, duration, and interval of the gradiants." []
 is_a: MRIO:0000341 ! reconstructed MR image data set
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9990-8331 \"Alexander D. Diehl\"" xsd:string
@@ -1372,7 +1372,7 @@ property_value: IAO:0000117 "https://orcid.org/0000-0001-9990-8331 \"Alexander D
 id: MRIO:0000672
 name: V3 functional connectivity matrix
 def: "A connectivity matrix where each element represents the correlation of functional brain activity within the V3 resting state network." []
-is_a: MRIO:0000612 ! structural connectivity matrix
+is_a: MRIO:0000607 ! functional connectivity matrix
 relationship: IAO:0000136 MRIO:0000704 ! V3 resting state network atlas
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
 
@@ -1405,7 +1405,7 @@ property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D
 [Term]
 id: MRIO:0000676
 name: FAST analysis
-def: "FAST (FMRIB's Automated Segmentation Tool) segments a 3D image of the brain into different tissue types (Grey Matter, White Matter, CSF, etc.), whilst also correcting for spatial intensity variations (also known as bias field or RF inhomogeneities)." []
+def: "FAST (FMRIB\"s Automated Segmentation Tool) segments a 3D image of the brain into different tissue types (Grey Matter, White Matter, CSF, etc.), whilst also correcting for spatial intensity variations (also known as bias field or RF inhomogeneities)." []
 is_a: MRIO:0000662 ! MR image segmentation analysis
 relationship: OBI:0000293 MRIO:0000366 ! T1 weighted image data set
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
@@ -1459,7 +1459,7 @@ is_a: MRIO:0000692 ! 3D T1 GRE sequence
 relationship: OBI:0000299 MRIO:0000680 ! T1 SPGR image data set
 property_value: IAO:0000116 "Could have IR." xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
-property_value: IAO:0000119 "MRI at a Glance\nISBN 10: 1119053552" xsd:string
+property_value: IAO:0000119 "MRI at a Glance, ISBN 10: 1119053552" xsd:string
 
 [Term]
 id: MRIO:0000682
@@ -1727,7 +1727,7 @@ property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D
 [Term]
 id: MRIO:0000706
 name: network assortativity datum
-def: "A datum representing the preference for a network's nodes to attach to other similar nodes." []
+def: "A datum representing the preference for a network\"s nodes to attach to other similar nodes." []
 is_a: MRIO:0000705 ! network graph quality datum
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
 property_value: source https://en.wikipedia.org/wiki/Assortativity xsd:string
@@ -1785,7 +1785,7 @@ property_value: IAO:0000118 "image derivation from image data set" xsd:string
 [Term]
 id: MRIO:0000714
 name: percent change in brain volume measurement datum
-def: "A brain volume measurement datum about how much an evaluant's brain morphology has changed between two or more timepoints." []
+def: "A brain volume measurement datum about how much an evaluant\"s brain morphology has changed between two or more timepoints." []
 is_a: MRIO:0000667 ! brain volume measurement datum
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
 
@@ -1860,6 +1860,7 @@ id: MRIO:0000721
 name: area measurement datum
 def: "A scalar measurement datum that is the result of measurement of area." []
 is_a: IAO:0000032
+property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
 
 [Term]
 id: MRIO:0000722
@@ -1913,178 +1914,224 @@ property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D
 property_value: IAO:0000119 https://doi.org/10.1016/j.nicl.2021.102705 xsd:string
 
 [Term]
+id: MRIO:0000729
+name: milliliter unit
+is_a: UO:0000095
+
+[Term]
+id: MRIO:0000731
+name: cubic millimeter unit
+is_a: UO:0000095
+
+[Term]
+id: MRIO:0000732
+name: millimeter unit
+is_a: UO:0000001
+
+[Term]
+id: MRIO:0000733
+name: brain connectivity measurement datum
+def: "A scalar measurement datum that quantifies the spatial and temporal relationships between distinct units within the brain." []
+is_a: IAO:0000032
+property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
+property_value: IAO:0000119 http://www.scholarpedia.org/article/Brain_connectivity xsd:string
+
+[Term]
+id: MRIO:0000734
+name: brain structural connectivity measurement datum
+def: "A brain connectivity measurement datum that quantifies the physical or anatomical connections between distinct units within the brain. These connections may arise from axons or synapses." []
+is_a: MRIO:0000733 ! brain connectivity measurement datum
+property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
+
+[Term]
+id: MRIO:0000735
+name: brain functional connectivity measurement datum
+def: "A brain connectivity measurement datum that quantifies the coordination of brain function between distinct units within the brain by measuring the covariance in activity between these units over time." []
+is_a: MRIO:0000733 ! brain connectivity measurement datum
+property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
+
+[Term]
+id: MRIO:0000736
+name: thalamic structural disconnectivity measurement datum
+def: "A brain connectivity measurement datum that quantifies the structural disruption to connections involving the thalamus." []
+is_a: MRIO:0000733 ! brain connectivity measurement datum
+intersection_of: MRIO:0000734 ! brain structural connectivity measurement datum
+intersection_of: IAO:0000136 UBERON:0010225
+property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
+
+[Term]
 id: UBERON:0001873
-property_value: IAO:0000118 "'Left-Caudate' and 'Right-Caudate' (from Desikan-Killiany atlas)" xsd:string
+property_value: IAO:0000118 "\"Left-Caudate\" and \"Right-Caudate\" (from Desikan-Killiany atlas)" xsd:string
 
 [Term]
 id: UBERON:0001876
-property_value: IAO:0000118 "'Left-Amygdala' and 'Right-Amygdala' (from Desikan-Killiany atlas)" xsd:string
+property_value: IAO:0000118 "\"Left-Amygdala\" and \"Right-Amygdala\" (from Desikan-Killiany atlas)" xsd:string
 
 [Term]
 id: UBERON:0001882
-property_value: IAO:0000118 "'Left-Accumbens-area' and 'Right-Accumbens-area' (from Desikan-Killiany atlas)" xsd:string
+property_value: IAO:0000118 "\"Left-Accumbens-area\" and \"Right-Accumbens-area\" (from Desikan-Killiany atlas)" xsd:string
 
 [Term]
 id: UBERON:0001898
-property_value: IAO:0000118 "'Left-VentralDC' and 'Right-VentralDC' (from Desikan-Killiany Atlas)" xsd:string
+property_value: IAO:0000118 "\"Left-VentralDC\" and \"Right-VentralDC\" (from Desikan-Killiany Atlas)" xsd:string
 
 [Term]
 id: UBERON:0002022
-property_value: IAO:0000118 "'lh-insula' and 'rh-insula' (from Desikan-Killiany atlas)" xsd:string
+property_value: IAO:0000118 "\"lh-insula\" and \"rh-insula\" (from Desikan-Killiany atlas)" xsd:string
 property_value: IAO:0000118 "wm-lh-insula" xsd:string
 
 [Term]
 id: UBERON:0002129
-property_value: IAO:0000118 "'Left-Cerebellum-Cortex' and 'Right-Cerebellum-Cortex' (from Desikan-Killiany atlas)" xsd:string
+property_value: IAO:0000118 "\"Left-Cerebellum-Cortex\" and \"Right-Cerebellum-Cortex\" (from Desikan-Killiany atlas)" xsd:string
 
 [Term]
 id: UBERON:0002421
-property_value: IAO:0000118 "'Left-Hippocampus' and 'Right-Hippocampus' (from Desikan-Killiany atlas)" xsd:string
+property_value: IAO:0000118 "\"Left-Hippocampus\" and \"Right-Hippocampus\" (from Desikan-Killiany atlas)" xsd:string
 
 [Term]
 id: UBERON:0002576
-property_value: IAO:0000118 "'lh-temporalpole' and 'rh-temporalpole' (from Desikan-Killiany atlas)" xsd:string
+property_value: IAO:0000118 "\"lh-temporalpole\" and \"rh-temporalpole\" (from Desikan-Killiany atlas)" xsd:string
 
 [Term]
 id: UBERON:0002581
-property_value: IAO:0000118 "'lh-postcentral' and 'rh-postcentral' (from Desikan-Killiany atlas)" xsd:string
+property_value: IAO:0000118 "\"lh-postcentral\" and \"rh-postcentral\" (from Desikan-Killiany atlas)" xsd:string
 
 [Term]
 id: UBERON:0002624
-property_value: IAO:0000118 "'lh-parsorbitalis' and 'rh-parsobertalis' (from Desikan-Killiany atlas)" xsd:string
+property_value: IAO:0000118 "\"lh-parsorbitalis\" and \"rh-parsobertalis\" (from Desikan-Killiany atlas)" xsd:string
 
 [Term]
 id: UBERON:0002629
-property_value: IAO:0000118 "'lh-parstriangularis' and 'rh-parstriangularis' (from Desikan-Killiany atlas)" xsd:string
+property_value: IAO:0000118 "\"lh-parstriangularis\" and \"rh-parstriangularis\" (from Desikan-Killiany atlas)" xsd:string
 
 [Term]
 id: UBERON:0002661
-property_value: IAO:0000118 "'lh-superiorfrontal' and 'rh-superiorfrontal' (from Desikan-Killiany atlas)" xsd:string
+property_value: IAO:0000118 "\"lh-superiorfrontal\" and \"rh-superiorfrontal\" (from Desikan-Killiany atlas)" xsd:string
 
 [Term]
 id: UBERON:0002688
-property_value: IAO:0000118 "'lh-supramarginal' and 'rh-supramarginal' (from Desikan-Killiany atlas)" xsd:string
+property_value: IAO:0000118 "\"lh-supramarginal\" and \"rh-supramarginal\" (from Desikan-Killiany atlas)" xsd:string
 
 [Term]
 id: UBERON:0002703
-property_value: IAO:0000118 "'lh-precentral' and 'rh-precentral' (from Desikan-Killiany atlas)" xsd:string
+property_value: IAO:0000118 "\"lh-precentral\" and \"rh-precentral\" (from Desikan-Killiany atlas)" xsd:string
 
 [Term]
 id: UBERON:0002728
-property_value: IAO:0000118 "'lh-entorhinal' and 'rh-entorhinal' (from Desikan-Killiany atlas)" xsd:string
+property_value: IAO:0000118 "\"lh-entorhinal\" and \"rh-entorhinal\" (from Desikan-Killiany atlas)" xsd:string
 
 [Term]
 id: UBERON:0002751
-property_value: IAO:0000118 "'lh-inferiortemporal' and 'rh-inferiortemporal' (from Desikan-Killiany atlas)" xsd:string
+property_value: IAO:0000118 "\"lh-inferiortemporal\" and \"rh-inferiortemporal\" (from Desikan-Killiany atlas)" xsd:string
 
 [Term]
 id: UBERON:0002766
-property_value: IAO:0000118 "'lh-fusiform' and 'rh-fusiform' (from Desikan-Killiany atlas)" xsd:string
+property_value: IAO:0000118 "\"lh-fusiform\" and \"rh-fusiform\" (from Desikan-Killiany atlas)" xsd:string
 
 [Term]
 id: UBERON:0002769
-property_value: IAO:0000118 "'lh-superiortemporal' and 'rh-superiortemporal' (from Desikan-Killiany atlas)" xsd:string
+property_value: IAO:0000118 "\"lh-superiortemporal\" and \"rh-superiortemporal\" (from Desikan-Killiany atlas)" xsd:string
 
 [Term]
 id: UBERON:0002771
-property_value: IAO:0000118 "'lh-middletemporal' and 'rh-middletemporal' (from Desikan-Killiany atlas)" xsd:string
+property_value: IAO:0000118 "\"lh-middletemporal\" and \"rh-middletemporal\" (from Desikan-Killiany atlas)" xsd:string
 
 [Term]
 id: UBERON:0002795
-property_value: IAO:0000118 "'lh-frontalpole' and 'rh-frontalpole' (from Desikan-Killiany atlas)" xsd:string
+property_value: IAO:0000118 "\"lh-frontalpole\" and \"rh-frontalpole\" (from Desikan-Killiany atlas)" xsd:string
 
 [Term]
 id: UBERON:0002943
-property_value: IAO:0000118 "'lh-lingual' and 'rh-lingual' (from Desikan-Killiany atlas)" xsd:string
+property_value: IAO:0000118 "\"lh-lingual\" and \"rh-lingual\" (from Desikan-Killiany atlas)" xsd:string
 
 [Term]
 id: UBERON:0002973
-property_value: IAO:0000118 "'lh-parahippocampal' and 'rh-parahippocampal' (from Desikan-Killiany atlas)" xsd:string
+property_value: IAO:0000118 "\"lh-parahippocampal\" and \"rh-parahippocampal\" (from Desikan-Killiany atlas)" xsd:string
 
 [Term]
 id: UBERON:0002980
-property_value: IAO:0000118 "'lh-parsopercularis' and 'rh-parsopercularis' (from Desikan-Killiany atlas)" xsd:string
+property_value: IAO:0000118 "\"lh-parsopercularis\" and \"rh-parsopercularis\" (from Desikan-Killiany atlas)" xsd:string
 
 [Term]
 id: UBERON:0006088
-property_value: IAO:0000118 "'lh-inferiorparietal' and 'rh-inferiorparietal' (from Desikan-Killiany atlas)" xsd:string
+property_value: IAO:0000118 "\"lh-inferiorparietal\" and \"rh-inferiorparietal\" (from Desikan-Killiany atlas)" xsd:string
 
 [Term]
 id: UBERON:0006092
-property_value: IAO:0000118 "'lh-cuneus' and 'rh-cuneus' (from Desikan-Killiany atlas)" xsd:string
+property_value: IAO:0000118 "\"lh-cuneus\" and \"rh-cuneus\" (from Desikan-Killiany atlas)" xsd:string
 
 [Term]
 id: UBERON:0006093
-property_value: IAO:0000118 "'lh-precuneus' and 'rh-precuneus' (from Desikan-Killiany atlas)" xsd:string
+property_value: IAO:0000118 "\"lh-precuneus\" and \"rh-precuneus\" (from Desikan-Killiany atlas)" xsd:string
 
 [Term]
 id: UBERON:0006094
-property_value: IAO:0000118 "'lh-superiorparietal' and 'rh-superiorparietal' (from Desikan-Killiany atlas)" xsd:string
+property_value: IAO:0000118 "\"lh-superiorparietal\" and \"rh-superiorparietal\" (from Desikan-Killiany atlas)" xsd:string
 
 [Term]
 id: UBERON:0006114
-property_value: IAO:0000118 "'lh-lateraloccipital' and 'rh-lateraloccipital' (from Desikan-Killiany atlas)" xsd:string
+property_value: IAO:0000118 "\"lh-lateraloccipital\" and \"rh-lateraloccipital\" (from Desikan-Killiany atlas)" xsd:string
 
 [Term]
 id: UBERON:0006445
-property_value: IAO:0000118 "'lh-caudalmiddlefrontal' and 'rh-caudalmiddlefrontal' (from Desikan-Killiany atlas)" xsd:string
+property_value: IAO:0000118 "\"lh-caudalmiddlefrontal\" and \"rh-caudalmiddlefrontal\" (from Desikan-Killiany atlas)" xsd:string
 
 [Term]
 id: UBERON:0006446
-property_value: IAO:0000118 "'lh-rostralmiddlefrontal' and 'rh-rostralmiddlefrontal' (from Desikan-Killiany atlas)" xsd:string
+property_value: IAO:0000118 "\"lh-rostralmiddlefrontal\" and \"rh-rostralmiddlefrontal\" (from Desikan-Killiany atlas)" xsd:string
 
 [Term]
 id: UBERON:0006514
-property_value: IAO:0000118 "'Left-Pallidum' and 'Right-Pallidum' (from Desikan-Killiany atlas)" xsd:string
+property_value: IAO:0000118 "\"Left-Pallidum\" and \"Right-Pallidum\" (from Desikan-Killiany atlas)" xsd:string
 
 [Term]
 id: UBERON:0008884
-property_value: IAO:0000118 "'Left-Putamen' (from Desikan-Killiany atlas)" xsd:string
+property_value: IAO:0000118 "\"Left-Putamen\" (from Desikan-Killiany atlas)" xsd:string
 
 [Term]
 id: UBERON:0008885
-property_value: IAO:0000118 "''Right-Putamen' (from Desikan-Killiany atlas)" xsd:string
+property_value: IAO:0000118 "\"\"Right-Putamen\" (from Desikan-Killiany atlas)" xsd:string
 
 [Term]
 id: UBERON:0009897
 property_value: IAO:0000116 "Corrected error saying this is in the left hemisphere of the brain." xsd:string
-property_value: IAO:0000118 "'rh-transversetemporal' (from Desikan-Killiany atlas)" xsd:string
+property_value: IAO:0000118 "\"rh-transversetemporal\" (from Desikan-Killiany atlas)" xsd:string
 
 [Term]
 id: UBERON:0009898
-property_value: IAO:0000118 "'lh-transversetemporal' (from Desikan-Killiany atlas)" xsd:string
+property_value: IAO:0000118 "\"lh-transversetemporal\" (from Desikan-Killiany atlas)" xsd:string
 
 [Term]
 id: UBERON:0013683
-property_value: IAO:0000118 "'Left-Thalamus-Proper' (from Desikan-Killiany atlas)" xsd:string
+property_value: IAO:0000118 "\"Left-Thalamus-Proper\" (from Desikan-Killiany atlas)" xsd:string
 
 [Term]
 id: UBERON:0013684
-property_value: IAO:0000118 "'Right-Thalamus-Proper' (from Desikan-Killiany atlas)" xsd:string
+property_value: IAO:0000118 "\"Right-Thalamus-Proper\" (from Desikan-Killiany atlas)" xsd:string
 
 [Term]
 id: UBERON:0022352
-property_value: IAO:0000118 "'lh-medialorbitofrontal' and 'rh-imedialorbitofrontal' (from Desikan-Killiany atlas)" xsd:string
+property_value: IAO:0000118 "\"lh-medialorbitofrontal\" and \"rh-imedialorbitofrontal\" (from Desikan-Killiany atlas)" xsd:string
 
 [Term]
 id: UBERON:0022353
-property_value: IAO:0000118 "'lh-posteriorcingulate' and 'rh-posteriorcingulate' (from Desikan-Killiany atlas)" xsd:string
+property_value: IAO:0000118 "\"lh-posteriorcingulate\" and \"rh-posteriorcingulate\" (from Desikan-Killiany atlas)" xsd:string
 
 [Term]
 id: UBERON:0022438
-property_value: IAO:0000118 "'lh-rostralanteriorcingulate' and 'rh-rostralanteriorcingulate' (from Desikan-Killiany atlas)" xsd:string
+property_value: IAO:0000118 "\"lh-rostralanteriorcingulate\" and \"rh-rostralanteriorcingulate\" (from Desikan-Killiany atlas)" xsd:string
 
 [Term]
 id: UBERON:0022534
-property_value: IAO:0000118 "'lh-pericalcarine' and 'rh-pericalcarine' (from Desikan-Killiany atlas)" xsd:string
+property_value: IAO:0000118 "\"lh-pericalcarine\" and \"rh-pericalcarine\" (from Desikan-Killiany atlas)" xsd:string
 
 [Term]
 id: UBERON:0022716
-property_value: IAO:0000118 "'lh-lateralorbitofrontal' and 'rh-lateralorbitofrontal' (from Desikan-Killiany atlas)" xsd:string
+property_value: IAO:0000118 "\"lh-lateralorbitofrontal\" and \"rh-lateralorbitofrontal\" (from Desikan-Killiany atlas)" xsd:string
 
 [Term]
 id: UBERON:0027061
-property_value: IAO:0000118 "'lh-isthmuscingulate' and 'rh-isthmuscingulate' (from Desikan-Killiany atlas)" xsd:string
+property_value: IAO:0000118 "\"lh-isthmuscingulate\" and \"rh-isthmuscingulate\" (from Desikan-Killiany atlas)" xsd:string
 
 [Term]
 id: UBERON:0028622
@@ -2092,11 +2139,11 @@ property_value: IAO:0000118 "bankssts" xsd:string
 
 [Term]
 id: UBERON:0028715
-property_value: IAO:0000118 "'lh-caudalanteriorcingulate' and 'rh-caudalanteriorcingulate' (from Desikan-Killiany atlas)" xsd:string
+property_value: IAO:0000118 "\"lh-caudalanteriorcingulate\" and \"rh-caudalanteriorcingulate\" (from Desikan-Killiany atlas)" xsd:string
 
 [Term]
 id: UBERON:0035933
-property_value: IAO:0000118 "'lh-paracentral' and 'rh-paracentral' (from Desikan-Killiany atlas)" xsd:string
+property_value: IAO:0000118 "\"lh-paracentral\" and \"rh-paracentral\" (from Desikan-Killiany atlas)" xsd:string
 
 [Typedef]
 id: MRIO:0000375

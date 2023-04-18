@@ -3,6 +3,7 @@
      xml:base="http://purl.obolibrary.org/obo/"
      xmlns:cl="http://purl.obolibrary.org/obo/cl#"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:go="http://purl.obolibrary.org/obo/go#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -12,22 +13,30 @@
      xmlns:doap="http://usefulinc.com/ns/doap#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:obda="https://w3id.org/obda/vocabulary#"
+     xmlns:pato="http://purl.obolibrary.org/obo/pato#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:chebi="http://purl.obolibrary.org/obo/chebi/"
      xmlns:core1="http://purl.obolibrary.org/obo/uberon/core#"
      xmlns:mondo="http://purl.obolibrary.org/obo/mondo#"
      xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
      xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:chebi1="http://purl.obolibrary.org/obo/chebi#3"
+     xmlns:chebi2="http://purl.obolibrary.org/obo/chebi#1"
      xmlns:ubprop="http://purl.obolibrary.org/obo/ubprop#"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
-     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+     xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:ncbitaxon="http://purl.obolibrary.org/obo/ncbitaxon#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/">
         <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/mrio/releases/2021-04-10/mrio.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/mondo.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MRIO/releases/2022-08-16/imports/obi_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MRIO/releases/2022-11-22/imports/obi_import.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2019-08-26/bfo.owl"/>
         <dc:contributor>Alan Ruttenberg</dc:contributor>
         <dc:creator>Alexander D. Bartnik</dc:creator>
@@ -3539,7 +3548,7 @@ The values often belong to a group of pixels or voxels that share the same chara
     <!-- http://purl.obolibrary.org/obo/MRIO_0000672 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000672">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000612"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000607"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
@@ -3774,8 +3783,7 @@ The values often belong to a group of pixels or voxels that share the same chara
         <IAO_0000115>Applies  RF  excitation  pulses  at  diff erent  phases every TR, so that the residual transverse magnetization has dif-ferent  phase  values  than  the  transverse  magnetization  most recently created.</IAO_0000115>
         <IAO_0000116>Could have IR.</IAO_0000116>
         <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
-        <IAO_0000119>MRI at a Glance
-ISBN 10: 1119053552</IAO_0000119>
+        <IAO_0000119>MRI at a Glance, ISBN 10: 1119053552</IAO_0000119>
         <rdfs:label xml:lang="en">spoiled GRE sequence</rdfs:label>
     </owl:Class>
     
@@ -4889,6 +4897,7 @@ ISBN 10: 1119053552</IAO_0000119>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000721">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000032"/>
         <IAO_0000115>A scalar measurement datum that is the result of measurement of area.</IAO_0000115>
+        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
         <rdfs:label xml:lang="en">area measurement datum</rdfs:label>
     </owl:Class>
     
@@ -5024,6 +5033,98 @@ ISBN 10: 1119053552</IAO_0000119>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MRIO_0000729 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000729">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000095"/>
+        <rdfs:label xml:lang="en">milliliter unit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_0000731 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000731">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000095"/>
+        <rdfs:label xml:lang="en">cubic millimeter unit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_0000732 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000732">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000001"/>
+        <rdfs:label xml:lang="en">millimeter unit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_0000733 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000733">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000032"/>
+        <IAO_0000115>A scalar measurement datum that quantifies the spatial and temporal relationships between distinct units within the brain.</IAO_0000115>
+        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+        <IAO_0000119>http://www.scholarpedia.org/article/Brain_connectivity</IAO_0000119>
+        <rdfs:label xml:lang="en">brain connectivity measurement datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_0000734 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000734">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000733"/>
+        <IAO_0000115>A brain connectivity measurement datum that quantifies the physical or anatomical connections between distinct units within the brain. These connections may arise from axons or synapses.</IAO_0000115>
+        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+        <rdfs:label xml:lang="en">brain structural connectivity measurement datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_0000735 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000735">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000733"/>
+        <IAO_0000115>A brain connectivity measurement datum that quantifies the coordination of brain function between distinct units within the brain by measuring the covariance in activity between these units over time.</IAO_0000115>
+        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+        <rdfs:label xml:lang="en">brain functional connectivity measurement datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_0000736 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000736">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MRIO_0000734"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0010225"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000733"/>
+        <IAO_0000115>A brain connectivity measurement datum that quantifies the structural disruption to connections involving the thalamus.</IAO_0000115>
+        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+        <rdfs:label xml:lang="en">thalamic structural disconnectivity measurement datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_0000737 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000737">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000003"/>
+        <rdfs:label xml:lang="en">percentage unit</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000067 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000067"/>
@@ -5114,6 +5215,12 @@ ISBN 10: 1119053552</IAO_0000119>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001896 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001896"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/UBERON_0001897 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001897"/>
@@ -5142,6 +5249,12 @@ ISBN 10: 1119053552</IAO_0000119>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002129">
         <IAO_0000118>"Left-Cerebellum-Cortex" and "Right-Cerebellum-Cortex" (from Desikan-Killiany atlas)</IAO_0000118>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002285 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002285"/>
     
 
 

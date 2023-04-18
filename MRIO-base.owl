@@ -14,7 +14,7 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/MRIO/MRIO-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/MRIO/releases/2022-08-16/MRIO-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/MRIO/releases/2022-11-22/MRIO-base.owl"/>
         <dc:contributor>Alan Ruttenberg</dc:contributor>
         <dc:creator>Alexander D. Bartnik</dc:creator>
         <dc:creator>Alexander D. Diehl</dc:creator>
@@ -27,7 +27,7 @@
         <dc:title>MRI Ontology (MRI)</dc:title>
         <dc:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <terms:license>https://creativecommons.org/licenses/by/4.0/</terms:license>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-08-16</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-22</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -1618,7 +1618,7 @@ variable
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000504">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000502"/>
-        <obo:IAO_0000115>Image data set collected at an evaluant&apos;s first visit in a study.</obo:IAO_0000115>
+        <obo:IAO_0000115>Image data set collected at an evaluant&quot;s first visit in a study.</obo:IAO_0000115>
         <obo:IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</obo:IAO_0000117>
         <obo:IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</obo:IAO_0000117>
         <obo:IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</obo:IAO_0000117>
@@ -1631,7 +1631,7 @@ variable
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000505">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000502"/>
-        <obo:IAO_0000115>Image data set collected at a later time than the evaluant&apos;s first scan.</obo:IAO_0000115>
+        <obo:IAO_0000115>Image data set collected at a later time than the evaluant&quot;s first scan.</obo:IAO_0000115>
         <obo:IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</obo:IAO_0000117>
         <obo:IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</obo:IAO_0000117>
         <obo:IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</obo:IAO_0000117>
@@ -2233,7 +2233,7 @@ The values often belong to a group of pixels or voxels that share the same chara
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000610">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000608"/>
         <obo:IAO_0000115>A data set comprised of 2-dimensional array (rows and columns) of elements or entries, each representing an object or property of an object.</obo:IAO_0000115>
-        <obo:IAO_0000116>there&apos;s another term similar in OBI- should be resolved (IRI: http://purl.obolibrary.org/obo/OBIws_0000100)</obo:IAO_0000116>
+        <obo:IAO_0000116>there&quot;s another term similar in OBI- should be resolved (IRI: http://purl.obolibrary.org/obo/OBIws_0000100)</obo:IAO_0000116>
         <obo:IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</obo:IAO_0000117>
         <rdfs:label xml:lang="en">matrix data set</rdfs:label>
     </owl:Class>
@@ -2397,7 +2397,7 @@ The values often belong to a group of pixels or voxels that share the same chara
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000624">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000648"/>
-        <obo:IAO_0000115>A brain atlas image data set encoding voxels involved in ten major resting state functional networks, as determined by analysis and decomposition of 36 human subjects&apos; functional activity at rest.</obo:IAO_0000115>
+        <obo:IAO_0000115>A brain atlas image data set encoding voxels involved in ten major resting state functional networks, as determined by analysis and decomposition of 36 human subjects&quot; functional activity at rest.</obo:IAO_0000115>
         <obo:IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</obo:IAO_0000117>
         <obo:IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</obo:IAO_0000117>
         <obo:IAO_0000117>https://orcid.org/0000-0002-9821-4132 &quot;Mackenzie T. Smith&quot;</obo:IAO_0000117>
@@ -2583,7 +2583,7 @@ The values often belong to a group of pixels or voxels that share the same chara
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000630">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000342"/>
-        <obo:IAO_0000115 xml:lang="en">Angle at which a proton&apos;s axis shifts from its longitudinal place to its transverse plane by excitation from radiofrequency pulses.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Angle at which a proton&quot;s axis shifts from its longitudinal place to its transverse plane by excitation from radiofrequency pulses.</obo:IAO_0000115>
         <obo:IAO_0000118>FA</obo:IAO_0000118>
         <dc:source xml:lang="en">https://radiopaedia.org/articles/flip-angle?lang=us</dc:source>
         <rdfs:label xml:lang="en">flip angle</rdfs:label>
@@ -2631,7 +2631,7 @@ The values often belong to a group of pixels or voxels that share the same chara
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000635">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000341"/>
-        <obo:IAO_0000115>A type of MR image data set collected using at least three diffusion gradients of some factor &apos;b,&apos; which is a function of the amplitude, duration, and interval of the gradiants.</obo:IAO_0000115>
+        <obo:IAO_0000115>A type of MR image data set collected using at least three diffusion gradients of some factor &quot;b,&quot; which is a function of the amplitude, duration, and interval of the gradiants.</obo:IAO_0000115>
         <obo:IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</obo:IAO_0000117>
         <obo:IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</obo:IAO_0000117>
         <rdfs:label xml:lang="en">diffusion weighted image data set</rdfs:label>
@@ -3581,7 +3581,7 @@ The values often belong to a group of pixels or voxels that share the same chara
     <!-- http://purl.obolibrary.org/obo/MRIO_0000672 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000672">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000612"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000607"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
@@ -3658,7 +3658,7 @@ The values often belong to a group of pixels or voxels that share the same chara
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000366"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>FAST (FMRIB&apos;s Automated Segmentation Tool) segments a 3D image of the brain into different tissue types (Grey Matter, White Matter, CSF, etc.), whilst also correcting for spatial intensity variations (also known as bias field or RF inhomogeneities).</obo:IAO_0000115>
+        <obo:IAO_0000115>FAST (FMRIB&quot;s Automated Segmentation Tool) segments a 3D image of the brain into different tissue types (Grey Matter, White Matter, CSF, etc.), whilst also correcting for spatial intensity variations (also known as bias field or RF inhomogeneities).</obo:IAO_0000115>
         <obo:IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</obo:IAO_0000117>
         <oboInOwl:source>Zhang, Y. and Brady, M. and Smith, S. Segmentation of brain MR images through a hidden Markov random field model and the expectation-maximization algorithm. IEEE Trans Med Imag, 20(1):45-57, 2001.</oboInOwl:source>
         <rdfs:label xml:lang="en">FAST analysis</rdfs:label>
@@ -3816,8 +3816,7 @@ The values often belong to a group of pixels or voxels that share the same chara
         <obo:IAO_0000115>Applies  RF  excitation  pulses  at  diff erent  phases every TR, so that the residual transverse magnetization has dif-ferent  phase  values  than  the  transverse  magnetization  most recently created.</obo:IAO_0000115>
         <obo:IAO_0000116>Could have IR.</obo:IAO_0000116>
         <obo:IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</obo:IAO_0000117>
-        <obo:IAO_0000119>MRI at a Glance
-ISBN 10: 1119053552</obo:IAO_0000119>
+        <obo:IAO_0000119>MRI at a Glance, ISBN 10: 1119053552</obo:IAO_0000119>
         <rdfs:label xml:lang="en">spoiled GRE sequence</rdfs:label>
     </owl:Class>
     
@@ -4654,7 +4653,7 @@ ISBN 10: 1119053552</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000706">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000705"/>
-        <obo:IAO_0000115>A datum representing the preference for a network&apos;s nodes to attach to other similar nodes.</obo:IAO_0000115>
+        <obo:IAO_0000115>A datum representing the preference for a network&quot;s nodes to attach to other similar nodes.</obo:IAO_0000115>
         <obo:IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</obo:IAO_0000117>
         <oboInOwl:source>https://en.wikipedia.org/wiki/Assortativity</oboInOwl:source>
         <rdfs:label xml:lang="en">network assortativity datum</rdfs:label>
@@ -4787,7 +4786,7 @@ ISBN 10: 1119053552</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000714">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000667"/>
-        <obo:IAO_0000115>A brain volume measurement datum about how much an evaluant&apos;s brain morphology has changed between two or more timepoints.</obo:IAO_0000115>
+        <obo:IAO_0000115>A brain volume measurement datum about how much an evaluant&quot;s brain morphology has changed between two or more timepoints.</obo:IAO_0000115>
         <obo:IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</obo:IAO_0000117>
         <rdfs:label xml:lang="en">percent change in brain volume measurement datum</rdfs:label>
     </owl:Class>
@@ -4931,6 +4930,7 @@ ISBN 10: 1119053552</obo:IAO_0000119>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000721">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000032"/>
         <obo:IAO_0000115>A scalar measurement datum that is the result of measurement of area.</obo:IAO_0000115>
+        <obo:IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</obo:IAO_0000117>
         <rdfs:label xml:lang="en">area measurement datum</rdfs:label>
     </owl:Class>
     
@@ -5066,6 +5066,89 @@ ISBN 10: 1119053552</obo:IAO_0000119>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MRIO_0000729 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000729">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000095"/>
+        <rdfs:label xml:lang="en">milliliter unit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_0000731 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000731">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000095"/>
+        <rdfs:label xml:lang="en">cubic millimeter unit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_0000732 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000732">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000001"/>
+        <rdfs:label xml:lang="en">millimeter unit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_0000733 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000733">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000032"/>
+        <obo:IAO_0000115>A scalar measurement datum that quantifies the spatial and temporal relationships between distinct units within the brain.</obo:IAO_0000115>
+        <obo:IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</obo:IAO_0000117>
+        <obo:IAO_0000119>http://www.scholarpedia.org/article/Brain_connectivity</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">brain connectivity measurement datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_0000734 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000734">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000733"/>
+        <obo:IAO_0000115>A brain connectivity measurement datum that quantifies the physical or anatomical connections between distinct units within the brain. These connections may arise from axons or synapses.</obo:IAO_0000115>
+        <obo:IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">brain structural connectivity measurement datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_0000735 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000735">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000733"/>
+        <obo:IAO_0000115>A brain connectivity measurement datum that quantifies the coordination of brain function between distinct units within the brain by measuring the covariance in activity between these units over time.</obo:IAO_0000115>
+        <obo:IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">brain functional connectivity measurement datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_0000736 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000736">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MRIO_0000734"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0010225"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000733"/>
+        <obo:IAO_0000115>A brain connectivity measurement datum that quantifies the structural disruption to connections involving the thalamus.</obo:IAO_0000115>
+        <obo:IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">thalamic structural disconnectivity measurement datum</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000067 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000067"/>
@@ -5135,7 +5218,7 @@ ISBN 10: 1119053552</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/UBERON_0001873 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001873">
-        <obo:IAO_0000118>&apos;Left-Caudate&apos; and &apos;Right-Caudate&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+        <obo:IAO_0000118>&quot;Left-Caudate&quot; and &quot;Right-Caudate&quot; (from Desikan-Killiany atlas)</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -5143,7 +5226,7 @@ ISBN 10: 1119053552</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/UBERON_0001876 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001876">
-        <obo:IAO_0000118>&apos;Left-Amygdala&apos; and &apos;Right-Amygdala&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+        <obo:IAO_0000118>&quot;Left-Amygdala&quot; and &quot;Right-Amygdala&quot; (from Desikan-Killiany atlas)</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -5151,7 +5234,7 @@ ISBN 10: 1119053552</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/UBERON_0001882 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001882">
-        <obo:IAO_0000118>&apos;Left-Accumbens-area&apos; and &apos;Right-Accumbens-area&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+        <obo:IAO_0000118>&quot;Left-Accumbens-area&quot; and &quot;Right-Accumbens-area&quot; (from Desikan-Killiany atlas)</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -5171,7 +5254,7 @@ ISBN 10: 1119053552</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/UBERON_0001898 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001898">
-        <obo:IAO_0000118>&apos;Left-VentralDC&apos; and &apos;Right-VentralDC&apos; (from Desikan-Killiany Atlas)</obo:IAO_0000118>
+        <obo:IAO_0000118>&quot;Left-VentralDC&quot; and &quot;Right-VentralDC&quot; (from Desikan-Killiany Atlas)</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -5179,7 +5262,7 @@ ISBN 10: 1119053552</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/UBERON_0002022 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002022">
-        <obo:IAO_0000118>&apos;lh-insula&apos; and &apos;rh-insula&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+        <obo:IAO_0000118>&quot;lh-insula&quot; and &quot;rh-insula&quot; (from Desikan-Killiany atlas)</obo:IAO_0000118>
         <obo:IAO_0000118>wm-lh-insula</obo:IAO_0000118>
     </owl:Class>
     
@@ -5188,7 +5271,7 @@ ISBN 10: 1119053552</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/UBERON_0002129 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002129">
-        <obo:IAO_0000118>&apos;Left-Cerebellum-Cortex&apos; and &apos;Right-Cerebellum-Cortex&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+        <obo:IAO_0000118>&quot;Left-Cerebellum-Cortex&quot; and &quot;Right-Cerebellum-Cortex&quot; (from Desikan-Killiany atlas)</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -5202,7 +5285,7 @@ ISBN 10: 1119053552</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/UBERON_0002421 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002421">
-        <obo:IAO_0000118>&apos;Left-Hippocampus&apos; and &apos;Right-Hippocampus&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+        <obo:IAO_0000118>&quot;Left-Hippocampus&quot; and &quot;Right-Hippocampus&quot; (from Desikan-Killiany atlas)</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -5210,7 +5293,7 @@ ISBN 10: 1119053552</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/UBERON_0002576 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002576">
-        <obo:IAO_0000118>&apos;lh-temporalpole&apos; and &apos;rh-temporalpole&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+        <obo:IAO_0000118>&quot;lh-temporalpole&quot; and &quot;rh-temporalpole&quot; (from Desikan-Killiany atlas)</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -5218,7 +5301,7 @@ ISBN 10: 1119053552</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/UBERON_0002581 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002581">
-        <obo:IAO_0000118>&apos;lh-postcentral&apos; and &apos;rh-postcentral&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+        <obo:IAO_0000118>&quot;lh-postcentral&quot; and &quot;rh-postcentral&quot; (from Desikan-Killiany atlas)</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -5226,7 +5309,7 @@ ISBN 10: 1119053552</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/UBERON_0002624 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002624">
-        <obo:IAO_0000118>&apos;lh-parsorbitalis&apos; and &apos;rh-parsobertalis&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+        <obo:IAO_0000118>&quot;lh-parsorbitalis&quot; and &quot;rh-parsobertalis&quot; (from Desikan-Killiany atlas)</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -5234,7 +5317,7 @@ ISBN 10: 1119053552</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/UBERON_0002629 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002629">
-        <obo:IAO_0000118>&apos;lh-parstriangularis&apos; and &apos;rh-parstriangularis&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+        <obo:IAO_0000118>&quot;lh-parstriangularis&quot; and &quot;rh-parstriangularis&quot; (from Desikan-Killiany atlas)</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -5242,7 +5325,7 @@ ISBN 10: 1119053552</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/UBERON_0002661 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002661">
-        <obo:IAO_0000118>&apos;lh-superiorfrontal&apos; and &apos;rh-superiorfrontal&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+        <obo:IAO_0000118>&quot;lh-superiorfrontal&quot; and &quot;rh-superiorfrontal&quot; (from Desikan-Killiany atlas)</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -5250,7 +5333,7 @@ ISBN 10: 1119053552</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/UBERON_0002688 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002688">
-        <obo:IAO_0000118>&apos;lh-supramarginal&apos; and &apos;rh-supramarginal&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+        <obo:IAO_0000118>&quot;lh-supramarginal&quot; and &quot;rh-supramarginal&quot; (from Desikan-Killiany atlas)</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -5258,7 +5341,7 @@ ISBN 10: 1119053552</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/UBERON_0002703 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002703">
-        <obo:IAO_0000118>&apos;lh-precentral&apos; and &apos;rh-precentral&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+        <obo:IAO_0000118>&quot;lh-precentral&quot; and &quot;rh-precentral&quot; (from Desikan-Killiany atlas)</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -5266,7 +5349,7 @@ ISBN 10: 1119053552</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/UBERON_0002728 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002728">
-        <obo:IAO_0000118>&apos;lh-entorhinal&apos; and &apos;rh-entorhinal&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+        <obo:IAO_0000118>&quot;lh-entorhinal&quot; and &quot;rh-entorhinal&quot; (from Desikan-Killiany atlas)</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -5274,7 +5357,7 @@ ISBN 10: 1119053552</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/UBERON_0002751 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002751">
-        <obo:IAO_0000118>&apos;lh-inferiortemporal&apos; and &apos;rh-inferiortemporal&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+        <obo:IAO_0000118>&quot;lh-inferiortemporal&quot; and &quot;rh-inferiortemporal&quot; (from Desikan-Killiany atlas)</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -5282,7 +5365,7 @@ ISBN 10: 1119053552</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/UBERON_0002766 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002766">
-        <obo:IAO_0000118>&apos;lh-fusiform&apos; and &apos;rh-fusiform&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+        <obo:IAO_0000118>&quot;lh-fusiform&quot; and &quot;rh-fusiform&quot; (from Desikan-Killiany atlas)</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -5290,7 +5373,7 @@ ISBN 10: 1119053552</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/UBERON_0002769 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002769">
-        <obo:IAO_0000118>&apos;lh-superiortemporal&apos; and &apos;rh-superiortemporal&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+        <obo:IAO_0000118>&quot;lh-superiortemporal&quot; and &quot;rh-superiortemporal&quot; (from Desikan-Killiany atlas)</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -5298,7 +5381,7 @@ ISBN 10: 1119053552</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/UBERON_0002771 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002771">
-        <obo:IAO_0000118>&apos;lh-middletemporal&apos; and &apos;rh-middletemporal&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+        <obo:IAO_0000118>&quot;lh-middletemporal&quot; and &quot;rh-middletemporal&quot; (from Desikan-Killiany atlas)</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -5306,7 +5389,7 @@ ISBN 10: 1119053552</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/UBERON_0002795 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002795">
-        <obo:IAO_0000118>&apos;lh-frontalpole&apos; and &apos;rh-frontalpole&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+        <obo:IAO_0000118>&quot;lh-frontalpole&quot; and &quot;rh-frontalpole&quot; (from Desikan-Killiany atlas)</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -5314,7 +5397,7 @@ ISBN 10: 1119053552</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/UBERON_0002943 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002943">
-        <obo:IAO_0000118>&apos;lh-lingual&apos; and &apos;rh-lingual&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+        <obo:IAO_0000118>&quot;lh-lingual&quot; and &quot;rh-lingual&quot; (from Desikan-Killiany atlas)</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -5322,7 +5405,7 @@ ISBN 10: 1119053552</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/UBERON_0002973 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002973">
-        <obo:IAO_0000118>&apos;lh-parahippocampal&apos; and &apos;rh-parahippocampal&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+        <obo:IAO_0000118>&quot;lh-parahippocampal&quot; and &quot;rh-parahippocampal&quot; (from Desikan-Killiany atlas)</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -5330,7 +5413,7 @@ ISBN 10: 1119053552</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/UBERON_0002980 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002980">
-        <obo:IAO_0000118>&apos;lh-parsopercularis&apos; and &apos;rh-parsopercularis&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+        <obo:IAO_0000118>&quot;lh-parsopercularis&quot; and &quot;rh-parsopercularis&quot; (from Desikan-Killiany atlas)</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -5350,7 +5433,7 @@ ISBN 10: 1119053552</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/UBERON_0006088 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0006088">
-        <obo:IAO_0000118>&apos;lh-inferiorparietal&apos; and &apos;rh-inferiorparietal&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+        <obo:IAO_0000118>&quot;lh-inferiorparietal&quot; and &quot;rh-inferiorparietal&quot; (from Desikan-Killiany atlas)</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -5358,7 +5441,7 @@ ISBN 10: 1119053552</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/UBERON_0006092 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0006092">
-        <obo:IAO_0000118>&apos;lh-cuneus&apos; and &apos;rh-cuneus&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+        <obo:IAO_0000118>&quot;lh-cuneus&quot; and &quot;rh-cuneus&quot; (from Desikan-Killiany atlas)</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -5366,7 +5449,7 @@ ISBN 10: 1119053552</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/UBERON_0006093 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0006093">
-        <obo:IAO_0000118>&apos;lh-precuneus&apos; and &apos;rh-precuneus&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+        <obo:IAO_0000118>&quot;lh-precuneus&quot; and &quot;rh-precuneus&quot; (from Desikan-Killiany atlas)</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -5374,7 +5457,7 @@ ISBN 10: 1119053552</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/UBERON_0006094 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0006094">
-        <obo:IAO_0000118>&apos;lh-superiorparietal&apos; and &apos;rh-superiorparietal&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+        <obo:IAO_0000118>&quot;lh-superiorparietal&quot; and &quot;rh-superiorparietal&quot; (from Desikan-Killiany atlas)</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -5382,7 +5465,7 @@ ISBN 10: 1119053552</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/UBERON_0006114 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0006114">
-        <obo:IAO_0000118>&apos;lh-lateraloccipital&apos; and &apos;rh-lateraloccipital&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+        <obo:IAO_0000118>&quot;lh-lateraloccipital&quot; and &quot;rh-lateraloccipital&quot; (from Desikan-Killiany atlas)</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -5390,7 +5473,7 @@ ISBN 10: 1119053552</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/UBERON_0006445 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0006445">
-        <obo:IAO_0000118>&apos;lh-caudalmiddlefrontal&apos; and &apos;rh-caudalmiddlefrontal&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+        <obo:IAO_0000118>&quot;lh-caudalmiddlefrontal&quot; and &quot;rh-caudalmiddlefrontal&quot; (from Desikan-Killiany atlas)</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -5398,7 +5481,7 @@ ISBN 10: 1119053552</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/UBERON_0006446 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0006446">
-        <obo:IAO_0000118>&apos;lh-rostralmiddlefrontal&apos; and &apos;rh-rostralmiddlefrontal&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+        <obo:IAO_0000118>&quot;lh-rostralmiddlefrontal&quot; and &quot;rh-rostralmiddlefrontal&quot; (from Desikan-Killiany atlas)</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -5406,7 +5489,7 @@ ISBN 10: 1119053552</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/UBERON_0006514 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0006514">
-        <obo:IAO_0000118>&apos;Left-Pallidum&apos; and &apos;Right-Pallidum&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+        <obo:IAO_0000118>&quot;Left-Pallidum&quot; and &quot;Right-Pallidum&quot; (from Desikan-Killiany atlas)</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -5414,7 +5497,7 @@ ISBN 10: 1119053552</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/UBERON_0008884 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0008884">
-        <obo:IAO_0000118>&apos;Left-Putamen&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+        <obo:IAO_0000118>&quot;Left-Putamen&quot; (from Desikan-Killiany atlas)</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -5422,7 +5505,7 @@ ISBN 10: 1119053552</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/UBERON_0008885 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0008885">
-        <obo:IAO_0000118>&apos;&apos;Right-Putamen&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+        <obo:IAO_0000118>&quot;&quot;Right-Putamen&quot; (from Desikan-Killiany atlas)</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -5431,7 +5514,7 @@ ISBN 10: 1119053552</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0009897">
         <obo:IAO_0000116 xml:lang="en">Corrected error saying this is in the left hemisphere of the brain.</obo:IAO_0000116>
-        <obo:IAO_0000118>&apos;rh-transversetemporal&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+        <obo:IAO_0000118>&quot;rh-transversetemporal&quot; (from Desikan-Killiany atlas)</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -5439,7 +5522,7 @@ ISBN 10: 1119053552</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/UBERON_0009898 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0009898">
-        <obo:IAO_0000118>&apos;lh-transversetemporal&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+        <obo:IAO_0000118>&quot;lh-transversetemporal&quot; (from Desikan-Killiany atlas)</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -5453,7 +5536,7 @@ ISBN 10: 1119053552</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/UBERON_0013683 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0013683">
-        <obo:IAO_0000118>&apos;Left-Thalamus-Proper&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+        <obo:IAO_0000118>&quot;Left-Thalamus-Proper&quot; (from Desikan-Killiany atlas)</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -5461,7 +5544,7 @@ ISBN 10: 1119053552</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/UBERON_0013684 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0013684">
-        <obo:IAO_0000118>&apos;Right-Thalamus-Proper&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+        <obo:IAO_0000118>&quot;Right-Thalamus-Proper&quot; (from Desikan-Killiany atlas)</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -5469,7 +5552,7 @@ ISBN 10: 1119053552</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/UBERON_0022352 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0022352">
-        <obo:IAO_0000118>&apos;lh-medialorbitofrontal&apos; and &apos;rh-imedialorbitofrontal&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+        <obo:IAO_0000118>&quot;lh-medialorbitofrontal&quot; and &quot;rh-imedialorbitofrontal&quot; (from Desikan-Killiany atlas)</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -5477,7 +5560,7 @@ ISBN 10: 1119053552</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/UBERON_0022353 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0022353">
-        <obo:IAO_0000118>&apos;lh-posteriorcingulate&apos; and &apos;rh-posteriorcingulate&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+        <obo:IAO_0000118>&quot;lh-posteriorcingulate&quot; and &quot;rh-posteriorcingulate&quot; (from Desikan-Killiany atlas)</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -5485,7 +5568,7 @@ ISBN 10: 1119053552</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/UBERON_0022438 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0022438">
-        <obo:IAO_0000118>&apos;lh-rostralanteriorcingulate&apos; and &apos;rh-rostralanteriorcingulate&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+        <obo:IAO_0000118>&quot;lh-rostralanteriorcingulate&quot; and &quot;rh-rostralanteriorcingulate&quot; (from Desikan-Killiany atlas)</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -5493,7 +5576,7 @@ ISBN 10: 1119053552</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/UBERON_0022534 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0022534">
-        <obo:IAO_0000118>&apos;lh-pericalcarine&apos; and &apos;rh-pericalcarine&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+        <obo:IAO_0000118>&quot;lh-pericalcarine&quot; and &quot;rh-pericalcarine&quot; (from Desikan-Killiany atlas)</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -5501,7 +5584,7 @@ ISBN 10: 1119053552</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/UBERON_0022716 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0022716">
-        <obo:IAO_0000118>&apos;lh-lateralorbitofrontal&apos; and &apos;rh-lateralorbitofrontal&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+        <obo:IAO_0000118>&quot;lh-lateralorbitofrontal&quot; and &quot;rh-lateralorbitofrontal&quot; (from Desikan-Killiany atlas)</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -5509,7 +5592,7 @@ ISBN 10: 1119053552</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/UBERON_0027061 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0027061">
-        <obo:IAO_0000118>&apos;lh-isthmuscingulate&apos; and &apos;rh-isthmuscingulate&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+        <obo:IAO_0000118>&quot;lh-isthmuscingulate&quot; and &quot;rh-isthmuscingulate&quot; (from Desikan-Killiany atlas)</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -5525,7 +5608,7 @@ ISBN 10: 1119053552</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/UBERON_0028715 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0028715">
-        <obo:IAO_0000118>&apos;lh-caudalanteriorcingulate&apos; and &apos;rh-caudalanteriorcingulate&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+        <obo:IAO_0000118>&quot;lh-caudalanteriorcingulate&quot; and &quot;rh-caudalanteriorcingulate&quot; (from Desikan-Killiany atlas)</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -5533,8 +5616,20 @@ ISBN 10: 1119053552</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/UBERON_0035933 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0035933">
-        <obo:IAO_0000118>&apos;lh-paracentral&apos; and &apos;rh-paracentral&apos; (from Desikan-Killiany atlas)</obo:IAO_0000118>
+        <obo:IAO_0000118>&quot;lh-paracentral&quot; and &quot;rh-paracentral&quot; (from Desikan-Killiany atlas)</obo:IAO_0000118>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000001"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_0000095 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000095"/>
     
 
 

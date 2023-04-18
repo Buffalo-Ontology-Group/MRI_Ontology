@@ -7,3 +7,4 @@ import_group:
     - id: obi
     - id: uberon
     - id: mondo
+    - id: pato

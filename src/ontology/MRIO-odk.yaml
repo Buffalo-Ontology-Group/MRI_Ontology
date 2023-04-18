@@ -6,3 +6,7 @@ import_group:
   products:
     - id: obi
     - id: uberon
+    - id: mondo
+    - id: pato
+    - id: ncit
+    - id: caro

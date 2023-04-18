@@ -2,6 +2,7 @@
 :		http://purl.obolibrary.org/obo/
 cl:		http://purl.obolibrary.org/obo/cl#
 dc:		http://purl.org/dc/elements/1.1/
+go:		http://purl.obolibrary.org/obo/go#
 obo:		http://purl.obolibrary.org/obo/
 owl:		http://www.w3.org/2002/07/owl#
 rdf:		http://www.w3.org/1999/02/22-rdf-syntax-ns#
@@ -11,37 +12,43 @@ core:		http://purl.obolibrary.org/obo/core#
 doap:		http://usefulinc.com/ns/doap#
 foaf:		http://xmlns.com/foaf/0.1/
 obda:		https://w3id.org/obda/vocabulary#
+pato:		http://purl.obolibrary.org/obo/pato#
 rdfs:		http://www.w3.org/2000/01/rdf-schema#
 skos:		http://www.w3.org/2004/02/skos/core#
 swrl:		http://www.w3.org/2003/11/swrl#
+chebi:		http://purl.obolibrary.org/obo/chebi/
 core1:		http://purl.obolibrary.org/obo/uberon/core#
 mondo:		http://purl.obolibrary.org/obo/mondo#
 swrla:		http://swrl.stanford.edu/ontologies/3.3/swrla.owl#
 swrlb:		http://www.w3.org/2003/11/swrlb#
 terms:		http://purl.org/dc/terms/
+chebi1:		http://purl.obolibrary.org/obo/chebi#3
+chebi2:		http://purl.obolibrary.org/obo/chebi#1
 ubprop:		http://purl.obolibrary.org/obo/ubprop#
 protege:		http://protege.stanford.edu/plugins/owl/protege#
+subsets:		http://purl.obolibrary.org/obo/ro/subsets#
 oboInOwl:	http://www.geneontology.org/formats/oboInOwl#
+ncbitaxon:	http://purl.obolibrary.org/obo/ncbitaxon#
 
 [MappingDeclaration] @collection [[
 mappingId	thalamicvolume
-target		:crania/deepgrai/thalamicvolume/{id} a :MRIO_0000501 ; :IAO_0000136 :UBERON_0010225 ; :IAO_0000004 {thalamicvolume}^^xsd:double . 
+target		:crania/deepgrai/thalamicvolume/{id} a :MRIO_0000501 , :MRIO_0000731 ; :IAO_0000136 :UBERON_0010225 ; :IAO_0000004 {thalamicvolume}^^xsd:double ; :IAO_0000039 :MRIO_0000731 . 
 source		SELECT id,thalamicvolume FROM crania_thalamicVolume ;
 
 mappingId	wholebrainvolume
-target		:crania/sienax/wholebrainvolume/{id} a :MRIO_0000664 ; :IAO_0000136 :UBERON_0000955 ; :IAO_0000004 {wholebrainvolume_normalizedwholebrainvolume}^^xsd:double . 
+target		:crania/sienax/wholebrainvolume/{id} a :MRIO_0000664 ; :IAO_0000136 :UBERON_0000955 ; :IAO_0000004 {wholebrainvolume_normalizedwholebrainvolume}^^xsd:double ; :IAO_0000039 :MRIO_0000731 . 
 source		SELECT id,wholebrainvolume_normalizedwholebrainvolume FROM crania_sienax ;
 
 mappingId	greymattervolume
-target		:crania/sienax/greymattervolume/{id} a :MRIO_0000665 ; :IAO_0000136 :UBERON_0003528 ; :IAO_0000004 {greymattervolume_normalizedgreymattervolume}^^xsd:double . 
+target		:crania/sienax/greymattervolume/{id} a :MRIO_0000665 ; :IAO_0000136 :UBERON_0003528 ; :IAO_0000004 {greymattervolume_normalizedgreymattervolume}^^xsd:double ; :IAO_0000039 :MRIO_0000731 . 
 source		SELECT id,greymattervolume_normalizedgreymattervolume FROM crania_sienax ;
 
 mappingId	whitemattervolume
-target		:crania/sienax/whitemattervolume/{id} a :MRIO_0000666 ; :IAO_0000136 :UBERON_0003544 ; :IAO_0000004 {whitemattervolume_normalizedwhitemattervolume}^^xsd:double . 
+target		:crania/sienax/whitemattervolume/{id} a :MRIO_0000666 ; :IAO_0000136 :UBERON_0003544 ; :IAO_0000004 {whitemattervolume_normalizedwhitemattervolume}^^xsd:double ; :IAO_0000039 :MRIO_0000731 . 
 source		SELECT id,whitemattervolume_normalizedwhitemattervolume FROM crania_sienax ;
 
 mappingId	csfvolume
-target		:crania/sienax/cerebrospinalfluidvolume/{id} a :MRIO_0000668 ; :IAO_0000136 :UBERON_0001359 ; :IAO_0000004 {cerebrospinalfluidvolume_normalizedcerebrospinalfluidvolume}^^xsd:double . 
+target		:crania/sienax/cerebrospinalfluidvolume/{id} a :MRIO_0000668 ; :IAO_0000136 :UBERON_0001359 ; :IAO_0000004 {cerebrospinalfluidvolume_normalizedcerebrospinalfluidvolume}^^xsd:double ; :IAO_0000039 :MRIO_0000731 . 
 source		SELECT id,cerebrospinalfluidvolume_normalizedcerebrospinalfluidvolume FROM crania_sienax ;
 
 mappingId	Pearson DMN Graph Theory Measures
@@ -117,19 +124,31 @@ target		:crania/freesurfer/{name}_surfacearea/{measures_surface_hemisphere_fs__i
 source		SELECT fs_fsdata_surf_region.name, fs_fsdata_surf_region.surfarea, grayvol, thickavg, fs_fsdata_surf_region.fsdata_surf_region_fs_fsdata_he_fs_fsdata_hemisphere_id, measures_surface_hemisphere_fs__id, fs_fsdata_hemisphere.fs_fsdata_hemisphere_id FROM fs_fsdata_surf_region JOIN fs_fsdata_hemisphere ON fsdata_surf_region_fs_fsdata_he_fs_fsdata_hemisphere_id = fs_fsdata_hemisphere_id
 
 mappingId	Lateral Ventricle Volume
-target		:crania/neurostream/lvv/{id} a :MRIO_0000689 ; :IAO_0000136 :UBERON_0002285 ; :IAO_0000004 {lateralventricularvolume}^^xsd:double . 
+target		:crania/neurostream/lvv/{id} a :MRIO_0000689 ; :IAO_0000136 :UBERON_0002285 ; :IAO_0000004 {lateralventricularvolume}^^xsd:double ; :IAO_0000039 :MRIO_0000729 . 
 source		SELECT id,lateralventricularvolume FROM crania_lateralventricularvolume
 
 mappingId	mov
-target		:crania/5FLAIRmeasures/medullaoblongatavolume/{id} a :MRIO_0000694 ; :IAO_0000136 :UBERON_0001896 ; :IAO_0000004 {medullaoblongatavolume}^^xsd:double . 
+target		:crania/5FLAIRmeasures/medullaoblongatavolume/{id} a :MRIO_0000694 ; :IAO_0000136 :UBERON_0001896 ; :IAO_0000004 {medullaoblongatavolume}^^xsd:decimal ; :IAO_0000039 :MRIO_0000731 . 
 source		SELECT id,medullaoblongatavolume FROM crania_medullaoblongatavolume ;
 
 mappingId	sclv
-target		:crania/5FLAIRmeasures/salientcentrallesionvolume/{id} a :MRIO_0000722 ; :IAO_0000004 {salientcentrallesionvolume}^^xsd:double . 
+target		:crania/5FLAIRmeasures/salientcentrallesionvolume/{id} a :MRIO_0000722 ; :IAO_0000004 {salientcentrallesionvolume}^^xsd:double ; :IAO_0000039 :MRIO_0000731 . 
 source		SELECT id,salientcentrallesionvolume FROM crania_salientcentrallesionvolume ;
 
 mappingId	DiseaseGroup
 target		:crania/cdd/diseasegroup/{id} a :OGMS_0000031 ; :OBI_0002135 {diseasegroup} . 
 source		SELECT id,diseasegroup from cdd_diseasegroup ;
+
+mappingId	DiseaseDuration
+target		:crania/cdd/diseaseduration/{id} a :PATO_0001990 ; :OBI_0002135 {diseaseduration} . 
+source		SELECT id,diseaseduration FROM  cdd_diseaseduration ;
+
+mappingId	EDSS
+target		:crania/cdd/edss/{id} a :NCIT_C112520 ; :OBI_0002135 {edss} . 
+source		SELECT id,edss FROM  cdd_edss ;
+
+mappingId	lqt_thalamic_discon
+target		:crania/lqt/thalamic_discon/{id} a :MRIO_0000736 ; :IAO_0000136 :UBERON_0010225 ; :IAO_0000004 {thalamicstructuraldisconnectivity}^^xsd:double ; :IAO_0000039 :MRIO_0000737 . 
+source		SELECT id,thalamicstructuraldisconnectivity FROM crania_thalamicstructuraldisconnectivity ;
 ]]
 

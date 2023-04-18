@@ -45,6 +45,10 @@ ERROR	missing_label	isthmus of cingulate cortex	rdfs:label
 ERROR	missing_label	banks of superior temporal sulcus	rdfs:label	
 ERROR	missing_label	caudal anterior cingulate cortex	rdfs:label	
 ERROR	missing_label	paracentral lobule	rdfs:label	
+WARN	missing_definition	milliliter unit	textual definition	
+WARN	missing_definition	cubic millimeter unit	textual definition	
+WARN	missing_definition	millimeter unit	textual definition	
+WARN	missing_definition	percentage unit	textual definition	
 WARN	missing_definition	caudate nucleus	textual definition	
 WARN	missing_definition	amygdala	textual definition	
 WARN	missing_definition	nucleus accumbens	textual definition	

@@ -48,6 +48,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/RO_0002171 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002171"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0002174 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002174"/>
@@ -689,6 +695,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001882">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000000"/>
         <obo:IAO_0000115>A region of the brain consisting of a collection of neurons located in the forebrain ventral to the caudate and putamen. (caudoputamen in rodent) and continuous with these structures. There is no distinct boundary between the nucleus accumbens and the caudate/putamen, but in rodents, it can be identified by its lack of traversing fiber bundles in comparison to the dorsal striatum. Its principle neuron is the medium spiny neuron. Together with the neostriatum (caudate nucleus and putamen), the nucleus accumbens forms the striatum.</obo:IAO_0000115>
+        <obo:RO_0002171 rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001883"/>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_8782"/>
         <obo:UBPROP_0000001>a collection of pleomorphic cells in the caudal part of the anterior horn of the lateral ventricle, in the region of the olfactory tubercle, lying between the head of the caudate nucleus and the anterior perforated substance. It is part of the ventral striatum, a composite structure considered part of the basal ganglia[GO][GO:0021768].</obo:UBPROP_0000001>
         <obo:UBPROP_0000008>The ventral striatopallidal complex in birds corresponds closely to its counterpart in mammals, with a nucleus accumbes present in the rostral telenceaphalon. Note that in birds, a region previously called the nucleus accumbens is now recognized as the lateral part of the bed nucleus of stria terminalis.[ISBN:0471888893]</obo:UBPROP_0000008>
@@ -733,6 +740,12 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A region of the brain consisting of a collection of neurons located in the forebrain ventral to the caudate and putamen. (caudoputamen in rodent) and continuous with these structures. There is no distinct boundary between the nucleus accumbens and the caudate/putamen, but in rodents, it can be identified by its lack of traversing fiber bundles in comparison to the dorsal striatum. Its principle neuron is the medium spiny neuron. Together with the neostriatum (caudate nucleus and putamen), the nucleus accumbens forms the striatum.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>BIRNLEX:727</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001882"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002171"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001883"/>
+        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ABA</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001882"/>
@@ -941,6 +954,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001897">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000000"/>
         <obo:IAO_0000115>Subcortical brain region consisting of paired gray matter bodies in the dorsal diencephalon and forming part of the lateral wall of the third ventricle of the brain. The thalamus represents the major portion of the diencephalon and is commonly divided into cellular aggregates known as nuclear groups.(MeSH). The dorsal topographic division of the interbrain. The macrodissected adult human thalamus was clearly illustrated by Vesalius in 1543 and the term as defined here was introduced by His in 1893. It includes the traditional epithalamus, dorsal thalamus, and ventral thalamus of Herrick (1910, pp. 494, 498). Also see Kuhlenbeck (1927, Ch. 9) and Jones (1985, p. 87).</obo:IAO_0000115>
+        <obo:RO_0002171 rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001898"/>
         <obo:UBPROP_0000001>One of a pair of large oval nervous structures made of gray matter and forming most of the lateral walls of the third ventricle of the brain and part of the diencephalon. [TFD][VHOG]</obo:UBPROP_0000001>
         <obo:UBPROP_0000001>Part of the diencephalon consisting of a mass of connecting fibers which relay sensory information to the cerebral cortex.[AAO]</obo:UBPROP_0000001>
         <obo:UBPROP_0000003>(...) the brain regions of tetrapods, the structures they contain, and their basic organizational features are the same as in fishes.[well established][VHOG]</obo:UBPROP_0000003>
@@ -994,6 +1008,12 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Subcortical brain region consisting of paired gray matter bodies in the dorsal diencephalon and forming part of the lateral wall of the third ventricle of the brain. The thalamus represents the major portion of the diencephalon and is commonly divided into cellular aggregates known as nuclear groups.(MeSH). The dorsal topographic division of the interbrain. The macrodissected adult human thalamus was clearly illustrated by Vesalius in 1543 and the term as defined here was introduced by His in 1893. It includes the traditional epithalamus, dorsal thalamus, and ventral thalamus of Herrick (1910, pp. 494, 498). Also see Kuhlenbeck (1927, Ch. 9) and Jones (1985, p. 87).</owl:annotatedTarget>
         <oboInOwl:hasDbXref>BIRNLEX:954</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001897"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002171"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001898"/>
+        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ABA</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001897"/>
@@ -1093,6 +1113,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001898">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000000"/>
         <obo:IAO_0000115>A specialized brain region of the ventral diencephalon arising near the end of the segmentation period; the embryonic hypothalamic region will give rise to the posterior pituitary gland as well as a number of brain nuclei. [ZFA]. One of the most important functions of the hypothalamus is to link the nervous system to the endocrine system via the pituitary gland (hypophysis).[Wikipedia].</obo:IAO_0000115>
+        <obo:RO_0002171 rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001897"/>
         <obo:RO_0002174 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_7737"/>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_117569"/>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_7742"/>
@@ -1155,6 +1176,12 @@
         <owl:annotatedTarget>A specialized brain region of the ventral diencephalon arising near the end of the segmentation period; the embryonic hypothalamic region will give rise to the posterior pituitary gland as well as a number of brain nuclei. [ZFA]. One of the most important functions of the hypothalamus is to link the nervous system to the endocrine system via the pituitary gland (hypophysis).[Wikipedia].</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Hypothalamus"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZFIN:curator</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001898"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002171"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001897"/>
+        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ABA</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001898"/>
@@ -1290,6 +1317,24 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002022"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>insula lobule</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FMA:67329</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002022"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>insular lobe</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FMA:67329</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002022"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>insular lobe</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>NLX:11342</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002022"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>insular region</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FMA:67329</oboInOwl:hasDbXref>
     </owl:Axiom>
@@ -1374,7 +1419,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002022"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000012"/>
         <owl:annotatedTarget>two classes in ncit, Central_Lobe is part of temporal lobe</owl:annotatedTarget>
-        <oboInOwl:external_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ncit</oboInOwl:external_ontology>
+        <oboInOwl:external_ontology>ncit</oboInOwl:external_ontology>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002022"/>
@@ -1408,24 +1453,6 @@
         <owl:annotatedTarget>cortex of island</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FMA:67329</oboInOwl:hasDbXref>
     </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002022"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>insula lobule</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FMA:67329</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002022"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>insular lobe</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FMA:67329</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002022"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>insular lobe</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>NLX:11342</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -1434,6 +1461,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002129">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003528"/>
         <obo:IAO_0000115>The superficial gray matter of the cerebellum. It consists of three main layers, the molecular layer, the Purkinje cell layer and the granule cell layer.</obo:IAO_0000115>
+        <obo:RO_0002171 rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002130"/>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <obo:UBPROP_0000001>The cerebellar cortex is a thin mantle of gray matter that covers the surface of each cerebral hemisphere. It has a characteristic morphology with convolutions (gyri) and crevices (sulci) that have specific functions. Six layers of nerve cells and the nerve pathways that connect them comprise the cerebellar cortex. Together, these regions are responsible for the processes of conscious thought, perception, emotion and memory as well as advanced motor function[GO][GO:0021695].</obo:UBPROP_0000001>
         <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Cerebellar_cortex"/>
@@ -1479,6 +1507,12 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The superficial gray matter of the cerebellum. It consists of three main layers, the molecular layer, the Purkinje cell layer and the granule cell layer.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>BIRNLEX:1566</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002129"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002171"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002130"/>
+        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ABA</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002129"/>
@@ -1556,7 +1590,6 @@
         <oboInOwl:hasDbXref>EHDAA2:0001984</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>EHDAA:3502</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>EHDAA:6576</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>EMAPA:16914</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>EV:0100307</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FMA:78448</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>GAID:611</oboInOwl:hasDbXref>
@@ -1685,6 +1718,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000000"/>
         <obo:IAO_0000115>Hippocampus (proper) plus dentate gyrus and subiculum[definition derived from NIF comments and ontology alignment].</obo:IAO_0000115>
         <obo:IAO_0000232>The term hippocampus is often used synonymously with hippocampal formation which consists of the hippocampus proper or Cornu Ammonis, the dentate gyrus and the subiculum</obo:IAO_0000232>
+        <obo:RO_0002171 rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002264"/>
         <obo:UBPROP_0000012>BTO:0000601 is placed here since it includes the DG. GO also includes dentate gyrus development as part of hippocampus development, so we assume when GO says &apos;hippocampus&apos; it means &apos;hippocampal formation&apos;. In ABA HPF = (.. subiculum) + HIP, HIP = DG + AH.</obo:UBPROP_0000012>
         <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Hippocampal_formation"/>
         <oboInOwl:hasDbXref rdf:resource="http://linkedlifedata.com/resource/umls/id/C0175202"/>
@@ -1728,6 +1762,12 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000232"/>
         <owl:annotatedTarget>The term hippocampus is often used synonymously with hippocampal formation which consists of the hippocampus proper or Cornu Ammonis, the dentate gyrus and the subiculum</owl:annotatedTarget>
         <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIF</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002421"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002171"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002264"/>
+        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ABA</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002421"/>
@@ -2412,6 +2452,9 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000000"/>
         <obo:IAO_0000115>Component of the temporal lobe on the mesial surface. The rostral and caudal boundaries of the entorhinal cortex are the rostral end of the collateral sulcus and the caudal end of the amygdala respectively. The medial boundary is the medial aspect of the temporal lobe and the lateral boundary is the collateral sulcus. (DK).</obo:IAO_0000115>
         <obo:IAO_0000116>TODO - check area vs complex. MBA:909 this is part of the hippocampal formation via retrohippocampal region</obo:IAO_0000116>
+        <obo:RO_0002171 rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001953"/>
+        <obo:RO_0002171 rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002191"/>
+        <obo:RO_0002171 rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004683"/>
         <obo:UBPROP_0000008>In primates it is found on the medial surface of the temporal lobe, partially bounded ventrolaterally by the collateral sulcus in the human and by the rhinal sulcus in the macaque. It is subdivided on the basis of internal structure into eight parts in the human ( Insausti-2004 ),and seven parts in the macaque ( Paxinos-2009a ). In the rat and mouse it is divided into a lateral part of the entorhinal area and a medial part of the entorhinal area; the latter is further divided into dorsal and ventral zones to produce three subdivisions in the rodent ( Swanson-2004 )</obo:UBPROP_0000008>
         <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Entorhinal_cortex"/>
         <oboInOwl:hasDbXref rdf:resource="http://linkedlifedata.com/resource/umls/id/C0175196"/>
@@ -2454,6 +2497,24 @@
         <owl:annotatedTarget>Component of the temporal lobe on the mesial surface. The rostral and caudal boundaries of the entorhinal cortex are the rostral end of the collateral sulcus and the caudal end of the amygdala respectively. The medial boundary is the medial aspect of the temporal lobe and the lateral boundary is the collateral sulcus. (DK).</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Entorhinal_cortex"/>
         <oboInOwl:hasDbXref>BIRNLEX:1508</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002728"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002171"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001953"/>
+        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ABA</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002728"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002171"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002191"/>
+        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ABA</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002728"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002171"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004683"/>
+        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ABA</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002728"/>
@@ -3989,6 +4050,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000000"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003528"/>
         <obo:IAO_0000115>Part of what are called the basal ganglia of the brain which consist of the globus pallidus and the ventral pallidum.</obo:IAO_0000115>
+        <obo:RO_0002171 rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002435"/>
         <oboInOwl:hasDbXref>BAMS:PAL</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>EMAPA:32780</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FMA:83684</oboInOwl:hasDbXref>
@@ -4006,6 +4068,12 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Part of what are called the basal ganglia of the brain which consist of the globus pallidus and the ventral pallidum.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:resource="http://www.medterms.com/script/main/art.asp?articlekey=11614"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006514"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002171"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002435"/>
+        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ABA</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006514"/>
