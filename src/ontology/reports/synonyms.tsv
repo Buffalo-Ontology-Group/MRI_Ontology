@@ -77,8 +77,8 @@
 <http://purl.obolibrary.org/obo/MRIO_0000610>	<http://www.w3.org/2000/01/rdf-schema#label>	"matrix data set"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000637>	<http://www.w3.org/2000/01/rdf-schema#label>	"frontoparietal resting state functional connectivity matrix"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000690>	<http://www.w3.org/2000/01/rdf-schema#label>	"diffusion gradient"@en	
-<http://purl.obolibrary.org/obo/MRIO_0000716>	<http://www.w3.org/2000/01/rdf-schema#label>	"computed image data set"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000348>	<http://www.w3.org/2000/01/rdf-schema#label>	"ASL perfusion data set"@en	
+<http://purl.obolibrary.org/obo/MRIO_0000716>	<http://www.w3.org/2000/01/rdf-schema#label>	"computed image data set"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000653>	<http://www.w3.org/2000/01/rdf-schema#label>	"inversion time"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000726>	<http://www.w3.org/2000/01/rdf-schema#label>	"medulla oblongata volume analysis"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000706>	<http://www.w3.org/2000/01/rdf-schema#label>	"network assortativity datum"@en	

@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: MRIO/releases/2022-11-22/MRIO-base.owl
+data-version: MRIO/releases/2023-04-18/MRIO-base.owl
 ontology: MRIO/MRIO-base
 property_value: http://purl.org/dc/elements/1.1/contributor "Alan Ruttenberg" xsd:string
 property_value: http://purl.org/dc/elements/1.1/creator "Alexander D. Bartnik" xsd:string
@@ -13,7 +13,7 @@ property_value: http://purl.org/dc/elements/1.1/description "An ontology for the
 property_value: http://purl.org/dc/elements/1.1/title "MRI Ontology (MRI)" xsd:string
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/4.0/ xsd:string
-property_value: owl:versionInfo "2022-11-22" xsd:string
+property_value: owl:versionInfo "2023-04-18" xsd:string
 
 [Term]
 id: CCL:0000360
@@ -1958,6 +1958,11 @@ is_a: MRIO:0000733 ! brain connectivity measurement datum
 intersection_of: MRIO:0000734 ! brain structural connectivity measurement datum
 intersection_of: IAO:0000136 UBERON:0010225
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
+
+[Term]
+id: MRIO:0000737
+name: percentage unit
+is_a: IAO:0000003
 
 [Term]
 id: UBERON:0001873

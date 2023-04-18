@@ -14,7 +14,7 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/MRIO/MRIO-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/MRIO/releases/2022-11-22/MRIO-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/MRIO/releases/2023-04-18/MRIO-base.owl"/>
         <dc:contributor>Alan Ruttenberg</dc:contributor>
         <dc:creator>Alexander D. Bartnik</dc:creator>
         <dc:creator>Alexander D. Diehl</dc:creator>
@@ -27,7 +27,7 @@
         <dc:title>MRI Ontology (MRI)</dc:title>
         <dc:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <terms:license>https://creativecommons.org/licenses/by/4.0/</terms:license>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-22</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-04-18</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -365,6 +365,12 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_33375 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33375"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000003"/>
     
 
 
@@ -5145,6 +5151,15 @@ The values often belong to a group of pixels or voxels that share the same chara
         <obo:IAO_0000115>A brain connectivity measurement datum that quantifies the structural disruption to connections involving the thalamus.</obo:IAO_0000115>
         <obo:IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</obo:IAO_0000117>
         <rdfs:label xml:lang="en">thalamic structural disconnectivity measurement datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_0000737 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000737">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000003"/>
+        <rdfs:label xml:lang="en">percentage unit</rdfs:label>
     </owl:Class>
     
 
