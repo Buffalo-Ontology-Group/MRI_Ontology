@@ -4781,29 +4781,13 @@ The values often belong to a group of pixels or voxels that share the same chara
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000717 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000717">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003327"/>
-        <IAO_0000115>An image data set that encodes measurement values produced by some instrument before undergoing a data transformation.</IAO_0000115>
-        <IAO_0000117>https://orcid.org/0000-0001-9625-1899 &quot;William D. Duncan&quot;</IAO_0000117>
-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
-        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</IAO_0000117>
-        <IAO_0000117>https://orcid.org/0000-0002-1604-3078 &quot;Alan Ruttenberg&quot;</IAO_0000117>
-        <IAO_0000117>https://orcid.org/0000-0002-7245-3450 &quot;Lauren M. Wishnie&quot;</IAO_0000117>
-        <IAO_0000117>https://orcid.org/0000-0002-9821-4132 &quot;Mackenzie T. Smith&quot;</IAO_0000117>
-        <rdfs:label xml:lang="en">raw image data set</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/MRIO_0000718 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000718">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MRIO_0000717"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0003331"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000669"/>
@@ -5127,6 +5111,12 @@ The values often belong to a group of pixels or voxels that share the same chara
     <!-- http://purl.obolibrary.org/obo/OBI_0003328 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003328"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003331 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003331"/>
     
 
 
