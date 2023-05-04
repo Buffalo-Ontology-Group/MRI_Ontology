@@ -793,7 +793,7 @@ A different field of view (the scanned region) in the frequency and phase encodi
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000720"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0003328"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <IAO_0000115>An assay that produces magnetic resonance data about an evaluant.</IAO_0000115>
@@ -4849,32 +4849,6 @@ The values often belong to a group of pixels or voxels that share the same chara
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000720 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000720">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0003327"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000669"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <IAO_0000115>An image data set whose information content originates from some magnetic resonance imaging assay and is about some MRI participant.</IAO_0000115>
-        <IAO_0000117>https://orcid.org/0000-0001-9625-1899 &quot;William D. Duncan&quot;</IAO_0000117>
-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
-        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</IAO_0000117>
-        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
-        <IAO_0000117>https://orcid.org/0000-0002-7245-3450 &quot;Lauren M. Wishnie&quot;</IAO_0000117>
-        <IAO_0000117>https://orcid.org/0000-0002-9821-4132 &quot;Mackenzie T. Smith&quot;</IAO_0000117>
-        <rdfs:label xml:lang="en">magnetic resonance image data set</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/MRIO_0000721 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000721">
@@ -4945,7 +4919,7 @@ The values often belong to a group of pixels or voxels that share the same chara
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000720"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0003328"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -5146,9 +5120,13 @@ The values often belong to a group of pixels or voxels that share the same chara
 
     <!-- http://purl.obolibrary.org/obo/OBI_0003327 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003327">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003327"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003328 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003328"/>
     
 
 
