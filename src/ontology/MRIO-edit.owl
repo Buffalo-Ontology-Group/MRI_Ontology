@@ -1528,32 +1528,10 @@ variable
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MRIO_0000507 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000507">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0003327"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <IAO_0000115>The process of deriving a data item from an image data set using computer algorithms. The produced data item can be an image data set, data measurement, or any other data item.</IAO_0000115>
-        <IAO_0000117>https://orcid.org/0000-0001-9625-1899 &quot;William D. Duncan&quot;</IAO_0000117>
-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
-        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</IAO_0000117>
-        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
-        <IAO_0000117>https://orcid.org/0000-0002-7245-3450 &quot;Lauren M. Wishnie&quot;</IAO_0000117>
-        <IAO_0000117>https://orcid.org/0000-0002-9821-4132 &quot;Mackenzie T. Smith&quot;</IAO_0000117>
-        <rdfs:label xml:lang="en">image data set analysis</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/MRIO_0000508 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000508">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000507"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003355"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
@@ -4647,7 +4625,7 @@ The values often belong to a group of pixels or voxels that share the same chara
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0003327"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000507"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0003355"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -4696,7 +4674,7 @@ The values often belong to a group of pixels or voxels that share the same chara
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MRIO_0000507"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0003355"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000718"/>
@@ -5026,6 +5004,12 @@ The values often belong to a group of pixels or voxels that share the same chara
     <!-- http://purl.obolibrary.org/obo/OBI_0003332 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003332"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003355 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003355"/>
     
 
 
