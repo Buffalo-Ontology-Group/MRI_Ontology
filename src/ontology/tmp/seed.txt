@@ -319,10 +319,12 @@ http://purl.obolibrary.org/obo/eff
 http://purl.obolibrary.org/obo/in
 http://purl.obolibrary.org/obo/mf
 http://purl.obolibrary.org/obo/mrio/releases/2021-04-10/mrio.owl
+http://purl.org/dc/elements/1.1/contributor
 http://purl.org/dc/elements/1.1/creator
 http://purl.org/dc/elements/1.1/description
 http://purl.org/dc/elements/1.1/source
 http://purl.org/dc/elements/1.1/title
+http://purl.org/dc/terms/license
 http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
 http://www.geneontology.org/formats/oboInOwl#ObsoleteClass
 http://www.geneontology.org/formats/oboInOwl#hasExactSynonym

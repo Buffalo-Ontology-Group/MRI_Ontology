@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/uberon.owl#"
-     xml:base="http://purl.obolibrary.org/obo/uberon.owl"
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/MRIO/imports/uberon_import.owl#"
+     xml:base="http://purl.obolibrary.org/obo/MRIO/imports/uberon_import.owl"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -9,7 +9,7 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/uberon.owl"/>
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/MRIO/imports/uberon_import.owl"/>
     
 
 
@@ -39,12 +39,6 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000232 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000232"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000412 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412"/>
     
 
 
@@ -218,9 +212,25 @@
     <!-- http://purl.obolibrary.org/obo/CARO_0000000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000000">
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/caro.owl"/>
-        <rdfs:label xml:lang="en">anatomical entity</rdfs:label>
+        <obo:IAO_0000115>A part of a cellular organism that is either an immaterial entity or a material entity with granularity above the level of a protein complex.  Or, a substance produced by a cellular organism with granularity above the level of a protein complex.</obo:IAO_0000115>
+        <obo:IAO_0000115>Biological entity that is either an individual member of a biological species or constitutes the structural organization of an individual member of a biological species.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>spatial</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CARO:0000000</oboInOwl:id>
+        <rdfs:comment>Following BFO, material anatomical entities may have immaterial parts (the lumen of your stomach is part of your stomach).  The granularity limit follows the limits set by the Gene Ontology on the granularity limit for GO:cellular_component. Note that substances produced by an organism (sweat, feaces, urine) do not need to be part of an organism to qualify as an anatomical structure.</rdfs:comment>
+        <rdfs:label>anatomical entity</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CARO_0000000"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A part of a cellular organism that is either an immaterial entity or a material entity with granularity above the level of a protein complex.  Or, a substance produced by a cellular organism with granularity above the level of a protein complex.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>CAROC:Brownsville2014</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CARO_0000000"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Biological entity that is either an individual member of a biological species or constitutes the structural organization of an individual member of a biological species.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>CARO:MAH</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
@@ -229,8 +239,6 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001393">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000000"/>
         <obo:IAO_0000115>The part of the brain that is the ultimate target of afferent auditory information.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Auditory_cortex"/>
-        <oboInOwl:hasDbXref rdf:resource="http://linkedlifedata.com/resource/umls/id/C0004302"/>
         <oboInOwl:hasDbXref>BAMS:AUD</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>BAMS:Area_1</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>BAMS:Au1</oboInOwl:hasDbXref>
@@ -243,6 +251,7 @@
         <oboInOwl:hasDbXref>MESH:D001303</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>NCIT:C52712</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>UMLS:C0004302</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Auditory_cortex</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>neuronames:1556</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>A1 (primary auditory cortex)</oboInOwl:hasRelatedSynonym>
@@ -266,9 +275,15 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001393"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>The part of the brain that is the ultimate target of afferent auditory information.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:resource="http://www.ncbi.nlm.nih.gov/books/NBK10900/"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>Brodmann area 42</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>Wikipedia:Primary_auditory_cortex</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001393"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>anterior transverse temporal area 41</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>Wikipedia:Primary_auditory_cortex</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001393"/>
@@ -286,25 +301,31 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001393"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>auditory cortex</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Primary_auditory_cortex"/>
+        <oboInOwl:hasDbXref>Wikipedia:Primary_auditory_cortex</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001393"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>posterior transverse temporal area 42</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Primary_auditory_cortex"/>
+        <oboInOwl:hasDbXref>Wikipedia:Primary_auditory_cortex</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001393"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>primary auditory cortex</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Auditory_cortex"/>
+        <oboInOwl:hasDbXref>Wikipedia:Auditory_cortex</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001393"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>temporal auditory neocortex</owl:annotatedTarget>
         <oboInOwl:hasDbXref>GEO:GSE13344</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001393"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The part of the brain that is the ultimate target of afferent auditory information.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>http://www.ncbi.nlm.nih.gov/books/NBK10900/</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001393"/>
@@ -316,7 +337,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001393"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>A1 (primary auditory cortex)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Primary_auditory_cortex"/>
+        <oboInOwl:hasDbXref>Wikipedia:Primary_auditory_cortex</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001393"/>
@@ -334,25 +355,13 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001393"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>Brodmann area 41</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Primary_auditory_cortex"/>
+        <oboInOwl:hasDbXref>Wikipedia:Primary_auditory_cortex</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001393"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>Brodmann area 41 &amp; 42</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Primary_auditory_cortex"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001393"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget>Brodmann area 42</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Primary_auditory_cortex"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001393"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget>anterior transverse temporal area 41</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Primary_auditory_cortex"/>
+        <oboInOwl:hasDbXref>Wikipedia:Primary_auditory_cortex</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -364,9 +373,6 @@
         <obo:IAO_0000115>Subcortical nucleus of telecephalic origin consisting of an elongated gray mass lying lateral to and bordering the lateral ventricle. It is divided into a head, body and tail in some species.</obo:IAO_0000115>
         <obo:UBPROP_0000001>Nucleus of brain which is an elongated crescent-shaped mass lying parallel and adjacent to the lateral ventricle throughout its extent[FMA:61833].</obo:UBPROP_0000001>
         <oboInOwl:hasAlternativeId>UBERON:0010122</oboInOwl:hasAlternativeId>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Caudate_nucleus"/>
-        <oboInOwl:hasDbXref rdf:resource="http://linkedlifedata.com/resource/umls/id/C0007461"/>
-        <oboInOwl:hasDbXref rdf:resource="http://www.snomedbrowser.com/Codes/Details/279297002"/>
         <oboInOwl:hasDbXref>BAMS:CA</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>BAMS:Cd</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>BIRNLEX:1373</oboInOwl:hasDbXref>
@@ -386,9 +392,10 @@
         <oboInOwl:hasDbXref>MAT:0000513</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>MESH:D002421</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>NCIT:C12451</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>OpenCyc:Mx4rvvyAjJwpEbGdrcN5Y29ycA</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PBA:10082</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:279297002</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>UMLS:C0007461</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Caudate_nucleus</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>neuronames:226</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>caudatus</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
@@ -448,14 +455,14 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001873"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>nucleus caudatus</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Caudate_nucleus"/>
-        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/uberon/core#LATIN"/>
+        <oboInOwl:hasDbXref>BTO:0000211</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001873"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>nucleus caudatus</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>BTO:0000211</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Caudate_nucleus</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/uberon/core#LATIN"/>
     </owl:Axiom>
     
 
@@ -469,9 +476,6 @@
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <obo:UBPROP_0000001>Nucleus of brain which lies ventral to the caudate nucleus and internal capsule and medial to the external capsule. The putamen and caudate nucleus together form the dorsal striatum. It is also one of the structures that comprises the basal ganglia. Through various pathways, the putamen is connected to the substantia nigra and globus pallidus. The main function of the putamen is to regulate movements and influence various types of learning. It employs dopamine to perform its functions. The putamen also plays a role in degenerative neurological disorders, such as Parkinson&apos;s disease[Wikipedia:Putamen].</obo:UBPROP_0000001>
         <obo:UBPROP_0000003>All nuclei of the mammalian basal ganglia are also present in the oldest vertebrates.[well established][VHOG]</obo:UBPROP_0000003>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Putamen"/>
-        <oboInOwl:hasDbXref rdf:resource="http://linkedlifedata.com/resource/umls/id/C0034169"/>
-        <oboInOwl:hasDbXref rdf:resource="http://www.snomedbrowser.com/Codes/Details/281512002"/>
         <oboInOwl:hasDbXref>BAMS:PU</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>BAMS:Pu</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>BIRNLEX:809</oboInOwl:hasDbXref>
@@ -488,8 +492,10 @@
         <oboInOwl:hasDbXref>MESH:D011699</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>NCIT:C12452</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PBA:10086</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:281512002</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>UMLS:C0034169</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>VHOG:0001456</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Putamen</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>neuronames:230</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>nucleus putamen</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
@@ -510,17 +516,17 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001874"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000001"/>
         <owl:annotatedTarget>Nucleus of brain which lies ventral to the caudate nucleus and internal capsule and medial to the external capsule. The putamen and caudate nucleus together form the dorsal striatum. It is also one of the structures that comprises the basal ganglia. Through various pathways, the putamen is connected to the substantia nigra and globus pallidus. The main function of the putamen is to regulate movements and influence various types of learning. It employs dopamine to perform its functions. The putamen also plays a role in degenerative neurological disorders, such as Parkinson&apos;s disease[Wikipedia:Putamen].</owl:annotatedTarget>
-        <oboInOwl:source rdf:resource="http://en.wikipedia.org/wiki/Putamen"/>
+        <oboInOwl:source>Wikipedia:Putamen</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001874"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000003"/>
         <owl:annotatedTarget>All nuclei of the mammalian basal ganglia are also present in the oldest vertebrates.[well established][VHOG]</owl:annotatedTarget>
-        <oboInOwl:date_retrieved rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2012-09-17</oboInOwl:date_retrieved>
+        <oboInOwl:date_retrieved>2012-09-17</oboInOwl:date_retrieved>
         <oboInOwl:external_class>VHOG:0001456</oboInOwl:external_class>
-        <oboInOwl:ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VHOG</oboInOwl:ontology>
-        <oboInOwl:source rdf:resource="http://bgee.unil.ch/"/>
+        <oboInOwl:ontology>VHOG</oboInOwl:ontology>
         <oboInOwl:source>DOI:10.1016/j.cub.2011.05.001 Stephenson-Jones M, Samuelsson E, Ericsson J, Robertson B, Grillner S, Evolutionary conservation of the basal ganglia as a common vertebrate mechanism for action selection. Current Biology (2011)</oboInOwl:source>
+        <oboInOwl:source>http://bgee.unil.ch/</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001874"/>
@@ -547,9 +553,6 @@
         <obo:UBPROP_0000003>One part of the striatum is called the archistriatum. (...) The archistriatum of fishes consists of several indistinctly segregated nuclei called the amygdaloid (...) complex. Tetrapods retain the structure, and in mammals the corresponding amygdala is a globular mass that tends to be ventral to the other basal nuclei.[well established][VHOG]</obo:UBPROP_0000003>
         <obo:UBPROP_0000007>amygdalar</obo:UBPROP_0000007>
         <obo:UBPROP_0000012>MA and FMA differ on relationship to basal ganglion. The FMA text def suggests a subdivision, but it is classified as a subtype</obo:UBPROP_0000012>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Amygdala"/>
-        <oboInOwl:hasDbXref rdf:resource="http://linkedlifedata.com/resource/umls/id/C0002708"/>
-        <oboInOwl:hasDbXref rdf:resource="http://www.snomedbrowser.com/Codes/Details/279404004"/>
         <oboInOwl:hasDbXref>BAMS:AMY</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>BAMS:Amg</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>BAMS:Amy</oboInOwl:hasDbXref>
@@ -573,10 +576,11 @@
         <oboInOwl:hasDbXref>MESH:D000679</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>MIAA:0000289</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>NCIT:C12440</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>OpenCyc:Mx4rwJC_2ZwpEbGdrcN5Y29ycA</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PBA:4002</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:279404004</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>UMLS:C0002708</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>VHOG:0001277</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Amygdala</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>neuronames:237</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>amygdaloid body</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>amygdaloid complex</oboInOwl:hasExactSynonym>
@@ -613,17 +617,17 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001876"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000003"/>
         <owl:annotatedTarget>One part of the striatum is called the archistriatum. (...) The archistriatum of fishes consists of several indistinctly segregated nuclei called the amygdaloid (...) complex. Tetrapods retain the structure, and in mammals the corresponding amygdala is a globular mass that tends to be ventral to the other basal nuclei.[well established][VHOG]</owl:annotatedTarget>
-        <oboInOwl:date_retrieved rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2012-09-17</oboInOwl:date_retrieved>
+        <oboInOwl:date_retrieved>2012-09-17</oboInOwl:date_retrieved>
         <oboInOwl:external_class>VHOG:0001277</oboInOwl:external_class>
-        <oboInOwl:ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VHOG</oboInOwl:ontology>
-        <oboInOwl:source rdf:resource="http://bgee.unil.ch/"/>
+        <oboInOwl:ontology>VHOG</oboInOwl:ontology>
         <oboInOwl:source>ISBN:978-0471090588 Hildebrand M, Analysis of vertebrate structure (1983) p.342</oboInOwl:source>
+        <oboInOwl:source>http://bgee.unil.ch/</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001876"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000012"/>
         <owl:annotatedTarget>MA and FMA differ on relationship to basal ganglion. The FMA text def suggests a subdivision, but it is classified as a subtype</owl:annotatedTarget>
-        <oboInOwl:external_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MA</oboInOwl:external_ontology>
+        <oboInOwl:external_ontology>MA</oboInOwl:external_ontology>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001876"/>
@@ -672,14 +676,14 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001876"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>corpus amygdaloideum</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Amygdala"/>
-        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/uberon/core#LATIN"/>
+        <oboInOwl:hasDbXref>BTO:0001042</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001876"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>corpus amygdaloideum</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>BTO:0001042</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Amygdala</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/uberon/core#LATIN"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001876"/>
@@ -699,9 +703,6 @@
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_8782"/>
         <obo:UBPROP_0000001>a collection of pleomorphic cells in the caudal part of the anterior horn of the lateral ventricle, in the region of the olfactory tubercle, lying between the head of the caudate nucleus and the anterior perforated substance. It is part of the ventral striatum, a composite structure considered part of the basal ganglia[GO][GO:0021768].</obo:UBPROP_0000001>
         <obo:UBPROP_0000008>The ventral striatopallidal complex in birds corresponds closely to its counterpart in mammals, with a nucleus accumbes present in the rostral telenceaphalon. Note that in birds, a region previously called the nucleus accumbens is now recognized as the lateral part of the bed nucleus of stria terminalis.[ISBN:0471888893]</obo:UBPROP_0000008>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Nucleus_accumbens"/>
-        <oboInOwl:hasDbXref rdf:resource="http://linkedlifedata.com/resource/umls/id/C0028633"/>
-        <oboInOwl:hasDbXref rdf:resource="http://www.snomedbrowser.com/Codes/Details/427667007"/>
         <oboInOwl:hasDbXref>BAMS:ACB</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>BAMS:ACC</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>BAMS:Acb</oboInOwl:hasDbXref>
@@ -721,7 +722,9 @@
         <oboInOwl:hasDbXref>MESH:D009714</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>NCIT:C52733</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PBA:10092</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:427667007</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>UMLS:C0028633</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Nucleus_accumbens</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>neuronames:277</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>accumbens nucleus</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>colliculus of caudate nucleus</oboInOwl:hasExactSynonym>
@@ -745,13 +748,13 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001882"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002171"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001883"/>
-        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ABA</oboInOwl:source>
+        <oboInOwl:source>ABA</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001882"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002175"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_8782"/>
-        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0471888893</oboInOwl:source>
+        <oboInOwl:source>ISBN:0471888893</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001882"/>
@@ -787,8 +790,8 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001882"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>nucleus accumbens septi</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Nucleus_accumbens"/>
         <oboInOwl:hasDbXref>FMA:61889</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Nucleus_accumbens</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001882"/>
@@ -811,10 +814,6 @@
         <obo:UBPROP_0000003>Classical anatomical studies subdivided the vertebrate rhombencephalon into pons and medulla oblongata. (...) The medulla oblongata appears therefore as a tagma, that is, a group of segmental units (pseudorhombomeres, in this case) sharing some morphological and molecular characteristics, and in some aspects different from the segmental units present in adjoining brain regions, pons and spinal cord.[well established][VHOG]</obo:UBPROP_0000003>
         <oboInOwl:hasBroadSynonym>bulb</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasBroadSynonym>medulla</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Bone_marrow_of_ovary_oblongata"/>
-        <oboInOwl:hasDbXref rdf:resource="http://linkedlifedata.com/resource/umls/id/C0025148"/>
-        <oboInOwl:hasDbXref rdf:resource="http://linkedlifedata.com/resource/umls/id/C1269575"/>
-        <oboInOwl:hasDbXref rdf:resource="http://www.snomedbrowser.com/Codes/Details/279104005"/>
         <oboInOwl:hasDbXref>AAO:0010486</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>BAMS:MY</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>BAMS:Md</oboInOwl:hasDbXref>
@@ -837,12 +836,12 @@
         <oboInOwl:hasDbXref>MESH:D008526</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>MIAA:0000111</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>NCIT:C12442</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>OpenCyc:Mx4rvVjxSJwpEbGdrcN5Y29ycA</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>OpenCyc:Mx4rwCqnXJwpEbGdrcN5Y29ycA</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:279104005</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>TAO:0000545</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>UMLS:C0025148</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>UMLS:C1269575</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>VHOG:0000181</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Bone_marrow_of_ovary_oblongata</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>XAO:0003100</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>ZFA:0000545</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>neuronames:698</oboInOwl:hasDbXref>
@@ -863,37 +862,37 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001896"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Organ component of neuraxis that has as its parts the medullary reticular formation, inferior olivary complex and cochlear nuclear complex, among other structures[FMA]. The medulla oblongata lies directly above the spinal cord and controls vital autonomic functions such as digestion, breathing and the control of heart rate[GO].</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Bone_marrow_of_ovary_oblongata"/>
         <oboInOwl:hasDbXref>FMA:62004</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>GO:0021550</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Bone_marrow_of_ovary_oblongata</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001896"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000001"/>
         <owl:annotatedTarget>Posterior portion of the hindbrain which controls respiration, heartbeat, digestion, and swallowing as well as some locomotor responses.[AAO]</owl:annotatedTarget>
-        <oboInOwl:date_retrieved rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2012-06-20</oboInOwl:date_retrieved>
+        <oboInOwl:date_retrieved>2012-06-20</oboInOwl:date_retrieved>
         <oboInOwl:external_class>AAO:0010486</oboInOwl:external_class>
-        <oboInOwl:ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AAO</oboInOwl:ontology>
-        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AAO:BJB</oboInOwl:source>
+        <oboInOwl:ontology>AAO</oboInOwl:ontology>
+        <oboInOwl:source>AAO:BJB</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001896"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000001"/>
         <owl:annotatedTarget>The posterior region of the brain that is continuous with the spinal cord. [Bemis_WE, Functional_Anatomy_of_the_Vertebrates:_An_Evolutionary_Perspective, Glossary_G-17, Grande_L, Liem_KF, Third_Edition_(2001)_Orlando_Fla.:_Harcourt_College_Publishers, Walker_WF][VHOG]</owl:annotatedTarget>
-        <oboInOwl:date_retrieved rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2012-09-17</oboInOwl:date_retrieved>
+        <oboInOwl:date_retrieved>2012-09-17</oboInOwl:date_retrieved>
         <oboInOwl:external_class>VHOG:0000181</oboInOwl:external_class>
-        <oboInOwl:ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VHOG</oboInOwl:ontology>
-        <oboInOwl:source rdf:resource="http://bgee.unil.ch/"/>
+        <oboInOwl:ontology>VHOG</oboInOwl:ontology>
+        <oboInOwl:source>http://bgee.unil.ch/</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001896"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000003"/>
         <owl:annotatedTarget>Classical anatomical studies subdivided the vertebrate rhombencephalon into pons and medulla oblongata. (...) The medulla oblongata appears therefore as a tagma, that is, a group of segmental units (pseudorhombomeres, in this case) sharing some morphological and molecular characteristics, and in some aspects different from the segmental units present in adjoining brain regions, pons and spinal cord.[well established][VHOG]</owl:annotatedTarget>
-        <oboInOwl:date_retrieved rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2012-09-17</oboInOwl:date_retrieved>
+        <oboInOwl:date_retrieved>2012-09-17</oboInOwl:date_retrieved>
         <oboInOwl:external_class>VHOG:0000181</oboInOwl:external_class>
-        <oboInOwl:ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VHOG</oboInOwl:ontology>
-        <oboInOwl:source rdf:resource="http://bgee.unil.ch/"/>
+        <oboInOwl:ontology>VHOG</oboInOwl:ontology>
         <oboInOwl:source>DOI:10.1016/j.ydbio.2008.08.017 Marin F, Aroca P, Puelles L, Hox gene colinear expression in the avian medulla oblongata is correlated with pseudorhombomeric domains. Developmental Biology (2008)</oboInOwl:source>
+        <oboInOwl:source>http://bgee.unil.ch/</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001896"/>
@@ -930,14 +929,14 @@
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>bulbus</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FMA:62004</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:TA</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FMA:TA</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/uberon/core#LATIN"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001896"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>medulla oblonzata</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Medulla_oblongata"/>
+        <oboInOwl:hasDbXref>Wikipedia:Medulla_oblongata</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/uberon/core#LATIN"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -961,9 +960,6 @@
         <obo:UBPROP_0000007>thalamic</obo:UBPROP_0000007>
         <oboInOwl:hasBroadSynonym>Th</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasBroadSynonym>thalamus</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Thalamus"/>
-        <oboInOwl:hasDbXref rdf:resource="http://linkedlifedata.com/resource/umls/id/C0039729"/>
-        <oboInOwl:hasDbXref rdf:resource="http://www.snomedbrowser.com/Codes/Details/244433007"/>
         <oboInOwl:hasDbXref>AAO:0010483</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>BAMS:TH</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>BAMS:Th</oboInOwl:hasDbXref>
@@ -982,11 +978,12 @@
         <oboInOwl:hasDbXref>MBA:549</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>MIAA:0000109</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>NCIT:C12459</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>OpenCyc:Mx4rwMPQ65wpEbGdrcN5Y29ycA</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PBA:128013014</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:244433007</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>TAO:0001215</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>UMLS:C0039729</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>VHOG:0000657</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Thalamus</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>ZFA:0001215</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>galen:Thalamus</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>neuronames:300</oboInOwl:hasDbXref>
@@ -1013,44 +1010,44 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001897"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002171"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001898"/>
-        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ABA</oboInOwl:source>
+        <oboInOwl:source>ABA</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001897"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000001"/>
         <owl:annotatedTarget>One of a pair of large oval nervous structures made of gray matter and forming most of the lateral walls of the third ventricle of the brain and part of the diencephalon. [TFD][VHOG]</owl:annotatedTarget>
-        <oboInOwl:date_retrieved rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2012-09-17</oboInOwl:date_retrieved>
+        <oboInOwl:date_retrieved>2012-09-17</oboInOwl:date_retrieved>
         <oboInOwl:external_class>VHOG:0000657</oboInOwl:external_class>
-        <oboInOwl:ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VHOG</oboInOwl:ontology>
-        <oboInOwl:source rdf:resource="http://bgee.unil.ch/"/>
-        <oboInOwl:source rdf:resource="http://medical-dictionary.thefreedictionary.com/thalamus"/>
+        <oboInOwl:ontology>VHOG</oboInOwl:ontology>
+        <oboInOwl:source>http://bgee.unil.ch/</oboInOwl:source>
+        <oboInOwl:source>http://medical-dictionary.thefreedictionary.com/thalamus</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001897"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000001"/>
         <owl:annotatedTarget>Part of the diencephalon consisting of a mass of connecting fibers which relay sensory information to the cerebral cortex.[AAO]</owl:annotatedTarget>
-        <oboInOwl:date_retrieved rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2012-06-20</oboInOwl:date_retrieved>
+        <oboInOwl:date_retrieved>2012-06-20</oboInOwl:date_retrieved>
         <oboInOwl:external_class>AAO:0010483</oboInOwl:external_class>
-        <oboInOwl:ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AAO</oboInOwl:ontology>
-        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AAO:BJB</oboInOwl:source>
+        <oboInOwl:ontology>AAO</oboInOwl:ontology>
+        <oboInOwl:source>AAO:BJB</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001897"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000003"/>
         <owl:annotatedTarget>(...) the brain regions of tetrapods, the structures they contain, and their basic organizational features are the same as in fishes.[well established][VHOG]</owl:annotatedTarget>
-        <oboInOwl:date_retrieved rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2012-09-17</oboInOwl:date_retrieved>
+        <oboInOwl:date_retrieved>2012-09-17</oboInOwl:date_retrieved>
         <oboInOwl:external_class>VHOG:0000657</oboInOwl:external_class>
-        <oboInOwl:ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VHOG</oboInOwl:ontology>
-        <oboInOwl:source rdf:resource="http://bgee.unil.ch/"/>
+        <oboInOwl:ontology>VHOG</oboInOwl:ontology>
         <oboInOwl:source>ISBN:978-0030223693 Liem KF, Bemis WE, Walker WF, Grande L, Functional Anatomy of the Vertebrates: An Evolutionary Perspective (2001) p.484</oboInOwl:source>
+        <oboInOwl:source>http://bgee.unil.ch/</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001897"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym"/>
         <owl:annotatedTarget>Th</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/23375746"/>
         <oboInOwl:hasDbXref>BIRNLEX:954</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIFSTD:NeuroNames_abbrevSource</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NIFSTD:NeuroNames_abbrevSource</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:23375746</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/uberon/core#ABBREVIATION"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -1124,9 +1121,6 @@
         <obo:UBPROP_0000007>hypothalamic</obo:UBPROP_0000007>
         <obo:UBPROP_0000008>all vertebrates contain a hypothalamus</obo:UBPROP_0000008>
         <oboInOwl:hasBroadSynonym>Hy</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Hypothalamus"/>
-        <oboInOwl:hasDbXref rdf:resource="http://linkedlifedata.com/resource/umls/id/C0020663"/>
-        <oboInOwl:hasDbXref rdf:resource="http://www.snomedbrowser.com/Codes/Details/264483005"/>
         <oboInOwl:hasDbXref>AAO:0010484</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>BAMS:HY</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>BAMS:Hy</oboInOwl:hasDbXref>
@@ -1149,10 +1143,11 @@
         <oboInOwl:hasDbXref>MESH:D007031</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>MIAA:0000112</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>NCIT:C12458</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>OpenCyc:Mx4rwEgr9JwpEbGdrcN5Y29ycA</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:264483005</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>TAO:0000032</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>UMLS:C0020663</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>VHOG:0000179</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Hypothalamus</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>XAO:0004070</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>ZFA:0000032</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>galen:Hypothalamus</oboInOwl:hasDbXref>
@@ -1174,14 +1169,14 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001898"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A specialized brain region of the ventral diencephalon arising near the end of the segmentation period; the embryonic hypothalamic region will give rise to the posterior pituitary gland as well as a number of brain nuclei. [ZFA]. One of the most important functions of the hypothalamus is to link the nervous system to the endocrine system via the pituitary gland (hypophysis).[Wikipedia].</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Hypothalamus"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZFIN:curator</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Hypothalamus</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ZFIN:curator</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001898"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002171"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001897"/>
-        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ABA</oboInOwl:source>
+        <oboInOwl:source>ABA</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001898"/>
@@ -1199,42 +1194,42 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001898"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000001"/>
         <owl:annotatedTarget>A specialized brain region of the ventral diencephalon arising near the end of the segmentation period; the embryonic hypothalamic region will give rise to the posterior pituitary gland as well as a number of brain nuclei. Kimmel et al, 1995.[TAO]</owl:annotatedTarget>
-        <oboInOwl:date_retrieved rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2012-08-14</oboInOwl:date_retrieved>
+        <oboInOwl:date_retrieved>2012-08-14</oboInOwl:date_retrieved>
         <oboInOwl:external_class>TAO:0000032</oboInOwl:external_class>
-        <oboInOwl:ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAO</oboInOwl:ontology>
-        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZFIN:curator</oboInOwl:source>
+        <oboInOwl:ontology>TAO</oboInOwl:ontology>
+        <oboInOwl:source>ZFIN:curator</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001898"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000001"/>
         <owl:annotatedTarget>Part of the diencephalon ventral to the thalamus consisting of connecting fibers and is a center for control of the autonomous nervous system.[AAO]</owl:annotatedTarget>
-        <oboInOwl:date_retrieved rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2012-06-20</oboInOwl:date_retrieved>
+        <oboInOwl:date_retrieved>2012-06-20</oboInOwl:date_retrieved>
         <oboInOwl:external_class>AAO:0010484</oboInOwl:external_class>
-        <oboInOwl:ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AAO</oboInOwl:ontology>
-        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AAO:BJB</oboInOwl:source>
+        <oboInOwl:ontology>AAO</oboInOwl:ontology>
+        <oboInOwl:source>AAO:BJB</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001898"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000003"/>
         <owl:annotatedTarget>For instance, the vertebrate ventral diencephalon generates the hypothalamus which functions as a major endocrine center in cooperation with the hypophysis, the anterior part of the pituitary gland, located just ventral to the hypothalamus. In the amphioxus brain, the presence of a hypothalamus-like structure has been reported associated with the ventrally located Hatschek&apos;s pit, the hypothetical hypophysial homologue. It is thus conceivable that a hypothalamus-like structure originally involved in endocrine functions may have already been present before the establishment of vertebrates.[well established][VHOG]</owl:annotatedTarget>
-        <oboInOwl:date_retrieved rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2012-09-17</oboInOwl:date_retrieved>
+        <oboInOwl:date_retrieved>2012-09-17</oboInOwl:date_retrieved>
         <oboInOwl:external_class>VHOG:0000179</oboInOwl:external_class>
-        <oboInOwl:ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VHOG</oboInOwl:ontology>
-        <oboInOwl:source rdf:resource="http://bgee.unil.ch/"/>
+        <oboInOwl:ontology>VHOG</oboInOwl:ontology>
         <oboInOwl:source>DOI:10.1016/j.ydbio.2005.02.008 Murakami Y, Uchida K, Rijli FM and Kuratani S, Evolution of the brain developmental plan: Insights from agnathans. Developmental Biology (2005)</oboInOwl:source>
+        <oboInOwl:source>http://bgee.unil.ch/</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001898"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000008"/>
         <owl:annotatedTarget>all vertebrates contain a hypothalamus</owl:annotatedTarget>
-        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WP</oboInOwl:source>
+        <oboInOwl:source>WP</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001898"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym"/>
         <owl:annotatedTarget>Hy</owl:annotatedTarget>
         <oboInOwl:hasDbXref>BIRNLEX:734</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIFSTD:NeuroNames_abbrevSource</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NIFSTD:NeuroNames_abbrevSource</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/uberon/core#ABBREVIATION"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -1259,7 +1254,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001898"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>hypothalamus</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Hypothalamus"/>
+        <oboInOwl:hasDbXref>Wikipedia:Hypothalamus</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/uberon/core#LATIN"/>
     </owl:Axiom>
     
@@ -1275,9 +1270,6 @@
         <obo:UBPROP_0000012>two classes in ncit, Central_Lobe is part of temporal lobe</obo:UBPROP_0000012>
         <oboInOwl:hasAlternativeId>UBERON:0023846</oboInOwl:hasAlternativeId>
         <oboInOwl:hasBroadSynonym>iNS</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Insular_cortex"/>
-        <oboInOwl:hasDbXref rdf:resource="http://linkedlifedata.com/resource/umls/id/C0021640"/>
-        <oboInOwl:hasDbXref rdf:resource="http://www.snomedbrowser.com/Codes/Details/279201009"/>
         <oboInOwl:hasDbXref>BAMS:AI</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>BAMS:Ins</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>BIRNLEX:1117</oboInOwl:hasDbXref>
@@ -1288,8 +1280,9 @@
         <oboInOwl:hasDbXref>HBA:4268</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>NCIT:C32278</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>NLX:11342</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>OpenCyc:Mx4rvpK5WZwpEbGdrcN5Y29ycA</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:279201009</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>UMLS:C0021640</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Insular_cortex</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>ncithesaurus:Insula</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>neuronames:111</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>central lobe</oboInOwl:hasExactSynonym>
@@ -1314,6 +1307,18 @@
         <rdfs:label>insula</rdfs:label>
         <foaf:depicted_by rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://upload.wikimedia.org/wikipedia/commons/2/2b/Gray731.png</foaf:depicted_by>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002022"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>central lobe</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FMA:67329</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002022"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>cortex of island</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FMA:67329</oboInOwl:hasDbXref>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002022"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
@@ -1349,7 +1354,7 @@
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>lobus insularis</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FMA:67329</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:TA</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FMA:TA</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/uberon/core#LATIN"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -1441,18 +1446,6 @@
         <owl:annotatedTarget>neuronames:111</owl:annotatedTarget>
         <oboInOwl:source>BIRNLEX:1117</oboInOwl:source>
     </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002022"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>central lobe</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FMA:67329</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002022"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>cortex of island</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FMA:67329</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -1464,10 +1457,6 @@
         <obo:RO_0002171 rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002130"/>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <obo:UBPROP_0000001>The cerebellar cortex is a thin mantle of gray matter that covers the surface of each cerebral hemisphere. It has a characteristic morphology with convolutions (gyri) and crevices (sulci) that have specific functions. Six layers of nerve cells and the nerve pathways that connect them comprise the cerebellar cortex. Together, these regions are responsible for the processes of conscious thought, perception, emotion and memory as well as advanced motor function[GO][GO:0021695].</obo:UBPROP_0000001>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Cerebellar_cortex"/>
-        <oboInOwl:hasDbXref rdf:resource="http://linkedlifedata.com/resource/umls/id/C0007759"/>
-        <oboInOwl:hasDbXref rdf:resource="http://linkedlifedata.com/resource/umls/id/C1284087"/>
-        <oboInOwl:hasDbXref rdf:resource="http://www.snomedbrowser.com/Codes/Details/361593004"/>
         <oboInOwl:hasDbXref>BAMS:CB</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>BAMS:CBX</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>BAMS:CbCx</oboInOwl:hasDbXref>
@@ -1486,9 +1475,11 @@
         <oboInOwl:hasDbXref>MBA:528</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>MESH:D002525</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>NCIT:C49216</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:361593004</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>UMLS:C0007759</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>UMLS:C1284087</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>VHOG:0001597</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Cerebellar_cortex</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>neuronames:647</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>cortex of cerebellar hemisphere</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
@@ -1512,7 +1503,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002129"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002171"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002130"/>
-        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ABA</oboInOwl:source>
+        <oboInOwl:source>ABA</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002129"/>
@@ -1575,9 +1566,6 @@
         <obo:UBPROP_0000001>The lateral ventricles are part of the ventricular system of the brain. Classified as part of the telencephalon, they are the largest of the ventricles. The lateral ventricles connect to the central third ventricle through the interventricular foramina of Monro[WP].</obo:UBPROP_0000001>
         <obo:UBPROP_0000001>The two lateral ventricles are a cavity in each of the cerebral hemispheres derived from the cavity of the embryonic neural tube. They are separated from each other by the septum pellucidum, and each communicates with the third ventricle by the foramen of Monro, through which also the choroid plexuses of the lateral ventricles become continuous with that of the third ventricle[GO].</obo:UBPROP_0000001>
         <obo:UBPROP_0000003>The early development of most vertebrate brains is similar (...). The zebrafish neural tube follows the same basic differentiation pattern as the mammalian neural tube (reference 1); The brain develops from three embryonic enlargements of the neural tube, which later differentiate into five regions. A forebrain differentiates into telencephalon and diencephalon. The midbrain, or mesencephalon, remains undivided. The hindbrain divides into the metencephalon and myelencephalon. Cavities within the brain enlarge to form a series of interconnected ventricles (reference 2).[well established][VHOG]</obo:UBPROP_0000003>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Lateral_ventricle"/>
-        <oboInOwl:hasDbXref rdf:resource="http://linkedlifedata.com/resource/umls/id/C0152279"/>
-        <oboInOwl:hasDbXref rdf:resource="http://www.snomedbrowser.com/Codes/Details/180930008"/>
         <oboInOwl:hasDbXref>BAMS:LV</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>BAMS:Tel-V</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>BIRNLEX:1263</oboInOwl:hasDbXref>
@@ -1598,10 +1586,11 @@
         <oboInOwl:hasDbXref>MBA:81</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>MESH:D020547</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>NCIT:C12834</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>OpenCyc:Mx4rvYsFdZwpEbGdrcN5Y29ycA</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:180930008</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>TAO:0000696</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>UMLS:C0152279</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>VHOG:0000643</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Lateral_ventricle</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>ZFA:0000696</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>neuronames:209</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>lateral ventricle</oboInOwl:hasExactSynonym>
@@ -1628,14 +1617,14 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002285"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A brain ventricle that is part of a telencephalon. In mammals and species with an evaginated telencephalon, this is one of a pair of lateral structures, one in each hemisphere.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Lateral_ventricle"/>
-        <oboInOwl:hasDbXref rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
+        <oboInOwl:hasDbXref>Wikipedia:Lateral_ventricle</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://orcid.org/0000-0002-6601-2165</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002285"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000001"/>
         <owl:annotatedTarget>The lateral ventricles are part of the ventricular system of the brain. Classified as part of the telencephalon, they are the largest of the ventricles. The lateral ventricles connect to the central third ventricle through the interventricular foramina of Monro[WP].</owl:annotatedTarget>
-        <oboInOwl:source rdf:resource="http://en.wikipedia.org/wiki/Lateral_ventricle"/>
+        <oboInOwl:source>Wikipedia:Lateral_ventricle</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002285"/>
@@ -1647,11 +1636,11 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002285"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000003"/>
         <owl:annotatedTarget>The early development of most vertebrate brains is similar (...). The zebrafish neural tube follows the same basic differentiation pattern as the mammalian neural tube (reference 1); The brain develops from three embryonic enlargements of the neural tube, which later differentiate into five regions. A forebrain differentiates into telencephalon and diencephalon. The midbrain, or mesencephalon, remains undivided. The hindbrain divides into the metencephalon and myelencephalon. Cavities within the brain enlarge to form a series of interconnected ventricles (reference 2).[well established][VHOG]</owl:annotatedTarget>
-        <oboInOwl:date_retrieved rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2012-09-17</oboInOwl:date_retrieved>
+        <oboInOwl:date_retrieved>2012-09-17</oboInOwl:date_retrieved>
         <oboInOwl:external_class>VHOG:0000643</oboInOwl:external_class>
-        <oboInOwl:ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VHOG</oboInOwl:ontology>
-        <oboInOwl:source rdf:resource="http://bgee.unil.ch/"/>
+        <oboInOwl:ontology>VHOG</oboInOwl:ontology>
         <oboInOwl:source>ISBN:978-0878932504 Gilbert SF, Developmental Biology (2006) p.381-382, ISBN:978-0030223693 Liem KF, Bemis WE, Walker WF, Grande L, Functional Anatomy of the Vertebrates: An Evolutionary Perspective (2001) p.500</oboInOwl:source>
+        <oboInOwl:source>http://bgee.unil.ch/</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002285"/>
@@ -1720,9 +1709,6 @@
         <obo:IAO_0000232>The term hippocampus is often used synonymously with hippocampal formation which consists of the hippocampus proper or Cornu Ammonis, the dentate gyrus and the subiculum</obo:IAO_0000232>
         <obo:RO_0002171 rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002264"/>
         <obo:UBPROP_0000012>BTO:0000601 is placed here since it includes the DG. GO also includes dentate gyrus development as part of hippocampus development, so we assume when GO says &apos;hippocampus&apos; it means &apos;hippocampal formation&apos;. In ABA HPF = (.. subiculum) + HIP, HIP = DG + AH.</obo:UBPROP_0000012>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Hippocampal_formation"/>
-        <oboInOwl:hasDbXref rdf:resource="http://linkedlifedata.com/resource/umls/id/C0175202"/>
-        <oboInOwl:hasDbXref rdf:resource="http://www.snomedbrowser.com/Codes/Details/422867004"/>
         <oboInOwl:hasDbXref>BAMS:HPF</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>BAMS:Hi</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>BAMS:HiF</oboInOwl:hasDbXref>
@@ -1736,7 +1722,9 @@
         <oboInOwl:hasDbXref>MA:0000189</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>MBA:1089</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PBA:4003</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:422867004</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>UMLS:C0175202</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Hippocampal_formation</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>neuronames:177</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>hippocampus (Crosby)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasNarrowSynonym>hippocampus</oboInOwl:hasNarrowSynonym>
@@ -1755,25 +1743,25 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002421"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Hippocampus (proper) plus dentate gyrus and subiculum[definition derived from NIF comments and ontology alignment].</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
+        <oboInOwl:hasDbXref>https://orcid.org/0000-0002-6601-2165</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002421"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000232"/>
         <owl:annotatedTarget>The term hippocampus is often used synonymously with hippocampal formation which consists of the hippocampus proper or Cornu Ammonis, the dentate gyrus and the subiculum</owl:annotatedTarget>
-        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIF</oboInOwl:source>
+        <oboInOwl:source>NIF</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002421"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002171"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002264"/>
-        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ABA</oboInOwl:source>
+        <oboInOwl:source>ABA</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002421"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000012"/>
         <owl:annotatedTarget>BTO:0000601 is placed here since it includes the DG. GO also includes dentate gyrus development as part of hippocampus development, so we assume when GO says &apos;hippocampus&apos; it means &apos;hippocampal formation&apos;. In ABA HPF = (.. subiculum) + HIP, HIP = DG + AH.</owl:annotatedTarget>
-        <oboInOwl:external_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO</oboInOwl:external_ontology>
+        <oboInOwl:external_ontology>BTO</oboInOwl:external_ontology>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002421"/>
@@ -1835,14 +1823,14 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000000"/>
         <obo:IAO_0000115>Anterior component of the temporal lobe (rostral boundary) extends caudally to the entorhinal cortex. The medial and lateral boundaries are the medial aspect of the temporal lobe and the superior or inferior temporal sulci, respectively (Christine Fennema-Notestine).</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Temporal_pole"/>
-        <oboInOwl:hasDbXref rdf:resource="http://www.snomedbrowser.com/Codes/Details/314155002"/>
         <oboInOwl:hasDbXref>BAMS:TmP</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>BAMS:tmp</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>BIRNLEX:1055</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>DHBA:12146</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FMA:74890</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>HBA:4174</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:314155002</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Temporal_pole</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>neuronames:126</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>polus temporalis</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
@@ -1894,9 +1882,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000000"/>
         <obo:IAO_0000115>Component of the parietal lobe. The appearance and disappearance of the central sulcus were the rostral and caudal boundaries of the postcentral gyrus respectively. The medial and lateral boundaries were the lateral bank of the precentral gyrus and the lateral fissure and/or the medial bank of the superior parietal gyrus respectively (Christine Fennema-Notestine).</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Postcentral_gyrus"/>
-        <oboInOwl:hasDbXref rdf:resource="http://linkedlifedata.com/resource/umls/id/C0152302"/>
-        <oboInOwl:hasDbXref rdf:resource="http://www.snomedbrowser.com/Codes/Details/279167001"/>
         <oboInOwl:hasDbXref>BAMS:PoG</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>BIRNLEX:1070</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>BTO:0004354</oboInOwl:hasDbXref>
@@ -1905,7 +1890,9 @@
         <oboInOwl:hasDbXref>FMA:61896</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>HBA:4085</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>NCIT:C33346</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:279167001</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>UMLS:C0152302</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Postcentral_gyrus</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>neuronames:105</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>gyrus postcentralis</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>postcentral convolution</oboInOwl:hasExactSynonym>
@@ -1989,7 +1976,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002581"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>somatosensory cortex</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Postcentral_gyrus"/>
+        <oboInOwl:hasDbXref>Wikipedia:Postcentral_gyrus</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -2001,8 +1988,6 @@
         <obo:IAO_0000115>Component of the inferior frontal gyrus.defined as the first gyrus from the precentral gyrus.the remainder of the inferior frontal gyrus once the pars opercularis and triangularis have been defined (Christine Fennema-Notestine)., NeuroNames.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <oboInOwl:hasBroadSynonym>pars orbitalis, inferior frontal gyrus</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Orbital_part_of_inferior_frontal_gyrus"/>
-        <oboInOwl:hasDbXref rdf:resource="http://linkedlifedata.com/resource/umls/id/C0262300"/>
         <oboInOwl:hasDbXref>BAMS:IFGOr</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>BAMS:OrIFG</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>BIRNLEX:1207</oboInOwl:hasDbXref>
@@ -2011,6 +1996,7 @@
         <oboInOwl:hasDbXref>HBA:4044</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>NCIT:C33221</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>UMLS:C0262300</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Orbital_part_of_inferior_frontal_gyrus</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>neuronames:2410</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>gyrus frontalis inferior, pars orbitalis</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>inferior frontal gyrus, orbital part</oboInOwl:hasExactSynonym>
@@ -2031,7 +2017,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002624"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym"/>
         <owl:annotatedTarget>pars orbitalis, inferior frontal gyrus</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:resource="http://orcid.org/0000-0001-6755-0259"/>
+        <oboInOwl:hasDbXref>http://orcid.org/0000-0001-6755-0259</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002624"/>
@@ -2056,7 +2042,7 @@
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>gyrus frontalis inferior, pars orbitalis</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FMA:61982</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:TA</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FMA:TA</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/uberon/core#LATIN"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -2086,8 +2072,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000000"/>
         <obo:IAO_0000115>Component of the inferior frontal gyrus.defined as the second gyrus from the precentral gyrus (Christine Fennema-Notestine).</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Triangular_part_of_inferior_frontal_gyrus"/>
-        <oboInOwl:hasDbXref rdf:resource="http://linkedlifedata.com/resource/umls/id/C0262350"/>
         <oboInOwl:hasDbXref>BAMS:IFGTr</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>BAMS:TrIFG</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>BIRNLEX:1216</oboInOwl:hasDbXref>
@@ -2096,6 +2080,7 @@
         <oboInOwl:hasDbXref>HBA:4038</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>NCIT:C33811</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>UMLS:C0262350</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Triangular_part_of_inferior_frontal_gyrus</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>neuronames:86</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>gyrus frontalis inferior, pars triangularis</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>pars triangularis</oboInOwl:hasExactSynonym>
@@ -2137,7 +2122,7 @@
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>gyrus frontalis inferior, pars triangularis</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FMA:61980</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:TA</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FMA:TA</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/uberon/core#LATIN"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -2145,7 +2130,7 @@
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>pars triangularis</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FMA:61980</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:TA</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FMA:TA</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/uberon/core#LATIN"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -2159,14 +2144,14 @@
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>pars triangularis of frontal operculum (Ono)</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FMA:61980</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:TA</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FMA:TA</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/uberon/core#LATIN"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002629"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>inferior frontal gyrus, pars triangularis</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:resource="http://orcid.org/0000-0001-6755-0259"/>
+        <oboInOwl:hasDbXref>http://orcid.org/0000-0001-6755-0259</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002629"/>
@@ -2183,9 +2168,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000000"/>
         <obo:IAO_0000115>Component of the frontal lobe, lateral aspect. The rostral boundary is the first appearance of the superior frontal sulcus whereas the caudal boundary is the midpoint of the paracentral sulcus on the &apos;inflated&apos; surface. The medial and lateral boundaries are the medial aspect of the frontal lobe and the superior frontal sulcus respectively (Christine Fennema-Notestine).</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Superior_frontal_gyrus"/>
-        <oboInOwl:hasDbXref rdf:resource="http://linkedlifedata.com/resource/umls/id/C0152296"/>
-        <oboInOwl:hasDbXref rdf:resource="http://www.snomedbrowser.com/Codes/Details/279166005"/>
         <oboInOwl:hasDbXref>BAMS:SFG</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>BIRNLEX:1303</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>BTO:0004836</oboInOwl:hasDbXref>
@@ -2194,7 +2176,9 @@
         <oboInOwl:hasDbXref>FMA:61857</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>HBA:4021</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>NCIT:C33674</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:279166005</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>UMLS:C0152296</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Superior_frontal_gyrus</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>neuronames:83</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>marginal gyrus</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>superior frontal convolution</oboInOwl:hasExactSynonym>
@@ -2263,7 +2247,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002661"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>gyrus frontalis superior</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Superior_frontal_gyrus"/>
+        <oboInOwl:hasDbXref>Wikipedia:Superior_frontal_gyrus</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/uberon/core#LATIN"/>
     </owl:Axiom>
     
@@ -2274,14 +2258,13 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002688">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000000"/>
         <obo:IAO_0000115>Component of the parietal lobe. The first coronal slice between the superior temporal gyrus and the postcentral gyrus where the supramarginal gyrus appears was the rostral boundary whereas the slice where the supramarginal gyrus becomes continuous with the superior parietal gyrus was the caudal boundary. The medial and lateral boundaries were the lateral banks of the intraparietal sulcus and the medial banks of the lateral fissure and/or the superior temporal gyrus respectively (Christine Fennema-Notestine).</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:resource="http://linkedlifedata.com/resource/umls/id/C0228214"/>
-        <oboInOwl:hasDbXref rdf:resource="http://www.snomedbrowser.com/Codes/Details/279185008"/>
         <oboInOwl:hasDbXref>BAMS:SMG</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>BIRNLEX:1381</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>DHBA:12135</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FMA:61897</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>HBA:4104</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>NCIT:C33706</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:279185008</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>UMLS:C0228214</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>neuronames:108</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>anterior part of inferior parietal lobule</oboInOwl:hasExactSynonym>
@@ -2337,7 +2320,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002688"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>Brodmann area 40</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Supramarginal_gyrus"/>
+        <oboInOwl:hasDbXref>Wikipedia:Supramarginal_gyrus</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002688"/>
@@ -2355,8 +2338,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000000"/>
         <obo:IAO_0000115>Component of the frontal lobe. The appearance and disappearance of the central sulcus is the rostral and caudal boundaries of the precentral gyrus respectively. The medial boundary is specific frontal gyri (superior, middle and inferior) whereas the lateral boundary is the medial bank of the central sulcus (Christine Fennema-Notestine).</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Precentral_gyrus"/>
-        <oboInOwl:hasDbXref rdf:resource="http://linkedlifedata.com/resource/umls/id/C0152299"/>
         <oboInOwl:hasDbXref>BAMS:PrG</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>BIRNLEX:1455</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>DHBA:12114</oboInOwl:hasDbXref>
@@ -2365,6 +2346,7 @@
         <oboInOwl:hasDbXref>HBA:4010</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>NCIT:C33393</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>UMLS:C0152299</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Precentral_gyrus</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>neuronames:89</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>precentral convolution</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>prerolandic gyrus</oboInOwl:hasExactSynonym>
@@ -2456,9 +2438,6 @@
         <obo:RO_0002171 rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002191"/>
         <obo:RO_0002171 rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004683"/>
         <obo:UBPROP_0000008>In primates it is found on the medial surface of the temporal lobe, partially bounded ventrolaterally by the collateral sulcus in the human and by the rhinal sulcus in the macaque. It is subdivided on the basis of internal structure into eight parts in the human ( Insausti-2004 ),and seven parts in the macaque ( Paxinos-2009a ). In the rat and mouse it is divided into a lateral part of the entorhinal area and a medial part of the entorhinal area; the latter is further divided into dorsal and ventral zones to produce three subdivisions in the rodent ( Swanson-2004 )</obo:UBPROP_0000008>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Entorhinal_cortex"/>
-        <oboInOwl:hasDbXref rdf:resource="http://linkedlifedata.com/resource/umls/id/C0175196"/>
-        <oboInOwl:hasDbXref rdf:resource="http://www.snomedbrowser.com/Codes/Details/369099007"/>
         <oboInOwl:hasDbXref>BAMS:ENT</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>BAMS:Ent</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>BIRNLEX:1508</oboInOwl:hasDbXref>
@@ -2475,7 +2454,9 @@
         <oboInOwl:hasDbXref>MESH:D018728</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>NCIT:C97338</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PBA:294022158</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:369099007</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>UMLS:C0175196</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Entorhinal_cortex</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>neuronames:168</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>entorhinal area</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
@@ -2495,26 +2476,26 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002728"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Component of the temporal lobe on the mesial surface. The rostral and caudal boundaries of the entorhinal cortex are the rostral end of the collateral sulcus and the caudal end of the amygdala respectively. The medial boundary is the medial aspect of the temporal lobe and the lateral boundary is the collateral sulcus. (DK).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Entorhinal_cortex"/>
         <oboInOwl:hasDbXref>BIRNLEX:1508</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Entorhinal_cortex</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002728"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002171"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001953"/>
-        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ABA</oboInOwl:source>
+        <oboInOwl:source>ABA</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002728"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002171"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002191"/>
-        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ABA</oboInOwl:source>
+        <oboInOwl:source>ABA</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002728"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002171"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004683"/>
-        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ABA</oboInOwl:source>
+        <oboInOwl:source>ABA</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002728"/>
@@ -2585,8 +2566,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000000"/>
         <obo:IAO_0000115>Component of the temporal lobe, lateral aspect. The rostral boundary is the rostral extent of the inferior temporal sulcus whereas the caudal boundary is designated as the temporo-occipital incisure on the cortical surface. The occipitotemporal sulcus is the medial boundary and the inferior temporal sulcus is the lateral boundary (Christine Fennema-Notestine).</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Inferior_temporal_gyrus"/>
-        <oboInOwl:hasDbXref rdf:resource="http://www.snomedbrowser.com/Codes/Details/279191005"/>
         <oboInOwl:hasDbXref>BAMS:ITG</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>BIRNLEX:1577</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>BM:Tel-ITG</oboInOwl:hasDbXref>
@@ -2594,6 +2573,8 @@
         <oboInOwl:hasDbXref>FMA:61907</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>HBA:4147</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>NCIT:C32791</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:279191005</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Inferior_temporal_gyrus</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>ncithesaurus:Inferior_Temporal_Gyrus</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>neuronames:138</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>gyrus temporalis inferior</oboInOwl:hasExactSynonym>
@@ -2630,21 +2611,21 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002751"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>IT cortex</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Inferior_temporal_gyrus"/>
+        <oboInOwl:hasDbXref>Wikipedia:Inferior_temporal_gyrus</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/uberon/core#ABBREVIATION"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002751"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>gyrus temporalis inferior</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Inferior_temporal_gyrus"/>
+        <oboInOwl:hasDbXref>Wikipedia:Inferior_temporal_gyrus</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/uberon/core#LATIN"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002751"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>inferotemporal cortex</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Inferior_temporal_gyrus"/>
+        <oboInOwl:hasDbXref>Wikipedia:Inferior_temporal_gyrus</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -2655,9 +2636,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000000"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002943"/>
         <obo:IAO_0000115>The fusiform gyrus is part of the temporal lobe. It is also known as the (discontinuous) occipitotemporal gyrus. Other sources have the fusiform gyrus above the occipitotemporal gyrus and underneath the parahippocampal gyrus. [WP,unvetted].</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Fusiform_gyrus"/>
-        <oboInOwl:hasDbXref rdf:resource="http://linkedlifedata.com/resource/umls/id/C0152313"/>
-        <oboInOwl:hasDbXref rdf:resource="http://www.snomedbrowser.com/Codes/Details/110678003"/>
         <oboInOwl:hasDbXref>BAMS:FuG</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>BAMS:LOTG</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>BAMS:OTG</oboInOwl:hasDbXref>
@@ -2665,7 +2643,9 @@
         <oboInOwl:hasDbXref>FMA:61908</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>HBA:4156</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>NCIT:C33197</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:110678003</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>UMLS:C0152313</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Fusiform_gyrus</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>neuronames:139</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>gyrus occipitotemporalis lateralis</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>lateral occipitotemporal gyrus</oboInOwl:hasExactSynonym>
@@ -2686,7 +2666,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002766"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The fusiform gyrus is part of the temporal lobe. It is also known as the (discontinuous) occipitotemporal gyrus. Other sources have the fusiform gyrus above the occipitotemporal gyrus and underneath the parahippocampal gyrus. [WP,unvetted].</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Fusiform_gyrus"/>
+        <oboInOwl:hasDbXref>Wikipedia:Fusiform_gyrus</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002766"/>
@@ -2705,7 +2685,7 @@
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>gyrus occipitotemporalis lateralis</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FMA:61908</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:TA</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FMA:TA</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/uberon/core#LATIN"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -2724,7 +2704,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002766"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>gyrus fusiformis</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Fusiform_gyrus"/>
+        <oboInOwl:hasDbXref>Wikipedia:Fusiform_gyrus</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/uberon/core#LATIN"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -2761,9 +2741,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000000"/>
         <obo:IAO_0000115>Component of the temporal lobe, lateral aspect. The rostral boundary is the rostral extent of the ssuperior temporal sulcus. The caudal boundary is the cauday portion of the superior temporal gyrus (posterior to becoming continuous with the supramarginal gyrus). The medial boundary is the lateral fissure (and when present the supramarginal gyrus), and the lateral boundary is the superior temporal suclus (Christine Fennema-Notestine).</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Superior_temporal_gyrus"/>
-        <oboInOwl:hasDbXref rdf:resource="http://linkedlifedata.com/resource/umls/id/C0152309"/>
-        <oboInOwl:hasDbXref rdf:resource="http://www.snomedbrowser.com/Codes/Details/362345008"/>
         <oboInOwl:hasDbXref>BAMS:STG</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>BIRNLEX:1648</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>BM:Tel-STG</oboInOwl:hasDbXref>
@@ -2772,7 +2749,9 @@
         <oboInOwl:hasDbXref>FMA:61905</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>HBA:4133</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>NCIT:C33698</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:362345008</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>UMLS:C0152309</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Superior_temporal_gyrus</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>ncithesaurus:Superior_Temporal_Gyrus</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>neuronames:136</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>gyrus temporalis superior</oboInOwl:hasExactSynonym>
@@ -2814,7 +2793,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002769"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>gyrus temporalis superior</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Superior_temporal_gyrus"/>
+        <oboInOwl:hasDbXref>Wikipedia:Superior_temporal_gyrus</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/uberon/core#LATIN"/>
     </owl:Axiom>
     
@@ -2826,9 +2805,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000000"/>
         <obo:IAO_0000115>Component of the temporal lobe, lateral aspect. The rostral boundary is the rostral extent of the superior temporal sulcus whereas the caudal boundary is the temporo-occipital incisure on the cortical surface. The superior temporal sulcus is the medial boundary and the inferior temporal sulcus is the lateral boundary (Christine Fennema-Notestine).</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Middle_temporal_gyrus"/>
-        <oboInOwl:hasDbXref rdf:resource="http://linkedlifedata.com/resource/umls/id/C0152310"/>
-        <oboInOwl:hasDbXref rdf:resource="http://www.snomedbrowser.com/Codes/Details/279190006"/>
         <oboInOwl:hasDbXref>BAMS:MTG</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>BIRNLEX:1653</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>DHBA:12141</oboInOwl:hasDbXref>
@@ -2836,7 +2812,9 @@
         <oboInOwl:hasDbXref>FMA:61906</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>HBA:4140</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>NCIT:C33125</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:279190006</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>UMLS:C0152310</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Middle_temporal_gyrus</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>ncithesaurus:Middle_Temporal_Gyrus</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>neuronames:137</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>gyrus temporalis medius</oboInOwl:hasExactSynonym>
@@ -2892,7 +2870,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002771"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>medial temporal gyrus</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Middle_temporal_gyrus"/>
+        <oboInOwl:hasDbXref>Wikipedia:Middle_temporal_gyrus</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002771"/>
@@ -2909,8 +2887,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000000"/>
         <obo:IAO_0000115>Component of the frontal lobe. The rostral and caudal boundaries of the frontal pole are the superior frontal gyrus and the rostral division of the middle frontal gyrus respectively (Christine Fennama-Notestine).</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-        <oboInOwl:hasDbXref rdf:resource="http://linkedlifedata.com/resource/umls/id/C0149546"/>
-        <oboInOwl:hasDbXref rdf:resource="http://www.snomedbrowser.com/Codes/Details/314144002"/>
         <oboInOwl:hasDbXref>BAMS:FRP</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>BAMS:FrP</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>BAMS:frp</oboInOwl:hasDbXref>
@@ -2919,6 +2895,7 @@
         <oboInOwl:hasDbXref>FMA:74885</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>HBA:4888</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>MBA:184</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:314144002</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>UMLS:C0149546</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>neuronames:57</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>frontal pole</oboInOwl:hasExactSynonym>
@@ -2977,9 +2954,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000000"/>
         <obo:IAO_0000115>Component of the occipital lobe. The rostral boundary of the lingual gyrus was the posterior extent of the parahippocampal gyrus whereas the caudal boundary was the most posterior coronal slice where the gyrus could be visualized. The medial and lateral boundaries were the medial portion of the temporal and occipital cortices and the medial bank of the collateral sulcus respectively (Christine Fennema-Notestine).</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Lingual_gyrus"/>
-        <oboInOwl:hasDbXref rdf:resource="http://linkedlifedata.com/resource/umls/id/C0152308"/>
-        <oboInOwl:hasDbXref rdf:resource="http://www.snomedbrowser.com/Codes/Details/279203007"/>
         <oboInOwl:hasDbXref>BAMS:LgG</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>BAMS:LiG</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>BAMS:MOTG</oboInOwl:hasDbXref>
@@ -2987,7 +2961,9 @@
         <oboInOwl:hasDbXref>DHBA:12151</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FMA:61904</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>HBA:4191</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:279203007</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>UMLS:C0152308</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Lingual_gyrus</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>neuronames:158</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>gyrus occipitotemporalis medialis</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>lingula of cerebral hemisphere</oboInOwl:hasExactSynonym>
@@ -3025,7 +3001,7 @@
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>gyrus occipitotemporalis medialis</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FMA:61904</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:TA</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FMA:TA</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/uberon/core#LATIN"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -3050,7 +3026,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002943"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>gyrus lingualis</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Lingual_gyrus"/>
+        <oboInOwl:hasDbXref>Wikipedia:Lingual_gyrus</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/uberon/core#LATIN"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -3068,9 +3044,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000000"/>
         <obo:IAO_0000115>Component of the temporal lobe on the mesial surface, posterior to the entorhinal cortex. The rostral and caudal boundaries are the posterior end of the netorhinal cortex and the caudal portion of the hippocampus, respectively. The medial boudnary is designated as the medial aspect off the temporal lobe and the lateral boundary is the collateral sulcus (Christine Fennema-Notestine).</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Parahippocampal_gyrus"/>
-        <oboInOwl:hasDbXref rdf:resource="http://linkedlifedata.com/resource/umls/id/C0228249"/>
-        <oboInOwl:hasDbXref rdf:resource="http://www.snomedbrowser.com/Codes/Details/279205000"/>
         <oboInOwl:hasDbXref>BAMS:PHG</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>BIRNLEX:807</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>BTO:0004380</oboInOwl:hasDbXref>
@@ -3082,7 +3055,9 @@
         <oboInOwl:hasDbXref>HBA:4242</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>MESH:D020534</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>NCIT:C33262</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:279205000</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>UMLS:C0228249</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Parahippocampal_gyrus</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>neuronames:164</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>hippocampal gyrus</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
@@ -3137,7 +3112,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002973"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>gyrus parahippocampalis</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Parahippocampal_gyrus"/>
+        <oboInOwl:hasDbXref>Wikipedia:Parahippocampal_gyrus</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/uberon/core#LATIN"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -3163,8 +3138,6 @@
         <obo:IAO_0000115>Component of the inferior frontal gyrus.defined as the first gyrus from the precentral gyrus.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <oboInOwl:hasBroadSynonym>inferior frontal gyrus, pars opercularis</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Opercular_part_of_inferior_frontal_gyrus"/>
-        <oboInOwl:hasDbXref rdf:resource="http://linkedlifedata.com/resource/umls/id/C0262296"/>
         <oboInOwl:hasDbXref>BAMS:IFGOp</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>BAMS:OpIFG</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>BIRNLEX:823</oboInOwl:hasDbXref>
@@ -3172,6 +3145,7 @@
         <oboInOwl:hasDbXref>FMA:61981</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>HBA:4041</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>UMLS:C0262296</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Opercular_part_of_inferior_frontal_gyrus</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>neuronames:87</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>gyrus frontalis inferior, pars opercularis</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>opercular portion of inferior frontal gyrus</oboInOwl:hasExactSynonym>
@@ -3195,7 +3169,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002980"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym"/>
         <owl:annotatedTarget>inferior frontal gyrus, pars opercularis</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:resource="http://orcid.org/0000-0001-6755-0259"/>
+        <oboInOwl:hasDbXref>http://orcid.org/0000-0001-6755-0259</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002980"/>
@@ -3214,7 +3188,7 @@
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>gyrus frontalis inferior, pars opercularis</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FMA:61981</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:TA</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FMA:TA</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/uberon/core#LATIN"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -3228,7 +3202,7 @@
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>pars opercularis</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FMA:61981</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:TA</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FMA:TA</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/uberon/core#LATIN"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -3242,7 +3216,7 @@
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>pars posterior of inferior frontal gyrus</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FMA:61981</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:TA</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FMA:TA</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/uberon/core#LATIN"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -3265,7 +3239,6 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0003528">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000000"/>
         <obo:IAO_0000115>A gray matter that is part of a brain [Automatically generated definition].</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:resource="http://linkedlifedata.com/resource/umls/id/C1707348"/>
         <oboInOwl:hasDbXref>EMAPA:35184</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>MA:0000810</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>NCIT:C49333</oboInOwl:hasDbXref>
@@ -3283,7 +3256,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003528"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A gray matter that is part of a brain [Automatically generated definition].</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBOL:automatic</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>OBOL:automatic</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003528"/>
@@ -3301,25 +3274,25 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003528"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>brain grey substance</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBOL:automatic</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>OBOL:automatic</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003528"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>gray matter of brain</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBOL:automatic</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>OBOL:automatic</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003528"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>grey matter of brain</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBOL:automatic</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>OBOL:automatic</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003528"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>grey substance of brain</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBOL:automatic</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>OBOL:automatic</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -3329,7 +3302,6 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0003544">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000000"/>
         <obo:IAO_0000115>The regions of the brain that are largely or entirely composed of myelinated nerve cell axons and contain few or no neural cell bodies or dendrites.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:resource="http://linkedlifedata.com/resource/umls/id/C1706995"/>
         <oboInOwl:hasDbXref>EMAPA:35187</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>HBA:9218</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>MA:0000820</oboInOwl:hasDbXref>
@@ -3361,31 +3333,31 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003544"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>brain white matter of neuraxis</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBOL:automatic</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>OBOL:automatic</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003544"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>brain white substance</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBOL:automatic</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>OBOL:automatic</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003544"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>white matter of brain</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBOL:automatic</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>OBOL:automatic</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003544"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>white matter of neuraxis of brain</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBOL:automatic</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>OBOL:automatic</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003544"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>white substance of brain</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBOL:automatic</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>OBOL:automatic</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -3436,7 +3408,7 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002175"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_7776"/>
         <oboInOwl:notes>http://neurolex.org/wiki/Category_talk:Thalamus</oboInOwl:notes>
-        <oboInOwl:source rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/8167659"/>
+        <oboInOwl:source>PMID:8167659</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004703"/>
@@ -3454,8 +3426,8 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004703"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>thalamus dorsalis</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Thalamus"/>
         <oboInOwl:hasDbXref>BTO:0001365</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Thalamus</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/uberon/core#LATIN"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -3484,13 +3456,12 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0006088">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000000"/>
         <obo:IAO_0000115>Component of the parietal lobe. The inferior parietal cortex label includes the inferior parietal gyrus and the angular gyrus and lies inferior to the superior parietal gyrus. The rostral and caudal boundaries were the supramarginal gyrus and the parieto-occipital incisure respectively. The medial and lateral boundaries were the superior parietal gyrus and the middle temporal gyrus respectively (Christine Fennema-Notestine).</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:resource="http://linkedlifedata.com/resource/umls/id/C0152304"/>
-        <oboInOwl:hasDbXref rdf:resource="http://www.snomedbrowser.com/Codes/Details/362336007"/>
         <oboInOwl:hasDbXref>BIRNLEX:1194</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>DHBA:12134</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>EFO:0001951</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FMA:77536</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>HBA:4103</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:362336007</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>UMLS:C0152304</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>neuronames:107</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>inferior parietal cortex</oboInOwl:hasExactSynonym>
@@ -3581,15 +3552,14 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000000"/>
         <obo:IAO_0000115>Component of the occipital lobe. The rostral boundary was the first coronal slice above the calcarine sulcus where the cuneus cortex becomes visible whereas the caudal boundary was the last slice where the calcarine sulcus was visualized. The medial boundary was the most medial portion of the occipital and parietal cortices. The superio-lateral boundary was the parieto-occipital fissure whereas the inferolateral boundary was the pericalcarine cortex (Christine Fennema-Notestine).</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Cuneus"/>
-        <oboInOwl:hasDbXref rdf:resource="http://linkedlifedata.com/resource/umls/id/C0152307"/>
-        <oboInOwl:hasDbXref rdf:resource="http://www.snomedbrowser.com/Codes/Details/279199007"/>
         <oboInOwl:hasDbXref>BAMS:Cun</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>BIRNLEX:1396</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>DHBA:12150</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FMA:61903</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>HBA:4184</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:279199007</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>UMLS:C0152307</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Cuneus</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>neuronames:157</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>cuneate lobule</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>cuneus</oboInOwl:hasExactSynonym>
@@ -3684,9 +3654,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000000"/>
         <obo:IAO_0000115>Component of the pareital lobe. The rostral boundary was the posterior extent of the paracentral lobule whereas the caudal boundary was the lingual gyrus. The medial and lateral boundaries were the parieto-occipital fissure and the superior parietal gyrus respectively (Christine Fennema-Notestine).</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Precuneus"/>
-        <oboInOwl:hasDbXref rdf:resource="http://linkedlifedata.com/resource/umls/id/C0152306"/>
-        <oboInOwl:hasDbXref rdf:resource="http://www.snomedbrowser.com/Codes/Details/279200005"/>
         <oboInOwl:hasDbXref>BAMS:PCu</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>BAMS:PCun</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>BIRNLEX:1446</oboInOwl:hasDbXref>
@@ -3694,7 +3661,9 @@
         <oboInOwl:hasDbXref>FMA:61900</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>HBA:4118</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>NCIT:C112399</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:279200005</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>UMLS:C0152306</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Precuneus</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>neuronames:110</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>precuneate lobule</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>precuneus</oboInOwl:hasExactSynonym>
@@ -3782,14 +3751,13 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0006094">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000000"/>
         <obo:IAO_0000115>Copmonent of the parietal lobe. The rostral and caudal boundaries of the superior parietal cortex were the precentral gyrus and lateral occipital cortex respectively. The medial and lateral boundaries were the precuneus and/or cuneus cortex and the infererior parietal cortex respectively (Christine Fennema-Notestine).</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Superior_parietal_lobule"/>
-        <oboInOwl:hasDbXref rdf:resource="http://linkedlifedata.com/resource/umls/id/C0152303"/>
-        <oboInOwl:hasDbXref rdf:resource="http://www.snomedbrowser.com/Codes/Details/279168006"/>
         <oboInOwl:hasDbXref>BAMS:SPL</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>BIRNLEX:1450</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FMA:61899</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>HBA:4096</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:279168006</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>UMLS:C0152303</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Superior_parietal_lobule</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>neuronames:106</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>superior parietal cortex</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>superior parietal gyrus</oboInOwl:hasExactSynonym>
@@ -3877,11 +3845,10 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0006114">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000000"/>
         <obo:IAO_0000115>Component of the occipital lobe. The rostral and caudal boundaries of the lateral occipital cortex were the superior parietal gyrus and as the last visible portion of occipital cortex respectively. The medial and lateral boundaries were the cuneus/pericalcarine cortex and the inferior temporal/inferior parietal gyri respectively (Christine Fennema-Notestine).</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:resource="http://linkedlifedata.com/resource/umls/id/C0228228"/>
-        <oboInOwl:hasDbXref rdf:resource="http://www.snomedbrowser.com/Codes/Details/369218006"/>
         <oboInOwl:hasDbXref>BAMS:LOG</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>BIRNLEX:735</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FMA:61902</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:369218006</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>UMLS:C0228228</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>neuronames:155</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>gyrus occipitalis lateralis</oboInOwl:hasExactSynonym>
@@ -3918,7 +3885,7 @@
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>gyrus occipitalis lateralis</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FMA:61902</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:TA</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FMA:TA</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/uberon/core#LATIN"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -4067,13 +4034,13 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006514"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Part of what are called the basal ganglia of the brain which consist of the globus pallidus and the ventral pallidum.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:resource="http://www.medterms.com/script/main/art.asp?articlekey=11614"/>
+        <oboInOwl:hasDbXref>http://www.medterms.com/script/main/art.asp?articlekey=11614</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006514"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002171"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002435"/>
-        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ABA</oboInOwl:source>
+        <oboInOwl:source>ABA</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006514"/>
@@ -4105,7 +4072,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0008884"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A putamen that is part of a left cerebral hemisphere.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBOL:automatic</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>OBOL:automatic</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -4125,7 +4092,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0008885"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A putamen that is part of a right cerebral hemisphere.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBOL:automatic</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>OBOL:automatic</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -4145,7 +4112,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0009897"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>An auditory cortex that is in the left side of a brain.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBOL:automatic</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>OBOL:automatic</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -4165,7 +4132,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0009898"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>An auditory cortex that is in the right side of a brain.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBOL:automatic</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>OBOL:automatic</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -4186,7 +4153,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0010225"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A nuclear complex which in mammals consists of four parts, the hypothalamus, epithalamus, ventral thalamus, and dorsal thalamus[WP,modified].</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Thalamus#Thalamic_nuclei"/>
+        <oboInOwl:hasDbXref>Wikipedia:Thalamus#Thalamic_nuclei</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -4208,7 +4175,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0013683"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A dorsal thalamus that is in_the_left_side_of a diencephalon.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBOL:automatic</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>OBOL:automatic</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0013683"/>
@@ -4236,7 +4203,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0013684"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A dorsal thalamus that is in_the_right_side_of a diencephalon.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBOL:automatic</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>OBOL:automatic</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0013684"/>
@@ -4271,13 +4238,13 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0022352"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym"/>
         <owl:annotatedTarget>frontal medial cortex</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:resource="http://orcid.org/0000-0001-6755-0259"/>
+        <oboInOwl:hasDbXref>http://orcid.org/0000-0001-6755-0259</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0022352"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>medial orbitofrontal cortex</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:resource="http://orcid.org/0000-0002-6601-2165"/>
+        <oboInOwl:hasDbXref>http://orcid.org/0000-0002-6601-2165</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -4289,11 +4256,11 @@
         <obo:IAO_0000115>Component of the cingulate cortex. The rostral and caudal extent were the caudal anterior and the isthmus divisions of the cingulate cortex respectively. The medial and lateral boundaries were the corpus callosum and as the superior frontal gyrus and/or paracentral lobule respectively (Christine Fennema-Notestine).</obo:IAO_0000115>
         <obo:IAO_0000116>check relationship to gyrus. See https://github.com/obophenotype/uberon/issues/626</obo:IAO_0000116>
         <oboInOwl:hasBroadSynonym>posterior cingulate</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Posterior_cingulate"/>
         <oboInOwl:hasDbXref>BIRNLEX:950</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>BTO:0004250</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>EFO:0002471</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FMA:271593</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Posterior_cingulate</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>cingulate gyrus, posterior division</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>posterior cingular cortex</oboInOwl:hasRelatedSynonym>
@@ -4310,19 +4277,19 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0022353"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym"/>
         <owl:annotatedTarget>posterior cingulate</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Posterior_cingulate"/>
+        <oboInOwl:hasDbXref>Wikipedia:Posterior_cingulate</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0022353"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>cingulate gyrus, posterior division</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:resource="http://orcid.org/0000-0001-6755-0259"/>
+        <oboInOwl:hasDbXref>http://orcid.org/0000-0001-6755-0259</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0022353"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>posterior cingular cortex</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Posterior_cingulate"/>
+        <oboInOwl:hasDbXref>Wikipedia:Posterior_cingulate</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -4518,12 +4485,12 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0035933">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000000"/>
         <obo:IAO_0000115>The junction of the precentral gyrus and postcentral gyrus on the medial surface of the cerebral cortex. It lies across the boundary between the frontal lobe and the parietal lobe.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Paracentral_lobule"/>
-        <oboInOwl:hasDbXref rdf:resource="http://www.snomedbrowser.com/Codes/Details/279202002"/>
         <oboInOwl:hasDbXref>BTO:0005601</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FMA:77534</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>RadLex:RID6449</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:279202002</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>Talairach:1047</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Paracentral_lobule</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>neuronames:1341</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>lobulus paracentralis</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
@@ -4534,18 +4501,18 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0035933"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The junction of the precentral gyrus and postcentral gyrus on the medial surface of the cerebral cortex. It lies across the boundary between the frontal lobe and the parietal lobe.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:resource="http://braininfo.rprc.washington.edu/centraldirectory.aspx?type=a&amp;ID=404"/>
+        <oboInOwl:hasDbXref>http://braininfo.rprc.washington.edu/centraldirectory.aspx?type=a&amp;ID=404</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0035933"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>lobulus paracentralis</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:TA</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FMA:TA</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/uberon/core#LATIN"/>
     </owl:Axiom>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.25) https://github.com/owlcs/owlapi -->
 
