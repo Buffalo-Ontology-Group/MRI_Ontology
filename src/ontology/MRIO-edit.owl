@@ -1440,7 +1440,7 @@ variable
     <!-- http://purl.obolibrary.org/obo/MRIO_0000501 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000501">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000667"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000738"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
@@ -1620,7 +1620,13 @@ variable
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000366"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <IAO_0000115>An MRI data set analysis tool for automated segmentation and volume estimation of subcortical structures (e.g. thalamus, cuneus, etc.).</IAO_0000115>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000738"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <IAO_0000115>An MRI data set analysis tool for automated segmentation and volume estimation of subcortical structures (e.g. thalamus, caudate, etc.).</IAO_0000115>
         <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
         <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
         <oboInOwl:source>Patenaude, B., Smith, S.M., Kennedy, D., and Jenkinson M. A Bayesian Model of Shape and Appearance for Subcortical Brain NeuroImage, 56(3):907-922, 2011.</oboInOwl:source>
@@ -4929,6 +4935,87 @@ The values often belong to a group of pixels or voxels that share the same chara
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000737">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000003"/>
         <rdfs:label xml:lang="en">percentage unit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_0000738 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000738">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000667"/>
+        <rdfs:label xml:lang="en">deep grey matter brain volume measurement datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_0000739 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000739">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000738"/>
+        <rdfs:label xml:lang="en">caudate volume measurement datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_0000740 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000740">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000738"/>
+        <rdfs:label xml:lang="en">putamen volume measurement datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_0000741 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000741">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000740"/>
+        <rdfs:label xml:lang="en">left putamen volume measurement datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_0000742 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000742">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000740"/>
+        <rdfs:label xml:lang="en">right putamen volume measurement datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_0000743 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000743">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000738"/>
+        <rdfs:label xml:lang="en">pallidum volume measurement datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_0000744 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000744">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000738"/>
+        <rdfs:label xml:lang="en">hippocampus volume measurement datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_0000745 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000745">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000738"/>
+        <rdfs:label xml:lang="en">amygdala volume measurement datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_0000746 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000746">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000738"/>
+        <rdfs:label xml:lang="en">nucleus accumbens volume measurement datum</rdfs:label>
     </owl:Class>
     
 
