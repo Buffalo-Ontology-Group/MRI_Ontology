@@ -1,0 +1,22 @@
+diff --git a/src/ontology/MRIO-edit.obda b/src/ontology/MRIO-edit.obda
+index 8d575f3..0fe3c45 100644
+--- a/src/ontology/MRIO-edit.obda
++++ b/src/ontology/MRIO-edit.obda
+@@ -150,5 +150,17 @@ source		SELECT id,edss FROM  cdd_edss ;
+ mappingId	lqt_thalamic_discon
+ target		:crania/lqt/thalamic_discon/{id} a :MRIO_0000736 ; :IAO_0000136 :UBERON_0010225 ; :IAO_0000004 {thalamicstructuraldisconnectivity}^^xsd:double ; :IAO_0000039 :MRIO_0000737 . 
+ source		SELECT id,thalamicstructuraldisconnectivity FROM crania_thalamicstructuraldisconnectivity ;
++
++mappingId	sienax_vcsf
++target		:crania/sienax/lvv/{id} a :MRIO_0000689 ; :IAO_0000136 :UBERON_0002285 ; :IAO_0000004 {ventricularcsfvolume_normalizedvcsfvolume}^^xsd:double ; :IAO_0000039 :MRIO_0000731 . 
++source		SELECT id,ventricularcsfvolume_normalizedvcsfvolume FROM crania_sienax ;
++
++mappingId	peripheralgreymattervolume
++target		:crania/sienax/peripheralgreymattervolume/{id} a :MRIO_0000673 ; :IAO_0000136 :UBERON_0003528 ; :IAO_0000004 {peripheralgreymattervolume_normalizedpgreyvolume}^^xsd:double ; :IAO_0000039 :MRIO_0000731 . 
++source		SELECT id,peripheralgreymattervolume_normalizedpgreyvolume FROM crania_sienax ;
++
++mappingId	FIRST subcortical volumes
++target		:crania/first/leftthalamusvolume/{id} a :MRIO_0000642 ; :IAO_0000136 :UBERON_0013683 ; :IAO_0000004 {leftthalamusvolume_normalizedleftthalamusvolume}^^xsd:double ; :IAO_0000039 :MRIO_0000731 . :crania/first/rightthalamusvolume/{id} a :MRIO_0000643 ; :IAO_0000136 :UBERON:0013684 ; :IAO_0000004 {rightthalamusvolume_normalizedrightthalamusvolume}^^xsd:double ; :IAO_0000039 :MRIO_0000731 . :crania/first/leftcaudatevolume/{id} a :MRIO_0000739 ; :IAO_0000136 :UBERON_0001873 ; :IAO_0000004 {leftcaudatevolume_normalizedleftcaudatevolume}^^xsd:double ; :IAO_0000039 :MRIO_0000731 . :crania/first/rightcaudatevolume/{id} a :MRIO_0000739 ; :IAO_0000136 :UBERON_0001873 ; :IAO_0000004 {rightcaudatevolume_normalizedrightcaudatevolume}^^xsd:double ; :IAO_0000039 :MRIO_0000731 . :crania/first/leftputamenvolume/{id} a :MRIO_0000741 ; :IAO_0000136 :UBERON_0008884 ; :IAO_0000004 {leftputamenvolume_normalizedleftputamenvolume}^^xsd:double ; :IAO_0000039 :MRIO_0000731 . :crania/first/rightputamenvolume/{id} a :MRIO_0000742 ; :IAO_0000136 :UBERON_0008885 ; :IAO_0000004 {rightputamenvolume_normalizedrightputamenvolume}^^xsd:double ; :IAO_0000039 :MRIO_0000731 . :crania/first/leftpallidumvolume/{id} a :MRIO_0000743 ; :IAO_0000136 :UBERON_0006514 ; :IAO_0000004 {leftpallidumvolume_normalizedleftpallidumvolume}^^xsd:double ; :IAO_0000039 :MRIO_0000731 . :crania/first/rightpallidumvolume/{id} a :MRIO_0000743 ; :IAO_0000136 :UBERON_0006514 ; :IAO_0000004 {rightpallidumvolume_normalizedrightpallidumvolume}^^xsd:double ; :IAO_0000039 :MRIO_0000731 . :crania/first/lefthippocampusvolume/{id} a :MRIO_0000744 ; :IAO_0000136 :UBERON_0002421 ; :IAO_0000004 {lefthippocampusvolume_normalizedlefthippocampusvolume}^^xsd:double ; :IAO_0000039 :MRIO_0000731 . :crania/first/righthippocampusvolume/{id} a :MRIO_0000744 ; :IAO_0000136 :UBERON_0002421 ; :IAO_0000004 {righthippocampusvolume_normalizedrighthippocampusvolume}^^xsd:double ; :IAO_0000039 :MRIO_0000731 . :crania/first/leftamygdalavolume/{id} a :MRIO_0000745 ; :IAO_0000136 :UBERON_0001876 ; :IAO_0000004 {leftamygdalavolume_normalizedleftamygdalavolume}^^xsd:double ; :IAO_0000039 :MRIO_0000731 . :crania/first/rightamygdalavolume/{id} a :MRIO_0000745 ; :IAO_0000136 :UBERON_0001876 ; :IAO_0000004 {rightamygdalavolume_normalizedrightamygdalavolume}^^xsd:double ; :IAO_0000039 :MRIO_0000731 . :crania/first/leftnucleusaccumbens/{id} a :MRIO_0000746 ; :IAO_0000136 :UBERON:0001882 ; :IAO_0000004 {leftnucleusaccumbens_normalizedleftnucleusaccumbens}^^xsd:double ; :IAO_0000039 :MRIO_0000731 . :crania/first/rightnucleusaccumbens/{id} a :MRIO_0000746 ; :IAO_0000136 :UBERON:0001882 ; :IAO_0000004 {rightnucleusaccumbensvolume_normalizedrightnucleusaccumbensvolu}^^xsd:double ; :IAO_0000039 :MRIO_0000731 . 
++source		SELECT * FROM crania_first ;
+ ]]
+ 

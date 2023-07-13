@@ -1,0 +1,2387 @@
+diff --git a/src/ontology/MRIO-edit.owl b/src/ontology/MRIO-edit.owl
+index 50df8b1..55ce855 100644
+--- a/src/ontology/MRIO-edit.owl
++++ b/src/ontology/MRIO-edit.owl
+@@ -36,7 +36,7 @@
+         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
+         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
+-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MRIO/releases/2022-11-22/imports/obi_import.owl"/>
++        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MRIO/releases/2023-04-18/imports/obi_import.owl"/>
+         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2019-08-26/bfo.owl"/>
+         <dc:contributor>Alan Ruttenberg</dc:contributor>
+         <dc:creator>Alexander D. Bartnik</dc:creator>
+@@ -384,12 +384,12 @@
+             </owl:Class>
+         </owl:equivalentClass>
+         <IAO_0000115>An image data set that is the direct output of a raw MR image data set reconstruction or a transformation of another MR image data set.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9625-1899 "William D. Duncan"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 "Alexander D. Diehl"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 "Lucas M. Serra"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-7245-3450 "Lauren M. Wishnie"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-9821-4132 "Mackenzie T. Smith"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9625-1899 &quot;William D. Duncan&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-7245-3450 &quot;Lauren M. Wishnie&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-9821-4132 &quot;Mackenzie T. Smith&quot;</IAO_0000117>
+         <IAO_0000118>scan</IAO_0000118>
+         <rdfs:label xml:lang="en">reconstructed MR image data set</rdfs:label>
+     </owl:Class>
+@@ -418,9 +418,9 @@
+             </owl:Restriction>
+         </rdfs:subClassOf>
+         <IAO_0000115>A T1 weighted image data set where gadolidium contrast agent has been administered to the participant before image acquistion.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 "Alexander D. Diehl"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 "Lucas M. Serra"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">Post-Gd T1 image data set</rdfs:label>
+     </owl:Class>
+     
+@@ -443,9 +443,9 @@
+             </owl:Restriction>
+         </rdfs:subClassOf>
+         <IAO_0000115>A timeseries of MRI images including pre- and post-contrast at different times</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 "Alexander D. Diehl"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 "Lucas M. Serra"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">DCE perfusion data set</rdfs:label>
+     </owl:Class>
+     
+@@ -456,9 +456,9 @@
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000348">
+         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000636"/>
+         <IAO_0000115>A timeseries of MRI images like DCE perfusion, but using no injected contrast (uses flow coded pulses instead)</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 "Alexander D. Diehl"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 "Lucas M. Serra"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">ASL perfusion data set</rdfs:label>
+     </owl:Class>
+     
+@@ -469,9 +469,9 @@
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000349">
+         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000341"/>
+         <IAO_0000115>A pair of MRI images pre- and post-application of an MT offset pulse</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 "Alexander D. Diehl"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 "Lucas M. Serra"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">magnetization transfer image data set</rdfs:label>
+     </owl:Class>
+     
+@@ -482,9 +482,9 @@
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000350">
+         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000635"/>
+         <IAO_0000115>Diffusion weighted image data set with at least 6 directional vectors.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 "Alexander D. Diehl"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 "Lucas M. Serra"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">diffusion weighted image data set suitable for DTI</rdfs:label>
+     </owl:Class>
+     
+@@ -495,9 +495,9 @@
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000351">
+         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000341"/>
+         <IAO_0000115>An MR image data set in which the contrast emphasizes density of protons, supressing T1 and T2 effects</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 "Alexander D. Diehl"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 "Lucas M. Serra"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">proton density image data set</rdfs:label>
+     </owl:Class>
+     
+@@ -508,9 +508,9 @@
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000352">
+         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000367"/>
+         <IAO_0000115>A type of T2-weighted image in which the acquisition is performed using a 2D spin-echo technique</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 "Alexander D. Diehl"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 "Lucas M. Serra"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">T2 SE image data set</rdfs:label>
+     </owl:Class>
+     
+@@ -521,9 +521,9 @@
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000353">
+         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000341"/>
+         <IAO_0000115>A type of processed MRI image calculated as a results</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 "Alexander D. Diehl"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 "Lucas M. Serra"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">QSM image data set</rdfs:label>
+     </owl:Class>
+     
+@@ -534,9 +534,9 @@
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000354">
+         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000368"/>
+         <IAO_0000115>A type of functional MRI in which the participant is not given a task, but just rests during acquisision</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 "Alexander D. Diehl"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 "Lucas M. Serra"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">Resting state functional MR image data set</rdfs:label>
+     </owl:Class>
+     
+@@ -547,9 +547,9 @@
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000355">
+         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000368"/>
+         <IAO_0000115>A type of functional MRI in which the participant is given a task or tasks, which are timed with the acquisition</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 "Alexander D. Diehl"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 "Lucas M. Serra"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">Task-based functional MR image data set</rdfs:label>
+     </owl:Class>
+     
+@@ -667,9 +667,9 @@ A different field of view (the scanned region) in the frequency and phase encodi
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000366">
+         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000341"/>
+         <IAO_0000115>An MR image acquired using a T1 weighted MR image acquisition sequence.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 "Alexander D. Diehl"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 "Lucas M. Serra"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">T1 weighted image data set</rdfs:label>
+     </owl:Class>
+     
+@@ -680,9 +680,9 @@ A different field of view (the scanned region) in the frequency and phase encodi
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000367">
+         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000341"/>
+         <IAO_0000115>An MR image produced by a T2 weighted MR image acquisition sequence.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 "Alexander D. Diehl"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 "Lucas M. Serra"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">T2 weighted image data set</rdfs:label>
+     </owl:Class>
+     
+@@ -693,10 +693,10 @@ A different field of view (the scanned region) in the frequency and phase encodi
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000368">
+         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000341"/>
+         <IAO_0000115>An MR image data set collected as a 4D time series representing changes in brain metabolism (i.e. BOLD), typically used as a proxy for brain activity.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9625-1899 "William D. Duncan"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 "Alexander D. Diehl"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 "Lucas M. Serra"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9625-1899 &quot;William D. Duncan&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">functional MR image data set</rdfs:label>
+     </owl:Class>
+     
+@@ -797,12 +797,12 @@ A different field of view (the scanned region) in the frequency and phase encodi
+             </owl:Restriction>
+         </rdfs:subClassOf>
+         <IAO_0000115>An assay that produces MR data about an evaluant.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9625-1899 "William D. Duncan"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 "Alexander D. Diehl"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 "Lucas M. Serra"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-7245-3450 "Lauren M. Wishnie"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-9821-4132 "Mackenzie T. Smith"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9625-1899 &quot;William D. Duncan&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-7245-3450 &quot;Lauren M. Wishnie&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-9821-4132 &quot;Mackenzie T. Smith&quot;</IAO_0000117>
+         <IAO_0000118>MRI acquisition sequence process</IAO_0000118>
+         <rdfs:label xml:lang="en">MR imaging assay</rdfs:label>
+     </owl:Class>
+@@ -860,10 +860,10 @@ A different field of view (the scanned region) in the frequency and phase encodi
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000383">
+         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000272"/>
+         <IAO_0000115>The NMR/MRI machine protocol about the radiofrequency pulse sequence.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 "Alexander D. Diehl"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 "Lucas M. Serra"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-9821-4132 "Mackenzie T. Smith"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-9821-4132 &quot;Mackenzie T. Smith&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">MR pulse sequence protocol</rdfs:label>
+     </owl:Class>
+     
+@@ -922,8 +922,8 @@ A different field of view (the scanned region) in the frequency and phase encodi
+             </owl:Restriction>
+         </rdfs:subClassOf>
+         <IAO_0000115>An MRI acquisition sequence characterized by short TR to minimize T2 weighting.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 "Lucas M. Serra"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">T1 weighted MRI acquisition sequence</rdfs:label>
+     </owl:Class>
+     
+@@ -976,8 +976,8 @@ A different field of view (the scanned region) in the frequency and phase encodi
+             </owl:Restriction>
+         </rdfs:subClassOf>
+         <IAO_0000115>An MRI acquisition sequence characterized by long TR and TE to accentuate T2 relaxation time of tissue.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 "Lucas M. Serra"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">T2 weighted MRI acquisition sequence</rdfs:label>
+     </owl:Class>
+     
+@@ -1031,9 +1031,9 @@ A different field of view (the scanned region) in the frequency and phase encodi
+         </rdfs:subClassOf>
+         <IAO_0000115>An MRI acquisition sequence that diminishes T1 weighting via long TR and T2 via short TE to produce images where voxel intensity corresponds to number of hydrogen protons in tissue.</IAO_0000115>
+         <IAO_0000116>Usually SE.</IAO_0000116>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 "Alexander D. Diehl"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 "Lucas M. Serra"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">Proton density sequence</rdfs:label>
+     </owl:Class>
+     
+@@ -1092,8 +1092,8 @@ A different field of view (the scanned region) in the frequency and phase encodi
+             </owl:Restriction>
+         </rdfs:subClassOf>
+         <IAO_0000115>An MRI acquisition sequence that uses multiple echoes produced by a train of 180 degree rephasing pulses with a high effective echo time to accentuate T2 weighting.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 "Lucas M. Serra"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
+         <IAO_0000118>T2 TSE sequence</IAO_0000118>
+         <rdfs:label xml:lang="en">T2 FSE sequence</rdfs:label>
+     </owl:Class>
+@@ -1163,8 +1163,8 @@ A different field of view (the scanned region) in the frequency and phase encodi
+             </owl:Restriction>
+         </rdfs:subClassOf>
+         <IAO_0000115>An MRI acquisition sequence that acheives T1 weighting using gradient echo instead of spin echo.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 "Lucas M. Serra"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">T1 GRE sequence</rdfs:label>
+     </owl:Class>
+     
+@@ -1236,8 +1236,8 @@ A different field of view (the scanned region) in the frequency and phase encodi
+         </owl:disjointWith>
+         <IAO_0000115>An MRI acquisition sequence that acheives T2 weighting using gradient echo instead of spin echo.</IAO_0000115>
+         <IAO_0000116>Needs GRE sequence.</IAO_0000116>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 "Lucas M. Serra"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">T2* GRE sequence</rdfs:label>
+     </owl:Class>
+     
+@@ -1308,8 +1308,8 @@ A different field of view (the scanned region) in the frequency and phase encodi
+             </owl:Restriction>
+         </rdfs:subClassOf>
+         <IAO_0000115>An MRI acquisition sequence that uses a short inversion time to attenuate the signal from fat.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 "Lucas M. Serra"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
+         <rdfs:comment>flip angle: 180 -&gt; 90 degrees, need to represent the change</rdfs:comment>
+         <rdfs:label xml:lang="en">T2 STIR sequence</rdfs:label>
+     </owl:Class>
+@@ -1379,8 +1379,8 @@ A different field of view (the scanned region) in the frequency and phase encodi
+             </owl:Restriction>
+         </rdfs:subClassOf>
+         <IAO_0000115>An MRI acquisition sequence that uses a long inversion time to attenuate the signal from water/CSF.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 "Lucas M. Serra"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
+         <rdfs:comment>from radiopedia
+ unnamed elements:
+ 
+@@ -1420,9 +1420,9 @@ variable
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000396">
+         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000367"/>
+         <IAO_0000115>T2 weighted image data set collected using a gradient echo sequence.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 "Alexander D. Diehl"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 "Lucas M. Serra"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">T2* GRE image data set</rdfs:label>
+     </owl:Class>
+     
+@@ -1444,12 +1444,12 @@ variable
+         </owl:equivalentClass>
+         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000067"/>
+         <IAO_0000115>A role that inheres in a material entity that is realized in a MR imaging assay in which MR imaging data is generated about the bearer of the evaluant role</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9625-1899 "William D. Duncan"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 "Alexander D. Diehl"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 "Lucas M. Serra"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-7245-3450 "Lauren M. Wishnie"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-9821-4132 "Mackenzie T. Smith"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9625-1899 &quot;William D. Duncan&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-7245-3450 &quot;Lauren M. Wishnie&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-9821-4132 &quot;Mackenzie T. Smith&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">MRI evaluant role</rdfs:label>
+     </owl:Class>
+     
+@@ -1460,8 +1460,8 @@ variable
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000420">
+         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000421"/>
+         <IAO_0000115>A functional assessment to determine the mapping of brain activity in an evaluant.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 "Lucas M. Serra"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">functional mapping</rdfs:label>
+     </owl:Class>
+     
+@@ -1478,8 +1478,8 @@ variable
+             </owl:Restriction>
+         </rdfs:subClassOf>
+         <IAO_0000115>An MR image assessment to evaluate brain activity by detecting changes associated with blood flow in an evaluant.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 "Lucas M. Serra"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">functional MR image data set analysis</rdfs:label>
+     </owl:Class>
+     
+@@ -1490,9 +1490,9 @@ variable
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000423">
+         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000366"/>
+         <IAO_0000115>T1 weighted image data set collected using a gradient echo sequence.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 "Alexander D. Diehl"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 "Lucas M. Serra"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">T1 GRE image data set</rdfs:label>
+     </owl:Class>
+     
+@@ -1503,9 +1503,9 @@ variable
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000424">
+         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000367"/>
+         <IAO_0000115>T2 weighted image collected using a fast/turbo spin echo sequence.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 "Alexander D. Diehl"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 "Lucas M. Serra"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
+         <IAO_0000118>T2 TSE image data set</IAO_0000118>
+         <rdfs:label xml:lang="en">T2 FSE image data set</rdfs:label>
+     </owl:Class>
+@@ -1523,8 +1523,8 @@ variable
+             </owl:Restriction>
+         </rdfs:subClassOf>
+         <IAO_0000115>A scalar measurement datum that is derived from the measurement of some volume quality</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 "Lucas M. Serra"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">volume measurement datum</rdfs:label>
+     </owl:Class>
+     
+@@ -1533,7 +1533,7 @@ variable
+     <!-- http://purl.obolibrary.org/obo/MRIO_0000501 -->
+ 
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000501">
+-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000667"/>
++        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000738"/>
+         <rdfs:subClassOf>
+             <owl:Restriction>
+                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+@@ -1547,8 +1547,8 @@ variable
+             </owl:Restriction>
+         </rdfs:subClassOf>
+         <IAO_0000115>A measurement datum that is the result of volume measurement of  the thalamus within some brain.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 "Lucas M. Serra"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">thalamic volume measurement datum</rdfs:label>
+     </owl:Class>
+     
+@@ -1560,9 +1560,9 @@ variable
+         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000366"/>
+         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000423"/>
+         <IAO_0000115>A T1-weighted image data set acquired from an NMR/MRI machine with at least a 3 Tesla magnet and in which the voxel size is isotropic.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 "Alexander D. Diehl"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 "Lucas M. Serra"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">high resolution T1 weighted image data set</rdfs:label>
+     </owl:Class>
+     
+@@ -1573,9 +1573,9 @@ variable
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000503">
+         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000502"/>
+         <IAO_0000115>T1 weighted image data set collected as one 3D volume using a gradient echo sequence.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 "Alexander D. Diehl"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 "Lucas M. Serra"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">3D GRE image data set</rdfs:label>
+     </owl:Class>
+     
+@@ -1585,10 +1585,10 @@ variable
+ 
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000504">
+         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000502"/>
+-        <IAO_0000115>Image data set collected at an evaluant"s first visit in a study.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 "Alexander D. Diehl"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 "Lucas M. Serra"</IAO_0000117>
++        <IAO_0000115>Image data set collected at an evaluant&quot;s first visit in a study.</IAO_0000115>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">baseline high resolution T1 image</rdfs:label>
+     </owl:Class>
+     
+@@ -1598,10 +1598,10 @@ variable
+ 
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000505">
+         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000502"/>
+-        <IAO_0000115>Image data set collected at a later time than the evaluant"s first scan.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 "Alexander D. Diehl"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 "Lucas M. Serra"</IAO_0000117>
++        <IAO_0000115>Image data set collected at a later time than the evaluant&quot;s first scan.</IAO_0000115>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">follow-up high resolution T1 image data set</rdfs:label>
+     </owl:Class>
+     
+@@ -1612,9 +1612,9 @@ variable
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000506">
+         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000366"/>
+         <IAO_0000115>T1 weighted image data set acquired using a spin echo sequence.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 "Alexander D. Diehl"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 "Lucas M. Serra"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">T1 SE image data set</rdfs:label>
+     </owl:Class>
+     
+@@ -1631,12 +1631,12 @@ variable
+             </owl:Restriction>
+         </rdfs:subClassOf>
+         <IAO_0000115>The process of deriving a data item from an image data set using computer algorithms. The produced data item can be an image data set, data measurement, or any other data item.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9625-1899 "William D. Duncan"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 "Alexander D. Diehl"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 "Lucas M. Serra"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-7245-3450 "Lauren M. Wishnie"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-9821-4132 "Mackenzie T. Smith"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9625-1899 &quot;William D. Duncan&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-7245-3450 &quot;Lauren M. Wishnie&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-9821-4132 &quot;Mackenzie T. Smith&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">image data set analysis</rdfs:label>
+     </owl:Class>
+     
+@@ -1654,8 +1654,8 @@ variable
+         </rdfs:subClassOf>
+         <IAO_0000115>Any combination of digital image analysis and statistical tools that may be used to derive processed MR images or data measurements about the MR images.</IAO_0000115>
+         <IAO_0000116>Add missing sources/papers/doi</IAO_0000116>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 "Lucas M. Serra"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">MR image data set analysis</rdfs:label>
+     </owl:Class>
+     
+@@ -1685,7 +1685,7 @@ variable
+         </rdfs:subClassOf>
+         <IAO_0000115>A volumetric MR imaging analysis that uses a neural network (U-net) to estimate thalamic volume from T2 FLAIR image datasets of an entire human brain.</IAO_0000115>
+         <IAO_0000117 rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
+         <IAO_0000119>https://doi.org/10.1016/j.nicl.2021.102652</IAO_0000119>
+         <rdfs:comment>Based on preliminary experiments and established performance, we adopted a 3D U-Net semantic segmentation architecture for DeepGRAI. (Çiçek et al., 2016) The U-Net architecture is composed of two symmetric pathways – a descending contraction/encoding pathway which moves from low level voxel intensities at very high spatial resolution to abstract high-level features at coarse spatial resolution, and an ascending expansion/decoding pathway which moves from less localized high-level features to specific voxel classifications. Additionally, U-Net includes direct “skip” connections from the descending pathway into the ascending pathway, to provide the ascending pathway with low-level image feature information. In the current context, the descending pathway is essentially responsible for localizing the thalamus, and the ascending pathway is responsible for determining its precise borders.</rdfs:comment>
+         <rdfs:label xml:lang="en">DeepGRAI analysis</rdfs:label>
+@@ -1704,8 +1704,8 @@ variable
+             </owl:Restriction>
+         </rdfs:subClassOf>
+         <IAO_0000115>An analysis examining the temporal correlation of activity throughout the brain.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 "Lucas M. Serra"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">functional connectome analysis</rdfs:label>
+     </owl:Class>
+     
+@@ -1716,9 +1716,9 @@ variable
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000511">
+         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000367"/>
+         <IAO_0000115>A T2 weighted image data set collected using a FLAIR sequence.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 "Alexander D. Diehl"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 "Lucas M. Serra"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">T2 FLAIR image data set</rdfs:label>
+     </owl:Class>
+     
+@@ -1735,8 +1735,8 @@ variable
+             </owl:Restriction>
+         </rdfs:subClassOf>
+         <IAO_0000115>A model-based subcortical segmentation tool.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 "Lucas M. Serra"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
+         <oboInOwl:source>Patenaude, B., Smith, S.M., Kennedy, D., and Jenkinson M. A Bayesian Model of Shape and Appearance for Subcortical Brain NeuroImage, 56(3):907-922, 2011.</oboInOwl:source>
+         <rdfs:label xml:lang="en">FIRST analysis</rdfs:label>
+     </owl:Class>
+@@ -1767,8 +1767,8 @@ variable
+             </owl:Restriction>
+         </rdfs:subClassOf>
+         <IAO_0000115>FreeSurfer is a suite of tools for the analysis of neuroimaging data that provides an array of algorithms to quantify the functional, connectional and structural properties of the human brain. It has evolved from a package primarily aimed at generating surface representations of the cerebral cortex into one that automatically creates models of most macroscopically visible structures in the human brain given any reasonable T1-weighted input image. It is freely available, runs on a wide variety of hardware and software platforms, and is open source.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 "Lucas M. Serra"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
+         <IAO_0000119>https://doi.org/10.1016/j.neuroimage.2012.01.021</IAO_0000119>
+         <rdfs:label xml:lang="en">FreeSurfer analysis</rdfs:label>
+     </owl:Class>
+@@ -1793,8 +1793,8 @@ variable
+             </owl:Restriction>
+         </rdfs:subClassOf>
+         <IAO_0000115>The longitudinal scheme is designed to be unbiased with respect to any time point (TP). Instead of initializing it with information from a specific time point, a template volume is created and run through FreeSurfer. This template can be seen as an initial guess for the segmentation and surface reconstruction. The FreeSurfer cortical and subcortical segmentation and parcellation procedure involves solving many complex nonlinear optimization problems, such as the deformable surface reconstruction, the nonlinear atlas-image registration, and the nonlinear spherical surface registration.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 "Lucas M. Serra"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
+         <oboInOwl:source>https://surfer.nmr.mgh.harvard.edu/fswiki/LongitudinalProcessing</oboInOwl:source>
+         <rdfs:label xml:lang="en">FreeSurfer longitudinal analysis</rdfs:label>
+     </owl:Class>
+@@ -1812,8 +1812,8 @@ variable
+             </owl:Restriction>
+         </rdfs:subClassOf>
+         <IAO_0000115>We set out to develop and validate an LVV quantification tool for this purpose. Our goal was not to produce a method more precise or accurate than those described above. Rather, we sought to produce a highly robust technique capable of operating on clinical-quality T2-FLAIR images and producing results similar to more established techniques run on high-resolution scans. To do this, we extended an earlier idea for whole brain analysis proposed by (Baillard et al., 2001), and adapted it to LVV measurement on T2-FLAIR images. The core of our approach is a combination of multi-atlas segmentation and level-set refinement. We also extended the cross-sectional method for direct longitudinal analysis by including an optional Jacobian integration step. We called the resulting algorithm “Neurological Software Tool for Reliable Atrophy Measurement” - NeuroSTREAM.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 "Lucas M. Serra"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
+         <IAO_0000119>https://doi.org/10.1016/j.nicl.2017.06.022</IAO_0000119>
+         <rdfs:label xml:lang="en">NeuroSTREAM analysis</rdfs:label>
+     </owl:Class>
+@@ -1825,8 +1825,8 @@ variable
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000518">
+         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000508"/>
+         <IAO_0000115>Measurement of axonal damage and the connections between brain regions caused by some neuropathological process.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 "Lucas M. Serra"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">structural disconnectome analysis</rdfs:label>
+     </owl:Class>
+     
+@@ -1856,8 +1856,8 @@ variable
+             </owl:Restriction>
+         </rdfs:subClassOf>
+         <IAO_0000115>The NeMo Tool uses a large reference set of healthy tractograms to assess implied network changes arising from a particular pattern of WM alteration on a region- and network-wise level.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 "Lucas M. Serra"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
+         <oboInOwl:source>https://dx.doi.org/10.1089%2Fbrain.2013.0147</oboInOwl:source>
+         <rdfs:label xml:lang="en">NeMo analysis</rdfs:label>
+     </owl:Class>
+@@ -1875,8 +1875,8 @@ variable
+             </owl:Restriction>
+         </rdfs:subClassOf>
+         <IAO_0000115>T1 black holes are hypointense lesions commonly seen on T1WI in patients with multiple sclerosis, and indicates the chronic stage with white matter destruction, axonal loss and irreversible clinical outcome.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 "Lucas M. Serra"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
+         <IAO_0000119>https://radiopaedia.org/articles/t1-black-holes-1?lang=us#:~:text=T1%20black%20holes%20are%20hypointense,and%20patient%20positive%20outcome%203.</IAO_0000119>
+         <rdfs:label xml:lang="en">T1 black hole analysis</rdfs:label>
+     </owl:Class>
+@@ -1900,8 +1900,8 @@ variable
+             </owl:Restriction>
+         </rdfs:subClassOf>
+         <IAO_0000115>Analyzes voxels in an MRI scan that appear as focal lesions in a T2 weighted scan.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 "Lucas M. Serra"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">T2 lesion analysis</rdfs:label>
+     </owl:Class>
+     
+@@ -1918,8 +1918,8 @@ variable
+             </owl:Restriction>
+         </rdfs:subClassOf>
+         <IAO_0000115>The LPA was trained by a logistic regression model with the data of 53 MS patients with severe lesion patterns. Binary lesion maps of these patients were used as response values. As covariates a similar lesion belief map as for the LGA was used as well as a spatial covariate that takes into account voxel specific changes in lesion probability. Such a high dimensional model cannot be estimated by standard procedures, so we used a novel approach for fitting large-scale regression models, for details see here. The parameters of this model fit are then used to segment lesions in new images by providing an estimate for the lesion probability for each voxel.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 "Lucas M. Serra"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
+         <IAO_0000119>https://doi.org/10.5282/edoc.20373</IAO_0000119>
+         <rdfs:label xml:lang="en">LPA analysis</rdfs:label>
+     </owl:Class>
+@@ -1937,8 +1937,8 @@ variable
+             </owl:Restriction>
+         </rdfs:subClassOf>
+         <IAO_0000115>A neuroimaging technique used to estimate volume measurements (e.g. ml/mm^3) of a brain, its regions, a combination or regions, or a combination of similar cell types.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 "Lucas M. Serra"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">brain volumetric analysis</rdfs:label>
+     </owl:Class>
+     
+@@ -1949,8 +1949,8 @@ variable
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000524">
+         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000523"/>
+         <IAO_0000115>Neuroimaging technique used to estimate the volume of the brain.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 "Lucas M. Serra"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">whole brain volumetric analysis</rdfs:label>
+     </owl:Class>
+     
+@@ -2001,8 +2001,8 @@ variable
+             </owl:Restriction>
+         </rdfs:subClassOf>
+         <IAO_0000115>Quantitative measurement of brain size, shape, and temporal change (for example, in order to estimate atrophy) is increasingly important in biomedical image analysis applications. New methods of structural analysis attempt to improve robustness, accuracy, and extent of automation. A fully automated method of longitudinal (temporal change) analysis, SIENA, was presented previously. In this paper, improvements to this method are described, and also an extension of SIENA to a new method for cross-sectional (single time point) analysis. The methods are fully automated, robust, and accurate: 0.15% brain volume change error (longitudinal): 0.5–1% brain volume accuracy for single-time point (cross-sectional). A particular advantage is the relative insensitivity to differences in scanning parameters. The methods provide easy manual review of their output by the automatic production of summary images which show the results of the brain extraction, registration, tissue segmentation, and final atrophy estimation.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 "Lucas M. Serra"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
+         <IAO_0000119>https://doi.org/10.1006/nimg.2002.1040</IAO_0000119>
+         <rdfs:label xml:lang="en">SIENAX analysis</rdfs:label>
+     </owl:Class>
+@@ -2043,8 +2043,8 @@ variable
+             </owl:Restriction>
+         </rdfs:subClassOf>
+         <IAO_0000115>A DeepGRAI analysis that estimates the volume of both the dorsal and ventral thalamus within some brain.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 "Lucas M. Serra"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">DeepGRAI analysis of the dorsal plus ventral thalamus</rdfs:label>
+     </owl:Class>
+     
+@@ -2061,8 +2061,8 @@ variable
+             </owl:Restriction>
+         </rdfs:subClassOf>
+         <IAO_0000115>A DeepGRAI analysis that estimates the volume of the left dorsal thalamus within some brain.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 "Lucas M. Serra"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">DeepGRAI analysis of the left dorsal thalamus</rdfs:label>
+     </owl:Class>
+     
+@@ -2073,8 +2073,8 @@ variable
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000600">
+         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000601"/>
+         <IAO_0000115>An image data set where voxel intensity values greater than zero encode the location of some brain lesion and voxels outside the lesion have an intensity value of zero.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 "Alexander D. Diehl"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">lesion mask</rdfs:label>
+     </owl:Class>
+     
+@@ -2086,11 +2086,11 @@ variable
+         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000716"/>
+         <IAO_0000115>An image data set of integer values in which each value corresponds to some shared characteristic or computed property.
+ The values often belong to a group of pixels or voxels that share the same characteristic, such as a tissue type or anatomical region.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9625-1899 "William D. Duncan"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 "Alexander D. Diehl"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-7245-3450 "Lauren M. Wishnie"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-9821-4132 "Mackenzie T. Smith"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9625-1899 &quot;William D. Duncan&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-7245-3450 &quot;Lauren M. Wishnie&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-9821-4132 &quot;Mackenzie T. Smith&quot;</IAO_0000117>
+         <oboInOwl:hasRelatedSynonym>label map</oboInOwl:hasRelatedSynonym>
+         <oboInOwl:hasRelatedSynonym>parcellation map</oboInOwl:hasRelatedSynonym>
+         <rdfs:label xml:lang="en">image segmentation map</rdfs:label>
+@@ -2136,8 +2136,8 @@ The values often belong to a group of pixels or voxels that share the same chara
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000605">
+         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000600"/>
+         <IAO_0000115>A lesion mask where the lesions are derived from a T2 FLAIR image data set.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 "Alexander D. Diehl"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">T2 FLAIR lesion mask</rdfs:label>
+     </owl:Class>
+     
+@@ -2148,7 +2148,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000607">
+         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000611"/>
+         <IAO_0000115>A connectivity matrix where each element represents the correlation of functional brain activity over time between two regions or voxels.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">functional connectivity matrix</rdfs:label>
+     </owl:Class>
+     
+@@ -2159,7 +2159,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000608">
+         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
+         <IAO_0000115>An n-dimensional data set that describes some linear relations of the scalars, vectors, or matrices that constitute it.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
+         <IAO_0000118>multidemnsional array</IAO_0000118>
+         <rdfs:label xml:lang="en">tensor data set</rdfs:label>
+     </owl:Class>
+@@ -2189,7 +2189,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+             </owl:Restriction>
+         </rdfs:subClassOf>
+         <IAO_0000115>A tensor data set produced by the Network Modification tool (NeMo) that contains matrix data sets related to structural change in connectivity (ChaCo) and disruption of white matter tracts in the human brain caused by focal lesions.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">ChaCo data set</rdfs:label>
+     </owl:Class>
+     
+@@ -2200,8 +2200,8 @@ The values often belong to a group of pixels or voxels that share the same chara
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000610">
+         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000608"/>
+         <IAO_0000115>A data set comprised of 2-dimensional array (rows and columns) of elements or entries, each representing an object or property of an object.</IAO_0000115>
+-        <IAO_0000116>there"s another term similar in OBI- should be resolved (IRI: http://purl.obolibrary.org/obo/OBIws_0000100)</IAO_0000116>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
++        <IAO_0000116>there&quot;s another term similar in OBI- should be resolved (IRI: http://purl.obolibrary.org/obo/OBIws_0000100)</IAO_0000116>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">matrix data set</rdfs:label>
+     </owl:Class>
+     
+@@ -2212,7 +2212,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000611">
+         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000610"/>
+         <IAO_0000115>A square n x n matrix where each element A of i,j represents some correlational relationship or degree of connection between i and j.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">connectivity matrix</rdfs:label>
+     </owl:Class>
+     
+@@ -2223,7 +2223,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000612">
+         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000611"/>
+         <IAO_0000115>A connectivity matrix where each element represents the degree of physical integrity of some path between two brain regions or voxels.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">structural connectivity matrix</rdfs:label>
+     </owl:Class>
+     
+@@ -2240,7 +2240,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+             </owl:Restriction>
+         </rdfs:subClassOf>
+         <IAO_0000115>A structural connectivity matrix where each element respresents the number of white matter streamlines still connecting two brain regions when accounting for focal lesion damage, normalized for the NeMo healthy control tractogram set.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">nConMat matrix</rdfs:label>
+     </owl:Class>
+     
+@@ -2257,7 +2257,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+             </owl:Restriction>
+         </rdfs:subClassOf>
+         <IAO_0000115>A structural connectivity matrix where each element represents the average number of white matter tract streamlines connecting two brain regions normalized for the NeMo healthy control tractogram set.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">nMapTFC matrix</rdfs:label>
+     </owl:Class>
+     
+@@ -2348,12 +2348,12 @@ The values often belong to a group of pixels or voxels that share the same chara
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000623">
+         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
+         <IAO_0000115>A data set that is comprised of structured measurements about some entity and its associated metadata using pixels (2D), voxels (3D), or an arbitrary number of dimensions. An image data set can be the source from which an image is produced.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9625-1899 "William D. Duncan"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 "Alexander D. Diehl"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 "Lucas M. Serra"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-7245-3450 "Lauren M. Wishnie"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-9821-4132 "Mackenzie T. Smith"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9625-1899 &quot;William D. Duncan&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-7245-3450 &quot;Lauren M. Wishnie&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-9821-4132 &quot;Mackenzie T. Smith&quot;</IAO_0000117>
+         <oboInOwl:inSubset>OBI</oboInOwl:inSubset>
+         <rdfs:label xml:lang="en">image data set</rdfs:label>
+     </owl:Class>
+@@ -2364,10 +2364,10 @@ The values often belong to a group of pixels or voxels that share the same chara
+ 
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000624">
+         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000648"/>
+-        <IAO_0000115>A brain atlas image data set encoding voxels involved in ten major resting state functional networks, as determined by analysis and decomposition of 36 human subjects" functional activity at rest.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 "Alexander D. Diehl"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-9821-4132 "Mackenzie T. Smith"</IAO_0000117>
++        <IAO_0000115>A brain atlas image data set encoding voxels involved in ten major resting state functional networks, as determined by analysis and decomposition of 36 human subjects&quot; functional activity at rest.</IAO_0000115>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-9821-4132 &quot;Mackenzie T. Smith&quot;</IAO_0000117>
+         <oboInOwl:source>https://www.pnas.org/cgi/doi/10.1073/pnas.0905267106</oboInOwl:source>
+         <rdfs:label xml:lang="en">Smith resting state network atlas</rdfs:label>
+     </owl:Class>
+@@ -2439,8 +2439,8 @@ The values often belong to a group of pixels or voxels that share the same chara
+             </owl:Restriction>
+         </rdfs:subClassOf>
+         <IAO_0000115>A brain atlas image dataset encoding voxels belonging to the default mode network functional resting state network.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-9821-4132 "Mackenzie T. Smith"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-9821-4132 &quot;Mackenzie T. Smith&quot;</IAO_0000117>
+         <oboInOwl:source>https://www.pnas.org/cgi/doi/10.1073/pnas.0905267106</oboInOwl:source>
+         <rdfs:label xml:lang="en">default mode network atlas</rdfs:label>
+     </owl:Class>
+@@ -2458,8 +2458,8 @@ The values often belong to a group of pixels or voxels that share the same chara
+             </owl:Restriction>
+         </rdfs:subClassOf>
+         <IAO_0000115>A connectivity matrix where each element represents the correlation of functional brain activity with the 86 regions described in the Desikan-Killiany brain atlas.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-9821-4132 "Mackenzie T. Smith"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-9821-4132 &quot;Mackenzie T. Smith&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">Desikan-Killiany functional connectivity matrix</rdfs:label>
+     </owl:Class>
+     
+@@ -2476,8 +2476,8 @@ The values often belong to a group of pixels or voxels that share the same chara
+             </owl:Restriction>
+         </rdfs:subClassOf>
+         <IAO_0000115>A connectivity matrix where each element represents the correlation of functional brain activity within the default mode network.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-9821-4132 "Mackenzie T. Smith"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-9821-4132 &quot;Mackenzie T. Smith&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">default mode network functional connectivity matrix</rdfs:label>
+     </owl:Class>
+     
+@@ -2507,7 +2507,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+         </rdfs:subClassOf>
+         <IAO_0000115>Generated by the frequency-encode gradient, except that it is used twice in succession, and in opposite directions.</IAO_0000115>
+         <IAO_0000116>This and spin echo are the major child classes of MR pulse sequence</IAO_0000116>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
+         <dc:source>https://radiopaedia.org/articles/gradient-echo-sequences-1?lang=us</dc:source>
+         <oboInOwl:hasExactSynonym>GRE</oboInOwl:hasExactSynonym>
+         <rdfs:label xml:lang="en">gradient echo sequence</rdfs:label>
+@@ -2539,7 +2539,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+         </rdfs:subClassOf>
+         <IAO_0000115 xml:lang="en">Multiple echoes of different phase steps are acquired by rapidly reversing the readout or frequency- encoding gradient using a gradient echo sequence.</IAO_0000115>
+         <IAO_0000116 xml:lang="en">Can we add that this may optionally be about some spin echo sequence, but not necessary for an instance of this class?</IAO_0000116>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
+         <dc:source xml:lang="en">https://radiopaedia.org/articles/echo-planar-imaging-1?lang=us</dc:source>
+         <rdfs:label xml:lang="en">GRE echo planar sequence</rdfs:label>
+     </owl:Class>
+@@ -2550,7 +2550,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+ 
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000630">
+         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000342"/>
+-        <IAO_0000115 xml:lang="en">Angle at which a proton"s axis shifts from its longitudinal place to its transverse plane by excitation from radiofrequency pulses.</IAO_0000115>
++        <IAO_0000115 xml:lang="en">Angle at which a proton&quot;s axis shifts from its longitudinal place to its transverse plane by excitation from radiofrequency pulses.</IAO_0000115>
+         <IAO_0000118>FA</IAO_0000118>
+         <dc:source xml:lang="en">https://radiopaedia.org/articles/flip-angle?lang=us</dc:source>
+         <rdfs:label xml:lang="en">flip angle</rdfs:label>
+@@ -2569,8 +2569,8 @@ The values often belong to a group of pixels or voxels that share the same chara
+             </owl:Restriction>
+         </rdfs:subClassOf>
+         <IAO_0000115>A connectivity matrix where each element represents the correlation of functional brain activity within the cerebellar resting state network.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-9821-4132 "Mackenzie T. Smith"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-9821-4132 &quot;Mackenzie T. Smith&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">cerebellum resting state functional connectivity matrix</rdfs:label>
+     </owl:Class>
+     
+@@ -2587,8 +2587,8 @@ The values often belong to a group of pixels or voxels that share the same chara
+             </owl:Restriction>
+         </rdfs:subClassOf>
+         <IAO_0000115>A connectivity matrix where each element represents the correlation of functional brain activity within the executive control resting state network.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-9821-4132 "Mackenzie T. Smith"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-9821-4132 &quot;Mackenzie T. Smith&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">executive control resting state functional connectivity matrix</rdfs:label>
+     </owl:Class>
+     
+@@ -2598,9 +2598,9 @@ The values often belong to a group of pixels or voxels that share the same chara
+ 
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000635">
+         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000341"/>
+-        <IAO_0000115>A type of MR image data set collected using at least three diffusion gradients of some factor "b," which is a function of the amplitude, duration, and interval of the gradiants.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 "Alexander D. Diehl"</IAO_0000117>
++        <IAO_0000115>A type of MR image data set collected using at least three diffusion gradients of some factor &quot;b,&quot; which is a function of the amplitude, duration, and interval of the gradiants.</IAO_0000115>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">diffusion weighted image data set</rdfs:label>
+     </owl:Class>
+     
+@@ -2611,8 +2611,8 @@ The values often belong to a group of pixels or voxels that share the same chara
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000636">
+         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000341"/>
+         <IAO_0000115>An MR image data set that captures volume and flow of blood in the brain.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 "Alexander D. Diehl"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">perfusion weighted image data set</rdfs:label>
+     </owl:Class>
+     
+@@ -2629,8 +2629,8 @@ The values often belong to a group of pixels or voxels that share the same chara
+             </owl:Restriction>
+         </rdfs:subClassOf>
+         <IAO_0000115>A connectivity matrix where each element represents the correlation of functional brain activity within the left and right hemisphere resting state networks.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-9821-4132 "Mackenzie T. Smith"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-9821-4132 &quot;Mackenzie T. Smith&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">frontoparietal resting state functional connectivity matrix</rdfs:label>
+     </owl:Class>
+     
+@@ -2647,8 +2647,8 @@ The values often belong to a group of pixels or voxels that share the same chara
+             </owl:Restriction>
+         </rdfs:subClassOf>
+         <IAO_0000115>A connectivity matrix where each element represents the correlation of functional brain activity within the sensorimotor resting state network.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-9821-4132 "Mackenzie T. Smith"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-9821-4132 &quot;Mackenzie T. Smith&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">sensorimotor resting state functional connectivity matrix</rdfs:label>
+     </owl:Class>
+     
+@@ -2665,7 +2665,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+             </owl:Restriction>
+         </rdfs:subClassOf>
+         <IAO_0000115>A measurement datum that is the result of volume measurement of  the dorsal and ventral thalamus within some brain.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">dorsal plus ventral thalamus volume measurement datum</rdfs:label>
+     </owl:Class>
+     
+@@ -2688,7 +2688,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+             </owl:Restriction>
+         </rdfs:subClassOf>
+         <IAO_0000115>A measurement datum that is the result of volume measurement of  the left dorsal thalamus within some brain.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">left dorsal thalamic volume measurement datum</rdfs:label>
+     </owl:Class>
+     
+@@ -2705,7 +2705,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+             </owl:Restriction>
+         </rdfs:subClassOf>
+         <IAO_0000115>A measurement datum that is the result of volume measurement of  the right dorsal thalamus within some brain.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">right dorsal thalamic volume measurement datum</rdfs:label>
+     </owl:Class>
+     
+@@ -2716,7 +2716,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000644">
+         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000501"/>
+         <IAO_0000115>A measurement datum that is the result of volume measurement of  the dorsal thalamus within some brain.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">dorsal thalamic volume measurement datum</rdfs:label>
+     </owl:Class>
+     
+@@ -2733,7 +2733,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+             </owl:Restriction>
+         </rdfs:subClassOf>
+         <IAO_0000115>A DeepGRAI analysis that estimates the volume of both the left and right dorsal thalamus within some brain.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">DeepGRAI analysis of the dorsal thalamus</rdfs:label>
+     </owl:Class>
+     
+@@ -2750,7 +2750,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+             </owl:Restriction>
+         </rdfs:subClassOf>
+         <IAO_0000115>A DeepGRAI analysis that estimates the volume of the right dorsal thalamus within some brain.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">DeepGRAI analysis of the right dorsal thalamus</rdfs:label>
+     </owl:Class>
+     
+@@ -2767,11 +2767,11 @@ The values often belong to a group of pixels or voxels that share the same chara
+             </owl:Restriction>
+         </rdfs:subClassOf>
+         <IAO_0000115>An image data set consisting of values computed from multiple image data sets encoded to represent the spatial location of individual functional or structural regions of a canonical brain.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9625-1899 "William D. Duncan"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 "Alexander D. Diehl"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-7245-3450 "Lauren M. Wishnie"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-9821-4132 "Mackenzie T. Smith"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9625-1899 &quot;William D. Duncan&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-7245-3450 &quot;Lauren M. Wishnie&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-9821-4132 &quot;Mackenzie T. Smith&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">brain region atlas image data set</rdfs:label>
+     </owl:Class>
+     
+@@ -2782,9 +2782,9 @@ The values often belong to a group of pixels or voxels that share the same chara
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000648">
+         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000647"/>
+         <IAO_0000115>A brain atlas consisting of weighted values that respresent the probability that a voxel X is part of some brain component Y, typically derived from multiple image data sets.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 "Alexander D. Diehl"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-9821-4132 "Mackenzie T. Smith"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-9821-4132 &quot;Mackenzie T. Smith&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">probabilistic brain region atlas image dataset</rdfs:label>
+     </owl:Class>
+     
+@@ -3077,9 +3077,9 @@ The values often belong to a group of pixels or voxels that share the same chara
+             </owl:Restriction>
+         </rdfs:subClassOf>
+         <IAO_0000115>A brain atlas image data set that encodes the location of 86 cortical and subcortical regions of interest, commonly used in Freesurfer segmentation and volumetric analysis.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 "Alexander D. Diehl"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-9821-4132 "Mackenzie T. Smith"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-9821-4132 &quot;Mackenzie T. Smith&quot;</IAO_0000117>
+         <oboInOwl:source>http://dx.doi.org/10.1016/j.neuroimage.2006.01.021</oboInOwl:source>
+         <rdfs:label xml:lang="en">Desikan-Killiany brain atlas image data set</rdfs:label>
+     </owl:Class>
+@@ -3091,9 +3091,9 @@ The values often belong to a group of pixels or voxels that share the same chara
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000650">
+         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000647"/>
+         <IAO_0000115>A brain atlas consisting of discrete integer values where a value X denotes a voxel is part of some brain component Y.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 "Alexander D. Diehl"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-9821-4132 "Mackenzie T. Smith"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-9821-4132 &quot;Mackenzie T. Smith&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">deterministic brain region atlas image data set</rdfs:label>
+     </owl:Class>
+     
+@@ -3104,7 +3104,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000651">
+         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000421"/>
+         <IAO_0000115>The Configurable Pipeline for the Analysis of Connectomes (C-PAC) is a configurable, open-source, Nipype-based, automated processing pipeline for resting state functional MRI (R-fMRI) data, for use by both novice and expert users.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
+         <oboInOwl:source>https://doi.org/10.3389/conf.fninf.2013.09.00042</oboInOwl:source>
+         <rdfs:label xml:lang="en">c-pac</rdfs:label>
+     </owl:Class>
+@@ -3122,8 +3122,8 @@ The values often belong to a group of pixels or voxels that share the same chara
+             </owl:Restriction>
+         </rdfs:subClassOf>
+         <IAO_0000115>A connectivity matrix where each element represents the correlation of functional brain activity within the V1 resting state network.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-9821-4132 "Mackenzie T. Smith"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-9821-4132 &quot;Mackenzie T. Smith&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">V1 resting state functional connectivity matrix</rdfs:label>
+     </owl:Class>
+     
+@@ -3152,8 +3152,8 @@ The values often belong to a group of pixels or voxels that share the same chara
+             </owl:Restriction>
+         </rdfs:subClassOf>
+         <IAO_0000115>A connectivity matrix where each element represents the correlation of functional brain activity within the V2 resting state network.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-9821-4132 "Mackenzie T. Smith"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-9821-4132 &quot;Mackenzie T. Smith&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">V2 resting state functional connectivity matrix</rdfs:label>
+     </owl:Class>
+     
+@@ -3198,7 +3198,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+             </owl:Restriction>
+         </rdfs:subClassOf>
+         <IAO_0000115>Deep learning tool used to predict a lesion mask from either just a FLAIR or a combination of FLAIR, T1 weighted SE, T2 weighted, and PD scans.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">Deep roboNAC analysis</rdfs:label>
+     </owl:Class>
+     
+@@ -3227,7 +3227,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+             </owl:Restriction>
+         </rdfs:subClassOf>
+         <IAO_0000115>Produces some quantitative or qualitative data about voxels in an MRI data set that appear affected by some neurobiological process or as a result of some neurological disease such that there may be damage to the brain tissue.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">focal lesion analysis</rdfs:label>
+     </owl:Class>
+     
+@@ -3252,7 +3252,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+             </owl:Class>
+         </rdfs:subClassOf>
+         <IAO_0000115>The refocusing of spin magnetisation by a pulse of resonant electromagnetic radiation.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
+         <dc:source>https://doi.org/10.1063%2F1.1670306</dc:source>
+         <oboInOwl:hasExactSynonym>SE</oboInOwl:hasExactSynonym>
+         <rdfs:label xml:lang="en">spin echo sequence</rdfs:label>
+@@ -3271,7 +3271,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+             </owl:Restriction>
+         </rdfs:subClassOf>
+         <IAO_0000115>FreeSurfer stream to derive surface labels and volumes from an invidual at only one timepoint.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">FreeSurfer cross-sectional analysis</rdfs:label>
+     </owl:Class>
+     
+@@ -3293,7 +3293,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+         </rdfs:subClassOf>
+         <IAO_0000115>A gradient echo pulse sequence preceded by a 180° RF pulse.</IAO_0000115>
+         <IAO_0000116>TODO: Create specific subclass of this and echo panar sequence for both GRE and SE.</IAO_0000116>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
+         <dc:source>https://radiopaedia.org/articles/inversion-recovery-sequences?lang=us</dc:source>
+         <rdfs:label xml:lang="en">GRE inversion recovery sequence</rdfs:label>
+     </owl:Class>
+@@ -3311,7 +3311,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+             </owl:Restriction>
+         </rdfs:subClassOf>
+         <IAO_0000115>The process of dividing voxels in a 3D space into any number of categories based on some criteria (e.g. contrast, signal intensity, location).</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">MR image segmentation analysis</rdfs:label>
+     </owl:Class>
+     
+@@ -3356,7 +3356,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+             </owl:Restriction>
+         </rdfs:subClassOf>
+         <IAO_0000115>Siena estimates percentage brain volume change (PBVC) betweem two input images, taken of the same subject, at different points in time. It calls a series of FSL programs to strip the non-brain tissue from the two images, register the two brains (under the constraint that the skulls are used to hold the scaling constant during the registration) and analyse the brain change between the two time points. It is also possible to project the voxelwise atrophy measures into standard space in a way that allows for multi-subject voxelwise statistical testing.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
+         <IAO_0000119>Smith, Stephen M.; De Stefano, Nicola; Jenkinson, Mark; Matthews, Paul M. Normalized Accurate Measurement of Longitudinal Brain Change, Journal of Computer Assisted Tomography: May 2001 - Volume 25 - Issue 3 - p 466-475</IAO_0000119>
+         <rdfs:label xml:lang="en">SIENA analysis</rdfs:label>
+     </owl:Class>
+@@ -3388,8 +3388,8 @@ The values often belong to a group of pixels or voxels that share the same chara
+             </owl:Restriction>
+         </rdfs:subClassOf>
+         <IAO_0000115>A measurement datum that is the result of volume measurement of the tissue of some brain.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 "Lucas M. Serra"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">whole brain volume measurement datum</rdfs:label>
+     </owl:Class>
+     
+@@ -3406,8 +3406,8 @@ The values often belong to a group of pixels or voxels that share the same chara
+             </owl:Restriction>
+         </rdfs:subClassOf>
+         <IAO_0000115>A measurement datum that is the result of volume measurement of grey matter within some brain.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 "Lucas M. Serra"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">grey matter volume measurement datum</rdfs:label>
+     </owl:Class>
+     
+@@ -3424,8 +3424,8 @@ The values often belong to a group of pixels or voxels that share the same chara
+             </owl:Restriction>
+         </rdfs:subClassOf>
+         <IAO_0000115>A measurement datum that is the result of volume measurement of white matter within some brain.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 "Lucas M. Serra"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">white matter volume measurement daturm</rdfs:label>
+     </owl:Class>
+     
+@@ -3454,8 +3454,8 @@ The values often belong to a group of pixels or voxels that share the same chara
+             </owl:Restriction>
+         </rdfs:subClassOf>
+         <IAO_0000115>A volume measurement datum that is the result of a measurement of the volume of some brain and its substructures.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 "Lucas M. Serra"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">brain volume measurement datum</rdfs:label>
+     </owl:Class>
+     
+@@ -3472,8 +3472,8 @@ The values often belong to a group of pixels or voxels that share the same chara
+             </owl:Restriction>
+         </rdfs:subClassOf>
+         <IAO_0000115>A measurement datum that is the result of volume measurement of  cerebrospinal fluid within some brain.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 "Lucas M. Serra"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">CSF volume measurement datum</rdfs:label>
+     </owl:Class>
+     
+@@ -3494,11 +3494,11 @@ The values often belong to a group of pixels or voxels that share the same chara
+             </owl:Class>
+         </owl:equivalentClass>
+         <IAO_0000115>The subject being scanned in an MRI study, and bearor of data derived from that study.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9625-1899 "William D. Duncan"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 "Alexander D. Diehl"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-7245-3450 "Lauren M. Wishnie"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-9821-4132 "Mackenzie T. Smith"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9625-1899 &quot;William D. Duncan&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-7245-3450 &quot;Lauren M. Wishnie&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-9821-4132 &quot;Mackenzie T. Smith&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">MRI participant</rdfs:label>
+     </owl:Class>
+     
+@@ -3508,7 +3508,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+ 
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000670">
+         <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">thalamic volume measurement z-score</rdfs:label>
+         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+     </owl:Class>
+@@ -3538,8 +3538,8 @@ The values often belong to a group of pixels or voxels that share the same chara
+             </owl:Class>
+         </owl:equivalentClass>
+         <IAO_0000115>An image data set produced by FreeSurfer analysis whose voxels encode the location of regions from the Desikan-Killiany atlas in an image data set.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 "Alexander D. Diehl"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">FreeSurfer segmentation map</rdfs:label>
+     </owl:Class>
+     
+@@ -3556,7 +3556,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+             </owl:Restriction>
+         </rdfs:subClassOf>
+         <IAO_0000115>A connectivity matrix where each element represents the correlation of functional brain activity within the V3 resting state network.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">V3 functional connectivity matrix</rdfs:label>
+     </owl:Class>
+     
+@@ -3573,8 +3573,8 @@ The values often belong to a group of pixels or voxels that share the same chara
+             </owl:Restriction>
+         </rdfs:subClassOf>
+         <IAO_0000115>A measurement datum that is the result of volume measurement of peripheral/cortical grey matter within some brain.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 "Lucas M. Serra"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
+         <IAO_0000118>cortical grey matter volume measurement datum</IAO_0000118>
+         <rdfs:label xml:lang="en">peripheral grey matter volume measurement datum</rdfs:label>
+     </owl:Class>
+@@ -3598,7 +3598,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+             </owl:Restriction>
+         </rdfs:subClassOf>
+         <IAO_0000115>Measures the functional connectivity between cortical and subcortical regions defined in the Desikan-Killiany brain atlas.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">Desikan-Killiany functional connectome analysis</rdfs:label>
+     </owl:Class>
+     
+@@ -3609,7 +3609,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000675">
+         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000510"/>
+         <IAO_0000115>Measures the functional connectivity between a set of predefined brain regions.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">regional functional connectome analysis</rdfs:label>
+     </owl:Class>
+     
+@@ -3625,8 +3625,8 @@ The values often belong to a group of pixels or voxels that share the same chara
+                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000366"/>
+             </owl:Restriction>
+         </rdfs:subClassOf>
+-        <IAO_0000115>FAST (FMRIB"s Automated Segmentation Tool) segments a 3D image of the brain into different tissue types (Grey Matter, White Matter, CSF, etc.), whilst also correcting for spatial intensity variations (also known as bias field or RF inhomogeneities).</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
++        <IAO_0000115>FAST (FMRIB&quot;s Automated Segmentation Tool) segments a 3D image of the brain into different tissue types (Grey Matter, White Matter, CSF, etc.), whilst also correcting for spatial intensity variations (also known as bias field or RF inhomogeneities).</IAO_0000115>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
+         <oboInOwl:source>Zhang, Y. and Brady, M. and Smith, S. Segmentation of brain MR images through a hidden Markov random field model and the expectation-maximization algorithm. IEEE Trans Med Imag, 20(1):45-57, 2001.</oboInOwl:source>
+         <rdfs:label xml:lang="en">FAST analysis</rdfs:label>
+     </owl:Class>
+@@ -3663,8 +3663,8 @@ The values often belong to a group of pixels or voxels that share the same chara
+         </rdfs:subClassOf>
+         <IAO_0000115>An MRI acquisition sequence that uses diffusion gradients to create contrast in the image corresponding to the Brownian motion of the tissue in the examined voxel.</IAO_0000115>
+         <IAO_0000116>Add difussion gradient as parameter.</IAO_0000116>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 "Alexander D. Diehl"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">diffusion weighted MRI acquisition sequence</rdfs:label>
+     </owl:Class>
+     
+@@ -3703,7 +3703,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+         </rdfs:subClassOf>
+         <IAO_0000115>An MRI acquisition sequence consisting of a magnetization preparation period followed by a rapid gradient echo sequence.</IAO_0000115>
+         <IAO_0000116>Has a long TR.</IAO_0000116>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
+         <IAO_0000119>https://doi.org/10.1002/mrm.1910150117</IAO_0000119>
+         <rdfs:label xml:lang="en">T1 MPRAGE sequence</rdfs:label>
+     </owl:Class>
+@@ -3715,8 +3715,8 @@ The values often belong to a group of pixels or voxels that share the same chara
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000679">
+         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000502"/>
+         <IAO_0000115>T1 weighted image data set collected using an MPRAGE sequence.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 "Alexander D. Diehl"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">T1 MPRAGE image data set</rdfs:label>
+     </owl:Class>
+     
+@@ -3727,8 +3727,8 @@ The values often belong to a group of pixels or voxels that share the same chara
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000680">
+         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000502"/>
+         <IAO_0000115>T1 weighted image data set collected using a spoiled gradient echo sequence.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 "Alexander D. Diehl"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">T1 SPGR image data set</rdfs:label>
+     </owl:Class>
+     
+@@ -3782,7 +3782,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+         </rdfs:subClassOf>
+         <IAO_0000115>Applies  RF  excitation  pulses  at  diff erent  phases every TR, so that the residual transverse magnetization has dif-ferent  phase  values  than  the  transverse  magnetization  most recently created.</IAO_0000115>
+         <IAO_0000116>Could have IR.</IAO_0000116>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
+         <IAO_0000119>MRI at a Glance, ISBN 10: 1119053552</IAO_0000119>
+         <rdfs:label xml:lang="en">spoiled GRE sequence</rdfs:label>
+     </owl:Class>
+@@ -3806,7 +3806,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+             </owl:Restriction>
+         </rdfs:subClassOf>
+         <IAO_0000115>An MRI acquisition sequence that using a spin echo sequence to accentuate T1 weighting.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">T1 SE sequence</rdfs:label>
+     </owl:Class>
+     
+@@ -3823,11 +3823,11 @@ The values often belong to a group of pixels or voxels that share the same chara
+             </owl:Restriction>
+         </rdfs:subClassOf>
+         <IAO_0000115>A chemical reagent containing gadolinium injected into an MRI participant to increase the visible contrast of some MR image data set.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9625-1899 "William D. Duncan"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 "Alexander D. Diehl"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-7245-3450 "Lauren M. Wishnie"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-9821-4132 "Mackenzie T. Smith"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9625-1899 &quot;William D. Duncan&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-7245-3450 &quot;Lauren M. Wishnie&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-9821-4132 &quot;Mackenzie T. Smith&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">imaging contrast reagent</rdfs:label>
+     </owl:Class>
+     
+@@ -3872,8 +3872,8 @@ The values often belong to a group of pixels or voxels that share the same chara
+         </rdfs:subClassOf>
+         <IAO_0000115>An MRI acquisition sequence that uses fast gradient echo sequences to collect a 4D data set corresponding to BOLD signal due to differences in magnetic susceptibility of oxygenated and deoxygenated hemoglobin.</IAO_0000115>
+         <IAO_0000116>Usually T2* sequence with same TE value throughout.</IAO_0000116>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 "Alexander D. Diehl"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">functional MRI acquisition sequence</rdfs:label>
+     </owl:Class>
+     
+@@ -3900,7 +3900,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+             </owl:Restriction>
+         </rdfs:subClassOf>
+         <IAO_0000115>A measurement datum that is the result of volume measurement of  the lateral ventricles within some brain.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">lateral ventricular volume measurement datum</rdfs:label>
+     </owl:Class>
+     
+@@ -3921,7 +3921,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000691">
+         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000389"/>
+         <IAO_0000115>A T1 weighted acquisition sequence that uses a gradient echo pulse sequence to acquire an MR image data set one 2D slice at a time.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">2D T1 GRE sequence</rdfs:label>
+     </owl:Class>
+     
+@@ -3938,7 +3938,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+             </owl:Restriction>
+         </rdfs:subClassOf>
+         <IAO_0000115>A T1 weighted acquisition sequence that uses a gradient echo pulse sequence to acquire an entire 3D MR image data set at once.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">3D T1 GRE sequence</rdfs:label>
+     </owl:Class>
+     
+@@ -3949,8 +3949,8 @@ The values often belong to a group of pixels or voxels that share the same chara
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000693">
+         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000367"/>
+         <IAO_0000115>A T2 weighted MR image data set collected using a STIR sequence to suppress the signal coming from fat.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 "Alexander D. Diehl"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">T2 STIR image data set</rdfs:label>
+     </owl:Class>
+     
+@@ -3967,7 +3967,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+             </owl:Restriction>
+         </rdfs:subClassOf>
+         <IAO_0000115>A measurement datum that is the result of volume measurement of the medulla oblongata within some brain.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
+         <IAO_0000118>brainstem volume measurement datum</IAO_0000118>
+         <IAO_0000118>medulla volume measurement datum</IAO_0000118>
+         <rdfs:label xml:lang="en">medulla oblongata volume measurement datum</rdfs:label>
+@@ -3980,7 +3980,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000695">
+         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000500"/>
+         <IAO_0000115>A measurement datum that is the result of volume measurement of all lesions within some brain.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">lesion volume measurement datum</rdfs:label>
+     </owl:Class>
+     
+@@ -3997,7 +3997,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+             </owl:Restriction>
+         </rdfs:subClassOf>
+         <IAO_0000115>A measurement datum that is the result of volume measurement of atrophied lesions within some brain.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">atrophied lesion volume measurement datum</rdfs:label>
+     </owl:Class>
+     
+@@ -4014,8 +4014,8 @@ The values often belong to a group of pixels or voxels that share the same chara
+             </owl:Restriction>
+         </rdfs:subClassOf>
+         <IAO_0000115>A brain atlas image dataset encoding voxels belonging to the cebebellar functional resting state network.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-9821-4132 "Mackenzie T. Smith"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-9821-4132 &quot;Mackenzie T. Smith&quot;</IAO_0000117>
+         <oboInOwl:source>https://www.pnas.org/cgi/doi/10.1073/pnas.0905267106</oboInOwl:source>
+         <rdfs:label xml:lang="en">cerebellum resting state network atlas</rdfs:label>
+     </owl:Class>
+@@ -4111,8 +4111,8 @@ The values often belong to a group of pixels or voxels that share the same chara
+             </owl:Restriction>
+         </rdfs:subClassOf>
+         <IAO_0000115>A brain atlas image dataset encoding voxels belonging to the auditory functional resting state network.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-9821-4132 "Mackenzie T. Smith"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-9821-4132 &quot;Mackenzie T. Smith&quot;</IAO_0000117>
+         <oboInOwl:source>https://www.pnas.org/cgi/doi/10.1073/pnas.0905267106</oboInOwl:source>
+         <rdfs:label xml:lang="en">auditory resting state network atlas</rdfs:label>
+     </owl:Class>
+@@ -4238,8 +4238,8 @@ The values often belong to a group of pixels or voxels that share the same chara
+             </owl:Restriction>
+         </rdfs:subClassOf>
+         <IAO_0000115>A brain atlas image dataset encoding voxels belonging to the executive control functional resting state network.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-9821-4132 "Mackenzie T. Smith"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-9821-4132 &quot;Mackenzie T. Smith&quot;</IAO_0000117>
+         <oboInOwl:source>https://www.pnas.org/cgi/doi/10.1073/pnas.0905267106</oboInOwl:source>
+         <rdfs:label xml:lang="en">executive control resting state network atlas</rdfs:label>
+     </owl:Class>
+@@ -4359,8 +4359,8 @@ The values often belong to a group of pixels or voxels that share the same chara
+             </owl:Restriction>
+         </rdfs:subClassOf>
+         <IAO_0000115>A brain atlas image dataset encoding voxels belonging to both the left hemisphere and right hemisphere frontoparietal functional resting state networks.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-9821-4132 "Mackenzie T. Smith"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-9821-4132 &quot;Mackenzie T. Smith&quot;</IAO_0000117>
+         <oboInOwl:source>https://www.pnas.org/cgi/doi/10.1073/pnas.0905267106</oboInOwl:source>
+         <rdfs:label xml:lang="en">frontoparietal resting state network atlas</rdfs:label>
+     </owl:Class>
+@@ -4438,8 +4438,8 @@ The values often belong to a group of pixels or voxels that share the same chara
+             </owl:Restriction>
+         </rdfs:subClassOf>
+         <IAO_0000115>A brain atlas image dataset encoding voxels belonging to the sensorimotor functional resting state network.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-9821-4132 "Mackenzie T. Smith"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-9821-4132 &quot;Mackenzie T. Smith&quot;</IAO_0000117>
+         <oboInOwl:source>https://www.pnas.org/cgi/doi/10.1073/pnas.0905267106</oboInOwl:source>
+         <rdfs:label xml:lang="en">sensorimotor resting state network atlas</rdfs:label>
+     </owl:Class>
+@@ -4481,8 +4481,8 @@ The values often belong to a group of pixels or voxels that share the same chara
+             </owl:Restriction>
+         </rdfs:subClassOf>
+         <IAO_0000115>A brain atlas image dataset encoding voxels belonging to the V1 functional resting state network.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-9821-4132 "Mackenzie T. Smith"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-9821-4132 &quot;Mackenzie T. Smith&quot;</IAO_0000117>
+         <oboInOwl:source>https://www.pnas.org/cgi/doi/10.1073/pnas.0905267106</oboInOwl:source>
+         <rdfs:label xml:lang="en">V1 resting state network atlas</rdfs:label>
+     </owl:Class>
+@@ -4518,8 +4518,8 @@ The values often belong to a group of pixels or voxels that share the same chara
+             </owl:Restriction>
+         </rdfs:subClassOf>
+         <IAO_0000115>A brain atlas image dataset encoding voxels belonging to the V2 functional resting state network.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-9821-4132 "Mackenzie T. Smith"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-9821-4132 &quot;Mackenzie T. Smith&quot;</IAO_0000117>
+         <oboInOwl:source>https://www.pnas.org/cgi/doi/10.1073/pnas.0905267106</oboInOwl:source>
+         <rdfs:label xml:lang="en">V2 resting state network atlas</rdfs:label>
+     </owl:Class>
+@@ -4591,8 +4591,8 @@ The values often belong to a group of pixels or voxels that share the same chara
+             </owl:Restriction>
+         </rdfs:subClassOf>
+         <IAO_0000115>A brain atlas image dataset encoding voxels belonging to the V3 functional resting state network.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-9821-4132 "Mackenzie T. Smith"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-9821-4132 &quot;Mackenzie T. Smith&quot;</IAO_0000117>
+         <oboInOwl:source>https://www.pnas.org/cgi/doi/10.1073/pnas.0905267106</oboInOwl:source>
+         <rdfs:label xml:lang="en">V3 resting state network atlas</rdfs:label>
+     </owl:Class>
+@@ -4610,7 +4610,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+             </owl:Restriction>
+         </rdfs:subClassOf>
+         <IAO_0000115>A data item that represents some quality of a network as a whole.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">network graph quality datum</rdfs:label>
+     </owl:Class>
+     
+@@ -4620,8 +4620,8 @@ The values often belong to a group of pixels or voxels that share the same chara
+ 
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000706">
+         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000705"/>
+-        <IAO_0000115>A datum representing the preference for a network"s nodes to attach to other similar nodes.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
++        <IAO_0000115>A datum representing the preference for a network&quot;s nodes to attach to other similar nodes.</IAO_0000115>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
+         <oboInOwl:source>https://en.wikipedia.org/wiki/Assortativity</oboInOwl:source>
+         <rdfs:label xml:lang="en">network assortativity datum</rdfs:label>
+     </owl:Class>
+@@ -4633,7 +4633,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000707">
+         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000705"/>
+         <IAO_0000115>A datu item that represents how efficiently nodes within a network exchange information, often as a function of the distance between nodes.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
+         <oboInOwl:source>https://en.wikipedia.org/wiki/Efficiency_(network_science)</oboInOwl:source>
+         <rdfs:label xml:lang="en">network efficiency datum</rdfs:label>
+     </owl:Class>
+@@ -4645,7 +4645,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000708">
+         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000705"/>
+         <IAO_0000115>A data item that represents the tendency of nodes within a network to cluster together measured by the quotient of closed triplet nodes divided by the total number of triple nodes in a network.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
+         <IAO_0000118>global clustering coefficient</IAO_0000118>
+         <oboInOwl:source>https://en.wikipedia.org/wiki/Clustering_coefficient</oboInOwl:source>
+         <rdfs:label xml:lang="en">network transitivity datum</rdfs:label>
+@@ -4664,8 +4664,8 @@ The values often belong to a group of pixels or voxels that share the same chara
+             </owl:Restriction>
+         </rdfs:subClassOf>
+         <IAO_0000115>A connectivity matrix where each element represents the correlation of functional brain activity within the auditory resting state network.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-9821-4132 "Mackenzie T. Smith"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-9821-4132 &quot;Mackenzie T. Smith&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">auditory resting state network functional connectivity matrix</rdfs:label>
+     </owl:Class>
+     
+@@ -4694,7 +4694,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+             </owl:Class>
+         </rdfs:subClassOf>
+         <IAO_0000115 xml:lang="en">Multiple echoes of different phase steps are acquired by rapidly reversing the readout or frequency- encoding gradient using a spin echo sequence.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
+         <dc:source xml:lang="en">https://radiopaedia.org/articles/echo-planar-imaging-1?lang=us</dc:source>
+         <rdfs:label xml:lang="en">SE echo planar sequence</rdfs:label>
+     </owl:Class>
+@@ -4717,7 +4717,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+         </rdfs:subClassOf>
+         <IAO_0000115>A spin echo pulse sequence preceded by a 180° RF pulse.</IAO_0000115>
+         <IAO_0000116>TODO: Create specific subclass of this and echo panar sequence for both GRE and SE.</IAO_0000116>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
+         <dc:source>https://radiopaedia.org/articles/inversion-recovery-sequences?lang=us</dc:source>
+         <rdfs:label xml:lang="en">SE inversion recovery sequence</rdfs:label>
+     </owl:Class>
+@@ -4753,8 +4753,8 @@ The values often belong to a group of pixels or voxels that share the same chara
+ 
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000714">
+         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000667"/>
+-        <IAO_0000115>A brain volume measurement datum about how much an evaluant"s brain morphology has changed between two or more timepoints.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
++        <IAO_0000115>A brain volume measurement datum about how much an evaluant&quot;s brain morphology has changed between two or more timepoints.</IAO_0000115>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">percent change in brain volume measurement datum</rdfs:label>
+     </owl:Class>
+     
+@@ -4765,8 +4765,8 @@ The values often belong to a group of pixels or voxels that share the same chara
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000715">
+         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000600"/>
+         <IAO_0000115>A lesion mask where the lesions are derived from a T1 weighted image data set.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 "Alexander D. Diehl"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">T1 lesion mask</rdfs:label>
+     </owl:Class>
+     
+@@ -4787,12 +4787,12 @@ The values often belong to a group of pixels or voxels that share the same chara
+             </owl:Class>
+         </owl:equivalentClass>
+         <IAO_0000115>An image data set that is the output of an image data set analysis.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9625-1899 "William D. Duncan"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 "Alexander D. Diehl"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-1604-3078 "Alan Ruttenberg"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-7245-3450 "Lauren M. Wishnie"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-9821-4132 "Mackenzie T. Smith"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9625-1899 &quot;William D. Duncan&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-1604-3078 &quot;Alan Ruttenberg&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-7245-3450 &quot;Lauren M. Wishnie&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-9821-4132 &quot;Mackenzie T. Smith&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">computed image data set</rdfs:label>
+     </owl:Class>
+     
+@@ -4803,12 +4803,12 @@ The values often belong to a group of pixels or voxels that share the same chara
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000717">
+         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000623"/>
+         <IAO_0000115>An image data set that encodes measurement values produced by some instrument before undergoing a data transformation.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9625-1899 "William D. Duncan"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 "Alexander D. Diehl"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-1604-3078 "Alan Ruttenberg"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-7245-3450 "Lauren M. Wishnie"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-9821-4132 "Mackenzie T. Smith"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9625-1899 &quot;William D. Duncan&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-1604-3078 &quot;Alan Ruttenberg&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-7245-3450 &quot;Lauren M. Wishnie&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-9821-4132 &quot;Mackenzie T. Smith&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">raw image data set</rdfs:label>
+     </owl:Class>
+     
+@@ -4833,8 +4833,8 @@ The values often belong to a group of pixels or voxels that share the same chara
+             </owl:Class>
+         </owl:equivalentClass>
+         <IAO_0000115>An image data set that is the direct output of an MR imaging assay and whose values encode spatial frequencies produced by the NMR/MRI instrument.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 "Alexander D. Diehl"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">raw MR image data set</rdfs:label>
+     </owl:Class>
+     
+@@ -4859,8 +4859,8 @@ The values often belong to a group of pixels or voxels that share the same chara
+             </owl:Class>
+         </owl:equivalentClass>
+         <IAO_0000115>A process that transforms raw MR image data from an NMR/MRI machine into a reconstructed MR image data set.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 "Alexander D. Diehl"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">raw MR image data set reconstruction</rdfs:label>
+     </owl:Class>
+     
+@@ -4881,12 +4881,12 @@ The values often belong to a group of pixels or voxels that share the same chara
+             </owl:Class>
+         </owl:equivalentClass>
+         <IAO_0000115>An image data set whose information content originates from some MR imaging assay and is about some MRI participant.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9625-1899 "William D. Duncan"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 "Alexander D. Diehl"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 "Lucas M. Serra"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-7245-3450 "Lauren M. Wishnie"</IAO_0000117>
+-        <IAO_0000117>https://orcid.org/0000-0002-9821-4132 "Mackenzie T. Smith"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9625-1899 &quot;William D. Duncan&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-7245-3450 &quot;Lauren M. Wishnie&quot;</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0002-9821-4132 &quot;Mackenzie T. Smith&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">MR image data set</rdfs:label>
+     </owl:Class>
+     
+@@ -4897,7 +4897,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000721">
+         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000032"/>
+         <IAO_0000115>A scalar measurement datum that is the result of measurement of area.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">area measurement datum</rdfs:label>
+     </owl:Class>
+     
+@@ -4908,7 +4908,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000722">
+         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000695"/>
+         <IAO_0000115>A Lesion volume measurement datum comprised of the subset of lesion voxels within a specific distance to the lateral ventricles (centrality) and with intensity at least a quantitatively-derived amount brighter than normal appearing tissue (salience).</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
+         <oboInOwl:source>https://doi.org/10.1111/jon.12650</oboInOwl:source>
+         <rdfs:label xml:lang="en">salient central lesion volume measurement datum</rdfs:label>
+     </owl:Class>
+@@ -4926,7 +4926,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+             </owl:Restriction>
+         </rdfs:subClassOf>
+         <IAO_0000115>An MR image data set analysis that evaluates the white matter tracts in an evaluant using water diffusivity.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">diffusion weighted image data set analysis</rdfs:label>
+     </owl:Class>
+     
+@@ -4949,7 +4949,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+             </owl:Restriction>
+         </rdfs:subClassOf>
+         <IAO_0000115>A volumetric MR imaging analysis that estimates salient central lesion volume from T2 FLAIR image datasets of an entire human brain.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">salient central lesion volume analysis</rdfs:label>
+     </owl:Class>
+     
+@@ -4972,7 +4972,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+             </owl:Restriction>
+         </rdfs:subClassOf>
+         <IAO_0000115>A volumetric MR imaging analysis that estimates medulla oblongata volume MR image datasets of an entire human brain.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">medulla oblongata volume analysis</rdfs:label>
+     </owl:Class>
+     
+@@ -4993,7 +4993,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+             </owl:Class>
+         </owl:equivalentClass>
+         <IAO_0000115>A volumetric MR imaging analysis that estimates medulla oblongata volume T2 FLAIR image datasets of an entire human brain.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">T2 FLAIR medulla oblongata volume analysis</rdfs:label>
+     </owl:Class>
+     
+@@ -5026,7 +5026,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+             </owl:Restriction>
+         </rdfs:subClassOf>
+         <IAO_0000115>A set of five MR image data set analyses using only T2 FLAIR image data sets that can substitute for standard research-quality MR image data set analyses in multiple sclerosis. The Five FLAIR Measures consist of lateral ventricle volume, thalamic volume, salient central lesion volume, and network efficiency.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
+         <IAO_0000119>https://doi.org/10.1016/j.nicl.2021.102705</IAO_0000119>
+         <rdfs:label xml:lang="en">five FLAIR measures analysis</rdfs:label>
+     </owl:Class>
+@@ -5065,7 +5065,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000733">
+         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000032"/>
+         <IAO_0000115>A scalar measurement datum that quantifies the spatial and temporal relationships between distinct units within the brain.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
+         <IAO_0000119>http://www.scholarpedia.org/article/Brain_connectivity</IAO_0000119>
+         <rdfs:label xml:lang="en">brain connectivity measurement datum</rdfs:label>
+     </owl:Class>
+@@ -5077,7 +5077,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000734">
+         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000733"/>
+         <IAO_0000115>A brain connectivity measurement datum that quantifies the physical or anatomical connections between distinct units within the brain. These connections may arise from axons or synapses.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">brain structural connectivity measurement datum</rdfs:label>
+     </owl:Class>
+     
+@@ -5088,7 +5088,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000735">
+         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000733"/>
+         <IAO_0000115>A brain connectivity measurement datum that quantifies the coordination of brain function between distinct units within the brain by measuring the covariance in activity between these units over time.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">brain functional connectivity measurement datum</rdfs:label>
+     </owl:Class>
+     
+@@ -5110,7 +5110,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+         </owl:equivalentClass>
+         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000733"/>
+         <IAO_0000115>A brain connectivity measurement datum that quantifies the structural disruption to connections involving the thalamus.</IAO_0000115>
+-        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 "Alexander D. Bartnik"</IAO_0000117>
++        <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
+         <rdfs:label xml:lang="en">thalamic structural disconnectivity measurement datum</rdfs:label>
+     </owl:Class>
+     
+@@ -5125,6 +5125,129 @@ The values often belong to a group of pixels or voxels that share the same chara
+     
+ 
+ 
++    <!-- http://purl.obolibrary.org/obo/MRIO_0000738 -->
++
++    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000738">
++        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000667"/>
++        <rdfs:label xml:lang="en">deep grey matter brain volume measurement datum</rdfs:label>
++    </owl:Class>
++    
++
++
++    <!-- http://purl.obolibrary.org/obo/MRIO_0000739 -->
++
++    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000739">
++        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000738"/>
++        <rdfs:subClassOf>
++            <owl:Restriction>
++                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
++                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001873"/>
++            </owl:Restriction>
++        </rdfs:subClassOf>
++        <rdfs:label xml:lang="en">caudate volume measurement datum</rdfs:label>
++    </owl:Class>
++    
++
++
++    <!-- http://purl.obolibrary.org/obo/MRIO_0000740 -->
++
++    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000740">
++        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000738"/>
++        <rdfs:label xml:lang="en">putamen volume measurement datum</rdfs:label>
++    </owl:Class>
++    
++
++
++    <!-- http://purl.obolibrary.org/obo/MRIO_0000741 -->
++
++    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000741">
++        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000740"/>
++        <rdfs:subClassOf>
++            <owl:Restriction>
++                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
++                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0008884"/>
++            </owl:Restriction>
++        </rdfs:subClassOf>
++        <rdfs:label xml:lang="en">left putamen volume measurement datum</rdfs:label>
++    </owl:Class>
++    
++
++
++    <!-- http://purl.obolibrary.org/obo/MRIO_0000742 -->
++
++    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000742">
++        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000740"/>
++        <rdfs:subClassOf>
++            <owl:Restriction>
++                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
++                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0008885"/>
++            </owl:Restriction>
++        </rdfs:subClassOf>
++        <rdfs:label xml:lang="en">right putamen volume measurement datum</rdfs:label>
++    </owl:Class>
++    
++
++
++    <!-- http://purl.obolibrary.org/obo/MRIO_0000743 -->
++
++    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000743">
++        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000738"/>
++        <rdfs:subClassOf>
++            <owl:Restriction>
++                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
++                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006514"/>
++            </owl:Restriction>
++        </rdfs:subClassOf>
++        <rdfs:label xml:lang="en">pallidum volume measurement datum</rdfs:label>
++    </owl:Class>
++    
++
++
++    <!-- http://purl.obolibrary.org/obo/MRIO_0000744 -->
++
++    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000744">
++        <owl:equivalentClass>
++            <owl:Restriction>
++                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
++                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002421"/>
++            </owl:Restriction>
++        </owl:equivalentClass>
++        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000738"/>
++        <rdfs:label xml:lang="en">hippocampus volume measurement datum</rdfs:label>
++    </owl:Class>
++    
++
++
++    <!-- http://purl.obolibrary.org/obo/MRIO_0000745 -->
++
++    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000745">
++        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000738"/>
++        <rdfs:subClassOf>
++            <owl:Restriction>
++                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
++                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001876"/>
++            </owl:Restriction>
++        </rdfs:subClassOf>
++        <rdfs:label xml:lang="en">amygdala volume measurement datum</rdfs:label>
++    </owl:Class>
++    
++
++
++    <!-- http://purl.obolibrary.org/obo/MRIO_0000746 -->
++
++    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000746">
++        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000738"/>
++        <rdfs:subClassOf>
++            <owl:Restriction>
++                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
++                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001882"/>
++            </owl:Restriction>
++        </rdfs:subClassOf>
++        <rdfs:label xml:lang="en">nucleus accumbens volume measurement datum</rdfs:label>
++    </owl:Class>
++    
++
++
+     <!-- http://purl.obolibrary.org/obo/OBI_0000067 -->
+ 
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000067"/>
+@@ -5194,7 +5317,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+     <!-- http://purl.obolibrary.org/obo/UBERON_0001873 -->
+ 
+     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0001873">
+-        <IAO_0000118>"Left-Caudate" and "Right-Caudate" (from Desikan-Killiany atlas)</IAO_0000118>
++        <IAO_0000118>&quot;Left-Caudate&quot; and &quot;Right-Caudate&quot; (from Desikan-Killiany atlas)</IAO_0000118>
+     </rdf:Description>
+     
+ 
+@@ -5202,7 +5325,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+     <!-- http://purl.obolibrary.org/obo/UBERON_0001876 -->
+ 
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001876">
+-        <IAO_0000118>"Left-Amygdala" and "Right-Amygdala" (from Desikan-Killiany atlas)</IAO_0000118>
++        <IAO_0000118>&quot;Left-Amygdala&quot; and &quot;Right-Amygdala&quot; (from Desikan-Killiany atlas)</IAO_0000118>
+     </owl:Class>
+     
+ 
+@@ -5210,7 +5333,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+     <!-- http://purl.obolibrary.org/obo/UBERON_0001882 -->
+ 
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001882">
+-        <IAO_0000118>"Left-Accumbens-area" and "Right-Accumbens-area" (from Desikan-Killiany atlas)</IAO_0000118>
++        <IAO_0000118>&quot;Left-Accumbens-area&quot; and &quot;Right-Accumbens-area&quot; (from Desikan-Killiany atlas)</IAO_0000118>
+     </owl:Class>
+     
+ 
+@@ -5230,7 +5353,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+     <!-- http://purl.obolibrary.org/obo/UBERON_0001898 -->
+ 
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001898">
+-        <IAO_0000118>"Left-VentralDC" and "Right-VentralDC" (from Desikan-Killiany Atlas)</IAO_0000118>
++        <IAO_0000118>&quot;Left-VentralDC&quot; and &quot;Right-VentralDC&quot; (from Desikan-Killiany Atlas)</IAO_0000118>
+     </owl:Class>
+     
+ 
+@@ -5238,7 +5361,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+     <!-- http://purl.obolibrary.org/obo/UBERON_0002022 -->
+ 
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002022">
+-        <IAO_0000118>"lh-insula" and "rh-insula" (from Desikan-Killiany atlas)</IAO_0000118>
++        <IAO_0000118>&quot;lh-insula&quot; and &quot;rh-insula&quot; (from Desikan-Killiany atlas)</IAO_0000118>
+         <IAO_0000118>wm-lh-insula</IAO_0000118>
+     </owl:Class>
+     
+@@ -5247,7 +5370,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+     <!-- http://purl.obolibrary.org/obo/UBERON_0002129 -->
+ 
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002129">
+-        <IAO_0000118>"Left-Cerebellum-Cortex" and "Right-Cerebellum-Cortex" (from Desikan-Killiany atlas)</IAO_0000118>
++        <IAO_0000118>&quot;Left-Cerebellum-Cortex&quot; and &quot;Right-Cerebellum-Cortex&quot; (from Desikan-Killiany atlas)</IAO_0000118>
+     </owl:Class>
+     
+ 
+@@ -5261,7 +5384,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+     <!-- http://purl.obolibrary.org/obo/UBERON_0002421 -->
+ 
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002421">
+-        <IAO_0000118>"Left-Hippocampus" and "Right-Hippocampus" (from Desikan-Killiany atlas)</IAO_0000118>
++        <IAO_0000118>&quot;Left-Hippocampus&quot; and &quot;Right-Hippocampus&quot; (from Desikan-Killiany atlas)</IAO_0000118>
+     </owl:Class>
+     
+ 
+@@ -5269,7 +5392,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+     <!-- http://purl.obolibrary.org/obo/UBERON_0002576 -->
+ 
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002576">
+-        <IAO_0000118>"lh-temporalpole" and "rh-temporalpole" (from Desikan-Killiany atlas)</IAO_0000118>
++        <IAO_0000118>&quot;lh-temporalpole&quot; and &quot;rh-temporalpole&quot; (from Desikan-Killiany atlas)</IAO_0000118>
+     </owl:Class>
+     
+ 
+@@ -5277,7 +5400,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+     <!-- http://purl.obolibrary.org/obo/UBERON_0002581 -->
+ 
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002581">
+-        <IAO_0000118>"lh-postcentral" and "rh-postcentral" (from Desikan-Killiany atlas)</IAO_0000118>
++        <IAO_0000118>&quot;lh-postcentral&quot; and &quot;rh-postcentral&quot; (from Desikan-Killiany atlas)</IAO_0000118>
+     </owl:Class>
+     
+ 
+@@ -5285,7 +5408,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+     <!-- http://purl.obolibrary.org/obo/UBERON_0002624 -->
+ 
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002624">
+-        <IAO_0000118>"lh-parsorbitalis" and "rh-parsobertalis" (from Desikan-Killiany atlas)</IAO_0000118>
++        <IAO_0000118>&quot;lh-parsorbitalis&quot; and &quot;rh-parsobertalis&quot; (from Desikan-Killiany atlas)</IAO_0000118>
+     </owl:Class>
+     
+ 
+@@ -5293,7 +5416,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+     <!-- http://purl.obolibrary.org/obo/UBERON_0002629 -->
+ 
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002629">
+-        <IAO_0000118>"lh-parstriangularis" and "rh-parstriangularis" (from Desikan-Killiany atlas)</IAO_0000118>
++        <IAO_0000118>&quot;lh-parstriangularis&quot; and &quot;rh-parstriangularis&quot; (from Desikan-Killiany atlas)</IAO_0000118>
+     </owl:Class>
+     
+ 
+@@ -5301,7 +5424,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+     <!-- http://purl.obolibrary.org/obo/UBERON_0002661 -->
+ 
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002661">
+-        <IAO_0000118>"lh-superiorfrontal" and "rh-superiorfrontal" (from Desikan-Killiany atlas)</IAO_0000118>
++        <IAO_0000118>&quot;lh-superiorfrontal&quot; and &quot;rh-superiorfrontal&quot; (from Desikan-Killiany atlas)</IAO_0000118>
+     </owl:Class>
+     
+ 
+@@ -5309,7 +5432,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+     <!-- http://purl.obolibrary.org/obo/UBERON_0002688 -->
+ 
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002688">
+-        <IAO_0000118>"lh-supramarginal" and "rh-supramarginal" (from Desikan-Killiany atlas)</IAO_0000118>
++        <IAO_0000118>&quot;lh-supramarginal&quot; and &quot;rh-supramarginal&quot; (from Desikan-Killiany atlas)</IAO_0000118>
+     </owl:Class>
+     
+ 
+@@ -5317,7 +5440,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+     <!-- http://purl.obolibrary.org/obo/UBERON_0002703 -->
+ 
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002703">
+-        <IAO_0000118>"lh-precentral" and "rh-precentral" (from Desikan-Killiany atlas)</IAO_0000118>
++        <IAO_0000118>&quot;lh-precentral&quot; and &quot;rh-precentral&quot; (from Desikan-Killiany atlas)</IAO_0000118>
+     </owl:Class>
+     
+ 
+@@ -5325,7 +5448,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+     <!-- http://purl.obolibrary.org/obo/UBERON_0002728 -->
+ 
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002728">
+-        <IAO_0000118>"lh-entorhinal" and "rh-entorhinal" (from Desikan-Killiany atlas)</IAO_0000118>
++        <IAO_0000118>&quot;lh-entorhinal&quot; and &quot;rh-entorhinal&quot; (from Desikan-Killiany atlas)</IAO_0000118>
+     </owl:Class>
+     
+ 
+@@ -5333,7 +5456,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+     <!-- http://purl.obolibrary.org/obo/UBERON_0002751 -->
+ 
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002751">
+-        <IAO_0000118>"lh-inferiortemporal" and "rh-inferiortemporal" (from Desikan-Killiany atlas)</IAO_0000118>
++        <IAO_0000118>&quot;lh-inferiortemporal&quot; and &quot;rh-inferiortemporal&quot; (from Desikan-Killiany atlas)</IAO_0000118>
+     </owl:Class>
+     
+ 
+@@ -5341,7 +5464,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+     <!-- http://purl.obolibrary.org/obo/UBERON_0002766 -->
+ 
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002766">
+-        <IAO_0000118>"lh-fusiform" and "rh-fusiform" (from Desikan-Killiany atlas)</IAO_0000118>
++        <IAO_0000118>&quot;lh-fusiform&quot; and &quot;rh-fusiform&quot; (from Desikan-Killiany atlas)</IAO_0000118>
+     </owl:Class>
+     
+ 
+@@ -5349,7 +5472,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+     <!-- http://purl.obolibrary.org/obo/UBERON_0002769 -->
+ 
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002769">
+-        <IAO_0000118>"lh-superiortemporal" and "rh-superiortemporal" (from Desikan-Killiany atlas)</IAO_0000118>
++        <IAO_0000118>&quot;lh-superiortemporal&quot; and &quot;rh-superiortemporal&quot; (from Desikan-Killiany atlas)</IAO_0000118>
+     </owl:Class>
+     
+ 
+@@ -5357,7 +5480,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+     <!-- http://purl.obolibrary.org/obo/UBERON_0002771 -->
+ 
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002771">
+-        <IAO_0000118>"lh-middletemporal" and "rh-middletemporal" (from Desikan-Killiany atlas)</IAO_0000118>
++        <IAO_0000118>&quot;lh-middletemporal&quot; and &quot;rh-middletemporal&quot; (from Desikan-Killiany atlas)</IAO_0000118>
+     </owl:Class>
+     
+ 
+@@ -5365,7 +5488,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+     <!-- http://purl.obolibrary.org/obo/UBERON_0002795 -->
+ 
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002795">
+-        <IAO_0000118>"lh-frontalpole" and "rh-frontalpole" (from Desikan-Killiany atlas)</IAO_0000118>
++        <IAO_0000118>&quot;lh-frontalpole&quot; and &quot;rh-frontalpole&quot; (from Desikan-Killiany atlas)</IAO_0000118>
+     </owl:Class>
+     
+ 
+@@ -5373,7 +5496,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+     <!-- http://purl.obolibrary.org/obo/UBERON_0002943 -->
+ 
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002943">
+-        <IAO_0000118>"lh-lingual" and "rh-lingual" (from Desikan-Killiany atlas)</IAO_0000118>
++        <IAO_0000118>&quot;lh-lingual&quot; and &quot;rh-lingual&quot; (from Desikan-Killiany atlas)</IAO_0000118>
+     </owl:Class>
+     
+ 
+@@ -5381,7 +5504,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+     <!-- http://purl.obolibrary.org/obo/UBERON_0002973 -->
+ 
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002973">
+-        <IAO_0000118>"lh-parahippocampal" and "rh-parahippocampal" (from Desikan-Killiany atlas)</IAO_0000118>
++        <IAO_0000118>&quot;lh-parahippocampal&quot; and &quot;rh-parahippocampal&quot; (from Desikan-Killiany atlas)</IAO_0000118>
+     </owl:Class>
+     
+ 
+@@ -5389,7 +5512,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+     <!-- http://purl.obolibrary.org/obo/UBERON_0002980 -->
+ 
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002980">
+-        <IAO_0000118>"lh-parsopercularis" and "rh-parsopercularis" (from Desikan-Killiany atlas)</IAO_0000118>
++        <IAO_0000118>&quot;lh-parsopercularis&quot; and &quot;rh-parsopercularis&quot; (from Desikan-Killiany atlas)</IAO_0000118>
+     </owl:Class>
+     
+ 
+@@ -5409,7 +5532,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+     <!-- http://purl.obolibrary.org/obo/UBERON_0006088 -->
+ 
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0006088">
+-        <IAO_0000118>"lh-inferiorparietal" and "rh-inferiorparietal" (from Desikan-Killiany atlas)</IAO_0000118>
++        <IAO_0000118>&quot;lh-inferiorparietal&quot; and &quot;rh-inferiorparietal&quot; (from Desikan-Killiany atlas)</IAO_0000118>
+     </owl:Class>
+     
+ 
+@@ -5417,7 +5540,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+     <!-- http://purl.obolibrary.org/obo/UBERON_0006092 -->
+ 
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0006092">
+-        <IAO_0000118>"lh-cuneus" and "rh-cuneus" (from Desikan-Killiany atlas)</IAO_0000118>
++        <IAO_0000118>&quot;lh-cuneus&quot; and &quot;rh-cuneus&quot; (from Desikan-Killiany atlas)</IAO_0000118>
+     </owl:Class>
+     
+ 
+@@ -5425,7 +5548,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+     <!-- http://purl.obolibrary.org/obo/UBERON_0006093 -->
+ 
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0006093">
+-        <IAO_0000118>"lh-precuneus" and "rh-precuneus" (from Desikan-Killiany atlas)</IAO_0000118>
++        <IAO_0000118>&quot;lh-precuneus&quot; and &quot;rh-precuneus&quot; (from Desikan-Killiany atlas)</IAO_0000118>
+     </owl:Class>
+     
+ 
+@@ -5433,7 +5556,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+     <!-- http://purl.obolibrary.org/obo/UBERON_0006094 -->
+ 
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0006094">
+-        <IAO_0000118>"lh-superiorparietal" and "rh-superiorparietal" (from Desikan-Killiany atlas)</IAO_0000118>
++        <IAO_0000118>&quot;lh-superiorparietal&quot; and &quot;rh-superiorparietal&quot; (from Desikan-Killiany atlas)</IAO_0000118>
+     </owl:Class>
+     
+ 
+@@ -5441,7 +5564,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+     <!-- http://purl.obolibrary.org/obo/UBERON_0006114 -->
+ 
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0006114">
+-        <IAO_0000118>"lh-lateraloccipital" and "rh-lateraloccipital" (from Desikan-Killiany atlas)</IAO_0000118>
++        <IAO_0000118>&quot;lh-lateraloccipital&quot; and &quot;rh-lateraloccipital&quot; (from Desikan-Killiany atlas)</IAO_0000118>
+     </owl:Class>
+     
+ 
+@@ -5449,7 +5572,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+     <!-- http://purl.obolibrary.org/obo/UBERON_0006445 -->
+ 
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0006445">
+-        <IAO_0000118>"lh-caudalmiddlefrontal" and "rh-caudalmiddlefrontal" (from Desikan-Killiany atlas)</IAO_0000118>
++        <IAO_0000118>&quot;lh-caudalmiddlefrontal&quot; and &quot;rh-caudalmiddlefrontal&quot; (from Desikan-Killiany atlas)</IAO_0000118>
+     </owl:Class>
+     
+ 
+@@ -5457,7 +5580,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+     <!-- http://purl.obolibrary.org/obo/UBERON_0006446 -->
+ 
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0006446">
+-        <IAO_0000118>"lh-rostralmiddlefrontal" and "rh-rostralmiddlefrontal" (from Desikan-Killiany atlas)</IAO_0000118>
++        <IAO_0000118>&quot;lh-rostralmiddlefrontal&quot; and &quot;rh-rostralmiddlefrontal&quot; (from Desikan-Killiany atlas)</IAO_0000118>
+     </owl:Class>
+     
+ 
+@@ -5465,7 +5588,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+     <!-- http://purl.obolibrary.org/obo/UBERON_0006514 -->
+ 
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0006514">
+-        <IAO_0000118>"Left-Pallidum" and "Right-Pallidum" (from Desikan-Killiany atlas)</IAO_0000118>
++        <IAO_0000118>&quot;Left-Pallidum&quot; and &quot;Right-Pallidum&quot; (from Desikan-Killiany atlas)</IAO_0000118>
+     </owl:Class>
+     
+ 
+@@ -5473,7 +5596,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+     <!-- http://purl.obolibrary.org/obo/UBERON_0008884 -->
+ 
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0008884">
+-        <IAO_0000118>"Left-Putamen" (from Desikan-Killiany atlas)</IAO_0000118>
++        <IAO_0000118>&quot;Left-Putamen&quot; (from Desikan-Killiany atlas)</IAO_0000118>
+     </owl:Class>
+     
+ 
+@@ -5481,7 +5604,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+     <!-- http://purl.obolibrary.org/obo/UBERON_0008885 -->
+ 
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0008885">
+-        <IAO_0000118>""Right-Putamen" (from Desikan-Killiany atlas)</IAO_0000118>
++        <IAO_0000118>&quot;&quot;Right-Putamen&quot; (from Desikan-Killiany atlas)</IAO_0000118>
+     </owl:Class>
+     
+ 
+@@ -5490,7 +5613,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+ 
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0009897">
+         <IAO_0000116 xml:lang="en">Corrected error saying this is in the left hemisphere of the brain.</IAO_0000116>
+-        <IAO_0000118>"rh-transversetemporal" (from Desikan-Killiany atlas)</IAO_0000118>
++        <IAO_0000118>&quot;rh-transversetemporal&quot; (from Desikan-Killiany atlas)</IAO_0000118>
+     </owl:Class>
+     
+ 
+@@ -5498,7 +5621,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+     <!-- http://purl.obolibrary.org/obo/UBERON_0009898 -->
+ 
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0009898">
+-        <IAO_0000118>"lh-transversetemporal" (from Desikan-Killiany atlas)</IAO_0000118>
++        <IAO_0000118>&quot;lh-transversetemporal&quot; (from Desikan-Killiany atlas)</IAO_0000118>
+     </owl:Class>
+     
+ 
+@@ -5512,7 +5635,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+     <!-- http://purl.obolibrary.org/obo/UBERON_0013683 -->
+ 
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0013683">
+-        <IAO_0000118>"Left-Thalamus-Proper" (from Desikan-Killiany atlas)</IAO_0000118>
++        <IAO_0000118>&quot;Left-Thalamus-Proper&quot; (from Desikan-Killiany atlas)</IAO_0000118>
+     </owl:Class>
+     
+ 
+@@ -5520,7 +5643,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+     <!-- http://purl.obolibrary.org/obo/UBERON_0013684 -->
+ 
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0013684">
+-        <IAO_0000118>"Right-Thalamus-Proper" (from Desikan-Killiany atlas)</IAO_0000118>
++        <IAO_0000118>&quot;Right-Thalamus-Proper&quot; (from Desikan-Killiany atlas)</IAO_0000118>
+     </owl:Class>
+     
+ 
+@@ -5528,7 +5651,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+     <!-- http://purl.obolibrary.org/obo/UBERON_0022352 -->
+ 
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0022352">
+-        <IAO_0000118>"lh-medialorbitofrontal" and "rh-imedialorbitofrontal" (from Desikan-Killiany atlas)</IAO_0000118>
++        <IAO_0000118>&quot;lh-medialorbitofrontal&quot; and &quot;rh-imedialorbitofrontal&quot; (from Desikan-Killiany atlas)</IAO_0000118>
+     </owl:Class>
+     
+ 
+@@ -5536,7 +5659,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+     <!-- http://purl.obolibrary.org/obo/UBERON_0022353 -->
+ 
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0022353">
+-        <IAO_0000118>"lh-posteriorcingulate" and "rh-posteriorcingulate" (from Desikan-Killiany atlas)</IAO_0000118>
++        <IAO_0000118>&quot;lh-posteriorcingulate&quot; and &quot;rh-posteriorcingulate&quot; (from Desikan-Killiany atlas)</IAO_0000118>
+     </owl:Class>
+     
+ 
+@@ -5544,7 +5667,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+     <!-- http://purl.obolibrary.org/obo/UBERON_0022438 -->
+ 
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0022438">
+-        <IAO_0000118>"lh-rostralanteriorcingulate" and "rh-rostralanteriorcingulate" (from Desikan-Killiany atlas)</IAO_0000118>
++        <IAO_0000118>&quot;lh-rostralanteriorcingulate&quot; and &quot;rh-rostralanteriorcingulate&quot; (from Desikan-Killiany atlas)</IAO_0000118>
+     </owl:Class>
+     
+ 
+@@ -5552,7 +5675,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+     <!-- http://purl.obolibrary.org/obo/UBERON_0022534 -->
+ 
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0022534">
+-        <IAO_0000118>"lh-pericalcarine" and "rh-pericalcarine" (from Desikan-Killiany atlas)</IAO_0000118>
++        <IAO_0000118>&quot;lh-pericalcarine&quot; and &quot;rh-pericalcarine&quot; (from Desikan-Killiany atlas)</IAO_0000118>
+     </owl:Class>
+     
+ 
+@@ -5560,7 +5683,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+     <!-- http://purl.obolibrary.org/obo/UBERON_0022716 -->
+ 
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0022716">
+-        <IAO_0000118>"lh-lateralorbitofrontal" and "rh-lateralorbitofrontal" (from Desikan-Killiany atlas)</IAO_0000118>
++        <IAO_0000118>&quot;lh-lateralorbitofrontal&quot; and &quot;rh-lateralorbitofrontal&quot; (from Desikan-Killiany atlas)</IAO_0000118>
+     </owl:Class>
+     
+ 
+@@ -5568,7 +5691,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+     <!-- http://purl.obolibrary.org/obo/UBERON_0027061 -->
+ 
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0027061">
+-        <IAO_0000118>"lh-isthmuscingulate" and "rh-isthmuscingulate" (from Desikan-Killiany atlas)</IAO_0000118>
++        <IAO_0000118>&quot;lh-isthmuscingulate&quot; and &quot;rh-isthmuscingulate&quot; (from Desikan-Killiany atlas)</IAO_0000118>
+     </owl:Class>
+     
+ 
+@@ -5584,7 +5707,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+     <!-- http://purl.obolibrary.org/obo/UBERON_0028715 -->
+ 
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0028715">
+-        <IAO_0000118>"lh-caudalanteriorcingulate" and "rh-caudalanteriorcingulate" (from Desikan-Killiany atlas)</IAO_0000118>
++        <IAO_0000118>&quot;lh-caudalanteriorcingulate&quot; and &quot;rh-caudalanteriorcingulate&quot; (from Desikan-Killiany atlas)</IAO_0000118>
+     </owl:Class>
+     
+ 
+@@ -5592,7 +5715,7 @@ The values often belong to a group of pixels or voxels that share the same chara
+     <!-- http://purl.obolibrary.org/obo/UBERON_0035933 -->
+ 
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0035933">
+-        <IAO_0000118>"lh-paracentral" and "rh-paracentral" (from Desikan-Killiany atlas)</IAO_0000118>
++        <IAO_0000118>&quot;lh-paracentral&quot; and &quot;rh-paracentral&quot; (from Desikan-Killiany atlas)</IAO_0000118>
+     </owl:Class>
+     
+ 
