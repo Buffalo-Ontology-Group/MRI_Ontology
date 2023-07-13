@@ -1,6 +1,5 @@
 http://orcid.org/0000-0002-2104-0568
 http://purl.obolibrary.org/obo/
-http://purl.obolibrary.org/obo/BFO_0000040
 http://purl.obolibrary.org/obo/BFO_0000050
 http://purl.obolibrary.org/obo/BFO_0000051
 http://purl.obolibrary.org/obo/BFO_0000054
@@ -53,11 +52,9 @@ http://purl.obolibrary.org/obo/MRIO_0000375
 http://purl.obolibrary.org/obo/MRIO_0000376
 http://purl.obolibrary.org/obo/MRIO_0000377
 http://purl.obolibrary.org/obo/MRIO_0000378
-http://purl.obolibrary.org/obo/MRIO_0000379
 http://purl.obolibrary.org/obo/MRIO_0000380
 http://purl.obolibrary.org/obo/MRIO_0000381
 http://purl.obolibrary.org/obo/MRIO_0000382
-http://purl.obolibrary.org/obo/MRIO_0000383
 http://purl.obolibrary.org/obo/MRIO_0000384
 http://purl.obolibrary.org/obo/MRIO_0000385
 http://purl.obolibrary.org/obo/MRIO_0000386
@@ -71,7 +68,6 @@ http://purl.obolibrary.org/obo/MRIO_0000394
 http://purl.obolibrary.org/obo/MRIO_0000395
 http://purl.obolibrary.org/obo/MRIO_0000396
 http://purl.obolibrary.org/obo/MRIO_0000397
-http://purl.obolibrary.org/obo/MRIO_0000400
 http://purl.obolibrary.org/obo/MRIO_0000420
 http://purl.obolibrary.org/obo/MRIO_0000421
 http://purl.obolibrary.org/obo/MRIO_0000423
@@ -84,7 +80,6 @@ http://purl.obolibrary.org/obo/MRIO_0000503
 http://purl.obolibrary.org/obo/MRIO_0000504
 http://purl.obolibrary.org/obo/MRIO_0000505
 http://purl.obolibrary.org/obo/MRIO_0000506
-http://purl.obolibrary.org/obo/MRIO_0000507
 http://purl.obolibrary.org/obo/MRIO_0000508
 http://purl.obolibrary.org/obo/MRIO_0000509
 http://purl.obolibrary.org/obo/MRIO_0000510
@@ -128,7 +123,6 @@ http://purl.obolibrary.org/obo/MRIO_0000619
 http://purl.obolibrary.org/obo/MRIO_0000620
 http://purl.obolibrary.org/obo/MRIO_0000621
 http://purl.obolibrary.org/obo/MRIO_0000622
-http://purl.obolibrary.org/obo/MRIO_0000623
 http://purl.obolibrary.org/obo/MRIO_0000624
 http://purl.obolibrary.org/obo/MRIO_0000625
 http://purl.obolibrary.org/obo/MRIO_0000626
@@ -174,7 +168,6 @@ http://purl.obolibrary.org/obo/MRIO_0000665
 http://purl.obolibrary.org/obo/MRIO_0000666
 http://purl.obolibrary.org/obo/MRIO_0000667
 http://purl.obolibrary.org/obo/MRIO_0000668
-http://purl.obolibrary.org/obo/MRIO_0000669
 http://purl.obolibrary.org/obo/MRIO_0000670
 http://purl.obolibrary.org/obo/MRIO_0000671
 http://purl.obolibrary.org/obo/MRIO_0000672
@@ -220,10 +213,8 @@ http://purl.obolibrary.org/obo/MRIO_0000713
 http://purl.obolibrary.org/obo/MRIO_0000714
 http://purl.obolibrary.org/obo/MRIO_0000715
 http://purl.obolibrary.org/obo/MRIO_0000716
-http://purl.obolibrary.org/obo/MRIO_0000717
 http://purl.obolibrary.org/obo/MRIO_0000718
 http://purl.obolibrary.org/obo/MRIO_0000719
-http://purl.obolibrary.org/obo/MRIO_0000720
 http://purl.obolibrary.org/obo/MRIO_0000721
 http://purl.obolibrary.org/obo/MRIO_0000722
 http://purl.obolibrary.org/obo/MRIO_0000723
@@ -249,6 +240,14 @@ http://purl.obolibrary.org/obo/OBI_0000566
 http://purl.obolibrary.org/obo/OBI_0001879
 http://purl.obolibrary.org/obo/OBI_0001938
 http://purl.obolibrary.org/obo/OBI_0002139
+http://purl.obolibrary.org/obo/OBI_0002985
+http://purl.obolibrary.org/obo/OBI_0003327
+http://purl.obolibrary.org/obo/OBI_0003328
+http://purl.obolibrary.org/obo/OBI_0003329
+http://purl.obolibrary.org/obo/OBI_0003330
+http://purl.obolibrary.org/obo/OBI_0003331
+http://purl.obolibrary.org/obo/OBI_0003332
+http://purl.obolibrary.org/obo/OBI_0003355
 http://purl.obolibrary.org/obo/OBI_0200000
 http://purl.obolibrary.org/obo/OBI_0200111
 http://purl.obolibrary.org/obo/OBI_0200147
@@ -329,7 +328,6 @@ http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
 http://www.geneontology.org/formats/oboInOwl#ObsoleteClass
 http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
 http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym
-http://www.geneontology.org/formats/oboInOwl#inSubset
 http://www.geneontology.org/formats/oboInOwl#source
 http://www.w3.org/1999/02/22-rdf-syntax-ns#nil
 http://www.w3.org/2001/XMLSchema#double

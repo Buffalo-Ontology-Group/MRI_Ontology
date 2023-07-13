@@ -36,7 +36,7 @@
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MRIO/releases/2023-05-02/imports/obi_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MRIO/releases/2023-05-04/imports/obi_import.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2019-08-26/bfo.owl"/>
         <dc:contributor>Alan Ruttenberg</dc:contributor>
         <dc:creator>Alexander D. Bartnik</dc:creator>
@@ -317,18 +317,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/CCL_0000360 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CCL_0000360">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000342"/>
-        <IAO_0000115>The distance (in cm or mm) over which an magnetic resonance image is acquired or displayed.</IAO_0000115>
-        <IAO_0000118>FOV</IAO_0000118>
-        <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
-        <rdfs:label xml:lang="en">field of view</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/CHEBI_33375 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33375"/>
@@ -582,8 +570,9 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000358">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000342"/>
-        <IAO_0000115>The echo time (TE) refers to the time between the application of the radiofrequency excitation pulse and the peak of the signal induced in the coil. It is measured in milliseconds. The amount of T2 relaxation is controlled by the TE. (radiopedia)</IAO_0000115>
+        <IAO_0000115>The tie between an excitation pulse and peak of the echo produced in magnetic resonance imaging.</IAO_0000115>
         <IAO_0000118>TE</IAO_0000118>
+        <IAO_0000119>https://dicom.innolitics.com/ciods/mr-image/mr-image/00180081</IAO_0000119>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
         <rdfs:label xml:lang="en">echo time</rdfs:label>
     </owl:Class>
@@ -604,13 +593,23 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MRIO_0000360 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000360">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000342"/>
+        <IAO_0000115>The distance (in cm or mm) over which an magnetic resonance image is acquired or displayed.</IAO_0000115>
+        <IAO_0000118>FOV</IAO_0000118>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
+        <rdfs:label xml:lang="en">field of view</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MRIO_0000361 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000361">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000342"/>
-        <IAO_0000115>A parameter that can be selected by a technologist as a percent of our overall field of view.
-
-A different field of view (the scanned region) in the frequency and phase encoding directions that means the data acquisition with fewer measurement lines.</IAO_0000115>
+        <IAO_0000115>A parameter that can be selected by a technologist as a percent of our overall field of view. A different field of view (the scanned region) in the frequency and phase encoding directions that means the data acquisition with fewer measurement lines.</IAO_0000115>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
         <rdfs:comment>has exact synonym Rectangular field of view</rdfs:comment>
         <rdfs:label xml:lang="en">phase FOV</rdfs:label>
@@ -856,7 +855,7 @@ A different field of view (the scanned region) in the frequency and phase encodi
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000366"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <IAO_0000115>An MRI acquisition sequence characterized by short TR to minimize T2 weighting.</IAO_0000115>
+        <IAO_0000115>An MRI acquisition sequence characterized by short TE and TR to minimize T2 weighting.</IAO_0000115>
         <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
         <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
         <rdfs:label xml:lang="en">T1 weighted MRI acquisition sequence</rdfs:label>
@@ -1613,6 +1612,7 @@ variable
     <!-- http://purl.obolibrary.org/obo/MRIO_0000514 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000514">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000523"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000662"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1620,7 +1620,7 @@ variable
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000366"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <IAO_0000115>A model-based subcortical segmentation tool.</IAO_0000115>
+        <IAO_0000115>An MRI data set analysis tool for automated segmentation and volume estimation of subcortical structures (e.g. thalamus, cuneus, etc.).</IAO_0000115>
         <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
         <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
         <oboInOwl:source>Patenaude, B., Smith, S.M., Kennedy, D., and Jenkinson M. A Bayesian Model of Shape and Appearance for Subcortical Brain NeuroImage, 56(3):907-922, 2011.</oboInOwl:source>
@@ -1803,10 +1803,11 @@ variable
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000511"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <IAO_0000115>The LPA was trained by a logistic regression model with the data of 53 MS patients with severe lesion patterns. Binary lesion maps of these patients were used as response values. As covariates a similar lesion belief map as for the LGA was used as well as a spatial covariate that takes into account voxel specific changes in lesion probability. Such a high dimensional model cannot be estimated by standard procedures, so we used a novel approach for fitting large-scale regression models, for details see here. The parameters of this model fit are then used to segment lesions in new images by providing an estimate for the lesion probability for each voxel.</IAO_0000115>
+        <IAO_0000115>A focal lesion analysis tool that uses statistical methods to predict the location of MS lesions in a T2w MRI.</IAO_0000115>
         <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
         <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
         <IAO_0000119>https://doi.org/10.5282/edoc.20373</IAO_0000119>
+        <rdfs:comment>The LPA was trained by a logistic regression model with the data of 53 MS patients with severe lesion patterns. Binary lesion maps of these patients were used as response values. As covariates a similar lesion belief map as for the LGA was used as well as a spatial covariate that takes into account voxel specific changes in lesion probability. Such a high dimensional model cannot be estimated by standard procedures, so we used a novel approach for fitting large-scale regression models, for details see here. The parameters of this model fit are then used to segment lesions in new images by providing an estimate for the lesion probability for each voxel.</rdfs:comment>
         <rdfs:label xml:lang="en">LPA analysis</rdfs:label>
     </owl:Class>
     
@@ -1886,10 +1887,11 @@ variable
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <IAO_0000115>Quantitative measurement of brain size, shape, and temporal change (for example, in order to estimate atrophy) is increasingly important in biomedical image analysis applications. New methods of structural analysis attempt to improve robustness, accuracy, and extent of automation. A fully automated method of longitudinal (temporal change) analysis, SIENA, was presented previously. In this paper, improvements to this method are described, and also an extension of SIENA to a new method for cross-sectional (single time point) analysis. The methods are fully automated, robust, and accurate: 0.15% brain volume change error (longitudinal): 0.5–1% brain volume accuracy for single-time point (cross-sectional). A particular advantage is the relative insensitivity to differences in scanning parameters. The methods provide easy manual review of their output by the automatic production of summary images which show the results of the brain extraction, registration, tissue segmentation, and final atrophy estimation.</IAO_0000115>
+        <IAO_0000115>Brain volumetric analysis tool for the automated estimation of grey matter, white matter, CSF, and whole brain volume from T1w MRI.</IAO_0000115>
         <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
         <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
         <IAO_0000119>https://doi.org/10.1006/nimg.2002.1040</IAO_0000119>
+        <rdfs:comment>Quantitative measurement of brain size, shape, and temporal change (for example, in order to estimate atrophy) is increasingly important in biomedical image analysis applications. New methods of structural analysis attempt to improve robustness, accuracy, and extent of automation. A fully automated method of longitudinal (temporal change) analysis, SIENA, was presented previously. In this paper, improvements to this method are described, and also an extension of SIENA to a new method for cross-sectional (single time point) analysis. The methods are fully automated, robust, and accurate: 0.15% brain volume change error (longitudinal): 0.5–1% brain volume accuracy for single-time point (cross-sectional). A particular advantage is the relative insensitivity to differences in scanning parameters. The methods provide easy manual review of their output by the automatic production of summary images which show the results of the brain extraction, registration, tissue segmentation, and final atrophy estimation.</rdfs:comment>
         <rdfs:label xml:lang="en">SIENAX analysis</rdfs:label>
     </owl:Class>
     
@@ -1921,7 +1923,7 @@ variable
     <!-- http://purl.obolibrary.org/obo/MRIO_0000528 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000528">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000509"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
@@ -2594,7 +2596,7 @@ The values often belong to a group of pixels or voxels that share the same chara
     <!-- http://purl.obolibrary.org/obo/MRIO_0000645 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000645">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000509"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
@@ -2972,10 +2974,11 @@ The values often belong to a group of pixels or voxels that share the same chara
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000651">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000421"/>
-        <IAO_0000115>The Configurable Pipeline for the Analysis of Connectomes (C-PAC) is a configurable, open-source, Nipype-based, automated processing pipeline for resting state functional MRI (R-fMRI) data, for use by both novice and expert users.</IAO_0000115>
+        <IAO_0000115>A funtional MRI data set analysis software suite of preconfigured pipelines for analysis fMRI data and estimating functional connectomics.</IAO_0000115>
         <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
-        <oboInOwl:source>https://doi.org/10.3389/conf.fninf.2013.09.00042</oboInOwl:source>
-        <rdfs:label xml:lang="en">c-pac</rdfs:label>
+        <IAO_0000119>https://doi.org/10.3389/conf.fninf.2013.09.00042</IAO_0000119>
+        <rdfs:comment>The Configurable Pipeline for the Analysis of Connectomes (C-PAC) is a configurable, open-source, Nipype-based, automated processing pipeline for resting state functional MRI (R-fMRI) data, for use by both novice and expert users.</rdfs:comment>
+        <rdfs:label xml:lang="en">c-pac analysis</rdfs:label>
     </owl:Class>
     
 
@@ -3224,9 +3227,10 @@ The values often belong to a group of pixels or voxels that share the same chara
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <IAO_0000115>Siena estimates percentage brain volume change (PBVC) betweem two input images, taken of the same subject, at different points in time. It calls a series of FSL programs to strip the non-brain tissue from the two images, register the two brains (under the constraint that the skulls are used to hold the scaling constant during the registration) and analyse the brain change between the two time points. It is also possible to project the voxelwise atrophy measures into standard space in a way that allows for multi-subject voxelwise statistical testing.</IAO_0000115>
+        <IAO_0000115>A brain volumetric analysis tool that estimates the percent brain volume change in an individual between two timepoints using baseline and follow-up T1w MRI.</IAO_0000115>
         <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
         <IAO_0000119>Smith, Stephen M.; De Stefano, Nicola; Jenkinson, Mark; Matthews, Paul M. Normalized Accurate Measurement of Longitudinal Brain Change, Journal of Computer Assisted Tomography: May 2001 - Volume 25 - Issue 3 - p 466-475</IAO_0000119>
+        <rdfs:comment>Siena estimates percentage brain volume change (PBVC) betweem two input images, taken of the same subject, at different points in time. It calls a series of FSL programs to strip the non-brain tissue from the two images, register the two brains (under the constraint that the skulls are used to hold the scaling constant during the registration) and analyse the brain change between the two time points. It is also possible to project the voxelwise atrophy measures into standard space in a way that allows for multi-subject voxelwise statistical testing.</rdfs:comment>
         <rdfs:label xml:lang="en">SIENA analysis</rdfs:label>
     </owl:Class>
     
@@ -3295,7 +3299,7 @@ The values often belong to a group of pixels or voxels that share the same chara
         <IAO_0000115>A measurement datum that is the result of volume measurement of white matter within some brain.</IAO_0000115>
         <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
         <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
-        <rdfs:label xml:lang="en">white matter volume measurement daturm</rdfs:label>
+        <rdfs:label xml:lang="en">white matter volume measurement datum</rdfs:label>
     </owl:Class>
     
 
@@ -3462,6 +3466,7 @@ The values often belong to a group of pixels or voxels that share the same chara
     <!-- http://purl.obolibrary.org/obo/MRIO_0000676 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000676">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000523"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000662"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -3469,9 +3474,10 @@ The values often belong to a group of pixels or voxels that share the same chara
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000366"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <IAO_0000115>FAST (FMRIB&quot;s Automated Segmentation Tool) segments a 3D image of the brain into different tissue types (Grey Matter, White Matter, CSF, etc.), whilst also correcting for spatial intensity variations (also known as bias field or RF inhomogeneities).</IAO_0000115>
+        <IAO_0000115>An MRI data set analysis tool used for segmenting and estimating the volume of grey matter, white matter, and CSF from T1w MRI.</IAO_0000115>
         <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
         <oboInOwl:source>Zhang, Y. and Brady, M. and Smith, S. Segmentation of brain magnetic resonance images through a hidden Markov random field model and the expectation-maximization algorithm. IEEE Trans Med Imag, 20(1):45-57, 2001.</oboInOwl:source>
+        <rdfs:comment>FAST (FMRIB&quot;s Automated Segmentation Tool) segments a 3D image of the brain into different tissue types (Grey Matter, White Matter, CSF, etc.), whilst also correcting for spatial intensity variations (also known as bias field or RF inhomogeneities).</rdfs:comment>
         <rdfs:label xml:lang="en">FAST analysis</rdfs:label>
     </owl:Class>
     
