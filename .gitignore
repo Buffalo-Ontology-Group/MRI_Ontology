@@ -12,3 +12,4 @@ src/ontology/MRIO-individuals.owl
 .archive/
 src/ontology/mirror/mondo.owl
 src/ontology/mirror/
+venv/

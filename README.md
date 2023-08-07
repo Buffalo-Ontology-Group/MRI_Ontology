@@ -43,3 +43,30 @@ To see the inferred results:
 
 `grep "$new_individual_uri" individuals.csv`
 
+---------------------------------
+
+## Auomated assignment of analyses
+
+Adapted from [a fully automated neuroimaging analysis platform](https://gitlab.com/abartnik/cbi-project).
+
+Usage:
+
+```{python}
+python3 -m venv venv
+pip install -r requirements.txt
+
+cd src/scripts
+python assign_analyses.py -h
+  This tool automatically assigns neuroimaging analyses given a set of MRI
+  acquisition sequences.
+
+  positional arguments:
+    acquisition_sequences
+                          IRIs of acquisition sequences to assign analyses for.
+
+  optional arguments:
+    -h, --help            show this help message and exit
+
+python assign_analyses.py MRIO_0000392 MRIO_0000678 # MRIO_0000392: FLAIR sequence, MRIO_0000678: MPRAGE sequence
+```
+
