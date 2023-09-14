@@ -1930,12 +1930,6 @@ variable
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000528">
         <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000641"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <IAO_0000115>A DeepGRAI analysis that estimates the volume of both the dorsal and ventral thalamus within some brain.</IAO_0000115>
         <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
         <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
@@ -1948,12 +1942,6 @@ variable
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000529">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000645"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000642"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <IAO_0000115>A DeepGRAI analysis that estimates the volume of the left dorsal thalamus within some brain.</IAO_0000115>
         <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
         <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
@@ -2603,12 +2591,6 @@ The values often belong to a group of pixels or voxels that share the same chara
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000645">
         <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000644"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <IAO_0000115>A DeepGRAI analysis that estimates the volume of both the left and right dorsal thalamus within some brain.</IAO_0000115>
         <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
         <rdfs:label xml:lang="en">DeepGRAI analysis of the dorsal thalamus</rdfs:label>
@@ -2620,12 +2602,6 @@ The values often belong to a group of pixels or voxels that share the same chara
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000646">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000645"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000643"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <IAO_0000115>A DeepGRAI analysis that estimates the volume of the right dorsal thalamus within some brain.</IAO_0000115>
         <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
         <rdfs:label xml:lang="en">DeepGRAI analysis of the right dorsal thalamus</rdfs:label>
@@ -5082,9 +5058,7 @@ The values often belong to a group of pixels or voxels that share the same chara
 
     <!-- http://purl.obolibrary.org/obo/OBI_0003330 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003330">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000067"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003330"/>
     
 
 

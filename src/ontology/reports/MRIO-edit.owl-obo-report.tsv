@@ -49,6 +49,15 @@ WARN	missing_definition	milliliter unit	textual definition
 WARN	missing_definition	cubic millimeter unit	textual definition	
 WARN	missing_definition	millimeter unit	textual definition	
 WARN	missing_definition	percentage unit	textual definition	
+WARN	missing_definition	deep grey matter brain volume measurement datum	textual definition	
+WARN	missing_definition	caudate volume measurement datum	textual definition	
+WARN	missing_definition	putamen volume measurement datum	textual definition	
+WARN	missing_definition	left putamen volume measurement datum	textual definition	
+WARN	missing_definition	right putamen volume measurement datum	textual definition	
+WARN	missing_definition	pallidum volume measurement datum	textual definition	
+WARN	missing_definition	hippocampus volume measurement datum	textual definition	
+WARN	missing_definition	amygdala volume measurement datum	textual definition	
+WARN	missing_definition	nucleus accumbens volume measurement datum	textual definition	
 WARN	missing_definition	caudate nucleus	textual definition	
 WARN	missing_definition	amygdala	textual definition	
 WARN	missing_definition	nucleus accumbens	textual definition	
@@ -96,33 +105,31 @@ WARN	missing_definition	banks of superior temporal sulcus	textual definition
 WARN	missing_definition	caudal anterior cingulate cortex	textual definition	
 WARN	missing_definition	paracentral lobule	textual definition	
 WARN	missing_obsolete_label	MRI machine	rdfs:label	MRI machine@en
-WARN	missing_obsolete_label	MR imaging datum	rdfs:label	MR imaging datum@en
-WARN	missing_obsolete_label	MR imaging data transformation	rdfs:label	MR imaging data transformation@en
+WARN	missing_obsolete_label	magnetic resonance imaging datum	rdfs:label	magnetic resonance imaging datum@en
+WARN	missing_obsolete_label	magnetic resonance imaging data transformation	rdfs:label	magnetic resonance imaging data transformation@en
 WARN	missing_obsolete_label	1.5T MRI machine	rdfs:label	1.5T MRI machine@en
 WARN	missing_obsolete_label	3T MRI machine	rdfs:label	3T MRI machine@en
 WARN	missing_obsolete_label	segmented region mask	rdfs:label	segmented region mask@en
 WARN	missing_obsolete_label	text file	rdfs:label	text file@en
 WARN	missing_obsolete_label	aligned image data set	rdfs:label	aligned image data set@en
 WARN	missing_obsolete_label	T2 lesion mask	rdfs:label	T2 lesion mask@en
-WARN	missing_obsolete_label	MR image transformation	rdfs:label	MR image transformation@en
+WARN	missing_obsolete_label	magnetic resonance image transformation	rdfs:label	magnetic resonance image transformation@en
 WARN	missing_obsolete_label	binarization	rdfs:label	binarization@en
 WARN	missing_obsolete_label	inversion	rdfs:label	inversion@en
-WARN	missing_obsolete_label	MR image registration	rdfs:label	MR image registration@en
+WARN	missing_obsolete_label	magnetic resonance image registration	rdfs:label	magnetic resonance image registration@en
 WARN	missing_obsolete_label	antsRegistration	rdfs:label	antsRegistration@en
 WARN	missing_obsolete_label	antsApplyTransforms	rdfs:label	antsApplyTransforms@en
-WARN	missing_obsolete_label	MR image artifact correction	rdfs:label	MR image artifact correction@en
-WARN	missing_obsolete_label	MR image bias field correction	rdfs:label	MR image bias field correction@en
+WARN	missing_obsolete_label	magnetic resonance image artifact correction	rdfs:label	magnetic resonance image artifact correction@en
+WARN	missing_obsolete_label	magnetic resonance image bias field correction	rdfs:label	magnetic resonance image bias field correction@en
 WARN	missing_obsolete_label	N4 bias field correction	rdfs:label	N4 bias field correction@en
 WARN	missing_obsolete_label	MRI acquisition sequence process	rdfs:label	MRI acquisition sequence process@en
 WARN	missing_obsolete_label	thalamic volume measurement z-score	rdfs:label	thalamic volume measurement z-score@en
-INFO	missing_superclass	reconstructed MR image data set	rdfs:subClassOf	
-INFO	missing_superclass	MRI participant	rdfs:subClassOf	
+INFO	missing_superclass	reconstructed magnetic resonance image data set	rdfs:subClassOf	
 INFO	missing_superclass	FreeSurfer segmentation map	rdfs:subClassOf	
 INFO	missing_superclass	image data set visualization	rdfs:subClassOf	
 INFO	missing_superclass	computed image data set	rdfs:subClassOf	
-INFO	missing_superclass	raw MR image data set	rdfs:subClassOf	
-INFO	missing_superclass	raw MR image data set reconstruction	rdfs:subClassOf	
-INFO	missing_superclass	MR image data set	rdfs:subClassOf	
+INFO	missing_superclass	raw magnetic resonance image data set	rdfs:subClassOf	
+INFO	missing_superclass	raw magnetic resonance image data set reconstruction	rdfs:subClassOf	
 INFO	missing_superclass	T2 FLAIR medulla oblongata volume analysis	rdfs:subClassOf	
 INFO	missing_superclass	amygdala	rdfs:subClassOf	
 INFO	missing_superclass	nucleus accumbens	rdfs:subClassOf	
