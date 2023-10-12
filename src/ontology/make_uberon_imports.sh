@@ -64,5 +64,5 @@ docker run \
     -v $PWD/../../:/work \
     -w /work/src/ontology \
     --rm -ti \
-    obolibrary/odkfull \
+    obolibrary/odkfull:v1.2.27 \
         bash -c "cp uberon_filtered.owl imports/uberon_import.owl"

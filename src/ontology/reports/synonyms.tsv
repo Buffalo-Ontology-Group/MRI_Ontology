@@ -123,10 +123,10 @@
 <http://purl.obolibrary.org/obo/MRIO_0000638>	<http://www.w3.org/2000/01/rdf-schema#label>	"sensorimotor resting state functional connectivity matrix"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000666>	<http://www.w3.org/2000/01/rdf-schema#label>	"white matter volume measurement datum"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000681>	<http://www.w3.org/2000/01/rdf-schema#label>	"spoiled GRE sequence"@en	
-<http://purl.obolibrary.org/obo/MRIO_0000702>	<http://www.w3.org/2000/01/rdf-schema#label>	"V1 resting state network atlas"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000609>	<http://www.w3.org/2000/01/rdf-schema#label>	"ChaCo data set"@en	
-<http://purl.obolibrary.org/obo/MRIO_0000370>	<http://www.w3.org/2000/01/rdf-schema#label>	"sagittal"@en	
+<http://purl.obolibrary.org/obo/MRIO_0000702>	<http://www.w3.org/2000/01/rdf-schema#label>	"V1 resting state network atlas"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000729>	<http://www.w3.org/2000/01/rdf-schema#label>	"milliliter unit"@en	
+<http://purl.obolibrary.org/obo/MRIO_0000370>	<http://www.w3.org/2000/01/rdf-schema#label>	"sagittal"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000618>	<http://www.w3.org/2000/01/rdf-schema#label>	"antsRegistration"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000360>	<http://www.w3.org/2000/01/rdf-schema#label>	"field of view"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000387>	<http://www.w3.org/2000/01/rdf-schema#label>	"Proton density sequence"@en	
@@ -164,8 +164,8 @@
 <http://purl.obolibrary.org/obo/MRIO_0000600>	<http://www.w3.org/2000/01/rdf-schema#label>	"lesion mask"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000678>	<http://www.w3.org/2000/01/rdf-schema#label>	"T1 MPRAGE sequence"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000362>	<http://www.w3.org/2000/01/rdf-schema#label>	"slice thickness"@en	
-<http://purl.obolibrary.org/obo/MRIO_0000389>	<http://www.w3.org/2000/01/rdf-schema#label>	"T1 GRE sequence"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000733>	<http://www.w3.org/2000/01/rdf-schema#label>	"brain connectivity measurement datum"@en	
+<http://purl.obolibrary.org/obo/MRIO_0000389>	<http://www.w3.org/2000/01/rdf-schema#label>	"T1 GRE sequence"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000509>	<http://www.w3.org/2000/01/rdf-schema#label>	"DeepGRAI analysis"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000367>	<http://www.w3.org/2000/01/rdf-schema#label>	"T2 weighted image data set"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000649>	<http://www.w3.org/2000/01/rdf-schema#label>	"Desikan-Killiany brain atlas image data set"@en	
