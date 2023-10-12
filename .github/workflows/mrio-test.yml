@@ -4,11 +4,7 @@ name: MRIO Test
 
 on:
   push:
-    branches: [ master ]
   pull_request:
-    branches: [ master ]
-
-  workflow_dispatch:
 
 jobs:
   mrio_test:
@@ -20,4 +16,4 @@ jobs:
       - uses: actions/checkout@v2
       - name: Run test
         run: |
-          cd src/ontology && ls && make test
+          cd src/ontology && make test
