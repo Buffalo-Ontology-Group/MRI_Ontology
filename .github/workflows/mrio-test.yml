@@ -13,7 +13,8 @@ on:
 jobs:
   mrio_test:
 
-    runs-on: obolibrary/odkfull
+    runs-on: ubuntu-latest
+    container: obolibrary/odkfull:v1.2.27
 
     steps:
       - uses: actions/checkout@v2
