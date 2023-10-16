@@ -70,3 +70,21 @@ python assign_analyses.py -h
 python assign_analyses.py MRIO_0000392 MRIO_0000678 # MRIO_0000392: FLAIR sequence, MRIO_0000678: MPRAGE sequence
 ```
 
+-------------------------------
+
+## Contributing
+
+MRIO welcomes all meaningful contributions from the community! 
+These include, but are not limited to, corrections to existing classes/axioms, 
+expansion to bioinformatics data pertaining to fields beyond neuroimaging,
+expansion of MRI acquisition types and parameters beyond neuroimaging, 
+and alignment with other neuroimaging and OBO ontologies 
+(e.g. [NIDM](https://github.com/incf-nidash/nidm-terms)).
+
+The MRIO team meets biweekly via Zoom on Thursdays at 2:00pm EST to discuss ongoing development.
+External contributers are more than welcome to join these meetings to discuss new terms 
+or anything related to the ontology.
+To obtain a link to the biweekly MRIO discussion, please contact Alexander Bartnik at adbartni@buffalo.edu.
+
+For more information on how to contribute, please see [Contributing](./CONTRIBUTING.md) 
+and [README-odk](./README-odk.md).
