@@ -147,7 +147,7 @@ property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-00
 
 [Term]
 id: MRIO:0000357
-name: repitition time
+name: repetition time
 def: "The repetition time (TR) is the time from the application of an excitation pulse to the application of the next pulse. It determines how much longitudinal magnetization recovers between each pulse. It is measured in milliseconds. (radiopedia)" []
 is_a: MRIO:0000342 ! MRI machine parameter
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-2104-0568
