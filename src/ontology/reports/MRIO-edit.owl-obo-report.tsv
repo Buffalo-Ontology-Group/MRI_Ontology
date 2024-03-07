@@ -45,6 +45,19 @@ ERROR	missing_label	isthmus of cingulate cortex	rdfs:label
 ERROR	missing_label	banks of superior temporal sulcus	rdfs:label	
 ERROR	missing_label	caudal anterior cingulate cortex	rdfs:label	
 ERROR	missing_label	paracentral lobule	rdfs:label	
+ERROR	deprecated_class_reference	T1 weighted MRI acquisition sequence	owl:someValuesFrom	<http://purl.obolibrary.org/obo/MRIO_0000366>
+ERROR	deprecated_class_reference	T2 weighted MRI acquisition sequence	owl:someValuesFrom	<http://purl.obolibrary.org/obo/MRIO_0000367>
+ERROR	deprecated_class_reference	Proton density sequence	owl:someValuesFrom	<http://purl.obolibrary.org/obo/MRIO_0000351>
+ERROR	deprecated_class_reference	T2 FSE sequence	owl:someValuesFrom	<http://purl.obolibrary.org/obo/MRIO_0000424>
+ERROR	deprecated_class_reference	T1 GRE sequence	owl:someValuesFrom	<http://purl.obolibrary.org/obo/MRIO_0000423>
+ERROR	deprecated_class_reference	T2* GRE sequence	owl:someValuesFrom	<http://purl.obolibrary.org/obo/MRIO_0000396>
+ERROR	deprecated_class_reference	T2 STIR sequence	owl:someValuesFrom	<http://purl.obolibrary.org/obo/MRIO_0000693>
+ERROR	deprecated_class_reference	T2 FLAIR sequence	owl:someValuesFrom	<http://purl.obolibrary.org/obo/MRIO_0000511>
+ERROR	deprecated_class_reference	SIENA analysis	owl:someValuesFrom	<http://purl.obolibrary.org/obo/MRIO_0000601>
+ERROR	deprecated_class_reference	diffusion weighted MRI acquisition sequence	owl:someValuesFrom	<http://purl.obolibrary.org/obo/MRIO_0000635>
+ERROR	deprecated_class_reference	T1 SE sequence	owl:someValuesFrom	<http://purl.obolibrary.org/obo/MRIO_0000506>
+ERROR	deprecated_class_reference	functional MRI acquisition sequence	owl:someValuesFrom	<http://purl.obolibrary.org/obo/MRIO_0000368>
+WARN	missing_definition	term replaced by	textual definition	
 WARN	missing_definition	milliliter unit	textual definition	
 WARN	missing_definition	cubic millimeter unit	textual definition	
 WARN	missing_definition	millimeter unit	textual definition	
@@ -124,12 +137,8 @@ WARN	missing_obsolete_label	magnetic resonance image bias field correction	rdfs:
 WARN	missing_obsolete_label	N4 bias field correction	rdfs:label	N4 bias field correction@en
 WARN	missing_obsolete_label	MRI acquisition sequence process	rdfs:label	MRI acquisition sequence process@en
 WARN	missing_obsolete_label	thalamic volume measurement z-score	rdfs:label	thalamic volume measurement z-score@en
-INFO	missing_superclass	reconstructed magnetic resonance image data set	rdfs:subClassOf	
 INFO	missing_superclass	FreeSurfer segmentation map	rdfs:subClassOf	
 INFO	missing_superclass	image data set visualization	rdfs:subClassOf	
-INFO	missing_superclass	computed image data set	rdfs:subClassOf	
-INFO	missing_superclass	raw magnetic resonance image data set	rdfs:subClassOf	
-INFO	missing_superclass	raw magnetic resonance image data set reconstruction	rdfs:subClassOf	
 INFO	missing_superclass	T2 FLAIR medulla oblongata volume analysis	rdfs:subClassOf	
 INFO	missing_superclass	amygdala	rdfs:subClassOf	
 INFO	missing_superclass	nucleus accumbens	rdfs:subClassOf	

@@ -1,14 +1,34 @@
 ?cls	?replCls	?consCls
+<http://purl.obolibrary.org/obo/MRIO_0000341>	<http://purl.obolibrary.org/obo/OBI_0003334>	
+<http://purl.obolibrary.org/obo/MRIO_0000345>	<http://purl.obolibrary.org/obo/OBI_0003342>	
+<http://purl.obolibrary.org/obo/MRIO_0000351>	<http://purl.obolibrary.org/obo/OBI_0003340>	
+<http://purl.obolibrary.org/obo/MRIO_0000352>	<http://purl.obolibrary.org/obo/OBI_0003351>	
+<http://purl.obolibrary.org/obo/MRIO_0000354>	<http://purl.obolibrary.org/obo/OBI_0003337>	
+<http://purl.obolibrary.org/obo/MRIO_0000355>	<http://purl.obolibrary.org/obo/OBI_0003338>	
+<http://purl.obolibrary.org/obo/MRIO_0000366>	<http://purl.obolibrary.org/obo/OBI_0003341>	
+<http://purl.obolibrary.org/obo/MRIO_0000367>	<http://purl.obolibrary.org/obo/OBI_0003348>	
+<http://purl.obolibrary.org/obo/MRIO_0000368>	<http://purl.obolibrary.org/obo/OBI_0003336>	
 <http://purl.obolibrary.org/obo/MRIO_0000378>		
 <http://purl.obolibrary.org/obo/MRIO_0000381>		
 <http://purl.obolibrary.org/obo/MRIO_0000382>		
 <http://purl.obolibrary.org/obo/MRIO_0000394>		
 <http://purl.obolibrary.org/obo/MRIO_0000395>		
+<http://purl.obolibrary.org/obo/MRIO_0000396>	<http://purl.obolibrary.org/obo/OBI_0003353>	
+<http://purl.obolibrary.org/obo/MRIO_0000423>	<http://purl.obolibrary.org/obo/OBI_0003343>	
+<http://purl.obolibrary.org/obo/MRIO_0000424>	<http://purl.obolibrary.org/obo/OBI_0003350>	
+<http://purl.obolibrary.org/obo/MRIO_0000502>	<http://purl.obolibrary.org/obo/OBI_0003344>	
+<http://purl.obolibrary.org/obo/MRIO_0000504>	<http://purl.obolibrary.org/obo/OBI_0003345>	
+<http://purl.obolibrary.org/obo/MRIO_0000505>	<http://purl.obolibrary.org/obo/OBI_0003346>	
+<http://purl.obolibrary.org/obo/MRIO_0000506>	<http://purl.obolibrary.org/obo/OBI_0003347>	
+<http://purl.obolibrary.org/obo/MRIO_0000511>	<http://purl.obolibrary.org/obo/OBI_0003349>	
 <http://purl.obolibrary.org/obo/MRIO_0000526>		
 <http://purl.obolibrary.org/obo/MRIO_0000527>		
+<http://purl.obolibrary.org/obo/MRIO_0000600>	<http://purl.obolibrary.org/obo/OBI_0003361>	
+<http://purl.obolibrary.org/obo/MRIO_0000601>	<http://purl.obolibrary.org/obo/OBI_0003360>	
 <http://purl.obolibrary.org/obo/MRIO_0000602>		
 <http://purl.obolibrary.org/obo/MRIO_0000603>		
 <http://purl.obolibrary.org/obo/MRIO_0000604>		
+<http://purl.obolibrary.org/obo/MRIO_0000605>	<http://purl.obolibrary.org/obo/OBI_0003363>	
 <http://purl.obolibrary.org/obo/MRIO_0000615>		
 <http://purl.obolibrary.org/obo/MRIO_0000616>		
 <http://purl.obolibrary.org/obo/MRIO_0000617>		
@@ -17,5 +37,15 @@
 <http://purl.obolibrary.org/obo/MRIO_0000620>		
 <http://purl.obolibrary.org/obo/MRIO_0000621>		
 <http://purl.obolibrary.org/obo/MRIO_0000622>		
+<http://purl.obolibrary.org/obo/MRIO_0000635>	<http://purl.obolibrary.org/obo/OBI_0003335>	
+<http://purl.obolibrary.org/obo/MRIO_0000636>	<http://purl.obolibrary.org/obo/OBI_0003339>	
+<http://purl.obolibrary.org/obo/MRIO_0000647>	<http://purl.obolibrary.org/obo/OBI_0003357>	
+<http://purl.obolibrary.org/obo/MRIO_0000648>	<http://purl.obolibrary.org/obo/OBI_0003358>	
+<http://purl.obolibrary.org/obo/MRIO_0000650>	<http://purl.obolibrary.org/obo/OBI_0003359>	
 <http://purl.obolibrary.org/obo/MRIO_0000657>		
 <http://purl.obolibrary.org/obo/MRIO_0000670>		
+<http://purl.obolibrary.org/obo/MRIO_0000693>	<http://purl.obolibrary.org/obo/OBI_0003352>	
+<http://purl.obolibrary.org/obo/MRIO_0000715>	<http://purl.obolibrary.org/obo/OBI_0003362>	
+<http://purl.obolibrary.org/obo/MRIO_0000716>	<http://purl.obolibrary.org/obo/OBI_0003333>	
+<http://purl.obolibrary.org/obo/MRIO_0000718>		
+<http://purl.obolibrary.org/obo/MRIO_0000719>	<http://purl.obolibrary.org/obo/OBI_0003356>	

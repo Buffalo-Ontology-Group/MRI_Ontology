@@ -111,6 +111,7 @@
 <http://purl.obolibrary.org/obo/MRIO_0000652>	"A connectivity matrix where each element represents the correlation of functional brain activity within the V1 resting state network."	
 <http://purl.obolibrary.org/obo/UBERON_0002576>		
 <http://purl.obolibrary.org/obo/UBERON_0002661>		
+<http://purl.obolibrary.org/obo/MRIO_a535096d_151b_47c9_9be4_83b7799917df>	"An image segmentation map where voxel intensity values encode the location of the lateral ventricles in the brain and voxels outside the lateral ventricles have an intensity value of zero."	
 <http://purl.obolibrary.org/obo/MRIO_0000733>	"A scalar measurement datum that quantifies the spatial and temporal relationships between distinct units within the brain."	
 <http://purl.obolibrary.org/obo/MRIO_0000643>	"A measurement datum that is the result of volume measurement of  the right dorsal thalamus within some brain."	
 <http://purl.obolibrary.org/obo/MRIO_0000686>	"An MRI acquisition sequence that uses fast gradient echo sequences to collect a 4D data set corresponding to BOLD signal due to differences in magnetic susceptibility of oxygenated and deoxygenated hemoglobin."	

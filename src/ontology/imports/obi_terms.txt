@@ -48,6 +48,7 @@ http://purl.obolibrary.org/obo/OBI_0000293
 http://purl.obolibrary.org/obo/IAO_0000136
 http://purl.obolibrary.org/obo/OBI_0000312
 http://purl.obolibrary.org/obo/RO_0002180
+http://purl.obolibrary.org/obo/IAO_0100001
 http://purl.obolibrary.org/obo/OBI_0002141 # volume measurement assay
 http://purl.obolibrary.org/obo/OBI_0002139 # volume value specification
 http://purl.obolibrary.org/obo/OBI_0200147 # network graph quality calculation
@@ -69,3 +70,29 @@ http://purl.obolibrary.org/obo/OBI_0003330 # MRI evaluant role
 http://purl.obolibrary.org/obo/OBI_0003332 # MR pulse sequence protocol
 http://purl.obolibrary.org/obo/OBI_0003355 # image data set analysis
 http://purl.obolibrary.org/obo/OBI_0003356 # raw magnetic resonance image data set reconstruction
+http://purl.obolibrary.org/obo/OBI_0003335 # diffusion weighted magnetic resonance image data set
+http://purl.obolibrary.org/obo/OBI_0003336 # functional magnetic resonance image data set
+http://purl.obolibrary.org/obo/OBI_0003337 # resting state functional magnetic resonance image data set
+http://purl.obolibrary.org/obo/OBI_0003338 # task-based functional magnetic resonance image data set
+http://purl.obolibrary.org/obo/OBI_0003339 # perfusion weighted magnetic resonance image data set
+http://purl.obolibrary.org/obo/OBI_0003340 # proton density magnetic resonance image data set
+http://purl.obolibrary.org/obo/OBI_0003341 # T1 weighted magnetic resonance image data set
+http://purl.obolibrary.org/obo/OBI_0003342 # post-Gd T1 weighted magnetic resonance image data set
+http://purl.obolibrary.org/obo/OBI_0003343 # T1 weighted GRE magnetic resonance image data set
+http://purl.obolibrary.org/obo/OBI_0003344 # high resolution T1 weighted magnetic resonance image data set
+http://purl.obolibrary.org/obo/OBI_0003345 # baseline high resolution T1 weighted magnetic resonance image data set
+http://purl.obolibrary.org/obo/OBI_0003346 # follow-up high resolution T1 weighted magnetic resonance image data set
+http://purl.obolibrary.org/obo/OBI_0003347 # T1 weighted SE magnetic resonance image data set
+http://purl.obolibrary.org/obo/OBI_0003348 # T2 weighted magnetic resonance image data set
+http://purl.obolibrary.org/obo/OBI_0003349 # T2 weighted FLAIR magnetic resonance image data set
+http://purl.obolibrary.org/obo/OBI_0003350 # T2 weighted FSE  magnetic resonance image data set
+http://purl.obolibrary.org/obo/OBI_0003351 # T2 weighted SE magnetic resonance image data set
+http://purl.obolibrary.org/obo/OBI_0003352 # T2 weighted STIR magnetic resonance image data set
+http://purl.obolibrary.org/obo/OBI_0003353 # T2* weighted GRE magnetic resonance image data set
+http://purl.obolibrary.org/obo/OBI_0003357 # brain region atlas image data set
+http://purl.obolibrary.org/obo/OBI_0003358 # probabilistic brain region atlas image dataset
+http://purl.obolibrary.org/obo/OBI_0003359 # deterministic brain region atlas image data set
+http://purl.obolibrary.org/obo/OBI_0003360 # image segmentation map
+http://purl.obolibrary.org/obo/OBI_0003361 # lesion mask
+http://purl.obolibrary.org/obo/OBI_0003362 # T1 lesion mask
+http://purl.obolibrary.org/obo/OBI_0003363 # T2 FLAIR lesion mask
