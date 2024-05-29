@@ -19,6 +19,12 @@ Because so much of neuroimaging research is conducted via programming,
 this ontology has the potential to integrate with established neuroimaging software 
 and greatly simplify the neuroimaging research process.
 
+### Publications
+
+MRIO is now published in the journal [Neuroinformatics](https://link.springer.com/journal/12021)! 
+The peer-reviewed article may be found [here](https://link.springer.com/article/10.1007/s12021-024-09664-8).
+Additionally, the preprint is freely available on [bioRxiv](https://doi.org/10.1101/2023.08.04.552020).
+
 ----------------------------------
 
 ## Automated MRI acquisition type classification
