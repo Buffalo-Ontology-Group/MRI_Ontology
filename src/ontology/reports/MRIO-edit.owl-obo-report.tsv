@@ -1,4 +1,7 @@
 Level	Rule Name	Subject	Property	Value
+ERROR	missing_label	magnetic resonance imaging assay	rdfs:label	
+ERROR	missing_label	magnetic resonance imaging participant	rdfs:label	
+ERROR	missing_label	raw magnetic resonance image data set reconstruction	rdfs:label	
 ERROR	missing_label	caudate nucleus	rdfs:label	
 ERROR	missing_label	amygdala	rdfs:label	
 ERROR	missing_label	nucleus accumbens	rdfs:label	
@@ -45,19 +48,6 @@ ERROR	missing_label	isthmus of cingulate cortex	rdfs:label
 ERROR	missing_label	banks of superior temporal sulcus	rdfs:label	
 ERROR	missing_label	caudal anterior cingulate cortex	rdfs:label	
 ERROR	missing_label	paracentral lobule	rdfs:label	
-ERROR	deprecated_class_reference	T1 weighted MRI acquisition sequence	owl:someValuesFrom	<http://purl.obolibrary.org/obo/MRIO_0000366>
-ERROR	deprecated_class_reference	T2 weighted MRI acquisition sequence	owl:someValuesFrom	<http://purl.obolibrary.org/obo/MRIO_0000367>
-ERROR	deprecated_class_reference	Proton density sequence	owl:someValuesFrom	<http://purl.obolibrary.org/obo/MRIO_0000351>
-ERROR	deprecated_class_reference	T2 FSE sequence	owl:someValuesFrom	<http://purl.obolibrary.org/obo/MRIO_0000424>
-ERROR	deprecated_class_reference	T1 GRE sequence	owl:someValuesFrom	<http://purl.obolibrary.org/obo/MRIO_0000423>
-ERROR	deprecated_class_reference	T2* GRE sequence	owl:someValuesFrom	<http://purl.obolibrary.org/obo/MRIO_0000396>
-ERROR	deprecated_class_reference	T2 STIR sequence	owl:someValuesFrom	<http://purl.obolibrary.org/obo/MRIO_0000693>
-ERROR	deprecated_class_reference	T2 FLAIR sequence	owl:someValuesFrom	<http://purl.obolibrary.org/obo/MRIO_0000511>
-ERROR	deprecated_class_reference	SIENA analysis	owl:someValuesFrom	<http://purl.obolibrary.org/obo/MRIO_0000601>
-ERROR	deprecated_class_reference	diffusion weighted MRI acquisition sequence	owl:someValuesFrom	<http://purl.obolibrary.org/obo/MRIO_0000635>
-ERROR	deprecated_class_reference	T1 SE sequence	owl:someValuesFrom	<http://purl.obolibrary.org/obo/MRIO_0000506>
-ERROR	deprecated_class_reference	functional MRI acquisition sequence	owl:someValuesFrom	<http://purl.obolibrary.org/obo/MRIO_0000368>
-WARN	missing_definition	term replaced by	textual definition	
 WARN	missing_definition	milliliter unit	textual definition	
 WARN	missing_definition	cubic millimeter unit	textual definition	
 WARN	missing_definition	millimeter unit	textual definition	
@@ -71,10 +61,15 @@ WARN	missing_definition	pallidum volume measurement datum	textual definition
 WARN	missing_definition	hippocampus volume measurement datum	textual definition	
 WARN	missing_definition	amygdala volume measurement datum	textual definition	
 WARN	missing_definition	nucleus accumbens volume measurement datum	textual definition	
+WARN	missing_definition	ventral thalamic volume measurement datum	textual definition	
+WARN	missing_definition	magnetic resonance imaging assay	textual definition	
+WARN	missing_definition	magnetic resonance imaging participant	textual definition	
+WARN	missing_definition	raw magnetic resonance image data set reconstruction	textual definition	
 WARN	missing_definition	caudate nucleus	textual definition	
 WARN	missing_definition	amygdala	textual definition	
 WARN	missing_definition	nucleus accumbens	textual definition	
 WARN	missing_definition	hypothalamus	textual definition	
+WARN	missing_definition	ventral thalamus	textual definition	
 WARN	missing_definition	insula	textual definition	
 WARN	missing_definition	cerebellar cortex	textual definition	
 WARN	missing_definition	hippocampal formation	textual definition	
@@ -140,9 +135,11 @@ WARN	missing_obsolete_label	thalamic volume measurement z-score	rdfs:label	thala
 INFO	missing_superclass	FreeSurfer segmentation map	rdfs:subClassOf	
 INFO	missing_superclass	image data set visualization	rdfs:subClassOf	
 INFO	missing_superclass	T2 FLAIR medulla oblongata volume analysis	rdfs:subClassOf	
+INFO	missing_superclass	magnetic resonance imaging assay	rdfs:subClassOf	
 INFO	missing_superclass	amygdala	rdfs:subClassOf	
 INFO	missing_superclass	nucleus accumbens	rdfs:subClassOf	
 INFO	missing_superclass	hypothalamus	rdfs:subClassOf	
+INFO	missing_superclass	ventral thalamus	rdfs:subClassOf	
 INFO	missing_superclass	insula	rdfs:subClassOf	
 INFO	missing_superclass	cerebellar cortex	rdfs:subClassOf	
 INFO	missing_superclass	hippocampal formation	rdfs:subClassOf	

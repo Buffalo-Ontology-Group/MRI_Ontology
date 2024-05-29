@@ -1,5 +1,6 @@
 ?cls	?pred	?val	?synType
 <http://purl.obolibrary.org/obo/MRIO_0000349>	<http://www.w3.org/2000/01/rdf-schema#label>	"magnetization transfer image data set"@en	
+<http://purl.obolibrary.org/obo/MRIO_0003071>	<http://www.w3.org/2000/01/rdf-schema#label>	"ventral thalamic volume measurement datum"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000522>	<http://www.w3.org/2000/01/rdf-schema#label>	"LPA analysis"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000689>	<http://www.w3.org/2000/01/rdf-schema#label>	"lateral ventricular volume measurement datum"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000698>	<http://www.w3.org/2000/01/rdf-schema#label>	"auditory resting state network atlas"@en	
@@ -63,7 +64,7 @@
 <http://purl.obolibrary.org/obo/MRIO_0000664>	<http://www.w3.org/2000/01/rdf-schema#label>	"whole brain volume measurement datum"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000604>	<http://www.w3.org/2000/01/rdf-schema#label>	"magnetic resonance image transformation"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000737>	<http://www.w3.org/2000/01/rdf-schema#label>	"percentage unit"@en	
-<http://purl.obolibrary.org/obo/MRIO_0000674>	<http://www.w3.org/2000/01/rdf-schema#label>	"Desikan-Killiany functional connectome analysis"@en	
+<http://purl.obolibrary.org/obo/MRIO_0000674>	<http://www.w3.org/2000/01/rdf-schema#label>	"Desikan-Killiany atlas functional connectome analysis"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000394>	<http://www.w3.org/2000/01/rdf-schema#label>	"1.5T MRI machine"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000620>	<http://www.w3.org/2000/01/rdf-schema#label>	"magnetic resonance image artifact correction"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000529>	<http://www.w3.org/2000/01/rdf-schema#label>	"DeepGRAI analysis of the left dorsal thalamus"@en	
@@ -158,6 +159,7 @@
 <http://purl.obolibrary.org/obo/MRIO_0000635>	<http://www.w3.org/2000/01/rdf-schema#label>	"obsolete diffusion weighted image data set"	
 <http://purl.obolibrary.org/obo/MRIO_0000368>	<http://www.w3.org/2000/01/rdf-schema#label>	"obsolete functional magnetic resonance image data set"	
 <http://purl.obolibrary.org/obo/MRIO_0000736>	<http://www.w3.org/2000/01/rdf-schema#label>	"thalamic structural disconnectivity measurement datum"@en	
+<http://purl.obolibrary.org/obo/UBERON_0001900>	<http://www.w3.org/2000/01/rdf-schema#label>	"ventral thalamus"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000673>	<http://www.w3.org/2000/01/rdf-schema#label>	"peripheral grey matter volume measurement datum"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000526>	<http://www.w3.org/2000/01/rdf-schema#label>	"segmented region mask"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000668>	<http://www.w3.org/2000/01/rdf-schema#label>	"CSF volume measurement datum"@en	
@@ -184,8 +186,8 @@
 <http://purl.obolibrary.org/obo/MRIO_0000657>	<http://www.w3.org/2000/01/rdf-schema#label>	"MRI acquisition sequence process"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000510>	<http://www.w3.org/2000/01/rdf-schema#label>	"functional connectome analysis"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000686>	<http://www.w3.org/2000/01/rdf-schema#label>	"functional MRI acquisition sequence"@en	
-<http://purl.obolibrary.org/obo/MRIO_0000695>	<http://www.w3.org/2000/01/rdf-schema#label>	"lesion volume measurement datum"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000351>	<http://www.w3.org/2000/01/rdf-schema#label>	"obsolete proton density image data set"	
+<http://purl.obolibrary.org/obo/MRIO_0000695>	<http://www.w3.org/2000/01/rdf-schema#label>	"lesion volume measurement datum"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000378>	<http://www.w3.org/2000/01/rdf-schema#label>	"MRI machine"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000722>	<http://www.w3.org/2000/01/rdf-schema#label>	"salient central lesion volume measurement datum"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000739>	<http://www.w3.org/2000/01/rdf-schema#label>	"caudate volume measurement datum"@en	
@@ -207,7 +209,20 @@
 <http://purl.obolibrary.org/obo/MRIO_0000611>	<http://www.w3.org/2000/01/rdf-schema#label>	"connectivity matrix"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000691>	<http://www.w3.org/2000/01/rdf-schema#label>	"2D T1 GRE sequence"@en	
 <http://purl.obolibrary.org/obo/MRIO_0000744>	<http://www.w3.org/2000/01/rdf-schema#label>	"hippocampus volume measurement datum"@en	
+<http://purl.obolibrary.org/obo/MRIO_0000385>	<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym>	"NCIT:C180727"	
 <http://purl.obolibrary.org/obo/MRIO_0000601>	<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym>	"label map"	
 <http://purl.obolibrary.org/obo/MRIO_0000601>	<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym>	"parcellation map"	
+<http://purl.obolibrary.org/obo/MRIO_0000692>	<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym>	"NCIT:C183113"	
+<http://purl.obolibrary.org/obo/MRIO_0000677>	<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym>	"NCIT:C111116"	
+<http://purl.obolibrary.org/obo/MRIO_0000677>	<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym>	"SCTID:440408002"	
+<http://purl.obolibrary.org/obo/OBI_0002985>	<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym>	"SCTID:113091000"	
+<http://purl.obolibrary.org/obo/OBI_0002985>	<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym>	"NCIT:C16809"	
+<http://purl.obolibrary.org/obo/MRIO_0000681>	<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym>	"NCIT:C118463"	
+<http://purl.obolibrary.org/obo/MRIO_0000387>	<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym>	"NCIT:C170797"	
+<http://purl.obolibrary.org/obo/MRIO_0000392>	<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym>	"NCIT:C118465"	
+<http://purl.obolibrary.org/obo/MRIO_0000678>	<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym>	"NCIT:C118462"	
+<http://purl.obolibrary.org/obo/MRIO_0000686>	<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym>	"SCTID:241603006"	
+<http://purl.obolibrary.org/obo/MRIO_0000686>	<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym>	"NCIT:C17958"	
+<http://purl.obolibrary.org/obo/MRIO_0000386>	<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym>	"NCIT:C180729"	
 <http://purl.obolibrary.org/obo/MRIO_0000659>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"SE"	
 <http://purl.obolibrary.org/obo/MRIO_0000628>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"GRE"	

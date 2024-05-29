@@ -1,0 +1,12 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX MRIO: <http://purl.obolibrary.org/obo/MRIO_>
+
+SELECT *  WHERE { 
+  ?subclass rdfs:subClassOf MRIO:0000508 OPTIONAL {
+    ?subsubclass rdfs:subClassOf ?subclass OPTIONAL {
+      ?subsubsubclass rdfs:subClassOf ?subsubclass OPTIONAL {
+        ?subsubsubsubclass rdfs:subClassOf ?subsubsubclass
+      }
+    } 
+  }
+}

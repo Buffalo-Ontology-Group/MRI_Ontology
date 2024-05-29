@@ -164,6 +164,7 @@
 <http://purl.obolibrary.org/obo/MRIO_0000613>	"A structural connectivity matrix where each element respresents the number of white matter streamlines still connecting two brain regions when accounting for focal lesion damage, normalized for the NeMo healthy control tractogram set."	
 <http://purl.obolibrary.org/obo/MRIO_0000366>	"An magnetic resonance image acquired using a T1 weighted magnetic resonance image acquisition sequence."	
 <http://purl.obolibrary.org/obo/MRIO_0000658>	"Produces some quantitative or qualitative data about voxels in an MRI data set that appear affected by some neurobiological process or as a result of some neurological disease such that there may be damage to the brain tissue."	
+<http://purl.obolibrary.org/obo/OBI_0003071>		
 <http://purl.obolibrary.org/obo/MRIO_0000650>	"A brain atlas consisting of discrete integer values where a value X denotes a voxel is part of some brain component Y."	
 <http://purl.obolibrary.org/obo/MRIO_0000359>	"The number of spin echoes in given unit of time."	
 <http://purl.obolibrary.org/obo/UBERON_0001896>		
@@ -245,6 +246,7 @@
 <http://purl.obolibrary.org/obo/MRIO_0000725>	"A volumetric magnetic resonance imaging analysis that estimates salient central lesion volume from T2 FLAIR image datasets of an entire human brain."	
 <http://purl.obolibrary.org/obo/UBERON_0035933>		
 <http://purl.obolibrary.org/obo/MRIO_0000371>	"The plane that divides the body into ventral and dorsal sections."	
+<http://purl.obolibrary.org/obo/MRIO_0003071>		
 <http://purl.obolibrary.org/obo/MRIO_0000723>	"An magnetic resonance image data set analysis that evaluates the white matter tracts in an evaluant using water diffusivity."	
 <http://purl.obolibrary.org/obo/MRIO_0000615>		
 <http://purl.obolibrary.org/obo/MRIO_0000660>	"FreeSurfer stream to derive surface labels and volumes from an invidual at only one timepoint."	
@@ -269,6 +271,7 @@
 <http://purl.obolibrary.org/obo/MRIO_0000624>	"A brain atlas image data set encoding voxels involved in ten major resting state functional networks, as determined by analysis and decomposition of 36 human subjects\" functional activity at rest."	
 <http://purl.obolibrary.org/obo/MRIO_0000629>	"Multiple echoes of different phase steps are acquired by rapidly reversing the readout or frequency- encoding gradient using a gradient echo sequence."@en	
 <http://purl.obolibrary.org/obo/OBI_0200147>		
+<http://purl.obolibrary.org/obo/UBERON_0001900>		
 <http://purl.obolibrary.org/obo/UBERON_0009897>		
 <http://purl.obolibrary.org/obo/MRIO_0000368>	"An magnetic resonance image data set collected as a 4D time series representing changes in brain metabolism (i.e. BOLD), typically used as a proxy for brain activity."	
 <http://purl.obolibrary.org/obo/MRIO_0000347>	"A timeseries of MRI images including pre- and post-contrast at different times"	

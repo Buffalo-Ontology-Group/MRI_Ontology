@@ -96,3 +96,7 @@ http://purl.obolibrary.org/obo/OBI_0003360 # image segmentation map
 http://purl.obolibrary.org/obo/OBI_0003361 # lesion mask
 http://purl.obolibrary.org/obo/OBI_0003362 # T1 lesion mask
 http://purl.obolibrary.org/obo/OBI_0003363 # T2 FLAIR lesion mask
+http://purl.obolibrary.org/obo/OBI_0003071 # participant identifier
+http://purl.obolibrary.org/obo/IAO_0000235 # denoted by
+http://purl.obolibrary.org/obo/IAO_0100001 # term replaced by
+

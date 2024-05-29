@@ -14,7 +14,7 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/MRIO/MRIO-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/MRIO/releases/2024-03-07/MRIO-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/MRIO/releases/2024-05-13/MRIO-base.owl"/>
         <dc:contributor>Alan Ruttenberg</dc:contributor>
         <dc:creator>Alexander D. Bartnik</dc:creator>
         <dc:creator>Alexander D. Diehl</dc:creator>
@@ -27,7 +27,7 @@
         <dc:title>MRI Ontology (MRI)</dc:title>
         <dc:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <terms:license>https://creativecommons.org/licenses/by/4.0/</terms:license>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-07</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-05-13</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -75,9 +75,7 @@
 
     <!-- http://purl.obolibrary.org/obo/IAO_0100001 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0100001">
-        <rdfs:label xml:lang="en">term replaced by</rdfs:label>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0100001"/>
     
 
 
@@ -167,6 +165,12 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000136 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000136"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000235 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000235"/>
     
 
 
@@ -876,12 +880,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000366"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0003341"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>An MRI acquisition sequence characterized by short TE and TR to minimize T2 weighting.</obo:IAO_0000115>
         <obo:IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</obo:IAO_0000117>
         <obo:IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</obo:IAO_0000117>
+        <oboInOwl:hasRelatedSynonym>NCIT:C180727</oboInOwl:hasRelatedSynonym>
         <rdfs:label xml:lang="en">T1 weighted MRI acquisition sequence</rdfs:label>
     </owl:Class>
     
@@ -930,12 +935,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000367"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0003348"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>An MRI acquisition sequence characterized by long TR and TE to accentuate T2 relaxation time of tissue.</obo:IAO_0000115>
         <obo:IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</obo:IAO_0000117>
         <obo:IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</obo:IAO_0000117>
+        <oboInOwl:hasRelatedSynonym>NCIT:C180729</oboInOwl:hasRelatedSynonym>
         <rdfs:label xml:lang="en">T2 weighted MRI acquisition sequence</rdfs:label>
     </owl:Class>
     
@@ -948,7 +954,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000351"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0003340"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -992,6 +998,7 @@
         <obo:IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</obo:IAO_0000117>
         <obo:IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</obo:IAO_0000117>
         <obo:IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</obo:IAO_0000117>
+        <oboInOwl:hasRelatedSynonym>NCIT:C170797</oboInOwl:hasRelatedSynonym>
         <rdfs:label xml:lang="en">Proton density sequence</rdfs:label>
     </owl:Class>
     
@@ -1010,7 +1017,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000424"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0003350"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1117,7 +1124,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000423"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0003343"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>An MRI acquisition sequence that acheives T1 weighting using gradient echo instead of spin echo.</obo:IAO_0000115>
@@ -1135,7 +1142,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000396"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0003353"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1214,7 +1221,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000693"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0003352"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1333,12 +1340,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000511"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0003349"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>An MRI acquisition sequence that uses a long inversion time to attenuate the signal from water/CSF.</obo:IAO_0000115>
         <obo:IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</obo:IAO_0000117>
         <obo:IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</obo:IAO_0000117>
+        <oboInOwl:hasRelatedSynonym>NCIT:C118465</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>from radiopedia
 unnamed elements:
 
@@ -1471,12 +1479,6 @@ variable
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001897"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0010225"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1592,12 +1594,6 @@ variable
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000501"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0003360"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115>A volumetric magnetic resonance imaging analysis that uses a neural network (U-net) to estimate thalamic volume from T2 FLAIR image datasets of an entire human brain.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
         <obo:IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</obo:IAO_0000117>
@@ -1644,7 +1640,6 @@ variable
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000514">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000523"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000662"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
@@ -1670,7 +1665,6 @@ variable
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000515">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000523"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000662"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
@@ -1703,17 +1697,18 @@ variable
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000516">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000515"/>
         <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0003345"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0003346"/>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0003345"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0003346"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
         </rdfs:subClassOf>
         <obo:IAO_0000115>The longitudinal scheme is designed to be unbiased with respect to any time point (TP). Instead of initializing it with information from a specific time point, a template volume is created and run through FreeSurfer. This template can be seen as an initial guess for the segmentation and surface reconstruction. The FreeSurfer cortical and subcortical segmentation and parcellation procedure involves solving many complex nonlinear optimization problems, such as the deformable surface reconstruction, the nonlinear atlas-image registration, and the nonlinear spherical surface registration.</obo:IAO_0000115>
         <obo:IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</obo:IAO_0000117>
@@ -1729,22 +1724,23 @@ variable
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000517">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000523"/>
         <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0003349"/>
-            </owl:Restriction>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000689"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_a535096d_151b_47c9_9be4_83b7799917df"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MRIO_0000689"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MRIO_a535096d_151b_47c9_9be4_83b7799917df"/>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0003349"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>We set out to develop and validate an LVV quantification tool for this purpose. Our goal was not to produce a method more precise or accurate than those described above. Rather, we sought to produce a highly robust technique capable of operating on clinical-quality T2-FLAIR images and producing results similar to more established techniques run on high-resolution scans. To do this, we extended an earlier idea for whole brain analysis proposed by (Baillard et al., 2001), and adapted it to LVV measurement on T2-FLAIR images. The core of our approach is a combination of multi-atlas segmentation and level-set refinement. We also extended the cross-sectional method for direct longitudinal analysis by including an optional Jacobian integration step. We called the resulting algorithm “Neurological Software Tool for Reliable Atrophy Measurement” - NeuroSTREAM.</obo:IAO_0000115>
@@ -1860,7 +1856,7 @@ variable
     <!-- http://purl.obolibrary.org/obo/MRIO_0000523 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000523">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000508"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000662"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
@@ -1879,6 +1875,12 @@ variable
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000524">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000523"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000664"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>Neuroimaging technique used to estimate the volume of the brain.</obo:IAO_0000115>
         <obo:IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</obo:IAO_0000117>
         <obo:IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</obo:IAO_0000117>
@@ -1913,22 +1915,7 @@ variable
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0003327"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MRIO_0000664"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MRIO_0000665"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MRIO_0000666"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MRIO_0000668"/>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000664"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Brain volumetric analysis tool for the automated estimation of grey matter, white matter, CSF, and whole brain volume from T1w MRI.</obo:IAO_0000115>
@@ -2568,6 +2555,18 @@ The values often belong to a group of pixels or voxels that share the same chara
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000501"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000644"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0003071"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001897"/>
             </owl:Restriction>
@@ -2583,12 +2582,6 @@ The values often belong to a group of pixels or voxels that share the same chara
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000642">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000644"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000641"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
@@ -3068,29 +3061,7 @@ The values often belong to a group of pixels or voxels that share the same chara
     <!-- http://purl.obolibrary.org/obo/MRIO_0000656 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000656">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000520"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000521"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0003349"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0003340"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0003347"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0003348"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0003349"/>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115>Deep learning tool used to predict a lesion mask from either just a FLAIR or a combination of FLAIR, T1 weighted SE, T2 weighted, and PD scans.</obo:IAO_0000115>
         <obo:IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</obo:IAO_0000117>
         <rdfs:label xml:lang="en">Deep roboNAC analysis</rdfs:label>
@@ -3113,7 +3084,7 @@ The values often belong to a group of pixels or voxels that share the same chara
     <!-- http://purl.obolibrary.org/obo/MRIO_0000658 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000658">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000508"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000662"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
@@ -3216,38 +3187,40 @@ The values often belong to a group of pixels or voxels that share the same chara
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000663">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000524"/>
         <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0003345"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0003346"/>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0003345"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0003346"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000601"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MRIO_0000664"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MRIO_0000665"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MRIO_0000666"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MRIO_0000668"/>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000664"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000665"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000666"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000668"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A brain volumetric analysis tool that estimates the percent brain volume change in an individual between two timepoints using baseline and follow-up T1w MRI.</obo:IAO_0000115>
         <obo:IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</obo:IAO_0000117>
@@ -3265,21 +3238,19 @@ The values often belong to a group of pixels or voxels that share the same chara
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MRIO_0000665"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MRIO_0000666"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MRIO_0000668"/>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000665"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000955"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000666"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000668"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A measurement datum that is the result of volume measurement of the tissue of some brain.</obo:IAO_0000115>
@@ -3436,12 +3407,6 @@ The values often belong to a group of pixels or voxels that share the same chara
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000673">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000665"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000649"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115>A measurement datum that is the result of volume measurement of peripheral/cortical grey matter within some brain.</obo:IAO_0000115>
         <obo:IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</obo:IAO_0000117>
         <obo:IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</obo:IAO_0000117>
@@ -3456,16 +3421,18 @@ The values often belong to a group of pixels or voxels that share the same chara
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000674">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000675"/>
         <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0003336"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0003344"/>
-            </owl:Restriction>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0003336"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0003344"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -3475,7 +3442,7 @@ The values often belong to a group of pixels or voxels that share the same chara
         </rdfs:subClassOf>
         <obo:IAO_0000115>Measures the functional connectivity between cortical and subcortical regions defined in the Desikan-Killiany brain atlas.</obo:IAO_0000115>
         <obo:IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">Desikan-Killiany functional connectome analysis</rdfs:label>
+        <rdfs:label xml:lang="en">Desikan-Killiany atlas functional connectome analysis</rdfs:label>
     </owl:Class>
     
 
@@ -3495,7 +3462,6 @@ The values often belong to a group of pixels or voxels that share the same chara
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000676">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000523"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000662"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
@@ -3536,13 +3502,15 @@ The values often belong to a group of pixels or voxels that share the same chara
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000635"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0003335"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>An MRI acquisition sequence that uses diffusion gradients to create contrast in the image corresponding to the Brownian motion of the tissue in the examined voxel.</obo:IAO_0000115>
         <obo:IAO_0000116>Add difussion gradient as parameter.</obo:IAO_0000116>
         <obo:IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</obo:IAO_0000117>
         <obo:IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</obo:IAO_0000117>
+        <oboInOwl:hasRelatedSynonym>NCIT:C111116</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>SCTID:440408002</oboInOwl:hasRelatedSynonym>
         <rdfs:label xml:lang="en">diffusion weighted MRI acquisition sequence</rdfs:label>
     </owl:Class>
     
@@ -3583,6 +3551,7 @@ The values often belong to a group of pixels or voxels that share the same chara
         <obo:IAO_0000116>Has a long TR.</obo:IAO_0000116>
         <obo:IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</obo:IAO_0000117>
         <obo:IAO_0000119>https://doi.org/10.1002/mrm.1910150117</obo:IAO_0000119>
+        <oboInOwl:hasRelatedSynonym>NCIT:C118462</oboInOwl:hasRelatedSynonym>
         <rdfs:label xml:lang="en">T1 MPRAGE sequence</rdfs:label>
     </owl:Class>
     
@@ -3662,6 +3631,7 @@ The values often belong to a group of pixels or voxels that share the same chara
         <obo:IAO_0000116>Could have IR.</obo:IAO_0000116>
         <obo:IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</obo:IAO_0000117>
         <obo:IAO_0000119>MRI at a Glance, ISBN 10: 1119053552</obo:IAO_0000119>
+        <oboInOwl:hasRelatedSynonym>NCIT:C118463</oboInOwl:hasRelatedSynonym>
         <rdfs:label xml:lang="en">spoiled GRE sequence</rdfs:label>
     </owl:Class>
     
@@ -3680,7 +3650,7 @@ The values often belong to a group of pixels or voxels that share the same chara
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000506"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0003347"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>An MRI acquisition sequence that using a spin echo sequence to accentuate T1 weighting.</obo:IAO_0000115>
@@ -3730,7 +3700,7 @@ The values often belong to a group of pixels or voxels that share the same chara
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000368"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0003336"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -3752,6 +3722,8 @@ The values often belong to a group of pixels or voxels that share the same chara
         <obo:IAO_0000116>Usually T2* sequence with same TE value throughout.</obo:IAO_0000116>
         <obo:IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</obo:IAO_0000117>
         <obo:IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</obo:IAO_0000117>
+        <oboInOwl:hasRelatedSynonym>NCIT:C17958</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>SCTID:241603006</oboInOwl:hasRelatedSynonym>
         <rdfs:label xml:lang="en">functional MRI acquisition sequence</rdfs:label>
     </owl:Class>
     
@@ -3817,6 +3789,7 @@ The values often belong to a group of pixels or voxels that share the same chara
         </rdfs:subClassOf>
         <obo:IAO_0000115>A T1 weighted acquisition sequence that uses a gradient echo pulse sequence to acquire an entire 3D magnetic resonance image data set at once.</obo:IAO_0000115>
         <obo:IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</obo:IAO_0000117>
+        <oboInOwl:hasRelatedSynonym>NCIT:C183113</oboInOwl:hasRelatedSynonym>
         <rdfs:label xml:lang="en">3D T1 GRE sequence</rdfs:label>
     </owl:Class>
     
@@ -5009,6 +4982,21 @@ The values often belong to a group of pixels or voxels that share the same chara
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MRIO_0003071 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0003071">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000501"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001900"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">ventral thalamic volume measurement datum</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MRIO_a535096d_151b_47c9_9be4_83b7799917df -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_a535096d_151b_47c9_9be4_83b7799917df">
@@ -5057,7 +5045,16 @@ The values often belong to a group of pixels or voxels that share the same chara
 
     <!-- http://purl.obolibrary.org/obo/OBI_0002985 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002985"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002985">
+        <oboInOwl:hasRelatedSynonym>NCIT:C16809</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>SCTID:113091000</oboInOwl:hasRelatedSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003071 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003071"/>
     
 
 
@@ -5075,7 +5072,14 @@ The values often belong to a group of pixels or voxels that share the same chara
 
     <!-- http://purl.obolibrary.org/obo/OBI_0003329 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003329"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003329">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000235"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0003071"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
     
 
 
@@ -5172,6 +5176,24 @@ The values often belong to a group of pixels or voxels that share the same chara
     <!-- http://purl.obolibrary.org/obo/OBI_0003349 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003349"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003350 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003350"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003352 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003352"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003353 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003353"/>
     
 
 
@@ -5281,6 +5303,14 @@ The values often belong to a group of pixels or voxels that share the same chara
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001898">
         <obo:IAO_0000118>&quot;Left-VentralDC&quot; and &quot;Right-VentralDC&quot; (from Desikan-Killiany Atlas)</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001900 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001900">
+        <rdfs:label xml:lang="en">ventral thalamus</rdfs:label>
     </owl:Class>
     
 
@@ -5738,6 +5768,20 @@ The values often belong to a group of pixels or voxels that share the same chara
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000628"/>
         <rdfs:label xml:lang="en">Gradient echo sequence</rdfs:label>
     </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0003356">
+        <oboInOwl:hasRelatedSynonym>NCIT:C164394</oboInOwl:hasRelatedSynonym>
+    </rdf:Description>
     
 
 
