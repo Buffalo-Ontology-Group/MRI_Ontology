@@ -46,6 +46,7 @@
         <dc:creator>Mackenzie Smith</dc:creator>
         <dc:creator>Michael G. Dwyer</dc:creator>
         <dc:creator>William D. Duncan</dc:creator>
+        <dc:creator>Alexander Terry</dc:creator>
         <dc:description>An ontology for the representation of MRI acquisition and analysis.</dc:description>
         <dc:title>MRI Ontology (MRI)</dc:title>
         <terms:license>https://creativecommons.org/licenses/by/4.0/</terms:license>
@@ -61,6 +62,12 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0100001 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0100001"/>
     
 
 
@@ -326,6 +333,12 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_33375 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33375"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000003"/>
     
 
 
@@ -5068,9 +5081,135 @@ The values often belong to a group of pixels or voxels that share the same chara
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0003334 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003334"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003335 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003335"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003336 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003336"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003339 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003339"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003340 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003340"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003341 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003341"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003343 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003343"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003344 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003344"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003345 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003345"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003346 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003346"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003347 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003347"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003348 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003348"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003349 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003349"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003350 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003350"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003352 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003352"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003353 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003353"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0003355 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003355"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003357 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003357"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003358 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003358"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003360 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003360"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003361 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003361"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003363 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003363"/>
     
 
 
@@ -5515,6 +5654,18 @@ The values often belong to a group of pixels or voxels that share the same chara
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0035933">
         <IAO_0000118>&quot;lh-paracentral&quot; and &quot;rh-paracentral&quot; (from Desikan-Killiany atlas)</IAO_0000118>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000001"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_0000095 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000095"/>
     
 
 
