@@ -3695,6 +3695,8 @@ The values often belong to a group of pixels or voxels that share the same chara
         <IAO_0000116>Usually T2* sequence with same TE value throughout.</IAO_0000116>
         <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
         <IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</IAO_0000117>
+        <IAO_0000117>https://orcid.org/0009-0004-2155-902X</IAO_0000117>
+        <oboInOwl:hasExactSynonym>fMRI acquisition sequence</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>NCIT:C17958</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>SCTID:241603006</oboInOwl:hasRelatedSynonym>
         <rdfs:label xml:lang="en">functional MRI acquisition sequence</rdfs:label>
@@ -4970,61 +4972,159 @@ The values often belong to a group of pixels or voxels that share the same chara
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MRIO_271f125b_0d86_4f55_b5b4_dd6320584a7a -->
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000034 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_271f125b_0d86_4f55_b5b4_dd6320584a7a">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000034">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MRIO_0000686"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_1000041"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000686"/>
-        <IAO_0000115>A functional MRI acquisition sequence that uses the vascular space occupancy signal to measure cerebral blood volume and detect metabolic activity in the brain.</IAO_0000115>
+        <IAO_0000115>A functional MRI acquisition sequence that uses the arterial spin labeling signal (ASL) to measure cerebral blood flow and detect metabolic activity in the brain.</IAO_0000115>
         <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-07-25T14:45:57Z</dc:date>
-        <rdfs:label xml:lang="en">vascular space occupancy functional MRI acquisition sequence</rdfs:label>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-07-25T14:27:03Z</dc:date>
+        <oboInOwl:hasExactSynonym>ASL fMRI acquisition sequence</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">arterial spin labeling functional MRI acquisition sequence</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MRIO_546a7a93_6fae_4163_8ed2_dd94a5b9ddcd -->
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000035 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_546a7a93_6fae_4163_8ed2_dd94a5b9ddcd">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_e6500cfc_2eaa_401d_9c1e_bae594e37e0e"/>
-        <IAO_0000115>A type of arterial spin labeling functional MRI acquisition sequence that utilizes the continuous arterial spin labeling technique to measure cerebral blood flow and detect metabolic activity in the brain.</IAO_0000115>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000035">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_1000034"/>
+        <IAO_0000115>A type of arterial spin labeling (ASL) functional MRI acquisition sequence that utilizes the continuous arterial spin labeling (CASL) technique to measure cerebral blood flow and detect metabolic activity in the brain.</IAO_0000115>
         <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-07-25T14:27:33Z</dc:date>
+        <oboInOwl:hasExactSynonym>CASL fMRI acquisition sequence</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">continuous arterial spin labeling functional MRI acquisition sequence</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MRIO_70c96d29_5436_43de_b9ac_d85cea3f2ead -->
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000036 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_70c96d29_5436_43de_b9ac_d85cea3f2ead">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000036">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_1000034"/>
+        <IAO_0000115>A type of arterial spin labeling (ASL) functional MRI acquisition sequence that utilizes the pulsed arterial spin labeling (PASL) technique to measure cerebral blood flow and detect metabolic activity in the brain.</IAO_0000115>
+        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-07-25T14:39:45Z</dc:date>
+        <oboInOwl:hasExactSynonym>PASL fMRI acquisition sequence</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">pulsed arterial spin labeling functional MRI acquisition sequence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000037 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000037">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_1000034"/>
+        <IAO_0000115>A type of arterial spin labeling (ASL) functional MRI acquisition sequence that utilizes the velocity selective arterial spin labeling (VSASL) technique to measure cerebral blood flow and detect metabolic activity in the brain.</IAO_0000115>
+        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-07-25T14:40:05Z</dc:date>
+        <oboInOwl:hasExactSynonym>VSASL fMRI acquisition sequence</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">velocity selective arterial spin labeling functional MRI acquisition sequence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000038 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000038">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_1000034"/>
+        <IAO_0000115>A type of arterial spin labeling (ASL) functional MRI acquisition sequence that utilizes the diffusion prepared pseudocontinuous arterial spin labeling (DP-pCASL) technique to measure cerebral blood flow and detect metabolic activity in the brain.</IAO_0000115>
+        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-07-25T14:40:25Z</dc:date>
+        <oboInOwl:hasExactSynonym>DP-pCASL fMRI acquisition sequence</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">diffusion-prepared pseudocontinuous arterial spin labeling MRI acquisition sequence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000039 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000039">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MRIO_0000686"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_1000047"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000686"/>
+        <IAO_0000115>A functional MRI acquisition sequence that uses the vascular space occupancy (VASO) signal to measure cerebral blood volume and detect metabolic activity in the brain.</IAO_0000115>
+        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-07-25T14:45:57Z</dc:date>
+        <oboInOwl:hasExactSynonym>VASO fMRI acquisition sequence</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">vascular space occupancy functional MRI acquisition sequence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000040">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MRIO_0000686"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_1000044"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000686"/>
+        <IAO_0000115>A functional MRI acquisition sequence that uses the blood oxygenation level dependent (BOLD) signal to detect metabolic activity in the brain.</IAO_0000115>
+        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-07-25T14:47:05Z</dc:date>
+        <oboInOwl:hasExactSynonym>BOLD fMRI acquisition sequence</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">blood oxygenation level dependent functional MRI acquisition sequence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000041 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000041">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003336"/>
         <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-07-24T16:37:31Z</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-08-09T22:05:39Z</dc:date>
         <rdfs:label xml:lang="en">arterial spin labeling functional magnetic resonance image data set</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MRIO_78de57b8_9cb2_475d_8ebe_760c0e7ffbbf -->
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000044 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_78de57b8_9cb2_475d_8ebe_760c0e7ffbbf">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_e6500cfc_2eaa_401d_9c1e_bae594e37e0e"/>
-        <IAO_0000115>A type of arterial spin labeling functional MRI acquisition sequence that utilizes the diffusion prepared pseudocontinuous arterial spin labeling technique to measure cerebral blood flow and detect metabolic activity in the brain.</IAO_0000115>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000044">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003336"/>
         <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-07-25T14:40:25Z</dc:date>
-        <rdfs:label xml:lang="en">diffusion prepared pseudocontinuous arterial spin labeling functional MRI acquisition sequence</rdfs:label>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-08-09T22:05:03Z</dc:date>
+        <rdfs:label xml:lang="en">blood oxygenation level dependent functional magnetic resonance image data set</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MRIO_7e62de13_a503_4fc4_881b_39261dca1512 -->
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000047 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_7e62de13_a503_4fc4_881b_39261dca1512">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_e6500cfc_2eaa_401d_9c1e_bae594e37e0e"/>
-        <IAO_0000115>A type of arterial spin labeling functional MRI acquisition sequence that utilizes the pulsed arterial spin labeling technique to measure cerebral blood flow and detect metabolic activity in the brain.</IAO_0000115>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000047">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003336"/>
         <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-07-25T14:39:45Z</dc:date>
-        <rdfs:label xml:lang="en">pulsed arterial spin labeling functional MRI acquisition sequence</rdfs:label>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-08-09T22:04:39Z</dc:date>
+        <rdfs:label xml:lang="en">vascular space occupancy functional magnetic resonance image data set</rdfs:label>
     </owl:Class>
     
 
@@ -5035,42 +5135,6 @@ The values often belong to a group of pixels or voxels that share the same chara
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003360"/>
         <IAO_0000115>An image segmentation map where voxel intensity values encode the location of the lateral ventricles in the brain and voxels outside the lateral ventricles have an intensity value of zero.</IAO_0000115>
         <rdfs:label xml:lang="en">lateral ventricle segmentation map</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_c28fcbf5_3032_4a77_a634_2efa8313b45f -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_c28fcbf5_3032_4a77_a634_2efa8313b45f">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_e6500cfc_2eaa_401d_9c1e_bae594e37e0e"/>
-        <IAO_0000115>A type of arterial spin labeling functional MRI acquisition sequence that utilizes the velocity selective arterial spin labeling technique to measure cerebral blood flow and detect metabolic activity in the brain.</IAO_0000115>
-        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-07-25T14:40:05Z</dc:date>
-        <rdfs:label xml:lang="en">velocity selective arterial spin labeling functional MRI acquisition sequence</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_cd2e93b4_8906_42a8_9bed_3fb6cb831090 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_cd2e93b4_8906_42a8_9bed_3fb6cb831090">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000686"/>
-        <IAO_0000115>A functional MRI acquisition sequence that uses the blood oxygenation level dependent signal to detect metabolic activity in the brain.</IAO_0000115>
-        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-07-25T14:47:05Z</dc:date>
-        <rdfs:label xml:lang="en">blood oxygenation level dependent functional MRI acquisition sequence</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_e6500cfc_2eaa_401d_9c1e_bae594e37e0e -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_e6500cfc_2eaa_401d_9c1e_bae594e37e0e">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000686"/>
-        <IAO_0000115>A functional MRI acquisition sequence that uses the arterial spin labeling signal to measure cerebral blood flow and detect metabolic activity in the brain.</IAO_0000115>
-        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-07-25T14:27:03Z</dc:date>
-        <rdfs:label xml:lang="en">arterial spin labeling functional MRI acquisition sequence</rdfs:label>
     </owl:Class>
     
 
