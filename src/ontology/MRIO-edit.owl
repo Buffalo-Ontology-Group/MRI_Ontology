@@ -365,6 +365,16 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MF_0000008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000008">
+        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-08-09T20:33:47Z</dc:date>
+        <rdfs:label xml:lang="en">cognitive process</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MRIO_0000341 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000341">
@@ -520,7 +530,6 @@
         <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
         <IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</IAO_0000117>
         <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
-        <IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/OBI_0003337"/>
         <rdfs:label>obsolete Resting state functional magnetic resonance image data set</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
@@ -534,7 +543,6 @@
         <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
         <IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</IAO_0000117>
         <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
-        <IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/OBI_0003338"/>
         <rdfs:label>obsolete Task-based functional magnetic resonance image data set</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
@@ -4970,13 +4978,201 @@ The values often belong to a group of pixels or voxels that share the same chara
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MRIO_70c96d29_5436_43de_b9ac_d85cea3f2ead -->
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000034 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_70c96d29_5436_43de_b9ac_d85cea3f2ead">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000034">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000686"/>
+        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-08-09T19:59:31Z</dc:date>
+        <rdfs:label xml:lang="en">arterial spin labeling functional MRI acquisition sequence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000039 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000039">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000686"/>
+        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-08-09T19:59:51Z</dc:date>
+        <rdfs:label xml:lang="en">vascular space occupancy functional MRI acquisition sequence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000040">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000686"/>
+        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-08-09T20:00:10Z</dc:date>
+        <rdfs:label xml:lang="en">blood oxygenation level dependent functional MRI acquisition sequence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000041 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000041">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0003336"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_1000034"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003336"/>
+        <IAO_0000115>A functional magnetic resonance image data set that utilizes arterial spin labeling (ASL).</IAO_0000115>
         <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-07-24T16:37:31Z</dc:date>
+        <oboInOwl:hasExactSynonym>ASL functional magnetic resonance image data set</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">arterial spin labeling functional magnetic resonance image data set</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000042 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000042">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_1000041"/>
+        <IAO_0000115>A type of arterial spin labeling (ASL) functional magnetic resonance imaging (fMRI) in which the participant is not given a task, but just rests during acquisition.</IAO_0000115>
+        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-07-24T23:50:47Z</dc:date>
+        <oboInOwl:hasExactSynonym>ASL resting state functional magnetic resonance image data set</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">arterial spin labeling resting state functional magnetic resonance image data set</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000043 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000043">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MRIO_1000041"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000007"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MF_0000008"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_1000041"/>
+        <IAO_0000115>A type of arterial spin labeling (ASL) functional magnetic resonance imaging (fMRI) in which the participant is given a task(s), which are timed with the acquisition.</IAO_0000115>
+        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-07-24T23:53:17Z</dc:date>
+        <oboInOwl:hasExactSynonym>ASL task-based functional magnetic resonance image data set</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">arterial spin labeling task-based functional magnetic resonance image data set</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000044 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000044">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003336"/>
+        <IAO_0000115>A functional magnetic resonance image data set that utilizes blood oxygenation level dependent (BOLD) contrast.</IAO_0000115>
+        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-07-24T23:33:43Z</dc:date>
+        <oboInOwl:hasExactSynonym>BOLD functional magnetic resonance image data set</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">blood oxygenation level dependent functional magnetic resonance image data set</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000045 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000045">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_1000044"/>
+        <IAO_0000115>A type of blood oxygenation level dependent (BOLD) functional magnetic resonance imaging (fMRI) in which the participant is not given a task, but just rests during acquisition.</IAO_0000115>
+        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-07-25T00:11:14Z</dc:date>
+        <oboInOwl:hasExactSynonym>BOLD resting state functional magnetic resonance image data set</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">blood oxygenation level dependent resting state functional magnetic resonance image data set</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000046 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000046">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_1000044"/>
+        <IAO_0000115>A type of blood oxygenation level dependent (BOLD) functional magnetic resonance imaging (fMRI) in which the participant is given a task(s), which are timed with the acquisition.</IAO_0000115>
+        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-07-25T00:11:54Z</dc:date>
+        <oboInOwl:hasExactSynonym>BOLD task-based functional magnetic resonance image data set</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">blood oxygenation level dependent task-based functional magnetic resonance image data set</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000047 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000047">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003336"/>
+        <IAO_0000115>A functional magnetic resonance image data set that utilizes vascular space occupancy (VASO) contrast.</IAO_0000115>
+        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-07-24T23:33:06Z</dc:date>
+        <oboInOwl:hasExactSynonym>VASO functional magnetic resonance image data set</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">vascular space occupancy functional magnetic resonance image data set</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000048 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000048">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_1000047"/>
+        <IAO_0000115>A type of vascular space occupancy (VASO) functional magnetic resonance imaging (fMRI) in which the participant is not given a task, but just rests during acquisition.</IAO_0000115>
+        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-07-25T00:14:36Z</dc:date>
+        <oboInOwl:hasExactSynonym>VASO resting state functional magnetic resonance image data set</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">vascular space occupancy resting state functional magnetic resonance image data set</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000049 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000049">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_1000047"/>
+        <IAO_0000115>A type of vascular space occupancy (VASO) functional magnetic resonance imaging (fMRI) in which the participant is given a task(s), which are timed with the acquisition.</IAO_0000115>
+        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-07-25T00:14:44Z</dc:date>
+        <oboInOwl:hasExactSynonym>VASO task-based functional magnetic resonance image data set</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">vascular space occupancy task-based functional magnetic resonance image data set</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_7dbd9af6_10a6_4e84_a4b3_648d4c0575de -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_7dbd9af6_10a6_4e84_a4b3_648d4c0575de">
+        <IAO_0000115>A type of blood oxygenation level dependent event-related functional magnetic resonance imaging where trials are closely spaced without allowing the hemodynamic response to return to baseline, and the resulting hemodynamic responses are deconvolved afterwards.</IAO_0000115>
+        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-07-25T03:29:43Z</dc:date>
+        <rdfs:label xml:lang="en">blood oxygenation level dependent rapid event-related functional magnetic resonance image data set</rdfs:label>
     </owl:Class>
     
 
