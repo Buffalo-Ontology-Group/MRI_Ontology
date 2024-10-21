@@ -530,7 +530,6 @@
         <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
         <IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</IAO_0000117>
         <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
-        <IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/OBI_0003337"/>
         <rdfs:label>obsolete Resting state functional magnetic resonance image data set</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
@@ -544,7 +543,6 @@
         <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
         <IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</IAO_0000117>
         <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
-        <IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/OBI_0003338"/>
         <rdfs:label>obsolete Task-based functional magnetic resonance image data set</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
@@ -3705,6 +3703,8 @@ The values often belong to a group of pixels or voxels that share the same chara
         <IAO_0000116>Usually T2* sequence with same TE value throughout.</IAO_0000116>
         <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
         <IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</IAO_0000117>
+        <IAO_0000117>https://orcid.org/0009-0004-2155-902X</IAO_0000117>
+        <oboInOwl:hasExactSynonym>fMRI acquisition sequence</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>NCIT:C17958</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>SCTID:241603006</oboInOwl:hasRelatedSynonym>
         <rdfs:label xml:lang="en">functional MRI acquisition sequence</rdfs:label>
@@ -5069,11 +5069,347 @@ The values often belong to a group of pixels or voxels that share the same chara
 
     <!-- http://purl.obolibrary.org/obo/MRIO_70c96d29_5436_43de_b9ac_d85cea3f2ead -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_70c96d29_5436_43de_b9ac_d85cea3f2ead">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000032"/>
+        <IAO_0000115>A scalar measurement datum recording the vascular space occupancy (VASO) signal, which reflects changes in cerebral blood volume by using changes in the MRI signal associated with variations in blood volume within the brain.</IAO_0000115>
+        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-07-26T16:28:29Z</dc:date>
+        <oboInOwl:hasExactSynonym>VASO signal</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">vascular space occupancy signal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000032"/>
+        <IAO_0000115>A scalar measurement datum recording the arterial spin labeling (ASL) signal, which reflects cerebral blood flow by using magnetically labeled arterial blood water as an endogenous tracer.</IAO_0000115>
+        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-07-26T16:29:12Z</dc:date>
+        <oboInOwl:hasExactSynonym>ASL signal</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">arterial spin labeling signal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000032"/>
+        <IAO_0000115>A measurement datum recording the blood oxygen level dependent (BOLD) signal, which reflects changes in deoxyhemoglobin driven by localized changes in brain blood flow and blood oxygenation.</IAO_0000115>
+        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-07-26T16:29:26Z</dc:date>
+        <oboInOwl:hasExactSynonym>BOLD signal</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">blood oxygenation level dependent signal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000272"/>
+        <IAO_0000115>A protocol that specifies the parameters and procedures for conducting functional magnetic resonance imaging (fMRI) to measure brain activity and connectivity.</IAO_0000115>
+        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-07-26T17:19:33Z</dc:date>
+        <oboInOwl:hasExactSynonym>fMRI sequence protocol</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">functional magnetic resonance imaging sequence protocol</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000004">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000027"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000420"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0003336"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <IAO_0000115>A data item that is a representation of brain regions that exhibit statistically significant changes in neural activity in response to an experimental task or stimuli.</IAO_0000115>
+        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-07-26T17:30:23Z</dc:date>
+        <rdfs:label xml:lang="en">activation map</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000005">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MRIO_0000420"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_1000008"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000420"/>
+        <IAO_0000115>A functional mapping that produces an activation map that is based on a blood oxygenation level dependent (BOLD) functional magnetic resonance image data set.</IAO_0000115>
+        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-07-26T18:09:23Z</dc:date>
+        <oboInOwl:hasExactSynonym>production of activation map based on a BOLD functional magnetic resonance image data set</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">production of activation map based on a blood oxygenation level dependent functional magnetic resonance image data set</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000006">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MRIO_0000420"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_1000009"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000420"/>
+        <IAO_0000115>A functional mapping that produces an activation map that is based on a vascular space occupancy (VASO) functional magnetic resonance image data set.</IAO_0000115>
+        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-07-26T18:10:45Z</dc:date>
+        <oboInOwl:hasExactSynonym>production of activation map based on a VASO functional magnetic resonance image data set</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">production of activation map based on a vascular space occupancy functional magnetic resonance image data set</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000007">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MRIO_0000420"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_1000010"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000420"/>
+        <IAO_0000115>A functional mapping that produces an activation map that is based on a arterial spin labeling (ASL) functional magnetic resonance image data set.</IAO_0000115>
+        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-07-26T18:12:34Z</dc:date>
+        <oboInOwl:hasExactSynonym>production of activation map based on a ASL functional magnetic resonance image data set</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">production of activation map based on a arterial spin labeling functional magnetic resonance image data set</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000008">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MRIO_1000005"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000420"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_1000044"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_1000005"/>
+        <IAO_0000115>An activation map derived from a blood oxygenation level dependent (BOLD) functional magnetic resonance image data set.</IAO_0000115>
+        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-07-26T18:16:22Z</dc:date>
+        <oboInOwl:hasExactSynonym>BOLD activation map</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">blood oxygenation level dependent activation map</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000009">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MRIO_1000006"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000420"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_1000047"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_1000006"/>
+        <IAO_0000115>An activation map derived from a vascular space occupancy (VASO) functional magnetic resonance image data set.</IAO_0000115>
+        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-07-26T18:17:27Z</dc:date>
+        <oboInOwl:hasExactSynonym>VASO activation map</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">vascular space occupancy activation map</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000010">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MRIO_1000007"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000420"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_1000041"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_1000007"/>
+        <IAO_0000115>An activation map derived from an arterial spin labeling (ASL) functional magnetic resonance image data set.</IAO_0000115>
+        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-07-26T18:17:37Z</dc:date>
+        <oboInOwl:hasExactSynonym>ASL activation map</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">arterial spin labeling activation map</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000030">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_1000003"/>
+        <IAO_0000115>A functional magnetic resonance imaging (fMRI) sequence protocol in which two or more different conditions are alternated in order to determine the differences between the two conditions during the imaging acquisition.</IAO_0000115>
+        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-07-31T21:37:37Z</dc:date>
+        <oboInOwl:hasExactSynonym>block design fMRI sequence protocol</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">block design functional magnetic resonance imaging sequence protocol</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000031">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_1000003"/>
+        <IAO_0000115>A functional magnetic resonance imaging (fMRI) sequence protocol in which the presentation of stimuli is randomized and the time in between stimuli can vary during the imaging acquisition.</IAO_0000115>
+        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-07-31T21:38:13Z</dc:date>
+        <oboInOwl:hasExactSynonym>efMRI sequence protocol</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">event-related functional magnetic resonance imaging sequence protocol</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000032 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000032">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_1000031"/>
+        <IAO_0000115>A type of event-related functional magnetic resonance imaging (efMRI) sequence protocol where events occur so rapidly that their hemodynamic responses overlap during the imaging acquisition.</IAO_0000115>
+        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-07-31T21:38:22Z</dc:date>
+        <oboInOwl:hasExactSynonym>rapid efMRI sequence protocol</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">rapid event-related functional magnetic resonance imaging sequence protocol</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000033 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000033">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_1000003"/>
+        <IAO_0000115>A type of functional magnetic resonance imaging (fMRI) sequence protocol in which the participant is given specific tasks or stimuli that alternate between structured blocks and randomized or semi-randomized order seperated by rest periods during the imaging acquisition.</IAO_0000115>
+        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-07-31T21:38:59Z</dc:date>
+        <oboInOwl:hasExactSynonym>mixed event-related/block design fMRI sequence protocol</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">mixed event-mixed event-related/block design functional magnetic resonance imaging sequence protocol</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000041 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000041">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003336"/>
         <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-07-24T16:37:31Z</dc:date>
-        <rdfs:label xml:lang="en">arterial spin labeling functional magnetic resonance image data set</rdfs:label>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-08-09T22:05:03Z</dc:date>
+        <rdfs:label xml:lang="en">blood oxygenation level dependent functional magnetic resonance image data set</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000047 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000047">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003336"/>
+        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-08-09T22:04:39Z</dc:date>
+        <rdfs:label xml:lang="en">vascular space occupancy functional magnetic resonance image data set</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000044 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000044">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003336"/>
+        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-08-09T21:49:49Z</dc:date>
+        <rdfs:label xml:lang="en">blood oxygenation level dependent functional magnetic resonance image data set</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000047 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000047">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003336"/>
+        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-08-09T21:49:33Z</dc:date>
+        <rdfs:label xml:lang="en">vascular space occupancy functional magnetic resonance image data set</rdfs:label>
     </owl:Class>
     
 
