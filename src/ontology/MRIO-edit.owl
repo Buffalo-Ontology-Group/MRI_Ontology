@@ -45,7 +45,8 @@
         <dc:creator>Lucas Serra</dc:creator>
         <dc:creator>Mackenzie Smith</dc:creator>
         <dc:creator>Michael G. Dwyer</dc:creator>
-        <dc:creator>William D. Duncan</dc:creator>
+	<dc:creator>William D. Duncan</dc:creator>
+	<dc:creator>Alexander Terry</dc:creator>
         <dc:description>An ontology for the representation of MRI acquisition and analysis.</dc:description>
         <dc:title>MRI Ontology (MRI)</dc:title>
         <terms:license>https://creativecommons.org/licenses/by/4.0/</terms:license>
