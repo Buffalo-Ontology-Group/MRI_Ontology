@@ -365,6 +365,16 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MF_0000008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000008">
+        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-08-09T20:33:47Z</dc:date>
+        <rdfs:label xml:lang="en">cognitive process</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MRIO_0000341 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000341">
@@ -520,7 +530,6 @@
         <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
         <IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</IAO_0000117>
         <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
-        <IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/OBI_0003337"/>
         <rdfs:label>obsolete Resting state functional magnetic resonance image data set</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
@@ -534,7 +543,6 @@
         <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
         <IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</IAO_0000117>
         <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
-        <IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/OBI_0003338"/>
         <rdfs:label>obsolete Task-based functional magnetic resonance image data set</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
@@ -3695,6 +3703,8 @@ The values often belong to a group of pixels or voxels that share the same chara
         <IAO_0000116>Usually T2* sequence with same TE value throughout.</IAO_0000116>
         <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
         <IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</IAO_0000117>
+        <IAO_0000117>https://orcid.org/0009-0004-2155-902X</IAO_0000117>
+        <oboInOwl:hasExactSynonym>fMRI acquisition sequence</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>NCIT:C17958</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>SCTID:241603006</oboInOwl:hasRelatedSynonym>
         <rdfs:label xml:lang="en">functional MRI acquisition sequence</rdfs:label>
@@ -5278,8 +5288,19 @@ The values often belong to a group of pixels or voxels that share the same chara
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000041">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003336"/>
         <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-07-24T16:37:31Z</dc:date>
-        <rdfs:label xml:lang="en">arterial spin labeling functional magnetic resonance image data set</rdfs:label>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-08-09T22:05:03Z</dc:date>
+        <rdfs:label xml:lang="en">blood oxygenation level dependent functional magnetic resonance image data set</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000047 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000047">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003336"/>
+        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-08-09T22:04:39Z</dc:date>
+        <rdfs:label xml:lang="en">vascular space occupancy functional magnetic resonance image data set</rdfs:label>
     </owl:Class>
     
 
