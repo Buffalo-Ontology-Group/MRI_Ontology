@@ -4981,94 +4981,7 @@ The values often belong to a group of pixels or voxels that share the same chara
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MRIO_1000024 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000024">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
-        <IAO_0000115>A measure function that models the temporal changes in brain blood flow and oxygenation in response to neural activity.</IAO_0000115>
-        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-07-31T17:26:45Z</dc:date>
-        <oboInOwl:hasExactSynonym>HRF</oboInOwl:hasExactSynonym>
-        <rdfs:label xml:lang="en">hemodynamic response function</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_1000025 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000025">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_1000024"/>
-        <IAO_0000115>A standard model of the hemodynamic response function (HRF) that represents the typical temporal changes in brain blood flow and oxygenation in response to neural activity, used as a reference in neuroimaging studies to interpret brain activation patterns.</IAO_0000115>
-        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-07-31T17:27:39Z</dc:date>
-        <oboInOwl:hasExactSynonym>canonical HRF</oboInOwl:hasExactSynonym>
-        <rdfs:label xml:lang="en">canonical hemodynamic response function</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_1000026 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000026">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000095"/>
-        <IAO_0000115>A volume unit in a three-dimensional imaging system that represents a discrete cubic or rectangular portion of space.</IAO_0000115>
-        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-07-31T17:38:57Z</dc:date>
-        <rdfs:label xml:lang="en">voxel</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_1000027 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000027">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_1000026"/>
-        <IAO_0000115>A specific voxel selected as a starting point for examining or analyzing three-dimensional data.</IAO_0000115>
-        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-07-31T17:39:07Z</dc:date>
-        <rdfs:label xml:lang="en">seed voxel</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_1000028 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000028">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000028"/>
-        <IAO_0000115>A three-dimensional spatial region defined by a cluster of contiguous voxels used as the starting point for examining or analyzing three-dimensional data.</IAO_0000115>
-        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-07-31T17:41:46Z</dc:date>
-        <rdfs:label xml:lang="en">seed region</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_1000029 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000029">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003327"/>
-        <IAO_0000115>An image data set in which all images are acquired or aligned within the same plane of reference.</IAO_0000115>
-        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-07-31T18:08:58Z</dc:date>
-        <rdfs:label xml:lang="en">coplaner image data set</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_1000050 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000050">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO:0008015"/>
-        <IAO_0000115>Blood circulation that is increased in the brain, in response to neural activity.</IAO_0000115>
-        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-08-05T20:00:54Z</dc:date>
-        <oboInOwl:hasExactSynonym>HR</oboInOwl:hasExactSynonym>
-        <rdfs:label xml:lang="en">hemodynamic response</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_70c96d29_5436_43de_b9ac_d85cea3f2ead -->
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000000">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000032"/>
@@ -5146,7 +5059,7 @@ The values often belong to a group of pixels or voxels that share the same chara
         <IAO_0000115>A data item that is a representation of brain regions that exhibit statistically significant changes in neural activity in response to an experimental task or stimuli.</IAO_0000115>
         <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-07-26T17:30:23Z</dc:date>
-        <rdfs:label xml:lang="en">activation map</rdfs:label>
+        <rdfs:label xml:lang="en">brain activation map</rdfs:label>
     </owl:Class>
     
 
@@ -5229,23 +5142,18 @@ The values often belong to a group of pixels or voxels that share the same chara
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MRIO_1000005"/>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000420"/>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_1000044"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_1000005"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_1000044"/>
+                    </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_1000005"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_1000004"/>
         <IAO_0000115>An activation map derived from a blood oxygenation level dependent (BOLD) functional magnetic resonance image data set.</IAO_0000115>
         <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-07-26T18:16:22Z</dc:date>
@@ -5261,23 +5169,18 @@ The values often belong to a group of pixels or voxels that share the same chara
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MRIO_1000006"/>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000420"/>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_1000047"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_1000006"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_1000047"/>
+                    </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_1000006"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_1000004"/>
         <IAO_0000115>An activation map derived from a vascular space occupancy (VASO) functional magnetic resonance image data set.</IAO_0000115>
         <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-07-26T18:17:27Z</dc:date>
@@ -5293,28 +5196,97 @@ The values often belong to a group of pixels or voxels that share the same chara
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MRIO_1000007"/>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000420"/>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_1000041"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_1000007"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_1000041"/>
+                    </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_1000007"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_1000004"/>
         <IAO_0000115>An activation map derived from an arterial spin labeling (ASL) functional magnetic resonance image data set.</IAO_0000115>
         <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-07-26T18:17:37Z</dc:date>
         <oboInOwl:hasExactSynonym>ASL activation map</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">arterial spin labeling activation map</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000024 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000024">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+        <IAO_0000115>A measure function that models the temporal changes in brain blood flow and oxygenation in response to neural activity.</IAO_0000115>
+        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-07-31T17:26:45Z</dc:date>
+        <oboInOwl:hasExactSynonym>HRF</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">hemodynamic response function</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000025 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000025">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_1000024"/>
+        <IAO_0000115>A standard model of the hemodynamic response function (HRF) that represents the typical temporal changes in brain blood flow and oxygenation in response to neural activity, used as a reference in neuroimaging studies to interpret brain activation patterns.</IAO_0000115>
+        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-07-31T17:27:39Z</dc:date>
+        <oboInOwl:hasExactSynonym>canonical HRF</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">canonical hemodynamic response function</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000026 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000026">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000095"/>
+        <IAO_0000115>A volume unit in a three-dimensional imaging system that represents a discrete cubic or rectangular portion of space.</IAO_0000115>
+        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-07-31T17:38:57Z</dc:date>
+        <rdfs:label xml:lang="en">voxel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000027">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_1000026"/>
+        <IAO_0000115>A specific voxel selected as a starting point for examining or analyzing three-dimensional data.</IAO_0000115>
+        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-07-31T17:39:07Z</dc:date>
+        <rdfs:label xml:lang="en">seed voxel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000028 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000028">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000028"/>
+        <IAO_0000115>A three-dimensional spatial region defined by a cluster of contiguous voxels used as the starting point for examining or analyzing three-dimensional data.</IAO_0000115>
+        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-07-31T17:41:46Z</dc:date>
+        <rdfs:label xml:lang="en">seed region</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000029 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000029">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003327"/>
+        <IAO_0000115>An image data set in which all images are acquired or aligned within the same plane of reference.</IAO_0000115>
+        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-07-31T18:08:58Z</dc:date>
+        <rdfs:label xml:lang="en">coplaner image data set</rdfs:label>
     </owl:Class>
     
 
@@ -5382,17 +5354,6 @@ The values often belong to a group of pixels or voxels that share the same chara
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MRIO_1000047 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000047">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003336"/>
-        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-08-09T22:04:39Z</dc:date>
-        <rdfs:label xml:lang="en">vascular space occupancy functional magnetic resonance image data set</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/MRIO_1000044 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000044">
@@ -5410,7 +5371,21 @@ The values often belong to a group of pixels or voxels that share the same chara
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003336"/>
         <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-08-09T21:49:33Z</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-08-09T22:04:39Z</dc:date>
         <rdfs:label xml:lang="en">vascular space occupancy functional magnetic resonance image data set</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000050 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000050">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO:0008015"/>
+        <IAO_0000115>Blood circulation that is increased in the brain, in response to neural activity.</IAO_0000115>
+        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-08-05T20:00:54Z</dc:date>
+        <oboInOwl:hasExactSynonym>HR</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">hemodynamic response</rdfs:label>
     </owl:Class>
     
 
@@ -6198,5 +6173,5 @@ The values often belong to a group of pixels or voxels that share the same chara
 
 
 
-<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
 
