@@ -35,18 +35,17 @@
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/mondo.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MRIO/releases/2024-05-29/imports/obi_import.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2019-08-26/bfo.owl"/>
         <dc:contributor>Alan Ruttenberg</dc:contributor>
         <dc:creator>Alexander D. Bartnik</dc:creator>
         <dc:creator>Alexander D. Diehl</dc:creator>
+        <dc:creator>Alexander Terry</dc:creator>
         <dc:creator>Lauren M. Wishnie</dc:creator>
         <dc:creator>Lucas Serra</dc:creator>
         <dc:creator>Mackenzie Smith</dc:creator>
         <dc:creator>Michael G. Dwyer</dc:creator>
-	<dc:creator>William D. Duncan</dc:creator>
-	<dc:creator>Alexander Terry</dc:creator>
+        <dc:creator>William D. Duncan</dc:creator>
         <dc:description>An ontology for the representation of MRI acquisition and analysis.</dc:description>
         <dc:title>MRI Ontology (MRI)</dc:title>
         <terms:license>https://creativecommons.org/licenses/by/4.0/</terms:license>
@@ -5214,6 +5213,165 @@ The values often belong to a group of pixels or voxels that share the same chara
         <oboInOwl:hasExactSynonym>ASL activation map</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">arterial spin labeling activation map</rdfs:label>
     </owl:Class>
+
+
+
+     <!-- http://purl.obolibrary.org/obo/MRIO_1000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000421"/>
+        <IAO_0000115>A method used in functional MRI data set analysis that examines correlations in activity between spatially remote brain regions.</IAO_0000115>
+        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-07-29T18:05:31Z</dc:date>
+        <rdfs:label xml:lang="en">functional connectivity</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000012 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000012">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_1000011"/>
+        <IAO_0000115>A type of functional connectivity that reflects the direct influence of one brain region on another in relation to functional activity.</IAO_0000115>
+        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-07-29T18:08:06Z</dc:date>
+        <rdfs:label xml:lang="en">effective connectivity</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000013 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000013">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_1000011"/>
+        <IAO_0000115>A type of functional connectivity that measures consistent or stable correlations in brain activity between regions over a period of time during functional magnetic resonance imaging (fMRI).</IAO_0000115>
+        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-07-29T18:09:46Z</dc:date>
+        <rdfs:label xml:lang="en">static functional connectivity</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000014 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000014">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_1000011"/>
+        <IAO_0000115>A type of functional connectivity that measures temporal variations in connectivity patterns between brain regions over time during functional magnetic resonance imaging (fMRI).</IAO_0000115>
+        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-07-29T18:11:26Z</dc:date>
+        <rdfs:label xml:lang="en">dynamic functional connectivity</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000015">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_1000011"/>
+        <IAO_0000115>A type of functional connectivity that assesses how brain regions interact with each other while a subject performs specific tasks during functional magnetic resonance imaging (fMRI).</IAO_0000115>
+        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-07-29T18:16:41Z</dc:date>
+        <rdfs:label xml:lang="en">task-based functional connectivity</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000016">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_1000011"/>
+        <IAO_0000115>A type of functional connectivity that evaluates the interactions between brain regions while the subject is at rest during functional magnetic resonance imaging (fMRI).</IAO_0000115>
+        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-07-29T18:17:09Z</dc:date>
+        <rdfs:label xml:lang="en">resting state functional connectivity</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000017 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000017">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_1000011"/>
+        <IAO_0000115>A method used to investigate functional connectivity between brain regions using a predefined seed voxel or region.</IAO_0000115>
+        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-07-29T18:22:19Z</dc:date>
+	<rdfs:label xml:lang="en">seed-based functional connectivity</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000018 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000018">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000421"/>
+        <IAO_0000115>A method within functional MRI data set analysis that involves defining specific brain regions or areas of interest a priori and examining the neural activity within those regions.</IAO_0000115>
+        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-07-29T18:27:21Z</dc:date>
+        <oboInOwl:hasExactSynonym>ROI analysis</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">region of interest analysis</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000019">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000421"/>
+        <IAO_0000115>A type of functional MRI data set analysis that attempts to analyze the information present in patterns of activity rather than the response at individual voxels.</IAO_0000115>
+        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-07-29T18:27:45Z</dc:date>
+        <oboInOwl:hasExactSynonym>MVPA</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">multi-voxel pattern analysis</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000020">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_1000017"/>
+        <IAO_0000115>A method used in seed-based functional connectivity that involves extracting the time course from a seed voxel, determined based on some a priori hypothesis, and computing its correlation with all the voxels across the brain.</IAO_0000115>
+        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-07-29T18:31:33Z</dc:date>
+        <rdfs:label xml:lang="en">seed voxel correlation: within-subjects</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000021 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000021">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_1000017"/>
+        <IAO_0000115>A method within seed-based functional connectivity where an estimate of activation (e.g., beta weights for a particular condition) is extracted for a particular region, then those values are entered into a whole-brain regression analysis across subjects.</IAO_0000115>
+        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-07-29T18:32:13Z</dc:date>
+        <rdfs:label xml:lang="en">seed voxel correlation: between-subjects</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000022 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000022">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000421"/>
+        <IAO_0000115>A technique used in functional MRI data set analysis where the response to each event is estimated by fitting a model with separate regressors for each trial. By correlating the parameter estimates (beta series) across regions, this method examines the degree of trial-by-trial fluctuation similarity between regions, indicating functional connectivity. particularly useful in event-related studies with longer inter-trial intervals.</IAO_0000115>
+        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-07-29T19:28:12Z</dc:date>
+        <rdfs:label xml:lang="en">beta series correlation</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000023">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_1000015"/>
+        <IAO_0000115>A technique used in task-based functional connectivity to examine how connectivity between a seed region and other brain regions is modulated by task conditions. It involves adding an interaction term to the general linear model, which models the task and the time course of activity in the seed region.</IAO_0000115>
+        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-07-29T19:38:05Z</dc:date>
+        <oboInOwl:hasExactSynonym>PPI approach</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">psychophysiological interaction approach</rdfs:label>
+    </owl:Class>
     
 
 
@@ -5586,9 +5744,9 @@ The values often belong to a group of pixels or voxels that share the same chara
 
     <!-- http://purl.obolibrary.org/obo/UBERON_0001900 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001900">
+    <!-- <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001900">
         <rdfs:label xml:lang="en">ventral thalamus</rdfs:label>
-    </owl:Class>
+    </owl:Class> -->
     
 
 
@@ -6173,5 +6331,5 @@ The values often belong to a group of pixels or voxels that share the same chara
 
 
 
-<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
 
