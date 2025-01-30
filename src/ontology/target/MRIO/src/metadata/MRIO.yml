@@ -1,0 +1,28 @@
+# PURL configuration for http://purl.obolibrary.org/obo/MRIO
+
+idspace: MRIO
+base_url: /obo/MRIO
+
+products:
+- MRIO.owl: https://raw.githubusercontent.com/Buffalo-Ontology-Group/False/main/MRIO.owl
+- MRIO.obo: https://raw.githubusercontent.com/Buffalo-Ontology-Group/False/main/MRIO.obo
+
+term_browser: ontobee
+example_terms:
+- MRIO_0000000
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/Buffalo-Ontology-Group/False/v
+
+- prefix: /tracker/
+  replacement: https://github.com/Buffalo-Ontology-Group/False/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/MRIO?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/Buffalo-Ontology-Group/False/main/
+

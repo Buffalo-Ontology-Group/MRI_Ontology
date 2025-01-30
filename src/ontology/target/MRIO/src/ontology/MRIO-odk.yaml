@@ -1,0 +1,12 @@
+id: MRIO
+title: MRI Acquisition and Analysis Ontology
+github_org: Buffalo-Ontology-Group
+repo: MRI_Ontology
+import_group:
+  products:
+    - id: obi
+    - id: uberon
+    - id: mondo
+    - id: pato
+    - id: ncit
+    - id: caro
