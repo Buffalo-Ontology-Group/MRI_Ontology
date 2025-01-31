@@ -14,14 +14,44 @@ all_mrio:
 		-o MRIO.owl
 
 pato:
-	robot filter -i mirror/pato.owl -T imports/pato_terms.txt -o imports/pato_import.owl
+	robot \
+		--catalog catalog-v001.xml \
+		filter \
+		-i mirror/pato.owl \
+		-T imports/pato_terms.txt \
+		--select "annotations self ancestors" \
+		-o imports/pato_import.owl
 
 mondo:
-	robot filter -i mirror/mondo.owl -T imports/mondo_terms.txt -o imports/mondo_import.owl
+	robot \
+		--catalog catalog-v001.xml \
+		filter \
+		-i mirror/mondo.owl \
+		-T imports/mondo_terms.txt \
+		--select "annotations self ancestors" \
+		-o imports/mondo_import.owl
 
 ncit:
-	robot filter -i mirror/ncit.owl -T imports/ncit_terms.txt -o imports/ncit_import.owl
+	robot \
+		--catalog catalog-v001.xml \
+		filter -i mirror/ncit.owl \
+		-T imports/ncit_terms.txt \
+		--select "annotations self ancestors" \
+		-o imports/ncit_import.owl
 
 uberon:
-	./make_uberon_imports.sh
+	robot \
+		--catalog catalog-v001.xml \
+		filter -i mirror/uberon.owl \
+		-T imports/uberon_terms.txt \
+		--select "annotations self ancestors" \
+		-o imports/uberon_import.owl
+
+iao:
+	robot \
+		--catalog catalog-v001.xml \
+		filter -i mirror/iao.owl \
+		-T imports/iao_terms.txt \
+		--select "annotations self ancestors" \
+		-o imports/iao_import.owl
 

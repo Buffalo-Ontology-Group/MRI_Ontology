@@ -1,1 +1,2 @@
 http://purl.obolibrary.org/obo/PATO_0001990 # duration of disease
+http://purl.obolibrary.org/obo/PATO_0000764

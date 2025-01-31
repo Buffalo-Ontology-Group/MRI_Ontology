@@ -19,6 +19,7 @@ swrl:		http://www.w3.org/2003/11/swrl#
 chebi:		http://purl.obolibrary.org/obo/chebi/
 core1:		http://purl.obolibrary.org/obo/uberon/core#
 mondo:		http://purl.obolibrary.org/obo/mondo#
+sssom:		https://w3id.org/sssom/
 swrla:		http://swrl.stanford.edu/ontologies/3.3/swrla.owl#
 swrlb:		http://www.w3.org/2003/11/swrlb#
 terms:		http://purl.org/dc/terms/

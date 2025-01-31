@@ -18,6 +18,7 @@ Prefix(swrl:=<http://www.w3.org/2003/11/swrl#>)
 Prefix(chebi:=<http://purl.obolibrary.org/obo/chebi/>)
 Prefix(core1:=<http://purl.obolibrary.org/obo/uberon/core#>)
 Prefix(mondo:=<http://purl.obolibrary.org/obo/mondo#>)
+Prefix(sssom:=<https://w3id.org/sssom/>)
 Prefix(swrla:=<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#>)
 Prefix(swrlb:=<http://www.w3.org/2003/11/swrlb#>)
 Prefix(terms:=<http://purl.org/dc/terms/>)
@@ -32,22 +33,24 @@ Prefix(ncbitaxon:=<http://purl.obolibrary.org/obo/ncbitaxon#>)
 
 Ontology(<http://purl.obolibrary.org/obo/>
 <http://purl.obolibrary.org/obo/mrio/releases/2021-04-10/mrio.owl>
+Import(<http://purl.obolibrary.org/obo/iao.owl>)
 Import(<http://purl.obolibrary.org/obo/mondo.owl>)
 Import(<http://purl.obolibrary.org/obo/ncit.owl>)
 Import(<http://purl.obolibrary.org/obo/pato.owl>)
-Import(<http://purl.obolibrary.org/obo/MRIO/releases/2024-05-29/imports/obi_import.owl>)
+Import(<http://purl.obolibrary.org/obo/uberon.owl>)
+Import(<http://purl.obolibrary.org/obo/MRIO/releases/2025-01-30/imports/obi_import.owl>)
 Import(<http://purl.obolibrary.org/obo/bfo/2019-08-26/bfo.owl>)
 Annotation(dc:contributor "Alan Ruttenberg")
-Annotation(dc:creator "Alexander D. Bartnik")
-Annotation(dc:creator "Alexander D. Diehl")
-Annotation(dc:creator "Alexander Terry")
-Annotation(dc:creator "Lauren M. Wishnie")
-Annotation(dc:creator "Lucas Serra")
-Annotation(dc:creator "Mackenzie Smith")
-Annotation(dc:creator "Michael G. Dwyer")
-Annotation(dc:creator "William D. Duncan")
 Annotation(dc:description "An ontology for the representation of MRI acquisition and analysis.")
 Annotation(dc:title "MRI Ontology (MRI)")
+Annotation(terms:creator "Alexander D. Bartnik")
+Annotation(terms:creator "Alexander D. Diehl")
+Annotation(terms:creator "Alexander Terry")
+Annotation(terms:creator "Lauren M. Wishnie")
+Annotation(terms:creator "Lucas Serra")
+Annotation(terms:creator "Mackenzie Smith")
+Annotation(terms:creator "Michael G. Dwyer")
+Annotation(terms:creator "William D. Duncan")
 Annotation(terms:license "https://creativecommons.org/licenses/by/4.0/")
 
 Declaration(Class(obo:CARO_0000000))
@@ -415,11 +418,11 @@ Declaration(NamedIndividual(obo:MRIO_0000632))
 Declaration(NamedIndividual(obo:MRIO_0000639))
 Declaration(NamedIndividual(obo:MRIO_0000640))
 Declaration(NamedIndividual(obo:MRIO_0000685))
-Declaration(AnnotationProperty(dc:creator))
-Declaration(AnnotationProperty(dc:date))
 Declaration(AnnotationProperty(dc:description))
-Declaration(AnnotationProperty(dc:source))
 Declaration(AnnotationProperty(dc:title))
+Declaration(AnnotationProperty(terms:creator))
+Declaration(AnnotationProperty(terms:date))
+Declaration(AnnotationProperty(terms:source))
 Declaration(AnnotationProperty(swrla:isRuleEnabled))
 Declaration(AnnotationProperty(oboInOwl:source))
 
@@ -430,7 +433,7 @@ Declaration(AnnotationProperty(oboInOwl:source))
 # Object Property: obo:MRIO_0000375 (has pulse sequence)
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000375 "A relation between an magnetic resonance image acquisition sequence and the pulse sequence(s) that contribute to it.")
-AnnotationAssertion(dc:creator obo:MRIO_0000375 <http://orcid.org/0000-0002-2104-0568>)
+AnnotationAssertion(terms:creator obo:MRIO_0000375 <http://orcid.org/0000-0002-2104-0568>)
 AnnotationAssertion(rdfs:label obo:MRIO_0000375 "has pulse sequence"@en)
 ObjectPropertyDomain(obo:MRIO_0000375 obo:OBI_0002985)
 ObjectPropertyRange(obo:MRIO_0000375 obo:OBI_0003332)
@@ -449,28 +452,28 @@ ObjectPropertyRange(obo:MRIO_0000688 obo:MRIO_0000342)
 # Data Property: obo:MRIO_0000376 (has TR value)
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000376 "A relation between the recovery time (TR) set by the technician and an MRI acquisition sequence.")
-AnnotationAssertion(dc:creator obo:MRIO_0000376 <http://orcid.org/0000-0002-2104-0568>)
+AnnotationAssertion(terms:creator obo:MRIO_0000376 <http://orcid.org/0000-0002-2104-0568>)
 AnnotationAssertion(rdfs:label obo:MRIO_0000376 "has TR value"@en)
 SubDataPropertyOf(obo:MRIO_0000376 obo:MRIO_0000428)
 
 # Data Property: obo:MRIO_0000377 (has TE value)
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000377 "A relation between the echo time (TE) set by the technician and an MRI acquisition sequence.")
-AnnotationAssertion(dc:creator obo:MRIO_0000377 <http://orcid.org/0000-0002-2104-0568>)
+AnnotationAssertion(terms:creator obo:MRIO_0000377 <http://orcid.org/0000-0002-2104-0568>)
 AnnotationAssertion(rdfs:label obo:MRIO_0000377 "has TE value"@en)
 SubDataPropertyOf(obo:MRIO_0000377 obo:MRIO_0000428)
 
 # Data Property: obo:MRIO_0000384 (has flip angle value)
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000384 "A relation between the flip angle set by the technician and an MRI acquisition sequence.")
-AnnotationAssertion(dc:creator obo:MRIO_0000384 <http://orcid.org/0000-0002-2104-0568>)
+AnnotationAssertion(terms:creator obo:MRIO_0000384 <http://orcid.org/0000-0002-2104-0568>)
 AnnotationAssertion(rdfs:label obo:MRIO_0000384 "has flip angle value"@en)
 SubDataPropertyOf(obo:MRIO_0000384 obo:MRIO_0000428)
 
 # Data Property: obo:MRIO_0000428 (has MRI machine setting value)
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000428 "A relation between the MRI machine setting datum set by the technician and the properties of an MRI acquisition sequence.")
-AnnotationAssertion(dc:creator obo:MRIO_0000428 <http://orcid.org/0000-0002-2104-0568>)
+AnnotationAssertion(terms:creator obo:MRIO_0000428 <http://orcid.org/0000-0002-2104-0568>)
 AnnotationAssertion(rdfs:label obo:MRIO_0000428 "has MRI machine setting value"@en)
 DataPropertyDomain(obo:MRIO_0000428 obo:OBI_0002985)
 
@@ -488,8 +491,6 @@ SubDataPropertyOf(obo:MRIO_0000606 obo:MRIO_0000428)
 
 # Class: obo:MF_0000008 (cognitive process)
 
-AnnotationAssertion(dc:creator obo:MF_0000008 <https://orcid.org/0009-0004-2155-902X>)
-AnnotationAssertion(dc:date obo:MF_0000008 "2024-07-30T23:59:27Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label obo:MF_0000008 "cognitive process"@en)
 
 # Class: obo:MRIO_0000341 (obsolete reconstructed magnetic resonance image data set)
@@ -509,7 +510,7 @@ AnnotationAssertion(owl:deprecated obo:MRIO_0000341 "true"^^xsd:boolean)
 # Class: obo:MRIO_0000342 (MRI machine parameter)
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000342 "Parameters that a technician may specify to compose a specific MRI acquisition sequence as part of a scanning protocol.")
-AnnotationAssertion(dc:creator obo:MRIO_0000342 <http://orcid.org/0000-0002-2104-0568>)
+AnnotationAssertion(terms:creator obo:MRIO_0000342 <http://orcid.org/0000-0002-2104-0568>)
 AnnotationAssertion(rdfs:label obo:MRIO_0000342 "MRI machine parameter"@en)
 SubClassOf(obo:MRIO_0000342 obo:MRIO_0000380)
 
@@ -611,7 +612,7 @@ AnnotationAssertion(owl:deprecated obo:MRIO_0000355 "true"^^xsd:boolean)
 # Class: obo:MRIO_0000356 (plane)
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000356 "The direction that the MRI image was taken.")
-AnnotationAssertion(dc:creator obo:MRIO_0000356 <http://orcid.org/0000-0002-2104-0568>)
+AnnotationAssertion(terms:creator obo:MRIO_0000356 <http://orcid.org/0000-0002-2104-0568>)
 AnnotationAssertion(rdfs:label obo:MRIO_0000356 "plane"@en)
 SubClassOf(obo:MRIO_0000356 obo:MRIO_0000342)
 
@@ -619,7 +620,7 @@ SubClassOf(obo:MRIO_0000356 obo:MRIO_0000342)
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000357 "The repetition time (TR) is the time from the application of an excitation pulse to the application of the next pulse. It determines how much longitudinal magnetization recovers between each pulse. It is measured in milliseconds. (radiopedia)")
 AnnotationAssertion(obo:IAO_0000118 obo:MRIO_0000357 "TR")
-AnnotationAssertion(dc:creator obo:MRIO_0000357 <http://orcid.org/0000-0002-2104-0568>)
+AnnotationAssertion(terms:creator obo:MRIO_0000357 <http://orcid.org/0000-0002-2104-0568>)
 AnnotationAssertion(rdfs:label obo:MRIO_0000357 "repetition time"@en)
 SubClassOf(obo:MRIO_0000357 obo:MRIO_0000342)
 
@@ -628,7 +629,7 @@ SubClassOf(obo:MRIO_0000357 obo:MRIO_0000342)
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000358 "The tie between an excitation pulse and peak of the echo produced in magnetic resonance imaging.")
 AnnotationAssertion(obo:IAO_0000118 obo:MRIO_0000358 "TE")
 AnnotationAssertion(obo:IAO_0000119 obo:MRIO_0000358 "https://dicom.innolitics.com/ciods/mr-image/mr-image/00180081")
-AnnotationAssertion(dc:creator obo:MRIO_0000358 <http://orcid.org/0000-0002-2104-0568>)
+AnnotationAssertion(terms:creator obo:MRIO_0000358 <http://orcid.org/0000-0002-2104-0568>)
 AnnotationAssertion(rdfs:label obo:MRIO_0000358 "echo time"@en)
 SubClassOf(obo:MRIO_0000358 obo:MRIO_0000342)
 
@@ -638,7 +639,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000359 "The number of spin echoes 
 AnnotationAssertion(obo:IAO_0000118 obo:MRIO_0000359 "ETL")
 AnnotationAssertion(obo:IAO_0000118 obo:MRIO_0000359 "echo number")
 AnnotationAssertion(obo:IAO_0000118 obo:MRIO_0000359 "turbo factor")
-AnnotationAssertion(dc:creator obo:MRIO_0000359 <http://orcid.org/0000-0002-2104-0568>)
+AnnotationAssertion(terms:creator obo:MRIO_0000359 <http://orcid.org/0000-0002-2104-0568>)
 AnnotationAssertion(rdfs:label obo:MRIO_0000359 "echo train length"@en)
 SubClassOf(obo:MRIO_0000359 obo:MRIO_0000342)
 
@@ -646,14 +647,14 @@ SubClassOf(obo:MRIO_0000359 obo:MRIO_0000342)
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000360 "The distance (in cm or mm) over which an magnetic resonance image is acquired or displayed.")
 AnnotationAssertion(obo:IAO_0000118 obo:MRIO_0000360 "FOV")
-AnnotationAssertion(dc:creator obo:MRIO_0000360 <http://orcid.org/0000-0002-2104-0568>)
+AnnotationAssertion(terms:creator obo:MRIO_0000360 <http://orcid.org/0000-0002-2104-0568>)
 AnnotationAssertion(rdfs:label obo:MRIO_0000360 "field of view"@en)
 SubClassOf(obo:MRIO_0000360 obo:MRIO_0000342)
 
 # Class: obo:MRIO_0000361 (phase FOV)
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000361 "A parameter that can be selected by a technologist as a percent of our overall field of view. A different field of view (the scanned region) in the frequency and phase encoding directions that means the data acquisition with fewer measurement lines.")
-AnnotationAssertion(dc:creator obo:MRIO_0000361 <http://orcid.org/0000-0002-2104-0568>)
+AnnotationAssertion(terms:creator obo:MRIO_0000361 <http://orcid.org/0000-0002-2104-0568>)
 AnnotationAssertion(rdfs:comment obo:MRIO_0000361 "has exact synonym Rectangular field of view")
 AnnotationAssertion(rdfs:label obo:MRIO_0000361 "phase FOV"@en)
 SubClassOf(obo:MRIO_0000361 obo:MRIO_0000342)
@@ -661,28 +662,28 @@ SubClassOf(obo:MRIO_0000361 obo:MRIO_0000342)
 # Class: obo:MRIO_0000362 (slice thickness)
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000362 "The distance between two 2D image matrices, gives the measurement of a voxel in the z direction.")
-AnnotationAssertion(dc:creator obo:MRIO_0000362 <http://orcid.org/0000-0002-2104-0568>)
+AnnotationAssertion(terms:creator obo:MRIO_0000362 <http://orcid.org/0000-0002-2104-0568>)
 AnnotationAssertion(rdfs:label obo:MRIO_0000362 "slice thickness"@en)
 SubClassOf(obo:MRIO_0000362 obo:MRIO_0000342)
 
 # Class: obo:MRIO_0000363 (slice gap)
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000363 "The not measured distance between the slices.")
-AnnotationAssertion(dc:creator obo:MRIO_0000363 <http://orcid.org/0000-0002-2104-0568>)
+AnnotationAssertion(terms:creator obo:MRIO_0000363 <http://orcid.org/0000-0002-2104-0568>)
 AnnotationAssertion(rdfs:label obo:MRIO_0000363 "slice gap"@en)
 SubClassOf(obo:MRIO_0000363 obo:MRIO_0000342)
 
 # Class: obo:MRIO_0000364 (acquisition matrix)
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000364 "The total number of independent data samples in the frequency and phase directions (number of pixels in the frequency encoding - and phase encoding direction).")
-AnnotationAssertion(dc:creator obo:MRIO_0000364 <http://orcid.org/0000-0002-2104-0568>)
+AnnotationAssertion(terms:creator obo:MRIO_0000364 <http://orcid.org/0000-0002-2104-0568>)
 AnnotationAssertion(rdfs:label obo:MRIO_0000364 "acquisition matrix"@en)
 SubClassOf(obo:MRIO_0000364 obo:MRIO_0000342)
 
 # Class: obo:MRIO_0000365 (phase encoding)
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000365 "The process of locating a magnetic resonance signal by altering the phase of spins in one dimension with a pulsed magnetic field gradient along that dimension prior to the acquisition of the signal.")
-AnnotationAssertion(dc:creator obo:MRIO_0000365 <http://orcid.org/0000-0002-2104-0568>)
+AnnotationAssertion(terms:creator obo:MRIO_0000365 <http://orcid.org/0000-0002-2104-0568>)
 AnnotationAssertion(rdfs:label obo:MRIO_0000365 "phase encoding"@en)
 SubClassOf(obo:MRIO_0000365 obo:MRIO_0000342)
 
@@ -720,35 +721,35 @@ AnnotationAssertion(owl:deprecated obo:MRIO_0000368 "true"^^xsd:boolean)
 # Class: obo:MRIO_0000369 (matrix size)
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000369 "The number of data points collected in one, two or all three directions. Normally used for the 2D in plane sampling.")
-AnnotationAssertion(dc:creator obo:MRIO_0000369 <http://orcid.org/0000-0002-2104-0568>)
+AnnotationAssertion(terms:creator obo:MRIO_0000369 <http://orcid.org/0000-0002-2104-0568>)
 AnnotationAssertion(rdfs:label obo:MRIO_0000369 "matrix size"@en)
 SubClassOf(obo:MRIO_0000369 obo:MRIO_0000342)
 
 # Class: obo:MRIO_0000370 (sagittal)
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000370 "The plane that divides the body into left and right sections.")
-AnnotationAssertion(dc:creator obo:MRIO_0000370 <http://orcid.org/0000-0002-2104-0568>)
+AnnotationAssertion(terms:creator obo:MRIO_0000370 <http://orcid.org/0000-0002-2104-0568>)
 AnnotationAssertion(rdfs:label obo:MRIO_0000370 "sagittal"@en)
 SubClassOf(obo:MRIO_0000370 obo:MRIO_0000356)
 
 # Class: obo:MRIO_0000371 (coronal)
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000371 "The plane that divides the body into ventral and dorsal sections.")
-AnnotationAssertion(dc:creator obo:MRIO_0000371 <http://orcid.org/0000-0002-2104-0568>)
+AnnotationAssertion(terms:creator obo:MRIO_0000371 <http://orcid.org/0000-0002-2104-0568>)
 AnnotationAssertion(rdfs:label obo:MRIO_0000371 "coronal"@en)
 SubClassOf(obo:MRIO_0000371 obo:MRIO_0000356)
 
 # Class: obo:MRIO_0000372 (transverse)
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000372 "The plane that divides the body into inferior and superior sections.")
-AnnotationAssertion(dc:creator obo:MRIO_0000372 <http://orcid.org/0000-0002-2104-0568>)
+AnnotationAssertion(terms:creator obo:MRIO_0000372 <http://orcid.org/0000-0002-2104-0568>)
 AnnotationAssertion(rdfs:label obo:MRIO_0000372 "transverse"@en)
 SubClassOf(obo:MRIO_0000372 obo:MRIO_0000356)
 
 # Class: obo:MRIO_0000378 (MRI machine)
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000378 "An image creation device that creates magnetic resonance images")
-AnnotationAssertion(dc:creator obo:MRIO_0000378 <http://orcid.org/0000-0002-2104-0568>)
+AnnotationAssertion(terms:creator obo:MRIO_0000378 <http://orcid.org/0000-0002-2104-0568>)
 AnnotationAssertion(rdfs:label obo:MRIO_0000378 "MRI machine"@en)
 AnnotationAssertion(owl:deprecated obo:MRIO_0000378 "true"^^xsd:boolean)
 SubClassOf(obo:MRIO_0000378 oboInOwl:ObsoleteClass)
@@ -756,7 +757,7 @@ SubClassOf(obo:MRIO_0000378 oboInOwl:ObsoleteClass)
 # Class: obo:MRIO_0000380 (MRI machine setting datum)
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000380 "The setting datum of an MRI machine")
-AnnotationAssertion(dc:creator obo:MRIO_0000380 <http://orcid.org/0000-0002-2104-0568>)
+AnnotationAssertion(terms:creator obo:MRIO_0000380 <http://orcid.org/0000-0002-2104-0568>)
 AnnotationAssertion(rdfs:label obo:MRIO_0000380 "MRI machine setting datum"@en)
 EquivalentClasses(obo:MRIO_0000380 ObjectIntersectionOf(obo:IAO_0000140 ObjectSomeValuesFrom(obo:IAO_0000136 obo:OBI_0000566)))
 SubClassOf(obo:MRIO_0000380 obo:IAO_0000140)
@@ -764,7 +765,7 @@ SubClassOf(obo:MRIO_0000380 obo:IAO_0000140)
 # Class: obo:MRIO_0000381 (magnetic resonance imaging datum)
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000381 "A measurement datum produced by an MRI machine prior to transformation.")
-AnnotationAssertion(dc:creator obo:MRIO_0000381 <http://orcid.org/0000-0002-2104-0568>)
+AnnotationAssertion(terms:creator obo:MRIO_0000381 <http://orcid.org/0000-0002-2104-0568>)
 AnnotationAssertion(rdfs:label obo:MRIO_0000381 "magnetic resonance imaging datum"@en)
 AnnotationAssertion(owl:deprecated obo:MRIO_0000381 "true"^^xsd:boolean)
 SubClassOf(obo:MRIO_0000381 oboInOwl:ObsoleteClass)
@@ -772,7 +773,7 @@ SubClassOf(obo:MRIO_0000381 oboInOwl:ObsoleteClass)
 # Class: obo:MRIO_0000382 (magnetic resonance imaging data transformation)
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000382 "A planned process that produces magnetic resonance images from magnetic resonance imaging datum.")
-AnnotationAssertion(dc:creator obo:MRIO_0000382 <http://orcid.org/0000-0002-2104-0568>)
+AnnotationAssertion(terms:creator obo:MRIO_0000382 <http://orcid.org/0000-0002-2104-0568>)
 AnnotationAssertion(rdfs:label obo:MRIO_0000382 "magnetic resonance imaging data transformation"@en)
 AnnotationAssertion(owl:deprecated obo:MRIO_0000382 "true"^^xsd:boolean)
 SubClassOf(obo:MRIO_0000382 oboInOwl:ObsoleteClass)
@@ -885,7 +886,7 @@ SubClassOf(obo:MRIO_0000392 ObjectSomeValuesFrom(obo:OBI_0000299 obo:OBI_0003349
 # Class: obo:MRIO_0000394 (1.5T MRI machine)
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000394 "An MRI machine whose primary magnet has 1.5T of strength.")
-AnnotationAssertion(dc:creator obo:MRIO_0000394 <http://orcid.org/0000-0002-2104-0568>)
+AnnotationAssertion(terms:creator obo:MRIO_0000394 <http://orcid.org/0000-0002-2104-0568>)
 AnnotationAssertion(rdfs:label obo:MRIO_0000394 "1.5T MRI machine"@en)
 AnnotationAssertion(owl:deprecated obo:MRIO_0000394 "true"^^xsd:boolean)
 SubClassOf(obo:MRIO_0000394 oboInOwl:ObsoleteClass)
@@ -893,7 +894,7 @@ SubClassOf(obo:MRIO_0000394 oboInOwl:ObsoleteClass)
 # Class: obo:MRIO_0000395 (3T MRI machine)
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000395 "An MRI machine whose primary magnet has 3T of strength.")
-AnnotationAssertion(dc:creator obo:MRIO_0000395 <http://orcid.org/0000-0002-2104-0568>)
+AnnotationAssertion(terms:creator obo:MRIO_0000395 <http://orcid.org/0000-0002-2104-0568>)
 AnnotationAssertion(rdfs:label obo:MRIO_0000395 "3T MRI machine"@en)
 AnnotationAssertion(owl:deprecated obo:MRIO_0000395 "true"^^xsd:boolean)
 SubClassOf(obo:MRIO_0000395 oboInOwl:ObsoleteClass)
@@ -1180,7 +1181,7 @@ SubClassOf(obo:MRIO_0000525 ObjectSomeValuesFrom(obo:OBI_0000299 obo:MRIO_000066
 
 # Class: obo:MRIO_0000526 (segmented region mask)
 
-AnnotationAssertion(dc:creator obo:MRIO_0000526 <http://orcid.org/0000-0002-2104-0568>)
+AnnotationAssertion(terms:creator obo:MRIO_0000526 <http://orcid.org/0000-0002-2104-0568>)
 AnnotationAssertion(rdfs:label obo:MRIO_0000526 "segmented region mask"@en)
 AnnotationAssertion(owl:deprecated obo:MRIO_0000526 "true"^^xsd:boolean)
 SubClassOf(obo:MRIO_0000526 oboInOwl:ObsoleteClass)
@@ -1188,7 +1189,7 @@ SubClassOf(obo:MRIO_0000526 oboInOwl:ObsoleteClass)
 # Class: obo:MRIO_0000527 (text file)
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000527 "Digital entity containing textual information or strings.")
-AnnotationAssertion(dc:creator obo:MRIO_0000527 <http://orcid.org/0000-0002-2104-0568>)
+AnnotationAssertion(terms:creator obo:MRIO_0000527 <http://orcid.org/0000-0002-2104-0568>)
 AnnotationAssertion(rdfs:label obo:MRIO_0000527 "text file"@en)
 AnnotationAssertion(owl:deprecated obo:MRIO_0000527 "true"^^xsd:boolean)
 SubClassOf(obo:MRIO_0000527 oboInOwl:ObsoleteClass)
@@ -1243,7 +1244,7 @@ SubClassOf(obo:MRIO_0000602 oboInOwl:ObsoleteClass)
 # Class: obo:MRIO_0000603 (T2 lesion mask)
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000603 "A lesion mask where the lesions are derived from a T2 weighted image data set.")
-AnnotationAssertion(dc:creator obo:MRIO_0000603 "https://orcid.org/0000-0001-9676-7377")
+AnnotationAssertion(terms:creator obo:MRIO_0000603 "https://orcid.org/0000-0001-9676-7377")
 AnnotationAssertion(rdfs:label obo:MRIO_0000603 "T2 lesion mask"@en)
 AnnotationAssertion(owl:deprecated obo:MRIO_0000603 "true"^^xsd:boolean)
 SubClassOf(obo:MRIO_0000603 oboInOwl:ObsoleteClass)
@@ -1426,7 +1427,7 @@ SubClassOf(obo:MRIO_0000627 ObjectSomeValuesFrom(obo:IAO_0000136 obo:MRIO_000062
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000628 "Generated by the frequency-encode gradient, except that it is used twice in succession, and in opposite directions.")
 AnnotationAssertion(obo:IAO_0000116 obo:MRIO_0000628 "This and spin echo are the major child classes of magnetic resonance pulse sequence")
 AnnotationAssertion(obo:IAO_0000117 obo:MRIO_0000628 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"")
-AnnotationAssertion(dc:source obo:MRIO_0000628 "https://radiopaedia.org/articles/gradient-echo-sequences-1?lang=us")
+AnnotationAssertion(terms:source obo:MRIO_0000628 "https://radiopaedia.org/articles/gradient-echo-sequences-1?lang=us")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:MRIO_0000628 "GRE")
 AnnotationAssertion(rdfs:label obo:MRIO_0000628 "gradient echo sequence"@en)
 SubClassOf(obo:MRIO_0000628 obo:OBI_0003332)
@@ -1437,7 +1438,7 @@ SubClassOf(obo:MRIO_0000628 ObjectIntersectionOf(ObjectSomeValuesFrom(obo:MRIO_0
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000629 "Multiple echoes of different phase steps are acquired by rapidly reversing the readout or frequency- encoding gradient using a gradient echo sequence."@en)
 AnnotationAssertion(obo:IAO_0000116 obo:MRIO_0000629 "Can we add that this may optionally be about some spin echo sequence, but not necessary for an instance of this class?"@en)
 AnnotationAssertion(obo:IAO_0000117 obo:MRIO_0000629 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"")
-AnnotationAssertion(dc:source obo:MRIO_0000629 "https://radiopaedia.org/articles/echo-planar-imaging-1?lang=us"@en)
+AnnotationAssertion(terms:source obo:MRIO_0000629 "https://radiopaedia.org/articles/echo-planar-imaging-1?lang=us"@en)
 AnnotationAssertion(rdfs:label obo:MRIO_0000629 "GRE echo planar sequence"@en)
 SubClassOf(obo:MRIO_0000629 ObjectIntersectionOf(obo:MRIO_0000628 ObjectIntersectionOf(ObjectSomeValuesFrom(obo:MRIO_0000688 obo:MRIO_0000357) ObjectSomeValuesFrom(obo:MRIO_0000688 obo:MRIO_0000358))))
 
@@ -1445,7 +1446,7 @@ SubClassOf(obo:MRIO_0000629 ObjectIntersectionOf(obo:MRIO_0000628 ObjectIntersec
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000630 "Angle at which a proton\"s axis shifts from its longitudinal place to its transverse plane by excitation from radiofrequency pulses."@en)
 AnnotationAssertion(obo:IAO_0000118 obo:MRIO_0000630 "FA")
-AnnotationAssertion(dc:source obo:MRIO_0000630 "https://radiopaedia.org/articles/flip-angle?lang=us"@en)
+AnnotationAssertion(terms:source obo:MRIO_0000630 "https://radiopaedia.org/articles/flip-angle?lang=us"@en)
 AnnotationAssertion(rdfs:label obo:MRIO_0000630 "flip angle"@en)
 SubClassOf(obo:MRIO_0000630 obo:MRIO_0000342)
 
@@ -1678,7 +1679,7 @@ SubClassOf(obo:MRIO_0000654 ObjectSomeValuesFrom(obo:IAO_0000136 obo:MRIO_000070
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000655 "Measures the degree of diffusion weighting applied, thereby indicating the amplitude (G), time of applied gradients (δ) and duration between the paired gradients (Δ).")
 AnnotationAssertion(obo:IAO_0000118 obo:MRIO_0000655 "diffusion weighting")
-AnnotationAssertion(dc:source obo:MRIO_0000655 "https://radiopaedia.org/articles/b-values-1?lang=us")
+AnnotationAssertion(terms:source obo:MRIO_0000655 "https://radiopaedia.org/articles/b-values-1?lang=us")
 AnnotationAssertion(rdfs:label obo:MRIO_0000655 "diffusion b value"@en)
 SubClassOf(obo:MRIO_0000655 obo:MRIO_0000342)
 
@@ -1692,7 +1693,7 @@ SubClassOf(obo:MRIO_0000656 obo:MRIO_0000521)
 # Class: obo:MRIO_0000657 (MRI acquisition sequence process)
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000657 "Radiofrequency pulses and gradients that result in a set of magnetic resonance image data sets with a particular appearance.")
-AnnotationAssertion(dc:source obo:MRIO_0000657 "https://radiopaedia.org/articles/mri-sequences-overview?lang=us")
+AnnotationAssertion(terms:source obo:MRIO_0000657 "https://radiopaedia.org/articles/mri-sequences-overview?lang=us")
 AnnotationAssertion(rdfs:label obo:MRIO_0000657 "MRI acquisition sequence process"@en)
 AnnotationAssertion(owl:deprecated obo:MRIO_0000657 "true"^^xsd:boolean)
 SubClassOf(obo:MRIO_0000657 oboInOwl:ObsoleteClass)
@@ -1709,7 +1710,7 @@ SubClassOf(obo:MRIO_0000658 ObjectSomeValuesFrom(obo:OBI_0000299 obo:OBI_0003361
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000659 "The refocusing of spin magnetisation by a pulse of resonant electromagnetic radiation.")
 AnnotationAssertion(obo:IAO_0000117 obo:MRIO_0000659 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"")
-AnnotationAssertion(dc:source obo:MRIO_0000659 "https://doi.org/10.1063%2F1.1670306")
+AnnotationAssertion(terms:source obo:MRIO_0000659 "https://doi.org/10.1063%2F1.1670306")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:MRIO_0000659 "SE")
 AnnotationAssertion(rdfs:label obo:MRIO_0000659 "spin echo sequence"@en)
 SubClassOf(obo:MRIO_0000659 obo:OBI_0003332)
@@ -1728,7 +1729,7 @@ SubClassOf(obo:MRIO_0000660 ObjectSomeValuesFrom(obo:OBI_0000293 obo:OBI_0003344
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000661 "A gradient echo pulse sequence preceded by a 180° RF pulse.")
 AnnotationAssertion(obo:IAO_0000116 obo:MRIO_0000661 "TODO: Create specific subclass of this and echo panar sequence for both GRE and SE.")
 AnnotationAssertion(obo:IAO_0000117 obo:MRIO_0000661 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"")
-AnnotationAssertion(dc:source obo:MRIO_0000661 "https://radiopaedia.org/articles/inversion-recovery-sequences?lang=us")
+AnnotationAssertion(terms:source obo:MRIO_0000661 "https://radiopaedia.org/articles/inversion-recovery-sequences?lang=us")
 AnnotationAssertion(rdfs:label obo:MRIO_0000661 "GRE inversion recovery sequence"@en)
 SubClassOf(obo:MRIO_0000661 ObjectIntersectionOf(obo:MRIO_0000628 ObjectSomeValuesFrom(obo:MRIO_0000688 obo:MRIO_0000653)))
 
@@ -2223,7 +2224,7 @@ SubClassOf(obo:MRIO_0000709 ObjectSomeValuesFrom(obo:IAO_0000136 obo:MRIO_000069
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000711 "Multiple echoes of different phase steps are acquired by rapidly reversing the readout or frequency- encoding gradient using a spin echo sequence."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:MRIO_0000711 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"")
-AnnotationAssertion(dc:source obo:MRIO_0000711 "https://radiopaedia.org/articles/echo-planar-imaging-1?lang=us"@en)
+AnnotationAssertion(terms:source obo:MRIO_0000711 "https://radiopaedia.org/articles/echo-planar-imaging-1?lang=us"@en)
 AnnotationAssertion(rdfs:label obo:MRIO_0000711 "SE echo planar sequence"@en)
 SubClassOf(obo:MRIO_0000711 ObjectIntersectionOf(obo:MRIO_0000659 ObjectIntersectionOf(ObjectSomeValuesFrom(obo:MRIO_0000688 obo:MRIO_0000357) ObjectSomeValuesFrom(obo:MRIO_0000688 obo:MRIO_0000358))))
 
@@ -2232,7 +2233,7 @@ SubClassOf(obo:MRIO_0000711 ObjectIntersectionOf(obo:MRIO_0000659 ObjectIntersec
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000712 "A spin echo pulse sequence preceded by a 180° RF pulse.")
 AnnotationAssertion(obo:IAO_0000116 obo:MRIO_0000712 "TODO: Create specific subclass of this and echo panar sequence for both GRE and SE.")
 AnnotationAssertion(obo:IAO_0000117 obo:MRIO_0000712 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"")
-AnnotationAssertion(dc:source obo:MRIO_0000712 "https://radiopaedia.org/articles/inversion-recovery-sequences?lang=us")
+AnnotationAssertion(terms:source obo:MRIO_0000712 "https://radiopaedia.org/articles/inversion-recovery-sequences?lang=us")
 AnnotationAssertion(rdfs:label obo:MRIO_0000712 "SE inversion recovery sequence"@en)
 SubClassOf(obo:MRIO_0000712 ObjectIntersectionOf(obo:MRIO_0000659 ObjectSomeValuesFrom(obo:MRIO_0000688 obo:MRIO_0000653)))
 
@@ -2452,8 +2453,8 @@ SubClassOf(obo:MRIO_0003071 ObjectSomeValuesFrom(obo:IAO_0000136 obo:UBERON_0001
 # Class: obo:MRIO_1000000 (vascular space occupancy signal)
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_1000000 "A scalar measurement datum recording the vascular space occupancy (VASO) signal, which reflects changes in cerebral blood volume by using changes in the MRI signal associated with variations in blood volume within the brain.")
-AnnotationAssertion(dc:creator obo:MRIO_1000000 <https://orcid.org/0009-0004-2155-902X>)
-AnnotationAssertion(dc:date obo:MRIO_1000000 "2024-07-26T16:28:29Z"^^xsd:dateTime)
+AnnotationAssertion(terms:creator obo:MRIO_1000000 <https://orcid.org/0009-0004-2155-902X>)
+AnnotationAssertion(terms:date obo:MRIO_1000000 "2024-07-26T16:28:29Z"^^xsd:dateTime)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:MRIO_1000000 "VASO signal")
 AnnotationAssertion(rdfs:label obo:MRIO_1000000 "vascular space occupancy signal"@en)
 SubClassOf(obo:MRIO_1000000 obo:IAO_0000032)
@@ -2461,8 +2462,8 @@ SubClassOf(obo:MRIO_1000000 obo:IAO_0000032)
 # Class: obo:MRIO_1000001 (arterial spin labeling signal)
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_1000001 "A scalar measurement datum recording the arterial spin labeling (ASL) signal, which reflects cerebral blood flow by using magnetically labeled arterial blood water as an endogenous tracer.")
-AnnotationAssertion(dc:creator obo:MRIO_1000001 <https://orcid.org/0009-0004-2155-902X>)
-AnnotationAssertion(dc:date obo:MRIO_1000001 "2024-07-26T16:29:12Z"^^xsd:dateTime)
+AnnotationAssertion(terms:creator obo:MRIO_1000001 <https://orcid.org/0009-0004-2155-902X>)
+AnnotationAssertion(terms:date obo:MRIO_1000001 "2024-07-26T16:29:12Z"^^xsd:dateTime)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:MRIO_1000001 "ASL signal")
 AnnotationAssertion(rdfs:label obo:MRIO_1000001 "arterial spin labeling signal"@en)
 SubClassOf(obo:MRIO_1000001 obo:IAO_0000032)
@@ -2470,8 +2471,8 @@ SubClassOf(obo:MRIO_1000001 obo:IAO_0000032)
 # Class: obo:MRIO_1000002 (blood oxygenation level dependent signal)
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_1000002 "A measurement datum recording the blood oxygen level dependent (BOLD) signal, which reflects changes in deoxyhemoglobin driven by localized changes in brain blood flow and blood oxygenation.")
-AnnotationAssertion(dc:creator obo:MRIO_1000002 <https://orcid.org/0009-0004-2155-902X>)
-AnnotationAssertion(dc:date obo:MRIO_1000002 "2024-07-26T16:29:26Z"^^xsd:dateTime)
+AnnotationAssertion(terms:creator obo:MRIO_1000002 <https://orcid.org/0009-0004-2155-902X>)
+AnnotationAssertion(terms:date obo:MRIO_1000002 "2024-07-26T16:29:26Z"^^xsd:dateTime)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:MRIO_1000002 "BOLD signal")
 AnnotationAssertion(rdfs:label obo:MRIO_1000002 "blood oxygenation level dependent signal"@en)
 SubClassOf(obo:MRIO_1000002 obo:IAO_0000032)
@@ -2479,8 +2480,8 @@ SubClassOf(obo:MRIO_1000002 obo:IAO_0000032)
 # Class: obo:MRIO_1000003 (functional magnetic resonance imaging sequence protocol)
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_1000003 "A protocol that specifies the parameters and procedures for conducting functional magnetic resonance imaging (fMRI) to measure brain activity and connectivity.")
-AnnotationAssertion(dc:creator obo:MRIO_1000003 <https://orcid.org/0009-0004-2155-902X>)
-AnnotationAssertion(dc:date obo:MRIO_1000003 "2024-07-26T17:19:33Z"^^xsd:dateTime)
+AnnotationAssertion(terms:creator obo:MRIO_1000003 <https://orcid.org/0009-0004-2155-902X>)
+AnnotationAssertion(terms:date obo:MRIO_1000003 "2024-07-26T17:19:33Z"^^xsd:dateTime)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:MRIO_1000003 "fMRI sequence protocol")
 AnnotationAssertion(rdfs:label obo:MRIO_1000003 "functional magnetic resonance imaging sequence protocol"@en)
 SubClassOf(obo:MRIO_1000003 obo:OBI_0000272)
@@ -2488,8 +2489,8 @@ SubClassOf(obo:MRIO_1000003 obo:OBI_0000272)
 # Class: obo:MRIO_1000004 (brain activation map)
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_1000004 "A data item that is a representation of brain regions that exhibit statistically significant changes in neural activity in response to an experimental task or stimuli.")
-AnnotationAssertion(dc:creator obo:MRIO_1000004 <https://orcid.org/0009-0004-2155-902X>)
-AnnotationAssertion(dc:date obo:MRIO_1000004 "2024-07-26T17:30:23Z"^^xsd:dateTime)
+AnnotationAssertion(terms:creator obo:MRIO_1000004 <https://orcid.org/0009-0004-2155-902X>)
+AnnotationAssertion(terms:date obo:MRIO_1000004 "2024-07-26T17:30:23Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label obo:MRIO_1000004 "brain activation map"@en)
 EquivalentClasses(obo:MRIO_1000004 ObjectIntersectionOf(obo:IAO_0000027 ObjectIntersectionOf(ObjectSomeValuesFrom(obo:OBI_0000312 obo:MRIO_0000420) ObjectSomeValuesFrom(obo:RO_0000052 obo:OBI_0003336))))
 SubClassOf(obo:MRIO_1000004 obo:IAO_0000027)
@@ -2497,8 +2498,8 @@ SubClassOf(obo:MRIO_1000004 obo:IAO_0000027)
 # Class: obo:MRIO_1000005 (production of activation map based on a blood oxygenation level dependent functional magnetic resonance image data set)
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_1000005 "A functional mapping that produces an activation map that is based on a blood oxygenation level dependent (BOLD) functional magnetic resonance image data set.")
-AnnotationAssertion(dc:creator obo:MRIO_1000005 <https://orcid.org/0009-0004-2155-902X>)
-AnnotationAssertion(dc:date obo:MRIO_1000005 "2024-07-26T18:09:23Z"^^xsd:dateTime)
+AnnotationAssertion(terms:creator obo:MRIO_1000005 <https://orcid.org/0009-0004-2155-902X>)
+AnnotationAssertion(terms:date obo:MRIO_1000005 "2024-07-26T18:09:23Z"^^xsd:dateTime)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:MRIO_1000005 "production of activation map based on a BOLD functional magnetic resonance image data set")
 AnnotationAssertion(rdfs:label obo:MRIO_1000005 "production of activation map based on a blood oxygenation level dependent functional magnetic resonance image data set"@en)
 EquivalentClasses(obo:MRIO_1000005 ObjectIntersectionOf(obo:MRIO_0000420 ObjectSomeValuesFrom(obo:OBI_0000299 obo:MRIO_1000008)))
@@ -2507,8 +2508,8 @@ SubClassOf(obo:MRIO_1000005 obo:MRIO_0000420)
 # Class: obo:MRIO_1000006 (production of activation map based on a vascular space occupancy functional magnetic resonance image data set)
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_1000006 "A functional mapping that produces an activation map that is based on a vascular space occupancy (VASO) functional magnetic resonance image data set.")
-AnnotationAssertion(dc:creator obo:MRIO_1000006 <https://orcid.org/0009-0004-2155-902X>)
-AnnotationAssertion(dc:date obo:MRIO_1000006 "2024-07-26T18:10:45Z"^^xsd:dateTime)
+AnnotationAssertion(terms:creator obo:MRIO_1000006 <https://orcid.org/0009-0004-2155-902X>)
+AnnotationAssertion(terms:date obo:MRIO_1000006 "2024-07-26T18:10:45Z"^^xsd:dateTime)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:MRIO_1000006 "production of activation map based on a VASO functional magnetic resonance image data set")
 AnnotationAssertion(rdfs:label obo:MRIO_1000006 "production of activation map based on a vascular space occupancy functional magnetic resonance image data set"@en)
 EquivalentClasses(obo:MRIO_1000006 ObjectIntersectionOf(obo:MRIO_0000420 ObjectSomeValuesFrom(obo:OBI_0000299 obo:MRIO_1000009)))
@@ -2517,8 +2518,8 @@ SubClassOf(obo:MRIO_1000006 obo:MRIO_0000420)
 # Class: obo:MRIO_1000007 (production of activation map based on a arterial spin labeling functional magnetic resonance image data set)
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_1000007 "A functional mapping that produces an activation map that is based on a arterial spin labeling (ASL) functional magnetic resonance image data set.")
-AnnotationAssertion(dc:creator obo:MRIO_1000007 <https://orcid.org/0009-0004-2155-902X>)
-AnnotationAssertion(dc:date obo:MRIO_1000007 "2024-07-26T18:12:34Z"^^xsd:dateTime)
+AnnotationAssertion(terms:creator obo:MRIO_1000007 <https://orcid.org/0009-0004-2155-902X>)
+AnnotationAssertion(terms:date obo:MRIO_1000007 "2024-07-26T18:12:34Z"^^xsd:dateTime)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:MRIO_1000007 "production of activation map based on a ASL functional magnetic resonance image data set")
 AnnotationAssertion(rdfs:label obo:MRIO_1000007 "production of activation map based on a arterial spin labeling functional magnetic resonance image data set"@en)
 EquivalentClasses(obo:MRIO_1000007 ObjectIntersectionOf(obo:MRIO_0000420 ObjectSomeValuesFrom(obo:OBI_0000299 obo:MRIO_1000010)))
@@ -2527,8 +2528,8 @@ SubClassOf(obo:MRIO_1000007 obo:MRIO_0000420)
 # Class: obo:MRIO_1000008 (blood oxygenation level dependent activation map)
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_1000008 "An activation map derived from a blood oxygenation level dependent (BOLD) functional magnetic resonance image data set.")
-AnnotationAssertion(dc:creator obo:MRIO_1000008 <https://orcid.org/0009-0004-2155-902X>)
-AnnotationAssertion(dc:date obo:MRIO_1000008 "2024-07-26T18:16:22Z"^^xsd:dateTime)
+AnnotationAssertion(terms:creator obo:MRIO_1000008 <https://orcid.org/0009-0004-2155-902X>)
+AnnotationAssertion(terms:date obo:MRIO_1000008 "2024-07-26T18:16:22Z"^^xsd:dateTime)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:MRIO_1000008 "BOLD activation map")
 AnnotationAssertion(rdfs:label obo:MRIO_1000008 "blood oxygenation level dependent activation map"@en)
 EquivalentClasses(obo:MRIO_1000008 ObjectIntersectionOf(ObjectSomeValuesFrom(obo:OBI_0000312 obo:MRIO_1000005) ObjectSomeValuesFrom(obo:RO_0000052 obo:MRIO_1000044)))
@@ -2537,8 +2538,8 @@ SubClassOf(obo:MRIO_1000008 obo:MRIO_1000004)
 # Class: obo:MRIO_1000009 (vascular space occupancy activation map)
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_1000009 "An activation map derived from a vascular space occupancy (VASO) functional magnetic resonance image data set.")
-AnnotationAssertion(dc:creator obo:MRIO_1000009 <https://orcid.org/0009-0004-2155-902X>)
-AnnotationAssertion(dc:date obo:MRIO_1000009 "2024-07-26T18:17:27Z"^^xsd:dateTime)
+AnnotationAssertion(terms:creator obo:MRIO_1000009 <https://orcid.org/0009-0004-2155-902X>)
+AnnotationAssertion(terms:date obo:MRIO_1000009 "2024-07-26T18:17:27Z"^^xsd:dateTime)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:MRIO_1000009 "VASO activation map")
 AnnotationAssertion(rdfs:label obo:MRIO_1000009 "vascular space occupancy activation map"@en)
 EquivalentClasses(obo:MRIO_1000009 ObjectIntersectionOf(ObjectSomeValuesFrom(obo:OBI_0000312 obo:MRIO_1000006) ObjectSomeValuesFrom(obo:RO_0000052 obo:MRIO_1000047)))
@@ -2547,8 +2548,8 @@ SubClassOf(obo:MRIO_1000009 obo:MRIO_1000004)
 # Class: obo:MRIO_1000010 (arterial spin labeling activation map)
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_1000010 "An activation map derived from an arterial spin labeling (ASL) functional magnetic resonance image data set.")
-AnnotationAssertion(dc:creator obo:MRIO_1000010 <https://orcid.org/0009-0004-2155-902X>)
-AnnotationAssertion(dc:date obo:MRIO_1000010 "2024-07-26T18:17:37Z"^^xsd:dateTime)
+AnnotationAssertion(terms:creator obo:MRIO_1000010 <https://orcid.org/0009-0004-2155-902X>)
+AnnotationAssertion(terms:date obo:MRIO_1000010 "2024-07-26T18:17:37Z"^^xsd:dateTime)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:MRIO_1000010 "ASL activation map")
 AnnotationAssertion(rdfs:label obo:MRIO_1000010 "arterial spin labeling activation map"@en)
 EquivalentClasses(obo:MRIO_1000010 ObjectIntersectionOf(ObjectSomeValuesFrom(obo:OBI_0000312 obo:MRIO_1000007) ObjectSomeValuesFrom(obo:RO_0000052 obo:MRIO_1000041)))
@@ -2557,64 +2558,64 @@ SubClassOf(obo:MRIO_1000010 obo:MRIO_1000004)
 # Class: obo:MRIO_1000011 (functional connectivity)
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_1000011 "A method used in functional MRI data set analysis that examines correlations in activity between spatially remote brain regions.")
-AnnotationAssertion(dc:creator obo:MRIO_1000011 <https://orcid.org/0009-0004-2155-902X>)
-AnnotationAssertion(dc:date obo:MRIO_1000011 "2024-07-29T18:05:31Z"^^xsd:dateTime)
+AnnotationAssertion(terms:creator obo:MRIO_1000011 <https://orcid.org/0009-0004-2155-902X>)
+AnnotationAssertion(terms:date obo:MRIO_1000011 "2024-07-29T18:05:31Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label obo:MRIO_1000011 "functional connectivity"@en)
 SubClassOf(obo:MRIO_1000011 obo:MRIO_0000421)
 
 # Class: obo:MRIO_1000012 (effective connectivity)
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_1000012 "A type of functional connectivity that reflects the direct influence of one brain region on another in relation to functional activity.")
-AnnotationAssertion(dc:creator obo:MRIO_1000012 <https://orcid.org/0009-0004-2155-902X>)
-AnnotationAssertion(dc:date obo:MRIO_1000012 "2024-07-29T18:08:06Z"^^xsd:dateTime)
+AnnotationAssertion(terms:creator obo:MRIO_1000012 <https://orcid.org/0009-0004-2155-902X>)
+AnnotationAssertion(terms:date obo:MRIO_1000012 "2024-07-29T18:08:06Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label obo:MRIO_1000012 "effective connectivity"@en)
 SubClassOf(obo:MRIO_1000012 obo:MRIO_1000011)
 
 # Class: obo:MRIO_1000013 (static functional connectivity)
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_1000013 "A type of functional connectivity that measures consistent or stable correlations in brain activity between regions over a period of time during functional magnetic resonance imaging (fMRI).")
-AnnotationAssertion(dc:creator obo:MRIO_1000013 <https://orcid.org/0009-0004-2155-902X>)
-AnnotationAssertion(dc:date obo:MRIO_1000013 "2024-07-29T18:09:46Z"^^xsd:dateTime)
+AnnotationAssertion(terms:creator obo:MRIO_1000013 <https://orcid.org/0009-0004-2155-902X>)
+AnnotationAssertion(terms:date obo:MRIO_1000013 "2024-07-29T18:09:46Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label obo:MRIO_1000013 "static functional connectivity"@en)
 SubClassOf(obo:MRIO_1000013 obo:MRIO_1000011)
 
 # Class: obo:MRIO_1000014 (dynamic functional connectivity)
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_1000014 "A type of functional connectivity that measures temporal variations in connectivity patterns between brain regions over time during functional magnetic resonance imaging (fMRI).")
-AnnotationAssertion(dc:creator obo:MRIO_1000014 <https://orcid.org/0009-0004-2155-902X>)
-AnnotationAssertion(dc:date obo:MRIO_1000014 "2024-07-29T18:11:26Z"^^xsd:dateTime)
+AnnotationAssertion(terms:creator obo:MRIO_1000014 <https://orcid.org/0009-0004-2155-902X>)
+AnnotationAssertion(terms:date obo:MRIO_1000014 "2024-07-29T18:11:26Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label obo:MRIO_1000014 "dynamic functional connectivity"@en)
 SubClassOf(obo:MRIO_1000014 obo:MRIO_1000011)
 
 # Class: obo:MRIO_1000015 (task-based functional connectivity)
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_1000015 "A type of functional connectivity that assesses how brain regions interact with each other while a subject performs specific tasks during functional magnetic resonance imaging (fMRI).")
-AnnotationAssertion(dc:creator obo:MRIO_1000015 <https://orcid.org/0009-0004-2155-902X>)
-AnnotationAssertion(dc:date obo:MRIO_1000015 "2024-07-29T18:16:41Z"^^xsd:dateTime)
+AnnotationAssertion(terms:creator obo:MRIO_1000015 <https://orcid.org/0009-0004-2155-902X>)
+AnnotationAssertion(terms:date obo:MRIO_1000015 "2024-07-29T18:16:41Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label obo:MRIO_1000015 "task-based functional connectivity"@en)
 SubClassOf(obo:MRIO_1000015 obo:MRIO_1000011)
 
 # Class: obo:MRIO_1000016 (resting state functional connectivity)
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_1000016 "A type of functional connectivity that evaluates the interactions between brain regions while the subject is at rest during functional magnetic resonance imaging (fMRI).")
-AnnotationAssertion(dc:creator obo:MRIO_1000016 <https://orcid.org/0009-0004-2155-902X>)
-AnnotationAssertion(dc:date obo:MRIO_1000016 "2024-07-29T18:17:09Z"^^xsd:dateTime)
+AnnotationAssertion(terms:creator obo:MRIO_1000016 <https://orcid.org/0009-0004-2155-902X>)
+AnnotationAssertion(terms:date obo:MRIO_1000016 "2024-07-29T18:17:09Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label obo:MRIO_1000016 "resting state functional connectivity"@en)
 SubClassOf(obo:MRIO_1000016 obo:MRIO_1000011)
 
 # Class: obo:MRIO_1000017 (seed-based functional connectivity)
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_1000017 "A method used to investigate functional connectivity between brain regions using a predefined seed voxel or region.")
-AnnotationAssertion(dc:creator obo:MRIO_1000017 <https://orcid.org/0009-0004-2155-902X>)
-AnnotationAssertion(dc:date obo:MRIO_1000017 "2024-07-29T18:22:19Z"^^xsd:dateTime)
+AnnotationAssertion(terms:creator obo:MRIO_1000017 <https://orcid.org/0009-0004-2155-902X>)
+AnnotationAssertion(terms:date obo:MRIO_1000017 "2024-07-29T18:22:19Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label obo:MRIO_1000017 "seed-based functional connectivity"@en)
 SubClassOf(obo:MRIO_1000017 obo:MRIO_1000011)
 
 # Class: obo:MRIO_1000018 (region of interest analysis)
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_1000018 "A method within functional MRI data set analysis that involves defining specific brain regions or areas of interest a priori and examining the neural activity within those regions.")
-AnnotationAssertion(dc:creator obo:MRIO_1000018 <https://orcid.org/0009-0004-2155-902X>)
-AnnotationAssertion(dc:date obo:MRIO_1000018 "2024-07-29T18:27:21Z"^^xsd:dateTime)
+AnnotationAssertion(terms:creator obo:MRIO_1000018 <https://orcid.org/0009-0004-2155-902X>)
+AnnotationAssertion(terms:date obo:MRIO_1000018 "2024-07-29T18:27:21Z"^^xsd:dateTime)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:MRIO_1000018 "ROI analysis")
 AnnotationAssertion(rdfs:label obo:MRIO_1000018 "region of interest analysis"@en)
 SubClassOf(obo:MRIO_1000018 obo:MRIO_0000421)
@@ -2622,8 +2623,8 @@ SubClassOf(obo:MRIO_1000018 obo:MRIO_0000421)
 # Class: obo:MRIO_1000019 (multi-voxel pattern analysis)
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_1000019 "A type of functional MRI data set analysis that attempts to analyze the information present in patterns of activity rather than the response at individual voxels.")
-AnnotationAssertion(dc:creator obo:MRIO_1000019 <https://orcid.org/0009-0004-2155-902X>)
-AnnotationAssertion(dc:date obo:MRIO_1000019 "2024-07-29T18:27:45Z"^^xsd:dateTime)
+AnnotationAssertion(terms:creator obo:MRIO_1000019 <https://orcid.org/0009-0004-2155-902X>)
+AnnotationAssertion(terms:date obo:MRIO_1000019 "2024-07-29T18:27:45Z"^^xsd:dateTime)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:MRIO_1000019 "MVPA")
 AnnotationAssertion(rdfs:label obo:MRIO_1000019 "multi-voxel pattern analysis"@en)
 SubClassOf(obo:MRIO_1000019 obo:MRIO_0000421)
@@ -2631,32 +2632,32 @@ SubClassOf(obo:MRIO_1000019 obo:MRIO_0000421)
 # Class: obo:MRIO_1000020 (seed voxel correlation: within-subjects)
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_1000020 "A method used in seed-based functional connectivity that involves extracting the time course from a seed voxel, determined based on some a priori hypothesis, and computing its correlation with all the voxels across the brain.")
-AnnotationAssertion(dc:creator obo:MRIO_1000020 <https://orcid.org/0009-0004-2155-902X>)
-AnnotationAssertion(dc:date obo:MRIO_1000020 "2024-07-29T18:31:33Z"^^xsd:dateTime)
+AnnotationAssertion(terms:creator obo:MRIO_1000020 <https://orcid.org/0009-0004-2155-902X>)
+AnnotationAssertion(terms:date obo:MRIO_1000020 "2024-07-29T18:31:33Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label obo:MRIO_1000020 "seed voxel correlation: within-subjects"@en)
 SubClassOf(obo:MRIO_1000020 obo:MRIO_1000017)
 
 # Class: obo:MRIO_1000021 (seed voxel correlation: between-subjects)
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_1000021 "A method within seed-based functional connectivity where an estimate of activation (e.g., beta weights for a particular condition) is extracted for a particular region, then those values are entered into a whole-brain regression analysis across subjects.")
-AnnotationAssertion(dc:creator obo:MRIO_1000021 <https://orcid.org/0009-0004-2155-902X>)
-AnnotationAssertion(dc:date obo:MRIO_1000021 "2024-07-29T18:32:13Z"^^xsd:dateTime)
+AnnotationAssertion(terms:creator obo:MRIO_1000021 <https://orcid.org/0009-0004-2155-902X>)
+AnnotationAssertion(terms:date obo:MRIO_1000021 "2024-07-29T18:32:13Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label obo:MRIO_1000021 "seed voxel correlation: between-subjects"@en)
 SubClassOf(obo:MRIO_1000021 obo:MRIO_1000017)
 
 # Class: obo:MRIO_1000022 (beta series correlation)
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_1000022 "A technique used in functional MRI data set analysis where the response to each event is estimated by fitting a model with separate regressors for each trial. By correlating the parameter estimates (beta series) across regions, this method examines the degree of trial-by-trial fluctuation similarity between regions, indicating functional connectivity. particularly useful in event-related studies with longer inter-trial intervals.")
-AnnotationAssertion(dc:creator obo:MRIO_1000022 <https://orcid.org/0009-0004-2155-902X>)
-AnnotationAssertion(dc:date obo:MRIO_1000022 "2024-07-29T19:28:12Z"^^xsd:dateTime)
+AnnotationAssertion(terms:creator obo:MRIO_1000022 <https://orcid.org/0009-0004-2155-902X>)
+AnnotationAssertion(terms:date obo:MRIO_1000022 "2024-07-29T19:28:12Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label obo:MRIO_1000022 "beta series correlation"@en)
 SubClassOf(obo:MRIO_1000022 obo:MRIO_0000421)
 
 # Class: obo:MRIO_1000023 (psychophysiological interaction approach)
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_1000023 "A technique used in task-based functional connectivity to examine how connectivity between a seed region and other brain regions is modulated by task conditions. It involves adding an interaction term to the general linear model, which models the task and the time course of activity in the seed region.")
-AnnotationAssertion(dc:creator obo:MRIO_1000023 <https://orcid.org/0009-0004-2155-902X>)
-AnnotationAssertion(dc:date obo:MRIO_1000023 "2024-07-29T19:38:05Z"^^xsd:dateTime)
+AnnotationAssertion(terms:creator obo:MRIO_1000023 <https://orcid.org/0009-0004-2155-902X>)
+AnnotationAssertion(terms:date obo:MRIO_1000023 "2024-07-29T19:38:05Z"^^xsd:dateTime)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:MRIO_1000023 "PPI approach")
 AnnotationAssertion(rdfs:label obo:MRIO_1000023 "psychophysiological interaction approach"@en)
 SubClassOf(obo:MRIO_1000023 obo:MRIO_1000015)
@@ -2664,8 +2665,8 @@ SubClassOf(obo:MRIO_1000023 obo:MRIO_1000015)
 # Class: obo:MRIO_1000024 (hemodynamic response function)
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_1000024 "A measure function that models the temporal changes in brain blood flow and oxygenation in response to neural activity.")
-AnnotationAssertion(dc:creator obo:MRIO_1000024 <https://orcid.org/0009-0004-2155-902X>)
-AnnotationAssertion(dc:date obo:MRIO_1000024 "2024-07-31T17:26:45Z"^^xsd:dateTime)
+AnnotationAssertion(terms:creator obo:MRIO_1000024 <https://orcid.org/0009-0004-2155-902X>)
+AnnotationAssertion(terms:date obo:MRIO_1000024 "2024-07-31T17:26:45Z"^^xsd:dateTime)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:MRIO_1000024 "HRF")
 AnnotationAssertion(rdfs:label obo:MRIO_1000024 "hemodynamic response function"@en)
 SubClassOf(obo:MRIO_1000024 obo:OBI_0000453)
@@ -2673,8 +2674,8 @@ SubClassOf(obo:MRIO_1000024 obo:OBI_0000453)
 # Class: obo:MRIO_1000025 (canonical hemodynamic response function)
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_1000025 "A standard model of the hemodynamic response function (HRF) that represents the typical temporal changes in brain blood flow and oxygenation in response to neural activity, used as a reference in neuroimaging studies to interpret brain activation patterns.")
-AnnotationAssertion(dc:creator obo:MRIO_1000025 <https://orcid.org/0009-0004-2155-902X>)
-AnnotationAssertion(dc:date obo:MRIO_1000025 "2024-07-31T17:27:39Z"^^xsd:dateTime)
+AnnotationAssertion(terms:creator obo:MRIO_1000025 <https://orcid.org/0009-0004-2155-902X>)
+AnnotationAssertion(terms:date obo:MRIO_1000025 "2024-07-31T17:27:39Z"^^xsd:dateTime)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:MRIO_1000025 "canonical HRF")
 AnnotationAssertion(rdfs:label obo:MRIO_1000025 "canonical hemodynamic response function"@en)
 SubClassOf(obo:MRIO_1000025 obo:MRIO_1000024)
@@ -2682,40 +2683,40 @@ SubClassOf(obo:MRIO_1000025 obo:MRIO_1000024)
 # Class: obo:MRIO_1000026 (voxel)
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_1000026 "A volume unit in a three-dimensional imaging system that represents a discrete cubic or rectangular portion of space.")
-AnnotationAssertion(dc:creator obo:MRIO_1000026 <https://orcid.org/0009-0004-2155-902X>)
-AnnotationAssertion(dc:date obo:MRIO_1000026 "2024-07-31T17:38:57Z"^^xsd:dateTime)
+AnnotationAssertion(terms:creator obo:MRIO_1000026 <https://orcid.org/0009-0004-2155-902X>)
+AnnotationAssertion(terms:date obo:MRIO_1000026 "2024-07-31T17:38:57Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label obo:MRIO_1000026 "voxel"@en)
 SubClassOf(obo:MRIO_1000026 obo:UO_0000095)
 
 # Class: obo:MRIO_1000027 (seed voxel)
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_1000027 "A specific voxel selected as a starting point for examining or analyzing three-dimensional data.")
-AnnotationAssertion(dc:creator obo:MRIO_1000027 <https://orcid.org/0009-0004-2155-902X>)
-AnnotationAssertion(dc:date obo:MRIO_1000027 "2024-07-31T17:39:07Z"^^xsd:dateTime)
+AnnotationAssertion(terms:creator obo:MRIO_1000027 <https://orcid.org/0009-0004-2155-902X>)
+AnnotationAssertion(terms:date obo:MRIO_1000027 "2024-07-31T17:39:07Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label obo:MRIO_1000027 "seed voxel"@en)
 SubClassOf(obo:MRIO_1000027 obo:MRIO_1000026)
 
 # Class: obo:MRIO_1000028 (seed region)
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_1000028 "A three-dimensional spatial region defined by a cluster of contiguous voxels used as the starting point for examining or analyzing three-dimensional data.")
-AnnotationAssertion(dc:creator obo:MRIO_1000028 <https://orcid.org/0009-0004-2155-902X>)
-AnnotationAssertion(dc:date obo:MRIO_1000028 "2024-07-31T17:41:46Z"^^xsd:dateTime)
+AnnotationAssertion(terms:creator obo:MRIO_1000028 <https://orcid.org/0009-0004-2155-902X>)
+AnnotationAssertion(terms:date obo:MRIO_1000028 "2024-07-31T17:41:46Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label obo:MRIO_1000028 "seed region"@en)
 SubClassOf(obo:MRIO_1000028 obo:BFO_0000028)
 
 # Class: obo:MRIO_1000029 (coplaner image data set)
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_1000029 "An image data set in which all images are acquired or aligned within the same plane of reference.")
-AnnotationAssertion(dc:creator obo:MRIO_1000029 <https://orcid.org/0009-0004-2155-902X>)
-AnnotationAssertion(dc:date obo:MRIO_1000029 "2024-07-31T18:08:58Z"^^xsd:dateTime)
+AnnotationAssertion(terms:creator obo:MRIO_1000029 <https://orcid.org/0009-0004-2155-902X>)
+AnnotationAssertion(terms:date obo:MRIO_1000029 "2024-07-31T18:08:58Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label obo:MRIO_1000029 "coplaner image data set"@en)
 SubClassOf(obo:MRIO_1000029 obo:OBI_0003327)
 
 # Class: obo:MRIO_1000030 (block design functional magnetic resonance imaging sequence protocol)
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_1000030 "A functional magnetic resonance imaging (fMRI) sequence protocol in which two or more different conditions are alternated in order to determine the differences between the two conditions during the imaging acquisition.")
-AnnotationAssertion(dc:creator obo:MRIO_1000030 <https://orcid.org/0009-0004-2155-902X>)
-AnnotationAssertion(dc:date obo:MRIO_1000030 "2024-07-31T21:37:37Z"^^xsd:dateTime)
+AnnotationAssertion(terms:creator obo:MRIO_1000030 <https://orcid.org/0009-0004-2155-902X>)
+AnnotationAssertion(terms:date obo:MRIO_1000030 "2024-07-31T21:37:37Z"^^xsd:dateTime)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:MRIO_1000030 "block design fMRI sequence protocol")
 AnnotationAssertion(rdfs:label obo:MRIO_1000030 "block design functional magnetic resonance imaging sequence protocol"@en)
 SubClassOf(obo:MRIO_1000030 obo:MRIO_1000003)
@@ -2723,8 +2724,8 @@ SubClassOf(obo:MRIO_1000030 obo:MRIO_1000003)
 # Class: obo:MRIO_1000031 (event-related functional magnetic resonance imaging sequence protocol)
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_1000031 "A functional magnetic resonance imaging (fMRI) sequence protocol in which the presentation of stimuli is randomized and the time in between stimuli can vary during the imaging acquisition.")
-AnnotationAssertion(dc:creator obo:MRIO_1000031 <https://orcid.org/0009-0004-2155-902X>)
-AnnotationAssertion(dc:date obo:MRIO_1000031 "2024-07-31T21:38:13Z"^^xsd:dateTime)
+AnnotationAssertion(terms:creator obo:MRIO_1000031 <https://orcid.org/0009-0004-2155-902X>)
+AnnotationAssertion(terms:date obo:MRIO_1000031 "2024-07-31T21:38:13Z"^^xsd:dateTime)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:MRIO_1000031 "efMRI sequence protocol")
 AnnotationAssertion(rdfs:label obo:MRIO_1000031 "event-related functional magnetic resonance imaging sequence protocol"@en)
 SubClassOf(obo:MRIO_1000031 obo:MRIO_1000003)
@@ -2732,8 +2733,8 @@ SubClassOf(obo:MRIO_1000031 obo:MRIO_1000003)
 # Class: obo:MRIO_1000032 (rapid event-related functional magnetic resonance imaging sequence protocol)
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_1000032 "A type of event-related functional magnetic resonance imaging (efMRI) sequence protocol where events occur so rapidly that their hemodynamic responses overlap during the imaging acquisition.")
-AnnotationAssertion(dc:creator obo:MRIO_1000032 <https://orcid.org/0009-0004-2155-902X>)
-AnnotationAssertion(dc:date obo:MRIO_1000032 "2024-07-31T21:38:22Z"^^xsd:dateTime)
+AnnotationAssertion(terms:creator obo:MRIO_1000032 <https://orcid.org/0009-0004-2155-902X>)
+AnnotationAssertion(terms:date obo:MRIO_1000032 "2024-07-31T21:38:22Z"^^xsd:dateTime)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:MRIO_1000032 "rapid efMRI sequence protocol")
 AnnotationAssertion(rdfs:label obo:MRIO_1000032 "rapid event-related functional magnetic resonance imaging sequence protocol"@en)
 SubClassOf(obo:MRIO_1000032 obo:MRIO_1000031)
@@ -2741,39 +2742,39 @@ SubClassOf(obo:MRIO_1000032 obo:MRIO_1000031)
 # Class: obo:MRIO_1000033 (mixed event-mixed event-related/block design functional magnetic resonance imaging sequence protocol)
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_1000033 "A type of functional magnetic resonance imaging (fMRI) sequence protocol in which the participant is given specific tasks or stimuli that alternate between structured blocks and randomized or semi-randomized order seperated by rest periods during the imaging acquisition.")
-AnnotationAssertion(dc:creator obo:MRIO_1000033 <https://orcid.org/0009-0004-2155-902X>)
-AnnotationAssertion(dc:date obo:MRIO_1000033 "2024-07-31T21:38:59Z"^^xsd:dateTime)
+AnnotationAssertion(terms:creator obo:MRIO_1000033 <https://orcid.org/0009-0004-2155-902X>)
+AnnotationAssertion(terms:date obo:MRIO_1000033 "2024-07-31T21:38:59Z"^^xsd:dateTime)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:MRIO_1000033 "mixed event-related/block design fMRI sequence protocol")
 AnnotationAssertion(rdfs:label obo:MRIO_1000033 "mixed event-mixed event-related/block design functional magnetic resonance imaging sequence protocol"@en)
 SubClassOf(obo:MRIO_1000033 obo:MRIO_1000003)
 
 # Class: obo:MRIO_1000041 (blood oxygenation level dependent functional magnetic resonance image data set)
 
-AnnotationAssertion(dc:creator obo:MRIO_1000041 <https://orcid.org/0009-0004-2155-902X>)
-AnnotationAssertion(dc:date obo:MRIO_1000041 "2024-08-09T22:05:03Z"^^xsd:dateTime)
+AnnotationAssertion(terms:creator obo:MRIO_1000041 <https://orcid.org/0009-0004-2155-902X>)
+AnnotationAssertion(terms:date obo:MRIO_1000041 "2024-08-09T22:05:03Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label obo:MRIO_1000041 "blood oxygenation level dependent functional magnetic resonance image data set"@en)
 SubClassOf(obo:MRIO_1000041 obo:OBI_0003336)
 
 # Class: obo:MRIO_1000044 (blood oxygenation level dependent functional magnetic resonance image data set)
 
-AnnotationAssertion(dc:creator obo:MRIO_1000044 <https://orcid.org/0009-0004-2155-902X>)
-AnnotationAssertion(dc:date obo:MRIO_1000044 "2024-08-09T21:49:49Z"^^xsd:dateTime)
+AnnotationAssertion(terms:creator obo:MRIO_1000044 <https://orcid.org/0009-0004-2155-902X>)
+AnnotationAssertion(terms:date obo:MRIO_1000044 "2024-08-09T21:49:49Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label obo:MRIO_1000044 "blood oxygenation level dependent functional magnetic resonance image data set"@en)
 SubClassOf(obo:MRIO_1000044 obo:OBI_0003336)
 
 # Class: obo:MRIO_1000047 (vascular space occupancy functional magnetic resonance image data set)
 
-AnnotationAssertion(dc:creator obo:MRIO_1000047 <https://orcid.org/0009-0004-2155-902X>)
-AnnotationAssertion(dc:date obo:MRIO_1000047 "2024-08-09T21:49:33Z"^^xsd:dateTime)
-AnnotationAssertion(dc:date obo:MRIO_1000047 "2024-08-09T22:04:39Z"^^xsd:dateTime)
+AnnotationAssertion(terms:creator obo:MRIO_1000047 <https://orcid.org/0009-0004-2155-902X>)
+AnnotationAssertion(terms:date obo:MRIO_1000047 "2024-08-09T21:49:33Z"^^xsd:dateTime)
+AnnotationAssertion(terms:date obo:MRIO_1000047 "2024-08-09T22:04:39Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label obo:MRIO_1000047 "vascular space occupancy functional magnetic resonance image data set"@en)
 SubClassOf(obo:MRIO_1000047 obo:OBI_0003336)
 
 # Class: obo:MRIO_1000050 (hemodynamic response)
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_1000050 "Blood circulation that is increased in the brain, in response to neural activity.")
-AnnotationAssertion(dc:creator obo:MRIO_1000050 <https://orcid.org/0009-0004-2155-902X>)
-AnnotationAssertion(dc:date obo:MRIO_1000050 "2024-08-05T20:00:54Z"^^xsd:dateTime)
+AnnotationAssertion(terms:creator obo:MRIO_1000050 <https://orcid.org/0009-0004-2155-902X>)
+AnnotationAssertion(terms:date obo:MRIO_1000050 "2024-08-05T20:00:54Z"^^xsd:dateTime)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:MRIO_1000050 "HR")
 AnnotationAssertion(rdfs:label obo:MRIO_1000050 "hemodynamic response"@en)
 SubClassOf(obo:MRIO_1000050 <http://purl.obolibrary.org/obo/GO:0008015>)
@@ -2795,228 +2796,226 @@ SubClassOf(obo:OBI_0003329 ObjectSomeValuesFrom(obo:IAO_0000235 obo:OBI_0003071)
 
 # Class: obo:PATO_0000764 (passive)
 
-AnnotationAssertion(dc:creator obo:PATO_0000764 <https://orcid.org/0009-0004-2155-902X>)
-AnnotationAssertion(dc:date obo:PATO_0000764 "2024-07-30T23:59:13Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label obo:PATO_0000764 "passive"@en)
 
 # Class: obo:UBERON_0001873 (caudate nucleus)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0001873 "\"Left-Caudate\" and \"Right-Caudate\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0001876 (obo:UBERON_0001876)
+# Class: obo:UBERON_0001876 (amygdala)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0001876 "\"Left-Amygdala\" and \"Right-Amygdala\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0001882 (obo:UBERON_0001882)
+# Class: obo:UBERON_0001882 (nucleus accumbens)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0001882 "\"Left-Accumbens-area\" and \"Right-Accumbens-area\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0001898 (obo:UBERON_0001898)
+# Class: obo:UBERON_0001898 (hypothalamus)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0001898 "\"Left-VentralDC\" and \"Right-VentralDC\" (from Desikan-Killiany Atlas)")
 
-# Class: obo:UBERON_0002022 (obo:UBERON_0002022)
+# Class: obo:UBERON_0002022 (insula)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0002022 "\"lh-insula\" and \"rh-insula\" (from Desikan-Killiany atlas)")
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0002022 "wm-lh-insula")
 
-# Class: obo:UBERON_0002129 (obo:UBERON_0002129)
+# Class: obo:UBERON_0002129 (cerebellar cortex)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0002129 "\"Left-Cerebellum-Cortex\" and \"Right-Cerebellum-Cortex\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0002421 (obo:UBERON_0002421)
+# Class: obo:UBERON_0002421 (hippocampal formation)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0002421 "\"Left-Hippocampus\" and \"Right-Hippocampus\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0002576 (obo:UBERON_0002576)
+# Class: obo:UBERON_0002576 (temporal pole)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0002576 "\"lh-temporalpole\" and \"rh-temporalpole\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0002581 (obo:UBERON_0002581)
+# Class: obo:UBERON_0002581 (postcentral gyrus)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0002581 "\"lh-postcentral\" and \"rh-postcentral\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0002624 (obo:UBERON_0002624)
+# Class: obo:UBERON_0002624 (orbital part of inferior frontal gyrus)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0002624 "\"lh-parsorbitalis\" and \"rh-parsobertalis\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0002629 (obo:UBERON_0002629)
+# Class: obo:UBERON_0002629 (triangular part of inferior frontal gyrus)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0002629 "\"lh-parstriangularis\" and \"rh-parstriangularis\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0002661 (obo:UBERON_0002661)
+# Class: obo:UBERON_0002661 (superior frontal gyrus)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0002661 "\"lh-superiorfrontal\" and \"rh-superiorfrontal\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0002688 (obo:UBERON_0002688)
+# Class: obo:UBERON_0002688 (supramarginal gyrus)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0002688 "\"lh-supramarginal\" and \"rh-supramarginal\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0002703 (obo:UBERON_0002703)
+# Class: obo:UBERON_0002703 (precentral gyrus)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0002703 "\"lh-precentral\" and \"rh-precentral\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0002728 (obo:UBERON_0002728)
+# Class: obo:UBERON_0002728 (entorhinal cortex)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0002728 "\"lh-entorhinal\" and \"rh-entorhinal\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0002751 (obo:UBERON_0002751)
+# Class: obo:UBERON_0002751 (inferior temporal gyrus)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0002751 "\"lh-inferiortemporal\" and \"rh-inferiortemporal\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0002766 (obo:UBERON_0002766)
+# Class: obo:UBERON_0002766 (fusiform gyrus)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0002766 "\"lh-fusiform\" and \"rh-fusiform\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0002769 (obo:UBERON_0002769)
+# Class: obo:UBERON_0002769 (superior temporal gyrus)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0002769 "\"lh-superiortemporal\" and \"rh-superiortemporal\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0002771 (obo:UBERON_0002771)
+# Class: obo:UBERON_0002771 (middle temporal gyrus)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0002771 "\"lh-middletemporal\" and \"rh-middletemporal\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0002795 (obo:UBERON_0002795)
+# Class: obo:UBERON_0002795 (frontal pole)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0002795 "\"lh-frontalpole\" and \"rh-frontalpole\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0002943 (obo:UBERON_0002943)
+# Class: obo:UBERON_0002943 (lingual gyrus)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0002943 "\"lh-lingual\" and \"rh-lingual\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0002973 (obo:UBERON_0002973)
+# Class: obo:UBERON_0002973 (parahippocampal gyrus)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0002973 "\"lh-parahippocampal\" and \"rh-parahippocampal\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0002980 (obo:UBERON_0002980)
+# Class: obo:UBERON_0002980 (opercular part of inferior frontal gyrus)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0002980 "\"lh-parsopercularis\" and \"rh-parsopercularis\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0006088 (obo:UBERON_0006088)
+# Class: obo:UBERON_0006088 (inferior parietal cortex)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0006088 "\"lh-inferiorparietal\" and \"rh-inferiorparietal\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0006092 (obo:UBERON_0006092)
+# Class: obo:UBERON_0006092 (cuneus cortex)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0006092 "\"lh-cuneus\" and \"rh-cuneus\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0006093 (obo:UBERON_0006093)
+# Class: obo:UBERON_0006093 (precuneus cortex)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0006093 "\"lh-precuneus\" and \"rh-precuneus\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0006094 (obo:UBERON_0006094)
+# Class: obo:UBERON_0006094 (superior parietal cortex)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0006094 "\"lh-superiorparietal\" and \"rh-superiorparietal\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0006114 (obo:UBERON_0006114)
+# Class: obo:UBERON_0006114 (lateral occipital cortex)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0006114 "\"lh-lateraloccipital\" and \"rh-lateraloccipital\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0006445 (obo:UBERON_0006445)
+# Class: obo:UBERON_0006445 (caudal middle frontal gyrus)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0006445 "\"lh-caudalmiddlefrontal\" and \"rh-caudalmiddlefrontal\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0006446 (obo:UBERON_0006446)
+# Class: obo:UBERON_0006446 (rostral middle frontal gyrus)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0006446 "\"lh-rostralmiddlefrontal\" and \"rh-rostralmiddlefrontal\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0006514 (obo:UBERON_0006514)
+# Class: obo:UBERON_0006514 (pallidum)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0006514 "\"Left-Pallidum\" and \"Right-Pallidum\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0008884 (obo:UBERON_0008884)
+# Class: obo:UBERON_0008884 (left putamen)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0008884 "\"Left-Putamen\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0008885 (obo:UBERON_0008885)
+# Class: obo:UBERON_0008885 (right putamen)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0008885 "\"\"Right-Putamen\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0009897 (obo:UBERON_0009897)
+# Class: obo:UBERON_0009897 (right auditory cortex)
 
 AnnotationAssertion(obo:IAO_0000116 obo:UBERON_0009897 "Corrected error saying this is in the left hemisphere of the brain."@en)
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0009897 "\"rh-transversetemporal\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0009898 (obo:UBERON_0009898)
+# Class: obo:UBERON_0009898 (left auditory cortex)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0009898 "\"lh-transversetemporal\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0013683 (obo:UBERON_0013683)
+# Class: obo:UBERON_0013683 (left dorsal thalamus)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0013683 "\"Left-Thalamus-Proper\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0013684 (obo:UBERON_0013684)
+# Class: obo:UBERON_0013684 (right dorsal thalamus)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0013684 "\"Right-Thalamus-Proper\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0022352 (obo:UBERON_0022352)
+# Class: obo:UBERON_0022352 (medial orbital frontal cortex)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0022352 "\"lh-medialorbitofrontal\" and \"rh-imedialorbitofrontal\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0022353 (obo:UBERON_0022353)
+# Class: obo:UBERON_0022353 (posterior cingulate cortex)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0022353 "\"lh-posteriorcingulate\" and \"rh-posteriorcingulate\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0022438 (obo:UBERON_0022438)
+# Class: obo:UBERON_0022438 (rostral anterior cingulate cortex)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0022438 "\"lh-rostralanteriorcingulate\" and \"rh-rostralanteriorcingulate\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0022534 (obo:UBERON_0022534)
+# Class: obo:UBERON_0022534 (pericalcarine cortex)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0022534 "\"lh-pericalcarine\" and \"rh-pericalcarine\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0022716 (obo:UBERON_0022716)
+# Class: obo:UBERON_0022716 (lateral orbital frontal cortex)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0022716 "\"lh-lateralorbitofrontal\" and \"rh-lateralorbitofrontal\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0027061 (obo:UBERON_0027061)
+# Class: obo:UBERON_0027061 (isthmus of cingulate cortex)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0027061 "\"lh-isthmuscingulate\" and \"rh-isthmuscingulate\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0028622 (obo:UBERON_0028622)
+# Class: obo:UBERON_0028622 (banks of superior temporal sulcus)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0028622 "bankssts")
 
-# Class: obo:UBERON_0028715 (obo:UBERON_0028715)
+# Class: obo:UBERON_0028715 (caudal anterior cingulate cortex)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0028715 "\"lh-caudalanteriorcingulate\" and \"rh-caudalanteriorcingulate\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0035933 (obo:UBERON_0035933)
+# Class: obo:UBERON_0035933 (paracentral lobule)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0035933 "\"lh-paracentral\" and \"rh-paracentral\" (from Desikan-Killiany atlas)")
 
 # Class: <http://purl.obolibrary.org/obo/GO:0003008> (system process)
 
-AnnotationAssertion(dc:creator <http://purl.obolibrary.org/obo/GO:0003008> <https://orcid.org/0009-0004-2155-902X>)
-AnnotationAssertion(dc:date <http://purl.obolibrary.org/obo/GO:0003008> "2024-08-05T19:59:46Z"^^xsd:dateTime)
+AnnotationAssertion(terms:creator <http://purl.obolibrary.org/obo/GO:0003008> <https://orcid.org/0009-0004-2155-902X>)
+AnnotationAssertion(terms:date <http://purl.obolibrary.org/obo/GO:0003008> "2024-08-05T19:59:46Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO:0003008> "system process"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/GO:0003008> <http://purl.obolibrary.org/obo/GO:0032501>)
 
 # Class: <http://purl.obolibrary.org/obo/GO:0003013> (circulatory system process)
 
-AnnotationAssertion(dc:creator <http://purl.obolibrary.org/obo/GO:0003013> <https://orcid.org/0009-0004-2155-902X>)
-AnnotationAssertion(dc:date <http://purl.obolibrary.org/obo/GO:0003013> "2024-08-05T20:00:11Z"^^xsd:dateTime)
+AnnotationAssertion(terms:creator <http://purl.obolibrary.org/obo/GO:0003013> <https://orcid.org/0009-0004-2155-902X>)
+AnnotationAssertion(terms:date <http://purl.obolibrary.org/obo/GO:0003013> "2024-08-05T20:00:11Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO:0003013> "circulatory system process"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/GO:0003013> <http://purl.obolibrary.org/obo/GO:0003008>)
 
 # Class: <http://purl.obolibrary.org/obo/GO:0008015> (blood circulation)
 
-AnnotationAssertion(dc:creator <http://purl.obolibrary.org/obo/GO:0008015> <https://orcid.org/0009-0004-2155-902X>)
-AnnotationAssertion(dc:date <http://purl.obolibrary.org/obo/GO:0008015> "2024-08-05T20:00:33Z"^^xsd:dateTime)
+AnnotationAssertion(terms:creator <http://purl.obolibrary.org/obo/GO:0008015> <https://orcid.org/0009-0004-2155-902X>)
+AnnotationAssertion(terms:date <http://purl.obolibrary.org/obo/GO:0008015> "2024-08-05T20:00:33Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO:0008015> "blood circulation"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/GO:0008015> <http://purl.obolibrary.org/obo/GO:0003013>)
 
 # Class: <http://purl.obolibrary.org/obo/GO:0032501> (multicellular organismal process)
 
-AnnotationAssertion(dc:creator <http://purl.obolibrary.org/obo/GO:0032501> <https://orcid.org/0009-0004-2155-902X>)
-AnnotationAssertion(dc:date <http://purl.obolibrary.org/obo/GO:0032501> "2024-08-05T19:59:16Z"^^xsd:dateTime)
+AnnotationAssertion(terms:creator <http://purl.obolibrary.org/obo/GO:0032501> <https://orcid.org/0009-0004-2155-902X>)
+AnnotationAssertion(terms:date <http://purl.obolibrary.org/obo/GO:0032501> "2024-08-05T19:59:16Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO:0032501> "multicellular organismal process"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/GO:0032501> obo:GO_0008150)
 
 # Class: <http://purl.obolibrary.org/obo/GO:0050877> (nervous system process)
 
-AnnotationAssertion(dc:creator <http://purl.obolibrary.org/obo/GO:0050877> <https://orcid.org/0009-0004-2155-902X>)
-AnnotationAssertion(dc:date <http://purl.obolibrary.org/obo/GO:0050877> "2024-08-05T20:04:03Z"^^xsd:dateTime)
+AnnotationAssertion(terms:creator <http://purl.obolibrary.org/obo/GO:0050877> <https://orcid.org/0009-0004-2155-902X>)
+AnnotationAssertion(terms:date <http://purl.obolibrary.org/obo/GO:0050877> "2024-08-05T20:04:03Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO:0050877> "nervous system process"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/GO:0050877> <http://purl.obolibrary.org/obo/GO:0003008>)
 
@@ -3027,7 +3026,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/GO:0050877> <http://purl.obolibrary.o
 
 # Individual: obo:MRIO_0000397 (test sequence 1)
 
-AnnotationAssertion(dc:creator obo:MRIO_0000397 <http://orcid.org/0000-0002-2104-0568>)
+AnnotationAssertion(terms:creator obo:MRIO_0000397 <http://orcid.org/0000-0002-2104-0568>)
 AnnotationAssertion(rdfs:label obo:MRIO_0000397 "test sequence 1"@en)
 DataPropertyAssertion(obo:MRIO_0000376 obo:MRIO_0000397 "650.0"^^xsd:float)
 DataPropertyAssertion(obo:MRIO_0000377 obo:MRIO_0000397 "20.0"^^xsd:float)

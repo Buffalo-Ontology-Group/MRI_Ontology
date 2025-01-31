@@ -1,117 +1,23 @@
 Level	Rule Name	Subject	Property	Value
-ERROR	missing_label	magnetic resonance imaging assay	rdfs:label	
-ERROR	missing_label	magnetic resonance imaging participant	rdfs:label	
-ERROR	missing_label	raw magnetic resonance image data set reconstruction	rdfs:label	
-ERROR	missing_label	caudate nucleus	rdfs:label	
-ERROR	missing_label	amygdala	rdfs:label	
-ERROR	missing_label	nucleus accumbens	rdfs:label	
-ERROR	missing_label	hypothalamus	rdfs:label	
-ERROR	missing_label	insula	rdfs:label	
-ERROR	missing_label	cerebellar cortex	rdfs:label	
-ERROR	missing_label	hippocampal formation	rdfs:label	
-ERROR	missing_label	temporal pole	rdfs:label	
-ERROR	missing_label	postcentral gyrus	rdfs:label	
-ERROR	missing_label	orbital part of inferior frontal gyrus	rdfs:label	
-ERROR	missing_label	triangular part of inferior frontal gyrus	rdfs:label	
-ERROR	missing_label	superior frontal gyrus	rdfs:label	
-ERROR	missing_label	supramarginal gyrus	rdfs:label	
-ERROR	missing_label	precentral gyrus	rdfs:label	
-ERROR	missing_label	entorhinal cortex	rdfs:label	
-ERROR	missing_label	inferior temporal gyrus	rdfs:label	
-ERROR	missing_label	fusiform gyrus	rdfs:label	
-ERROR	missing_label	superior temporal gyrus	rdfs:label	
-ERROR	missing_label	middle temporal gyrus	rdfs:label	
-ERROR	missing_label	frontal pole	rdfs:label	
-ERROR	missing_label	lingual gyrus	rdfs:label	
-ERROR	missing_label	parahippocampal gyrus	rdfs:label	
-ERROR	missing_label	opercular part of inferior frontal gyrus	rdfs:label	
-ERROR	missing_label	inferior parietal cortex	rdfs:label	
-ERROR	missing_label	cuneus cortex	rdfs:label	
-ERROR	missing_label	precuneus cortex	rdfs:label	
-ERROR	missing_label	superior parietal cortex	rdfs:label	
-ERROR	missing_label	lateral occipital cortex	rdfs:label	
-ERROR	missing_label	caudal middle frontal gyrus	rdfs:label	
-ERROR	missing_label	rostral middle frontal gyrus	rdfs:label	
-ERROR	missing_label	pallidum	rdfs:label	
-ERROR	missing_label	left putamen	rdfs:label	
-ERROR	missing_label	right putamen	rdfs:label	
-ERROR	missing_label	right auditory cortex	rdfs:label	
-ERROR	missing_label	left auditory cortex	rdfs:label	
-ERROR	missing_label	left dorsal thalamus	rdfs:label	
-ERROR	missing_label	right dorsal thalamus	rdfs:label	
-ERROR	missing_label	medial orbital frontal cortex	rdfs:label	
-ERROR	missing_label	posterior cingulate cortex	rdfs:label	
-ERROR	missing_label	rostral anterior cingulate cortex	rdfs:label	
-ERROR	missing_label	pericalcarine cortex	rdfs:label	
-ERROR	missing_label	lateral orbital frontal cortex	rdfs:label	
-ERROR	missing_label	isthmus of cingulate cortex	rdfs:label	
-ERROR	missing_label	banks of superior temporal sulcus	rdfs:label	
-ERROR	missing_label	caudal anterior cingulate cortex	rdfs:label	
-ERROR	missing_label	paracentral lobule	rdfs:label	
-WARN	missing_definition	milliliter unit	textual definition	
-WARN	missing_definition	cubic millimeter unit	textual definition	
-WARN	missing_definition	millimeter unit	textual definition	
-WARN	missing_definition	percentage unit	textual definition	
-WARN	missing_definition	deep grey matter brain volume measurement datum	textual definition	
-WARN	missing_definition	caudate volume measurement datum	textual definition	
-WARN	missing_definition	putamen volume measurement datum	textual definition	
-WARN	missing_definition	left putamen volume measurement datum	textual definition	
-WARN	missing_definition	right putamen volume measurement datum	textual definition	
-WARN	missing_definition	pallidum volume measurement datum	textual definition	
-WARN	missing_definition	hippocampus volume measurement datum	textual definition	
-WARN	missing_definition	amygdala volume measurement datum	textual definition	
-WARN	missing_definition	nucleus accumbens volume measurement datum	textual definition	
-WARN	missing_definition	ventral thalamic volume measurement datum	textual definition	
-WARN	missing_definition	magnetic resonance imaging assay	textual definition	
-WARN	missing_definition	magnetic resonance imaging participant	textual definition	
-WARN	missing_definition	raw magnetic resonance image data set reconstruction	textual definition	
-WARN	missing_definition	caudate nucleus	textual definition	
-WARN	missing_definition	amygdala	textual definition	
-WARN	missing_definition	nucleus accumbens	textual definition	
-WARN	missing_definition	hypothalamus	textual definition	
-WARN	missing_definition	ventral thalamus	textual definition	
-WARN	missing_definition	insula	textual definition	
-WARN	missing_definition	cerebellar cortex	textual definition	
-WARN	missing_definition	hippocampal formation	textual definition	
-WARN	missing_definition	temporal pole	textual definition	
-WARN	missing_definition	postcentral gyrus	textual definition	
-WARN	missing_definition	orbital part of inferior frontal gyrus	textual definition	
-WARN	missing_definition	triangular part of inferior frontal gyrus	textual definition	
-WARN	missing_definition	superior frontal gyrus	textual definition	
-WARN	missing_definition	supramarginal gyrus	textual definition	
-WARN	missing_definition	precentral gyrus	textual definition	
-WARN	missing_definition	entorhinal cortex	textual definition	
-WARN	missing_definition	inferior temporal gyrus	textual definition	
-WARN	missing_definition	fusiform gyrus	textual definition	
-WARN	missing_definition	superior temporal gyrus	textual definition	
-WARN	missing_definition	middle temporal gyrus	textual definition	
-WARN	missing_definition	frontal pole	textual definition	
-WARN	missing_definition	lingual gyrus	textual definition	
-WARN	missing_definition	parahippocampal gyrus	textual definition	
-WARN	missing_definition	opercular part of inferior frontal gyrus	textual definition	
-WARN	missing_definition	inferior parietal cortex	textual definition	
-WARN	missing_definition	cuneus cortex	textual definition	
-WARN	missing_definition	precuneus cortex	textual definition	
-WARN	missing_definition	superior parietal cortex	textual definition	
-WARN	missing_definition	lateral occipital cortex	textual definition	
-WARN	missing_definition	caudal middle frontal gyrus	textual definition	
-WARN	missing_definition	rostral middle frontal gyrus	textual definition	
-WARN	missing_definition	pallidum	textual definition	
-WARN	missing_definition	left putamen	textual definition	
-WARN	missing_definition	right putamen	textual definition	
-WARN	missing_definition	right auditory cortex	textual definition	
-WARN	missing_definition	left auditory cortex	textual definition	
-WARN	missing_definition	left dorsal thalamus	textual definition	
-WARN	missing_definition	right dorsal thalamus	textual definition	
-WARN	missing_definition	medial orbital frontal cortex	textual definition	
-WARN	missing_definition	posterior cingulate cortex	textual definition	
-WARN	missing_definition	rostral anterior cingulate cortex	textual definition	
-WARN	missing_definition	pericalcarine cortex	textual definition	
-WARN	missing_definition	lateral orbital frontal cortex	textual definition	
-WARN	missing_definition	isthmus of cingulate cortex	textual definition	
-WARN	missing_definition	banks of superior temporal sulcus	textual definition	
-WARN	missing_definition	caudal anterior cingulate cortex	textual definition	
-WARN	missing_definition	paracentral lobule	textual definition	
+ERROR	duplicate_label	blood oxygenation level dependent functional magnetic resonance image data set	rdfs:label	blood oxygenation level dependent functional magnetic resonance image data set@en
+ERROR	duplicate_label	blood oxygenation level dependent functional magnetic resonance image data set	rdfs:label	blood oxygenation level dependent functional magnetic resonance image data set@en
+WARN	missing_definition	milliliter unit	IAO:0000115	
+WARN	missing_definition	cubic millimeter unit	IAO:0000115	
+WARN	missing_definition	millimeter unit	IAO:0000115	
+WARN	missing_definition	percentage unit	IAO:0000115	
+WARN	missing_definition	deep grey matter brain volume measurement datum	IAO:0000115	
+WARN	missing_definition	caudate volume measurement datum	IAO:0000115	
+WARN	missing_definition	putamen volume measurement datum	IAO:0000115	
+WARN	missing_definition	left putamen volume measurement datum	IAO:0000115	
+WARN	missing_definition	right putamen volume measurement datum	IAO:0000115	
+WARN	missing_definition	pallidum volume measurement datum	IAO:0000115	
+WARN	missing_definition	hippocampus volume measurement datum	IAO:0000115	
+WARN	missing_definition	amygdala volume measurement datum	IAO:0000115	
+WARN	missing_definition	nucleus accumbens volume measurement datum	IAO:0000115	
+WARN	missing_definition	ventral thalamic volume measurement datum	IAO:0000115	
+WARN	missing_definition	blood oxygenation level dependent functional magnetic resonance image data set	IAO:0000115	
+WARN	missing_definition	blood oxygenation level dependent functional magnetic resonance image data set	IAO:0000115	
+WARN	missing_definition	vascular space occupancy functional magnetic resonance image data set	IAO:0000115	
 WARN	missing_obsolete_label	MRI machine	rdfs:label	MRI machine@en
 WARN	missing_obsolete_label	magnetic resonance imaging datum	rdfs:label	magnetic resonance imaging datum@en
 WARN	missing_obsolete_label	magnetic resonance imaging data transformation	rdfs:label	magnetic resonance imaging data transformation@en
@@ -135,50 +41,3 @@ WARN	missing_obsolete_label	thalamic volume measurement z-score	rdfs:label	thala
 INFO	missing_superclass	FreeSurfer segmentation map	rdfs:subClassOf	
 INFO	missing_superclass	image data set visualization	rdfs:subClassOf	
 INFO	missing_superclass	T2 FLAIR medulla oblongata volume analysis	rdfs:subClassOf	
-INFO	missing_superclass	magnetic resonance imaging assay	rdfs:subClassOf	
-INFO	missing_superclass	amygdala	rdfs:subClassOf	
-INFO	missing_superclass	nucleus accumbens	rdfs:subClassOf	
-INFO	missing_superclass	hypothalamus	rdfs:subClassOf	
-INFO	missing_superclass	ventral thalamus	rdfs:subClassOf	
-INFO	missing_superclass	insula	rdfs:subClassOf	
-INFO	missing_superclass	cerebellar cortex	rdfs:subClassOf	
-INFO	missing_superclass	hippocampal formation	rdfs:subClassOf	
-INFO	missing_superclass	temporal pole	rdfs:subClassOf	
-INFO	missing_superclass	postcentral gyrus	rdfs:subClassOf	
-INFO	missing_superclass	orbital part of inferior frontal gyrus	rdfs:subClassOf	
-INFO	missing_superclass	triangular part of inferior frontal gyrus	rdfs:subClassOf	
-INFO	missing_superclass	superior frontal gyrus	rdfs:subClassOf	
-INFO	missing_superclass	supramarginal gyrus	rdfs:subClassOf	
-INFO	missing_superclass	precentral gyrus	rdfs:subClassOf	
-INFO	missing_superclass	entorhinal cortex	rdfs:subClassOf	
-INFO	missing_superclass	inferior temporal gyrus	rdfs:subClassOf	
-INFO	missing_superclass	fusiform gyrus	rdfs:subClassOf	
-INFO	missing_superclass	superior temporal gyrus	rdfs:subClassOf	
-INFO	missing_superclass	middle temporal gyrus	rdfs:subClassOf	
-INFO	missing_superclass	frontal pole	rdfs:subClassOf	
-INFO	missing_superclass	lingual gyrus	rdfs:subClassOf	
-INFO	missing_superclass	parahippocampal gyrus	rdfs:subClassOf	
-INFO	missing_superclass	opercular part of inferior frontal gyrus	rdfs:subClassOf	
-INFO	missing_superclass	inferior parietal cortex	rdfs:subClassOf	
-INFO	missing_superclass	cuneus cortex	rdfs:subClassOf	
-INFO	missing_superclass	precuneus cortex	rdfs:subClassOf	
-INFO	missing_superclass	superior parietal cortex	rdfs:subClassOf	
-INFO	missing_superclass	lateral occipital cortex	rdfs:subClassOf	
-INFO	missing_superclass	caudal middle frontal gyrus	rdfs:subClassOf	
-INFO	missing_superclass	rostral middle frontal gyrus	rdfs:subClassOf	
-INFO	missing_superclass	pallidum	rdfs:subClassOf	
-INFO	missing_superclass	left putamen	rdfs:subClassOf	
-INFO	missing_superclass	right putamen	rdfs:subClassOf	
-INFO	missing_superclass	right auditory cortex	rdfs:subClassOf	
-INFO	missing_superclass	left auditory cortex	rdfs:subClassOf	
-INFO	missing_superclass	left dorsal thalamus	rdfs:subClassOf	
-INFO	missing_superclass	right dorsal thalamus	rdfs:subClassOf	
-INFO	missing_superclass	medial orbital frontal cortex	rdfs:subClassOf	
-INFO	missing_superclass	posterior cingulate cortex	rdfs:subClassOf	
-INFO	missing_superclass	rostral anterior cingulate cortex	rdfs:subClassOf	
-INFO	missing_superclass	pericalcarine cortex	rdfs:subClassOf	
-INFO	missing_superclass	lateral orbital frontal cortex	rdfs:subClassOf	
-INFO	missing_superclass	isthmus of cingulate cortex	rdfs:subClassOf	
-INFO	missing_superclass	banks of superior temporal sulcus	rdfs:subClassOf	
-INFO	missing_superclass	caudal anterior cingulate cortex	rdfs:subClassOf	
-INFO	missing_superclass	paracentral lobule	rdfs:subClassOf	
