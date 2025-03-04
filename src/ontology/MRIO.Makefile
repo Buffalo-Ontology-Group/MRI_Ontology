@@ -55,3 +55,21 @@ iao:
 		--select "annotations self ancestors" \
 		-o imports/iao_import.owl
 
+.PHONY: mirror-stato
+.PRECIOUS: $(MIRRORDIR)/stato.owl
+mirror-stato: | $(TMPDIR)
+	curl -L $(OBOBASE)/stato.owl --create-dirs -o $(TMPDIR)/stato-download.owl --retry 4 --max-time 200 && \
+	$(ROBOT) convert -i $(TMPDIR)/stato-download.owl -o $(TMPDIR)/$@.owl
+
+$(MIRRORDIR)/stato.owl: mirror-stato | $(MIRRORDIR)
+	if [ -f $(TMPDIR)/mirror-stato.owl ]; then if cmp -s $(TMPDIR)/mirror-stato.owl $@ ; then echo "Mirror identical, ignoring."; else echo "Mirrors different, updating." &&\
+		cp $(TMPDIR)/mirror-stato.owl $@; fi; fi
+
+stato: mirror-stato
+	robot \
+		--catalog catalog-v001.xml \
+		filter -i mirror/stato.owl \
+		-T imports/stato_terms.txt \
+		--select "annotations self ancestors" \
+		-o imports/stato_import.owl
+
