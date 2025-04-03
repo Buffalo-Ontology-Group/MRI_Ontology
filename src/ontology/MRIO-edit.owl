@@ -5541,6 +5541,127 @@ The values often belong to a group of pixels or voxels that share the same chara
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000052 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000052">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000108"/>
+        <IAO_0000115>A linear regression for analysis of continuous dependent variable technique used in imaging that models the relationship between brain activity and multiple predictors, such as experimental conditions or behavioral data, to identify patterns in voxel or region level data.</IAO_0000115>
+        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-02T15:19:21Z</dc:date>
+        <rdfs:label xml:lang="en">multiple linear regression analysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000053 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000053">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000108"/>
+        <IAO_0000115>A linear regression for analysis of continuous dependent variable technique used in imaging used to simultaneously analyze two sets of data (i.e., brain activity and task related variables) to identify common patterns.</IAO_0000115>
+        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-02T15:20:15Z</dc:date>
+        <rdfs:label xml:lang="en">dual regression</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000054 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000054">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000108"/>
+        <IAO_0000115>A linear regression for analysis of continuous dependent variable technique used in imaging that models nonlinear relationships between voxel or pixel intensities and predictors by fitting polynomial functions to the data.</IAO_0000115>
+        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-02T15:21:49Z</dc:date>
+        <rdfs:label xml:lang="en">polynomial regression</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000055 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000055">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000108"/>
+        <IAO_0000115>A linear regression for analysis of continuous dependent variable technique used in imaging that models temporal dependencies in voxel signals by incorporating lagged predictors or autoregressive components.</IAO_0000115>
+        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-02T15:22:45Z</dc:date>
+        <rdfs:label xml:lang="en">time series regression</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000056 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000056">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000108"/>
+        <IAO_0000115>A linear regression for analysis of continuous dependent variable technique used in imaging that applies L2 regularization to stabilize coefficient estimates, reducing overfitting when modeling high dimensional voxel or pixel data.</IAO_0000115>
+        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-02T15:23:45Z</dc:date>
+        <rdfs:label xml:lang="en">ridge regression</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000057 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000057">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000108"/>
+        <IAO_0000115>A linear regression for analysis of continuous dependent variable technique used in imaging that applies L1 regularization to select relevant features by shrinking irrelevant voxel or pixel coefficients to zero.</IAO_0000115>
+        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-02T15:25:55Z</dc:date>
+        <rdfs:label xml:lang="en">lasso regression</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000058 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000058">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000108"/>
+        <IAO_0000115>A linear regression for analysis of continuous dependent variable technique used in imaging that combines L1 and L2 regularization to balance feature selection and model stability when analyzing spatial data from the brain or other organs.</IAO_0000115>
+        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-02T15:26:40Z</dc:date>
+        <rdfs:label xml:lang="en">elastic net logistic regression</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000059 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000059">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000108"/>
+        <IAO_0000115>A linear regression for analysis of continuous dependent variable technique used in imaging that accounts for nested data structures, allowing for the modeling of both single subject and group level effects.</IAO_0000115>
+        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-02T15:27:45Z</dc:date>
+        <rdfs:label xml:lang="en">hierarchical regression</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000060 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000060">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000108"/>
+        <IAO_0000115>A linear regression for analysis of continuous dependent variable technique used in imaging that provides probabilistic estimates of voxel or region level activity.</IAO_0000115>
+        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-02T15:28:17Z</dc:date>
+        <rdfs:label xml:lang="en">bayesian regression</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000061 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000061">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003355"/>
+        <IAO_0000115>An image based general linear model (GLM) is a statistical approach used in image dataset analysis that utilizes one or more regressors to model pixel or voxel intensity as a linear combination of predictors.</IAO_0000115>
+        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-03T23:07:03Z</dc:date>
+        <oboInOwl:hasRelatedSynonym>image data set analysis based on GLM</oboInOwl:hasRelatedSynonym>
+        <rdfs:label xml:lang="en">image data set analysis based on general linear model</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MRIO_a535096d_151b_47c9_9be4_83b7799917df -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_a535096d_151b_47c9_9be4_83b7799917df">
@@ -5657,6 +5778,17 @@ The values often belong to a group of pixels or voxels that share the same chara
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0200102 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0200102">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
+        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-02T15:11:08Z</dc:date>
+        <rdfs:label xml:lang="en">regression analysis method</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0200111 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0200111"/>
@@ -5673,6 +5805,17 @@ The values often belong to a group of pixels or voxels that share the same chara
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000764">
         <rdfs:label xml:lang="en">passive</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000108 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000108">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200102"/>
+        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-02T15:12:10Z</dc:date>
+        <rdfs:label xml:lang="en">linear regression for analysis of continuous dependent variable</rdfs:label>
     </owl:Class>
     
 
