@@ -5778,16 +5778,6 @@ The values often belong to a group of pixels or voxels that share the same chara
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OBI_0200102 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0200102">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
-        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-02T15:11:08Z</dc:date>
-        <rdfs:label xml:lang="en">regression analysis method</rdfs:label>
-    </owl:Class>
-    
-
 
     <!-- http://purl.obolibrary.org/obo/OBI_0200111 -->
 
@@ -5808,16 +5798,6 @@ The values often belong to a group of pixels or voxels that share the same chara
     </owl:Class>
     
 
-
-    <!-- http://purl.obolibrary.org/obo/STATO_0000108 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000108">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200102"/>
-        <dc:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-02T15:12:10Z</dc:date>
-        <rdfs:label xml:lang="en">linear regression for analysis of continuous dependent variable</rdfs:label>
-    </owl:Class>
-    
 
 
     <!-- http://purl.obolibrary.org/obo/UBERON_0000955 -->
