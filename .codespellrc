@@ -1,0 +1,7 @@
+[codespell]
+# Ref: https://github.com/codespell-project/codespell#using-a-config-file
+skip = .git*,.codespellrc
+check-hidden = true
+# case sensitive etc
+ignore-regex = created_by: .*|\b(AER|CNA|TE|ND|Chromum)\b
+ignore-words-list = ser,cyclin,als,transferrin,mater
