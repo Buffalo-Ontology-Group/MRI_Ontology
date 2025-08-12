@@ -242,7 +242,7 @@
 <http://purl.obolibrary.org/obo/UBERON_0004815>	"An epithelium that is part of a lower respiratory tract [Automatically generated definition]."	"MA:0001481"
 <http://purl.obolibrary.org/obo/GO_0032790>	"The disaggregation of a ribosome into its constituent components; includes the dissociation of ribosomal subunits."	
 <http://purl.obolibrary.org/obo/PR_P55284>	"A cadherin-5 that is encoded in the genome of mouse."	"UniProtKB:P55284"
-<http://purl.obolibrary.org/obo/MRIO_0000648>	"A brain atlas consisting of weighted values that respresent the probability that a voxel X is part of some brain component Y, typically derived from multiple image data sets."	
+<http://purl.obolibrary.org/obo/MRIO_0000648>	"A brain atlas consisting of weighted values that represent the probability that a voxel X is part of some brain component Y, typically derived from multiple image data sets."	
 <http://purl.obolibrary.org/obo/MRIO_0000712>	"A spin echo pulse sequence preceded by a 180° RF pulse."	
 <http://purl.obolibrary.org/obo/GO_0003131>	"Any process that mediates the transfer of information from mesodermal cells to endodermal cells."	
 <http://purl.obolibrary.org/obo/UBERON_0015228>	"A hollow, muscular organ, which, by contracting rhythmically, contributes to the circulation of lymph, blood or analogs. Examples: a chambered vertebrate heart; the tubular peristaltic heart of ascidians; the dorsal vessel of an insect; the lymoh heart of a reptile."	
@@ -579,7 +579,7 @@
 <http://purl.obolibrary.org/obo/CHEBI_67079>	"Any compound that has anti-inflammatory effects."	
 <http://purl.obolibrary.org/obo/GO_1901862>	"Any process that stops, prevents or reduces the frequency, rate or extent of muscle tissue development."	
 <http://purl.obolibrary.org/obo/CHEBI_77941>	"An EC 3.5.1.* (non-peptide linear amide C-N hydrolase) inhibitor that interferes with the action of amidase (EC 3.5.1.4)."	"Wikipedia:Amidase"
-<http://purl.obolibrary.org/obo/MRIO_0000345>	"A T1 weighted image data set where gadolidium contrast agent has been administered to the participant before image acquistion."	
+<http://purl.obolibrary.org/obo/MRIO_0000345>	"A T1 weighted image data set where gadolidium contrast agent has been administered to the participant before image acquisition."	
 <http://purl.obolibrary.org/obo/GO_0051152>	"Any process that activates or increases the frequency, rate or extent of smooth muscle cell differentiation."	
 <http://purl.obolibrary.org/obo/UBERON_0003384>	"A portion of skeletal muscle tissue that is part of a pharynx [Automatically generated definition]."	"EMAPA:18963"
 <http://purl.obolibrary.org/obo/UBERON_0000467>	"Multicellular, connected anatomical structure that has multiple organs as parts and whose parts work together to achieve some shared function."	"AAO:0000007 EMAPA:16103 CARO:0000011 SCTID:278195005 BILA:0000011 TAO:0001439 AEO:0000011 NCIT:C12919 MA:0000003 WBbt:0005746 ZFA:0001439 galen:AnatomicalSystem BSA:0000049 HAO:0000011 VHOG:0001725 WBbt:0005763 BIRNLEX:14 XAO:0003002 EHDAA:392 TGMA:0001831 EV:0100000 CALOHA:TS-2088 Wikipedia:Organ_system FMA:7149 EHDAA2:0003011"
@@ -1037,7 +1037,7 @@
 <http://purl.obolibrary.org/obo/GO_0051785>	"Any process that activates or increases the frequency, rate or extent of nuclear division, the partitioning of the nucleus and its genetic information."	
 <http://purl.obolibrary.org/obo/CHEBI_32988>	"An amide is a derivative of an oxoacid RkE(=O)l(OH)m (l =/= 0) in which an acidic hydroxy group has been replaced by an amino or substituted amino group."	"KEGG:C00241"
 <http://purl.obolibrary.org/obo/UBERON_0001779>	"The delicate vascular connective tissue that lies between the anterior surface of the iris and the pars iridica retinae."	"FMA:58526 EMAPA:35451 ZFA:0005569 Wikipedia:Iris_stroma SCTID:280882008 MA:0002777"
-<http://purl.obolibrary.org/obo/MRIO_0000390>	"An MRI acquisition sequence that acheives T2 weighting using gradient echo instead of spin echo."	
+<http://purl.obolibrary.org/obo/MRIO_0000390>	"An MRI acquisition sequence that achieves T2 weighting using gradient echo instead of spin echo."	
 <http://purl.obolibrary.org/obo/GO_2001016>	"Any process that activates or increases the frequency, rate or extent of skeletal muscle cell differentiation."	
 <http://purl.obolibrary.org/obo/PATO_0001993>	"A cellularity quality inhering in a bearer by virtue of the bearer's consisting of more than one cell."	
 <http://purl.obolibrary.org/obo/CHEBI_35238>	"The zwitterionic form of an amino acid having a negatively charged carboxyl group and a positively charged amino group."	
@@ -2156,7 +2156,7 @@
 <http://purl.obolibrary.org/obo/UBERON_0000992>	"The gonad of a female organism which contains germ cells."	"AAO:0000371 SCTID:181464007 EV:0100111 MESH:D010053 BSA:0000080 Wikipedia:Ovary ZFA:0000403 BTO:0000975 MA:0000384 GAID:367 VHOG:0000251 EFO:0000973 CALOHA:TS-0730 EHDAA2:0001360 MIAA:0000125 FMA:7209 NCIT:C12404 EMAPA:17962 TAO:0000403 XAO:0000258 BILA:0000125 EHDAA:8124"
 <http://purl.obolibrary.org/obo/GO_0050673>	"The multiplication or reproduction of epithelial cells, resulting in the expansion of a cell population. Epithelial cells make up the epithelium, the covering of internal and external surfaces of the body, including the lining of vessels and other small cavities. It consists of cells joined by small amounts of cementing substances."	
 <http://purl.obolibrary.org/obo/GO_0140014>	"A mitotic cell cycle process comprising the steps by which the nucleus of a eukaryotic cell divides; the process involves condensation of chromosomal DNA into a highly compacted form. Canonically, mitosis produces two daughter nuclei whose chromosome complement is identical to that of the mother cell."	
-<http://purl.obolibrary.org/obo/OBI_0003340>	"An magnetic resonance image data set in which the contrast emphasizes density of protons, supressing T1 and T2 effects"@en	
+<http://purl.obolibrary.org/obo/OBI_0003340>	"An magnetic resonance image data set in which the contrast emphasizes density of protons, suppressing T1 and T2 effects"@en	
 <http://purl.obolibrary.org/obo/GO_2001055>	"Any process that activates or increases the frequency, rate or extent of mesenchymal cell apoptotic process."	
 <http://purl.obolibrary.org/obo/CL_0000115>	"An endothelial cell comprises the outermost layer or lining of anatomical structures and can be squamous or cuboidal. In mammals, endothelial cell has vimentin filaments and is derived from the mesoderm."	"FMA:66772 CALOHA:TS-0278 BTO:0001176"
 <http://purl.obolibrary.org/obo/UBERON_0012054>	"The cavity within a myotome."	"EMAPA:31134 VHOG:0001283"
@@ -3373,7 +3373,7 @@
 <http://purl.obolibrary.org/obo/GO_0048853>	"The process in which the anatomical structures of the forebrain are generated and organized. The forebrain is the anterior of the three primary divisions of the developing chordate brain or the corresponding part of the adult brain (in vertebrates, includes especially the cerebral hemispheres, the thalamus, and the hypothalamus and especially in higher vertebrates is the main control center for sensory and associative information processing, visceral functions, and voluntary motor functions)."	
 <http://purl.obolibrary.org/obo/GO_1904809>	"Any process that modulates the frequency, rate or extent of dense core granule transport."	
 <http://purl.obolibrary.org/obo/GO_0006937>	"Any process that modulates the frequency, rate or extent of muscle contraction."	
-<http://purl.obolibrary.org/obo/OBI_0003358>	"A brain atlas consisting of weighted values that respresent the probability that a voxel X is part of some brain component Y, typically derived from multiple image data sets."@en	
+<http://purl.obolibrary.org/obo/OBI_0003358>	"A brain atlas consisting of weighted values that represent the probability that a voxel X is part of some brain component Y, typically derived from multiple image data sets."@en	
 <http://purl.obolibrary.org/obo/GO_0060457>	"Any process that decreases the frequency, rate or extent of a digestive system process, a physical, chemical, or biochemical process carried out by living organisms to break down ingested nutrients into components that may be easily absorbed and directed into metabolism."	
 <http://purl.obolibrary.org/obo/GO_0001578>	"A process that results in a parallel arrangement of microtubules."	
 <http://purl.obolibrary.org/obo/GO_0099642>	"The directed movement of proteins along microtubules from the cell periphery toward the cell body in nerve cell axons."	
@@ -3821,7 +3821,7 @@
 <http://purl.obolibrary.org/obo/GO_1902839>	"Any process that stops, prevents or reduces the frequency, rate or extent of nuclear migration along microtubule."	
 <http://purl.obolibrary.org/obo/GO_0035050>	"The process whose specific outcome is the progression of the embryonic heart tube over time, from its formation to the mature structure. The heart tube forms as the heart rudiment from the heart field."	
 <http://purl.obolibrary.org/obo/MRIO_0000683>	"A chemical reagent containing gadolinium injected into an MRI participant to increase the visible contrast of some magnetic resonance image data set."	
-<http://purl.obolibrary.org/obo/MRIO_0000389>	"An MRI acquisition sequence that acheives T1 weighting using gradient echo instead of spin echo."	
+<http://purl.obolibrary.org/obo/MRIO_0000389>	"An MRI acquisition sequence that achieves T1 weighting using gradient echo instead of spin echo."	
 <http://purl.obolibrary.org/obo/GO_0048285>	"The creation of two or more organelles by division of one organelle."	
 <http://purl.obolibrary.org/obo/GO_0042427>	"The chemical reactions and pathways resulting in the formation of serotonin (5-hydroxytryptamine), a monoamine neurotransmitter occurring in the peripheral and central nervous systems, also having hormonal properties."	"Wikipedia:Serotonin"
 <http://purl.obolibrary.org/obo/GO_1905771>	"Any process that stops, prevents or reduces the frequency, rate or extent of mesodermal cell differentiation."	
@@ -3908,7 +3908,7 @@
 <http://purl.obolibrary.org/obo/GO_1903942>	"Any process that activates or increases the frequency, rate or extent of respiratory gaseous exchange."	
 <http://purl.obolibrary.org/obo/GO_1904170>	"Any process that modulates the frequency, rate or extent of bleb assembly."	
 <http://purl.obolibrary.org/obo/PR_Q62351>	"A transferrin receptor protein 1 that is encoded in the genome of mouse."	"UniProtKB:Q62351"
-<http://purl.obolibrary.org/obo/OBI_0003342>	"A T1 weighted image data set where gadolidium contrast agent has been administered to the participant before image acquistion."@en	
+<http://purl.obolibrary.org/obo/OBI_0003342>	"A T1 weighted image data set where gadolidium contrast agent has been administered to the participant before image acquisition."@en	
 <http://purl.obolibrary.org/obo/GO_1904375>	"Any process that modulates the frequency, rate or extent of protein localization to cell periphery."	
 <http://purl.obolibrary.org/obo/UBERON_0013127>	"The part of the venous system that drains the lungs[Kardong]."	"Wikipedia:Pulmonary_venous_system"
 <http://purl.obolibrary.org/obo/GO_1904177>	"Any process that modulates the frequency, rate or extent of adipose tissue development."	
@@ -3964,7 +3964,7 @@
 <http://purl.obolibrary.org/obo/MRIO_1000004>	"A data item that is a representation of brain regions that exhibit statistically significant changes in neural activity in response to an experimental task or stimuli."	
 <http://purl.obolibrary.org/obo/UBERON_0011779>	"A nerve that is part of a head."	
 <http://purl.obolibrary.org/obo/UBERON_0000061>	"Material anatomical entity that is a single connected structure with inherent 3D shape generated by coordinated expression of the organism's own genome."	"CARO:0000003 MA:0003000 AEO:0000003 FMA:67135 http://dbpedia.org/ontology/AnatomicalStructure TAO:0000037 AAO:0010825 HAO:0000003 FMA:305751 ZFA:0000037 SCTID:362889002 EHDAA2:0003003 TGMA:0001823 XAO:0003000 BILA:0000003 VHOG:0001759 MESH:D000825 GAID:781 EMAPA:0"
-<http://purl.obolibrary.org/obo/OBI_0003335>	"A type of magnetic resonance image data set collected using at least three diffusion gradients of some factor \"b,\" which is a function of the amplitude, duration, and interval of the gradiants."@en	
+<http://purl.obolibrary.org/obo/OBI_0003335>	"A type of magnetic resonance image data set collected using at least three diffusion gradients of some factor \"b,\" which is a function of the amplitude, duration, and interval of the gradients."@en	
 <http://purl.obolibrary.org/obo/UBERON_0004756>	"Dermis-derived entity that is made of skeletal tissue."	
 <http://purl.obolibrary.org/obo/GO_1904397>	"Any process that stops, prevents or reduces the frequency, rate or extent of neuromuscular junction development."	
 <http://purl.obolibrary.org/obo/UBERON_0034769>		"NCIT:C41168 FMA:79770"
@@ -4343,7 +4343,7 @@
 <http://purl.obolibrary.org/obo/GO_0099081>	"A polymeric supramolecular structure."	
 <http://purl.obolibrary.org/obo/GO_0060284>	"Any process that modulates the rate, frequency or extent of the progression of the cell over time, from its formation to the mature structure. Cell development does not include the steps involved in committing a cell to a specific fate."	
 <http://purl.obolibrary.org/obo/MONDO_0002602>	"A disease involving the central nervous system."	"MEDGEN:892343 NCIT:C2934 EFO:0009386 SCTID:23853001 DOID:331 MESH:D002493 UMLS:C4021765"
-<http://purl.obolibrary.org/obo/MRIO_0000351>	"An magnetic resonance image data set in which the contrast emphasizes density of protons, supressing T1 and T2 effects"	
+<http://purl.obolibrary.org/obo/MRIO_0000351>	"An magnetic resonance image data set in which the contrast emphasizes density of protons, suppressing T1 and T2 effects"	
 <http://purl.obolibrary.org/obo/MRIO_0000612>	"A connectivity matrix where each element represents the degree of physical integrity of some path between two brain regions or voxels."	
 <http://purl.obolibrary.org/obo/CHEBI_58942>	"An amino-acid residue protonated on nitrogen."	
 <http://purl.obolibrary.org/obo/GO_0055026>	"Any process that stops, prevents, or reduces the frequency, rate or extent of cardiac muscle tissue development."	
@@ -5271,7 +5271,7 @@
 <http://purl.obolibrary.org/obo/UO_0000105>		
 <http://purl.obolibrary.org/obo/UBERON_0000389>	"Tissue that surrounds the lens nucleus."	"MESH:D007904 FMA:58970 SCTID:280626006 BTO:0001632 CALOHA:TS-0542"
 <http://purl.obolibrary.org/obo/CHEBI_79388>	"Any inorganic anion with a valency of two."	
-<http://purl.obolibrary.org/obo/MRIO_0000635>	"A type of magnetic resonance image data set collected using at least three diffusion gradients of some factor \"b,\" which is a function of the amplitude, duration, and interval of the gradiants."	
+<http://purl.obolibrary.org/obo/MRIO_0000635>	"A type of magnetic resonance image data set collected using at least three diffusion gradients of some factor \"b,\" which is a function of the amplitude, duration, and interval of the gradients."	
 <http://purl.obolibrary.org/obo/UBERON_0001084>	"A zone of skin that is part of a head [Automatically generated definition]."	"MA:0000582 FMA:12166 SCTID:181484006 FMA:24756 NCIT:C52757"
 <http://purl.obolibrary.org/obo/CHEBI_35881>		
 <http://purl.obolibrary.org/obo/GO_0032127>	"The lipid bilayer surrounding a dense core granule."	

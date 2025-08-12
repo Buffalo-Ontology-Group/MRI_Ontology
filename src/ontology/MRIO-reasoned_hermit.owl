@@ -360,7 +360,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000683"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A T1 image where gadolidium contrast agent has been used in the subject before image acquistion</obo:IAO_0000115>
+        <obo:IAO_0000115>A T1 image where gadolidium contrast agent has been used in the subject before image acquisition</obo:IAO_0000115>
         <obo:IAO_0000115>A type of post-contrast, T1 image for which the contrast agent is galolinium</obo:IAO_0000115>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
         <rdfs:label xml:lang="en">Post-Gd T1 image data set</rdfs:label>
@@ -422,7 +422,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000387"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A type of MRI image in which the contrast emphasizes density of protons, supressing T1 and T2 effects</obo:IAO_0000115>
+        <obo:IAO_0000115>A type of MRI image in which the contrast emphasizes density of protons, suppressing T1 and T2 effects</obo:IAO_0000115>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
         <rdfs:label xml:lang="en">proton density image data set</rdfs:label>
     </owl:Class>

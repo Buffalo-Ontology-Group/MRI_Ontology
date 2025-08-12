@@ -516,7 +516,7 @@ SubClassOf(obo:MRIO_0000342 obo:MRIO_0000380)
 
 # Class: obo:MRIO_0000345 (obsolete Post-Gd T1 image data set)
 
-AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000345 "A T1 weighted image data set where gadolidium contrast agent has been administered to the participant before image acquistion.")
+AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000345 "A T1 weighted image data set where gadolidium contrast agent has been administered to the participant before image acquisition.")
 AnnotationAssertion(obo:IAO_0000117 obo:MRIO_0000345 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"")
 AnnotationAssertion(obo:IAO_0000117 obo:MRIO_0000345 "https://orcid.org/0000-0001-9990-8331 \"Alexander D. Diehl\"")
 AnnotationAssertion(obo:IAO_0000117 obo:MRIO_0000345 "https://orcid.org/0000-0002-2104-0568 \"Lucas M. Serra\"")
@@ -564,7 +564,7 @@ SubClassOf(obo:MRIO_0000350 obo:OBI_0003335)
 
 # Class: obo:MRIO_0000351 (obsolete proton density image data set)
 
-AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000351 "An magnetic resonance image data set in which the contrast emphasizes density of protons, supressing T1 and T2 effects")
+AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000351 "An magnetic resonance image data set in which the contrast emphasizes density of protons, suppressing T1 and T2 effects")
 AnnotationAssertion(obo:IAO_0000117 obo:MRIO_0000351 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"")
 AnnotationAssertion(obo:IAO_0000117 obo:MRIO_0000351 "https://orcid.org/0000-0001-9990-8331 \"Alexander D. Diehl\"")
 AnnotationAssertion(obo:IAO_0000117 obo:MRIO_0000351 "https://orcid.org/0000-0002-2104-0568 \"Lucas M. Serra\"")
@@ -831,7 +831,7 @@ SubClassOf(obo:MRIO_0000388 DataHasValue(obo:MRIO_0000384 "90"^^xsd:integer))
 
 # Class: obo:MRIO_0000389 (T1 GRE sequence)
 
-AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000389 "An MRI acquisition sequence that acheives T1 weighting using gradient echo instead of spin echo.")
+AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000389 "An MRI acquisition sequence that achieves T1 weighting using gradient echo instead of spin echo.")
 AnnotationAssertion(obo:IAO_0000117 obo:MRIO_0000389 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"")
 AnnotationAssertion(obo:IAO_0000117 obo:MRIO_0000389 "https://orcid.org/0000-0002-2104-0568 \"Lucas M. Serra\"")
 AnnotationAssertion(rdfs:label obo:MRIO_0000389 "T1 GRE sequence"@en)
@@ -841,7 +841,7 @@ SubClassOf(obo:MRIO_0000389 ObjectSomeValuesFrom(obo:OBI_0000299 obo:OBI_0003343
 
 # Class: obo:MRIO_0000390 (T2* GRE sequence)
 
-AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000390 "An MRI acquisition sequence that acheives T2 weighting using gradient echo instead of spin echo.")
+AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000390 "An MRI acquisition sequence that achieves T2 weighting using gradient echo instead of spin echo.")
 AnnotationAssertion(obo:IAO_0000116 obo:MRIO_0000390 "Needs GRE sequence.")
 AnnotationAssertion(obo:IAO_0000117 obo:MRIO_0000390 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"")
 AnnotationAssertion(obo:IAO_0000117 obo:MRIO_0000390 "https://orcid.org/0000-0002-2104-0568 \"Lucas M. Serra\"")
@@ -1470,7 +1470,7 @@ SubClassOf(obo:MRIO_0000634 ObjectSomeValuesFrom(obo:IAO_0000136 obo:MRIO_000069
 
 # Class: obo:MRIO_0000635 (obsolete diffusion weighted image data set)
 
-AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000635 "A type of magnetic resonance image data set collected using at least three diffusion gradients of some factor \"b,\" which is a function of the amplitude, duration, and interval of the gradiants.")
+AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000635 "A type of magnetic resonance image data set collected using at least three diffusion gradients of some factor \"b,\" which is a function of the amplitude, duration, and interval of the gradients.")
 AnnotationAssertion(obo:IAO_0000117 obo:MRIO_0000635 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"")
 AnnotationAssertion(obo:IAO_0000117 obo:MRIO_0000635 "https://orcid.org/0000-0001-9990-8331 \"Alexander D. Diehl\"")
 AnnotationAssertion(obo:IAO_0100001 obo:MRIO_0000635 obo:OBI_0003335)
@@ -1565,7 +1565,7 @@ AnnotationAssertion(owl:deprecated obo:MRIO_0000647 "true"^^xsd:boolean)
 
 # Class: obo:MRIO_0000648 (obsolete probabilistic brain region atlas image dataset)
 
-AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000648 "A brain atlas consisting of weighted values that respresent the probability that a voxel X is part of some brain component Y, typically derived from multiple image data sets.")
+AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000648 "A brain atlas consisting of weighted values that represent the probability that a voxel X is part of some brain component Y, typically derived from multiple image data sets.")
 AnnotationAssertion(obo:IAO_0000117 obo:MRIO_0000648 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"")
 AnnotationAssertion(obo:IAO_0000117 obo:MRIO_0000648 "https://orcid.org/0000-0001-9990-8331 \"Alexander D. Diehl\"")
 AnnotationAssertion(obo:IAO_0000117 obo:MRIO_0000648 "https://orcid.org/0000-0002-9821-4132 \"Mackenzie T. Smith\"")

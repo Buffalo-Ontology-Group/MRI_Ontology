@@ -51,7 +51,7 @@ property_value: terms:creator http://orcid.org/0000-0002-2104-0568
 [Term]
 id: MRIO:0000345
 name: obsolete Post-Gd T1 image data set
-def: "A T1 weighted image data set where gadolidium contrast agent has been administered to the participant before image acquistion." []
+def: "A T1 weighted image data set where gadolidium contrast agent has been administered to the participant before image acquisition." []
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9990-8331 \"Alexander D. Diehl\"" xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0002-2104-0568 \"Lucas M. Serra\"" xsd:string
@@ -99,7 +99,7 @@ property_value: IAO:0000117 "https://orcid.org/0000-0002-2104-0568 \"Lucas M. Se
 [Term]
 id: MRIO:0000351
 name: obsolete proton density image data set
-def: "An magnetic resonance image data set in which the contrast emphasizes density of protons, supressing T1 and T2 effects" []
+def: "An magnetic resonance image data set in which the contrast emphasizes density of protons, suppressing T1 and T2 effects" []
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9990-8331 \"Alexander D. Diehl\"" xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0002-2104-0568 \"Lucas M. Serra\"" xsd:string
@@ -360,7 +360,7 @@ property_value: IAO:0000118 "T2 TSE sequence" xsd:string
 [Term]
 id: MRIO:0000389
 name: T1 GRE sequence
-def: "An MRI acquisition sequence that acheives T1 weighting using gradient echo instead of spin echo." []
+def: "An MRI acquisition sequence that achieves T1 weighting using gradient echo instead of spin echo." []
 is_a: MRIO:0000385 ! T1 weighted MRI acquisition sequence
 relationship: MRIO:0000375 MRIO:0000628 ! has pulse sequence gradient echo sequence
 relationship: OBI:0000299 OBI:0003343
@@ -370,7 +370,7 @@ property_value: IAO:0000117 "https://orcid.org/0000-0002-2104-0568 \"Lucas M. Se
 [Term]
 id: MRIO:0000390
 name: T2* GRE sequence
-def: "An MRI acquisition sequence that acheives T2 weighting using gradient echo instead of spin echo." []
+def: "An MRI acquisition sequence that achieves T2 weighting using gradient echo instead of spin echo." []
 is_a: MRIO:0000386 ! T2 weighted MRI acquisition sequence
 relationship: OBI:0000299 OBI:0003353
 property_value: IAO:0000116 "Needs GRE sequence." xsd:string
@@ -987,7 +987,7 @@ property_value: IAO:0000117 "https://orcid.org/0000-0002-9821-4132 \"Mackenzie T
 [Term]
 id: MRIO:0000635
 name: obsolete diffusion weighted image data set
-def: "A type of magnetic resonance image data set collected using at least three diffusion gradients of some factor \"b,\" which is a function of the amplitude, duration, and interval of the gradiants." []
+def: "A type of magnetic resonance image data set collected using at least three diffusion gradients of some factor \"b,\" which is a function of the amplitude, duration, and interval of the gradients." []
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9990-8331 \"Alexander D. Diehl\"" xsd:string
 is_obsolete: true
@@ -1082,7 +1082,7 @@ replaced_by: OBI:0003357
 [Term]
 id: MRIO:0000648
 name: obsolete probabilistic brain region atlas image dataset
-def: "A brain atlas consisting of weighted values that respresent the probability that a voxel X is part of some brain component Y, typically derived from multiple image data sets." []
+def: "A brain atlas consisting of weighted values that represent the probability that a voxel X is part of some brain component Y, typically derived from multiple image data sets." []
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9990-8331 \"Alexander D. Diehl\"" xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0002-9821-4132 \"Mackenzie T. Smith\"" xsd:string

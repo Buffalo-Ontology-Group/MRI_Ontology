@@ -424,7 +424,7 @@
     <!-- http://purl.obolibrary.org/obo/MRIO_0000345 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000345">
-        <obo:IAO_0000115>A T1 weighted image data set where gadolidium contrast agent has been administered to the participant before image acquistion.</obo:IAO_0000115>
+        <obo:IAO_0000115>A T1 weighted image data set where gadolidium contrast agent has been administered to the participant before image acquisition.</obo:IAO_0000115>
         <obo:IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</obo:IAO_0000117>
         <obo:IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</obo:IAO_0000117>
         <obo:IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</obo:IAO_0000117>
@@ -502,7 +502,7 @@
     <!-- http://purl.obolibrary.org/obo/MRIO_0000351 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000351">
-        <obo:IAO_0000115>An magnetic resonance image data set in which the contrast emphasizes density of protons, supressing T1 and T2 effects</obo:IAO_0000115>
+        <obo:IAO_0000115>An magnetic resonance image data set in which the contrast emphasizes density of protons, suppressing T1 and T2 effects</obo:IAO_0000115>
         <obo:IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</obo:IAO_0000117>
         <obo:IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</obo:IAO_0000117>
         <obo:IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</obo:IAO_0000117>
@@ -1127,7 +1127,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0003343"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>An MRI acquisition sequence that acheives T1 weighting using gradient echo instead of spin echo.</obo:IAO_0000115>
+        <obo:IAO_0000115>An MRI acquisition sequence that achieves T1 weighting using gradient echo instead of spin echo.</obo:IAO_0000115>
         <obo:IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</obo:IAO_0000117>
         <obo:IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</obo:IAO_0000117>
         <rdfs:label xml:lang="en">T1 GRE sequence</rdfs:label>
@@ -1199,7 +1199,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000661"/>
             </owl:Restriction>
         </owl:disjointWith>
-        <obo:IAO_0000115>An MRI acquisition sequence that acheives T2 weighting using gradient echo instead of spin echo.</obo:IAO_0000115>
+        <obo:IAO_0000115>An MRI acquisition sequence that achieves T2 weighting using gradient echo instead of spin echo.</obo:IAO_0000115>
         <obo:IAO_0000116>Needs GRE sequence.</obo:IAO_0000116>
         <obo:IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</obo:IAO_0000117>
         <obo:IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</obo:IAO_0000117>
@@ -2490,7 +2490,7 @@ The values often belong to a group of pixels or voxels that share the same chara
     <!-- http://purl.obolibrary.org/obo/MRIO_0000635 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000635">
-        <obo:IAO_0000115>A type of magnetic resonance image data set collected using at least three diffusion gradients of some factor &quot;b,&quot; which is a function of the amplitude, duration, and interval of the gradiants.</obo:IAO_0000115>
+        <obo:IAO_0000115>A type of magnetic resonance image data set collected using at least three diffusion gradients of some factor &quot;b,&quot; which is a function of the amplitude, duration, and interval of the gradients.</obo:IAO_0000115>
         <obo:IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</obo:IAO_0000117>
         <obo:IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</obo:IAO_0000117>
         <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/OBI_0003335"/>
@@ -2664,7 +2664,7 @@ The values often belong to a group of pixels or voxels that share the same chara
     <!-- http://purl.obolibrary.org/obo/MRIO_0000648 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000648">
-        <obo:IAO_0000115>A brain atlas consisting of weighted values that respresent the probability that a voxel X is part of some brain component Y, typically derived from multiple image data sets.</obo:IAO_0000115>
+        <obo:IAO_0000115>A brain atlas consisting of weighted values that represent the probability that a voxel X is part of some brain component Y, typically derived from multiple image data sets.</obo:IAO_0000115>
         <obo:IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</obo:IAO_0000117>
         <obo:IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</obo:IAO_0000117>
         <obo:IAO_0000117>https://orcid.org/0000-0002-9821-4132 &quot;Mackenzie T. Smith&quot;</obo:IAO_0000117>

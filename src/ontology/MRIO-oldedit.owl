@@ -2410,7 +2410,7 @@ variable
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/MRIO__0000345</IRI>
-        <Literal>a T1 image where gadolidium contrast agent has been used in the subject before image acquistion</Literal>
+        <Literal>a T1 image where gadolidium contrast agent has been used in the subject before image acquisition</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
@@ -2500,7 +2500,7 @@ variable
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/MRIO__0000351</IRI>
-        <Literal>A type of MRI image in which the contrast emphasizes density of protons, supressing T1 and T2 effects</Literal>
+        <Literal>A type of MRI image in which the contrast emphasizes density of protons, suppressing T1 and T2 effects</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
