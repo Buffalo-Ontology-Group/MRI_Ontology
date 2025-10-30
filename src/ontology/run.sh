@@ -54,8 +54,8 @@ if [ -n "$TAG_IN_IMAGE" ]; then
   ODK_TAG=$TAG_IN_IMAGE
   ODK_IMAGE=$(echo $ODK_IMAGE | awk -F':' '{ print $1 }')
 fi
-ODK_TAG=${ODK_TAG:-v1.5.2}
-ODK_JAVA_OPTS=${ODK_JAVA_OPTS:--Xmx16G}
+ODK_TAG=${ODK_TAG:-latest}
+ODK_JAVA_OPTS=${ODK_JAVA_OPTS:--Xmx8G}
 ODK_DEBUG=${ODK_DEBUG:-no}
 
 ODK_USER_ID=${ODK_USER_ID:-$(id -u)}
