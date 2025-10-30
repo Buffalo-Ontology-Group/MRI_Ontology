@@ -2,7 +2,7 @@
 An ontology for the representation of MRI acquisition and analysis.
 
 MRIO builds on the Ontology for Biomedical Investigations (OBI) to flesh out 
-the process of acquiring MR images, analyzing these images, and interpretting 
+the process of acquiring MR images, analyzing these images, and interpreting 
 the results of these analyses.
 A select set of terms from Uberon are imported to relate MRI analyses to the 
 specific brain regions.
@@ -88,7 +88,7 @@ and alignment with other neuroimaging and OBO ontologies
 (e.g. [NIDM](https://github.com/incf-nidash/nidm-terms)).
 
 The MRIO team meets biweekly via Zoom on Thursdays at 2:00pm EST to discuss ongoing development.
-External contributers are more than welcome to join these meetings to discuss new terms 
+External contributors are more than welcome to join these meetings to discuss new terms 
 or anything related to the ontology.
 To obtain a link to the biweekly MRIO discussion, please contact Alexander Bartnik at adbartni@buffalo.edu.
 

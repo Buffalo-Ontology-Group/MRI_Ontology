@@ -18,7 +18,7 @@ def find_analyses(seq_labels): #input should be list of strings with identifying
     #list of image IRIs
     args = list([])
 
-    #contruction of 1st query, linking sequences to images
+    #construction of 1st query, linking sequences to images
     str_a = "PREFIX owl: <http://www.w3.org/2002/07/owl#> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX root: <http://purl.obolibrary.org/obo/MRIO_0000341> PREFIX output: <http://purl.obolibrary.org/obo/OBI_0000299> SELECT DISTINCT ?seq ?seq_label ?image ?image_label WHERE { ?image rdfs:subClassOf* root: . ?image rdfs:label ?image_label . ?seq rdfs:label ?seq_label . ?seq rdfs:subClassOf [ a owl:Restriction; owl:onProperty output:; owl:someValuesFrom ?image ]. "
     str_c = "} order by ?image"
     for x in range(len(seq_labels)):

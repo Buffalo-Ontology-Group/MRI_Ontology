@@ -172,7 +172,7 @@
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/MRIO_0000688">
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000342"/>
-        <IAO_0000115>A relation between some part of the MRI acquisition sequence and the setttings of an MRI machine set by a technician.</IAO_0000115>
+        <IAO_0000115>A relation between some part of the MRI acquisition sequence and the settings of an MRI machine set by a technician.</IAO_0000115>
         <rdfs:label xml:lang="en">has MRI acquisition parameter</rdfs:label>
     </owl:ObjectProperty>
     
@@ -402,7 +402,7 @@
     <!-- http://purl.obolibrary.org/obo/MRIO_0000345 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000345">
-        <IAO_0000115>A T1 weighted image data set where gadolidium contrast agent has been administered to the participant before image acquistion.</IAO_0000115>
+        <IAO_0000115>A T1 weighted image data set where gadolidium contrast agent has been administered to the participant before image acquisition.</IAO_0000115>
         <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
         <IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</IAO_0000117>
         <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
@@ -480,7 +480,7 @@
     <!-- http://purl.obolibrary.org/obo/MRIO_0000351 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000351">
-        <IAO_0000115>An magnetic resonance image data set in which the contrast emphasizes density of protons, supressing T1 and T2 effects</IAO_0000115>
+        <IAO_0000115>An magnetic resonance image data set in which the contrast emphasizes density of protons, suppressing T1 and T2 effects</IAO_0000115>
         <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
         <IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</IAO_0000117>
         <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
@@ -1103,7 +1103,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0003343"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <IAO_0000115>An MRI acquisition sequence that acheives T1 weighting using gradient echo instead of spin echo.</IAO_0000115>
+        <IAO_0000115>An MRI acquisition sequence that achieves T1 weighting using gradient echo instead of spin echo.</IAO_0000115>
         <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
         <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
         <rdfs:label xml:lang="en">T1 GRE sequence</rdfs:label>
@@ -1175,7 +1175,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000661"/>
             </owl:Restriction>
         </owl:disjointWith>
-        <IAO_0000115>An MRI acquisition sequence that acheives T2 weighting using gradient echo instead of spin echo.</IAO_0000115>
+        <IAO_0000115>An MRI acquisition sequence that achieves T2 weighting using gradient echo instead of spin echo.</IAO_0000115>
         <IAO_0000116>Needs GRE sequence.</IAO_0000116>
         <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
         <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
@@ -2125,7 +2125,7 @@ The values often belong to a group of pixels or voxels that share the same chara
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000649"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <IAO_0000115>A structural connectivity matrix where each element respresents the number of white matter streamlines still connecting two brain regions when accounting for focal lesion damage, normalized for the NeMo healthy control tractogram set.</IAO_0000115>
+        <IAO_0000115>A structural connectivity matrix where each element represents the number of white matter streamlines still connecting two brain regions when accounting for focal lesion damage, normalized for the NeMo healthy control tractogram set.</IAO_0000115>
         <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
         <rdfs:label xml:lang="en">nConMat matrix</rdfs:label>
     </owl:Class>
@@ -2466,7 +2466,7 @@ The values often belong to a group of pixels or voxels that share the same chara
     <!-- http://purl.obolibrary.org/obo/MRIO_0000635 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000635">
-        <IAO_0000115>A type of magnetic resonance image data set collected using at least three diffusion gradients of some factor &quot;b,&quot; which is a function of the amplitude, duration, and interval of the gradiants.</IAO_0000115>
+        <IAO_0000115>A type of magnetic resonance image data set collected using at least three diffusion gradients of some factor &quot;b,&quot; which is a function of the amplitude, duration, and interval of the gradients.</IAO_0000115>
         <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
         <IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</IAO_0000117>
         <IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/OBI_0003335"/>
@@ -2640,7 +2640,7 @@ The values often belong to a group of pixels or voxels that share the same chara
     <!-- http://purl.obolibrary.org/obo/MRIO_0000648 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000648">
-        <IAO_0000115>A brain atlas consisting of weighted values that respresent the probability that a voxel X is part of some brain component Y, typically derived from multiple image data sets.</IAO_0000115>
+        <IAO_0000115>A brain atlas consisting of weighted values that represent the probability that a voxel X is part of some brain component Y, typically derived from multiple image data sets.</IAO_0000115>
         <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
         <IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</IAO_0000117>
         <IAO_0000117>https://orcid.org/0000-0002-9821-4132 &quot;Mackenzie T. Smith&quot;</IAO_0000117>
@@ -2965,7 +2965,7 @@ The values often belong to a group of pixels or voxels that share the same chara
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000651">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000421"/>
-        <IAO_0000115>A funtional MRI data set analysis software suite of preconfigured pipelines for analysis fMRI data and estimating functional connectomics.</IAO_0000115>
+        <IAO_0000115>A functional MRI data set analysis software suite of preconfigured pipelines for analysis fMRI data and estimating functional connectomics.</IAO_0000115>
         <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
         <IAO_0000119>https://doi.org/10.3389/conf.fninf.2013.09.00042</IAO_0000119>
         <rdfs:comment>The Configurable Pipeline for the Analysis of Connectomes (C-PAC) is a configurable, open-source, Nipype-based, automated processing pipeline for resting state functional MRI (R-fMRI) data, for use by both novice and expert users.</rdfs:comment>
@@ -3111,7 +3111,7 @@ The values often belong to a group of pixels or voxels that share the same chara
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0003344"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <IAO_0000115>FreeSurfer stream to derive surface labels and volumes from an invidual at only one timepoint.</IAO_0000115>
+        <IAO_0000115>FreeSurfer stream to derive surface labels and volumes from an individual at only one timepoint.</IAO_0000115>
         <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
         <rdfs:label xml:lang="en">FreeSurfer cross-sectional analysis</rdfs:label>
     </owl:Class>
@@ -3201,7 +3201,7 @@ The values often belong to a group of pixels or voxels that share the same chara
         <IAO_0000115>A brain volumetric analysis tool that estimates the percent brain volume change in an individual between two timepoints using baseline and follow-up T1w MRI.</IAO_0000115>
         <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
         <IAO_0000119>Smith, Stephen M.; De Stefano, Nicola; Jenkinson, Mark; Matthews, Paul M. Normalized Accurate Measurement of Longitudinal Brain Change, Journal of Computer Assisted Tomography: May 2001 - Volume 25 - Issue 3 - p 466-475</IAO_0000119>
-        <rdfs:comment>Siena estimates percentage brain volume change (PBVC) betweem two input images, taken of the same subject, at different points in time. It calls a series of FSL programs to strip the non-brain tissue from the two images, register the two brains (under the constraint that the skulls are used to hold the scaling constant during the registration) and analyse the brain change between the two time points. It is also possible to project the voxelwise atrophy measures into standard space in a way that allows for multi-subject voxelwise statistical testing.</rdfs:comment>
+        <rdfs:comment>Siena estimates percentage brain volume change (PBVC) between two input images, taken of the same subject, at different points in time. It calls a series of FSL programs to strip the non-brain tissue from the two images, register the two brains (under the constraint that the skulls are used to hold the scaling constant during the registration) and analyse the brain change between the two time points. It is also possible to project the voxelwise atrophy measures into standard space in a way that allows for multi-subject voxelwise statistical testing.</rdfs:comment>
         <rdfs:label xml:lang="en">SIENA analysis</rdfs:label>
     </owl:Class>
     
@@ -3482,7 +3482,7 @@ The values often belong to a group of pixels or voxels that share the same chara
             </owl:Restriction>
         </rdfs:subClassOf>
         <IAO_0000115>An MRI acquisition sequence that uses diffusion gradients to create contrast in the image corresponding to the Brownian motion of the tissue in the examined voxel.</IAO_0000115>
-        <IAO_0000116>Add difussion gradient as parameter.</IAO_0000116>
+        <IAO_0000116>Add diffusion gradient as parameter.</IAO_0000116>
         <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
         <IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</IAO_0000117>
         <oboInOwl:hasRelatedSynonym>NCIT:C111116</oboInOwl:hasRelatedSynonym>
@@ -5487,7 +5487,7 @@ The values often belong to a group of pixels or voxels that share the same chara
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000033">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_1000003"/>
-        <IAO_0000115>A type of functional magnetic resonance imaging (fMRI) sequence protocol in which the participant is given specific tasks or stimuli that alternate between structured blocks and randomized or semi-randomized order seperated by rest periods during the imaging acquisition.</IAO_0000115>
+        <IAO_0000115>A type of functional magnetic resonance imaging (fMRI) sequence protocol in which the participant is given specific tasks or stimuli that alternate between structured blocks and randomized or semi-randomized order separated by rest periods during the imaging acquisition.</IAO_0000115>
         <terms:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
         <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-07-31T21:38:59Z</terms:date>
         <oboInOwl:hasExactSynonym>mixed event-related/block design fMRI sequence protocol</oboInOwl:hasExactSynonym>
