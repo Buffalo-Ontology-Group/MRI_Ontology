@@ -1,7 +1,7 @@
 [codespell]
 # Ref: https://github.com/codespell-project/codespell#using-a-config-file
-skip = .git*,.codespellrc
+skip = .git*,.codespellrc,MRIO-full.*,MRIO-base.*,MRIO-reasoned_hermit.owl,MRIO-oldedit.*,*.obo,MRIO.owl,imports,mirror,tmp,reports,uberon_filtered.owl
 check-hidden = true
 # case sensitive etc
 ignore-regex = created_by: .*|\b(AER|CNA|TE|ND|Chromum)\b
-ignore-words-list = ser,cyclin,als,transferrin,mater
+ignore-words-list = ser,cyclin,als,transferrin,mater,te
