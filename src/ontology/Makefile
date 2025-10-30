@@ -159,7 +159,7 @@ all_main: $(MAIN_FILES)
 # ----------------------------------------
 
 
-IMPORTS =  obi uberon mondo pato ncit caro stato
+IMPORTS =  obi uberon mondo pato stato
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -428,20 +428,20 @@ mirror-pato: | $(TMPDIR)
 	$(ROBOT) convert -i $(TMPDIR)/pato-download.owl -o $(TMPDIR)/$@.owl
 
 
-## ONTOLOGY: ncit
-.PHONY: mirror-ncit
-.PRECIOUS: $(MIRRORDIR)/ncit.owl
-mirror-ncit: | $(TMPDIR)
-	curl -L $(OBOBASE)/ncit.owl --create-dirs -o $(TMPDIR)/ncit-download.owl --retry 4 --max-time 200 && \
-	$(ROBOT) convert -i $(TMPDIR)/ncit-download.owl -o $(TMPDIR)/$@.owl
+### ONTOLOGY: ncit
+#.PHONY: mirror-ncit
+#.PRECIOUS: $(MIRRORDIR)/ncit.owl
+#mirror-ncit: | $(TMPDIR)
+#	curl -L $(OBOBASE)/ncit.owl --create-dirs -o $(TMPDIR)/ncit-download.owl --retry 4 --max-time 200 && \
+#	$(ROBOT) convert -i $(TMPDIR)/ncit-download.owl -o $(TMPDIR)/$@.owl
 
 
 ## ONTOLOGY: caro
-.PHONY: mirror-caro
-.PRECIOUS: $(MIRRORDIR)/caro.owl
-mirror-caro: | $(TMPDIR)
-	curl -L $(OBOBASE)/caro.owl --create-dirs -o $(TMPDIR)/caro-download.owl --retry 4 --max-time 200 && \
-	$(ROBOT) convert -i $(TMPDIR)/caro-download.owl -o $(TMPDIR)/$@.owl
+#.PHONY: mirror-caro
+#.PRECIOUS: $(MIRRORDIR)/caro.owl
+#mirror-caro: | $(TMPDIR)
+#	curl -L $(OBOBASE)/caro.owl --create-dirs -o $(TMPDIR)/caro-download.owl --retry 4 --max-time 200 && \
+#	$(ROBOT) convert -i $(TMPDIR)/caro-download.owl -o $(TMPDIR)/$@.owl
 
 
 ## ONTOLOGY: stato
