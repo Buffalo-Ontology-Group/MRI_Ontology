@@ -2,7 +2,6 @@
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/"
      xml:base="http://purl.obolibrary.org/obo/"
      xmlns:cl="http://purl.obolibrary.org/obo/cl#"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:go="http://purl.obolibrary.org/obo/go#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -34,15 +33,15 @@
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/">
         <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/mrio/releases/2021-04-10/mrio.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/mondo.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/stato.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MRIO/releases/2025-01-31/imports/obi_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MRIO/releases/2025-04-08/imports/mondo_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MRIO/releases/2025-04-08/imports/obi_import.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2019-08-26/bfo.owl"/>
-        <dc:contributor>Alan Ruttenberg</dc:contributor>
-        <dc:description>An ontology for the representation of MRI acquisition and analysis.</dc:description>
-        <dc:title>MRI Ontology (MRI)</dc:title>
+        <terms:contributor>Alan Ruttenberg</terms:contributor>
+        <terms:description>An ontology for the representation of MRI acquisition and analysis.</terms:description>
+        <terms:title>MRI Ontology (MRI)</terms:title>
         <terms:creator>Alexander D. Bartnik</terms:creator>
         <terms:creator>Alexander D. Diehl</terms:creator>
         <terms:creator>Alexander Terry</terms:creator>
@@ -446,7 +445,7 @@
         <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
         <IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</IAO_0000117>
         <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
-        <rdfs:label xml:lang="en">ASL perfusion data set</rdfs:label>
+        <rdfs:label xml:lang="en">arterial spin labelling perfusion image data set</rdfs:label>
     </owl:Class>
     
 
@@ -4960,6 +4959,16 @@ The values often belong to a group of pixels or voxels that share the same chara
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MRIO_0000747 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000747">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003355"/>
+        <IAO_0000115>An image data set analysis that uses inferential statistical methods to draw conclusions about the underlying phenomena represented in an image data set.</IAO_0000115>
+        <rdfs:label xml:lang="en">statistical inference applied to image data set</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MRIO_0003071 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0003071">
@@ -5352,7 +5361,7 @@ The values often belong to a group of pixels or voxels that share the same chara
         <IAO_0000115>A technique used in functional MRI data set analysis where the response to each event is estimated by fitting a model with separate regressors for each trial. By correlating the parameter estimates (beta series) across regions, this method examines the degree of trial-by-trial fluctuation similarity between regions, indicating functional connectivity. particularly useful in event-related studies with longer inter-trial intervals.</IAO_0000115>
         <terms:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
         <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-07-29T19:28:12Z</terms:date>
-        <rdfs:label xml:lang="en">beta series correlation</rdfs:label>
+        <rdfs:label xml:lang="en">beta series correlation of functional magnetic resonance image data set</rdfs:label>
     </owl:Class>
     
 
@@ -5537,6 +5546,135 @@ The values often belong to a group of pixels or voxels that share the same chara
         <IAO_0000115>Blood circulation that is increased in the brain, in response to neural activity.</IAO_0000115>
         <oboInOwl:hasExactSynonym>HR</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">hemodynamic response</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000052 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000052">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000108"/>
+        <IAO_0000115>A linear regression for analysis of continuous dependent variable technique used in imaging that models the relationship between brain activity and multiple predictors, such as experimental conditions or behavioral data, to identify patterns in voxel or region level data.</IAO_0000115>
+        <terms:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-02T15:19:21Z</terms:date>
+        <rdfs:label xml:lang="en">multiple linear regression analysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000053 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000053">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000421"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_1000061"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <IAO_0000115>A functional magnetic resonance image data set analysis used to simultaneously analyze two sets of data (i.e., brain activity and task related variables) to identify common patterns.</IAO_0000115>
+        <terms:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-02T15:20:15Z</terms:date>
+        <oboInOwl:source>https://doi.org/10.1073/pnas.0811879106</oboInOwl:source>
+        <rdfs:label xml:lang="en">dual regression analysis of functional magnetic resonance image data set</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000054 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000054">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000108"/>
+        <IAO_0000115>A linear regression for analysis of continuous dependent variable technique used in imaging that models nonlinear relationships between voxel or pixel intensities and predictors by fitting polynomial functions to the data.</IAO_0000115>
+        <terms:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-02T15:21:49Z</terms:date>
+        <rdfs:label xml:lang="en">polynomial linear regression</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000055 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000055">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_1000061"/>
+        <IAO_0000115>An image data set analysis based on a general linear model used in imaging that models temporal dependencies in voxel signals by incorporating lagged predictors or autoregressive components.</IAO_0000115>
+        <terms:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-02T15:22:45Z</terms:date>
+        <oboInOwl:hasExactSynonym>GLM time series regression</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">general linear model time series regression</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000056 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000056">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000108"/>
+        <IAO_0000115>A linear regression for analysis of continuous dependent variable technique used in imaging that applies L2 regularization to stabilize coefficient estimates, reducing overfitting when modeling high dimensional voxel or pixel data.</IAO_0000115>
+        <terms:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-02T15:23:45Z</terms:date>
+        <rdfs:label xml:lang="en">ridge linear regression</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000057 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000057">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000108"/>
+        <IAO_0000115>A linear regression for analysis of continuous dependent variable technique used in imaging that applies L1 regularization to select relevant features by shrinking irrelevant voxel or pixel coefficients to zero.</IAO_0000115>
+        <terms:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-02T15:25:55Z</terms:date>
+        <rdfs:label xml:lang="en">lasso linear regression</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000058 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000058">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000108"/>
+        <IAO_0000115>A linear regression for analysis of continuous dependent variable technique used that combines L1 and L2 regularization to balance feature selection and model stability.</IAO_0000115>
+        <terms:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-02T15:26:40Z</terms:date>
+        <rdfs:label xml:lang="en">elastic net linear regression</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000059 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000059">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000108"/>
+        <IAO_0000115>A linear regression for analysis of continuous dependent variable technique used in imaging that accounts for nested data structures, allowing for the modeling of both single subject and group level effects.</IAO_0000115>
+        <terms:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-02T15:27:45Z</terms:date>
+        <rdfs:label xml:lang="en">hierarchical linear regression</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000060 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000060">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000747"/>
+        <IAO_0000115>A linear regression for analysis of an image data set used to obtain the posterior probability estimates of voxel or region level activity.</IAO_0000115>
+        <terms:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-02T15:28:17Z</terms:date>
+        <rdfs:label xml:lang="en">Bayesian linear regression of image data set</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_1000061 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000061">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000747"/>
+        <IAO_0000115>An image data set analysis based general linear model (GLM) is a statistical approach that utilizes one or more regressors to model pixel or voxel intensity as a linear combination of predictors.</IAO_0000115>
+        <terms:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-03T23:07:03Z</terms:date>
+        <oboInOwl:hasRelatedSynonym>image data set analysis based on GLM</oboInOwl:hasRelatedSynonym>
+        <rdfs:label xml:lang="en">image data set analysis based on general linear model</rdfs:label>
     </owl:Class>
     
 

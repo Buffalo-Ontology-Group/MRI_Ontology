@@ -1,1 +1,2 @@
 http://purl.obolibrary.org/obo/STATO_0000108 # linear regression for analysis of continuous dependent variable
+http://purl.obolibrary.org/obo/STATO_0000370 # ordinary least squares estimation

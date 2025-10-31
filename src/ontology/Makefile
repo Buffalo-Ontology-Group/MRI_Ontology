@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                9bc6e8a3b143ce386580c1f0850a6e5ae2a6ebd050525a83e71a9afdb72d3d4f
+CONFIG_HASH=                68953fe05c0614ed60b6c2b471032861210593b0f93a2d01af2f415dc9804301
 
 
 # ----------------------------------------
@@ -159,7 +159,7 @@ all_main: $(MAIN_FILES)
 # ----------------------------------------
 
 
-IMPORTS = obi pato stato #caro  mondo ncit uberon 
+IMPORTS =  obi uberon mondo pato stato
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -428,20 +428,28 @@ mirror-pato: | $(TMPDIR)
 	$(ROBOT) convert -i $(TMPDIR)/pato-download.owl -o $(TMPDIR)/$@.owl
 
 
-## ONTOLOGY: ncit
-.PHONY: mirror-ncit
-.PRECIOUS: $(MIRRORDIR)/ncit.owl
-mirror-ncit: | $(TMPDIR)
-	curl -L $(OBOBASE)/ncit.owl --create-dirs -o $(TMPDIR)/ncit-download.owl --retry 4 --max-time 200 && \
-	$(ROBOT) convert -i $(TMPDIR)/ncit-download.owl -o $(TMPDIR)/$@.owl
+### ONTOLOGY: ncit
+#.PHONY: mirror-ncit
+#.PRECIOUS: $(MIRRORDIR)/ncit.owl
+#mirror-ncit: | $(TMPDIR)
+#	curl -L $(OBOBASE)/ncit.owl --create-dirs -o $(TMPDIR)/ncit-download.owl --retry 4 --max-time 200 && \
+#	$(ROBOT) convert -i $(TMPDIR)/ncit-download.owl -o $(TMPDIR)/$@.owl
 
 
 ## ONTOLOGY: caro
-.PHONY: mirror-caro
-.PRECIOUS: $(MIRRORDIR)/caro.owl
-mirror-caro: | $(TMPDIR)
-	curl -L $(OBOBASE)/caro.owl --create-dirs -o $(TMPDIR)/caro-download.owl --retry 4 --max-time 200 && \
-	$(ROBOT) convert -i $(TMPDIR)/caro-download.owl -o $(TMPDIR)/$@.owl
+#.PHONY: mirror-caro
+#.PRECIOUS: $(MIRRORDIR)/caro.owl
+#mirror-caro: | $(TMPDIR)
+#	curl -L $(OBOBASE)/caro.owl --create-dirs -o $(TMPDIR)/caro-download.owl --retry 4 --max-time 200 && \
+#	$(ROBOT) convert -i $(TMPDIR)/caro-download.owl -o $(TMPDIR)/$@.owl
+
+
+## ONTOLOGY: stato
+.PHONY: mirror-stato
+.PRECIOUS: $(MIRRORDIR)/stato.owl
+mirror-stato: | $(TMPDIR)
+	curl -L $(OBOBASE)/stato.owl --create-dirs -o $(TMPDIR)/stato-download.owl --retry 4 --max-time 200 && \
+	$(ROBOT) convert -i $(TMPDIR)/stato-download.owl -o $(TMPDIR)/$@.owl
 
 
 $(MIRRORDIR)/%.owl: mirror-% | $(MIRRORDIR)

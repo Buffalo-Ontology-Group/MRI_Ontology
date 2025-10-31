@@ -10,3 +10,4 @@ import_group:
     - id: pato
     - id: ncit
     - id: caro
+    - id: stato

@@ -15,3 +15,5 @@ src/ontology/mirror/
 src/ontology/mirror/*owl
 src/ontology/tmp/*owl
 venv/
+.DS_Store
+**/.DS_Store

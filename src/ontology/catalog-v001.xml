@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/MRIO/releases/2025-04-08/imports/obi_import.owl" uri="imports/obi_import.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/uberon.owl" uri="imports/uberon_import_no_axioms.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/MRIO/releases/2025-04-08/imports/uberon_import.owl" uri="imports/uberon_import.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/MRIO/releases/2025-04-08/imports/mondo_import.owl" uri="imports/mondo_import.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/MRIO/releases/2025-04-08/imports/stato_import.owl" uri="imports/stato_import.owl"/>
     <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/stato.owl" uri="imports/stato_import.owl"/>
     <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/MRIO/releases/2025-01-31/imports/obi_import.owl" uri="imports/obi_import.owl"/>
     <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/iao.owl" uri="imports/iao_import.owl"/>
