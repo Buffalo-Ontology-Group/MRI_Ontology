@@ -458,7 +458,7 @@ $(MIRRORDIR)/%.owl: mirror-% | $(MIRRORDIR)
 
 else # MIR=false
 $(MIRRORDIR)/%.owl:
-	@echo "Not refreshing $@ because the mirrorring pipeline is disabled (MIR=$(MIR))."
+	@echo "Not refreshing $@ because the mirroring pipeline is disabled (MIR=$(MIR))."
 endif
 
 
