@@ -36,13 +36,11 @@ Ontology(<http://purl.obolibrary.org/obo/>
 Import(<http://purl.obolibrary.org/obo/iao.owl>)
 Import(<http://purl.obolibrary.org/obo/mondo.owl>)
 Import(<http://purl.obolibrary.org/obo/ncit.owl>)
-Import(<http://purl.obolibrary.org/obo/pato.owl>)
+Import(<http://purl.obolibrary.org/obo/stato.owl>)
 Import(<http://purl.obolibrary.org/obo/uberon.owl>)
-Import(<http://purl.obolibrary.org/obo/MRIO/releases/2025-01-30/imports/obi_import.owl>)
+Import(<http://purl.obolibrary.org/obo/MRIO/releases/2025-01-31/imports/obi_import.owl>)
 Import(<http://purl.obolibrary.org/obo/bfo/2019-08-26/bfo.owl>)
-Annotation(dc:contributor "Alan Ruttenberg")
-Annotation(dc:description "An ontology for the representation of MRI acquisition and analysis.")
-Annotation(dc:title "MRI Ontology (MRI)")
+Annotation(terms:contributor "Alan Ruttenberg")
 Annotation(terms:creator "Alexander D. Bartnik")
 Annotation(terms:creator "Alexander D. Diehl")
 Annotation(terms:creator "Alexander Terry")
@@ -51,9 +49,10 @@ Annotation(terms:creator "Lucas Serra")
 Annotation(terms:creator "Mackenzie Smith")
 Annotation(terms:creator "Michael G. Dwyer")
 Annotation(terms:creator "William D. Duncan")
+Annotation(terms:description "An ontology for the representation of MRI acquisition and analysis.")
 Annotation(terms:license "https://creativecommons.org/licenses/by/4.0/")
+Annotation(terms:title "MRI Ontology (MRI)")
 
-Declaration(Class(obo:CARO_0000000))
 Declaration(Class(obo:CHEBI_33375))
 Declaration(Class(obo:IAO_0000027))
 Declaration(Class(obo:IAO_0000032))
@@ -268,6 +267,9 @@ Declaration(Class(obo:MRIO_0000743))
 Declaration(Class(obo:MRIO_0000744))
 Declaration(Class(obo:MRIO_0000745))
 Declaration(Class(obo:MRIO_0000746))
+Declaration(Class(obo:MRIO_0000747))
+Declaration(Class(obo:MRIO_0000749))
+Declaration(Class(obo:MRIO_0000750))
 Declaration(Class(obo:MRIO_0003071))
 Declaration(Class(obo:MRIO_1000000))
 Declaration(Class(obo:MRIO_1000001))
@@ -304,9 +306,18 @@ Declaration(Class(obo:MRIO_1000031))
 Declaration(Class(obo:MRIO_1000032))
 Declaration(Class(obo:MRIO_1000033))
 Declaration(Class(obo:MRIO_1000041))
-Declaration(Class(obo:MRIO_1000044))
 Declaration(Class(obo:MRIO_1000047))
 Declaration(Class(obo:MRIO_1000050))
+Declaration(Class(obo:MRIO_1000052))
+Declaration(Class(obo:MRIO_1000053))
+Declaration(Class(obo:MRIO_1000054))
+Declaration(Class(obo:MRIO_1000055))
+Declaration(Class(obo:MRIO_1000056))
+Declaration(Class(obo:MRIO_1000057))
+Declaration(Class(obo:MRIO_1000058))
+Declaration(Class(obo:MRIO_1000059))
+Declaration(Class(obo:MRIO_1000060))
+Declaration(Class(obo:MRIO_1000061))
 Declaration(Class(obo:MRIO_a535096d_151b_47c9_9be4_83b7799917df))
 Declaration(Class(obo:OBI_0000067))
 Declaration(Class(obo:OBI_0000070))
@@ -420,8 +431,10 @@ Declaration(NamedIndividual(obo:MRIO_0000640))
 Declaration(NamedIndividual(obo:MRIO_0000685))
 Declaration(AnnotationProperty(dc:description))
 Declaration(AnnotationProperty(dc:title))
+Declaration(AnnotationProperty(terms:contributor))
 Declaration(AnnotationProperty(terms:creator))
 Declaration(AnnotationProperty(terms:date))
+Declaration(AnnotationProperty(terms:description))
 Declaration(AnnotationProperty(terms:source))
 Declaration(AnnotationProperty(swrla:isRuleEnabled))
 Declaration(AnnotationProperty(oboInOwl:source))
@@ -440,7 +453,7 @@ ObjectPropertyRange(obo:MRIO_0000375 obo:OBI_0003332)
 
 # Object Property: obo:MRIO_0000688 (has MRI acquisition parameter)
 
-AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000688 "A relation between some part of the MRI acquisition sequence and the setttings of an MRI machine set by a technician.")
+AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000688 "A relation between some part of the MRI acquisition sequence and the settings of an MRI machine set by a technician.")
 AnnotationAssertion(rdfs:label obo:MRIO_0000688 "has MRI acquisition parameter"@en)
 ObjectPropertyRange(obo:MRIO_0000688 obo:MRIO_0000342)
 
@@ -516,7 +529,7 @@ SubClassOf(obo:MRIO_0000342 obo:MRIO_0000380)
 
 # Class: obo:MRIO_0000345 (obsolete Post-Gd T1 image data set)
 
-AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000345 "A T1 weighted image data set where gadolidium contrast agent has been administered to the participant before image acquistion.")
+AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000345 "A T1 weighted image data set where gadolidium contrast agent has been administered to the participant before image acquisition.")
 AnnotationAssertion(obo:IAO_0000117 obo:MRIO_0000345 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"")
 AnnotationAssertion(obo:IAO_0000117 obo:MRIO_0000345 "https://orcid.org/0000-0001-9990-8331 \"Alexander D. Diehl\"")
 AnnotationAssertion(obo:IAO_0000117 obo:MRIO_0000345 "https://orcid.org/0000-0002-2104-0568 \"Lucas M. Serra\"")
@@ -535,13 +548,13 @@ SubClassOf(obo:MRIO_0000347 obo:OBI_0003339)
 SubClassOf(obo:MRIO_0000347 ObjectSomeValuesFrom(obo:BFO_0000051 obo:MRIO_0000683))
 SubClassOf(obo:MRIO_0000347 ObjectSomeValuesFrom(obo:OBI_0000312 obo:MRIO_0000385))
 
-# Class: obo:MRIO_0000348 (ASL perfusion data set)
+# Class: obo:MRIO_0000348 (arterial spin labelling perfusion image data set)
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000348 "A timeseries of MRI images like DCE perfusion, but using no injected contrast (uses flow coded pulses instead)")
 AnnotationAssertion(obo:IAO_0000117 obo:MRIO_0000348 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"")
 AnnotationAssertion(obo:IAO_0000117 obo:MRIO_0000348 "https://orcid.org/0000-0001-9990-8331 \"Alexander D. Diehl\"")
 AnnotationAssertion(obo:IAO_0000117 obo:MRIO_0000348 "https://orcid.org/0000-0002-2104-0568 \"Lucas M. Serra\"")
-AnnotationAssertion(rdfs:label obo:MRIO_0000348 "ASL perfusion data set"@en)
+AnnotationAssertion(rdfs:label obo:MRIO_0000348 "arterial spin labelling perfusion image data set"@en)
 SubClassOf(obo:MRIO_0000348 obo:OBI_0003339)
 
 # Class: obo:MRIO_0000349 (magnetization transfer image data set)
@@ -564,7 +577,7 @@ SubClassOf(obo:MRIO_0000350 obo:OBI_0003335)
 
 # Class: obo:MRIO_0000351 (obsolete proton density image data set)
 
-AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000351 "An magnetic resonance image data set in which the contrast emphasizes density of protons, supressing T1 and T2 effects")
+AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000351 "An magnetic resonance image data set in which the contrast emphasizes density of protons, suppressing T1 and T2 effects")
 AnnotationAssertion(obo:IAO_0000117 obo:MRIO_0000351 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"")
 AnnotationAssertion(obo:IAO_0000117 obo:MRIO_0000351 "https://orcid.org/0000-0001-9990-8331 \"Alexander D. Diehl\"")
 AnnotationAssertion(obo:IAO_0000117 obo:MRIO_0000351 "https://orcid.org/0000-0002-2104-0568 \"Lucas M. Serra\"")
@@ -778,13 +791,13 @@ AnnotationAssertion(rdfs:label obo:MRIO_0000382 "magnetic resonance imaging data
 AnnotationAssertion(owl:deprecated obo:MRIO_0000382 "true"^^xsd:boolean)
 SubClassOf(obo:MRIO_0000382 oboInOwl:ObsoleteClass)
 
-# Class: obo:MRIO_0000385 (T1 weighted MRI acquisition sequence)
+# Class: obo:MRIO_0000385 (T1 weighted magnetic resonance imaging assay)
 
-AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000385 "An MRI acquisition sequence characterized by short TE and TR to minimize T2 weighting.")
+AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000385 "A magnetic resonance imaging assay characterized by short TE and TR to minimize T2 weighting.")
 AnnotationAssertion(obo:IAO_0000117 obo:MRIO_0000385 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"")
 AnnotationAssertion(obo:IAO_0000117 obo:MRIO_0000385 "https://orcid.org/0000-0002-2104-0568 \"Lucas M. Serra\"")
 AnnotationAssertion(oboInOwl:hasRelatedSynonym obo:MRIO_0000385 "NCIT:C180727")
-AnnotationAssertion(rdfs:label obo:MRIO_0000385 "T1 weighted MRI acquisition sequence"@en)
+AnnotationAssertion(rdfs:label obo:MRIO_0000385 "T1 weighted magnetic resonance imaging assay"@en)
 EquivalentClasses(obo:MRIO_0000385 ObjectIntersectionOf(DataSomeValuesFrom(obo:MRIO_0000376 DatatypeRestriction(xsd:float xsd:minExclusive "0.0"^^xsd:float xsd:maxExclusive "800.0"^^xsd:float)) DataSomeValuesFrom(obo:MRIO_0000377 DatatypeRestriction(xsd:float xsd:minExclusive "0.0"^^xsd:float xsd:maxExclusive "30.0"^^xsd:float)) DataHasValue(obo:MRIO_0000384 "90"^^xsd:integer)))
 SubClassOf(obo:MRIO_0000385 obo:OBI_0002985)
 SubClassOf(obo:MRIO_0000385 ObjectSomeValuesFrom(obo:OBI_0000299 obo:OBI_0003341))
@@ -800,28 +813,28 @@ EquivalentClasses(obo:MRIO_0000386 ObjectIntersectionOf(DataSomeValuesFrom(obo:M
 SubClassOf(obo:MRIO_0000386 obo:OBI_0002985)
 SubClassOf(obo:MRIO_0000386 ObjectSomeValuesFrom(obo:OBI_0000299 obo:OBI_0003348))
 
-# Class: obo:MRIO_0000387 (Proton density sequence)
+# Class: obo:MRIO_0000387 (proton density magnetic resonance imaging assay)
 
-AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000387 "An MRI acquisition sequence that diminishes T1 weighting via long TR and T2 via short TE to produce images where voxel intensity corresponds to number of hydrogen protons in tissue.")
+AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000387 "A magnetic resonance imaging assay that diminishes T1 weighting via long TR and T2 via short TE to produce images where voxel intensity corresponds to number of hydrogen protons in tissue.")
 AnnotationAssertion(obo:IAO_0000116 obo:MRIO_0000387 "Usually SE.")
 AnnotationAssertion(obo:IAO_0000117 obo:MRIO_0000387 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"")
 AnnotationAssertion(obo:IAO_0000117 obo:MRIO_0000387 "https://orcid.org/0000-0001-9990-8331 \"Alexander D. Diehl\"")
 AnnotationAssertion(obo:IAO_0000117 obo:MRIO_0000387 "https://orcid.org/0000-0002-2104-0568 \"Lucas M. Serra\"")
 AnnotationAssertion(oboInOwl:hasRelatedSynonym obo:MRIO_0000387 "NCIT:C170797")
-AnnotationAssertion(rdfs:label obo:MRIO_0000387 "Proton density sequence"@en)
+AnnotationAssertion(rdfs:label obo:MRIO_0000387 "proton density magnetic resonance imaging assay"@en)
 SubClassOf(obo:MRIO_0000387 obo:OBI_0002985)
 SubClassOf(obo:MRIO_0000387 ObjectSomeValuesFrom(obo:OBI_0000299 obo:OBI_0003340))
 SubClassOf(obo:MRIO_0000387 DataSomeValuesFrom(obo:MRIO_0000376 DatatypeRestriction(xsd:float xsd:minExclusive "1000.0"^^xsd:float)))
 SubClassOf(obo:MRIO_0000387 DataSomeValuesFrom(obo:MRIO_0000377 DatatypeRestriction(xsd:float xsd:maxExclusive "30.0"^^xsd:float)))
 SubClassOf(obo:MRIO_0000387 DataHasValue(obo:MRIO_0000384 "90"^^xsd:integer))
 
-# Class: obo:MRIO_0000388 (T2 FSE sequence)
+# Class: obo:MRIO_0000388 (T2 weighted FSE magnetic resonance imaging assay)
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000388 "An MRI acquisition sequence that uses multiple echoes produced by a train of 180 degree rephasing pulses with a high effective echo time to accentuate T2 weighting.")
 AnnotationAssertion(obo:IAO_0000117 obo:MRIO_0000388 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"")
 AnnotationAssertion(obo:IAO_0000117 obo:MRIO_0000388 "https://orcid.org/0000-0002-2104-0568 \"Lucas M. Serra\"")
 AnnotationAssertion(obo:IAO_0000118 obo:MRIO_0000388 "T2 TSE sequence")
-AnnotationAssertion(rdfs:label obo:MRIO_0000388 "T2 FSE sequence"@en)
+AnnotationAssertion(rdfs:label obo:MRIO_0000388 "T2 weighted FSE magnetic resonance imaging assay"@en)
 SubClassOf(obo:MRIO_0000388 obo:MRIO_0000386)
 SubClassOf(obo:MRIO_0000388 ObjectSomeValuesFrom(obo:MRIO_0000688 obo:MRIO_0000359))
 SubClassOf(obo:MRIO_0000388 ObjectSomeValuesFrom(obo:OBI_0000299 obo:OBI_0003350))
@@ -829,23 +842,23 @@ SubClassOf(obo:MRIO_0000388 DataSomeValuesFrom(obo:MRIO_0000376 DatatypeRestrict
 SubClassOf(obo:MRIO_0000388 DataSomeValuesFrom(obo:MRIO_0000377 DatatypeRestriction(xsd:float xsd:minExclusive "60.0"^^xsd:float)))
 SubClassOf(obo:MRIO_0000388 DataHasValue(obo:MRIO_0000384 "90"^^xsd:integer))
 
-# Class: obo:MRIO_0000389 (T1 GRE sequence)
+# Class: obo:MRIO_0000389 (T1 weighted magnetic resonance imaging assay based on gradient-echo pulse sequence protocol)
 
-AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000389 "An MRI acquisition sequence that acheives T1 weighting using gradient echo instead of spin echo.")
+AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000389 "An MRI acquisition sequence that achieves T1 weighting using gradient echo instead of spin echo.")
 AnnotationAssertion(obo:IAO_0000117 obo:MRIO_0000389 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"")
 AnnotationAssertion(obo:IAO_0000117 obo:MRIO_0000389 "https://orcid.org/0000-0002-2104-0568 \"Lucas M. Serra\"")
-AnnotationAssertion(rdfs:label obo:MRIO_0000389 "T1 GRE sequence"@en)
+AnnotationAssertion(rdfs:label obo:MRIO_0000389 "T1 weighted magnetic resonance imaging assay based on gradient-echo pulse sequence protocol"@en)
 EquivalentClasses(obo:MRIO_0000389 ObjectIntersectionOf(ObjectSomeValuesFrom(obo:MRIO_0000375 obo:MRIO_0000628) DataSomeValuesFrom(obo:MRIO_0000376 DatatypeRestriction(xsd:float xsd:minExclusive "0.0"^^xsd:float)) DataSomeValuesFrom(obo:MRIO_0000377 DatatypeRestriction(xsd:float xsd:maxExclusive "30.0"^^xsd:float)) DataSomeValuesFrom(obo:MRIO_0000384 DatatypeRestriction(xsd:float xsd:minInclusive "70.0"^^xsd:float xsd:maxInclusive "110.0"^^xsd:float))))
 SubClassOf(obo:MRIO_0000389 obo:MRIO_0000385)
 SubClassOf(obo:MRIO_0000389 ObjectSomeValuesFrom(obo:OBI_0000299 obo:OBI_0003343))
 
-# Class: obo:MRIO_0000390 (T2* GRE sequence)
+# Class: obo:MRIO_0000390 (T2* weighted magnetic resonance imaging assay based on gradient-echo pulse sequence protocol)
 
-AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000390 "An MRI acquisition sequence that acheives T2 weighting using gradient echo instead of spin echo.")
+AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000390 "An MRI acquisition sequence that achieves T2 weighting using gradient echo instead of spin echo.")
 AnnotationAssertion(obo:IAO_0000116 obo:MRIO_0000390 "Needs GRE sequence.")
 AnnotationAssertion(obo:IAO_0000117 obo:MRIO_0000390 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"")
 AnnotationAssertion(obo:IAO_0000117 obo:MRIO_0000390 "https://orcid.org/0000-0002-2104-0568 \"Lucas M. Serra\"")
-AnnotationAssertion(rdfs:label obo:MRIO_0000390 "T2* GRE sequence"@en)
+AnnotationAssertion(rdfs:label obo:MRIO_0000390 "T2* weighted magnetic resonance imaging assay based on gradient-echo pulse sequence protocol"@en)
 SubClassOf(obo:MRIO_0000390 obo:MRIO_0000386)
 SubClassOf(obo:MRIO_0000390 ObjectSomeValuesFrom(obo:OBI_0000299 obo:OBI_0003353))
 SubClassOf(obo:MRIO_0000390 DataSomeValuesFrom(obo:MRIO_0000376 DatatypeRestriction(xsd:float xsd:minExclusive "0.0"^^xsd:float)))
@@ -853,13 +866,13 @@ SubClassOf(obo:MRIO_0000390 DataSomeValuesFrom(obo:MRIO_0000377 DatatypeRestrict
 SubClassOf(obo:MRIO_0000390 DataSomeValuesFrom(obo:MRIO_0000384 DatatypeRestriction(xsd:float xsd:minInclusive "5.0"^^xsd:float xsd:maxInclusive "20.0"^^xsd:float)))
 DisjointClasses(obo:MRIO_0000390 ObjectSomeValuesFrom(obo:MRIO_0000375 obo:MRIO_0000661))
 
-# Class: obo:MRIO_0000391 (T2 STIR sequence)
+# Class: obo:MRIO_0000391 (T2 weighted STIR magnetic resonance imaging assay)
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000391 "An MRI acquisition sequence that uses a short inversion time to attenuate the signal from fat.")
 AnnotationAssertion(obo:IAO_0000117 obo:MRIO_0000391 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"")
 AnnotationAssertion(obo:IAO_0000117 obo:MRIO_0000391 "https://orcid.org/0000-0002-2104-0568 \"Lucas M. Serra\"")
 AnnotationAssertion(rdfs:comment obo:MRIO_0000391 "flip angle: 180 -> 90 degrees, need to represent the change")
-AnnotationAssertion(rdfs:label obo:MRIO_0000391 "T2 STIR sequence"@en)
+AnnotationAssertion(rdfs:label obo:MRIO_0000391 "T2 weighted STIR magnetic resonance imaging assay"@en)
 SubClassOf(obo:MRIO_0000391 obo:MRIO_0000386)
 SubClassOf(obo:MRIO_0000391 ObjectSomeValuesFrom(obo:MRIO_0000375 obo:MRIO_0000661))
 SubClassOf(obo:MRIO_0000391 ObjectSomeValuesFrom(obo:OBI_0000299 obo:OBI_0003352))
@@ -867,7 +880,7 @@ SubClassOf(obo:MRIO_0000391 DataSomeValuesFrom(obo:MRIO_0000376 DatatypeRestrict
 SubClassOf(obo:MRIO_0000391 DataSomeValuesFrom(obo:MRIO_0000377 DatatypeRestriction(xsd:float xsd:minInclusive "70.0"^^xsd:float)))
 SubClassOf(obo:MRIO_0000391 DataSomeValuesFrom(obo:MRIO_0000606 DatatypeRestriction(xsd:float xsd:minInclusive "100.0"^^xsd:float xsd:maxInclusive "180.0"^^xsd:float)))
 
-# Class: obo:MRIO_0000392 (T2 FLAIR sequence)
+# Class: obo:MRIO_0000392 (T2 weighted FLAIR magnetic resonance imaging assay)
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000392 "An MRI acquisition sequence that uses a long inversion time to attenuate the signal from water/CSF.")
 AnnotationAssertion(obo:IAO_0000117 obo:MRIO_0000392 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"")
@@ -878,7 +891,7 @@ unnamed elements:
 
 variable 
 1700–2200")
-AnnotationAssertion(rdfs:label obo:MRIO_0000392 "T2 FLAIR sequence"@en)
+AnnotationAssertion(rdfs:label obo:MRIO_0000392 "T2 weighted FLAIR magnetic resonance imaging assay"@en)
 EquivalentClasses(obo:MRIO_0000392 ObjectIntersectionOf(ObjectSomeValuesFrom(obo:MRIO_0000375 obo:MRIO_0000661) DataSomeValuesFrom(obo:MRIO_0000377 DatatypeRestriction(xsd:float xsd:minExclusive "80.0"^^xsd:float)) DataSomeValuesFrom(obo:MRIO_0000384 DatatypeRestriction(xsd:float xsd:minInclusive "70.0"^^xsd:float xsd:maxInclusive "120.0"^^xsd:float)) DataSomeValuesFrom(obo:MRIO_0000606 DatatypeRestriction(xsd:float xsd:minExclusive "1800.0"^^xsd:float))))
 SubClassOf(obo:MRIO_0000392 obo:MRIO_0000386)
 SubClassOf(obo:MRIO_0000392 ObjectSomeValuesFrom(obo:OBI_0000299 obo:OBI_0003349))
@@ -1313,7 +1326,7 @@ SubClassOf(obo:MRIO_0000612 obo:MRIO_0000611)
 
 # Class: obo:MRIO_0000613 (nConMat matrix)
 
-AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000613 "A structural connectivity matrix where each element respresents the number of white matter streamlines still connecting two brain regions when accounting for focal lesion damage, normalized for the NeMo healthy control tractogram set.")
+AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000613 "A structural connectivity matrix where each element represents the number of white matter streamlines still connecting two brain regions when accounting for focal lesion damage, normalized for the NeMo healthy control tractogram set.")
 AnnotationAssertion(obo:IAO_0000117 obo:MRIO_0000613 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"")
 AnnotationAssertion(rdfs:label obo:MRIO_0000613 "nConMat matrix"@en)
 SubClassOf(obo:MRIO_0000613 obo:MRIO_0000612)
@@ -1422,24 +1435,24 @@ AnnotationAssertion(rdfs:label obo:MRIO_0000627 "default mode network functional
 SubClassOf(obo:MRIO_0000627 obo:MRIO_0000607)
 SubClassOf(obo:MRIO_0000627 ObjectSomeValuesFrom(obo:IAO_0000136 obo:MRIO_0000625))
 
-# Class: obo:MRIO_0000628 (gradient echo sequence)
+# Class: obo:MRIO_0000628 (gradient-echo pulse sequence protocol)
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000628 "Generated by the frequency-encode gradient, except that it is used twice in succession, and in opposite directions.")
 AnnotationAssertion(obo:IAO_0000116 obo:MRIO_0000628 "This and spin echo are the major child classes of magnetic resonance pulse sequence")
 AnnotationAssertion(obo:IAO_0000117 obo:MRIO_0000628 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"")
 AnnotationAssertion(terms:source obo:MRIO_0000628 "https://radiopaedia.org/articles/gradient-echo-sequences-1?lang=us")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:MRIO_0000628 "GRE")
-AnnotationAssertion(rdfs:label obo:MRIO_0000628 "gradient echo sequence"@en)
+AnnotationAssertion(rdfs:label obo:MRIO_0000628 "gradient-echo pulse sequence protocol"@en)
 SubClassOf(obo:MRIO_0000628 obo:OBI_0003332)
 SubClassOf(obo:MRIO_0000628 ObjectIntersectionOf(ObjectSomeValuesFrom(obo:MRIO_0000688 obo:MRIO_0000357) ObjectSomeValuesFrom(obo:MRIO_0000688 obo:MRIO_0000358) ObjectSomeValuesFrom(obo:MRIO_0000688 obo:MRIO_0000630)))
 
-# Class: obo:MRIO_0000629 (GRE echo planar sequence)
+# Class: obo:MRIO_0000629 (gradient-echo echo-planar pulse sequence protocol)
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000629 "Multiple echoes of different phase steps are acquired by rapidly reversing the readout or frequency- encoding gradient using a gradient echo sequence."@en)
 AnnotationAssertion(obo:IAO_0000116 obo:MRIO_0000629 "Can we add that this may optionally be about some spin echo sequence, but not necessary for an instance of this class?"@en)
 AnnotationAssertion(obo:IAO_0000117 obo:MRIO_0000629 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"")
 AnnotationAssertion(terms:source obo:MRIO_0000629 "https://radiopaedia.org/articles/echo-planar-imaging-1?lang=us"@en)
-AnnotationAssertion(rdfs:label obo:MRIO_0000629 "GRE echo planar sequence"@en)
+AnnotationAssertion(rdfs:label obo:MRIO_0000629 "gradient-echo echo-planar pulse sequence protocol"@en)
 SubClassOf(obo:MRIO_0000629 ObjectIntersectionOf(obo:MRIO_0000628 ObjectIntersectionOf(ObjectSomeValuesFrom(obo:MRIO_0000688 obo:MRIO_0000357) ObjectSomeValuesFrom(obo:MRIO_0000688 obo:MRIO_0000358))))
 
 # Class: obo:MRIO_0000630 (flip angle)
@@ -1470,7 +1483,7 @@ SubClassOf(obo:MRIO_0000634 ObjectSomeValuesFrom(obo:IAO_0000136 obo:MRIO_000069
 
 # Class: obo:MRIO_0000635 (obsolete diffusion weighted image data set)
 
-AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000635 "A type of magnetic resonance image data set collected using at least three diffusion gradients of some factor \"b,\" which is a function of the amplitude, duration, and interval of the gradiants.")
+AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000635 "A type of magnetic resonance image data set collected using at least three diffusion gradients of some factor \"b,\" which is a function of the amplitude, duration, and interval of the gradients.")
 AnnotationAssertion(obo:IAO_0000117 obo:MRIO_0000635 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"")
 AnnotationAssertion(obo:IAO_0000117 obo:MRIO_0000635 "https://orcid.org/0000-0001-9990-8331 \"Alexander D. Diehl\"")
 AnnotationAssertion(obo:IAO_0100001 obo:MRIO_0000635 obo:OBI_0003335)
@@ -1565,7 +1578,7 @@ AnnotationAssertion(owl:deprecated obo:MRIO_0000647 "true"^^xsd:boolean)
 
 # Class: obo:MRIO_0000648 (obsolete probabilistic brain region atlas image dataset)
 
-AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000648 "A brain atlas consisting of weighted values that respresent the probability that a voxel X is part of some brain component Y, typically derived from multiple image data sets.")
+AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000648 "A brain atlas consisting of weighted values that represent the probability that a voxel X is part of some brain component Y, typically derived from multiple image data sets.")
 AnnotationAssertion(obo:IAO_0000117 obo:MRIO_0000648 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"")
 AnnotationAssertion(obo:IAO_0000117 obo:MRIO_0000648 "https://orcid.org/0000-0001-9990-8331 \"Alexander D. Diehl\"")
 AnnotationAssertion(obo:IAO_0000117 obo:MRIO_0000648 "https://orcid.org/0000-0002-9821-4132 \"Mackenzie T. Smith\"")
@@ -1642,7 +1655,7 @@ AnnotationAssertion(owl:deprecated obo:MRIO_0000650 "true"^^xsd:boolean)
 
 # Class: obo:MRIO_0000651 (c-pac analysis)
 
-AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000651 "A funtional MRI data set analysis software suite of preconfigured pipelines for analysis fMRI data and estimating functional connectomics.")
+AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000651 "A functional MRI data set analysis software suite of preconfigured pipelines for analysis fMRI data and estimating functional connectomics.")
 AnnotationAssertion(obo:IAO_0000117 obo:MRIO_0000651 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"")
 AnnotationAssertion(obo:IAO_0000119 obo:MRIO_0000651 "https://doi.org/10.3389/conf.fninf.2013.09.00042")
 AnnotationAssertion(rdfs:comment obo:MRIO_0000651 "The Configurable Pipeline for the Analysis of Connectomes (C-PAC) is a configurable, open-source, Nipype-based, automated processing pipeline for resting state functional MRI (R-fMRI) data, for use by both novice and expert users.")
@@ -1706,31 +1719,31 @@ AnnotationAssertion(rdfs:label obo:MRIO_0000658 "focal lesion analysis"@en)
 SubClassOf(obo:MRIO_0000658 obo:MRIO_0000662)
 SubClassOf(obo:MRIO_0000658 ObjectSomeValuesFrom(obo:OBI_0000299 obo:OBI_0003361))
 
-# Class: obo:MRIO_0000659 (spin echo sequence)
+# Class: obo:MRIO_0000659 (spin-echo pulse sequence protocol)
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000659 "The refocusing of spin magnetisation by a pulse of resonant electromagnetic radiation.")
 AnnotationAssertion(obo:IAO_0000117 obo:MRIO_0000659 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"")
 AnnotationAssertion(terms:source obo:MRIO_0000659 "https://doi.org/10.1063%2F1.1670306")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:MRIO_0000659 "SE")
-AnnotationAssertion(rdfs:label obo:MRIO_0000659 "spin echo sequence"@en)
+AnnotationAssertion(rdfs:label obo:MRIO_0000659 "spin-echo pulse sequence protocol"@en)
 SubClassOf(obo:MRIO_0000659 obo:OBI_0003332)
 SubClassOf(obo:MRIO_0000659 ObjectIntersectionOf(ObjectSomeValuesFrom(obo:MRIO_0000688 obo:MRIO_0000357) ObjectSomeValuesFrom(obo:MRIO_0000688 obo:MRIO_0000358)))
 
 # Class: obo:MRIO_0000660 (FreeSurfer cross-sectional analysis)
 
-AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000660 "FreeSurfer stream to derive surface labels and volumes from an invidual at only one timepoint.")
+AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000660 "FreeSurfer stream to derive surface labels and volumes from an individual at only one timepoint.")
 AnnotationAssertion(obo:IAO_0000117 obo:MRIO_0000660 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"")
 AnnotationAssertion(rdfs:label obo:MRIO_0000660 "FreeSurfer cross-sectional analysis"@en)
 SubClassOf(obo:MRIO_0000660 obo:MRIO_0000515)
 SubClassOf(obo:MRIO_0000660 ObjectSomeValuesFrom(obo:OBI_0000293 obo:OBI_0003344))
 
-# Class: obo:MRIO_0000661 (GRE inversion recovery sequence)
+# Class: obo:MRIO_0000661 (gradient-echo inversion recovery pulse sequence protocol)
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000661 "A gradient echo pulse sequence preceded by a 180° RF pulse.")
 AnnotationAssertion(obo:IAO_0000116 obo:MRIO_0000661 "TODO: Create specific subclass of this and echo panar sequence for both GRE and SE.")
 AnnotationAssertion(obo:IAO_0000117 obo:MRIO_0000661 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"")
 AnnotationAssertion(terms:source obo:MRIO_0000661 "https://radiopaedia.org/articles/inversion-recovery-sequences?lang=us")
-AnnotationAssertion(rdfs:label obo:MRIO_0000661 "GRE inversion recovery sequence"@en)
+AnnotationAssertion(rdfs:label obo:MRIO_0000661 "gradient-echo inversion recovery pulse sequence protocol"@en)
 SubClassOf(obo:MRIO_0000661 ObjectIntersectionOf(obo:MRIO_0000628 ObjectSomeValuesFrom(obo:MRIO_0000688 obo:MRIO_0000653)))
 
 # Class: obo:MRIO_0000662 (magnetic resonance image segmentation analysis)
@@ -1746,7 +1759,7 @@ SubClassOf(obo:MRIO_0000662 ObjectSomeValuesFrom(obo:OBI_0000299 obo:OBI_0003360
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000663 "A brain volumetric analysis tool that estimates the percent brain volume change in an individual between two timepoints using baseline and follow-up T1w MRI.")
 AnnotationAssertion(obo:IAO_0000117 obo:MRIO_0000663 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"")
 AnnotationAssertion(obo:IAO_0000119 obo:MRIO_0000663 "Smith, Stephen M.; De Stefano, Nicola; Jenkinson, Mark; Matthews, Paul M. Normalized Accurate Measurement of Longitudinal Brain Change, Journal of Computer Assisted Tomography: May 2001 - Volume 25 - Issue 3 - p 466-475")
-AnnotationAssertion(rdfs:comment obo:MRIO_0000663 "Siena estimates percentage brain volume change (PBVC) betweem two input images, taken of the same subject, at different points in time. It calls a series of FSL programs to strip the non-brain tissue from the two images, register the two brains (under the constraint that the skulls are used to hold the scaling constant during the registration) and analyse the brain change between the two time points. It is also possible to project the voxelwise atrophy measures into standard space in a way that allows for multi-subject voxelwise statistical testing.")
+AnnotationAssertion(rdfs:comment obo:MRIO_0000663 "Siena estimates percentage brain volume change (PBVC) between two input images, taken of the same subject, at different points in time. It calls a series of FSL programs to strip the non-brain tissue from the two images, register the two brains (under the constraint that the skulls are used to hold the scaling constant during the registration) and analyse the brain change between the two time points. It is also possible to project the voxelwise atrophy measures into standard space in a way that allows for multi-subject voxelwise statistical testing.")
 AnnotationAssertion(rdfs:label obo:MRIO_0000663 "SIENA analysis"@en)
 SubClassOf(obo:MRIO_0000663 obo:MRIO_0000524)
 SubClassOf(obo:MRIO_0000663 ObjectIntersectionOf(ObjectSomeValuesFrom(obo:OBI_0000293 obo:OBI_0003345) ObjectSomeValuesFrom(obo:OBI_0000293 obo:OBI_0003346)))
@@ -1859,15 +1872,15 @@ AnnotationAssertion(rdfs:label obo:MRIO_0000676 "FAST analysis"@en)
 SubClassOf(obo:MRIO_0000676 obo:MRIO_0000523)
 SubClassOf(obo:MRIO_0000676 ObjectSomeValuesFrom(obo:OBI_0000293 obo:OBI_0003341))
 
-# Class: obo:MRIO_0000677 (diffusion weighted MRI acquisition sequence)
+# Class: obo:MRIO_0000677 (diffusion weighted magnetic resonance imaging assay)
 
-AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000677 "An MRI acquisition sequence that uses diffusion gradients to create contrast in the image corresponding to the Brownian motion of the tissue in the examined voxel.")
-AnnotationAssertion(obo:IAO_0000116 obo:MRIO_0000677 "Add difussion gradient as parameter.")
+AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000677 "A magnetic resonance imaging assay that uses diffusion gradients to create contrast in the image corresponding to the Brownian motion of the tissue in the examined voxel.")
+AnnotationAssertion(obo:IAO_0000116 obo:MRIO_0000677 "Add diffusion gradient as parameter.")
 AnnotationAssertion(obo:IAO_0000117 obo:MRIO_0000677 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"")
 AnnotationAssertion(obo:IAO_0000117 obo:MRIO_0000677 "https://orcid.org/0000-0001-9990-8331 \"Alexander D. Diehl\"")
 AnnotationAssertion(oboInOwl:hasRelatedSynonym obo:MRIO_0000677 "NCIT:C111116")
 AnnotationAssertion(oboInOwl:hasRelatedSynonym obo:MRIO_0000677 "SCTID:440408002")
-AnnotationAssertion(rdfs:label obo:MRIO_0000677 "diffusion weighted MRI acquisition sequence"@en)
+AnnotationAssertion(rdfs:label obo:MRIO_0000677 "diffusion weighted magnetic resonance imaging assay"@en)
 SubClassOf(obo:MRIO_0000677 obo:OBI_0002985)
 SubClassOf(obo:MRIO_0000677 ObjectSomeValuesFrom(obo:MRIO_0000375 obo:MRIO_0000629))
 SubClassOf(obo:MRIO_0000677 ObjectSomeValuesFrom(obo:MRIO_0000688 obo:MRIO_0000655))
@@ -1916,11 +1929,11 @@ SubClassOf(obo:MRIO_0000681 ObjectSomeValuesFrom(obo:OBI_0000299 obo:MRIO_000068
 SubClassOf(obo:MRIO_0000681 DataSomeValuesFrom(obo:MRIO_0000376 DatatypeRestriction(xsd:float xsd:minExclusive "0.0"^^xsd:float xsd:maxInclusive "35.0"^^xsd:float)))
 SubClassOf(obo:MRIO_0000681 DataSomeValuesFrom(obo:MRIO_0000377 DatatypeRestriction(xsd:float xsd:minExclusive "0.0"^^xsd:float xsd:maxInclusive "5.0"^^xsd:float)))
 
-# Class: obo:MRIO_0000682 (T1 SE sequence)
+# Class: obo:MRIO_0000682 (T1 magnetic resonance imaging assay based on spin-echo sequence protocol)
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000682 "An MRI acquisition sequence that using a spin echo sequence to accentuate T1 weighting.")
 AnnotationAssertion(obo:IAO_0000117 obo:MRIO_0000682 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"")
-AnnotationAssertion(rdfs:label obo:MRIO_0000682 "T1 SE sequence"@en)
+AnnotationAssertion(rdfs:label obo:MRIO_0000682 "T1 magnetic resonance imaging assay based on spin-echo sequence protocol"@en)
 SubClassOf(obo:MRIO_0000682 obo:MRIO_0000385)
 SubClassOf(obo:MRIO_0000682 ObjectSomeValuesFrom(obo:MRIO_0000375 obo:MRIO_0000659))
 SubClassOf(obo:MRIO_0000682 ObjectSomeValuesFrom(obo:OBI_0000299 obo:OBI_0003347))
@@ -1937,9 +1950,9 @@ AnnotationAssertion(rdfs:label obo:MRIO_0000683 "imaging contrast reagent"@en)
 SubClassOf(obo:MRIO_0000683 obo:OBI_0001879)
 SubClassOf(obo:MRIO_0000683 ObjectSomeValuesFrom(obo:RO_0002180 obo:CHEBI_33375))
 
-# Class: obo:MRIO_0000686 (functional MRI acquisition sequence)
+# Class: obo:MRIO_0000686 (functional magnetic resonance imaging assay)
 
-AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000686 "An MRI acquisition sequence that uses fast gradient echo sequences to collect a 4D data set corresponding to BOLD signal due to differences in magnetic susceptibility of oxygenated and deoxygenated hemoglobin.")
+AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000686 "A magnetic resonance imaging assay that uses fast gradient echo sequences to collect a 4D data set corresponding to BOLD signal due to differences in magnetic susceptibility of oxygenated and deoxygenated hemoglobin.")
 AnnotationAssertion(obo:IAO_0000116 obo:MRIO_0000686 "Usually T2* sequence with same TE value throughout.")
 AnnotationAssertion(obo:IAO_0000117 obo:MRIO_0000686 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"")
 AnnotationAssertion(obo:IAO_0000117 obo:MRIO_0000686 "https://orcid.org/0000-0001-9990-8331 \"Alexander D. Diehl\"")
@@ -1947,7 +1960,7 @@ AnnotationAssertion(obo:IAO_0000117 obo:MRIO_0000686 "https://orcid.org/0009-000
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:MRIO_0000686 "fMRI acquisition sequence")
 AnnotationAssertion(oboInOwl:hasRelatedSynonym obo:MRIO_0000686 "NCIT:C17958")
 AnnotationAssertion(oboInOwl:hasRelatedSynonym obo:MRIO_0000686 "SCTID:241603006")
-AnnotationAssertion(rdfs:label obo:MRIO_0000686 "functional MRI acquisition sequence"@en)
+AnnotationAssertion(rdfs:label obo:MRIO_0000686 "functional magnetic resonance imaging assay"@en)
 SubClassOf(obo:MRIO_0000686 obo:OBI_0002985)
 SubClassOf(obo:MRIO_0000686 ObjectSomeValuesFrom(obo:MRIO_0000375 obo:MRIO_0000628))
 SubClassOf(obo:MRIO_0000686 ObjectSomeValuesFrom(obo:MRIO_0000688 obo:MRIO_0000687))
@@ -1974,19 +1987,19 @@ AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000690 "Magnetic field variations 
 AnnotationAssertion(rdfs:label obo:MRIO_0000690 "diffusion gradient"@en)
 SubClassOf(obo:MRIO_0000690 obo:MRIO_0000342)
 
-# Class: obo:MRIO_0000691 (2D T1 GRE sequence)
+# Class: obo:MRIO_0000691 (2D T1 weighted magnetic resonance imaging assay based on gradient-echo pulse sequence protocol)
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000691 "A T1 weighted acquisition sequence that uses a gradient echo pulse sequence to acquire an magnetic resonance image data set one 2D slice at a time.")
 AnnotationAssertion(obo:IAO_0000117 obo:MRIO_0000691 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"")
-AnnotationAssertion(rdfs:label obo:MRIO_0000691 "2D T1 GRE sequence"@en)
+AnnotationAssertion(rdfs:label obo:MRIO_0000691 "2D T1 weighted magnetic resonance imaging assay based on gradient-echo pulse sequence protocol"@en)
 SubClassOf(obo:MRIO_0000691 obo:MRIO_0000389)
 
-# Class: obo:MRIO_0000692 (3D T1 GRE sequence)
+# Class: obo:MRIO_0000692 (3D T1 weighted magnetic resonance imaging assay based on gradient-echo pulse sequence protocol)
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000692 "A T1 weighted acquisition sequence that uses a gradient echo pulse sequence to acquire an entire 3D magnetic resonance image data set at once.")
 AnnotationAssertion(obo:IAO_0000117 obo:MRIO_0000692 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"")
 AnnotationAssertion(oboInOwl:hasRelatedSynonym obo:MRIO_0000692 "NCIT:C183113")
-AnnotationAssertion(rdfs:label obo:MRIO_0000692 "3D T1 GRE sequence"@en)
+AnnotationAssertion(rdfs:label obo:MRIO_0000692 "3D T1 weighted magnetic resonance imaging assay based on gradient-echo pulse sequence protocol"@en)
 SubClassOf(obo:MRIO_0000692 obo:MRIO_0000389)
 SubClassOf(obo:MRIO_0000692 ObjectSomeValuesFrom(obo:OBI_0000299 obo:MRIO_0000503))
 
@@ -2220,21 +2233,21 @@ AnnotationAssertion(rdfs:label obo:MRIO_0000709 "auditory resting state network 
 SubClassOf(obo:MRIO_0000709 obo:MRIO_0000607)
 SubClassOf(obo:MRIO_0000709 ObjectSomeValuesFrom(obo:IAO_0000136 obo:MRIO_0000698))
 
-# Class: obo:MRIO_0000711 (SE echo planar sequence)
+# Class: obo:MRIO_0000711 (spin-echo echo-planar pulse sequence protocol)
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000711 "Multiple echoes of different phase steps are acquired by rapidly reversing the readout or frequency- encoding gradient using a spin echo sequence."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:MRIO_0000711 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"")
 AnnotationAssertion(terms:source obo:MRIO_0000711 "https://radiopaedia.org/articles/echo-planar-imaging-1?lang=us"@en)
-AnnotationAssertion(rdfs:label obo:MRIO_0000711 "SE echo planar sequence"@en)
+AnnotationAssertion(rdfs:label obo:MRIO_0000711 "spin-echo echo-planar pulse sequence protocol"@en)
 SubClassOf(obo:MRIO_0000711 ObjectIntersectionOf(obo:MRIO_0000659 ObjectIntersectionOf(ObjectSomeValuesFrom(obo:MRIO_0000688 obo:MRIO_0000357) ObjectSomeValuesFrom(obo:MRIO_0000688 obo:MRIO_0000358))))
 
-# Class: obo:MRIO_0000712 (SE inversion recovery sequence)
+# Class: obo:MRIO_0000712 (spin-echo inversion recovery pulse sequence protocol)
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000712 "A spin echo pulse sequence preceded by a 180° RF pulse.")
 AnnotationAssertion(obo:IAO_0000116 obo:MRIO_0000712 "TODO: Create specific subclass of this and echo panar sequence for both GRE and SE.")
 AnnotationAssertion(obo:IAO_0000117 obo:MRIO_0000712 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"")
 AnnotationAssertion(terms:source obo:MRIO_0000712 "https://radiopaedia.org/articles/inversion-recovery-sequences?lang=us")
-AnnotationAssertion(rdfs:label obo:MRIO_0000712 "SE inversion recovery sequence"@en)
+AnnotationAssertion(rdfs:label obo:MRIO_0000712 "spin-echo inversion recovery pulse sequence protocol"@en)
 SubClassOf(obo:MRIO_0000712 ObjectIntersectionOf(obo:MRIO_0000659 ObjectSomeValuesFrom(obo:MRIO_0000688 obo:MRIO_0000653)))
 
 # Class: obo:MRIO_0000713 (image data set visualization)
@@ -2444,6 +2457,22 @@ SubClassOf(obo:MRIO_0000745 obo:MRIO_0000738)
 AnnotationAssertion(rdfs:label obo:MRIO_0000746 "nucleus accumbens volume measurement datum"@en)
 SubClassOf(obo:MRIO_0000746 obo:MRIO_0000738)
 
+# Class: obo:MRIO_0000747 (statistical inference applied to image data set)
+
+AnnotationAssertion(obo:IAO_0000115 obo:MRIO_0000747 "An image data set analysis that uses inferential statistical methods to draw conclusions about the underlying phenomena represented in an image data set.")
+AnnotationAssertion(rdfs:label obo:MRIO_0000747 "statistical inference applied to image data set"@en)
+SubClassOf(obo:MRIO_0000747 obo:OBI_0003355)
+
+# Class: obo:MRIO_0000749 (diffusion weighted magnetic resonance imaging assay based on gradient-echo echo-planar pulse sequence protocol)
+
+AnnotationAssertion(rdfs:label obo:MRIO_0000749 "diffusion weighted magnetic resonance imaging assay based on gradient-echo echo-planar pulse sequence protocol"@en)
+SubClassOf(obo:MRIO_0000749 obo:MRIO_0000677)
+
+# Class: obo:MRIO_0000750 (diffusion weighted magnetic resonance imaging assay based on spin-echo echo-planar pulse sequence protocol)
+
+AnnotationAssertion(rdfs:label obo:MRIO_0000750 "diffusion weighted magnetic resonance imaging assay based on spin-echo echo-planar pulse sequence protocol"@en)
+SubClassOf(obo:MRIO_0000750 obo:MRIO_0000677)
+
 # Class: obo:MRIO_0003071 (ventral thalamic volume measurement datum)
 
 AnnotationAssertion(rdfs:label obo:MRIO_0003071 "ventral thalamic volume measurement datum"@en)
@@ -2532,7 +2561,6 @@ AnnotationAssertion(terms:creator obo:MRIO_1000008 <https://orcid.org/0009-0004-
 AnnotationAssertion(terms:date obo:MRIO_1000008 "2024-07-26T18:16:22Z"^^xsd:dateTime)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:MRIO_1000008 "BOLD activation map")
 AnnotationAssertion(rdfs:label obo:MRIO_1000008 "blood oxygenation level dependent activation map"@en)
-EquivalentClasses(obo:MRIO_1000008 ObjectIntersectionOf(ObjectSomeValuesFrom(obo:OBI_0000312 obo:MRIO_1000005) ObjectSomeValuesFrom(obo:RO_0000052 obo:MRIO_1000044)))
 SubClassOf(obo:MRIO_1000008 obo:MRIO_1000004)
 
 # Class: obo:MRIO_1000009 (vascular space occupancy activation map)
@@ -2645,12 +2673,12 @@ AnnotationAssertion(terms:date obo:MRIO_1000021 "2024-07-29T18:32:13Z"^^xsd:date
 AnnotationAssertion(rdfs:label obo:MRIO_1000021 "seed voxel correlation: between-subjects"@en)
 SubClassOf(obo:MRIO_1000021 obo:MRIO_1000017)
 
-# Class: obo:MRIO_1000022 (beta series correlation)
+# Class: obo:MRIO_1000022 (beta series correlation of functional magnetic resonance image data set)
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_1000022 "A technique used in functional MRI data set analysis where the response to each event is estimated by fitting a model with separate regressors for each trial. By correlating the parameter estimates (beta series) across regions, this method examines the degree of trial-by-trial fluctuation similarity between regions, indicating functional connectivity. particularly useful in event-related studies with longer inter-trial intervals.")
 AnnotationAssertion(terms:creator obo:MRIO_1000022 <https://orcid.org/0009-0004-2155-902X>)
 AnnotationAssertion(terms:date obo:MRIO_1000022 "2024-07-29T19:28:12Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label obo:MRIO_1000022 "beta series correlation"@en)
+AnnotationAssertion(rdfs:label obo:MRIO_1000022 "beta series correlation of functional magnetic resonance image data set"@en)
 SubClassOf(obo:MRIO_1000022 obo:MRIO_0000421)
 
 # Class: obo:MRIO_1000023 (psychophysiological interaction approach)
@@ -2741,7 +2769,7 @@ SubClassOf(obo:MRIO_1000032 obo:MRIO_1000031)
 
 # Class: obo:MRIO_1000033 (mixed event-mixed event-related/block design functional magnetic resonance imaging sequence protocol)
 
-AnnotationAssertion(obo:IAO_0000115 obo:MRIO_1000033 "A type of functional magnetic resonance imaging (fMRI) sequence protocol in which the participant is given specific tasks or stimuli that alternate between structured blocks and randomized or semi-randomized order seperated by rest periods during the imaging acquisition.")
+AnnotationAssertion(obo:IAO_0000115 obo:MRIO_1000033 "A type of functional magnetic resonance imaging (fMRI) sequence protocol in which the participant is given specific tasks or stimuli that alternate between structured blocks and randomized or semi-randomized order separated by rest periods during the imaging acquisition.")
 AnnotationAssertion(terms:creator obo:MRIO_1000033 <https://orcid.org/0009-0004-2155-902X>)
 AnnotationAssertion(terms:date obo:MRIO_1000033 "2024-07-31T21:38:59Z"^^xsd:dateTime)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:MRIO_1000033 "mixed event-related/block design fMRI sequence protocol")
@@ -2755,13 +2783,6 @@ AnnotationAssertion(terms:date obo:MRIO_1000041 "2024-08-09T22:05:03Z"^^xsd:date
 AnnotationAssertion(rdfs:label obo:MRIO_1000041 "blood oxygenation level dependent functional magnetic resonance image data set"@en)
 SubClassOf(obo:MRIO_1000041 obo:OBI_0003336)
 
-# Class: obo:MRIO_1000044 (blood oxygenation level dependent functional magnetic resonance image data set)
-
-AnnotationAssertion(terms:creator obo:MRIO_1000044 <https://orcid.org/0009-0004-2155-902X>)
-AnnotationAssertion(terms:date obo:MRIO_1000044 "2024-08-09T21:49:49Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label obo:MRIO_1000044 "blood oxygenation level dependent functional magnetic resonance image data set"@en)
-SubClassOf(obo:MRIO_1000044 obo:OBI_0003336)
-
 # Class: obo:MRIO_1000047 (vascular space occupancy functional magnetic resonance image data set)
 
 AnnotationAssertion(terms:creator obo:MRIO_1000047 <https://orcid.org/0009-0004-2155-902X>)
@@ -2773,11 +2794,93 @@ SubClassOf(obo:MRIO_1000047 obo:OBI_0003336)
 # Class: obo:MRIO_1000050 (hemodynamic response)
 
 AnnotationAssertion(obo:IAO_0000115 obo:MRIO_1000050 "Blood circulation that is increased in the brain, in response to neural activity.")
-AnnotationAssertion(terms:creator obo:MRIO_1000050 <https://orcid.org/0009-0004-2155-902X>)
-AnnotationAssertion(terms:date obo:MRIO_1000050 "2024-08-05T20:00:54Z"^^xsd:dateTime)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:MRIO_1000050 "HR")
 AnnotationAssertion(rdfs:label obo:MRIO_1000050 "hemodynamic response"@en)
 SubClassOf(obo:MRIO_1000050 <http://purl.obolibrary.org/obo/GO:0008015>)
+
+# Class: obo:MRIO_1000052 (multiple linear regression analysis)
+
+AnnotationAssertion(obo:IAO_0000115 obo:MRIO_1000052 "A linear regression for analysis of continuous dependent variable technique used in imaging that models the relationship between brain activity and multiple predictors, such as experimental conditions or behavioral data, to identify patterns in voxel or region level data.")
+AnnotationAssertion(terms:creator obo:MRIO_1000052 <https://orcid.org/0009-0004-2155-902X>)
+AnnotationAssertion(terms:date obo:MRIO_1000052 "2025-04-02T15:19:21Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:MRIO_1000052 "multiple linear regression analysis"@en)
+SubClassOf(obo:MRIO_1000052 obo:STATO_0000108)
+
+# Class: obo:MRIO_1000053 (dual regression analysis of functional magnetic resonance image data set)
+
+AnnotationAssertion(obo:IAO_0000115 obo:MRIO_1000053 "A functional magnetic resonance image data set analysis used to simultaneously analyze two sets of data (i.e., brain activity and task related variables) to identify common patterns.")
+AnnotationAssertion(terms:creator obo:MRIO_1000053 <https://orcid.org/0009-0004-2155-902X>)
+AnnotationAssertion(terms:date obo:MRIO_1000053 "2025-04-02T15:20:15Z"^^xsd:dateTime)
+AnnotationAssertion(oboInOwl:source obo:MRIO_1000053 "https://doi.org/10.1073/pnas.0811879106")
+AnnotationAssertion(rdfs:label obo:MRIO_1000053 "dual regression analysis of functional magnetic resonance image data set"@en)
+SubClassOf(obo:MRIO_1000053 obo:MRIO_0000421)
+SubClassOf(obo:MRIO_1000053 ObjectSomeValuesFrom(obo:BFO_0000051 obo:MRIO_1000061))
+
+# Class: obo:MRIO_1000054 (polynomial linear regression)
+
+AnnotationAssertion(obo:IAO_0000115 obo:MRIO_1000054 "A linear regression for analysis of continuous dependent variable technique used in imaging that models nonlinear relationships between voxel or pixel intensities and predictors by fitting polynomial functions to the data.")
+AnnotationAssertion(terms:creator obo:MRIO_1000054 <https://orcid.org/0009-0004-2155-902X>)
+AnnotationAssertion(terms:date obo:MRIO_1000054 "2025-04-02T15:21:49Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:MRIO_1000054 "polynomial linear regression"@en)
+SubClassOf(obo:MRIO_1000054 obo:STATO_0000108)
+
+# Class: obo:MRIO_1000055 (general linear model time series regression)
+
+AnnotationAssertion(obo:IAO_0000115 obo:MRIO_1000055 "An image data set analysis based on a general linear model used in imaging that models temporal dependencies in voxel signals by incorporating lagged predictors or autoregressive components.")
+AnnotationAssertion(terms:creator obo:MRIO_1000055 <https://orcid.org/0009-0004-2155-902X>)
+AnnotationAssertion(terms:date obo:MRIO_1000055 "2025-04-02T15:22:45Z"^^xsd:dateTime)
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:MRIO_1000055 "GLM time series regression")
+AnnotationAssertion(rdfs:label obo:MRIO_1000055 "general linear model time series regression"@en)
+SubClassOf(obo:MRIO_1000055 obo:MRIO_1000061)
+
+# Class: obo:MRIO_1000056 (ridge linear regression)
+
+AnnotationAssertion(obo:IAO_0000115 obo:MRIO_1000056 "A linear regression for analysis of continuous dependent variable technique used in imaging that applies L2 regularization to stabilize coefficient estimates, reducing overfitting when modeling high dimensional voxel or pixel data.")
+AnnotationAssertion(terms:creator obo:MRIO_1000056 <https://orcid.org/0009-0004-2155-902X>)
+AnnotationAssertion(terms:date obo:MRIO_1000056 "2025-04-02T15:23:45Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:MRIO_1000056 "ridge linear regression"@en)
+SubClassOf(obo:MRIO_1000056 obo:STATO_0000108)
+
+# Class: obo:MRIO_1000057 (lasso linear regression)
+
+AnnotationAssertion(obo:IAO_0000115 obo:MRIO_1000057 "A linear regression for analysis of continuous dependent variable technique used in imaging that applies L1 regularization to select relevant features by shrinking irrelevant voxel or pixel coefficients to zero.")
+AnnotationAssertion(terms:creator obo:MRIO_1000057 <https://orcid.org/0009-0004-2155-902X>)
+AnnotationAssertion(terms:date obo:MRIO_1000057 "2025-04-02T15:25:55Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:MRIO_1000057 "lasso linear regression"@en)
+SubClassOf(obo:MRIO_1000057 obo:STATO_0000108)
+
+# Class: obo:MRIO_1000058 (elastic net linear regression)
+
+AnnotationAssertion(obo:IAO_0000115 obo:MRIO_1000058 "A linear regression for analysis of continuous dependent variable technique used that combines L1 and L2 regularization to balance feature selection and model stability.")
+AnnotationAssertion(terms:creator obo:MRIO_1000058 <https://orcid.org/0009-0004-2155-902X>)
+AnnotationAssertion(terms:date obo:MRIO_1000058 "2025-04-02T15:26:40Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:MRIO_1000058 "elastic net linear regression"@en)
+SubClassOf(obo:MRIO_1000058 obo:STATO_0000108)
+
+# Class: obo:MRIO_1000059 (hierarchical linear regression)
+
+AnnotationAssertion(obo:IAO_0000115 obo:MRIO_1000059 "A linear regression for analysis of continuous dependent variable technique used in imaging that accounts for nested data structures, allowing for the modeling of both single subject and group level effects.")
+AnnotationAssertion(terms:creator obo:MRIO_1000059 <https://orcid.org/0009-0004-2155-902X>)
+AnnotationAssertion(terms:date obo:MRIO_1000059 "2025-04-02T15:27:45Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:MRIO_1000059 "hierarchical linear regression"@en)
+SubClassOf(obo:MRIO_1000059 obo:STATO_0000108)
+
+# Class: obo:MRIO_1000060 (Bayesian linear regression of image data set)
+
+AnnotationAssertion(obo:IAO_0000115 obo:MRIO_1000060 "A linear regression for analysis of an image data set used to obtain the posterior probability estimates of voxel or region level activity.")
+AnnotationAssertion(terms:creator obo:MRIO_1000060 <https://orcid.org/0009-0004-2155-902X>)
+AnnotationAssertion(terms:date obo:MRIO_1000060 "2025-04-02T15:28:17Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:MRIO_1000060 "Bayesian linear regression of image data set"@en)
+SubClassOf(obo:MRIO_1000060 obo:MRIO_0000747)
+
+# Class: obo:MRIO_1000061 (image data set analysis based on general linear model)
+
+AnnotationAssertion(obo:IAO_0000115 obo:MRIO_1000061 "An image data set analysis based general linear model (GLM) is a statistical approach that utilizes one or more regressors to model pixel or voxel intensity as a linear combination of predictors.")
+AnnotationAssertion(terms:creator obo:MRIO_1000061 <https://orcid.org/0009-0004-2155-902X>)
+AnnotationAssertion(terms:date obo:MRIO_1000061 "2025-04-03T23:07:03Z"^^xsd:dateTime)
+AnnotationAssertion(oboInOwl:hasRelatedSynonym obo:MRIO_1000061 "image data set analysis based on GLM")
+AnnotationAssertion(rdfs:label obo:MRIO_1000061 "image data set analysis based on general linear model"@en)
+SubClassOf(obo:MRIO_1000061 obo:MRIO_0000747)
 
 # Class: obo:MRIO_a535096d_151b_47c9_9be4_83b7799917df (lateral ventricle segmentation map)
 
@@ -2986,36 +3089,26 @@ AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0035933 "\"lh-paracentral\" and \
 
 # Class: <http://purl.obolibrary.org/obo/GO:0003008> (system process)
 
-AnnotationAssertion(terms:creator <http://purl.obolibrary.org/obo/GO:0003008> <https://orcid.org/0009-0004-2155-902X>)
-AnnotationAssertion(terms:date <http://purl.obolibrary.org/obo/GO:0003008> "2024-08-05T19:59:46Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO:0003008> "system process"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/GO:0003008> <http://purl.obolibrary.org/obo/GO:0032501>)
 
 # Class: <http://purl.obolibrary.org/obo/GO:0003013> (circulatory system process)
 
-AnnotationAssertion(terms:creator <http://purl.obolibrary.org/obo/GO:0003013> <https://orcid.org/0009-0004-2155-902X>)
-AnnotationAssertion(terms:date <http://purl.obolibrary.org/obo/GO:0003013> "2024-08-05T20:00:11Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO:0003013> "circulatory system process"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/GO:0003013> <http://purl.obolibrary.org/obo/GO:0003008>)
 
 # Class: <http://purl.obolibrary.org/obo/GO:0008015> (blood circulation)
 
-AnnotationAssertion(terms:creator <http://purl.obolibrary.org/obo/GO:0008015> <https://orcid.org/0009-0004-2155-902X>)
-AnnotationAssertion(terms:date <http://purl.obolibrary.org/obo/GO:0008015> "2024-08-05T20:00:33Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO:0008015> "blood circulation"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/GO:0008015> <http://purl.obolibrary.org/obo/GO:0003013>)
 
 # Class: <http://purl.obolibrary.org/obo/GO:0032501> (multicellular organismal process)
 
-AnnotationAssertion(terms:creator <http://purl.obolibrary.org/obo/GO:0032501> <https://orcid.org/0009-0004-2155-902X>)
-AnnotationAssertion(terms:date <http://purl.obolibrary.org/obo/GO:0032501> "2024-08-05T19:59:16Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO:0032501> "multicellular organismal process"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/GO:0032501> obo:GO_0008150)
 
 # Class: <http://purl.obolibrary.org/obo/GO:0050877> (nervous system process)
 
-AnnotationAssertion(terms:creator <http://purl.obolibrary.org/obo/GO:0050877> <https://orcid.org/0009-0004-2155-902X>)
-AnnotationAssertion(terms:date <http://purl.obolibrary.org/obo/GO:0050877> "2024-08-05T20:04:03Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO:0050877> "nervous system process"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/GO:0050877> <http://purl.obolibrary.org/obo/GO:0003008>)
 

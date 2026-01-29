@@ -118,6 +118,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/STATO_0000041 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/STATO_0000041"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -277,6 +283,41 @@ linear regression modeling makes a number of assumptions, which includes homoske
         <obo:IAO_0000119 xml:lang="en">STATO, adapted from wikipedia (http://en.wikipedia.org/wiki/Linear_regression) polled in June 2013</obo:IAO_0000119>
         <obo:STATO_0000032 xml:lang="en"></obo:STATO_0000032>
         <rdfs:label xml:lang="en">linear regression for analysis of continuous dependent variable</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000119 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000119">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115 xml:lang="en">model parameter estimation is a data transformation that finds parameter values (the model parameter estimates) most compatible with the data as judged by the model.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">textual definition modified following contributiong by Thomas Nichols:
+https://github.com/ISA-tools/stato/issues/18</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">Alejandra Gonzalez-Beltran</obo:IAO_0000117>
+        <obo:IAO_0000117>Orlaith Burke</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en"></obo:IAO_0000119>
+        <rdfs:label xml:lang="en">model parameter estimation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000370 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000370">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000119"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">the ordinary least squares estimation is a model parameter estimation for a linear regression model when the errors are uncorrelated and equal in variance. Is the Best Linear Unbiased Estimation (BLUE) method under these assumptions, Uniformly Minimum-Variance Unbiased Estimator (UMVUE) with addition of a Gaussian assumption.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Alejandra Gonzalez-Beltran</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">Camille Maumet</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">Tom Nichols</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">http://en.wikipedia.org/wiki/Ordinary_least_squares and Tom Nichols</obo:IAO_0000119>
+        <obo:STATO_0000032>OLS estimation</obo:STATO_0000032>
+        <obo:STATO_0000041>https://stat.ethz.ch/R-manual/R-patched/library/stats/html/lm.html</obo:STATO_0000041>
+        <rdfs:label xml:lang="en">ordinary least squares estimation</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 

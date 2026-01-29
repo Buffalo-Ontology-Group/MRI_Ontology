@@ -50,6 +50,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OMO_0002001 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OMO_0002001"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0002175 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002175"/>
@@ -59,12 +65,6 @@
     <!-- http://purl.obolibrary.org/obo/mondo#curated_content_resource -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mondo#curated_content_resource"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/mondo#excluded_from_qc_check -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mondo#excluded_from_qc_check"/>
     
 
 
@@ -245,7 +245,7 @@
     <!-- http://purl.obolibrary.org/obo/MF_0000020 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000020">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000060"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <obo:IAO_0000115>A bodily process that occurs in the brain, and that can of itself be conscious, or can give rise to a process that can of itself be conscious or can give rise to behaviour.</obo:IAO_0000115>
         <rdfs:label>mental process</rdfs:label>
     </owl:Class>
@@ -427,6 +427,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0000450">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005284"/>
         <obo:IAO_0000115>A multiple sclerosis with a clinical course characterized by a progressive accumulation of neurological disability, independent of relapses, following an initial relapsing-remitting (RR) phase.</obo:IAO_0000115>
+        <mondo:curated_content_resource rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.malacards.org/card/secondary_progressive_multiple_sclerosis</mondo:curated_content_resource>
         <oboInOwl:hasDbXref>DOID:0050783</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>EFO:0008522</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>MEDGEN:155969</oboInOwl:hasDbXref>
@@ -440,11 +441,11 @@
         <oboInOwl:id>MONDO:0000450</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/mondo#otar"/>
         <rdfs:label>secondary progressive multiple sclerosis</rdfs:label>
+        <skos:exactMatch rdf:resource="http://id.who.int/icd/entity/1045965709"/>
         <skos:exactMatch rdf:resource="http://identifiers.org/medgen/155969"/>
         <skos:exactMatch rdf:resource="http://identifiers.org/snomedct/425500002"/>
         <skos:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C0751965"/>
         <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/DOID_0050783"/>
-        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/mondo/sources/icd11foundation/1045965709"/>
         <skos:exactMatch rdf:resource="http://www.ebi.ac.uk/efo/EFO_0008522"/>
     </owl:Class>
     <owl:Axiom>
@@ -452,6 +453,12 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A multiple sclerosis with a clinical course characterized by a progressive accumulation of neurological disability, independent of relapses, following an initial relapsing-remitting (RR) phase.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>PMID:27166830</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000450"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/mondo#curated_content_resource"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.malacards.org/card/secondary_progressive_multiple_sclerosis</owl:annotatedTarget>
+        <oboInOwl:source>MONDO:MalaCards</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000450"/>
@@ -539,6 +546,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0000451">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005284"/>
         <obo:IAO_0000115>A multiple sclerosis that is characterized by steady worsening of neurologic functioning, without any distinct relapses or periods of remission. The rate of progression may vary over time, with occasional plateaus or temporary improvements, but the progression is continuous.</obo:IAO_0000115>
+        <mondo:curated_content_resource rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.malacards.org/card/primary_progressive_multiple_sclerosis</mondo:curated_content_resource>
         <oboInOwl:hasDbXref>DOID:0050784</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>EFO:0008520</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>MEDGEN:155968</oboInOwl:hasDbXref>
@@ -552,11 +560,11 @@
         <oboInOwl:id>MONDO:0000451</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/mondo#otar"/>
         <rdfs:label>primary progressive multiple sclerosis</rdfs:label>
+        <skos:exactMatch rdf:resource="http://id.who.int/icd/entity/1020720762"/>
         <skos:exactMatch rdf:resource="http://identifiers.org/medgen/155968"/>
         <skos:exactMatch rdf:resource="http://identifiers.org/snomedct/428700003"/>
         <skos:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C0751964"/>
         <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/DOID_0050784"/>
-        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/mondo/sources/icd11foundation/1020720762"/>
         <skos:exactMatch rdf:resource="http://www.ebi.ac.uk/efo/EFO_0008520"/>
     </owl:Class>
     <owl:Axiom>
@@ -566,6 +574,12 @@
         <oboInOwl:hasDbXref>DOID:0050784</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://www.mayoclinic.org/multiple-sclerosis/types.html</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://www.nationalmssociety.org/about-multiple-sclerosis/progressive-ms/primary-progressive-ms/index.aspx</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000451"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/mondo#curated_content_resource"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.malacards.org/card/primary_progressive_multiple_sclerosis</owl:annotatedTarget>
+        <oboInOwl:source>MONDO:MalaCards</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000451"/>
@@ -652,6 +666,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0002602"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0002977"/>
         <obo:IAO_0000115>A hypersensitivity reaction type II disease that involves the central nervous system.</obo:IAO_0000115>
+        <mondo:curated_content_resource rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.malacards.org/card/autoimmune_disease_of_central_nervous_system</mondo:curated_content_resource>
         <oboInOwl:hasDbXref>DOID:0060004</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>EFO:0020092</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>central nervous system autoimmune disease</oboInOwl:hasExactSynonym>
@@ -667,6 +682,12 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A hypersensitivity reaction type II disease that involves the central nervous system.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>MONDO:patterns/location</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000568"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/mondo#curated_content_resource"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.malacards.org/card/autoimmune_disease_of_central_nervous_system</owl:annotatedTarget>
+        <oboInOwl:source>MONDO:MalaCards</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000568"/>
@@ -710,8 +731,10 @@
         <obo:IAO_0000115>Loss of intellectual abilities interfering with an individual&apos;s social and occupational functions. Causes include Alzheimer&apos;s disease, brain injuries, brain tumors, and vascular disorders.</obo:IAO_0000115>
         <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/monarch-initiative/mondo/issues/6193</obo:IAO_0000233>
         <obo:IAO_0000589>dementia (disease)</obo:IAO_0000589>
+        <mondo:curated_content_resource rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.malacards.org/card/dementia</mondo:curated_content_resource>
         <oboInOwl:hasDbXref>DOID:1307</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>HP:0000726</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD10CM:F02</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>ICD9:290.8</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>ICD9:294.1</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>ICD9:294.8</oboInOwl:hasDbXref>
@@ -720,25 +743,34 @@
         <oboInOwl:hasDbXref>NCIT:C4786</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>SCTID:52448006</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>UMLS:C0497327</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>icd11.foundation:1468768235</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>icd11.foundation:546689346</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>dementia</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>dementia (disease)</oboInOwl:hasExactSynonym>
         <oboInOwl:id>MONDO:0001627</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/mondo#otar"/>
         <rdfs:label>dementia</rdfs:label>
+        <skos:exactMatch rdf:resource="http://id.who.int/icd/entity/1468768235"/>
+        <skos:exactMatch rdf:resource="http://id.who.int/icd/entity/546689346"/>
         <skos:exactMatch rdf:resource="http://identifiers.org/medgen/99229"/>
         <skos:exactMatch rdf:resource="http://identifiers.org/mesh/D003704"/>
         <skos:exactMatch rdf:resource="http://identifiers.org/snomedct/52448006"/>
         <skos:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C0497327"/>
+        <skos:exactMatch rdf:resource="http://purl.bioontology.org/ontology/ICD10CM/F02"/>
         <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/DOID_1307"/>
         <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C4786"/>
-        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/mondo/sources/icd11foundation/546689346"/>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0001627"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Loss of intellectual abilities interfering with an individual&apos;s social and occupational functions. Causes include Alzheimer&apos;s disease, brain injuries, brain tumors, and vascular disorders.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>NCIT:P378</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0001627"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/mondo#curated_content_resource"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.malacards.org/card/dementia</owl:annotatedTarget>
+        <oboInOwl:source>MONDO:MalaCards</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0001627"/>
@@ -752,6 +784,12 @@
         <owl:annotatedTarget>HP:0000726</owl:annotatedTarget>
         <oboInOwl:source>MONDO:otherHierarchy</oboInOwl:source>
         <oboInOwl:source>https://orcid.org/0000-0001-9859-8589</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0001627"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>ICD10CM:F02</owl:annotatedTarget>
+        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0001627"/>
@@ -810,6 +848,12 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0001627"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>icd11.foundation:1468768235</owl:annotatedTarget>
+        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0001627"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget>icd11.foundation:546689346</owl:annotatedTarget>
         <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
     </owl:Axiom>
@@ -841,6 +885,8 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0002025">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0700096"/>
         <obo:IAO_0000115>A disorder characterized by behavioral and/or psychological abnormalities, often accompanied by physical symptoms. The symptoms may cause clinically significant distress or impairment in social and occupational areas of functioning. Representative examples include anxiety disorders, cognitive disorders, mood disorders and schizophrenia.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/monarch-initiative/mondo/issues/9301</obo:IAO_0000233>
+        <mondo:curated_content_resource rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.malacards.org/card/disease_of_mental_health</mondo:curated_content_resource>
         <mondo:excluded_subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005071"/>
         <terms:conformsTo rdf:resource="http://purl.obolibrary.org/obo/mondo/patterns/specific_disease_by_disrupted_process.yaml"/>
         <oboInOwl:hasDbXref>DOID:150</oboInOwl:hasDbXref>
@@ -855,6 +901,7 @@
         <oboInOwl:hasNarrowSynonym>mental dysfunction</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>mental illness</oboInOwl:hasNarrowSynonym>
         <oboInOwl:id>MONDO:0002025</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/mondo#harrisons_view"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/mondo#otar"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/mondo#rare_grouping"/>
         <rdfs:label>psychiatric disorder</rdfs:label>
@@ -867,6 +914,12 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A disorder characterized by behavioral and/or psychological abnormalities, often accompanied by physical symptoms. The symptoms may cause clinically significant distress or impairment in social and occupational areas of functioning. Representative examples include anxiety disorders, cognitive disorders, mood disorders and schizophrenia.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>NCIT:C2893</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0002025"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/mondo#curated_content_resource"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.malacards.org/card/disease_of_mental_health</owl:annotatedTarget>
+        <oboInOwl:source>MONDO:MalaCards</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0002025"/>
@@ -1037,6 +1090,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005559"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0021147"/>
         <obo:IAO_0000115>A broad group of disorders that affect the myelin sheaths that cover the neurons. Myelin sheathes cover neuronal axons in the central and peripheral nervous system and function to increase traveling impulse speeds. Disruption of this sheath impairs neuronal transmission and can result in disorders such as multiple sclerosis and Guillain-Barre syndrome, among others.</obo:IAO_0000115>
+        <mondo:curated_content_resource rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.malacards.org/card/demyelinating_disease</mondo:curated_content_resource>
         <oboInOwl:hasDbXref>DOID:3213</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>MEDGEN:4189</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>MESH:D003711</oboInOwl:hasDbXref>
@@ -1054,9 +1108,36 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0002562"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>UMLS:C0011303</owl:annotatedTarget>
+        <oboInOwl:source>MEDGEN:4189</oboInOwl:source>
+        <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
+        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0002562"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>demyelinating disorder</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>DOID:3213</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C34527</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0002562"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/mondo#otar"/>
+        <oboInOwl:source>MONDO:OTAR</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0002562"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A broad group of disorders that affect the myelin sheaths that cover the neurons. Myelin sheathes cover neuronal axons in the central and peripheral nervous system and function to increase traveling impulse speeds. Disruption of this sheath impairs neuronal transmission and can result in disorders such as multiple sclerosis and Guillain-Barre syndrome, among others.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>NCIT:P378</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0002562"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/mondo#curated_content_resource"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.malacards.org/card/demyelinating_disease</owl:annotatedTarget>
+        <oboInOwl:source>MONDO:MalaCards</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0002562"/>
@@ -1085,27 +1166,6 @@
         <oboInOwl:source>DOID:3213</oboInOwl:source>
         <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
     </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0002562"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>UMLS:C0011303</owl:annotatedTarget>
-        <oboInOwl:source>MEDGEN:4189</oboInOwl:source>
-        <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
-        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0002562"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>demyelinating disorder</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>DOID:3213</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>NCIT:C34527</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0002562"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/mondo#otar"/>
-        <oboInOwl:source>MONDO:OTAR</oboInOwl:source>
-    </owl:Axiom>
     
 
 
@@ -1114,6 +1174,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0002602">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005071"/>
         <obo:IAO_0000115>A disease involving the central nervous system.</obo:IAO_0000115>
+        <mondo:curated_content_resource rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.malacards.org/card/central_nervous_system_disease</mondo:curated_content_resource>
         <terms:conformsTo rdf:resource="http://purl.obolibrary.org/obo/mondo/patterns/location.yaml"/>
         <terms:conformsTo rdf:resource="http://purl.obolibrary.org/obo/mondo/patterns/location_top.yaml"/>
         <oboInOwl:hasDbXref>DOID:331</oboInOwl:hasDbXref>
@@ -1144,6 +1205,45 @@
         <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C2934"/>
         <skos:exactMatch rdf:resource="http://www.ebi.ac.uk/efo/EFO_0009386"/>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0002602"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A disease involving the central nervous system.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>https://orcid.org/0000-0002-6601-2165</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0002602"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/mondo#curated_content_resource"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.malacards.org/card/central_nervous_system_disease</owl:annotatedTarget>
+        <oboInOwl:source>MONDO:MalaCards</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0002602"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>DOID:331</owl:annotatedTarget>
+        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0002602"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>EFO:0009386</owl:annotatedTarget>
+        <oboInOwl:source>MONDO:EFO</oboInOwl:source>
+        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0002602"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>MEDGEN:892343</owl:annotatedTarget>
+        <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
+        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0002602"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>MESH:D002493</owl:annotatedTarget>
+        <oboInOwl:source>DOID:331</oboInOwl:source>
+        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0002602"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
@@ -1217,39 +1317,6 @@
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/mondo#otar"/>
         <oboInOwl:source>MONDO:OTAR</oboInOwl:source>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0002602"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A disease involving the central nervous system.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>https://orcid.org/0000-0002-6601-2165</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0002602"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>DOID:331</owl:annotatedTarget>
-        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0002602"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>EFO:0009386</owl:annotatedTarget>
-        <oboInOwl:source>MONDO:EFO</oboInOwl:source>
-        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0002602"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>MEDGEN:892343</owl:annotatedTarget>
-        <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
-        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0002602"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>MESH:D002493</owl:annotatedTarget>
-        <oboInOwl:source>DOID:331</oboInOwl:source>
-        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
     </owl:Axiom>
     
 
@@ -1613,6 +1680,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0003996">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005560"/>
         <obo:IAO_0000115>A disease involving the basal ganglia.</obo:IAO_0000115>
+        <mondo:curated_content_resource rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.malacards.org/card/basal_ganglia_disease</mondo:curated_content_resource>
         <terms:conformsTo rdf:resource="http://purl.obolibrary.org/obo/mondo/patterns/location.yaml"/>
         <terms:conformsTo rdf:resource="http://purl.obolibrary.org/obo/mondo/patterns/location_top.yaml"/>
         <oboInOwl:hasDbXref>CSP:2057-3403</oboInOwl:hasDbXref>
@@ -1646,6 +1714,12 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A disease involving the basal ganglia.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://orcid.org/0000-0002-6601-2165</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0003996"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/mondo#curated_content_resource"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.malacards.org/card/basal_ganglia_disease</owl:annotatedTarget>
+        <oboInOwl:source>MONDO:MalaCards</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0003996"/>
@@ -1762,19 +1836,20 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005574"/>
         <obo:IAO_0000115>A progressive, neurodegenerative disease characterized by loss of function and death of nerve cells in several areas of the brain leading to loss of cognitive function such as memory and language.</obo:IAO_0000115>
         <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/monarch-initiative/mondo/issues/4013</obo:IAO_0000233>
-        <mondo:excluded_from_qc_check rdf:resource="http://purl.obolibrary.org/obo/mondo/sparql/qc/general/qc-single-child.sparql"/>
+        <mondo:curated_content_resource rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.malacards.org/card/alzheimers_disease</mondo:curated_content_resource>
         <oboInOwl:hasDbXref>DOID:10652</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>HP:0002511</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>ICD10CM:G30</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD10WHO:G30</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>ICD9:290.1</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>ICD9:331.0</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>MEDGEN:1853</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>MESH:D000544</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>NCIT:C2866</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>NIFSTD:birnlex_2092</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>Orphanet:238616</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>SCTID:142811000119104</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>UMLS:C0002395</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>birnlex:2092</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>icd11.foundation:1611724421</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>AD</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Alzheimer dementia</oboInOwl:hasExactSynonym>
@@ -1788,6 +1863,7 @@
         <oboInOwl:id>MONDO:0004975</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/mondo#otar"/>
         <rdfs:label>Alzheimer disease</rdfs:label>
+        <skos:exactMatch rdf:resource="http://id.who.int/icd/entity/1611724421"/>
         <skos:exactMatch rdf:resource="http://identifiers.org/medgen/1853"/>
         <skos:exactMatch rdf:resource="http://identifiers.org/mesh/D000544"/>
         <skos:exactMatch rdf:resource="http://identifiers.org/snomedct/142811000119104"/>
@@ -1795,13 +1871,19 @@
         <skos:exactMatch rdf:resource="http://purl.bioontology.org/ontology/ICD10CM/G30"/>
         <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/DOID_10652"/>
         <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C2866"/>
-        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/mondo/sources/icd11foundation/1611724421"/>
+        <skos:exactMatch rdf:resource="https://icd.who.int/browse10/2019/en#/G30"/>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0004975"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A progressive, neurodegenerative disease characterized by loss of function and death of nerve cells in several areas of the brain leading to loss of cognitive function such as memory and language.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>NCIT:P378</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0004975"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/mondo#curated_content_resource"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.malacards.org/card/alzheimers_disease</owl:annotatedTarget>
+        <oboInOwl:source>MONDO:MalaCards</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0004975"/>
@@ -1822,6 +1904,14 @@
         <owl:annotatedTarget>ICD10CM:G30</owl:annotatedTarget>
         <oboInOwl:source>DOID:10652</oboInOwl:source>
         <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0004975"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>ICD10WHO:G30</owl:annotatedTarget>
+        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
+        <oboInOwl:source>https://orcid.org/0000-0001-9439-5346</oboInOwl:source>
+        <oboInOwl:source>https://orcid.org/0000-0002-7941-5545</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0004975"/>
@@ -1862,12 +1952,6 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0004975"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>NIFSTD:birnlex_2092</owl:annotatedTarget>
-        <oboInOwl:source>EFO:0000249</oboInOwl:source>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0004975"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget>Orphanet:238616</owl:annotatedTarget>
         <oboInOwl:source>MONDO:equivalentObsolete</oboInOwl:source>
     </owl:Axiom>
@@ -1888,6 +1972,12 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0004975"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>birnlex:2092</owl:annotatedTarget>
+        <oboInOwl:source>EFO:0000249</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0004975"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget>icd11.foundation:1611724421</owl:annotatedTarget>
         <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
     </owl:Axiom>
@@ -1902,6 +1992,7 @@
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>Alzheimer disease</owl:annotatedTarget>
         <oboInOwl:hasDbXref>DOID:10652</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD10WHO:G30</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>NCIT:C2866</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
@@ -1945,6 +2036,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005046">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0700096"/>
         <obo:IAO_0000115>A disorder resulting from an abnormality in the immune system.</obo:IAO_0000115>
+        <mondo:curated_content_resource rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.malacards.org/card/immune_system_disease</mondo:curated_content_resource>
         <terms:conformsTo rdf:resource="http://purl.obolibrary.org/obo/mondo/patterns/location.yaml"/>
         <oboInOwl:hasDbXref>DOID:2914</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>EFO:0000540</oboInOwl:hasDbXref>
@@ -1972,6 +2064,7 @@
         <oboInOwl:hasExactSynonym>immune system disease or disorder</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>immune system disorder</oboInOwl:hasExactSynonym>
         <oboInOwl:id>MONDO:0005046</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/mondo#harrisons_view"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/mondo#otar"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/mondo#rare_grouping"/>
         <rdfs:label>immune system disorder</rdfs:label>
@@ -1988,6 +2081,12 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A disorder resulting from an abnormality in the immune system.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>NCIT:C3507</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005046"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/mondo#curated_content_resource"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.malacards.org/card/immune_system_disease</owl:annotatedTarget>
+        <oboInOwl:source>MONDO:MalaCards</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005046"/>
@@ -2158,6 +2257,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005071">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0700096"/>
         <obo:IAO_0000115>A non-neoplastic or neoplastic disorder that affects the brain, spinal cord, or peripheral nerves.</obo:IAO_0000115>
+        <mondo:curated_content_resource rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.malacards.org/card/nervous_system_disease</mondo:curated_content_resource>
         <terms:conformsTo rdf:resource="http://purl.obolibrary.org/obo/mondo/patterns/location.yaml"/>
         <oboInOwl:hasDbXref>DOID:863</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>EFO:0000618</oboInOwl:hasDbXref>
@@ -2181,6 +2281,7 @@
         <oboInOwl:hasExactSynonym>neurological disease</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>neurological disorder</oboInOwl:hasExactSynonym>
         <oboInOwl:id>MONDO:0005071</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/mondo#harrisons_view"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/mondo#otar"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/mondo#rare_grouping"/>
         <rdfs:comment>&apos;psychiatric disorder&apos; is not classified as a &apos;nervous system disorder&apos; in Mondo (though it is often as such): the hallmarks of psychiatric disorders are based in behavior and emotional state, and the relation with nervous system malfunction or damage is not always clearly determined.</rdfs:comment>
@@ -2199,6 +2300,12 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A non-neoplastic or neoplastic disorder that affects the brain, spinal cord, or peripheral nerves.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>NCIT:C26835</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005071"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/mondo#curated_content_resource"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.malacards.org/card/nervous_system_disease</owl:annotatedTarget>
+        <oboInOwl:source>MONDO:MalaCards</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005071"/>
@@ -2343,21 +2450,25 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0021095"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0100545"/>
         <obo:IAO_0000115>A progressive degenerative disorder of the central nervous system characterized by loss of dopamine producing neurons in the substantia nigra and the presence of Lewy bodies in the substantia nigra and locus coeruleus. Signs and symptoms include tremor which is most pronounced during rest, muscle rigidity, slowing of the voluntary movements, a tendency to fall back, and a mask-like facial expression.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/monarch-initiative/mondo/issues/9097</obo:IAO_0000233>
         <mondo:curated_content_resource rdf:resource="https://search.clinicalgenome.org/kb/conditions/MONDO:0005180"/>
+        <mondo:curated_content_resource rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.malacards.org/card/parkinsons_disease</mondo:curated_content_resource>
         <mondo:excluded_subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000510"/>
         <mondo:should_conform_to rdf:resource="http://purl.obolibrary.org/obo/mondo/patterns/OMIM_phenotypic_series.yaml"/>
         <oboInOwl:hasDbXref>DOID:14330</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD10CM:G20</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD10WHO:G20</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>ICD9:332</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>ICD9:332.0</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>MEDGEN:10590</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>MESH:D010300</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>NANDO:1200010</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>NCIT:C26845</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>NIFSTD:birnlex_2098</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>OMIMPS:168600</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>Orphanet:319705</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>SCTID:49049000</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>UMLS:C0030567</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>birnlex:2098</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>icd11.foundation:296066191</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>PD</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Parkinson disease</oboInOwl:hasExactSynonym>
@@ -2367,13 +2478,15 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/mondo#clingen"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/mondo#otar"/>
         <rdfs:label>Parkinson disease</rdfs:label>
+        <skos:exactMatch rdf:resource="http://id.who.int/icd/entity/296066191"/>
         <skos:exactMatch rdf:resource="http://identifiers.org/medgen/10590"/>
         <skos:exactMatch rdf:resource="http://identifiers.org/mesh/D010300"/>
         <skos:exactMatch rdf:resource="http://identifiers.org/snomedct/49049000"/>
         <skos:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C0030567"/>
+        <skos:exactMatch rdf:resource="http://purl.bioontology.org/ontology/ICD10CM/G20"/>
         <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/DOID_14330"/>
         <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C26845"/>
-        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/mondo/sources/icd11foundation/296066191"/>
+        <skos:exactMatch rdf:resource="https://icd.who.int/browse10/2019/en#/G20"/>
         <skos:exactMatch rdf:resource="https://omim.org/phenotypicSeries/PS168600"/>
     </owl:Class>
     <owl:Axiom>
@@ -2390,6 +2503,12 @@
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005180"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/mondo#curated_content_resource"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.malacards.org/card/parkinsons_disease</owl:annotatedTarget>
+        <oboInOwl:source>MONDO:MalaCards</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005180"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/mondo#excluded_subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000510"/>
         <oboInOwl:source>DOID:14330</oboInOwl:source>
@@ -2401,6 +2520,23 @@
         <owl:annotatedTarget>DOID:14330</owl:annotatedTarget>
         <oboInOwl:source>EFO:0002508</oboInOwl:source>
         <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005180"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>ICD10CM:G20</owl:annotatedTarget>
+        <oboInOwl:source>DOID:14330</oboInOwl:source>
+        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
+        <oboInOwl:source>https://orcid.org/0000-0002-5002-8648</oboInOwl:source>
+        <oboInOwl:source>https://orcid.org/0009-0001-6494-4831</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005180"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>ICD10WHO:G20</owl:annotatedTarget>
+        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
+        <oboInOwl:source>https://orcid.org/0000-0001-9439-5346</oboInOwl:source>
+        <oboInOwl:source>https://orcid.org/0000-0002-7941-5545</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005180"/>
@@ -2451,12 +2587,6 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005180"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>NIFSTD:birnlex_2098</owl:annotatedTarget>
-        <oboInOwl:source>EFO:0002508</oboInOwl:source>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005180"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget>OMIMPS:168600</owl:annotatedTarget>
         <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
         <oboInOwl:source>https://orcid.org/0000-0002-6601-2165</oboInOwl:source>
@@ -2486,6 +2616,12 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005180"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>birnlex:2098</owl:annotatedTarget>
+        <oboInOwl:source>EFO:0002508</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005180"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget>icd11.foundation:296066191</owl:annotatedTarget>
         <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
     </owl:Axiom>
@@ -2500,17 +2636,19 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005180"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>Parkinson disease</owl:annotatedTarget>
+        <obo:OMO_0002001>https://w3id.org/information-resource-registry/clingen</obo:OMO_0002001>
         <oboInOwl:hasDbXref>DOID:14330</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD10WHO:G20</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>NCIT:C26845</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>OMIMPS:168600</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>icd11.foundation:296066191</oboInOwl:hasDbXref>
-        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005180"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>Parkinson&apos;s disease</owl:annotatedTarget>
         <oboInOwl:hasDbXref>DOID:14330</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD10CM:G20</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>ISBN-13:978-1-259-64403-0</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>NCIT:C26845</oboInOwl:hasDbXref>
     </owl:Axiom>
@@ -2519,6 +2657,7 @@
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>paralysis agitans</owl:annotatedTarget>
         <oboInOwl:hasDbXref>DOID:14330</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD10CM:G20</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005180"/>
@@ -2613,8 +2752,10 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0006704"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0020800"/>
         <obo:IAO_0000115>A progressive autoimmune disorder affecting the central nervous system resulting in demyelination. Patients develop physical and cognitive impairments that correspond with the affected nerve fibers.</obo:IAO_0000115>
+        <mondo:curated_content_resource rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.malacards.org/card/multiple_sclerosis</mondo:curated_content_resource>
         <oboInOwl:hasDbXref>DOID:2377</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>ICD10CM:G35</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD10WHO:G35</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>ICD9:340</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>MEDGEN:10123</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>MESH:D009103</oboInOwl:hasDbXref>
@@ -2632,6 +2773,7 @@
         <oboInOwl:id>MONDO:0005301</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/mondo#otar"/>
         <rdfs:label>multiple sclerosis</rdfs:label>
+        <skos:exactMatch rdf:resource="http://id.who.int/icd/entity/1298865187"/>
         <skos:exactMatch rdf:resource="http://identifiers.org/medgen/10123"/>
         <skos:exactMatch rdf:resource="http://identifiers.org/mesh/D009103"/>
         <skos:exactMatch rdf:resource="http://identifiers.org/snomedct/24700007"/>
@@ -2639,13 +2781,19 @@
         <skos:exactMatch rdf:resource="http://purl.bioontology.org/ontology/ICD10CM/G35"/>
         <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/DOID_2377"/>
         <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C3243"/>
-        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/mondo/sources/icd11foundation/1298865187"/>
+        <skos:exactMatch rdf:resource="https://icd.who.int/browse10/2019/en#/G35"/>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005301"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A progressive autoimmune disorder affecting the central nervous system resulting in demyelination. Patients develop physical and cognitive impairments that correspond with the affected nerve fibers.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>NCIT:P378</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005301"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/mondo#curated_content_resource"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.malacards.org/card/multiple_sclerosis</owl:annotatedTarget>
+        <oboInOwl:source>MONDO:MalaCards</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005301"/>
@@ -2660,6 +2808,14 @@
         <owl:annotatedTarget>ICD10CM:G35</owl:annotatedTarget>
         <oboInOwl:source>DOID:2377</oboInOwl:source>
         <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005301"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>ICD10WHO:G35</owl:annotatedTarget>
+        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
+        <oboInOwl:source>https://orcid.org/0000-0001-9439-5346</oboInOwl:source>
+        <oboInOwl:source>https://orcid.org/0000-0002-7941-5545</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005301"/>
@@ -2763,6 +2919,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005314">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005301"/>
         <obo:IAO_0000115>The most common clinical variant of multiple sclerosis, characterized by recurrent acute exacerbations of neurologic dysfunction followed by partial or complete recovery. Common clinical manifestations include loss of visual (see optic neuritis), motor, sensory, or bladder function. Acute episodes of demyelination may occur at any site in the central nervous system, and commonly involve the optic nerves, spinal cord, brain stem, and cerebellum. (Adams et al., Principles of Neurology, 6th ed, pp903-914)</obo:IAO_0000115>
+        <mondo:curated_content_resource rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.malacards.org/card/relapsing_remitting_multiple_sclerosis</mondo:curated_content_resource>
         <oboInOwl:hasDbXref>DOID:2378</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>EFO:0003929</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>MEDGEN:155669</oboInOwl:hasDbXref>
@@ -2778,13 +2935,13 @@
         <oboInOwl:id>MONDO:0005314</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/mondo#otar"/>
         <rdfs:label>relapsing-remitting multiple sclerosis</rdfs:label>
+        <skos:exactMatch rdf:resource="http://id.who.int/icd/entity/799053936"/>
         <skos:exactMatch rdf:resource="http://identifiers.org/medgen/155669"/>
         <skos:exactMatch rdf:resource="http://identifiers.org/mesh/D020529"/>
         <skos:exactMatch rdf:resource="http://identifiers.org/snomedct/426373005"/>
         <skos:exactMatch rdf:resource="http://linkedlifedata.com/resource/umls/id/C0751967"/>
         <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/DOID_2378"/>
         <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C165675"/>
-        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/mondo/sources/icd11foundation/799053936"/>
         <skos:exactMatch rdf:resource="http://www.ebi.ac.uk/efo/EFO_0003929"/>
     </owl:Class>
     <owl:Axiom>
@@ -2792,6 +2949,12 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The most common clinical variant of multiple sclerosis, characterized by recurrent acute exacerbations of neurologic dysfunction followed by partial or complete recovery. Common clinical manifestations include loss of visual (see optic neuritis), motor, sensory, or bladder function. Acute episodes of demyelination may occur at any site in the central nervous system, and commonly involve the optic nerves, spinal cord, brain stem, and cerebellum. (Adams et al., Principles of Neurology, 6th ed, pp903-914)</owl:annotatedTarget>
         <oboInOwl:hasDbXref>MESH:D020529</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005314"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/mondo#curated_content_resource"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.malacards.org/card/relapsing_remitting_multiple_sclerosis</owl:annotatedTarget>
+        <oboInOwl:source>MONDO:MalaCards</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005314"/>
@@ -3187,6 +3350,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005574">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005559"/>
         <obo:IAO_0000115>Neurodegenerative disorders involving deposition of abnormal tau protein isoforms (tau proteins) in neurons and glial cells in the brain. Pathological aggregations of tau proteins are associated with mutation of the tau gene on chromosome 17 in patients with alzheimer disease; dementia; parkinsonian disorders; progressive supranuclear palsy (supranuclear palsy, progressive); and corticobasal degeneration.</obo:IAO_0000115>
+        <mondo:curated_content_resource rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.malacards.org/card/tauopathy</mondo:curated_content_resource>
         <oboInOwl:hasDbXref>DOID:680</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>EFO:0005815</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>MEDGEN:181880</oboInOwl:hasDbXref>
@@ -3206,6 +3370,12 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Neurodegenerative disorders involving deposition of abnormal tau protein isoforms (tau proteins) in neurons and glial cells in the brain. Pathological aggregations of tau proteins are associated with mutation of the tau gene on chromosome 17 in patients with alzheimer disease; dementia; parkinsonian disorders; progressive supranuclear palsy (supranuclear palsy, progressive); and corticobasal degeneration.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>MESH:D024801</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005574"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/mondo#curated_content_resource"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.malacards.org/card/tauopathy</owl:annotatedTarget>
+        <oboInOwl:source>MONDO:MalaCards</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005574"/>
@@ -3319,6 +3489,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005046"/>
         <obo:IAO_0000115>A disorder resulting from loss of function or tissue destruction of an organ or multiple organs, arising from humoral or cellular immune responses of the individual to their own tissue constituents. It may be systemic (e.g., systemic lupus erythematosus), or organ specific, (e.g., thyroiditis).</obo:IAO_0000115>
         <mondo:curated_content_resource rdf:resource="https://search.clinicalgenome.org/kb/conditions/MONDO:0007179"/>
+        <mondo:curated_content_resource rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.malacards.org/card/autoimmune_disease</mondo:curated_content_resource>
         <mondo:excluded_subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000605"/>
         <terms:conformsTo rdf:resource="http://purl.obolibrary.org/obo/mondo/patterns/autoimmune.yaml"/>
         <oboInOwl:hasDbXref>DOID:417</oboInOwl:hasDbXref>
@@ -3364,6 +3535,12 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/mondo#curated_content_resource"/>
         <owl:annotatedTarget rdf:resource="https://search.clinicalgenome.org/kb/conditions/MONDO:0007179"/>
         <oboInOwl:source>MONDO:CLINGEN</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0007179"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/mondo#curated_content_resource"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.malacards.org/card/autoimmune_disease</owl:annotatedTarget>
+        <oboInOwl:source>MONDO:MalaCards</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0007179"/>
@@ -3596,6 +3773,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0021095">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0003996"/>
         <obo:IAO_0000115>A group of disorders which feature impaired motor control characterized by bradykinesia, MUSCLE RIGIDITY; TREMOR; and postural instability. Parkinsonian diseases are generally divided into primary parkinsonism (see PARKINSON DISEASE), secondary parkinsonism (see PARKINSON DISEASE, SECONDARY) and inherited forms. These conditions are associated with dysfunction of dopaminergic or closely related motor integration neuronal pathways in the BASAL GANGLIA.</obo:IAO_0000115>
+        <mondo:curated_content_resource rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.malacards.org/card/parkinsonism</mondo:curated_content_resource>
         <oboInOwl:hasDbXref>DOID:0080855</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>MEDGEN:66079</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>MESH:D020734</oboInOwl:hasDbXref>
@@ -3614,6 +3792,12 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A group of disorders which feature impaired motor control characterized by bradykinesia, MUSCLE RIGIDITY; TREMOR; and postural instability. Parkinsonian diseases are generally divided into primary parkinsonism (see PARKINSON DISEASE), secondary parkinsonism (see PARKINSON DISEASE, SECONDARY) and inherited forms. These conditions are associated with dysfunction of dopaminergic or closely related motor integration neuronal pathways in the BASAL GANGLIA.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>MESH:D020734</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0021095"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/mondo#curated_content_resource"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.malacards.org/card/parkinsonism</owl:annotatedTarget>
+        <oboInOwl:source>MONDO:MalaCards</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0021095"/>
@@ -3746,16 +3930,6 @@
         <owl:annotatedTarget>human disease or disorder</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://orcid.org/0000-0001-5208-3432</oboInOwl:hasDbXref>
     </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OGMS_0000060 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000060">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <obo:IAO_0000115>A process in which at least one bodily component of an organsim participates.</obo:IAO_0000115>
-        <rdfs:label>bodily process</rdfs:label>
-    </owl:Class>
 </rdf:RDF>
 
 

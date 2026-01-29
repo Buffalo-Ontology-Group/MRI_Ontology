@@ -2,6 +2,7 @@
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/"
      xml:base="http://purl.obolibrary.org/obo/"
      xmlns:cl="http://purl.obolibrary.org/obo/cl#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:go="http://purl.obolibrary.org/obo/go#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -33,15 +34,13 @@
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/">
         <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/mrio/releases/2021-04-10/mrio.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/mondo.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/stato.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MRIO/releases/2025-04-08/imports/mondo_import.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MRIO/releases/2025-04-08/imports/obi_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MRIO/releases/2025-01-31/imports/obi_import.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2019-08-26/bfo.owl"/>
         <terms:contributor>Alan Ruttenberg</terms:contributor>
-        <terms:description>An ontology for the representation of MRI acquisition and analysis.</terms:description>
-        <terms:title>MRI Ontology (MRI)</terms:title>
         <terms:creator>Alexander D. Bartnik</terms:creator>
         <terms:creator>Alexander D. Diehl</terms:creator>
         <terms:creator>Alexander Terry</terms:creator>
@@ -50,7 +49,9 @@
         <terms:creator>Mackenzie Smith</terms:creator>
         <terms:creator>Michael G. Dwyer</terms:creator>
         <terms:creator>William D. Duncan</terms:creator>
+        <terms:description>An ontology for the representation of MRI acquisition and analysis.</terms:description>
         <terms:license>https://creativecommons.org/licenses/by/4.0/</terms:license>
+        <terms:title>MRI Ontology (MRI)</terms:title>
     </owl:Ontology>
     
 
@@ -78,6 +79,12 @@
     
 
 
+    <!-- http://purl.org/dc/terms/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
     <!-- http://purl.org/dc/terms/creator -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
@@ -87,6 +94,12 @@
     <!-- http://purl.org/dc/terms/date -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/date"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
     
 
 
@@ -858,11 +871,11 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0003341"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <IAO_0000115>An MRI acquisition sequence characterized by short TE and TR to minimize T2 weighting.</IAO_0000115>
+        <IAO_0000115>A magnetic resonance imaging assay characterized by short TE and TR to minimize T2 weighting.</IAO_0000115>
         <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
         <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
         <oboInOwl:hasRelatedSynonym>NCIT:C180727</oboInOwl:hasRelatedSynonym>
-        <rdfs:label xml:lang="en">T1 weighted MRI acquisition sequence</rdfs:label>
+        <rdfs:label xml:lang="en">T1 weighted magnetic resonance imaging assay</rdfs:label>
     </owl:Class>
     
 
@@ -968,13 +981,13 @@
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">90</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <IAO_0000115>An MRI acquisition sequence that diminishes T1 weighting via long TR and T2 via short TE to produce images where voxel intensity corresponds to number of hydrogen protons in tissue.</IAO_0000115>
+        <IAO_0000115>A magnetic resonance imaging assay that diminishes T1 weighting via long TR and T2 via short TE to produce images where voxel intensity corresponds to number of hydrogen protons in tissue.</IAO_0000115>
         <IAO_0000116>Usually SE.</IAO_0000116>
         <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
         <IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</IAO_0000117>
         <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
         <oboInOwl:hasRelatedSynonym>NCIT:C170797</oboInOwl:hasRelatedSynonym>
-        <rdfs:label xml:lang="en">Proton density sequence</rdfs:label>
+        <rdfs:label xml:lang="en">proton density magnetic resonance imaging assay</rdfs:label>
     </owl:Class>
     
 
@@ -1035,7 +1048,7 @@
         <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
         <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
         <IAO_0000118>T2 TSE sequence</IAO_0000118>
-        <rdfs:label xml:lang="en">T2 FSE sequence</rdfs:label>
+        <rdfs:label xml:lang="en">T2 weighted FSE magnetic resonance imaging assay</rdfs:label>
     </owl:Class>
     
 
@@ -1105,7 +1118,7 @@
         <IAO_0000115>An MRI acquisition sequence that achieves T1 weighting using gradient echo instead of spin echo.</IAO_0000115>
         <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
         <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
-        <rdfs:label xml:lang="en">T1 GRE sequence</rdfs:label>
+        <rdfs:label xml:lang="en">T1 weighted magnetic resonance imaging assay based on gradient-echo pulse sequence protocol</rdfs:label>
     </owl:Class>
     
 
@@ -1178,7 +1191,7 @@
         <IAO_0000116>Needs GRE sequence.</IAO_0000116>
         <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
         <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
-        <rdfs:label xml:lang="en">T2* GRE sequence</rdfs:label>
+        <rdfs:label xml:lang="en">T2* weighted magnetic resonance imaging assay based on gradient-echo pulse sequence protocol</rdfs:label>
     </owl:Class>
     
 
@@ -1251,7 +1264,7 @@
         <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
         <IAO_0000117>https://orcid.org/0000-0002-2104-0568 &quot;Lucas M. Serra&quot;</IAO_0000117>
         <rdfs:comment>flip angle: 180 -&gt; 90 degrees, need to represent the change</rdfs:comment>
-        <rdfs:label xml:lang="en">T2 STIR sequence</rdfs:label>
+        <rdfs:label xml:lang="en">T2 weighted STIR magnetic resonance imaging assay</rdfs:label>
     </owl:Class>
     
 
@@ -1327,7 +1340,7 @@ unnamed elements:
 
 variable 
 1700–2200</rdfs:comment>
-        <rdfs:label xml:lang="en">T2 FLAIR sequence</rdfs:label>
+        <rdfs:label xml:lang="en">T2 weighted FLAIR magnetic resonance imaging assay</rdfs:label>
     </owl:Class>
     
 
@@ -2378,7 +2391,7 @@ The values often belong to a group of pixels or voxels that share the same chara
         <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
         <terms:source>https://radiopaedia.org/articles/gradient-echo-sequences-1?lang=us</terms:source>
         <oboInOwl:hasExactSynonym>GRE</oboInOwl:hasExactSynonym>
-        <rdfs:label xml:lang="en">gradient echo sequence</rdfs:label>
+        <rdfs:label xml:lang="en">gradient-echo pulse sequence protocol</rdfs:label>
     </owl:Class>
     
 
@@ -2409,7 +2422,7 @@ The values often belong to a group of pixels or voxels that share the same chara
         <IAO_0000116 xml:lang="en">Can we add that this may optionally be about some spin echo sequence, but not necessary for an instance of this class?</IAO_0000116>
         <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
         <terms:source xml:lang="en">https://radiopaedia.org/articles/echo-planar-imaging-1?lang=us</terms:source>
-        <rdfs:label xml:lang="en">GRE echo planar sequence</rdfs:label>
+        <rdfs:label xml:lang="en">gradient-echo echo-planar pulse sequence protocol</rdfs:label>
     </owl:Class>
     
 
@@ -3095,7 +3108,7 @@ The values often belong to a group of pixels or voxels that share the same chara
         <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
         <terms:source>https://doi.org/10.1063%2F1.1670306</terms:source>
         <oboInOwl:hasExactSynonym>SE</oboInOwl:hasExactSynonym>
-        <rdfs:label xml:lang="en">spin echo sequence</rdfs:label>
+        <rdfs:label xml:lang="en">spin-echo pulse sequence protocol</rdfs:label>
     </owl:Class>
     
 
@@ -3135,7 +3148,7 @@ The values often belong to a group of pixels or voxels that share the same chara
         <IAO_0000116>TODO: Create specific subclass of this and echo panar sequence for both GRE and SE.</IAO_0000116>
         <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
         <terms:source>https://radiopaedia.org/articles/inversion-recovery-sequences?lang=us</terms:source>
-        <rdfs:label xml:lang="en">GRE inversion recovery sequence</rdfs:label>
+        <rdfs:label xml:lang="en">gradient-echo inversion recovery pulse sequence protocol</rdfs:label>
     </owl:Class>
     
 
@@ -3480,13 +3493,13 @@ The values often belong to a group of pixels or voxels that share the same chara
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0003335"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <IAO_0000115>An MRI acquisition sequence that uses diffusion gradients to create contrast in the image corresponding to the Brownian motion of the tissue in the examined voxel.</IAO_0000115>
+        <IAO_0000115>A magnetic resonance imaging assay that uses diffusion gradients to create contrast in the image corresponding to the Brownian motion of the tissue in the examined voxel.</IAO_0000115>
         <IAO_0000116>Add diffusion gradient as parameter.</IAO_0000116>
         <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
         <IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</IAO_0000117>
         <oboInOwl:hasRelatedSynonym>NCIT:C111116</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>SCTID:440408002</oboInOwl:hasRelatedSynonym>
-        <rdfs:label xml:lang="en">diffusion weighted MRI acquisition sequence</rdfs:label>
+        <rdfs:label xml:lang="en">diffusion weighted magnetic resonance imaging assay</rdfs:label>
     </owl:Class>
     
 
@@ -3630,7 +3643,7 @@ The values often belong to a group of pixels or voxels that share the same chara
         </rdfs:subClassOf>
         <IAO_0000115>An MRI acquisition sequence that using a spin echo sequence to accentuate T1 weighting.</IAO_0000115>
         <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
-        <rdfs:label xml:lang="en">T1 SE sequence</rdfs:label>
+        <rdfs:label xml:lang="en">T1 magnetic resonance imaging assay based on spin-echo sequence protocol</rdfs:label>
     </owl:Class>
     
 
@@ -3693,7 +3706,7 @@ The values often belong to a group of pixels or voxels that share the same chara
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <IAO_0000115>An MRI acquisition sequence that uses fast gradient echo sequences to collect a 4D data set corresponding to BOLD signal due to differences in magnetic susceptibility of oxygenated and deoxygenated hemoglobin.</IAO_0000115>
+        <IAO_0000115>A magnetic resonance imaging assay that uses fast gradient echo sequences to collect a 4D data set corresponding to BOLD signal due to differences in magnetic susceptibility of oxygenated and deoxygenated hemoglobin.</IAO_0000115>
         <IAO_0000116>Usually T2* sequence with same TE value throughout.</IAO_0000116>
         <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
         <IAO_0000117>https://orcid.org/0000-0001-9990-8331 &quot;Alexander D. Diehl&quot;</IAO_0000117>
@@ -3701,7 +3714,7 @@ The values often belong to a group of pixels or voxels that share the same chara
         <oboInOwl:hasExactSynonym>fMRI acquisition sequence</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>NCIT:C17958</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>SCTID:241603006</oboInOwl:hasRelatedSynonym>
-        <rdfs:label xml:lang="en">functional MRI acquisition sequence</rdfs:label>
+        <rdfs:label xml:lang="en">functional magnetic resonance imaging assay</rdfs:label>
     </owl:Class>
     
 
@@ -3749,7 +3762,7 @@ The values often belong to a group of pixels or voxels that share the same chara
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000389"/>
         <IAO_0000115>A T1 weighted acquisition sequence that uses a gradient echo pulse sequence to acquire an magnetic resonance image data set one 2D slice at a time.</IAO_0000115>
         <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
-        <rdfs:label xml:lang="en">2D T1 GRE sequence</rdfs:label>
+        <rdfs:label xml:lang="en">2D T1 weighted magnetic resonance imaging assay based on gradient-echo pulse sequence protocol</rdfs:label>
     </owl:Class>
     
 
@@ -3767,7 +3780,7 @@ The values often belong to a group of pixels or voxels that share the same chara
         <IAO_0000115>A T1 weighted acquisition sequence that uses a gradient echo pulse sequence to acquire an entire 3D magnetic resonance image data set at once.</IAO_0000115>
         <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
         <oboInOwl:hasRelatedSynonym>NCIT:C183113</oboInOwl:hasRelatedSynonym>
-        <rdfs:label xml:lang="en">3D T1 GRE sequence</rdfs:label>
+        <rdfs:label xml:lang="en">3D T1 weighted magnetic resonance imaging assay based on gradient-echo pulse sequence protocol</rdfs:label>
     </owl:Class>
     
 
@@ -4525,7 +4538,7 @@ The values often belong to a group of pixels or voxels that share the same chara
         <IAO_0000115 xml:lang="en">Multiple echoes of different phase steps are acquired by rapidly reversing the readout or frequency- encoding gradient using a spin echo sequence.</IAO_0000115>
         <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
         <terms:source xml:lang="en">https://radiopaedia.org/articles/echo-planar-imaging-1?lang=us</terms:source>
-        <rdfs:label xml:lang="en">SE echo planar sequence</rdfs:label>
+        <rdfs:label xml:lang="en">spin-echo echo-planar pulse sequence protocol</rdfs:label>
     </owl:Class>
     
 
@@ -4548,7 +4561,7 @@ The values often belong to a group of pixels or voxels that share the same chara
         <IAO_0000116>TODO: Create specific subclass of this and echo panar sequence for both GRE and SE.</IAO_0000116>
         <IAO_0000117>https://orcid.org/0000-0001-9676-7377 &quot;Alexander D. Bartnik&quot;</IAO_0000117>
         <terms:source>https://radiopaedia.org/articles/inversion-recovery-sequences?lang=us</terms:source>
-        <rdfs:label xml:lang="en">SE inversion recovery sequence</rdfs:label>
+        <rdfs:label xml:lang="en">spin-echo inversion recovery pulse sequence protocol</rdfs:label>
     </owl:Class>
     
 
@@ -4969,6 +4982,24 @@ The values often belong to a group of pixels or voxels that share the same chara
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MRIO_0000749 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000749">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000677"/>
+        <rdfs:label xml:lang="en">diffusion weighted magnetic resonance imaging assay based on gradient-echo echo-planar pulse sequence protocol</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MRIO_0000750 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0000750">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_0000677"/>
+        <rdfs:label xml:lang="en">diffusion weighted magnetic resonance imaging assay based on spin-echo echo-planar pulse sequence protocol</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MRIO_0003071 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_0003071">
@@ -5142,20 +5173,6 @@ The values often belong to a group of pixels or voxels that share the same chara
     <!-- http://purl.obolibrary.org/obo/MRIO_1000008 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000008">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_1000005"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MRIO_1000044"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MRIO_1000004"/>
         <IAO_0000115>An activation map derived from a blood oxygenation level dependent (BOLD) functional magnetic resonance image data set.</IAO_0000115>
         <terms:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
@@ -5511,17 +5528,6 @@ The values often belong to a group of pixels or voxels that share the same chara
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003336"/>
         <terms:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
         <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-08-09T22:05:03Z</terms:date>
-        <rdfs:label xml:lang="en">blood oxygenation level dependent functional magnetic resonance image data set</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MRIO_1000044 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MRIO_1000044">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003336"/>
-        <terms:creator rdf:resource="https://orcid.org/0009-0004-2155-902X"/>
-        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-08-09T21:49:49Z</terms:date>
         <rdfs:label xml:lang="en">blood oxygenation level dependent functional magnetic resonance image data set</rdfs:label>
     </owl:Class>
     
