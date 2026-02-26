@@ -105,4 +105,3 @@ case "$@" in
   echo "Please remember to update your ODK image from time to time: https://oboacademy.github.io/obook/howto/odk-update/."
   ;;
 esac
-

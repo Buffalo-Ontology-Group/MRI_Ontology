@@ -168,6 +168,7 @@ IMPORT_FILES = $(IMPORT_OWL_FILES)
 
 .PHONY: all_imports
 all_imports: $(IMPORT_FILES)
+	@echo $(IMPORT_FILES)
 
 # ----------------------------------------
 # Subset assets

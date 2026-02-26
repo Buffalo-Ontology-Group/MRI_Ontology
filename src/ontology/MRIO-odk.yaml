@@ -8,6 +8,4 @@ import_group:
     - id: uberon
     - id: mondo
     - id: pato
-    - id: ncit
-    - id: caro
     - id: stato

@@ -38,7 +38,6 @@
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/stato.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MRIO/releases/2025-01-31/imports/obi_import.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2019-08-26/bfo.owl"/>
         <terms:contributor>Alan Ruttenberg</terms:contributor>
         <terms:creator>Alexander D. Bartnik</terms:creator>
