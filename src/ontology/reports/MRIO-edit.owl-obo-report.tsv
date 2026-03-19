@@ -1,6 +1,4 @@
 Level	Rule Name	Subject	Property	Value
-ERROR	duplicate_label	blood oxygenation level dependent functional magnetic resonance image data set	rdfs:label	blood oxygenation level dependent functional magnetic resonance image data set@en
-ERROR	duplicate_label	blood oxygenation level dependent functional magnetic resonance image data set	rdfs:label	blood oxygenation level dependent functional magnetic resonance image data set@en
 WARN	missing_definition	milliliter unit	IAO:0000115	
 WARN	missing_definition	cubic millimeter unit	IAO:0000115	
 WARN	missing_definition	millimeter unit	IAO:0000115	
@@ -14,8 +12,9 @@ WARN	missing_definition	pallidum volume measurement datum	IAO:0000115
 WARN	missing_definition	hippocampus volume measurement datum	IAO:0000115	
 WARN	missing_definition	amygdala volume measurement datum	IAO:0000115	
 WARN	missing_definition	nucleus accumbens volume measurement datum	IAO:0000115	
+WARN	missing_definition	diffusion weighted magnetic resonance imaging assay based on gradient-echo echo-planar pulse sequence protocol	IAO:0000115	
+WARN	missing_definition	diffusion weighted magnetic resonance imaging assay based on spin-echo echo-planar pulse sequence protocol	IAO:0000115	
 WARN	missing_definition	ventral thalamic volume measurement datum	IAO:0000115	
-WARN	missing_definition	blood oxygenation level dependent functional magnetic resonance image data set	IAO:0000115	
 WARN	missing_definition	blood oxygenation level dependent functional magnetic resonance image data set	IAO:0000115	
 WARN	missing_definition	vascular space occupancy functional magnetic resonance image data set	IAO:0000115	
 WARN	missing_obsolete_label	MRI machine	rdfs:label	MRI machine@en

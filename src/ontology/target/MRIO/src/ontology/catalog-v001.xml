@@ -12,9 +12,7 @@
   
   <uri name="http://purl.obolibrary.org/obo/MRIO/imports/pato_import.owl" uri="imports/pato_import.owl"/>
   
-  <uri name="http://purl.obolibrary.org/obo/MRIO/imports/ncit_import.owl" uri="imports/ncit_import.owl"/>
-  
-  <uri name="http://purl.obolibrary.org/obo/MRIO/imports/caro_import.owl" uri="imports/caro_import.owl"/>
+  <uri name="http://purl.obolibrary.org/obo/MRIO/imports/stato_import.owl" uri="imports/stato_import.owl"/>
   
   
 

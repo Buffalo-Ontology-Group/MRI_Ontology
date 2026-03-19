@@ -1,5 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/MRIO/releases/2026-03-19/imports/uberon_import.owl" uri="imports/uberon_import.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/MRIO/releases/2026-03-19/imports/pato_import.owl" uri="imports/pato_import.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/MRIO/releases/2026-03-13/imports/uberon_import.owl" uri="imports/uberon_import.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/MRIO/releases/2026-03-13/imports/stato_import.owl" uri="imports/stato_import.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/MRIO/releases/2026-03-13/imports/pato_import.owl" uri="imports/pato_import.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/MRIO/releases/2026-03-13/imports/obi_import.owl" uri="imports/obi_import.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/MRIO/releases/2026-03-13/imports/mondo_import.owl" uri="imports/mondo_import.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/MRIO/releases/2026-03-05/imports/uberon_import.owl" uri="imports/uberon_import.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/MRIO/releases/2026-03-05/imports/obi_import.owl" uri="imports/obi_import.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/MRIO/releases/2026-03-05/imports/stato_import.owl" uri="imports/stato_import.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/MRIO/releases/2026-03-05/imports/pato_import.owl" uri="imports/pato_import.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/MRIO/releases/2026-03-05/imports/mondo_import.owl" uri="imports/mondo_import.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/iao.owl" uri="imports/iao_import.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/uberon.owl" uri="imports/uberon_import.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/stato.owl" uri="imports/stato_import.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/pato.owl" uri="imports/pato_import.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/mondo.owl" uri="imports/mondo_import.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/MRIO/releases/2026-02-27/imports/obi_import.owl" uri="imports/obi_import.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/MRIO/releases/2026-02-27/imports/uberon_import.owl" uri="imports/uberon_import.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/MRIO/releases/2026-02-27/imports/mondo_import.owl" uri="imports/mondo_import.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/MRIO/releases/2026-02-27/imports/pato_import.owl" uri="imports/pato_import.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/MRIO/releases/2026-02-27/imports/stato_import.owl" uri="imports/stato_import.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/MRIO/releases/2026-02-26/imports/obi_import.owl" uri="imports/obi_import.owl"/>
     <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/MRIO/releases/2026-02-12/imports/obi_import.owl" uri="imports/obi_import.owl"/>
     <group id="Folder Repository, directory=, recursive=false, Auto-Update=false, version=2" prefer="public" xml:base="">
         <uri name="http://purl.obolibrary.org/obo/MRIO/imports/obi_import.owl" uri="imports/obi_import.owl"/>

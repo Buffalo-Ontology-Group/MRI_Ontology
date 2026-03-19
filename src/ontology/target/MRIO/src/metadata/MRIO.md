@@ -3,10 +3,10 @@ layout: ontology_detail
 id: MRIO
 title: MRI Acquisition and Analysis Ontology
 jobs:
-  - id: https://travis-ci.org/Buffalo-Ontology-Group/False
+  - id: https://travis-ci.org/Buffalo-Ontology-Group/MRI_Ontology
     type: travis-ci
 build:
-  checkout: git clone https://github.com/Buffalo-Ontology-Group/False.git
+  checkout: git clone https://github.com/Buffalo-Ontology-Group/MRI_Ontology.git
   system: git
   path: "."
 contact:
@@ -15,7 +15,7 @@ contact:
   github: 
 description: MRI Acquisition and Analysis Ontology is an ontology...
 domain: stuff
-homepage: https://github.com/Buffalo-Ontology-Group/False
+homepage: https://github.com/Buffalo-Ontology-Group/MRI_Ontology
 products:
   - id: MRIO.owl
     name: "MRI Acquisition and Analysis Ontology main release in OWL format"
@@ -34,10 +34,9 @@ dependencies:
 - id: uberon
 - id: mondo
 - id: pato
-- id: ncit
-- id: caro
+- id: stato
 
-tracker: https://github.com/Buffalo-Ontology-Group/False/issues
+tracker: https://github.com/Buffalo-Ontology-Group/MRI_Ontology/issues
 license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY

@@ -1,5 +1,5 @@
 
-![Build Status](https://github.com/Buffalo-Ontology-Group/False/actions/workflows/qc.yml/badge.svg)
+![Build Status](https://github.com/Buffalo-Ontology-Group/MRI_Ontology/actions/workflows/qc.yml/badge.svg)
 # MRI Acquisition and Analysis Ontology
 
 Description: None
@@ -22,7 +22,7 @@ Editors of this ontology should use the edit version, [src/ontology/MRIO-edit.ow
 
 ## Contact
 
-Please use this GitHub repository's [Issue tracker](https://github.com/Buffalo-Ontology-Group/False/issues) to request new terms/classes or report errors or specific concerns related to the ontology.
+Please use this GitHub repository's [Issue tracker](https://github.com/Buffalo-Ontology-Group/MRI_Ontology/issues) to request new terms/classes or report errors or specific concerns related to the ontology.
 
 ## Acknowledgements
 

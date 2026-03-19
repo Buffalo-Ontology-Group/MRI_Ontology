@@ -2,11 +2,14 @@ Prefix(:=<http://purl.obolibrary.org/obo/>)
 Prefix(cl:=<http://purl.obolibrary.org/obo/cl#>)
 Prefix(dc:=<http://purl.org/dc/elements/1.1/>)
 Prefix(go:=<http://purl.obolibrary.org/obo/go#>)
+Prefix(pr:=<http://purl.obolibrary.org/obo/pr#>)
 Prefix(obo:=<http://purl.obolibrary.org/obo/>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(pav:=<http://purl.org/pav/>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
 Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(bspo:=<http://purl.obolibrary.org/obo/bspo#>)
 Prefix(core:=<http://purl.obolibrary.org/obo/core#>)
 Prefix(doap:=<http://usefulinc.com/ns/doap#>)
 Prefix(foaf:=<http://xmlns.com/foaf/0.1/>)
@@ -24,6 +27,8 @@ Prefix(swrlb:=<http://www.w3.org/2003/11/swrlb#>)
 Prefix(terms:=<http://purl.org/dc/terms/>)
 Prefix(chebi1:=<http://purl.obolibrary.org/obo/chebi#3>)
 Prefix(chebi2:=<http://purl.obolibrary.org/obo/chebi#1>)
+Prefix(chebi3:=<http://purl.obolibrary.org/obo/chebi#>)
+Prefix(chebi4:=<http://purl.obolibrary.org/obo/chebi#2>)
 Prefix(ubprop:=<http://purl.obolibrary.org/obo/ubprop#>)
 Prefix(protege:=<http://protege.stanford.edu/plugins/owl/protege#>)
 Prefix(subsets:=<http://purl.obolibrary.org/obo/ro/subsets#>)
@@ -34,10 +39,11 @@ Prefix(ncbitaxon:=<http://purl.obolibrary.org/obo/ncbitaxon#>)
 Ontology(<http://purl.obolibrary.org/obo/>
 <http://purl.obolibrary.org/obo/mrio/releases/2021-04-10/mrio.owl>
 Import(<http://purl.obolibrary.org/obo/iao.owl>)
-Import(<http://purl.obolibrary.org/obo/mondo.owl>)
-Import(<http://purl.obolibrary.org/obo/ncit.owl>)
-Import(<http://purl.obolibrary.org/obo/stato.owl>)
-Import(<http://purl.obolibrary.org/obo/uberon.owl>)
+Import(<http://purl.obolibrary.org/obo/MRIO/releases/2026-03-05/imports/mondo_import.owl>)
+Import(<http://purl.obolibrary.org/obo/MRIO/releases/2026-03-05/imports/obi_import.owl>)
+Import(<http://purl.obolibrary.org/obo/MRIO/releases/2026-03-05/imports/pato_import.owl>)
+Import(<http://purl.obolibrary.org/obo/MRIO/releases/2026-03-05/imports/stato_import.owl>)
+Import(<http://purl.obolibrary.org/obo/MRIO/releases/2026-03-05/imports/uberon_import.owl>)
 Import(<http://purl.obolibrary.org/obo/bfo/2019-08-26/bfo.owl>)
 Annotation(terms:contributor "Alan Ruttenberg")
 Annotation(terms:creator "Alexander D. Bartnik")
@@ -332,28 +338,7 @@ Declaration(Class(obo:OBI_0003329))
 Declaration(Class(obo:OBI_0003330))
 Declaration(Class(obo:OBI_0003331))
 Declaration(Class(obo:OBI_0003332))
-Declaration(Class(obo:OBI_0003334))
-Declaration(Class(obo:OBI_0003335))
-Declaration(Class(obo:OBI_0003336))
-Declaration(Class(obo:OBI_0003339))
-Declaration(Class(obo:OBI_0003340))
-Declaration(Class(obo:OBI_0003341))
-Declaration(Class(obo:OBI_0003343))
-Declaration(Class(obo:OBI_0003344))
-Declaration(Class(obo:OBI_0003345))
-Declaration(Class(obo:OBI_0003346))
-Declaration(Class(obo:OBI_0003347))
-Declaration(Class(obo:OBI_0003348))
-Declaration(Class(obo:OBI_0003349))
-Declaration(Class(obo:OBI_0003350))
-Declaration(Class(obo:OBI_0003352))
-Declaration(Class(obo:OBI_0003353))
 Declaration(Class(obo:OBI_0003355))
-Declaration(Class(obo:OBI_0003357))
-Declaration(Class(obo:OBI_0003358))
-Declaration(Class(obo:OBI_0003360))
-Declaration(Class(obo:OBI_0003361))
-Declaration(Class(obo:OBI_0003363))
 Declaration(Class(obo:OBI_0200000))
 Declaration(Class(obo:OBI_0200111))
 Declaration(Class(obo:OBI_0200147))
@@ -412,7 +397,6 @@ Declaration(Class(obo:UBERON_0027061))
 Declaration(Class(obo:UBERON_0028622))
 Declaration(Class(obo:UBERON_0028715))
 Declaration(Class(obo:UBERON_0035933))
-Declaration(Class(obo:UO_0000095))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO:0003008>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO:0003013>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO:0008015>))
@@ -2909,12 +2893,12 @@ AnnotationAssertion(obo:IAO_0000115 obo:MRIO_a535096d_151b_47c9_9be4_83b7799917d
 AnnotationAssertion(rdfs:label obo:MRIO_a535096d_151b_47c9_9be4_83b7799917df "lateral ventricle segmentation map"@en)
 SubClassOf(obo:MRIO_a535096d_151b_47c9_9be4_83b7799917df obo:OBI_0003360)
 
-# Class: obo:OBI_0002985 (obo:OBI_0002985)
+# Class: obo:OBI_0002985 (magnetic resonance imaging assay)
 
 AnnotationAssertion(oboInOwl:hasRelatedSynonym obo:OBI_0002985 "NCIT:C16809")
 AnnotationAssertion(oboInOwl:hasRelatedSynonym obo:OBI_0002985 "SCTID:113091000")
 
-# Class: obo:OBI_0003329 (obo:OBI_0003329)
+# Class: obo:OBI_0003329 (magnetic resonance imaging participant)
 
 SubClassOf(obo:OBI_0003329 ObjectSomeValuesFrom(obo:IAO_0000235 obo:OBI_0003071))
 
@@ -2926,11 +2910,11 @@ AnnotationAssertion(rdfs:label obo:PATO_0000764 "passive"@en)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0001873 "\"Left-Caudate\" and \"Right-Caudate\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0001876 (amygdala)
+# Class: obo:UBERON_0001876 (obo:UBERON_0001876)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0001876 "\"Left-Amygdala\" and \"Right-Amygdala\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0001882 (nucleus accumbens)
+# Class: obo:UBERON_0001882 (obo:UBERON_0001882)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0001882 "\"Left-Accumbens-area\" and \"Right-Accumbens-area\" (from Desikan-Killiany atlas)")
 
@@ -2938,7 +2922,7 @@ AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0001882 "\"Left-Accumbens-area\" 
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0001898 "\"Left-VentralDC\" and \"Right-VentralDC\" (from Desikan-Killiany Atlas)")
 
-# Class: obo:UBERON_0002022 (insula)
+# Class: obo:UBERON_0002022 (obo:UBERON_0002022)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0002022 "\"lh-insula\" and \"rh-insula\" (from Desikan-Killiany atlas)")
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0002022 "wm-lh-insula")
@@ -2951,160 +2935,160 @@ AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0002129 "\"Left-Cerebellum-Cortex
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0002421 "\"Left-Hippocampus\" and \"Right-Hippocampus\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0002576 (temporal pole)
+# Class: obo:UBERON_0002576 (obo:UBERON_0002576)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0002576 "\"lh-temporalpole\" and \"rh-temporalpole\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0002581 (postcentral gyrus)
+# Class: obo:UBERON_0002581 (obo:UBERON_0002581)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0002581 "\"lh-postcentral\" and \"rh-postcentral\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0002624 (orbital part of inferior frontal gyrus)
+# Class: obo:UBERON_0002624 (obo:UBERON_0002624)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0002624 "\"lh-parsorbitalis\" and \"rh-parsobertalis\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0002629 (triangular part of inferior frontal gyrus)
+# Class: obo:UBERON_0002629 (obo:UBERON_0002629)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0002629 "\"lh-parstriangularis\" and \"rh-parstriangularis\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0002661 (superior frontal gyrus)
+# Class: obo:UBERON_0002661 (obo:UBERON_0002661)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0002661 "\"lh-superiorfrontal\" and \"rh-superiorfrontal\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0002688 (supramarginal gyrus)
+# Class: obo:UBERON_0002688 (obo:UBERON_0002688)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0002688 "\"lh-supramarginal\" and \"rh-supramarginal\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0002703 (precentral gyrus)
+# Class: obo:UBERON_0002703 (obo:UBERON_0002703)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0002703 "\"lh-precentral\" and \"rh-precentral\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0002728 (entorhinal cortex)
+# Class: obo:UBERON_0002728 (obo:UBERON_0002728)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0002728 "\"lh-entorhinal\" and \"rh-entorhinal\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0002751 (inferior temporal gyrus)
+# Class: obo:UBERON_0002751 (obo:UBERON_0002751)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0002751 "\"lh-inferiortemporal\" and \"rh-inferiortemporal\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0002766 (fusiform gyrus)
+# Class: obo:UBERON_0002766 (obo:UBERON_0002766)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0002766 "\"lh-fusiform\" and \"rh-fusiform\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0002769 (superior temporal gyrus)
+# Class: obo:UBERON_0002769 (obo:UBERON_0002769)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0002769 "\"lh-superiortemporal\" and \"rh-superiortemporal\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0002771 (middle temporal gyrus)
+# Class: obo:UBERON_0002771 (obo:UBERON_0002771)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0002771 "\"lh-middletemporal\" and \"rh-middletemporal\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0002795 (frontal pole)
+# Class: obo:UBERON_0002795 (obo:UBERON_0002795)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0002795 "\"lh-frontalpole\" and \"rh-frontalpole\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0002943 (lingual gyrus)
+# Class: obo:UBERON_0002943 (obo:UBERON_0002943)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0002943 "\"lh-lingual\" and \"rh-lingual\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0002973 (parahippocampal gyrus)
+# Class: obo:UBERON_0002973 (obo:UBERON_0002973)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0002973 "\"lh-parahippocampal\" and \"rh-parahippocampal\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0002980 (opercular part of inferior frontal gyrus)
+# Class: obo:UBERON_0002980 (obo:UBERON_0002980)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0002980 "\"lh-parsopercularis\" and \"rh-parsopercularis\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0006088 (inferior parietal cortex)
+# Class: obo:UBERON_0006088 (obo:UBERON_0006088)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0006088 "\"lh-inferiorparietal\" and \"rh-inferiorparietal\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0006092 (cuneus cortex)
+# Class: obo:UBERON_0006092 (obo:UBERON_0006092)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0006092 "\"lh-cuneus\" and \"rh-cuneus\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0006093 (precuneus cortex)
+# Class: obo:UBERON_0006093 (obo:UBERON_0006093)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0006093 "\"lh-precuneus\" and \"rh-precuneus\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0006094 (superior parietal cortex)
+# Class: obo:UBERON_0006094 (obo:UBERON_0006094)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0006094 "\"lh-superiorparietal\" and \"rh-superiorparietal\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0006114 (lateral occipital cortex)
+# Class: obo:UBERON_0006114 (obo:UBERON_0006114)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0006114 "\"lh-lateraloccipital\" and \"rh-lateraloccipital\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0006445 (caudal middle frontal gyrus)
+# Class: obo:UBERON_0006445 (obo:UBERON_0006445)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0006445 "\"lh-caudalmiddlefrontal\" and \"rh-caudalmiddlefrontal\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0006446 (rostral middle frontal gyrus)
+# Class: obo:UBERON_0006446 (obo:UBERON_0006446)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0006446 "\"lh-rostralmiddlefrontal\" and \"rh-rostralmiddlefrontal\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0006514 (pallidum)
+# Class: obo:UBERON_0006514 (obo:UBERON_0006514)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0006514 "\"Left-Pallidum\" and \"Right-Pallidum\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0008884 (left putamen)
+# Class: obo:UBERON_0008884 (obo:UBERON_0008884)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0008884 "\"Left-Putamen\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0008885 (right putamen)
+# Class: obo:UBERON_0008885 (obo:UBERON_0008885)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0008885 "\"\"Right-Putamen\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0009897 (right auditory cortex)
+# Class: obo:UBERON_0009897 (obo:UBERON_0009897)
 
 AnnotationAssertion(obo:IAO_0000116 obo:UBERON_0009897 "Corrected error saying this is in the left hemisphere of the brain."@en)
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0009897 "\"rh-transversetemporal\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0009898 (left auditory cortex)
+# Class: obo:UBERON_0009898 (obo:UBERON_0009898)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0009898 "\"lh-transversetemporal\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0013683 (left dorsal thalamus)
+# Class: obo:UBERON_0013683 (obo:UBERON_0013683)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0013683 "\"Left-Thalamus-Proper\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0013684 (right dorsal thalamus)
+# Class: obo:UBERON_0013684 (obo:UBERON_0013684)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0013684 "\"Right-Thalamus-Proper\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0022352 (medial orbital frontal cortex)
+# Class: obo:UBERON_0022352 (obo:UBERON_0022352)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0022352 "\"lh-medialorbitofrontal\" and \"rh-imedialorbitofrontal\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0022353 (posterior cingulate cortex)
+# Class: obo:UBERON_0022353 (obo:UBERON_0022353)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0022353 "\"lh-posteriorcingulate\" and \"rh-posteriorcingulate\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0022438 (rostral anterior cingulate cortex)
+# Class: obo:UBERON_0022438 (obo:UBERON_0022438)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0022438 "\"lh-rostralanteriorcingulate\" and \"rh-rostralanteriorcingulate\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0022534 (pericalcarine cortex)
+# Class: obo:UBERON_0022534 (obo:UBERON_0022534)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0022534 "\"lh-pericalcarine\" and \"rh-pericalcarine\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0022716 (lateral orbital frontal cortex)
+# Class: obo:UBERON_0022716 (obo:UBERON_0022716)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0022716 "\"lh-lateralorbitofrontal\" and \"rh-lateralorbitofrontal\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0027061 (isthmus of cingulate cortex)
+# Class: obo:UBERON_0027061 (obo:UBERON_0027061)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0027061 "\"lh-isthmuscingulate\" and \"rh-isthmuscingulate\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0028622 (banks of superior temporal sulcus)
+# Class: obo:UBERON_0028622 (obo:UBERON_0028622)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0028622 "bankssts")
 
-# Class: obo:UBERON_0028715 (caudal anterior cingulate cortex)
+# Class: obo:UBERON_0028715 (obo:UBERON_0028715)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0028715 "\"lh-caudalanteriorcingulate\" and \"rh-caudalanteriorcingulate\" (from Desikan-Killiany atlas)")
 
-# Class: obo:UBERON_0035933 (paracentral lobule)
+# Class: obo:UBERON_0035933 (obo:UBERON_0035933)
 
 AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0035933 "\"lh-paracentral\" and \"rh-paracentral\" (from Desikan-Killiany atlas)")
 

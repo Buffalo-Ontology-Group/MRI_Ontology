@@ -1,19 +1,33 @@
 format-version: 1.2
-data-version: MRIO/releases/2024-05-13/MRIO-base.owl
+data-version: MRIO/releases/2026-03-19/MRIO-base.owl
+idspace: dc http://purl.org/dc/elements/1.1/ 
+idspace: doap http://usefulinc.com/ns/doap# 
+idspace: foaf http://xmlns.com/foaf/0.1/ 
+idspace: obda https://w3id.org/obda/vocabulary# 
+idspace: oboInOwl http://www.geneontology.org/formats/oboInOwl# 
+idspace: pav http://purl.org/pav/ 
+idspace: protege http://protege.stanford.edu/plugins/owl/protege# 
+idspace: skos http://www.w3.org/2004/02/skos/core# 
+idspace: sssom https://w3id.org/sssom/ 
+idspace: swrl http://www.w3.org/2003/11/swrl# 
+idspace: swrla http://swrl.stanford.edu/ontologies/3.3/swrla.owl# 
+idspace: swrlb http://www.w3.org/2003/11/swrlb# 
+idspace: terms http://purl.org/dc/terms/ 
 ontology: MRIO/MRIO-base
-property_value: http://purl.org/dc/elements/1.1/contributor "Alan Ruttenberg" xsd:string
-property_value: http://purl.org/dc/elements/1.1/creator "Alexander D. Bartnik" xsd:string
-property_value: http://purl.org/dc/elements/1.1/creator "Alexander D. Diehl" xsd:string
-property_value: http://purl.org/dc/elements/1.1/creator "Lauren M. Wishnie" xsd:string
-property_value: http://purl.org/dc/elements/1.1/creator "Lucas Serra" xsd:string
-property_value: http://purl.org/dc/elements/1.1/creator "Mackenzie Smith" xsd:string
-property_value: http://purl.org/dc/elements/1.1/creator "Michael G. Dwyer" xsd:string
-property_value: http://purl.org/dc/elements/1.1/creator "William D. Duncan" xsd:string
-property_value: http://purl.org/dc/elements/1.1/description "An ontology for the representation of MRI acquisition and analysis." xsd:string
-property_value: http://purl.org/dc/elements/1.1/title "MRI Ontology (MRI)" xsd:string
-property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
-property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/4.0/ xsd:string
-property_value: owl:versionInfo "2024-05-13" xsd:string
+property_value: dc:type IAO:8000001
+property_value: owl:versionInfo "2026-03-19" xsd:string
+property_value: terms:contributor "Alan Ruttenberg" xsd:string
+property_value: terms:creator "Alexander D. Bartnik" xsd:string
+property_value: terms:creator "Alexander D. Diehl" xsd:string
+property_value: terms:creator "Alexander Terry" xsd:string
+property_value: terms:creator "Lauren M. Wishnie" xsd:string
+property_value: terms:creator "Lucas Serra" xsd:string
+property_value: terms:creator "Mackenzie Smith" xsd:string
+property_value: terms:creator "Michael G. Dwyer" xsd:string
+property_value: terms:creator "William D. Duncan" xsd:string
+property_value: terms:description "An ontology for the representation of MRI acquisition and analysis." xsd:string
+property_value: terms:license "https://creativecommons.org/licenses/by/4.0/" xsd:string
+property_value: terms:title "MRI Ontology (MRI)" xsd:string
 
 [Term]
 id: MRIO:0000341
@@ -34,12 +48,12 @@ id: MRIO:0000342
 name: MRI machine parameter
 def: "Parameters that a technician may specify to compose a specific MRI acquisition sequence as part of a scanning protocol." []
 is_a: MRIO:0000380 ! MRI machine setting datum
-property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-2104-0568
+property_value: terms:creator http://orcid.org/0000-0002-2104-0568
 
 [Term]
 id: MRIO:0000345
 name: obsolete Post-Gd T1 image data set
-def: "A T1 weighted image data set where gadolidium contrast agent has been administered to the participant before image acquistion." []
+def: "A T1 weighted image data set where gadolidium contrast agent has been administered to the participant before image acquisition." []
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9990-8331 \"Alexander D. Diehl\"" xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0002-2104-0568 \"Lucas M. Serra\"" xsd:string
@@ -52,14 +66,14 @@ name: DCE perfusion data set
 def: "A timeseries of MRI images including pre- and post-contrast at different times" []
 is_a: OBI:0003339
 relationship: BFO:0000051 MRIO:0000683 ! imaging contrast reagent
-relationship: OBI:0000312 MRIO:0000385 ! T1 weighted MRI acquisition sequence
+relationship: OBI:0000312 MRIO:0000385 ! T1 weighted magnetic resonance imaging assay
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9990-8331 \"Alexander D. Diehl\"" xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0002-2104-0568 \"Lucas M. Serra\"" xsd:string
 
 [Term]
 id: MRIO:0000348
-name: ASL perfusion data set
+name: arterial spin labelling perfusion image data set
 def: "A timeseries of MRI images like DCE perfusion, but using no injected contrast (uses flow coded pulses instead)" []
 is_a: OBI:0003339
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
@@ -87,7 +101,7 @@ property_value: IAO:0000117 "https://orcid.org/0000-0002-2104-0568 \"Lucas M. Se
 [Term]
 id: MRIO:0000351
 name: obsolete proton density image data set
-def: "An magnetic resonance image data set in which the contrast emphasizes density of protons, supressing T1 and T2 effects" []
+def: "An magnetic resonance image data set in which the contrast emphasizes density of protons, suppressing T1 and T2 effects" []
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9990-8331 \"Alexander D. Diehl\"" xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0002-2104-0568 \"Lucas M. Serra\"" xsd:string
@@ -121,7 +135,6 @@ property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9990-8331 \"Alexander D. Diehl\"" xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0002-2104-0568 \"Lucas M. Serra\"" xsd:string
 is_obsolete: true
-replaced_by: OBI:0003337
 
 [Term]
 id: MRIO:0000355
@@ -131,49 +144,48 @@ property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9990-8331 \"Alexander D. Diehl\"" xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0002-2104-0568 \"Lucas M. Serra\"" xsd:string
 is_obsolete: true
-replaced_by: OBI:0003338
 
 [Term]
 id: MRIO:0000356
 name: plane
 def: "The direction that the MRI image was taken." []
 is_a: MRIO:0000342 ! MRI machine parameter
-property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-2104-0568
+property_value: terms:creator http://orcid.org/0000-0002-2104-0568
 
 [Term]
 id: MRIO:0000357
 name: repetition time
 def: "The repetition time (TR) is the time from the application of an excitation pulse to the application of the next pulse. It determines how much longitudinal magnetization recovers between each pulse. It is measured in milliseconds. (radiopedia)" []
 is_a: MRIO:0000342 ! MRI machine parameter
-property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-2104-0568
 property_value: IAO:0000118 "TR" xsd:string
+property_value: terms:creator http://orcid.org/0000-0002-2104-0568
 
 [Term]
 id: MRIO:0000358
 name: echo time
 def: "The tie between an excitation pulse and peak of the echo produced in magnetic resonance imaging." []
 is_a: MRIO:0000342 ! MRI machine parameter
-property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-2104-0568
 property_value: IAO:0000118 "TE" xsd:string
-property_value: IAO:0000119 https://dicom.innolitics.com/ciods/mr-image/mr-image/00180081 xsd:string
+property_value: IAO:0000119 "https://dicom.innolitics.com/ciods/mr-image/mr-image/00180081" xsd:string
+property_value: terms:creator http://orcid.org/0000-0002-2104-0568
 
 [Term]
 id: MRIO:0000359
 name: echo train length
 def: "The number of spin echoes in given unit of time." []
 is_a: MRIO:0000342 ! MRI machine parameter
-property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-2104-0568
 property_value: IAO:0000118 "echo number" xsd:string
 property_value: IAO:0000118 "ETL" xsd:string
 property_value: IAO:0000118 "turbo factor" xsd:string
+property_value: terms:creator http://orcid.org/0000-0002-2104-0568
 
 [Term]
 id: MRIO:0000360
 name: field of view
 def: "The distance (in cm or mm) over which an magnetic resonance image is acquired or displayed." []
 is_a: MRIO:0000342 ! MRI machine parameter
-property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-2104-0568
 property_value: IAO:0000118 "FOV" xsd:string
+property_value: terms:creator http://orcid.org/0000-0002-2104-0568
 
 [Term]
 id: MRIO:0000361
@@ -181,35 +193,35 @@ name: phase FOV
 def: "A parameter that can be selected by a technologist as a percent of our overall field of view. A different field of view (the scanned region) in the frequency and phase encoding directions that means the data acquisition with fewer measurement lines." []
 comment: has exact synonym Rectangular field of view
 is_a: MRIO:0000342 ! MRI machine parameter
-property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-2104-0568
+property_value: terms:creator http://orcid.org/0000-0002-2104-0568
 
 [Term]
 id: MRIO:0000362
 name: slice thickness
 def: "The distance between two 2D image matrices, gives the measurement of a voxel in the z direction." []
 is_a: MRIO:0000342 ! MRI machine parameter
-property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-2104-0568
+property_value: terms:creator http://orcid.org/0000-0002-2104-0568
 
 [Term]
 id: MRIO:0000363
 name: slice gap
 def: "The not measured distance between the slices." []
 is_a: MRIO:0000342 ! MRI machine parameter
-property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-2104-0568
+property_value: terms:creator http://orcid.org/0000-0002-2104-0568
 
 [Term]
 id: MRIO:0000364
 name: acquisition matrix
 def: "The total number of independent data samples in the frequency and phase directions (number of pixels in the frequency encoding - and phase encoding direction)." []
 is_a: MRIO:0000342 ! MRI machine parameter
-property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-2104-0568
+property_value: terms:creator http://orcid.org/0000-0002-2104-0568
 
 [Term]
 id: MRIO:0000365
 name: phase encoding
 def: "The process of locating a magnetic resonance signal by altering the phase of spins in one dimension with a pulsed magnetic field gradient along that dimension prior to the acquisition of the signal." []
 is_a: MRIO:0000342 ! MRI machine parameter
-property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-2104-0568
+property_value: terms:creator http://orcid.org/0000-0002-2104-0568
 
 [Term]
 id: MRIO:0000366
@@ -247,35 +259,35 @@ id: MRIO:0000369
 name: matrix size
 def: "The number of data points collected in one, two or all three directions. Normally used for the 2D in plane sampling." []
 is_a: MRIO:0000342 ! MRI machine parameter
-property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-2104-0568
+property_value: terms:creator http://orcid.org/0000-0002-2104-0568
 
 [Term]
 id: MRIO:0000370
 name: sagittal
 def: "The plane that divides the body into left and right sections." []
 is_a: MRIO:0000356 ! plane
-property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-2104-0568
+property_value: terms:creator http://orcid.org/0000-0002-2104-0568
 
 [Term]
 id: MRIO:0000371
 name: coronal
 def: "The plane that divides the body into ventral and dorsal sections." []
 is_a: MRIO:0000356 ! plane
-property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-2104-0568
+property_value: terms:creator http://orcid.org/0000-0002-2104-0568
 
 [Term]
 id: MRIO:0000372
 name: transverse
 def: "The plane that divides the body into inferior and superior sections." []
 is_a: MRIO:0000356 ! plane
-property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-2104-0568
+property_value: terms:creator http://orcid.org/0000-0002-2104-0568
 
 [Term]
 id: MRIO:0000378
 name: MRI machine
 def: "An image creation device that creates magnetic resonance images" []
-is_a: ObsoleteClass
-property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-2104-0568
+is_a: oboInOwl:ObsoleteClass
+property_value: terms:creator http://orcid.org/0000-0002-2104-0568
 is_obsolete: true
 
 [Term]
@@ -285,28 +297,29 @@ def: "The setting datum of an MRI machine" []
 is_a: IAO:0000140
 intersection_of: IAO:0000140
 intersection_of: IAO:0000136 OBI:0000566
-property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-2104-0568
+relationship: IAO:0000136 OBI:0000566
+property_value: terms:creator http://orcid.org/0000-0002-2104-0568
 
 [Term]
 id: MRIO:0000381
 name: magnetic resonance imaging datum
 def: "A measurement datum produced by an MRI machine prior to transformation." []
-is_a: ObsoleteClass
-property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-2104-0568
+is_a: oboInOwl:ObsoleteClass
+property_value: terms:creator http://orcid.org/0000-0002-2104-0568
 is_obsolete: true
 
 [Term]
 id: MRIO:0000382
 name: magnetic resonance imaging data transformation
 def: "A planned process that produces magnetic resonance images from magnetic resonance imaging datum." []
-is_a: ObsoleteClass
-property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-2104-0568
+is_a: oboInOwl:ObsoleteClass
+property_value: terms:creator http://orcid.org/0000-0002-2104-0568
 is_obsolete: true
 
 [Term]
 id: MRIO:0000385
-name: T1 weighted MRI acquisition sequence
-def: "An MRI acquisition sequence characterized by short TE and TR to minimize T2 weighting." []
+name: T1 weighted magnetic resonance imaging assay
+def: "A magnetic resonance imaging assay characterized by short TE and TR to minimize T2 weighting." []
 synonym: "NCIT:C180727" RELATED []
 is_a: OBI:0002985
 relationship: OBI:0000299 OBI:0003341
@@ -325,8 +338,8 @@ property_value: IAO:0000117 "https://orcid.org/0000-0002-2104-0568 \"Lucas M. Se
 
 [Term]
 id: MRIO:0000387
-name: Proton density sequence
-def: "An MRI acquisition sequence that diminishes T1 weighting via long TR and T2 via short TE to produce images where voxel intensity corresponds to number of hydrogen protons in tissue." []
+name: proton density magnetic resonance imaging assay
+def: "A magnetic resonance imaging assay that diminishes T1 weighting via long TR and T2 via short TE to produce images where voxel intensity corresponds to number of hydrogen protons in tissue." []
 synonym: "NCIT:C170797" RELATED []
 is_a: OBI:0002985
 relationship: OBI:0000299 OBI:0003340
@@ -337,7 +350,7 @@ property_value: IAO:0000117 "https://orcid.org/0000-0002-2104-0568 \"Lucas M. Se
 
 [Term]
 id: MRIO:0000388
-name: T2 FSE sequence
+name: T2 weighted FSE magnetic resonance imaging assay
 def: "An MRI acquisition sequence that uses multiple echoes produced by a train of 180 degree rephasing pulses with a high effective echo time to accentuate T2 weighting." []
 is_a: MRIO:0000386 ! T2 weighted MRI acquisition sequence
 relationship: MRIO:0000688 MRIO:0000359 ! has MRI acquisition parameter echo train length
@@ -348,17 +361,18 @@ property_value: IAO:0000118 "T2 TSE sequence" xsd:string
 
 [Term]
 id: MRIO:0000389
-name: T1 GRE sequence
-def: "An MRI acquisition sequence that acheives T1 weighting using gradient echo instead of spin echo." []
-is_a: MRIO:0000385 ! T1 weighted MRI acquisition sequence
+name: T1 weighted magnetic resonance imaging assay based on gradient-echo pulse sequence protocol
+def: "An MRI acquisition sequence that achieves T1 weighting using gradient echo instead of spin echo." []
+is_a: MRIO:0000385 ! T1 weighted magnetic resonance imaging assay
+relationship: MRIO:0000375 MRIO:0000628 ! has pulse sequence gradient-echo pulse sequence protocol
 relationship: OBI:0000299 OBI:0003343
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0002-2104-0568 \"Lucas M. Serra\"" xsd:string
 
 [Term]
 id: MRIO:0000390
-name: T2* GRE sequence
-def: "An MRI acquisition sequence that acheives T2 weighting using gradient echo instead of spin echo." []
+name: T2* weighted magnetic resonance imaging assay based on gradient-echo pulse sequence protocol
+def: "An MRI acquisition sequence that achieves T2 weighting using gradient echo instead of spin echo." []
 is_a: MRIO:0000386 ! T2 weighted MRI acquisition sequence
 relationship: OBI:0000299 OBI:0003353
 property_value: IAO:0000116 "Needs GRE sequence." xsd:string
@@ -367,22 +381,23 @@ property_value: IAO:0000117 "https://orcid.org/0000-0002-2104-0568 \"Lucas M. Se
 
 [Term]
 id: MRIO:0000391
-name: T2 STIR sequence
+name: T2 weighted STIR magnetic resonance imaging assay
 def: "An MRI acquisition sequence that uses a short inversion time to attenuate the signal from fat." []
 comment: flip angle: 180 -> 90 degrees, need to represent the change
 is_a: MRIO:0000386 ! T2 weighted MRI acquisition sequence
-relationship: MRIO:0000375 MRIO:0000661 ! has pulse sequence GRE inversion recovery sequence
+relationship: MRIO:0000375 MRIO:0000661 ! has pulse sequence gradient-echo inversion recovery pulse sequence protocol
 relationship: OBI:0000299 OBI:0003352
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0002-2104-0568 \"Lucas M. Serra\"" xsd:string
 
 [Term]
 id: MRIO:0000392
-name: T2 FLAIR sequence
+name: T2 weighted FLAIR magnetic resonance imaging assay
 def: "An MRI acquisition sequence that uses a long inversion time to attenuate the signal from water/CSF." []
 comment: from radiopedia\nunnamed elements:\n\nvariable \n1700–2200
 synonym: "NCIT:C118465" RELATED []
 is_a: MRIO:0000386 ! T2 weighted MRI acquisition sequence
+relationship: MRIO:0000375 MRIO:0000661 ! has pulse sequence gradient-echo inversion recovery pulse sequence protocol
 relationship: OBI:0000299 OBI:0003349
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0002-2104-0568 \"Lucas M. Serra\"" xsd:string
@@ -391,16 +406,16 @@ property_value: IAO:0000117 "https://orcid.org/0000-0002-2104-0568 \"Lucas M. Se
 id: MRIO:0000394
 name: 1.5T MRI machine
 def: "An MRI machine whose primary magnet has 1.5T of strength." []
-is_a: ObsoleteClass
-property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-2104-0568
+is_a: oboInOwl:ObsoleteClass
+property_value: terms:creator http://orcid.org/0000-0002-2104-0568
 is_obsolete: true
 
 [Term]
 id: MRIO:0000395
 name: 3T MRI machine
 def: "An MRI machine whose primary magnet has 3T of strength." []
-is_a: ObsoleteClass
-property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-2104-0568
+is_a: oboInOwl:ObsoleteClass
+property_value: terms:creator http://orcid.org/0000-0002-2104-0568
 is_obsolete: true
 
 [Term]
@@ -538,7 +553,7 @@ relationship: OBI:0000293 OBI:0003349
 relationship: OBI:0000299 MRIO:0000501 ! thalamic volume measurement datum
 property_value: IAO:0000117 http://orcid.org/0000-0002-2104-0568
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
-property_value: IAO:0000119 https://doi.org/10.1016/j.nicl.2021.102652 xsd:string
+property_value: IAO:0000119 "https://doi.org/10.1016/j.nicl.2021.102652" xsd:string
 
 [Term]
 id: MRIO:0000510
@@ -568,7 +583,7 @@ relationship: OBI:0000293 OBI:0003341
 relationship: OBI:0000299 MRIO:0000738 ! deep grey matter brain volume measurement datum
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0002-2104-0568 \"Lucas M. Serra\"" xsd:string
-property_value: source "Patenaude, B., Smith, S.M., Kennedy, D., and Jenkinson M. A Bayesian Model of Shape and Appearance for Subcortical Brain NeuroImage, 56(3):907-922, 2011." xsd:string
+property_value: oboInOwl:source "Patenaude, B., Smith, S.M., Kennedy, D., and Jenkinson M. A Bayesian Model of Shape and Appearance for Subcortical Brain NeuroImage, 56(3):907-922, 2011." xsd:string
 
 [Term]
 id: MRIO:0000515
@@ -580,7 +595,7 @@ relationship: OBI:0000299 MRIO:0000671 ! FreeSurfer segmentation map
 relationship: OBI:0000299 MRIO:0000673 ! peripheral grey matter volume measurement datum
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0002-2104-0568 \"Lucas M. Serra\"" xsd:string
-property_value: IAO:0000119 https://doi.org/10.1016/j.neuroimage.2012.01.021 xsd:string
+property_value: IAO:0000119 "https://doi.org/10.1016/j.neuroimage.2012.01.021" xsd:string
 
 [Term]
 id: MRIO:0000516
@@ -591,7 +606,7 @@ relationship: OBI:0000293 OBI:0003345
 relationship: OBI:0000293 OBI:0003346
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0002-2104-0568 \"Lucas M. Serra\"" xsd:string
-property_value: source https://surfer.nmr.mgh.harvard.edu/fswiki/LongitudinalProcessing xsd:string
+property_value: oboInOwl:source "https://surfer.nmr.mgh.harvard.edu/fswiki/LongitudinalProcessing" xsd:string
 
 [Term]
 id: MRIO:0000517
@@ -603,7 +618,7 @@ relationship: OBI:0000299 http://purl.obolibrary.org/obo/MRIO_a535096d_151b_47c9
 relationship: OBI:0000299 MRIO:0000689 ! lateral ventricular volume measurement datum
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0002-2104-0568 \"Lucas M. Serra\"" xsd:string
-property_value: IAO:0000119 https://doi.org/10.1016/j.nicl.2017.06.022 xsd:string
+property_value: IAO:0000119 "https://doi.org/10.1016/j.nicl.2017.06.022" xsd:string
 
 [Term]
 id: MRIO:0000518
@@ -621,7 +636,7 @@ is_a: MRIO:0000518 ! structural disconnectome analysis
 relationship: OBI:0000299 MRIO:0000609 ! ChaCo data set
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0002-2104-0568 \"Lucas M. Serra\"" xsd:string
-property_value: source https://dx.doi.org/10.1089%2Fbrain.2013.0147 xsd:string
+property_value: oboInOwl:source "https://dx.doi.org/10.1089%2Fbrain.2013.0147" xsd:string
 
 [Term]
 id: MRIO:0000520
@@ -631,7 +646,7 @@ is_a: MRIO:0000658 ! focal lesion analysis
 relationship: OBI:0000293 OBI:0003347
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0002-2104-0568 \"Lucas M. Serra\"" xsd:string
-property_value: IAO:0000119 https://radiopaedia.org/articles/t1-black-holes-1?lang=us#:~:text=T1%20black%20holes%20are%20hypointense,and%20patient%20positive%20outcome%203. xsd:string
+property_value: IAO:0000119 "https://radiopaedia.org/articles/t1-black-holes-1?lang=us#:~:text=T1%20black%20holes%20are%20hypointense,and%20patient%20positive%20outcome%203." xsd:string
 
 [Term]
 id: MRIO:0000521
@@ -651,7 +666,7 @@ comment: The LPA was trained by a logistic regression model with the data of 53 
 is_a: MRIO:0000521 ! T2 FLAIR lesion analysis
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0002-2104-0568 \"Lucas M. Serra\"" xsd:string
-property_value: IAO:0000119 https://doi.org/10.5282/edoc.20373 xsd:string
+property_value: IAO:0000119 "https://doi.org/10.5282/edoc.20373" xsd:string
 
 [Term]
 id: MRIO:0000523
@@ -677,32 +692,30 @@ name: SIENAX analysis
 def: "Brain volumetric analysis tool for the automated estimation of grey matter, white matter, CSF, and whole brain volume from T1w MRI." []
 comment: Quantitative measurement of brain size, shape, and temporal change (for example, in order to estimate atrophy) is increasingly important in biomedical image analysis applications. New methods of structural analysis attempt to improve robustness, accuracy, and extent of automation. A fully automated method of longitudinal (temporal change) analysis, SIENA, was presented previously. In this paper, improvements to this method are described, and also an extension of SIENA to a new method for cross-sectional (single time point) analysis. The methods are fully automated, robust, and accurate: 0.15% brain volume change error (longitudinal): 0.5–1% brain volume accuracy for single-time point (cross-sectional). A particular advantage is the relative insensitivity to differences in scanning parameters. The methods provide easy manual review of their output by the automatic production of summary images which show the results of the brain extraction, registration, tissue segmentation, and final atrophy estimation.
 is_a: MRIO:0000524 ! whole brain volumetric analysis
-relationship: OBI:0000293 OBI:0003341
-relationship: OBI:0000299 MRIO:0000664 ! whole brain volume measurement datum
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0002-2104-0568 \"Lucas M. Serra\"" xsd:string
-property_value: IAO:0000119 https://doi.org/10.1006/nimg.2002.1040 xsd:string
+property_value: IAO:0000119 "https://doi.org/10.1006/nimg.2002.1040" xsd:string
 
 [Term]
 id: MRIO:0000526
 name: segmented region mask
-is_a: ObsoleteClass
-property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-2104-0568
+is_a: oboInOwl:ObsoleteClass
+property_value: terms:creator http://orcid.org/0000-0002-2104-0568
 is_obsolete: true
 
 [Term]
 id: MRIO:0000527
 name: text file
 def: "Digital entity containing textual information or strings." []
-is_a: ObsoleteClass
-property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-2104-0568
+is_a: oboInOwl:ObsoleteClass
+property_value: terms:creator http://orcid.org/0000-0002-2104-0568
 is_obsolete: true
 
 [Term]
 id: MRIO:0000528
 name: DeepGRAI analysis of the dorsal plus ventral thalamus
 def: "A DeepGRAI analysis that estimates the volume of both the dorsal and ventral thalamus within some brain." []
-is_a: ObsoleteClass
+is_a: oboInOwl:ObsoleteClass
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0002-2104-0568 \"Lucas M. Serra\"" xsd:string
 
@@ -741,21 +754,21 @@ replaced_by: OBI:0003360
 id: MRIO:0000602
 name: aligned image data set
 def: "A digital image that has been registered into another reference images space." []
-is_a: ObsoleteClass
+is_a: oboInOwl:ObsoleteClass
 is_obsolete: true
 
 [Term]
 id: MRIO:0000603
 name: T2 lesion mask
 def: "A lesion mask where the lesions are derived from a T2 weighted image data set." []
-is_a: ObsoleteClass
-property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0001-9676-7377 xsd:string
+is_a: oboInOwl:ObsoleteClass
+property_value: terms:creator "https://orcid.org/0000-0001-9676-7377" xsd:string
 is_obsolete: true
 
 [Term]
 id: MRIO:0000604
 name: magnetic resonance image transformation
-is_a: ObsoleteClass
+is_a: oboInOwl:ObsoleteClass
 is_obsolete: true
 
 [Term]
@@ -817,7 +830,7 @@ property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D
 [Term]
 id: MRIO:0000613
 name: nConMat matrix
-def: "A structural connectivity matrix where each element respresents the number of white matter streamlines still connecting two brain regions when accounting for focal lesion damage, normalized for the NeMo healthy control tractogram set." []
+def: "A structural connectivity matrix where each element represents the number of white matter streamlines still connecting two brain regions when accounting for focal lesion damage, normalized for the NeMo healthy control tractogram set." []
 is_a: MRIO:0000612 ! structural connectivity matrix
 relationship: IAO:0000136 MRIO:0000649 ! Desikan-Killiany brain atlas image data set
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
@@ -833,49 +846,49 @@ property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D
 [Term]
 id: MRIO:0000615
 name: binarization
-is_a: ObsoleteClass
+is_a: oboInOwl:ObsoleteClass
 is_obsolete: true
 
 [Term]
 id: MRIO:0000616
 name: inversion
-is_a: ObsoleteClass
+is_a: oboInOwl:ObsoleteClass
 is_obsolete: true
 
 [Term]
 id: MRIO:0000617
 name: magnetic resonance image registration
-is_a: ObsoleteClass
+is_a: oboInOwl:ObsoleteClass
 is_obsolete: true
 
 [Term]
 id: MRIO:0000618
 name: antsRegistration
-is_a: ObsoleteClass
+is_a: oboInOwl:ObsoleteClass
 is_obsolete: true
 
 [Term]
 id: MRIO:0000619
 name: antsApplyTransforms
-is_a: ObsoleteClass
+is_a: oboInOwl:ObsoleteClass
 is_obsolete: true
 
 [Term]
 id: MRIO:0000620
 name: magnetic resonance image artifact correction
-is_a: ObsoleteClass
+is_a: oboInOwl:ObsoleteClass
 is_obsolete: true
 
 [Term]
 id: MRIO:0000621
 name: magnetic resonance image bias field correction
-is_a: ObsoleteClass
+is_a: oboInOwl:ObsoleteClass
 is_obsolete: true
 
 [Term]
 id: MRIO:0000622
 name: N4 bias field correction
-is_a: ObsoleteClass
+is_a: oboInOwl:ObsoleteClass
 is_obsolete: true
 
 [Term]
@@ -886,7 +899,7 @@ is_a: OBI:0003358
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9990-8331 \"Alexander D. Diehl\"" xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0002-9821-4132 \"Mackenzie T. Smith\"" xsd:string
-property_value: source https://www.pnas.org/cgi/doi/10.1073/pnas.0905267106 xsd:string
+property_value: oboInOwl:source "https://www.pnas.org/cgi/doi/10.1073/pnas.0905267106" xsd:string
 
 [Term]
 id: MRIO:0000625
@@ -905,7 +918,7 @@ relationship: IAO:0000136 UBERON:0022438
 relationship: IAO:0000136 UBERON:0027061
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0002-9821-4132 \"Mackenzie T. Smith\"" xsd:string
-property_value: source https://www.pnas.org/cgi/doi/10.1073/pnas.0905267106 xsd:string
+property_value: oboInOwl:source "https://www.pnas.org/cgi/doi/10.1073/pnas.0905267106" xsd:string
 
 [Term]
 id: MRIO:0000626
@@ -927,32 +940,33 @@ property_value: IAO:0000117 "https://orcid.org/0000-0002-9821-4132 \"Mackenzie T
 
 [Term]
 id: MRIO:0000628
-name: gradient echo sequence
+name: gradient-echo pulse sequence protocol
 def: "Generated by the frequency-encode gradient, except that it is used twice in succession, and in opposite directions." []
 synonym: "GRE" EXACT []
 is_a: OBI:0003332
 relationship: MRIO:0000688 MRIO:0000357 ! has MRI acquisition parameter repetition time
 relationship: MRIO:0000688 MRIO:0000358 ! has MRI acquisition parameter echo time
 relationship: MRIO:0000688 MRIO:0000630 ! has MRI acquisition parameter flip angle
-property_value: http://purl.org/dc/elements/1.1/source https://radiopaedia.org/articles/gradient-echo-sequences-1?lang=us xsd:string
 property_value: IAO:0000116 "This and spin echo are the major child classes of magnetic resonance pulse sequence" xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
+property_value: terms:source "https://radiopaedia.org/articles/gradient-echo-sequences-1?lang=us" xsd:string
 
 [Term]
 id: MRIO:0000629
-name: GRE echo planar sequence
+name: gradient-echo echo-planar pulse sequence protocol
 def: "Multiple echoes of different phase steps are acquired by rapidly reversing the readout or frequency- encoding gradient using a gradient echo sequence." []
-property_value: http://purl.org/dc/elements/1.1/source https://radiopaedia.org/articles/echo-planar-imaging-1?lang=us xsd:string
+is_a: MRIO:0000628 ! gradient-echo pulse sequence protocol
 property_value: IAO:0000116 "Can we add that this may optionally be about some spin echo sequence, but not necessary for an instance of this class?" xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
+property_value: terms:source "https://radiopaedia.org/articles/echo-planar-imaging-1?lang=us" xsd:string
 
 [Term]
 id: MRIO:0000630
 name: flip angle
 def: "Angle at which a proton\"s axis shifts from its longitudinal place to its transverse plane by excitation from radiofrequency pulses." []
 is_a: MRIO:0000342 ! MRI machine parameter
-property_value: http://purl.org/dc/elements/1.1/source https://radiopaedia.org/articles/flip-angle?lang=us xsd:string
 property_value: IAO:0000118 "FA" xsd:string
+property_value: terms:source "https://radiopaedia.org/articles/flip-angle?lang=us" xsd:string
 
 [Term]
 id: MRIO:0000633
@@ -975,7 +989,7 @@ property_value: IAO:0000117 "https://orcid.org/0000-0002-9821-4132 \"Mackenzie T
 [Term]
 id: MRIO:0000635
 name: obsolete diffusion weighted image data set
-def: "A type of magnetic resonance image data set collected using at least three diffusion gradients of some factor \"b,\" which is a function of the amplitude, duration, and interval of the gradiants." []
+def: "A type of magnetic resonance image data set collected using at least three diffusion gradients of some factor \"b,\" which is a function of the amplitude, duration, and interval of the gradients." []
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9990-8331 \"Alexander D. Diehl\"" xsd:string
 is_obsolete: true
@@ -1045,7 +1059,7 @@ property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D
 id: MRIO:0000645
 name: DeepGRAI analysis of the dorsal thalamus
 def: "A DeepGRAI analysis that estimates the volume of both the left and right dorsal thalamus within some brain." []
-is_a: ObsoleteClass
+is_a: oboInOwl:ObsoleteClass
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
 
 [Term]
@@ -1070,7 +1084,7 @@ replaced_by: OBI:0003357
 [Term]
 id: MRIO:0000648
 name: obsolete probabilistic brain region atlas image dataset
-def: "A brain atlas consisting of weighted values that respresent the probability that a voxel X is part of some brain component Y, typically derived from multiple image data sets." []
+def: "A brain atlas consisting of weighted values that represent the probability that a voxel X is part of some brain component Y, typically derived from multiple image data sets." []
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9990-8331 \"Alexander D. Diehl\"" xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0002-9821-4132 \"Mackenzie T. Smith\"" xsd:string
@@ -1132,7 +1146,7 @@ relationship: IAO:0000136 UBERON:0035933
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9990-8331 \"Alexander D. Diehl\"" xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0002-9821-4132 \"Mackenzie T. Smith\"" xsd:string
-property_value: source http://dx.doi.org/10.1016/j.neuroimage.2006.01.021 xsd:string
+property_value: oboInOwl:source "http://dx.doi.org/10.1016/j.neuroimage.2006.01.021" xsd:string
 
 [Term]
 id: MRIO:0000650
@@ -1147,11 +1161,11 @@ replaced_by: OBI:0003359
 [Term]
 id: MRIO:0000651
 name: c-pac analysis
-def: "A funtional MRI data set analysis software suite of preconfigured pipelines for analysis fMRI data and estimating functional connectomics." []
+def: "A functional MRI data set analysis software suite of preconfigured pipelines for analysis fMRI data and estimating functional connectomics." []
 comment: The Configurable Pipeline for the Analysis of Connectomes (C-PAC) is a configurable, open-source, Nipype-based, automated processing pipeline for resting state functional MRI (R-fMRI) data, for use by both novice and expert users.
 is_a: MRIO:0000421 ! functional magnetic resonance image data set analysis
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
-property_value: IAO:0000119 https://doi.org/10.3389/conf.fninf.2013.09.00042 xsd:string
+property_value: IAO:0000119 "https://doi.org/10.3389/conf.fninf.2013.09.00042" xsd:string
 
 [Term]
 id: MRIO:0000652
@@ -1168,7 +1182,7 @@ name: inversion time
 def: "The time elapsed between the preparatory 180° pulse and the 90° readout pulse." []
 is_a: MRIO:0000342 ! MRI machine parameter
 property_value: IAO:0000118 "TI" xsd:string
-property_value: IAO:0000119 https://radiopaedia.org/articles/inversion-recovery-sequences?lang=us xsd:string
+property_value: IAO:0000119 "https://radiopaedia.org/articles/inversion-recovery-sequences?lang=us" xsd:string
 
 [Term]
 id: MRIO:0000654
@@ -1184,8 +1198,8 @@ id: MRIO:0000655
 name: diffusion b value
 def: "Measures the degree of diffusion weighting applied, thereby indicating the amplitude (G), time of applied gradients (δ) and duration between the paired gradients (Δ)." []
 is_a: MRIO:0000342 ! MRI machine parameter
-property_value: http://purl.org/dc/elements/1.1/source https://radiopaedia.org/articles/b-values-1?lang=us xsd:string
 property_value: IAO:0000118 "diffusion weighting" xsd:string
+property_value: terms:source "https://radiopaedia.org/articles/b-values-1?lang=us" xsd:string
 
 [Term]
 id: MRIO:0000656
@@ -1198,8 +1212,8 @@ property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D
 id: MRIO:0000657
 name: MRI acquisition sequence process
 def: "Radiofrequency pulses and gradients that result in a set of magnetic resonance image data sets with a particular appearance." []
-is_a: ObsoleteClass
-property_value: http://purl.org/dc/elements/1.1/source https://radiopaedia.org/articles/mri-sequences-overview?lang=us xsd:string
+is_a: oboInOwl:ObsoleteClass
+property_value: terms:source "https://radiopaedia.org/articles/mri-sequences-overview?lang=us" xsd:string
 is_obsolete: true
 
 [Term]
@@ -1212,30 +1226,30 @@ property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D
 
 [Term]
 id: MRIO:0000659
-name: spin echo sequence
+name: spin-echo pulse sequence protocol
 def: "The refocusing of spin magnetisation by a pulse of resonant electromagnetic radiation." []
 synonym: "SE" EXACT []
 is_a: OBI:0003332
 relationship: MRIO:0000688 MRIO:0000357 ! has MRI acquisition parameter repetition time
 relationship: MRIO:0000688 MRIO:0000358 ! has MRI acquisition parameter echo time
-property_value: http://purl.org/dc/elements/1.1/source https://doi.org/10.1063%2F1.1670306 xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
+property_value: terms:source "https://doi.org/10.1063%2F1.1670306" xsd:string
 
 [Term]
 id: MRIO:0000660
 name: FreeSurfer cross-sectional analysis
-def: "FreeSurfer stream to derive surface labels and volumes from an invidual at only one timepoint." []
+def: "FreeSurfer stream to derive surface labels and volumes from an individual at only one timepoint." []
 is_a: MRIO:0000515 ! FreeSurfer analysis
 relationship: OBI:0000293 OBI:0003344
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
 
 [Term]
 id: MRIO:0000661
-name: GRE inversion recovery sequence
+name: gradient-echo inversion recovery pulse sequence protocol
 def: "A gradient echo pulse sequence preceded by a 180° RF pulse." []
-property_value: http://purl.org/dc/elements/1.1/source https://radiopaedia.org/articles/inversion-recovery-sequences?lang=us xsd:string
 property_value: IAO:0000116 "TODO: Create specific subclass of this and echo panar sequence for both GRE and SE." xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
+property_value: terms:source "https://radiopaedia.org/articles/inversion-recovery-sequences?lang=us" xsd:string
 
 [Term]
 id: MRIO:0000662
@@ -1249,7 +1263,7 @@ property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D
 id: MRIO:0000663
 name: SIENA analysis
 def: "A brain volumetric analysis tool that estimates the percent brain volume change in an individual between two timepoints using baseline and follow-up T1w MRI." []
-comment: Siena estimates percentage brain volume change (PBVC) betweem two input images, taken of the same subject, at different points in time. It calls a series of FSL programs to strip the non-brain tissue from the two images, register the two brains (under the constraint that the skulls are used to hold the scaling constant during the registration) and analyse the brain change between the two time points. It is also possible to project the voxelwise atrophy measures into standard space in a way that allows for multi-subject voxelwise statistical testing.
+comment: Siena estimates percentage brain volume change (PBVC) between two input images, taken of the same subject, at different points in time. It calls a series of FSL programs to strip the non-brain tissue from the two images, register the two brains (under the constraint that the skulls are used to hold the scaling constant during the registration) and analyse the brain change between the two time points. It is also possible to project the voxelwise atrophy measures into standard space in a way that allows for multi-subject voxelwise statistical testing.
 is_a: MRIO:0000524 ! whole brain volumetric analysis
 relationship: OBI:0000293 OBI:0003345
 relationship: OBI:0000293 OBI:0003346
@@ -1311,7 +1325,7 @@ property_value: IAO:0000117 "https://orcid.org/0000-0002-2104-0568 \"Lucas M. Se
 [Term]
 id: MRIO:0000670
 name: thalamic volume measurement z-score
-is_a: ObsoleteClass
+is_a: oboInOwl:ObsoleteClass
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
 is_obsolete: true
 
@@ -1319,8 +1333,11 @@ is_obsolete: true
 id: MRIO:0000671
 name: FreeSurfer segmentation map
 def: "An image data set produced by FreeSurfer analysis whose voxels encode the location of regions from the Desikan-Killiany atlas in an image data set." []
+is_a: OBI:0003360
 intersection_of: OBI:0003360
 intersection_of: OBI:0000312 MRIO:0000515 {all_some="true"} ! FreeSurfer analysis
+relationship: IAO:0000136 MRIO:0000649 ! Desikan-Killiany brain atlas image data set
+relationship: OBI:0000312 MRIO:0000515 ! FreeSurfer analysis
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9990-8331 \"Alexander D. Diehl\"" xsd:string
 
@@ -1366,20 +1383,20 @@ comment: FAST (FMRIB"s Automated Segmentation Tool) segments a 3D image of the b
 is_a: MRIO:0000523 ! brain volumetric analysis
 relationship: OBI:0000293 OBI:0003341
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
-property_value: source "Zhang, Y. and Brady, M. and Smith, S. Segmentation of brain magnetic resonance images through a hidden Markov random field model and the expectation-maximization algorithm. IEEE Trans Med Imag, 20(1):45-57, 2001." xsd:string
+property_value: oboInOwl:source "Zhang, Y. and Brady, M. and Smith, S. Segmentation of brain magnetic resonance images through a hidden Markov random field model and the expectation-maximization algorithm. IEEE Trans Med Imag, 20(1):45-57, 2001." xsd:string
 
 [Term]
 id: MRIO:0000677
-name: diffusion weighted MRI acquisition sequence
-def: "An MRI acquisition sequence that uses diffusion gradients to create contrast in the image corresponding to the Brownian motion of the tissue in the examined voxel." []
+name: diffusion weighted magnetic resonance imaging assay
+def: "A magnetic resonance imaging assay that uses diffusion gradients to create contrast in the image corresponding to the Brownian motion of the tissue in the examined voxel." []
 synonym: "NCIT:C111116" RELATED []
 synonym: "SCTID:440408002" RELATED []
 is_a: OBI:0002985
-relationship: MRIO:0000375 MRIO:0000629 ! has pulse sequence GRE echo planar sequence
+relationship: MRIO:0000375 MRIO:0000629 ! has pulse sequence gradient-echo echo-planar pulse sequence protocol
 relationship: MRIO:0000688 MRIO:0000655 ! has MRI acquisition parameter diffusion b value
 relationship: MRIO:0000688 MRIO:0000690 ! has MRI acquisition parameter diffusion gradient
 relationship: OBI:0000299 OBI:0003335
-property_value: IAO:0000116 "Add difussion gradient as parameter." xsd:string
+property_value: IAO:0000116 "Add diffusion gradient as parameter." xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9990-8331 \"Alexander D. Diehl\"" xsd:string
 
@@ -1388,12 +1405,12 @@ id: MRIO:0000678
 name: T1 MPRAGE sequence
 def: "An MRI acquisition sequence consisting of a magnetization preparation period followed by a rapid gradient echo sequence." []
 synonym: "NCIT:C118462" RELATED []
-is_a: MRIO:0000692 ! 3D T1 GRE sequence
-relationship: MRIO:0000375 MRIO:0000661 ! has pulse sequence GRE inversion recovery sequence
+is_a: MRIO:0000692 ! 3D T1 weighted magnetic resonance imaging assay based on gradient-echo pulse sequence protocol
+relationship: MRIO:0000375 MRIO:0000661 ! has pulse sequence gradient-echo inversion recovery pulse sequence protocol
 relationship: OBI:0000299 MRIO:0000679 ! T1 MPRAGE image data set
 property_value: IAO:0000116 "Has a long TR." xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
-property_value: IAO:0000119 https://doi.org/10.1002/mrm.1910150117 xsd:string
+property_value: IAO:0000119 "https://doi.org/10.1002/mrm.1910150117" xsd:string
 
 [Term]
 id: MRIO:0000679
@@ -1416,7 +1433,7 @@ id: MRIO:0000681
 name: spoiled GRE sequence
 def: "Applies  RF  excitation  pulses  at  diff erent  phases every TR, so that the residual transverse magnetization has dif-ferent  phase  values  than  the  transverse  magnetization  most recently created." []
 synonym: "NCIT:C118463" RELATED []
-is_a: MRIO:0000692 ! 3D T1 GRE sequence
+is_a: MRIO:0000692 ! 3D T1 weighted magnetic resonance imaging assay based on gradient-echo pulse sequence protocol
 relationship: OBI:0000299 MRIO:0000680 ! T1 SPGR image data set
 property_value: IAO:0000116 "Could have IR." xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
@@ -1424,10 +1441,10 @@ property_value: IAO:0000119 "MRI at a Glance, ISBN 10: 1119053552" xsd:string
 
 [Term]
 id: MRIO:0000682
-name: T1 SE sequence
+name: T1 magnetic resonance imaging assay based on spin-echo sequence protocol
 def: "An MRI acquisition sequence that using a spin echo sequence to accentuate T1 weighting." []
-is_a: MRIO:0000385 ! T1 weighted MRI acquisition sequence
-relationship: MRIO:0000375 MRIO:0000659 ! has pulse sequence spin echo sequence
+is_a: MRIO:0000385 ! T1 weighted magnetic resonance imaging assay
+relationship: MRIO:0000375 MRIO:0000659 ! has pulse sequence spin-echo pulse sequence protocol
 relationship: OBI:0000299 OBI:0003347
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
 
@@ -1445,17 +1462,19 @@ property_value: IAO:0000117 "https://orcid.org/0000-0002-9821-4132 \"Mackenzie T
 
 [Term]
 id: MRIO:0000686
-name: functional MRI acquisition sequence
-def: "An MRI acquisition sequence that uses fast gradient echo sequences to collect a 4D data set corresponding to BOLD signal due to differences in magnetic susceptibility of oxygenated and deoxygenated hemoglobin." []
+name: functional magnetic resonance imaging assay
+def: "A magnetic resonance imaging assay that uses fast gradient echo sequences to collect a 4D data set corresponding to BOLD signal due to differences in magnetic susceptibility of oxygenated and deoxygenated hemoglobin." []
+synonym: "fMRI acquisition sequence" EXACT []
 synonym: "NCIT:C17958" RELATED []
 synonym: "SCTID:241603006" RELATED []
 is_a: OBI:0002985
-relationship: MRIO:0000375 MRIO:0000628 ! has pulse sequence gradient echo sequence
+relationship: MRIO:0000375 MRIO:0000628 ! has pulse sequence gradient-echo pulse sequence protocol
 relationship: MRIO:0000688 MRIO:0000687 ! has MRI acquisition parameter number of temporal positions
 relationship: OBI:0000299 OBI:0003336
 property_value: IAO:0000116 "Usually T2* sequence with same TE value throughout." xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9990-8331 \"Alexander D. Diehl\"" xsd:string
+property_value: IAO:0000117 "https://orcid.org/0009-0004-2155-902X" xsd:string
 
 [Term]
 id: MRIO:0000687
@@ -1479,17 +1498,17 @@ is_a: MRIO:0000342 ! MRI machine parameter
 
 [Term]
 id: MRIO:0000691
-name: 2D T1 GRE sequence
+name: 2D T1 weighted magnetic resonance imaging assay based on gradient-echo pulse sequence protocol
 def: "A T1 weighted acquisition sequence that uses a gradient echo pulse sequence to acquire an magnetic resonance image data set one 2D slice at a time." []
-is_a: MRIO:0000389 ! T1 GRE sequence
+is_a: MRIO:0000389 ! T1 weighted magnetic resonance imaging assay based on gradient-echo pulse sequence protocol
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
 
 [Term]
 id: MRIO:0000692
-name: 3D T1 GRE sequence
+name: 3D T1 weighted magnetic resonance imaging assay based on gradient-echo pulse sequence protocol
 def: "A T1 weighted acquisition sequence that uses a gradient echo pulse sequence to acquire an entire 3D magnetic resonance image data set at once." []
 synonym: "NCIT:C183113" RELATED []
-is_a: MRIO:0000389 ! T1 GRE sequence
+is_a: MRIO:0000389 ! T1 weighted magnetic resonance imaging assay based on gradient-echo pulse sequence protocol
 relationship: OBI:0000299 MRIO:0000503 ! 3D GRE image data set
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
 
@@ -1535,7 +1554,7 @@ is_a: MRIO:0000624 ! Smith resting state network atlas
 relationship: IAO:0000136 UBERON:0002129
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0002-9821-4132 \"Mackenzie T. Smith\"" xsd:string
-property_value: source https://www.pnas.org/cgi/doi/10.1073/pnas.0905267106 xsd:string
+property_value: oboInOwl:source "https://www.pnas.org/cgi/doi/10.1073/pnas.0905267106" xsd:string
 
 [Term]
 id: MRIO:0000698
@@ -1558,7 +1577,7 @@ relationship: IAO:0000136 UBERON:0013684
 relationship: IAO:0000136 UBERON:0028622
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0002-9821-4132 \"Mackenzie T. Smith\"" xsd:string
-property_value: source https://www.pnas.org/cgi/doi/10.1073/pnas.0905267106 xsd:string
+property_value: oboInOwl:source "https://www.pnas.org/cgi/doi/10.1073/pnas.0905267106" xsd:string
 
 [Term]
 id: MRIO:0000699
@@ -1586,7 +1605,7 @@ relationship: IAO:0000136 UBERON:0022716
 relationship: IAO:0000136 UBERON:0028715
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0002-9821-4132 \"Mackenzie T. Smith\"" xsd:string
-property_value: source https://www.pnas.org/cgi/doi/10.1073/pnas.0905267106 xsd:string
+property_value: oboInOwl:source "https://www.pnas.org/cgi/doi/10.1073/pnas.0905267106" xsd:string
 
 [Term]
 id: MRIO:0000700
@@ -1613,7 +1632,7 @@ relationship: IAO:0000136 UBERON:0022353
 relationship: IAO:0000136 UBERON:0027061
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0002-9821-4132 \"Mackenzie T. Smith\"" xsd:string
-property_value: source https://www.pnas.org/cgi/doi/10.1073/pnas.0905267106 xsd:string
+property_value: oboInOwl:source "https://www.pnas.org/cgi/doi/10.1073/pnas.0905267106" xsd:string
 
 [Term]
 id: MRIO:0000701
@@ -1633,7 +1652,7 @@ relationship: IAO:0000136 UBERON:0028715
 relationship: IAO:0000136 UBERON:0035933
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0002-9821-4132 \"Mackenzie T. Smith\"" xsd:string
-property_value: source https://www.pnas.org/cgi/doi/10.1073/pnas.0905267106 xsd:string
+property_value: oboInOwl:source "https://www.pnas.org/cgi/doi/10.1073/pnas.0905267106" xsd:string
 
 [Term]
 id: MRIO:0000702
@@ -1647,7 +1666,7 @@ relationship: IAO:0000136 UBERON:0006094
 relationship: IAO:0000136 UBERON:0022534
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0002-9821-4132 \"Mackenzie T. Smith\"" xsd:string
-property_value: source https://www.pnas.org/cgi/doi/10.1073/pnas.0905267106 xsd:string
+property_value: oboInOwl:source "https://www.pnas.org/cgi/doi/10.1073/pnas.0905267106" xsd:string
 
 [Term]
 id: MRIO:0000703
@@ -1660,7 +1679,7 @@ relationship: IAO:0000136 UBERON:0013683
 relationship: IAO:0000136 UBERON:0013684
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0002-9821-4132 \"Mackenzie T. Smith\"" xsd:string
-property_value: source https://www.pnas.org/cgi/doi/10.1073/pnas.0905267106 xsd:string
+property_value: oboInOwl:source "https://www.pnas.org/cgi/doi/10.1073/pnas.0905267106" xsd:string
 
 [Term]
 id: MRIO:0000704
@@ -1679,7 +1698,7 @@ relationship: IAO:0000136 UBERON:0006114
 relationship: IAO:0000136 UBERON:0028622
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0002-9821-4132 \"Mackenzie T. Smith\"" xsd:string
-property_value: source https://www.pnas.org/cgi/doi/10.1073/pnas.0905267106 xsd:string
+property_value: oboInOwl:source "https://www.pnas.org/cgi/doi/10.1073/pnas.0905267106" xsd:string
 
 [Term]
 id: MRIO:0000705
@@ -1695,7 +1714,7 @@ name: network assortativity datum
 def: "A datum representing the preference for a network\"s nodes to attach to other similar nodes." []
 is_a: MRIO:0000705 ! network graph quality datum
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
-property_value: source https://en.wikipedia.org/wiki/Assortativity xsd:string
+property_value: oboInOwl:source "https://en.wikipedia.org/wiki/Assortativity" xsd:string
 
 [Term]
 id: MRIO:0000707
@@ -1703,7 +1722,7 @@ name: network efficiency datum
 def: "A datu item that represents how efficiently nodes within a network exchange information, often as a function of the distance between nodes." []
 is_a: MRIO:0000705 ! network graph quality datum
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
-property_value: source https://en.wikipedia.org/wiki/Efficiency_(network_science) xsd:string
+property_value: oboInOwl:source "https://en.wikipedia.org/wiki/Efficiency_(network_science)" xsd:string
 
 [Term]
 id: MRIO:0000708
@@ -1712,7 +1731,7 @@ def: "A data item that represents the tendency of nodes within a network to clus
 is_a: MRIO:0000705 ! network graph quality datum
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
 property_value: IAO:0000118 "global clustering coefficient" xsd:string
-property_value: source https://en.wikipedia.org/wiki/Clustering_coefficient xsd:string
+property_value: oboInOwl:source "https://en.wikipedia.org/wiki/Clustering_coefficient" xsd:string
 
 [Term]
 id: MRIO:0000709
@@ -1725,26 +1744,30 @@ property_value: IAO:0000117 "https://orcid.org/0000-0002-9821-4132 \"Mackenzie T
 
 [Term]
 id: MRIO:0000711
-name: SE echo planar sequence
+name: spin-echo echo-planar pulse sequence protocol
 def: "Multiple echoes of different phase steps are acquired by rapidly reversing the readout or frequency- encoding gradient using a spin echo sequence." []
-property_value: http://purl.org/dc/elements/1.1/source https://radiopaedia.org/articles/echo-planar-imaging-1?lang=us xsd:string
+is_a: MRIO:0000659 ! spin-echo pulse sequence protocol
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
+property_value: terms:source "https://radiopaedia.org/articles/echo-planar-imaging-1?lang=us" xsd:string
 
 [Term]
 id: MRIO:0000712
-name: SE inversion recovery sequence
+name: spin-echo inversion recovery pulse sequence protocol
 def: "A spin echo pulse sequence preceded by a 180° RF pulse." []
-property_value: http://purl.org/dc/elements/1.1/source https://radiopaedia.org/articles/inversion-recovery-sequences?lang=us xsd:string
 property_value: IAO:0000116 "TODO: Create specific subclass of this and echo panar sequence for both GRE and SE." xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
+property_value: terms:source "https://radiopaedia.org/articles/inversion-recovery-sequences?lang=us" xsd:string
 
 [Term]
 id: MRIO:0000713
 name: image data set visualization
 def: "A data visualization that produces some image from an image data set." []
+is_a: OBI:0200111
 intersection_of: OBI:0200111
 intersection_of: OBI:0000293 OBI:0003327
 intersection_of: OBI:0000299 IAO:0000101
+relationship: OBI:0000293 OBI:0003327
+relationship: OBI:0000299 IAO:0000101
 property_value: IAO:0000118 "image derivation from image data set" xsd:string
 
 [Term]
@@ -1780,7 +1803,7 @@ replaced_by: OBI:0003333
 id: MRIO:0000718
 name: obsolete raw magnetic resonance image data set
 def: "An image data set that is the direct output of an magnetic resonance imaging assay and whose values encode spatial frequencies produced by the NMR/MRI instrument." []
-is_a: ObsoleteClass
+is_a: oboInOwl:ObsoleteClass
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9990-8331 \"Alexander D. Diehl\"" xsd:string
 is_obsolete: true
@@ -1807,7 +1830,7 @@ name: salient central lesion volume measurement datum
 def: "A Lesion volume measurement datum comprised of the subset of lesion voxels within a specific distance to the lateral ventricles (centrality) and with intensity at least a quantitatively-derived amount brighter than normal appearing tissue (salience)." []
 is_a: MRIO:0000695 ! lesion volume measurement datum
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
-property_value: source https://doi.org/10.1111/jon.12650 xsd:string
+property_value: oboInOwl:source "https://doi.org/10.1111/jon.12650" xsd:string
 
 [Term]
 id: MRIO:0000723
@@ -1831,7 +1854,6 @@ id: MRIO:0000726
 name: medulla oblongata volume analysis
 def: "A volumetric magnetic resonance imaging analysis that estimates medulla oblongata volume magnetic resonance image datasets of an entire human brain." []
 is_a: MRIO:0000523 ! brain volumetric analysis
-relationship: OBI:0000293 OBI:0003328
 relationship: OBI:0000299 MRIO:0000694 ! medulla oblongata volume measurement datum
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
 
@@ -1839,8 +1861,10 @@ property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D
 id: MRIO:0000727
 name: T2 FLAIR medulla oblongata volume analysis
 def: "A volumetric magnetic resonance imaging analysis that estimates medulla oblongata volume T2 FLAIR image datasets of an entire human brain." []
+is_a: MRIO:0000726 ! medulla oblongata volume analysis
 intersection_of: MRIO:0000726 ! medulla oblongata volume analysis
 intersection_of: OBI:0000293 OBI:0003349
+relationship: OBI:0000293 OBI:0003349
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
 
 [Term]
@@ -1850,7 +1874,7 @@ def: "A set of five magnetic resonance image data set analyses using only T2 FLA
 is_a: MRIO:0000508 ! magnetic resonance image data set analysis
 relationship: OBI:0000293 OBI:0003349
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
-property_value: IAO:0000119 https://doi.org/10.1016/j.nicl.2021.102705 xsd:string
+property_value: IAO:0000119 "https://doi.org/10.1016/j.nicl.2021.102705" xsd:string
 
 [Term]
 id: MRIO:0000729
@@ -1873,7 +1897,7 @@ name: brain connectivity measurement datum
 def: "A scalar measurement datum that quantifies the spatial and temporal relationships between distinct units within the brain." []
 is_a: IAO:0000032
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
-property_value: IAO:0000119 http://www.scholarpedia.org/article/Brain_connectivity xsd:string
+property_value: IAO:0000119 "http://www.scholarpedia.org/article/Brain_connectivity" xsd:string
 
 [Term]
 id: MRIO:0000734
@@ -1893,9 +1917,10 @@ property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D
 id: MRIO:0000736
 name: thalamic structural disconnectivity measurement datum
 def: "A brain connectivity measurement datum that quantifies the structural disruption to connections involving the thalamus." []
-is_a: MRIO:0000733 ! brain connectivity measurement datum
+is_a: MRIO:0000734 ! brain structural connectivity measurement datum
 intersection_of: MRIO:0000734 ! brain structural connectivity measurement datum
 intersection_of: IAO:0000136 UBERON:0010225
+relationship: IAO:0000136 UBERON:0010225
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9676-7377 \"Alexander D. Bartnik\"" xsd:string
 
 [Term]
@@ -1949,209 +1974,444 @@ name: nucleus accumbens volume measurement datum
 is_a: MRIO:0000738 ! deep grey matter brain volume measurement datum
 
 [Term]
+id: MRIO:0000747
+name: statistical inference applied to image data set
+def: "An image data set analysis that uses inferential statistical methods to draw conclusions about the underlying phenomena represented in an image data set." []
+is_a: OBI:0003355
+
+[Term]
+id: MRIO:0000749
+name: diffusion weighted magnetic resonance imaging assay based on gradient-echo echo-planar pulse sequence protocol
+is_a: MRIO:0000677 ! diffusion weighted magnetic resonance imaging assay
+
+[Term]
+id: MRIO:0000750
+name: diffusion weighted magnetic resonance imaging assay based on spin-echo echo-planar pulse sequence protocol
+is_a: MRIO:0000677 ! diffusion weighted magnetic resonance imaging assay
+
+[Term]
 id: MRIO:0003071
 name: ventral thalamic volume measurement datum
 is_a: MRIO:0000501 ! thalamic volume measurement datum
-relationship: IAO:0000136 UBERON:0001900 ! ventral thalamus
+relationship: IAO:0000136 UBERON:0001900
 
 [Term]
-id: OBI:0002985
-synonym: "NCIT:C16809" RELATED []
-synonym: "SCTID:113091000" RELATED []
+id: MRIO:1000000
+name: vascular space occupancy signal
+def: "A scalar measurement datum recording the vascular space occupancy (VASO) signal, which reflects changes in cerebral blood volume by using changes in the MRI signal associated with variations in blood volume within the brain." []
+synonym: "VASO signal" EXACT []
+is_a: IAO:0000032
+property_value: terms:creator https://orcid.org/0009-0004-2155-902X
+property_value: terms:date "2024-07-26T16:28:29Z" xsd:dateTime
 
 [Term]
-id: OBI:0003329
-relationship: IAO:0000235 OBI:0003071
+id: MRIO:1000001
+name: arterial spin labeling signal
+def: "A scalar measurement datum recording the arterial spin labeling (ASL) signal, which reflects cerebral blood flow by using magnetically labeled arterial blood water as an endogenous tracer." []
+synonym: "ASL signal" EXACT []
+is_a: IAO:0000032
+property_value: terms:creator https://orcid.org/0009-0004-2155-902X
+property_value: terms:date "2024-07-26T16:29:12Z" xsd:dateTime
 
 [Term]
-id: UBERON:0001873
-property_value: IAO:0000118 "\"Left-Caudate\" and \"Right-Caudate\" (from Desikan-Killiany atlas)" xsd:string
+id: MRIO:1000002
+name: blood oxygenation level dependent signal
+def: "A measurement datum recording the blood oxygen level dependent (BOLD) signal, which reflects changes in deoxyhemoglobin driven by localized changes in brain blood flow and blood oxygenation." []
+synonym: "BOLD signal" EXACT []
+is_a: IAO:0000032
+property_value: terms:creator https://orcid.org/0009-0004-2155-902X
+property_value: terms:date "2024-07-26T16:29:26Z" xsd:dateTime
 
 [Term]
-id: UBERON:0001876
-property_value: IAO:0000118 "\"Left-Amygdala\" and \"Right-Amygdala\" (from Desikan-Killiany atlas)" xsd:string
+id: MRIO:1000003
+name: functional magnetic resonance imaging sequence protocol
+def: "A protocol that specifies the parameters and procedures for conducting functional magnetic resonance imaging (fMRI) to measure brain activity and connectivity." []
+synonym: "fMRI sequence protocol" EXACT []
+is_a: OBI:0000272
+property_value: terms:creator https://orcid.org/0009-0004-2155-902X
+property_value: terms:date "2024-07-26T17:19:33Z" xsd:dateTime
 
 [Term]
-id: UBERON:0001882
-property_value: IAO:0000118 "\"Left-Accumbens-area\" and \"Right-Accumbens-area\" (from Desikan-Killiany atlas)" xsd:string
+id: MRIO:1000004
+name: brain activation map
+def: "A data item that is a representation of brain regions that exhibit statistically significant changes in neural activity in response to an experimental task or stimuli." []
+is_a: IAO:0000027
+intersection_of: IAO:0000027
+intersection_of: RO:0000052 OBI:0003336 {all_some="true"}
+relationship: OBI:0000312 MRIO:0000420 ! functional mapping
+relationship: RO:0000052 OBI:0003336
+property_value: terms:creator https://orcid.org/0009-0004-2155-902X
+property_value: terms:date "2024-07-26T17:30:23Z" xsd:dateTime
 
 [Term]
-id: UBERON:0001898
-property_value: IAO:0000118 "\"Left-VentralDC\" and \"Right-VentralDC\" (from Desikan-Killiany Atlas)" xsd:string
+id: MRIO:1000005
+name: production of activation map based on a blood oxygenation level dependent functional magnetic resonance image data set
+def: "A functional mapping that produces an activation map that is based on a blood oxygenation level dependent (BOLD) functional magnetic resonance image data set." []
+synonym: "production of activation map based on a BOLD functional magnetic resonance image data set" EXACT []
+is_a: MRIO:0000420 ! functional mapping
+intersection_of: MRIO:0000420 ! functional mapping
+intersection_of: OBI:0000299 MRIO:1000008 ! blood oxygenation level dependent activation map
+relationship: OBI:0000299 MRIO:1000008 ! blood oxygenation level dependent activation map
+property_value: terms:creator https://orcid.org/0009-0004-2155-902X
+property_value: terms:date "2024-07-26T18:09:23Z" xsd:dateTime
 
 [Term]
-id: UBERON:0001900
-name: ventral thalamus
+id: MRIO:1000006
+name: production of activation map based on a vascular space occupancy functional magnetic resonance image data set
+def: "A functional mapping that produces an activation map that is based on a vascular space occupancy (VASO) functional magnetic resonance image data set." []
+synonym: "production of activation map based on a VASO functional magnetic resonance image data set" EXACT []
+is_a: MRIO:0000420 ! functional mapping
+intersection_of: MRIO:0000420 ! functional mapping
+intersection_of: OBI:0000299 MRIO:1000009 ! vascular space occupancy activation map
+relationship: OBI:0000299 MRIO:1000009 ! vascular space occupancy activation map
+property_value: terms:creator https://orcid.org/0009-0004-2155-902X
+property_value: terms:date "2024-07-26T18:10:45Z" xsd:dateTime
 
 [Term]
-id: UBERON:0002022
-property_value: IAO:0000118 "\"lh-insula\" and \"rh-insula\" (from Desikan-Killiany atlas)" xsd:string
-property_value: IAO:0000118 "wm-lh-insula" xsd:string
+id: MRIO:1000007
+name: production of activation map based on a arterial spin labeling functional magnetic resonance image data set
+def: "A functional mapping that produces an activation map that is based on a arterial spin labeling (ASL) functional magnetic resonance image data set." []
+synonym: "production of activation map based on a ASL functional magnetic resonance image data set" EXACT []
+is_a: MRIO:0000420 ! functional mapping
+intersection_of: MRIO:0000420 ! functional mapping
+intersection_of: OBI:0000299 MRIO:1000010 ! arterial spin labeling activation map
+relationship: OBI:0000299 MRIO:1000010 ! arterial spin labeling activation map
+property_value: terms:creator https://orcid.org/0009-0004-2155-902X
+property_value: terms:date "2024-07-26T18:12:34Z" xsd:dateTime
 
 [Term]
-id: UBERON:0002129
-property_value: IAO:0000118 "\"Left-Cerebellum-Cortex\" and \"Right-Cerebellum-Cortex\" (from Desikan-Killiany atlas)" xsd:string
+id: MRIO:1000008
+name: blood oxygenation level dependent activation map
+def: "An activation map derived from a blood oxygenation level dependent (BOLD) functional magnetic resonance image data set." []
+synonym: "BOLD activation map" EXACT []
+is_a: MRIO:1000004 ! brain activation map
+property_value: terms:creator https://orcid.org/0009-0004-2155-902X
+property_value: terms:date "2024-07-26T18:16:22Z" xsd:dateTime
 
 [Term]
-id: UBERON:0002421
-property_value: IAO:0000118 "\"Left-Hippocampus\" and \"Right-Hippocampus\" (from Desikan-Killiany atlas)" xsd:string
+id: MRIO:1000009
+name: vascular space occupancy activation map
+def: "An activation map derived from a vascular space occupancy (VASO) functional magnetic resonance image data set." []
+synonym: "VASO activation map" EXACT []
+is_a: MRIO:1000004 ! brain activation map
+intersection_of: OBI:0000312 MRIO:1000006 ! production of activation map based on a vascular space occupancy functional magnetic resonance image data set
+intersection_of: RO:0000052 MRIO:1000047 ! vascular space occupancy functional magnetic resonance image data set
+relationship: OBI:0000312 MRIO:1000006 ! production of activation map based on a vascular space occupancy functional magnetic resonance image data set
+relationship: RO:0000052 MRIO:1000047 ! vascular space occupancy functional magnetic resonance image data set
+property_value: terms:creator https://orcid.org/0009-0004-2155-902X
+property_value: terms:date "2024-07-26T18:17:27Z" xsd:dateTime
 
 [Term]
-id: UBERON:0002576
-property_value: IAO:0000118 "\"lh-temporalpole\" and \"rh-temporalpole\" (from Desikan-Killiany atlas)" xsd:string
+id: MRIO:1000010
+name: arterial spin labeling activation map
+def: "An activation map derived from an arterial spin labeling (ASL) functional magnetic resonance image data set." []
+synonym: "ASL activation map" EXACT []
+is_a: MRIO:1000004 ! brain activation map
+intersection_of: OBI:0000312 MRIO:1000007 ! production of activation map based on a arterial spin labeling functional magnetic resonance image data set
+intersection_of: RO:0000052 MRIO:1000041 ! blood oxygenation level dependent functional magnetic resonance image data set
+relationship: OBI:0000312 MRIO:1000007 ! production of activation map based on a arterial spin labeling functional magnetic resonance image data set
+relationship: RO:0000052 MRIO:1000041 ! blood oxygenation level dependent functional magnetic resonance image data set
+property_value: terms:creator https://orcid.org/0009-0004-2155-902X
+property_value: terms:date "2024-07-26T18:17:37Z" xsd:dateTime
 
 [Term]
-id: UBERON:0002581
-property_value: IAO:0000118 "\"lh-postcentral\" and \"rh-postcentral\" (from Desikan-Killiany atlas)" xsd:string
+id: MRIO:1000011
+name: functional connectivity
+def: "A method used in functional MRI data set analysis that examines correlations in activity between spatially remote brain regions." []
+is_a: MRIO:0000421 ! functional magnetic resonance image data set analysis
+property_value: terms:creator https://orcid.org/0009-0004-2155-902X
+property_value: terms:date "2024-07-29T18:05:31Z" xsd:dateTime
 
 [Term]
-id: UBERON:0002624
-property_value: IAO:0000118 "\"lh-parsorbitalis\" and \"rh-parsobertalis\" (from Desikan-Killiany atlas)" xsd:string
+id: MRIO:1000012
+name: effective connectivity
+def: "A type of functional connectivity that reflects the direct influence of one brain region on another in relation to functional activity." []
+is_a: MRIO:1000011 ! functional connectivity
+property_value: terms:creator https://orcid.org/0009-0004-2155-902X
+property_value: terms:date "2024-07-29T18:08:06Z" xsd:dateTime
 
 [Term]
-id: UBERON:0002629
-property_value: IAO:0000118 "\"lh-parstriangularis\" and \"rh-parstriangularis\" (from Desikan-Killiany atlas)" xsd:string
+id: MRIO:1000013
+name: static functional connectivity
+def: "A type of functional connectivity that measures consistent or stable correlations in brain activity between regions over a period of time during functional magnetic resonance imaging (fMRI)." []
+is_a: MRIO:1000011 ! functional connectivity
+property_value: terms:creator https://orcid.org/0009-0004-2155-902X
+property_value: terms:date "2024-07-29T18:09:46Z" xsd:dateTime
 
 [Term]
-id: UBERON:0002661
-property_value: IAO:0000118 "\"lh-superiorfrontal\" and \"rh-superiorfrontal\" (from Desikan-Killiany atlas)" xsd:string
+id: MRIO:1000014
+name: dynamic functional connectivity
+def: "A type of functional connectivity that measures temporal variations in connectivity patterns between brain regions over time during functional magnetic resonance imaging (fMRI)." []
+is_a: MRIO:1000011 ! functional connectivity
+property_value: terms:creator https://orcid.org/0009-0004-2155-902X
+property_value: terms:date "2024-07-29T18:11:26Z" xsd:dateTime
 
 [Term]
-id: UBERON:0002688
-property_value: IAO:0000118 "\"lh-supramarginal\" and \"rh-supramarginal\" (from Desikan-Killiany atlas)" xsd:string
+id: MRIO:1000015
+name: task-based functional connectivity
+def: "A type of functional connectivity that assesses how brain regions interact with each other while a subject performs specific tasks during functional magnetic resonance imaging (fMRI)." []
+is_a: MRIO:1000011 ! functional connectivity
+property_value: terms:creator https://orcid.org/0009-0004-2155-902X
+property_value: terms:date "2024-07-29T18:16:41Z" xsd:dateTime
 
 [Term]
-id: UBERON:0002703
-property_value: IAO:0000118 "\"lh-precentral\" and \"rh-precentral\" (from Desikan-Killiany atlas)" xsd:string
+id: MRIO:1000016
+name: resting state functional connectivity
+def: "A type of functional connectivity that evaluates the interactions between brain regions while the subject is at rest during functional magnetic resonance imaging (fMRI)." []
+is_a: MRIO:1000011 ! functional connectivity
+property_value: terms:creator https://orcid.org/0009-0004-2155-902X
+property_value: terms:date "2024-07-29T18:17:09Z" xsd:dateTime
 
 [Term]
-id: UBERON:0002728
-property_value: IAO:0000118 "\"lh-entorhinal\" and \"rh-entorhinal\" (from Desikan-Killiany atlas)" xsd:string
+id: MRIO:1000017
+name: seed-based functional connectivity
+def: "A method used to investigate functional connectivity between brain regions using a predefined seed voxel or region." []
+is_a: MRIO:1000011 ! functional connectivity
+property_value: terms:creator https://orcid.org/0009-0004-2155-902X
+property_value: terms:date "2024-07-29T18:22:19Z" xsd:dateTime
 
 [Term]
-id: UBERON:0002751
-property_value: IAO:0000118 "\"lh-inferiortemporal\" and \"rh-inferiortemporal\" (from Desikan-Killiany atlas)" xsd:string
+id: MRIO:1000018
+name: region of interest analysis
+def: "A method within functional MRI data set analysis that involves defining specific brain regions or areas of interest a priori and examining the neural activity within those regions." []
+synonym: "ROI analysis" EXACT []
+is_a: MRIO:0000421 ! functional magnetic resonance image data set analysis
+property_value: terms:creator https://orcid.org/0009-0004-2155-902X
+property_value: terms:date "2024-07-29T18:27:21Z" xsd:dateTime
 
 [Term]
-id: UBERON:0002766
-property_value: IAO:0000118 "\"lh-fusiform\" and \"rh-fusiform\" (from Desikan-Killiany atlas)" xsd:string
+id: MRIO:1000019
+name: multi-voxel pattern analysis
+def: "A type of functional MRI data set analysis that attempts to analyze the information present in patterns of activity rather than the response at individual voxels." []
+synonym: "MVPA" EXACT []
+is_a: MRIO:0000421 ! functional magnetic resonance image data set analysis
+property_value: terms:creator https://orcid.org/0009-0004-2155-902X
+property_value: terms:date "2024-07-29T18:27:45Z" xsd:dateTime
 
 [Term]
-id: UBERON:0002769
-property_value: IAO:0000118 "\"lh-superiortemporal\" and \"rh-superiortemporal\" (from Desikan-Killiany atlas)" xsd:string
+id: MRIO:1000020
+name: seed voxel correlation: within-subjects
+def: "A method used in seed-based functional connectivity that involves extracting the time course from a seed voxel, determined based on some a priori hypothesis, and computing its correlation with all the voxels across the brain." []
+is_a: MRIO:1000017 ! seed-based functional connectivity
+property_value: terms:creator https://orcid.org/0009-0004-2155-902X
+property_value: terms:date "2024-07-29T18:31:33Z" xsd:dateTime
 
 [Term]
-id: UBERON:0002771
-property_value: IAO:0000118 "\"lh-middletemporal\" and \"rh-middletemporal\" (from Desikan-Killiany atlas)" xsd:string
+id: MRIO:1000021
+name: seed voxel correlation: between-subjects
+def: "A method within seed-based functional connectivity where an estimate of activation (e.g., beta weights for a particular condition) is extracted for a particular region, then those values are entered into a whole-brain regression analysis across subjects." []
+is_a: MRIO:1000017 ! seed-based functional connectivity
+property_value: terms:creator https://orcid.org/0009-0004-2155-902X
+property_value: terms:date "2024-07-29T18:32:13Z" xsd:dateTime
 
 [Term]
-id: UBERON:0002795
-property_value: IAO:0000118 "\"lh-frontalpole\" and \"rh-frontalpole\" (from Desikan-Killiany atlas)" xsd:string
+id: MRIO:1000022
+name: beta series correlation of functional magnetic resonance image data set
+def: "A technique used in functional MRI data set analysis where the response to each event is estimated by fitting a model with separate regressors for each trial. By correlating the parameter estimates (beta series) across regions, this method examines the degree of trial-by-trial fluctuation similarity between regions, indicating functional connectivity. particularly useful in event-related studies with longer inter-trial intervals." []
+is_a: MRIO:0000421 ! functional magnetic resonance image data set analysis
+property_value: terms:creator https://orcid.org/0009-0004-2155-902X
+property_value: terms:date "2024-07-29T19:28:12Z" xsd:dateTime
 
 [Term]
-id: UBERON:0002943
-property_value: IAO:0000118 "\"lh-lingual\" and \"rh-lingual\" (from Desikan-Killiany atlas)" xsd:string
+id: MRIO:1000023
+name: psychophysiological interaction approach
+def: "A technique used in task-based functional connectivity to examine how connectivity between a seed region and other brain regions is modulated by task conditions. It involves adding an interaction term to the general linear model, which models the task and the time course of activity in the seed region." []
+synonym: "PPI approach" EXACT []
+is_a: MRIO:1000015 ! task-based functional connectivity
+property_value: terms:creator https://orcid.org/0009-0004-2155-902X
+property_value: terms:date "2024-07-29T19:38:05Z" xsd:dateTime
 
 [Term]
-id: UBERON:0002973
-property_value: IAO:0000118 "\"lh-parahippocampal\" and \"rh-parahippocampal\" (from Desikan-Killiany atlas)" xsd:string
+id: MRIO:1000024
+name: hemodynamic response function
+def: "A measure function that models the temporal changes in brain blood flow and oxygenation in response to neural activity." []
+synonym: "HRF" EXACT []
+is_a: OBI:0000453
+property_value: terms:creator https://orcid.org/0009-0004-2155-902X
+property_value: terms:date "2024-07-31T17:26:45Z" xsd:dateTime
 
 [Term]
-id: UBERON:0002980
-property_value: IAO:0000118 "\"lh-parsopercularis\" and \"rh-parsopercularis\" (from Desikan-Killiany atlas)" xsd:string
+id: MRIO:1000025
+name: canonical hemodynamic response function
+def: "A standard model of the hemodynamic response function (HRF) that represents the typical temporal changes in brain blood flow and oxygenation in response to neural activity, used as a reference in neuroimaging studies to interpret brain activation patterns." []
+synonym: "canonical HRF" EXACT []
+is_a: MRIO:1000024 ! hemodynamic response function
+property_value: terms:creator https://orcid.org/0009-0004-2155-902X
+property_value: terms:date "2024-07-31T17:27:39Z" xsd:dateTime
 
 [Term]
-id: UBERON:0006088
-property_value: IAO:0000118 "\"lh-inferiorparietal\" and \"rh-inferiorparietal\" (from Desikan-Killiany atlas)" xsd:string
+id: MRIO:1000026
+name: voxel
+def: "A volume unit in a three-dimensional imaging system that represents a discrete cubic or rectangular portion of space." []
+is_a: UO:0000095
+property_value: terms:creator https://orcid.org/0009-0004-2155-902X
+property_value: terms:date "2024-07-31T17:38:57Z" xsd:dateTime
 
 [Term]
-id: UBERON:0006092
-property_value: IAO:0000118 "\"lh-cuneus\" and \"rh-cuneus\" (from Desikan-Killiany atlas)" xsd:string
+id: MRIO:1000027
+name: seed voxel
+def: "A specific voxel selected as a starting point for examining or analyzing three-dimensional data." []
+is_a: MRIO:1000026 ! voxel
+property_value: terms:creator https://orcid.org/0009-0004-2155-902X
+property_value: terms:date "2024-07-31T17:39:07Z" xsd:dateTime
 
 [Term]
-id: UBERON:0006093
-property_value: IAO:0000118 "\"lh-precuneus\" and \"rh-precuneus\" (from Desikan-Killiany atlas)" xsd:string
+id: MRIO:1000028
+name: seed region
+def: "A three-dimensional spatial region defined by a cluster of contiguous voxels used as the starting point for examining or analyzing three-dimensional data." []
+is_a: BFO:0000028
+property_value: terms:creator https://orcid.org/0009-0004-2155-902X
+property_value: terms:date "2024-07-31T17:41:46Z" xsd:dateTime
 
 [Term]
-id: UBERON:0006094
-property_value: IAO:0000118 "\"lh-superiorparietal\" and \"rh-superiorparietal\" (from Desikan-Killiany atlas)" xsd:string
+id: MRIO:1000029
+name: coplaner image data set
+def: "An image data set in which all images are acquired or aligned within the same plane of reference." []
+is_a: OBI:0003327
+property_value: terms:creator https://orcid.org/0009-0004-2155-902X
+property_value: terms:date "2024-07-31T18:08:58Z" xsd:dateTime
 
 [Term]
-id: UBERON:0006114
-property_value: IAO:0000118 "\"lh-lateraloccipital\" and \"rh-lateraloccipital\" (from Desikan-Killiany atlas)" xsd:string
+id: MRIO:1000030
+name: block design functional magnetic resonance imaging sequence protocol
+def: "A functional magnetic resonance imaging (fMRI) sequence protocol in which two or more different conditions are alternated in order to determine the differences between the two conditions during the imaging acquisition." []
+synonym: "block design fMRI sequence protocol" EXACT []
+is_a: MRIO:1000003 ! functional magnetic resonance imaging sequence protocol
+property_value: terms:creator https://orcid.org/0009-0004-2155-902X
+property_value: terms:date "2024-07-31T21:37:37Z" xsd:dateTime
 
 [Term]
-id: UBERON:0006445
-property_value: IAO:0000118 "\"lh-caudalmiddlefrontal\" and \"rh-caudalmiddlefrontal\" (from Desikan-Killiany atlas)" xsd:string
+id: MRIO:1000031
+name: event-related functional magnetic resonance imaging sequence protocol
+def: "A functional magnetic resonance imaging (fMRI) sequence protocol in which the presentation of stimuli is randomized and the time in between stimuli can vary during the imaging acquisition." []
+synonym: "efMRI sequence protocol" EXACT []
+is_a: MRIO:1000003 ! functional magnetic resonance imaging sequence protocol
+property_value: terms:creator https://orcid.org/0009-0004-2155-902X
+property_value: terms:date "2024-07-31T21:38:13Z" xsd:dateTime
 
 [Term]
-id: UBERON:0006446
-property_value: IAO:0000118 "\"lh-rostralmiddlefrontal\" and \"rh-rostralmiddlefrontal\" (from Desikan-Killiany atlas)" xsd:string
+id: MRIO:1000032
+name: rapid event-related functional magnetic resonance imaging sequence protocol
+def: "A type of event-related functional magnetic resonance imaging (efMRI) sequence protocol where events occur so rapidly that their hemodynamic responses overlap during the imaging acquisition." []
+synonym: "rapid efMRI sequence protocol" EXACT []
+is_a: MRIO:1000031 ! event-related functional magnetic resonance imaging sequence protocol
+property_value: terms:creator https://orcid.org/0009-0004-2155-902X
+property_value: terms:date "2024-07-31T21:38:22Z" xsd:dateTime
 
 [Term]
-id: UBERON:0006514
-property_value: IAO:0000118 "\"Left-Pallidum\" and \"Right-Pallidum\" (from Desikan-Killiany atlas)" xsd:string
+id: MRIO:1000033
+name: mixed event-mixed event-related/block design functional magnetic resonance imaging sequence protocol
+def: "A type of functional magnetic resonance imaging (fMRI) sequence protocol in which the participant is given specific tasks or stimuli that alternate between structured blocks and randomized or semi-randomized order separated by rest periods during the imaging acquisition." []
+synonym: "mixed event-related/block design fMRI sequence protocol" EXACT []
+is_a: MRIO:1000003 ! functional magnetic resonance imaging sequence protocol
+property_value: terms:creator https://orcid.org/0009-0004-2155-902X
+property_value: terms:date "2024-07-31T21:38:59Z" xsd:dateTime
 
 [Term]
-id: UBERON:0008884
-property_value: IAO:0000118 "\"Left-Putamen\" (from Desikan-Killiany atlas)" xsd:string
+id: MRIO:1000041
+name: blood oxygenation level dependent functional magnetic resonance image data set
+is_a: OBI:0003336
+property_value: terms:creator https://orcid.org/0009-0004-2155-902X
+property_value: terms:date "2024-08-09T22:05:03Z" xsd:dateTime
 
 [Term]
-id: UBERON:0008885
-property_value: IAO:0000118 "\"\"Right-Putamen\" (from Desikan-Killiany atlas)" xsd:string
+id: MRIO:1000047
+name: vascular space occupancy functional magnetic resonance image data set
+is_a: OBI:0003336
+property_value: terms:creator https://orcid.org/0009-0004-2155-902X
+property_value: terms:date "2024-08-09T21:49:33Z" xsd:dateTime
+property_value: terms:date "2024-08-09T22:04:39Z" xsd:dateTime
 
 [Term]
-id: UBERON:0009897
-property_value: IAO:0000116 "Corrected error saying this is in the left hemisphere of the brain." xsd:string
-property_value: IAO:0000118 "\"rh-transversetemporal\" (from Desikan-Killiany atlas)" xsd:string
+id: MRIO:1000050
+name: hemodynamic response
+def: "Blood circulation that is increased in the brain, in response to neural activity." []
+synonym: "HR" EXACT []
+is_a: http://purl.obolibrary.org/obo/GO:0008015
 
 [Term]
-id: UBERON:0009898
-property_value: IAO:0000118 "\"lh-transversetemporal\" (from Desikan-Killiany atlas)" xsd:string
+id: MRIO:1000052
+name: multiple linear regression analysis
+def: "A linear regression for analysis of continuous dependent variable technique used in imaging that models the relationship between brain activity and multiple predictors, such as experimental conditions or behavioral data, to identify patterns in voxel or region level data." []
+is_a: STATO:0000108
+property_value: terms:creator https://orcid.org/0009-0004-2155-902X
+property_value: terms:date "2025-04-02T15:19:21Z" xsd:dateTime
 
 [Term]
-id: UBERON:0013683
-property_value: IAO:0000118 "\"Left-Thalamus-Proper\" (from Desikan-Killiany atlas)" xsd:string
+id: MRIO:1000053
+name: dual regression analysis of functional magnetic resonance image data set
+def: "A functional magnetic resonance image data set analysis used to simultaneously analyze two sets of data (i.e., brain activity and task related variables) to identify common patterns." []
+is_a: MRIO:0000421 ! functional magnetic resonance image data set analysis
+relationship: BFO:0000051 MRIO:1000061 ! image data set analysis based on general linear model
+property_value: oboInOwl:source "https://doi.org/10.1073/pnas.0811879106" xsd:string
+property_value: terms:creator https://orcid.org/0009-0004-2155-902X
+property_value: terms:date "2025-04-02T15:20:15Z" xsd:dateTime
 
 [Term]
-id: UBERON:0013684
-property_value: IAO:0000118 "\"Right-Thalamus-Proper\" (from Desikan-Killiany atlas)" xsd:string
+id: MRIO:1000054
+name: polynomial linear regression
+def: "A linear regression for analysis of continuous dependent variable technique used in imaging that models nonlinear relationships between voxel or pixel intensities and predictors by fitting polynomial functions to the data." []
+is_a: STATO:0000108
+property_value: terms:creator https://orcid.org/0009-0004-2155-902X
+property_value: terms:date "2025-04-02T15:21:49Z" xsd:dateTime
 
 [Term]
-id: UBERON:0022352
-property_value: IAO:0000118 "\"lh-medialorbitofrontal\" and \"rh-imedialorbitofrontal\" (from Desikan-Killiany atlas)" xsd:string
+id: MRIO:1000055
+name: general linear model time series regression
+def: "An image data set analysis based on a general linear model used in imaging that models temporal dependencies in voxel signals by incorporating lagged predictors or autoregressive components." []
+synonym: "GLM time series regression" EXACT []
+is_a: MRIO:1000061 ! image data set analysis based on general linear model
+property_value: terms:creator https://orcid.org/0009-0004-2155-902X
+property_value: terms:date "2025-04-02T15:22:45Z" xsd:dateTime
 
 [Term]
-id: UBERON:0022353
-property_value: IAO:0000118 "\"lh-posteriorcingulate\" and \"rh-posteriorcingulate\" (from Desikan-Killiany atlas)" xsd:string
+id: MRIO:1000056
+name: ridge linear regression
+def: "A linear regression for analysis of continuous dependent variable technique used in imaging that applies L2 regularization to stabilize coefficient estimates, reducing overfitting when modeling high dimensional voxel or pixel data." []
+is_a: STATO:0000108
+property_value: terms:creator https://orcid.org/0009-0004-2155-902X
+property_value: terms:date "2025-04-02T15:23:45Z" xsd:dateTime
 
 [Term]
-id: UBERON:0022438
-property_value: IAO:0000118 "\"lh-rostralanteriorcingulate\" and \"rh-rostralanteriorcingulate\" (from Desikan-Killiany atlas)" xsd:string
+id: MRIO:1000057
+name: lasso linear regression
+def: "A linear regression for analysis of continuous dependent variable technique used in imaging that applies L1 regularization to select relevant features by shrinking irrelevant voxel or pixel coefficients to zero." []
+is_a: STATO:0000108
+property_value: terms:creator https://orcid.org/0009-0004-2155-902X
+property_value: terms:date "2025-04-02T15:25:55Z" xsd:dateTime
 
 [Term]
-id: UBERON:0022534
-property_value: IAO:0000118 "\"lh-pericalcarine\" and \"rh-pericalcarine\" (from Desikan-Killiany atlas)" xsd:string
+id: MRIO:1000058
+name: elastic net linear regression
+def: "A linear regression for analysis of continuous dependent variable technique used that combines L1 and L2 regularization to balance feature selection and model stability." []
+is_a: STATO:0000108
+property_value: terms:creator https://orcid.org/0009-0004-2155-902X
+property_value: terms:date "2025-04-02T15:26:40Z" xsd:dateTime
 
 [Term]
-id: UBERON:0022716
-property_value: IAO:0000118 "\"lh-lateralorbitofrontal\" and \"rh-lateralorbitofrontal\" (from Desikan-Killiany atlas)" xsd:string
+id: MRIO:1000059
+name: hierarchical linear regression
+def: "A linear regression for analysis of continuous dependent variable technique used in imaging that accounts for nested data structures, allowing for the modeling of both single subject and group level effects." []
+is_a: STATO:0000108
+property_value: terms:creator https://orcid.org/0009-0004-2155-902X
+property_value: terms:date "2025-04-02T15:27:45Z" xsd:dateTime
 
 [Term]
-id: UBERON:0027061
-property_value: IAO:0000118 "\"lh-isthmuscingulate\" and \"rh-isthmuscingulate\" (from Desikan-Killiany atlas)" xsd:string
+id: MRIO:1000060
+name: Bayesian linear regression of image data set
+def: "A linear regression for analysis of an image data set used to obtain the posterior probability estimates of voxel or region level activity." []
+is_a: MRIO:0000747 ! statistical inference applied to image data set
+property_value: terms:creator https://orcid.org/0009-0004-2155-902X
+property_value: terms:date "2025-04-02T15:28:17Z" xsd:dateTime
 
 [Term]
-id: UBERON:0028622
-property_value: IAO:0000118 "bankssts" xsd:string
-
-[Term]
-id: UBERON:0028715
-property_value: IAO:0000118 "\"lh-caudalanteriorcingulate\" and \"rh-caudalanteriorcingulate\" (from Desikan-Killiany atlas)" xsd:string
-
-[Term]
-id: UBERON:0035933
-property_value: IAO:0000118 "\"lh-paracentral\" and \"rh-paracentral\" (from Desikan-Killiany atlas)" xsd:string
+id: MRIO:1000061
+name: image data set analysis based on general linear model
+def: "An image data set analysis based general linear model (GLM) is a statistical approach that utilizes one or more regressors to model pixel or voxel intensity as a linear combination of predictors." []
+synonym: "image data set analysis based on GLM" RELATED []
+is_a: MRIO:0000747 ! statistical inference applied to image data set
+property_value: terms:creator https://orcid.org/0009-0004-2155-902X
+property_value: terms:date "2025-04-03T23:07:03Z" xsd:dateTime
 
 [Term]
 id: http://purl.obolibrary.org/obo/MRIO_a535096d_151b_47c9_9be4_83b7799917df
@@ -2163,13 +2423,13 @@ is_a: OBI:0003360
 id: MRIO:0000375
 name: has pulse sequence
 def: "A relation between an magnetic resonance image acquisition sequence and the pulse sequence(s) that contribute to it." []
-property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-2104-0568
+property_value: terms:creator http://orcid.org/0000-0002-2104-0568
 domain: OBI:0002985
 range: OBI:0003332
 
 [Typedef]
 id: MRIO:0000688
 name: has MRI acquisition parameter
-def: "A relation between some part of the MRI acquisition sequence and the setttings of an MRI machine set by a technician." []
+def: "A relation between some part of the MRI acquisition sequence and the settings of an MRI machine set by a technician." []
 range: MRIO:0000342 ! MRI machine parameter
 

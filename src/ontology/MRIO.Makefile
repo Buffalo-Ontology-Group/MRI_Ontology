@@ -3,14 +3,50 @@
 ## If you need to customize your Makefile, make
 ## changes here rather than in the main Makefile
 
+#$(IMPORTDIR)/uberon_import.owl: $(MIRRORDIR)/uberon.owl $(IMPORTDIR)/uberon_terms_combined.txt
+#	if [ $(IMP) = true ]; then $(ROBOT) \
+#		filter -i mirror/uberon.owl \
+#		-T imports/uberon_terms.txt \
+#		--select "annotations self ancestors" \
+#		-o imports/uberon_import.owl
+
+
+## ONTOLOGY: uberon
+.PHONY: mirror-uberon
+.PRECIOUS: $(MIRRORDIR)/uberon.owl
+mirror-uberon: | $(TMPDIR)
+	curl -L http://purl.obolibrary.org/obo/uberon/nervous-minimal.owl --create-dirs -o $(TMPDIR)/uberon-download.owl --retry 4 --max-time 200 && \
+	$(ROBOT) convert -i $(TMPDIR)/uberon-download.owl -o $(TMPDIR)/$@.owl
+
+#--force true --copy-ontology-annotations true --individuals include
+$(IMPORTDIR)/uberon_import.owl: $(MIRRORDIR)/uberon.owl $(IMPORTDIR)/uberon_terms_combined.txt
+	if [ $(IMP) = true ]; then $(ROBOT) query -i $< --update ../sparql/preprocess-module.ru \
+		annotate --ontology-iri "https://purl.obolibrary.org/obo/uberon/nervous-minimal.owl" \
+		extract -T $(IMPORTDIR)/uberon_terms_combined.txt --force true --copy-ontology-annotations true --individuals include --method BOT \
+		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
+		$(ANNOTATE_CONVERT_FILE); fi
+
+.PHONY: mirror-uberon
+.PRECIOUS: $(MIRRORDIR)/uberon.owl
+mirror-uberon: | $(TMPDIR)
+	curl -L https://github.com/pato-ontology/pato/raw/refs/heads/master/pato-base.owl --create-dirs -o $(TMPDIR)/pato-download.owl --retry 4 --max-time 200 && \
+	$(ROBOT) convert -i $(TMPDIR)/pato-download.owl -o $(TMPDIR)/$@.owl
+
+$(IMPORTDIR)/pato_import.owl: $(MIRRORDIR)/pato.owl $(IMPORTDIR)/pato_terms_combined.txt
+	if [ $(IMP) = true ]; then $(ROBOT) query -i $< --update ../sparql/preprocess-module.ru \
+		annotate --ontology-iri "http://purl.obolibrary.org/obo/pato.owl" \
+		extract -T $(IMPORTDIR)/uberon_terms_combined.txt --force true --copy-ontology-annotations true --individuals include --method BOT \
+		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
+		$(ANNOTATE_CONVERT_FILE); fi
+
+
 .PHONY: all_mrio
-all_mrio: 
+all_mrio: pato mondo uberon 
 	robot merge \
 		-i MRIO-edit.owl \
 		-i imports/mondo_import.owl \
-		-i imports/obi_import.owl \
 		-i imports/uberon_import.owl \
-		-i imports/ncit_import.owl \
+		-i imports/pato_import.owl \
 		-o MRIO.owl
 
 pato:
@@ -31,13 +67,13 @@ mondo:
 		--select "annotations self ancestors" \
 		-o imports/mondo_import.owl
 
-ncit:
-	robot \
-		--catalog catalog-v001.xml \
-		filter -i mirror/ncit.owl \
-		-T imports/ncit_terms.txt \
-		--select "annotations self ancestors" \
-		-o imports/ncit_import.owl
+#ncit:
+#	robot \
+#		--catalog catalog-v001.xml \
+#		filter -i mirror/ncit.owl \
+#		-T imports/ncit_terms.txt \
+#		--select "annotations self ancestors" \
+#		-o imports/ncit_import.owl
 
 uberon:
 	robot \

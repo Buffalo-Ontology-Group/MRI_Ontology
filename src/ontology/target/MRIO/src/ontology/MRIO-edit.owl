@@ -20,9 +20,7 @@ Import(<http://purl.obolibrary.org/obo/MRIO/imports/mondo_import.owl>)
 
 Import(<http://purl.obolibrary.org/obo/MRIO/imports/pato_import.owl>)
 
-Import(<http://purl.obolibrary.org/obo/MRIO/imports/ncit_import.owl>)
-
-Import(<http://purl.obolibrary.org/obo/MRIO/imports/caro_import.owl>)
+Import(<http://purl.obolibrary.org/obo/MRIO/imports/stato_import.owl>)
 
 
 

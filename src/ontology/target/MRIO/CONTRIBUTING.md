@@ -33,7 +33,7 @@ Please carefully read our [Code of Conduct](CODE_OF_CONDUCT.md).
 
 ### Reporting problems with the ontology
 
-Please use our [Issue Tracker](https://github.com/Buffalo-Ontology-Group/False/issues/) for reporting problems with the ontology. 
+Please use our [Issue Tracker](https://github.com/Buffalo-Ontology-Group/MRI_Ontology/issues/) for reporting problems with the ontology. 
 To learn how to write a good issue [see here](#great-issues).
 
 <a id="requesting-terms"></a>
@@ -57,10 +57,10 @@ community resource, it is often necessary to do at least some of the work of add
 
 #### How to write a new term request
 
-Request a new term _via_ the GitHub [Issue Tracker](https://github.com/Buffalo-Ontology-Group/False/issues/).
+Request a new term _via_ the GitHub [Issue Tracker](https://github.com/Buffalo-Ontology-Group/MRI_Ontology/issues/).
 
 It is important to remember that it takes a lot of time for curators to process issues submitted to the tracker.
-To make this work easier, please always use issue templates if they are available (https://github.com/Buffalo-Ontology-Group/False/issues/new/choose).
+To make this work easier, please always use issue templates if they are available (https://github.com/Buffalo-Ontology-Group/MRI_Ontology/issues/new/choose).
 
 For how to write a good term request, please read the [best practices carefully](#great-issues).
 
@@ -68,11 +68,11 @@ For how to write a good term request, please read the [best practices carefully]
 
 ### How to add a new term
 
-If you have never edited this ontology before, first follow a [general tutorial](https://oboacademy.github.io/obook/lesson/contributing-to-obo-ontologies)
+If you have never editted this ontology before, first follow a [general tutorial](https://oboacademy.github.io/obook/lesson/contributing-to-obo-ontologies)
 
 **Process**:
 
-1. Clone the repository (In case you are not an official team member, create a fork first)
+1. Clone the repository (In case you are not an offical team member, create a fork first)
 1. Create new branch in git, for example `git checkout -b issue123`
 1. Open src/ontology/MRIO-edit.owl in your favourite editor, i.e. [Protege](https://protege.stanford.edu/). **Careful:** double check you are editing the correct file. There are many ontology files in this repository, but only one _editors file_!
 1. Perform your edit and save your changes

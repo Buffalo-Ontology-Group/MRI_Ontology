@@ -4,11 +4,14 @@
      xmlns:cl="http://purl.obolibrary.org/obo/cl#"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:go="http://purl.obolibrary.org/obo/go#"
+     xmlns:pr="http://purl.obolibrary.org/obo/pr#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:pav="http://purl.org/pav/"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:bspo="http://purl.obolibrary.org/obo/bspo#"
      xmlns:core="http://purl.obolibrary.org/obo/core#"
      xmlns:doap="http://usefulinc.com/ns/doap#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
@@ -26,6 +29,8 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:chebi1="http://purl.obolibrary.org/obo/chebi#3"
      xmlns:chebi2="http://purl.obolibrary.org/obo/chebi#1"
+     xmlns:chebi3="http://purl.obolibrary.org/obo/chebi#"
+     xmlns:chebi4="http://purl.obolibrary.org/obo/chebi#2"
      xmlns:ubprop="http://purl.obolibrary.org/obo/ubprop#"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
@@ -34,10 +39,11 @@
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/">
         <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/mrio/releases/2021-04-10/mrio.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/mondo.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/stato.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MRIO/releases/2026-03-05/imports/mondo_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MRIO/releases/2026-03-05/imports/obi_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MRIO/releases/2026-03-05/imports/pato_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MRIO/releases/2026-03-05/imports/stato_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MRIO/releases/2026-03-05/imports/uberon_import.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2019-08-26/bfo.owl"/>
         <terms:contributor>Alan Ruttenberg</terms:contributor>
         <terms:creator>Alexander D. Bartnik</terms:creator>

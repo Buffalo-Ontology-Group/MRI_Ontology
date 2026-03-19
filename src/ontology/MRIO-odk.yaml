@@ -5,7 +5,17 @@ repo: MRI_Ontology
 import_group:
   products:
     - id: obi
+      module_type: SLME
+      use_terms: true
     - id: uberon
+      module_type: SLME
+      use_terms: true
     - id: mondo
+      module_type: SLME
+      use_terms: true
     - id: pato
+      module_type: SLME
+      use_terms: true
     - id: stato
+      module_type: SLME
+      use_terms: true
