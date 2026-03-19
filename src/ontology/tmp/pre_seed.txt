@@ -6,12 +6,13 @@ http://purl.obolibrary.org/obo/BFO_0000051
 http://purl.obolibrary.org/obo/BFO_0000054
 http://purl.obolibrary.org/obo/BFO_0000055
 http://purl.obolibrary.org/obo/CHEBI_33375
+http://purl.obolibrary.org/obo/eff
+http://purl.obolibrary.org/obo/GO_0008150
 http://purl.obolibrary.org/obo/GO:0003008
 http://purl.obolibrary.org/obo/GO:0003013
 http://purl.obolibrary.org/obo/GO:0008015
 http://purl.obolibrary.org/obo/GO:0032501
 http://purl.obolibrary.org/obo/GO:0050877
-http://purl.obolibrary.org/obo/GO_0008150
 http://purl.obolibrary.org/obo/IAO_0000003
 http://purl.obolibrary.org/obo/IAO_0000004
 http://purl.obolibrary.org/obo/IAO_0000027
@@ -27,6 +28,8 @@ http://purl.obolibrary.org/obo/IAO_0000136
 http://purl.obolibrary.org/obo/IAO_0000140
 http://purl.obolibrary.org/obo/IAO_0000235
 http://purl.obolibrary.org/obo/IAO_0100001
+http://purl.obolibrary.org/obo/in
+http://purl.obolibrary.org/obo/mf
 http://purl.obolibrary.org/obo/MF_0000008
 http://purl.obolibrary.org/obo/MRIO_0000341
 http://purl.obolibrary.org/obo/MRIO_0000342
@@ -300,6 +303,7 @@ http://purl.obolibrary.org/obo/MRIO_1000059
 http://purl.obolibrary.org/obo/MRIO_1000060
 http://purl.obolibrary.org/obo/MRIO_1000061
 http://purl.obolibrary.org/obo/MRIO_a535096d_151b_47c9_9be4_83b7799917df
+http://purl.obolibrary.org/obo/mrio/releases/2021-04-10/mrio.owl
 http://purl.obolibrary.org/obo/OBI_0000067
 http://purl.obolibrary.org/obo/OBI_0000070
 http://purl.obolibrary.org/obo/OBI_0000272
@@ -417,10 +421,6 @@ http://purl.obolibrary.org/obo/UBERON_0028715
 http://purl.obolibrary.org/obo/UBERON_0035933
 http://purl.obolibrary.org/obo/UO_0000001
 http://purl.obolibrary.org/obo/UO_0000095
-http://purl.obolibrary.org/obo/eff
-http://purl.obolibrary.org/obo/in
-http://purl.obolibrary.org/obo/mf
-http://purl.obolibrary.org/obo/mrio/releases/2021-04-10/mrio.owl
 http://purl.org/dc/elements/1.1/description
 http://purl.org/dc/elements/1.1/title
 http://purl.org/dc/terms/contributor
@@ -431,9 +431,9 @@ http://purl.org/dc/terms/license
 http://purl.org/dc/terms/source
 http://purl.org/dc/terms/title
 http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
-http://www.geneontology.org/formats/oboInOwl#ObsoleteClass
 http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
 http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym
+http://www.geneontology.org/formats/oboInOwl#ObsoleteClass
 http://www.geneontology.org/formats/oboInOwl#source
 http://www.w3.org/1999/02/22-rdf-syntax-ns#nil
 http://www.w3.org/2001/XMLSchema#double
