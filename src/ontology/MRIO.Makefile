@@ -28,7 +28,7 @@ $(IMPORTDIR)/uberon_import.owl: $(MIRRORDIR)/uberon.owl $(IMPORTDIR)/uberon_term
 .PHONY: mirror-uberon
 # .PRECIOUS: $(MIRRORDIR)/uberon.owl
 mirror-uberon: | $(MIRRORDIR)
-	curl -L $(URIBASE)/uberon.owl --create-dirs -o $(TMPDIR)/mirror-uberon.owl --retry 4 --max-time 200 && \
+	curl -L $(URIBASE)/uberon/uberon-base.owl --create-dirs -o $(TMPDIR)/mirror-uberon.owl --retry 4 --max-time 200 && \
 	$(ROBOT) convert -i $(TMPDIR)/mirror-uberon.owl -o $(MIRRORDIR)/uberon.owl
 
 $(IMPORTDIR)/pato_import.owl: $(MIRRORDIR)/pato.owl $(IMPORTDIR)/pato_terms_combined.txt
